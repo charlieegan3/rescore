@@ -3,15 +3,23 @@ require 'open-uri'
 require 'securerandom'
 require 'pry'
 
-FILM_SLUG = 'the-lord-of-the-rings-the-return-of-the-king'
 USER_AGENT = "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_7_0) AppleWebKit/535.2 (KHTML, like Gecko) Chrome/15.0.854.0 Safari/535.2"
 OUTPUT_FOLDER = 'movie'
 
-xml = Nokogiri::HTML(open("http://www.metacritic.com/movie/#{FILM_SLUG}/user-reviews?sort-by=most-helpful&num_items=100", 'User-Agent' => USER_AGENT).read)
+PAGES = [
+  'http://www.metacritic.com/movie/gone-girl/user-reviews',
+  'http://www.metacritic.com/movie/the-lord-of-the-rings-the-return-of-the-king/user-reviews'
+]
 
-xml.css('.critic_reviews_module').first.remove
+reviews = [].tap do |reviews|
+  PAGES.each do |url|
+    xml = Nokogiri::HTML(open(url, 'User-Agent' => USER_AGENT).read)
+    xml.css('.critic_reviews_module').first.remove
+    xml.css('.review').to_a.map { |review| reviews << review }
+  end
+end
 
-xml.css('.review').each do |review|
+reviews.each do |review|
   total_ups = review.css('.total_ups').first.text.to_f
   total_thumbs = review.css('.total_thumbs').first.text.to_i
   quality_score = total_ups / total_thumbs
