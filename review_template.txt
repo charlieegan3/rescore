@@ -1,0 +1,3 @@
+Line 1: User Score, what the user gave the item
+Line 2: Quality Score, how other users rated the review
+Line 3: The users review

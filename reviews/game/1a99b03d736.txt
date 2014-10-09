@@ -1,0 +1,37 @@
+5.0
+0.9047619047619048
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+                   
+
+
+
+
+
+
+    
+    
+
+
+
+amznJQ.onReady('Airy', function() {
+  Airy.embed({"installFlashButtonText":"Install Flash Player","contentTitle":null,"autoplayCutOffTimeSeconds":null,"ageGate":{"monthNames":["January","February","March","April","May","June","July","August","September","October","November","December"],"deniedPrompt":"We're sorry. You are not old enough to watch this video.","submitText":"Submit","prompt":"This video is not intended for all audiences. What date were you born?"},"videoAds":null,"videoUnsupportedPrompt":"Sorry, this video is unsupported on this browser.","desiredMode":"hybrid","swfUrl":null,"isAutoplayEnabled":null,"installFlashPrompt":"Adobe Flash Player is required to watch this video.","isLiveStream":null,"regionCode":"NA","contentId":"F1TLoA7wNdS","playbackErrorPrompt":"Sorry, an error has occurred while attempting video playback. Please try again later.","contentMinAge":0,"isForesterTrackingDisabled":null,"streamingUrls":"http://ecx.images-amazon.com/images/I/F1TLoA7wNdS.mp4","parentId":"airy-player-container-20465431","foresterMetadataParams":{"client":"CustomerReviews","requestId":"0ZGW1WXW1YSHH7G6VA7Z","marketplaceId":"ATVPDKIKX0DER","session":"182-9306294-1127949"}});
+});
+
+
+ Length:: 2:25 MinsCheck out more 2minreviews at my Youtube channel: [...]
