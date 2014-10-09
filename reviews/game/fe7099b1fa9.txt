@@ -1,0 +1,3 @@
+1
+0.8287671232876712
+This is a step back from Black Ops 2 in almost every way. No FoV slider on PC version, or FPS cap setting, both of which were present in BO2. Bugs in MW3 that were addressed in BO2 are now somehow back in Ghosts, for example the random jumps in mouse sensitivity that happen if certain programs are running in the background (such as FRAPs). Theater mode, one of the best features of recent Call of Duty games, has been removed. Optimization wise, my computer runs Battlefield 4 on max settings at higher frame rates than Ghosts. Image quality defaults to 'high', which causes upscaling of resolution like a console game rather than rendering at your chosen resolution. Sound effects sound like they were taken straight from MW3. Sad.
