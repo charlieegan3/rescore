@@ -9,9 +9,9 @@ include Treat::Core::DSL
 sound = ['sound', 'music', 'surround', 'dolby', 'ears', 'audio', 'effects', 'sounds', 'score']
 vision = ['visuals', 'vision', 'screen', 'CGI', '3D','graphics', 'visual', 'eyes', 'spectacle', 'special', 'effects', 'beautiful', 'graphic']
 editing = ['editing', 'post', 'production', 'effects']
-plot = ['story', 'plot', 'narrative', 'characters', 'character']
-dialog = ['dialog', 'lines', 'speech', 'discussion', 'conversation', 'language']
-cast = ['acting', 'cast', 'performance', 'portrayal', 'depiction', 'characterization', 'impersonation']
+plot = ['story', 'plot', 'tale', 'narrative', 'characters', 'character', 'journey', 'narration', 'persona']
+dialog = ['dialog', 'lines', 'speech', 'discussion', 'conversation', 'language', 'spoken', 'delivery', 'discussion']
+cast = ['acting', 'cast', 'performance', 'portrayal', 'depiction', 'characterization', 'impersonation', 'role', 'persona']
 
 print 'Reading From:'.colorize(:white).on_black.underline
 puts directory = '../reviews/movie'
