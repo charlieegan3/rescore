@@ -1,4 +1,5 @@
-# Given a review, this script finds the cast list for that film.
+# get_cast() finds the cast list for a film, given a review.
+# get_context_people() tries to get context for a sentence, based on cast members or directors.
 
 require 'sentimental'
 require 'ots'
@@ -7,45 +8,58 @@ require 'googleajax'
 require 'nokogiri'
 require 'badfruit'
 require 'pry'
+require 'sanitize'
+require 'colorize'
+include Treat::Core::DSL
 
 GoogleAjax.referrer = "hey"
 
-def get_scope(sentence)
-  o = OTS.parse(sentence)
+def get_cast(review)
+  o = OTS.parse(review)
   counts = {}
   film = ""
 
   o.topics.each do |t|
     counts[t] = 0
-    sentence.split("\W").each do |word|
+    review.split("\W").each do |word|
       counts[t] += 1 if word == t
     end
   end
 
- # puts "Topics: #{o.topics}"
- # puts "Keywords: #{o.keywords}"
- # puts counts
-
   key = ""
-  if sentence.length < 200
-    key = sentence
+  if review.length < 200
+    key = review
   else
-    key = sentence[0..200]
+    key = review[0..200]
   end
 
-  #puts key
   movie = GoogleAjax::Search.web(key)
-  title = movie[:results][0][:title]
+  title = Sanitize.fragment(movie[:results][0][:title])
 
   bf = BadFruit.new("6tuqnhbh49jqzngmyy78n8v3")
-  movies = bf.movies.search_by_name(title)
+  movies = bf.movies.search_by_name(title[0..15]) # Try to cut out irrelevant bits of string.
+
   cast = movies[0].full_cast
   reviews = movies[0].reviews
 
-  cast.each do |c|
-    puts c.name
-  end
+  return cast
 
+end
+
+def get_context_people(sentence, cast)
+  puts ("#"*15+" Sentence "+"#"*15).colorize(:blue)
+  puts sentence
+  names = [] # The cast members detected in this sentence.
+  cast.each do |c|
+    if sentence.include?(c.name)
+      names.push(c.name) if !names.include?(c.name)
+    end
+  end
+  print "Matches: ".colorize(:red)
+  names.each do |n|
+    print " #{n}".colorize(:yellow)
+  end
+  puts
 end
 
 s1 = "'The Lord of the Rings' is one of my favorite books, I have read it several times, and remember thinking the last time, about 3 years ago that if I made a film I'd want to make it of this, but wouldn't it be almost impossible. You can then imagine how strong my expectations were when I went to see the eagerly awaited first installment.
@@ -73,4 +87,13 @@ Quite frankly, I can't wait for the two other movies... In the meantime, I'll wa
 
 "
 
-get_scope(s2)
+cast = get_cast(s1)
+
+cast.each do |c|
+  puts c.name
+end
+
+paragraph(s1).segment.to_a.each do |sentence|
+  get_context_people(sentence, cast)
+end
+
