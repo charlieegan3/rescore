@@ -1,14 +1,10 @@
 require 'treat'
 require 'ots'
 require 'pry'
+require 'colorize'
 
 include Treat::Core::DSL
 # - - - - - - - - - - - - - - - - - - - - - - - - - - - -
-
-def dup_hash(ary)
-  ary.inject(Hash.new(0)) { |h,e| h[e] += 1; h }.select {
-    |k,v| v > 1 }.inject({}) { |r, e| r[e.first] = e.last; r }
-end
 
 sound = ['sound', 'music', 'surround', 'dolby', 'ears', 'audio', 'effects', 'sounds', 'score']
 vision = ['visuals', 'vision', 'screen', 'CGI', '3D','graphics', 'visual', 'eyes', 'spectacle', 'special', 'effects', 'beautiful', 'graphic']
@@ -17,37 +13,63 @@ plot = ['story', 'plot', 'narrative', 'characters', 'character']
 dialog = ['dialog', 'lines', 'speech', 'discussion', 'conversation', 'language']
 cast = ['acting', 'cast', 'performance', 'portrayal', 'depiction', 'characterization', 'impersonation']
 
-factors = [
-  sound,
-  vision,
-  editing,
-  plot,
-  dialog,
-  cast
-]
-
+print 'Reading From:'.colorize(:white).on_black.underline
 puts directory = '../reviews/movie'
 
 Dir.foreach(directory) do |item|
   next if item == '.' or item == '..'
   content = File.readlines("#{directory}/#{item}").last
-  if content.count('.') > 10
-    puts content
-    puts "--"
-    paragraph(content).segment.to_a.each do |sentence|
-      keywords = OTS.parse(sentence).keywords
-      factors.each do |factor|
-        union = keywords & factor
-        unless union.empty?
-          puts sentence
-          puts union.size
-          puts " -> #{factor.join(" ")}"
-          puts '-'*20
-        end
-      end
+  next if content.count('.') < 10
+  print 'Review:'.colorize(:white).on_black.underline
+  puts content
+  puts
+  paragraph(content).segment.to_a.each do |sentence|
+    keywords = OTS.parse(sentence).keywords
+
+    sound_union = sound & keywords
+    unless sound_union.empty?
+      print 'Sentence: '.colorize(:black).bold
+      puts sentence
+      print " - sound words => ".colorize(:blue)
+      puts "{#{sound_union.join(", ")}}"
     end
-    gets
-    system("clear")
+    vision_union = vision & keywords
+    unless vision_union.empty?
+      print 'Sentence: '.colorize(:black).bold
+      puts sentence
+      print " - vision words => ".colorize(:red)
+      puts "{#{vision_union.join(", ")}}"
+    end
+    editing_union = editing & keywords
+    unless editing_union.empty?
+      print 'Sentence: '.colorize(:black).bold
+      puts sentence
+      print " - editing words => ".colorize(:green)
+      puts "{#{editing_union.join(", ")}}"
+    end
+    plot_union = plot & keywords
+    unless plot_union.empty?
+      print 'Sentence: '.colorize(:black).bold
+      puts sentence
+      print " - plot words => ".colorize(:light_magenta)
+      puts "{#{plot_union.join(", ")}}"
+    end
+    dialog_union = dialog & keywords
+    unless dialog_union.empty?
+      print 'Sentence: '.colorize(:black).bold
+      puts sentence
+      print " - dialog words => ".colorize(:light_blue)
+      puts "{#{dialog_union.join(", ")}}"
+    end
+    cast_union = cast & keywords
+    unless cast_union.empty?
+      print 'Sentence: '.colorize(:black).bold
+      puts sentence
+      print " - cast words => ".colorize(:yellow)
+      puts "{#{cast_union.join(", ")}}"
+    end
   end
+  gets
+  system("clear")
 end
 
