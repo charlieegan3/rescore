@@ -68,25 +68,32 @@ Dir.foreach(directory) do |item|
   phrase_buffer = []
   paragraph(content).segment.each do |segment|
     clean = segment.to_s.split(/\W+/).map { |word| word.downcase }.reject {|word| word == ''}
+    next if clean.empty?
     pos = tgr.get_readable(clean.join(" ")).scan(/\/\w+/).map { |word| translations[word[1..10]].downcase }
     zipped = clean.zip(pos)
     for i in 0..zipped.size - 1
-      phrase_buffer << zipped[i][0]
-
-      next if phrase_buffer.size < 3
-
-      unless zipped[i+1].nil?
-        next if zipped[i+1][1] == 'noun'
-        next if zipped[i+1][1] == 'conjunction'
-      end
-
-      if zipped[i][1] == 'noun' || i == zipped.size - 1
-        phrases << phrase_buffer.join(" ")
-        phrase_buffer = []
+      current_state = phrase_buffer.map {|word| word[1]}.join
+      next_state = current_state + zipped[i][1]
+      if next_state.match(/(^(determiner)?(adverb)*(adjective)*noun$)/)
+        phrase_buffer << zipped[i]
+      elsif current_state.match(/(^(determiner)?(adverb)*(adjective)*noun$)/)
+        phrases << phrase_buffer
+        phrase_buffer = [zipped[i]]
+      elsif next_state.match(/(^(determiner)?(adverb)*(adjective)*$)/)
+        phrase_buffer << zipped[i]
+        next
+      else
+        phrase_buffer = [zipped[i]]
       end
     end
+    phrases << phrase_buffer if phrase_buffer.map {|word| word[1]}.join.match(/(^(determiner)?(adverb)*(adjective)*noun$)/)
+    phrase_buffer = []
   end
+  phrases.select! {|x| x.size > 2}
+  phrases = phrases.map {|x| x.map {|y| y[0]}.join(" ") }
+  phrases = phrases.sort_by {|x| x.length}.reverse
   puts phrases
+  phrases = []
 
   gets
   system('clear')
