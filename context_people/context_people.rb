@@ -6,10 +6,12 @@ require 'ots'
 require 'treat'
 require 'googleajax'
 require 'nokogiri'
-require 'badfruit'
+#require 'badfruit'
 require 'pry'
 require 'sanitize'
 require 'colorize'
+require 'unidecoder'
+require_relative 'BadFruit/lib/badfruit.rb'
 include Treat::Core::DSL
 
 GoogleAjax.referrer = "hey"
@@ -38,21 +40,26 @@ def get_cast(review)
 
   begin
     bf = BadFruit.new("6tuqnhbh49jqzngmyy78n8v3")
-    movies = bf.movies.search_by_name(title[0..15]) # Try to cut out irrelevant bits of string.
-    cast = movies[0].full_cast
-    reviews = movies[0].reviews
+    query = bf.movies.search_by_name(title[0..15]) # Try to cut out irrelevant bits of string.
+
+    cast = query[0].full_cast
+    director = query[0].director
+    #reviews = query[0].reviews
+
   rescue NoMethodError
     raise "Couldn't find any movies with title: #{title}"
   end
 
-  return cast
+  return {:cast => cast, :director => director}
 
 end
 
-def get_context_people(sentence, cast, prev_name, actors_only)
+def get_context_people(sentence, cast, director, prev_name, actors_only)
   puts ("#"*15+" Sentence "+"#"*15).colorize(:blue)
   puts sentence
+  sentence = sentence.to_ascii # Get rid of accented letters etc.
   names = [] # The cast members detected in this sentence.
+  
   cast.each do |c|
     if sentence.include?(c.name)
       names.push(c.name) if !names.include?(c.name)
@@ -64,6 +71,10 @@ def get_context_people(sentence, cast, prev_name, actors_only)
         names.push(ch) if !names.include?(ch) && actors_only == false
       end
     end
+  end
+
+  if sentence.include?(director.name)
+    names.push(director.name) if !names.include?(director.name)
   end
 
   if names.empty?
@@ -113,16 +124,24 @@ I'm particularly gratified by the casting of Viggo Mortenson as Aragorn which wa
 A stellar cast giving some of their best performances, visuals that deliver beyond what I imagined, a perfect mix of humor, passion & tragedy, and a feeling of grandeur, scope & impending doom. Perhaps as an ensemble piece with so many characters & the inability to concentrate on any one, it can't be measured against some of the classic character study films, but even the casual moviegoer can grasp the ideas & not get lost As far as I'm concerned, it's one of the greatest films of all time.
 "
 
+s3 = "
+Truly epic in scale! Whilst 'Gravity' falls short against films like '2001: A Space Odyssey', it is a tense and visually stunning thriller from Alfonso Cuarón. Cuarón is one of my all-time favourite directors, and this CGI-heavy project just boasts skill and ingenuity from the director, DOP and VFX artist. The critics stated that you would be gripping to the edge of your seats, this is true in every aspect, the film is full of intense and thriller situations with amazing performances from Sandra Bullock and George Clooney. Just shy from winning Best Picture over '12 Years a Slave', 'Gravity' left the Oscars with 7 Academy Awards to its name, and it deserved each and every one of them. A masterpiece that allows the viewer to become immersed within the scene to often thrilling effect.
+"
 
-review = s2
-cast = get_cast(review)
+review = s3
+people = get_cast(review)
 
-cast.each do |c|
+puts "CAST".colorize(:red)
+people[:cast].each do |c|
   puts c.name
 end
 
+puts "DIRECTOR".colorize(:red)
+puts people[:director].name
+
+
 result = nil
 paragraph(review).segment.to_a.each do |sentence|
-  result = get_context_people(sentence, cast, result, true)
+  result = get_context_people(sentence, people[:cast], people[:director], result, true)
 end
 
