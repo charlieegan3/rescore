@@ -1,3 +1,0 @@
-2.0
-0.8571428571428571
-Buyer's beware  - this will not run on 64-bit Windows. I wasted my 50 bucks. I now have to setup a new 32-bit partition and try again.
