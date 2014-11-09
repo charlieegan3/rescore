@@ -1,3 +1,0 @@
-5.0
-0.9473684210526315
-Bought this game recently so didn't really have the chance to play the entire game; but I wanted to confirm that the DRM has an option to "FORCE OFFLINE" play; thus removing the "MUST BE ONLINE" DRM.  Also, "ONLINE SAVED GAMES" is now optional as you can save games on your computer.  You still have to "activate" the game online [only once], but other than that the DRMs are gone [as long as you click the "Offline Mode" and "Uncheck Online saves"; I disconnected my internet from my laptop to verify and AC:II still ran.There was a recent update to "UPlay" [November/11, bundled software with AC:II] that removes the online requirement portion of the DRM.If you were heldback by the DRM, no need to worry anymore!!  AC:II is an awesome game :D
