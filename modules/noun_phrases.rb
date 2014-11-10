@@ -59,6 +59,11 @@ module NounPhrases
       pos = @tagger.get_readable(cleaned_sentence.join(" ")).scan(/\/\w+/).map { |word| TRANSLATIONS[word[1..10]].downcase }
       zipped = cleaned_sentence.zip(pos)
 
+      if zipped.last[1].nil?
+        puts 'There was an error with the sentence splitter in the noun_phrase module'
+        return nil
+      end
+
       phrases = []
       phrase_buffer = []
       for i in 0..zipped.size - 1
