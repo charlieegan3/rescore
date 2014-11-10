@@ -1,3 +1,6 @@
+#WARNING, there is a conflict in sentiment_lib and engtagger that I'm silencing here
+$VERBOSE = nil
+
 require_relative 'splitter'
 require_relative 'sentiment'
 require_relative 'context'
