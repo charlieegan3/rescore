@@ -1,5 +1,6 @@
 require_relative 'splitter'
 require_relative 'sentiment'
+require_relative 'context'
 
 class Review
   attr_accessor :text, :sentences
@@ -29,6 +30,11 @@ class Review
     @sentences.map { |sentence| sentence[:sentiment] = sentiment_analyzer.get_sentiment(sentence[:clean_text]) }
   end
 
+  def apply_context_tags
+    @sentences.map { |sentence| sentence[:context_tags] = Context.tag_sentence(sentence[:clean_text]) }
+  end
+
+  # UNIMPLEMENTED
   def guess_film_name_from_text
     @film_name = MODULENAME.get_title(review)
   end
@@ -41,9 +47,6 @@ class Review
     @sentences.map { |sentence| sentence.apply_factor_tags }
   end
 
-  def apply_factor_tags
-    @sentences.map { |sentence| sentence.apply_factor_tags }
-  end
 
   def to_hash
     {text: @text[0..25], sentences: @sentences.map { |sentence| sentence.to_hash } }

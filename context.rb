@@ -14,18 +14,15 @@ module Context
     context & keywords
   end
 
-  def Context.tag_sentences(cleaned_sentences)
-    tags_for_sentences = []
-    cleaned_sentences.each do |sentence|
-      sentence_tags = {}
-      keywords = OTS.parse(sentence).keywords
+  def Context.tag_sentence(sentence)
+    sentence_tags = {}
+    keywords = OTS.parse(sentence).keywords
 
-      CONTEXTS.each do |k,v|
-        t = tags(keywords, v)
-        sentence_tags[k] = t unless t.empty?
-      end
-      tags_for_sentences << sentence_tags
+    CONTEXTS.each do |k,v|
+      t = tags(keywords, v)
+      sentence_tags[k] = t unless t.empty?
     end
-    tags_for_sentences
+
+    sentence_tags
   end
 end
