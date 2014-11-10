@@ -1,3 +1,9 @@
+require 'ots'
+require 'googleajax'
+require 'sanitize'
+require 'unidecoder'
+require_relative 'BadFruit/lib/badfruit.rb'
+
 module MovieInfo
 
   # | ------------------------------------------------------------------------
@@ -6,18 +12,6 @@ module MovieInfo
   # | get_title() finds the title of a film, given a review.
   # | get_people() finds the cast list and director for a film, given a title.
   # | ------------------------------------------------------------------------
-
-  require 'sentimental'
-  require 'ots'
-  require 'treat'
-  require 'googleajax'
-  require 'nokogiri'
-  require 'pry'
-  require 'sanitize'
-  require 'colorize'
-  require 'unidecoder'
-  require_relative 'BadFruit/lib/badfruit.rb'
-  include Treat::Core::DSL
 
   GoogleAjax.referrer = "hey"
 
@@ -56,7 +50,6 @@ module MovieInfo
       #reviews = query[0].reviews
 
     rescue NoMethodError
-      puts "No movie found for: ".colorize(:red) + title.colorize(:blue)
       return {:cast => [], :director => []}
     end
 
