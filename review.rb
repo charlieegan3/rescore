@@ -5,6 +5,7 @@ require_relative 'modules/splitter'
 require_relative 'modules/sentiment'
 require_relative 'modules/context'
 require_relative 'modules/noun_phrases'
+require_relative 'modules/movie_info'
 
 class Review
   attr_accessor :text, :sentences
