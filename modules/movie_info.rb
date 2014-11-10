@@ -36,8 +36,8 @@ module MovieInfo
 
     search = GoogleAjax::Search.web(key)
     p search
-    unless search.nil?
-      Sanitize.fragment(search[:results][0][:title])
+    unless search[:results].empty?
+      Sanitize.fragment(search[:results][0][:title]).gsub('Customer Reviews: ', '')
     else
       nil
     end
