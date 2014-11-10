@@ -19,7 +19,10 @@ class Review
     extract_sentences
     include_cleaned_sentences
     evaluate_sentiment
-    apply_factor_tags
+    apply_context_tags
+    apply_noun_phrases
+    guess_film_name_from_text
+    populate_related_people
     apply_people_tags
   end
 
@@ -59,9 +62,5 @@ class Review
       people = People.tag_sentence(sentence[:text], @related_people[:cast], @related_people[:director], previous_name, true)
       sentence[:people_tags], previous_name = people
     end
-  end
-
-  def to_hash
-    {text: @text[0..25], sentences: @sentences.map { |sentence| sentence.to_hash } }
   end
 end
