@@ -18,6 +18,10 @@ class Review
     @sentences = Splitter.punkt_extract_sentences(text)
   end
 
+  def include_cleaned_sentences
+    @sentences.map { |sentence| sentence[:clean_text] = sentence[:text].downcase.split(/\W*\s+\W*/).join(" ") }
+  end
+
   def guess_film_name_from_text
     @film_name = MODULENAME.get_title(review)
   end
@@ -28,10 +32,6 @@ class Review
 
   def apply_people_tags
     @sentences.map { |sentence| sentence.apply_factor_tags }
-  end
-
-  def include_cleaned_sentences
-    @sentences.map { |sentence| sentence.set_cleaned_text }
   end
 
   def evaluate_sentiment
