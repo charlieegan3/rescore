@@ -6,6 +6,7 @@ require_relative 'modules/sentiment'
 require_relative 'modules/context'
 require_relative 'modules/noun_phrases'
 require_relative 'modules/movie_info'
+require_relative 'modules/people'
 
 class Review
   attr_accessor :text, :sentences, :film_name, :related_people
@@ -52,13 +53,15 @@ class Review
     @related_people = MovieInfo.get_people(@film_name)
   end
 
-  # UNIMPLEMENTED
   def apply_people_tags
-    @sentences.map { |sentence| sentence.apply_factor_tags }
+    previous_name = nil
+    @sentences.each do |sentence|
+      people = People.tag_sentence(sentence[:text], @related_people[:cast], @related_people[:director], previous_name, true)
+      sentence[:people_tags], previous_name = people
+    end
   end
 
   def to_hash
     {text: @text[0..25], sentences: @sentences.map { |sentence| sentence.to_hash } }
   end
 end
-
