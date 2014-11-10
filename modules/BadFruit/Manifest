@@ -1,0 +1,17 @@
+LICENSE
+Manifest
+README.md
+Rakefile
+features/client_creation.feature
+features/client_query.feature
+features/client_reviews.feature
+features/step_definitions/step_definitions.rb
+lib/badfruit.rb
+lib/badfruit/Actors/actor.rb
+lib/badfruit/Lists/lists.rb
+lib/badfruit/Movies/movie.rb
+lib/badfruit/Movies/movies.rb
+lib/badfruit/Posters/posters.rb
+lib/badfruit/Reviews/review.rb
+lib/badfruit/Scores/scores.rb
+lib/badfruit/base.rb
