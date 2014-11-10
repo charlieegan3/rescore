@@ -1,10 +1,10 @@
 #WARNING, there is a conflict in sentiment_lib and engtagger that I'm silencing here
 $VERBOSE = nil
 
-require_relative 'splitter'
-require_relative 'sentiment'
-require_relative 'context'
-require_relative 'noun_phrases'
+require_relative 'modules/splitter'
+require_relative 'modules/sentiment'
+require_relative 'modules/context'
+require_relative 'modules/noun_phrases'
 
 class Review
   attr_accessor :text, :sentences
