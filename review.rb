@@ -31,7 +31,7 @@ class Review
   end
 
   def include_cleaned_sentences
-    @sentences.map { |sentence| sentence[:clean_text] = sentence[:text].downcase.split(/\W*\s+\W*/).join(" ") }
+    @sentences.map { |sentence| sentence[:clean_text] = sentence[:text].downcase.split(/\W*\s+\W*/).join(" ").strip }
   end
 
   def evaluate_sentiment
