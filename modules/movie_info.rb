@@ -35,9 +35,12 @@ module MovieInfo
     end
 
     search = GoogleAjax::Search.web(key)
-    title = Sanitize.fragment(search[:results][0][:title])
-
-    return title
+    p search
+    unless search.nil?
+      Sanitize.fragment(search[:results][0][:title])
+    else
+      nil
+    end
   end
 
   def MovieInfo.get_people(title)
