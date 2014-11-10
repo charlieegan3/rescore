@@ -8,7 +8,7 @@ require_relative 'modules/noun_phrases'
 require_relative 'modules/movie_info'
 
 class Review
-  attr_accessor :text, :sentences
+  attr_accessor :text, :sentences, :film_name
   def initialize(text)
     @text = text
     @sentences = []
@@ -44,11 +44,11 @@ class Review
     @sentences.map { |sentence| sentence[:noun_phrases] = extracter.extract_noun_phrases(sentence[:clean_text]) }
   end
 
-  # UNIMPLEMENTED
   def guess_film_name_from_text
-    @film_name = MODULENAME.get_title(review)
+    @film_name = MovieInfo.get_title(text)
   end
 
+  # UNIMPLEMENTED
   def populate_related_people
     @related_people = [{name: 'charlie', role: 'gay frodo' || 'director'}]
   end
