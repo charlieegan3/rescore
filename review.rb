@@ -1,4 +1,6 @@
 require_relative 'splitter'
+require_relative 'sentiment'
+
 class Review
   attr_accessor :text, :sentences
   def initialize(text)
@@ -22,6 +24,11 @@ class Review
     @sentences.map { |sentence| sentence[:clean_text] = sentence[:text].downcase.split(/\W*\s+\W*/).join(" ") }
   end
 
+  def evaluate_sentiment
+    sentiment_analyzer = Sentiment::SentimentAnalyzer.new
+    @sentences.map { |sentence| sentence[:sentiment] = sentiment_analyzer.get_sentiment(sentence[:clean_text]) }
+  end
+
   def guess_film_name_from_text
     @film_name = MODULENAME.get_title(review)
   end
@@ -32,10 +39,6 @@ class Review
 
   def apply_people_tags
     @sentences.map { |sentence| sentence.apply_factor_tags }
-  end
-
-  def evaluate_sentiment
-    @sentences.map { |sentence| sentence.evaluate_sentiment }
   end
 
   def apply_factor_tags
