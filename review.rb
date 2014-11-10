@@ -1,3 +1,4 @@
+require_relative 'splitter'
 class Review
   attr_accessor :text, :sentences
   def initialize(text)
@@ -13,6 +14,10 @@ class Review
     apply_people_tags
   end
 
+  def extract_sentences
+    @sentences = Splitter.punkt_extract_sentences(text)
+  end
+
   def guess_film_name_from_text
     @film_name = MODULENAME.get_title(review)
   end
@@ -23,10 +28,6 @@ class Review
 
   def apply_people_tags
     @sentences.map { |sentence| sentence.apply_factor_tags }
-  end
-
-  def extract_sentences
-    @text.split('.').each_with_index {|v, i| @sentences << Sentence.new(i, v)}
   end
 
   def include_cleaned_sentences
