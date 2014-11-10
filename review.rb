@@ -8,7 +8,7 @@ require_relative 'modules/noun_phrases'
 require_relative 'modules/movie_info'
 
 class Review
-  attr_accessor :text, :sentences, :film_name
+  attr_accessor :text, :sentences, :film_name, :related_people
   def initialize(text)
     @text = text
     @sentences = []
@@ -48,17 +48,17 @@ class Review
     @film_name = MovieInfo.get_title(text)
   end
 
-  # UNIMPLEMENTED
   def populate_related_people
-    @related_people = [{name: 'charlie', role: 'gay frodo' || 'director'}]
+    @related_people = MovieInfo.get_people(@film_name)
   end
 
+  # UNIMPLEMENTED
   def apply_people_tags
     @sentences.map { |sentence| sentence.apply_factor_tags }
   end
-
 
   def to_hash
     {text: @text[0..25], sentences: @sentences.map { |sentence| sentence.to_hash } }
   end
 end
+
