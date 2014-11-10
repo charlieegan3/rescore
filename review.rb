@@ -1,6 +1,7 @@
 require_relative 'splitter'
 require_relative 'sentiment'
 require_relative 'context'
+require_relative 'noun_phrases'
 
 class Review
   attr_accessor :text, :sentences
@@ -32,6 +33,11 @@ class Review
 
   def apply_context_tags
     @sentences.map { |sentence| sentence[:context_tags] = Context.tag_sentence(sentence[:clean_text]) }
+  end
+
+  def apply_noun_phrases
+    extracter = NounPhrases::Extractor.new
+    @sentences.map { |sentence| sentence[:noun_phrases] = extracter.extract_noun_phrases(sentence[:clean_text]) }
   end
 
   # UNIMPLEMENTED
