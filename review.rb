@@ -53,10 +53,18 @@ class Review
   end
 
   def populate_related_people
+    if @film_name.nil?
+      puts 'A film name was not found'
+      return
+    end
     @related_people = MovieInfo.get_people(@film_name)
   end
 
   def apply_people_tags
+    if @related_people.nil?
+      puts 'No related people have been assigned'
+      return
+    end
     previous_name = nil
     @sentences.each do |sentence|
       people = People.tag_sentence(sentence[:text], @related_people[:cast], @related_people[:director], previous_name, true)
