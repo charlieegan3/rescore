@@ -1,6 +1,7 @@
 #WARNING, there is a conflict in sentiment_lib and engtagger that I'm silencing here
 $VERBOSE = nil
 
+require 'pry'
 require_relative 'modules/splitter'
 require_relative 'modules/sentiment'
 require_relative 'modules/context'
