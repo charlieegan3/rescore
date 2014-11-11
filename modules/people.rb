@@ -6,8 +6,6 @@ module People
     sentence = sentence.to_ascii # Get rid of accented letters etc.
     names = [] # The cast members detected in this sentence.
 
-    binding.pry
-
     if !cast.empty?
       cast.each do |c|
         if sentence.include?(c.name)
@@ -23,7 +21,7 @@ module People
       end
     end
 
-    if !director.empty?
+    if director
       if sentence.include?(director.name)
         names.push(director.name) if !names.include?(director.name)
       end

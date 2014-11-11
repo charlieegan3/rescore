@@ -8,6 +8,7 @@ require_relative 'modules/context'
 require_relative 'modules/noun_phrases'
 require_relative 'modules/movie_info'
 require_relative 'modules/people'
+require_relative 'modules/emphasis'
 
 class Review
   attr_accessor :text, :sentences, :film_name, :related_people
@@ -25,6 +26,7 @@ class Review
     guess_film_name_from_text
     populate_related_people
     apply_people_tags
+    get_emphasis
   end
 
   def extract_sentences
@@ -71,5 +73,9 @@ class Review
       people = People.tag_sentence(sentence[:text], @related_people[:cast], @related_people[:director], previous_name, true)
       sentence[:people_tags], previous_name = people
     end
+  end
+
+  def get_emphasis
+    @sentences.map{ |sentence| sentence[:emphasis] = Emphasis.score(sentence[:clean_text]) }
   end
 end
