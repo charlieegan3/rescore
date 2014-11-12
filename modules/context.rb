@@ -11,18 +11,46 @@ module Context
   }
 
   def Context.tags(keywords, context)
-    context & keywords
+    return context & keywords
+  end
+
+  def Context.get_context_indexes(sentence, key)
+    indexes = []
+    original = sentence.dup
+    while 1
+      if sentence.index(key) != nil
+        indexes.push(sentence.index(key) + (original.length - sentence.length))
+        sentence[sentence.index(key)..sentence.index(key) + (key.length-1)] = ''
+      else
+        break
+      end
+    end
+      
+    return indexes
   end
 
   def Context.tag_sentence(sentence)
     sentence_tags = {}
+    sentence_tag_indexes = {}
     keywords = OTS.parse(sentence).keywords
 
     CONTEXTS.each do |k,v|
       t = tags(keywords, v)
       sentence_tags[k] = t unless t.empty?
+
+      if !t.empty?
+        t.each do |x|
+          sentence_tag_indexes[x] = []
+        end
+      end
     end
 
-    sentence_tags
+    sentence_tags.each do |k, v|
+      v.each do |word|
+        sentence_tag_indexes[word] = get_context_indexes(sentence, word)
+      end
+    end
+
+    return sentence_tags, sentence_tag_indexes
   end
 end

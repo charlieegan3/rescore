@@ -43,7 +43,7 @@ class Review
   end
 
   def apply_context_tags
-    @sentences.map { |sentence| sentence[:context_tags] = Context.tag_sentence(sentence[:clean_text]) }
+    @sentences.map { |sentence| sentence[:context_tags], sentence[:context_indexes] = Context.tag_sentence(sentence[:clean_text]) }
   end
 
   def apply_noun_phrases
