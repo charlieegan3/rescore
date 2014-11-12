@@ -71,11 +71,11 @@ class Review
     previous_name = nil
     @sentences.each do |sentence|
       people = People.tag_sentence(sentence[:text], @related_people[:cast], @related_people[:director], previous_name, true)
-      sentence[:people_tags], previous_name = people
+      sentence[:people_tags], previous_name, sentence[:people_indexes] = people
     end
   end
 
   def get_emphasis
-    @sentences.map{ |sentence| sentence[:emphasis] = Emphasis.score(sentence[:clean_text]) }
+    @sentences.map{ |sentence| sentence[:emphasis] = Emphasis.score(sentence[:text]) }
   end
 end
