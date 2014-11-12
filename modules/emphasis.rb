@@ -20,6 +20,8 @@ module Emphasis
       emphasis_counts += 1 if word.include?('more')
       emphasis_counts += 1 if word.include?('truly')
       emphasis_counts += 1 if word.include?('such')
+      emphasis_counts += 1 if word.include?('total')
+      emphasis_counts += 1 if word.include?('totally')
     end
     return (emphasis_counts.to_f / words.size).round(2)
   end
