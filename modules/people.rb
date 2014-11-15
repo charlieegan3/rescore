@@ -1,3 +1,5 @@
+require_relative 'utils'
+
 module People
   def People.tag_sentence(sentence, cast, director, prev_name, actors_only)
 
@@ -20,14 +22,14 @@ module People
     if !cast.empty?
       cast.each do |c|
         if sentence.include?(c.name)
-          people_indexes[c.name] = get_indexes(sentence, c.name)
+          people_indexes[c.name] = Utils.get_indexes(sentence, c.name)
           names.push(c.name) if !names.include?(c.name)
         end
   
         c.characters.each do |ch|
           if sentence.include?(ch)
-            people_indexes[c.name] = get_indexes(sentence, ch) if actors_only == true
-            people_indexes[ch.name] = get_indexes(sentence, ch.name) if actors_only == false
+            people_indexes[c.name] = Utils.get_indexes(sentence, ch) if actors_only == true
+            people_indexes[ch.name] = Utils.get_indexes(sentence, ch.name) if actors_only == false
             names.push(c.name) if !names.include?(c.name) && actors_only == true
             names.push(ch) if !names.include?(ch) && actors_only == false
           end
@@ -55,18 +57,4 @@ module People
     return names, prev_name, people_indexes
   end
 
-  def People.get_indexes(sentence, key) # Tag the indexes of each instance of a word in a sentence.
-      indexes = []
-      original = sentence.dup
-      while 1
-        if sentence.index(key) != nil
-          indexes.push(sentence.index(key) + (original.length - sentence.length))
-          sentence[sentence.index(key)..sentence.index(key) + (key.length-1)] = ''
-        else
-          break
-        end
-      end
-      
-      return indexes
-  end
 end

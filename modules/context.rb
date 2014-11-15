@@ -1,4 +1,5 @@
 require 'ots'
+require_relative 'utils'
 
 module Context
   CONTEXTS = {
@@ -12,21 +13,6 @@ module Context
 
   def Context.tags(keywords, context)
     return context & keywords
-  end
-
-  def Context.get_context_indexes(sentence, key)
-    indexes = []
-    original = sentence.dup
-    while 1
-      if sentence.index(key) != nil
-        indexes.push(sentence.index(key) + (original.length - sentence.length))
-        sentence[sentence.index(key)..sentence.index(key) + (key.length-1)] = ''
-      else
-        break
-      end
-    end
-      
-    return indexes
   end
 
   def Context.tag_sentence(sentence)
@@ -47,7 +33,7 @@ module Context
 
     sentence_tags.each do |k, v|
       v.each do |word|
-        sentence_tag_indexes[word] = get_context_indexes(sentence, word)
+        sentence_tag_indexes[word] = Utils.get_indexes(sentence, word)
       end
     end
 
