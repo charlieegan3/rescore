@@ -53,23 +53,34 @@ if ARGV[0] == "time"
     times_get_emphasis.push(times[:extract_sentences])
   end
 
-  puts "> Times taken for extract_sentences (average: #{times_extract_sentences.inject(:+) / times_extract_sentences.length}): \n #{times_extract_sentences}".colorize(:blue)
+  puts "\n\n"
 
-  puts "> Times taken for include_cleaned_sentences (average: #{times_include_cleaned_sentences.inject(:+) / times_include_cleaned_sentences.length}): \n #{times_include_cleaned_sentences}".colorize(:blue)
+  puts "> Times taken for extract_sentences (average: #{times_extract_sentences.inject(:+) / times_extract_sentences.length}):".colorize(:blue)
+  puts "#{times_extract_sentences}"
 
-  puts "> Times taken for evaluate_sentiment (average: #{times_evaluate_sentiment.inject(:+) / times_evaluate_sentiment.length}): \n #{times_evaluate_sentiment}".colorize(:blue)
+  puts "> Times taken for times_include_cleaned_sentences (average: #{times_include_cleaned_sentences.inject(:+) / times_include_cleaned_sentences.length}):".colorize(:blue)
+  puts "#{times_include_cleaned_sentences}"
 
-  puts "> Times taken for apply_context_tags (average: #{times_apply_context_tags.inject(:+) / times_apply_context_tags.length}): \n #{times_apply_context_tags}".colorize(:blue)
+  puts "> Times taken for evaluate_sentiment (average: #{times_evaluate_sentiment.inject(:+) / times_evaluate_sentiment.length}):".colorize(:blue)
+  puts "#{times_evaluate_sentiment}"
 
-  puts "> Times taken for apply_noun_phrases (average: #{times_apply_noun_phrases.inject(:+) / times_apply_noun_phrases.length}): \n #{times_apply_noun_phrases}".colorize(:blue)
+  puts "> Times taken for apply_context_tags (average: #{times_apply_context_tags.inject(:+) / times_apply_context_tags.length}):".colorize(:blue)
+  puts "#{times_apply_context_tags}"
 
-  puts "> Times taken for guess_film_name_from_text (average: #{times_guess_film_name_from_text.inject(:+) / times_guess_film_name_from_text.length}): \n #{times_guess_film_name_from_text}".colorize(:blue)
+  puts "> Times taken for apply_noun_phrases (average: #{times_apply_noun_phrases.inject(:+) / times_apply_noun_phrases.length}):".colorize(:blue)
+  puts "#{times_apply_noun_phrases}"
 
-  puts "> Times taken for populate_related_people (average: #{times_populate_related_people.inject(:+) / times_populate_related_people.length}): \n #{times_populate_related_people}".colorize(:blue)
+  puts "> Times taken for guess_film_name_from_text (average: #{times_guess_film_name_from_text.inject(:+) / times_guess_film_name_from_text.length}):".colorize(:blue)
+  puts "#{times_guess_film_name_from_text}"
 
-  puts "> Times taken for apply_people_tags (average: #{times_apply_people_tags.inject(:+) / times_apply_people_tags.length}): \n #{times_apply_people_tags}".colorize(:blue)
+  puts "> Times taken for populate_related_people (average: #{times_populate_related_people.inject(:+) / times_populate_related_people.length}):".colorize(:blue)
+  puts "#{times_populate_related_people}"
 
-  puts "> Times taken for get_emphasis (average: #{times_get_emphasis.inject(:+) / times_get_emphasis.length}): \n #{times_get_emphasis}".colorize(:blue)
+  puts "> Times taken for apply_people_tags (average: #{times_apply_people_tags.inject(:+) / times_apply_people_tags.length}):".colorize(:blue)
+  puts "#{times_apply_people_tags}"
+
+  puts "> Times taken for get_emphasis (average: #{times_get_emphasis.inject(:+) / times_get_emphasis.length}):".colorize(:blue)
+  puts "#{times_get_emphasis}"
 
   puts "\n\n > TOTAL TIME FOR #{ARGV[1]} reviews: #{Time.now - start_time}".colorize(:blue)
 
