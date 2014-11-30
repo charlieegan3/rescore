@@ -14,7 +14,7 @@ module People
         people_indexes[c.name] = []
       end
     end
-    if director
+    if director.class.method_defined?(name)
       people_indexes[director.name] = []
     end
 
@@ -37,7 +37,7 @@ module People
       end
     end
 
-    if director
+    if director.class.method_defined?(name)
       if sentence.include?(director.name)
         names.push(director.name) if !names.include?(director.name)
       end
