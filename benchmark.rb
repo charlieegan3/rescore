@@ -40,6 +40,8 @@ puts directory = 'reviews/movie'
       count += 1
     end
 
+    puts "Analysing review #{count}"
+
     review = Review.new(content)
     times = review.time_all
 
@@ -77,33 +79,16 @@ puts directory = 'reviews/movie'
   end
 
   else
-    puts "> Times taken for".colorize(:blue) + " extract_sentences".colorize(:green) + " (average: #{times_extract_sentences.inject(:+) / times_extract_sentences.length}):".colorize(:blue)
-    puts "#{times_extract_sentences}"
-
-    puts "> Times taken for".colorize(:blue) + " times_include_cleaned_sentences".colorize(:green) + " (average: #{times_include_cleaned_sentences.inject(:+) / times_include_cleaned_sentences.length}):".colorize(:blue)
-    puts "#{times_include_cleaned_sentences}"
-
-    puts "> Times taken for".colorize(:blue) + " evaluate_sentiment".colorize(:green) + " (average: #{times_evaluate_sentiment.inject(:+) / times_evaluate_sentiment.length}):".colorize(:blue)
-    puts "#{times_evaluate_sentiment}"
-
-    puts "> Times taken for".colorize(:blue) + " apply_context_tags".colorize(:green) + " (average: #{times_apply_context_tags.inject(:+) / times_apply_context_tags.length}):".colorize(:blue)
-    puts "#{times_apply_context_tags}"
-
-    puts "> Times taken for".colorize(:blue) + " apply_noun_phrases".colorize(:green) + " (average: #{times_apply_noun_phrases.inject(:+) / times_apply_noun_phrases.length}):".colorize(:blue)
-    puts "#{times_apply_noun_phrases}"
-
-    puts "> Times taken for".colorize(:blue) + " guess_film_name_from_text".colorize(:green) + " (average: #{times_guess_film_name_from_text.inject(:+) / times_guess_film_name_from_text.length}):".colorize(:blue)
-    puts "#{times_guess_film_name_from_text}"
-
-    puts "> Times taken for".colorize(:blue) + " populate_related_people".colorize(:green) + " (average: #{times_populate_related_people.inject(:+) / times_populate_related_people.length}):".colorize(:blue)
-    puts "#{times_populate_related_people}"
-
-    puts "> Times taken for".colorize(:blue) + " apply_people_tags".colorize(:green) + " (average: #{times_apply_people_tags.inject(:+) / times_apply_people_tags.length}):".colorize(:blue)
-    puts "#{times_apply_people_tags}"
-
-    puts "> Times taken for".colorize(:blue) + " get_emphasis".colorize(:green) + " (average: #{times_get_emphasis.inject(:+) / times_get_emphasis.length}):".colorize(:blue)
-    puts "#{times_get_emphasis}"
+    puts "Average running times:".colorize(:blue)
+    puts "> extract_sentences".colorize(:green) + ": #{times_extract_sentences.inject(:+) / times_extract_sentences.length}:".colorize(:blue)
+    puts "> include_cleaned_sentences".colorize(:green) + ": #{times_include_cleaned_sentences.inject(:+) / times_include_cleaned_sentences.length}:".colorize(:blue)
+    puts "> evaluate_sentiment".colorize(:green) + ": #{times_evaluate_sentiment.inject(:+) / times_evaluate_sentiment.length}:".colorize(:blue)
+    puts "> apply_context_tags".colorize(:green) + ": #{times_apply_context_tags.inject(:+) / times_apply_context_tags.length}:".colorize(:blue)
+    puts "> apply_noun_phrases".colorize(:green) + ": #{times_apply_noun_phrases.inject(:+) / times_apply_noun_phrases.length}:".colorize(:blue)
+    puts "> guess_film_name_from_text".colorize(:green) + ": #{times_guess_film_name_from_text.inject(:+) / times_guess_film_name_from_text.length}:".colorize(:blue)
+    puts "> populate_related_people".colorize(:green) + ": #{times_populate_related_people.inject(:+) / times_populate_related_people.length}:".colorize(:blue)
+    puts "> apply_people_tags".colorize(:green) + ": #{times_apply_people_tags.inject(:+) / times_apply_people_tags.length}:".colorize(:blue)
+    puts "> get_emphasis".colorize(:green) + ": #{times_get_emphasis.inject(:+) / times_get_emphasis.length}:".colorize(:blue)
   end
   
   puts "\n\n > TOTAL TIME FOR #{ARGV[0]} reviews: #{Time.now - start_time}".colorize(:blue)
-
