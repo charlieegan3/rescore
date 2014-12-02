@@ -60,7 +60,7 @@ module NounPhrases
       zipped = cleaned_sentence.zip(pos)
 
       if zipped.last[1].nil?
-        puts 'There was an error with the sentence splitter in the noun_phrase module'
+        #puts 'There was an error with the sentence splitter in the noun_phrase module'
         return nil
       end
 

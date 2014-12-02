@@ -121,7 +121,7 @@ class Review
 
   def populate_related_people
     if @film_name.nil?
-      puts 'A film name was not found'
+      #puts 'A film name was not found'
       return
     end
     @related_people = MovieInfo.get_people(@film_name)
@@ -129,7 +129,7 @@ class Review
 
   def apply_people_tags
     if @related_people.nil?
-      puts 'No related people have been assigned'
+      #puts 'No related people have been assigned'
       return
     end
     previous_name = nil
