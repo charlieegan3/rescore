@@ -6,11 +6,11 @@ require_relative 'review'
 print 'Reading From:'.colorize(:white).on_black.underline
 puts directory = 'reviews/movie'
 
-if ARGV[0] == "time"
+
   begin
-  Integer(ARGV[1])
+  Integer(ARGV[0])
   rescue
-    puts "Enter no. of reviews to parse as second argument.".colorize(:red)
+    puts "Enter no. of reviews to parse as first argument.".colorize(:red)
     exit
   end
 
@@ -34,7 +34,7 @@ if ARGV[0] == "time"
     content = File.readlines("#{directory}/#{item}").last
     next if content.count('.') < 10
   
-    if count >= ARGV[1].to_i
+    if count >= ARGV[0].to_i
       break
     else
       count += 1
@@ -43,7 +43,7 @@ if ARGV[0] == "time"
     review = Review.new(content)
     times = review.time_all
 
-    if ARGV[2] == "csv"
+    if ARGV[1] == "csv"
 
       all_times.push([times[:extract_sentences],
         times[:include_cleaned_sentences],
@@ -69,9 +69,9 @@ if ARGV[0] == "time"
 
   puts "\n\n"
 
-  if ARGV[2] == "csv"
+  if ARGV[1] == "csv"
 
-  puts "Average time taken for each module, over #{ARGV[1]} reviews: ".colorize(:blue)
+  puts "Average time taken for each module, over #{ARGV[0]} reviews: ".colorize(:blue)
   all_times.each do |a|
     puts a.join(',')
   end
@@ -105,31 +105,5 @@ if ARGV[0] == "time"
     puts "#{times_get_emphasis}"
   end
   
-  puts "\n\n > TOTAL TIME FOR #{ARGV[1]} reviews: #{Time.now - start_time}".colorize(:blue)
+  puts "\n\n > TOTAL TIME FOR #{ARGV[0]} reviews: #{Time.now - start_time}".colorize(:blue)
 
-elsif ARGV[0] == "step"
-  Dir.foreach(directory) do |item|
-    next if item == '.' or item == '..'
-    content = File.readlines("#{directory}/#{item}").last
-    next if content.count('.') < 10
-  
-    review = Review.new(content)
-    review.build_all
-    puts review.text
-    review.sentences.each do |sentence|
-      puts '-' * 50
-      sentence.map {|k,v| print k; p v}
-      gets
-    end
-    puts review.film_name
-    puts review.related_people
-  
-    gets
-    system("clear")
-  end
-
-else
-  puts "Run me as 'ruby test_harness.rb time [no. of reviews to parse]'".colorize(:red)
-  puts "or 'ruby test_harness.rb step'".colorize(:red)
-  exit
-end
