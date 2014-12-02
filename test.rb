@@ -16,7 +16,7 @@ Dir.foreach(directory) do |item|
   puts review.text
   review.sentences.each do |sentence|
     puts '-' * 50
-    sentence.map {|k,v| print k; p v}
+    sentence.map {|k,v| print "#{k}: "; p v}
     gets
   end
   puts review.film_name
