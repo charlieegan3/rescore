@@ -91,9 +91,6 @@ class Review
       puts "Failed to analyse review: language was not English."
       return 0
     end
-
-
-
   end
 
   def extract_sentences
@@ -139,6 +136,7 @@ class Review
     @sentences.each do |sentence|
       people = People.tag_sentence(sentence[:text], @related_people[:cast], @related_people[:director], previous_name, true)
       sentence[:people_tags], previous_name, sentence[:people_indexes] = people
+      sentence[:people_indexes] = sentence[:people_indexes].to_a.reject! {|x| x[1].empty?}
     end
   end
 
