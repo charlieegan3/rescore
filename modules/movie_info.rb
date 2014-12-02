@@ -35,7 +35,7 @@ module MovieInfo
     end
 
     search = GoogleAjax::Search.web(key)
-    p search
+    #p search
     unless search[:results].empty?
       return Sanitize.fragment(search[:results][0][:title]).gsub('Customer Reviews: ', '').gsub('Amazon', '').gsub('Torrent', '').gsub('Wikipedia', '').gsub('.com', '')
     else

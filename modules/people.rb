@@ -3,7 +3,7 @@ require_relative 'utils'
 module People
   def People.tag_sentence(sentence, cast, director, prev_name, actors_only)
 
-    puts sentence
+    #puts sentence
     sentence = sentence.to_ascii # Get rid of accented letters etc.
     names = [] # The cast members detected in this sentence.
     people_indexes = {}
