@@ -19,12 +19,6 @@ module RtScraper
     urls
   end
 
-  def evaluate_useful(useful_string)
-  end
-
-  def evaluate_rating(rating_string)
-  end
-
   def scrape_reviews(title_url)
     rows = []
     review_urls(title_url).each do |url|
