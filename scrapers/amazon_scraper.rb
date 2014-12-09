@@ -5,7 +5,7 @@ module AmazonScraper
   USER_AGENT = "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_7_0) AppleWebKit/535.2 (KHTML, like Gecko) Chrome/15.0.854.0 Safari/535.2"
   MAX_PAGES = 1
 
-  def get_paging_info(review_url)
+  def self.get_paging_info(review_url)
     last_page = nil
     count = 0
     loop do
@@ -19,7 +19,7 @@ module AmazonScraper
     [last_page.text.to_i, last_page['href']]
   end
 
-  def review_urls(review_url)
+  def self.review_urls(review_url)
     total_pages, url = get_paging_info(review_url)
     pages = total_pages
     pages = MAX_PAGES if pages > MAX_PAGES
@@ -31,7 +31,7 @@ module AmazonScraper
     urls
   end
 
-  def scrape_reviews(review_url)
+  def self.scrape_reviews(review_url)
     potential_review_divs = []
     review_urls(review_url).each do |url|
       page_divs = Nokogiri::HTML(open(url, 'User-Agent' => USER_AGENT).read).css('div').to_a

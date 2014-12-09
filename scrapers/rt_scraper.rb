@@ -5,11 +5,11 @@ module RtScraper
   USER_AGENT = "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_7_0) AppleWebKit/535.2 (KHTML, like Gecko) Chrome/15.0.854.0 Safari/535.2"
   MAX_PAGES = 1
 
-  def page_count(review_url)
+  def self.page_count(review_url)
     MAX_PAGES
   end
 
-  def review_urls(title_url)
+  def self.review_urls(title_url)
     review_url = title_url + "reviews/?type=user"
     page = 1; urls = []
     page_count(review_url).times do
@@ -19,7 +19,7 @@ module RtScraper
     urls
   end
 
-  def scrape_reviews(title_url)
+  def self.scrape_reviews(title_url)
     rows = []
     review_urls(title_url).each do |url|
       doc = Nokogiri::HTML(open(url, 'User-Agent' => USER_AGENT).read)

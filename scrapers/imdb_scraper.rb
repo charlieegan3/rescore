@@ -4,14 +4,14 @@ require 'open-uri'
 module IMDbScraper
   USER_AGENT = "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_7_0) AppleWebKit/535.2 (KHTML, like Gecko) Chrome/15.0.854.0 Safari/535.2"
   MAX_PAGES = 1
-  def page_count(review_url)
 
+  def self.page_count(review_url)
     doc = Nokogiri::HTML(open(review_url, 'User-Agent' => USER_AGENT).read)
     pages = doc.css('#tn15content table')[1].css('td').first.text.gsub(':','')[/\d+$/].to_i
     pages = MAX_PAGES if pages > MAX_PAGES
   end
 
-  def review_urls(title_url)
+  def self.review_urls(title_url)
     review_url = title_url + "reviews"
     start = 0; urls = []
     page_count(review_url).times do
@@ -21,17 +21,17 @@ module IMDbScraper
     urls
   end
 
-  def evaluate_useful(useful_string)
+  def self.evaluate_useful(useful_string)
     pair = useful_string.scan(/\d+/).map {|e| e.to_i }
   end
 
-  def evaluate_rating(rating_string)
+  def self.evaluate_rating(rating_string)
     rating_string.split('/').map {|e| e.to_f }.reduce(:/).round(5)
   end
 
-  def scrape_reviews(title_url)
+  def self.scrape_reviews(title_url)
     reviews = []
-    review_urls(url).each do |url|
+    review_urls(title_url).each do |url|
       doc = Nokogiri::HTML(open(url, 'User-Agent' => USER_AGENT).read)
       1.step(19, 2) do |i|
         review = {}
