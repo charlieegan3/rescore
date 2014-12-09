@@ -3,8 +3,9 @@ require 'open-uri'
 
 module MetacriticScraper
   USER_AGENT = "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_7_0) AppleWebKit/535.2 (KHTML, like Gecko) Chrome/15.0.854.0 Safari/535.2"
-  MAX_PAGES = 3
   def page_count(review_url)
+  MAX_PAGES = 1
+
     doc = Nokogiri::HTML(open(review_url, 'User-Agent' => USER_AGENT).read)
     pages = doc.css('#tn15content table')[1].css('td').first.text.gsub(':','')[/\d+$/].to_i
     pages = MAX_PAGES if pages > MAX_PAGES
