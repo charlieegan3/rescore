@@ -6,6 +6,8 @@ class AmazonScraper
     @user_agent = 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_7_0) AppleWebKit/535.2 (KHTML, like Gecko) Chrome/15.0.854.0 Safari/535.2'
     @max_pages = max_pages
     @title_url = title_url
+
+    @title_url.gsub!('/dp/', '/product-reviews/')unless @title_url.include?('product-reviews')
   end
 
   def reviews
