@@ -13,16 +13,16 @@ class MetacriticScraper
     reviews = []
     review_urls(@title_url).each do |review_url|
       raw_reviews(review_url).each do |raw_review|
-        review_hash = {}
-        review_hash[:rating] = raw_review.css('.review_grade').first.text.gsub(/\s/,"").to_i
-        review_hash[:content] = extract_content(raw_review)
-        review_hash[:useful] = evaluate_useful(raw_review)
-        review_hash[:username] = raw_review.css('.name').text.strip
-        review_hash[:date] = raw_review.css('.date').text.strip
-        review_hash[:location] = nil
-        review_hash[:title] = nil
+        review = {}
+        review[:rating] = raw_review.css('.review_grade').first.text.gsub(/\s/,"").to_i
+        review[:content] = extract_content(raw_review)
+        review[:useful] = evaluate_useful(raw_review)
+        review[:username] = raw_review.css('.name').text.strip
+        review[:date] = raw_review.css('.date').text.strip
+        review[:location] = nil
+        review[:title] = nil
         review[:source] = {vendor: 'metacritic', url: @title_url}
-        reviews << review_hash
+        reviews << review
       end
     end
     reviews

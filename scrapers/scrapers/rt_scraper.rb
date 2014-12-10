@@ -19,20 +19,20 @@ class RtScraper
     end
     reviews = []
     rows.each do |row|
-      review_hash = {}
-      review_hash[:username] = row.css('td')[1].text.strip
+      review = {}
+      review[:username] = row.css('td')[1].text.strip
       useful = row.css('td')[2].text.strip
-      review_hash[:useful] = useful if useful == 'Super Reviewer'
-      review_hash[:date] = row.css('.fr.small.subtle').text
-      review_hash[:rating] = row.css('.fl .glyphicon-star').size
+      review[:useful] = useful if useful == 'Super Reviewer'
+      review[:date] = row.css('.fr.small.subtle').text
+      review[:rating] = row.css('.fl .glyphicon-star').size
       if row.css('.fl').text.strip == '½'
-        review_hash[:rating] += 0.5
+        review[:rating] += 0.5
       end
-      review_hash[:content] = row.css('.user_review').first.text.strip
+      review[:content] = row.css('.user_review').first.text.strip
       # comply with the format
-      review_hash[:title], review_hash[:location] = nil, nil
+      review[:title], review[:location] = nil, nil
       review[:source] = {vendor: 'rt', url: @title_url}
-      reviews << review_hash
+      reviews << review
     end
     reviews
   end
