@@ -15,7 +15,12 @@ puts amazon_title_url = GoogleAjax::Search.web(film_title + " amazon.com custome
 puts imdb_title_url = GoogleAjax::Search.web(film_title + " imdb")[:results][0][:unescaped_url]
 puts rotten_title_url = GoogleAjax::Search.web(film_title + " rotten tomatoes")[:results][0][:unescaped_url]
 
-p MetacriticScraper.new(metacritic_title_url, 1).reviews.size
-p AmazonScraper.new(amazon_title_url, 1).reviews.size
-p IMDbScraper.new(imdb_title_url, 1).reviews.size
-p RtScraper.new(rotten_title_url, 1).reviews.size
+page_depth = 1
+reviews = []
+
+reviews += MetacriticScraper.new(metacritic_title_url, page_depth, false).reviews
+reviews += AmazonScraper.new(amazon_title_url, page_depth, false).reviews
+reviews += IMDbScraper.new(imdb_title_url, page_depth, false).reviews
+reviews += RtScraper.new(rotten_title_url, page_depth, false).reviews
+
+p "Total: #{reviews.size} reviews"
