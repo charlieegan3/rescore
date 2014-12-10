@@ -1,28 +1,17 @@
 require 'nokogiri'
 require 'open-uri'
 
-module RtScraper
-  USER_AGENT = "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_7_0) AppleWebKit/535.2 (KHTML, like Gecko) Chrome/15.0.854.0 Safari/535.2"
-  MAX_PAGES = 1
-
-  def self.page_count(review_url)
-    MAX_PAGES
+class RtScraper
+  def initialize(title_url, max_pages = 5)
+    @user_agent = 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_7_0) AppleWebKit/535.2 (KHTML, like Gecko) Chrome/15.0.854.0 Safari/535.2'
+    @max_pages = max_pages
+    @title_url = title_url
   end
 
-  def self.review_urls(title_url)
-    review_url = title_url + "reviews/?type=user"
-    page = 1; urls = []
-    page_count(review_url).times do
-      urls << "#{review_url}&page=#{page}"
-      page += 1
-    end
-    urls
-  end
-
-  def self.scrape_reviews(title_url)
+  def reviews
     rows = []
-    review_urls(title_url).each do |url|
-      doc = Nokogiri::HTML(open(url, 'User-Agent' => USER_AGENT).read)
+    review_urls(@title_url).each do |url|
+      doc = Nokogiri::HTML(open(url, 'User-Agent' => @user_agent).read)
       rows += doc.css('.table-striped tr')
     end
     reviews = []
@@ -41,4 +30,15 @@ module RtScraper
     end
     reviews
   end
+
+  private
+    def review_urls(title_url)
+      review_url = title_url + "reviews/?type=user"
+      page = 1; urls = []
+      @max_pages.times do
+        urls << "#{review_url}&page=#{page}"
+        page += 1
+      end
+      urls
+    end
 end
