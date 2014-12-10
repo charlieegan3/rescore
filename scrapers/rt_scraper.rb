@@ -2,16 +2,19 @@ require 'nokogiri'
 require 'open-uri'
 
 class RtScraper
-  def initialize(title_url, max_pages = 5)
+  def initialize(title_url, max_pages = 5, print = true)
     @user_agent = 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_7_0) AppleWebKit/535.2 (KHTML, like Gecko) Chrome/15.0.854.0 Safari/535.2'
     @max_pages = max_pages
     @title_url = title_url
+    @print = print
   end
 
   def reviews
     rows = []
     review_urls(@title_url).each do |url|
+      print "Fetching: #{url}... " if @print
       doc = Nokogiri::HTML(open(url, 'User-Agent' => @user_agent).read)
+      puts "done" if @print
       rows += doc.css('.table-striped tr')
     end
     reviews = []

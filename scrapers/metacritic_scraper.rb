@@ -2,10 +2,11 @@ require 'nokogiri'
 require 'open-uri'
 
 class MetacriticScraper
-  def initialize(title_url, max_pages = 5)
+  def initialize(title_url, max_pages = 5, print = true)
     @user_agent = 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_7_0) AppleWebKit/535.2 (KHTML, like Gecko) Chrome/15.0.854.0 Safari/535.2'
     @max_pages = max_pages
     @title_url = title_url
+    @print = print
   end
 
   def reviews
@@ -28,14 +29,18 @@ class MetacriticScraper
 
   private
     def page_count(review_url)
+      print "Fetching: #{review_url}... " if @print
       doc = Nokogiri::HTML(open(review_url, 'User-Agent' => @user_agent).read)
+      puts "done" if @print
       pages = doc.css('#tn15content table')[1].css('td').first.text.gsub(':','')[/\d+$/].to_i
       pages = @max_pages if pages > @max_pages
     end
 
     def review_urls(title_url)
       review_url = title_url + '/user-reviews'
+      print "Fetching: #{review_url}... " if @print
       doc = Nokogiri::HTML(open(review_url, 'User-Agent' => @user_agent).read)
+      puts "done" if @print
       total_pages = doc.css('.page.last_page').text.to_i
       total_pages = @max_pages if total_pages > @max_pages
 
@@ -47,7 +52,9 @@ class MetacriticScraper
     end
 
     def raw_reviews(review_url)
+      print "Fetching: #{review_url}... " if @print
       xml = Nokogiri::HTML(open(review_url, 'User-Agent' => @user_agent).read)
+      puts "done" if @print
       xml.css('.critic_reviews_module').first.remove
       xml.css('.review').to_a
     end

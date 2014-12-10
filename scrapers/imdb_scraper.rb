@@ -2,16 +2,19 @@ require 'nokogiri'
 require 'open-uri'
 
 class IMDbScraper
-  def initialize(title_url, max_pages = 5)
+  def initialize(title_url, max_pages = 5, print = true)
     @user_agent = 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_7_0) AppleWebKit/535.2 (KHTML, like Gecko) Chrome/15.0.854.0 Safari/535.2'
     @max_pages = max_pages
     @title_url = title_url
+    @print = print
   end
 
   def reviews
     reviews = []
     review_urls(@title_url).each do |url|
+      print "Fetching: #{url}... " if @print
       doc = Nokogiri::HTML(open(url, 'User-Agent' => @user_agent).read)
+      puts "done" if @print
       1.step(19, 2) do |i|
         review = {}
         rating = doc.xpath("//div[@id='tn15content']/div[#{i}]/img")
@@ -34,7 +37,9 @@ class IMDbScraper
 
   private
     def page_count(review_url)
+      print "Fetching: #{review_url}... " if @print
       doc = Nokogiri::HTML(open(review_url, 'User-Agent' => @user_agent).read)
+      puts "done" if @print
       pages = doc.css('#tn15content table')[1].css('td').first.text.gsub(':','')[/\d+$/].to_i
       pages = @max_pages if pages > @max_pages
     end
