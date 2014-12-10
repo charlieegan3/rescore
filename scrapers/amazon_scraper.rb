@@ -1,42 +1,15 @@
 require 'nokogiri'
 require 'open-uri'
 
-module AmazonScraper
-  USER_AGENT = "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_7_0) AppleWebKit/535.2 (KHTML, like Gecko) Chrome/15.0.854.0 Safari/535.2"
-  MAX_PAGES = 1
-
-  def self.get_paging_info(review_url)
-    last_page = nil
-    count = 0
-    loop do
-      doc = Nokogiri::HTML(open(review_url, 'User-Agent' => USER_AGENT).read)
-      last_page = doc.css('.paging a')[-2]
-      break unless last_page.nil?
-      puts "Amazon failed, retrying..."
-      count += 1
-      raise if count > 10
-    end
-    [last_page.text.to_i, last_page['href']]
+class AmazonScraper
+  def initialize(title_url, max_pages = 5)
+    @user_agent = 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_7_0) AppleWebKit/535.2 (KHTML, like Gecko) Chrome/15.0.854.0 Safari/535.2'
+    @max_pages = max_pages
+    @title_url = title_url
   end
 
-  def self.review_urls(review_url)
-    total_pages, url = get_paging_info(review_url)
-    pages = total_pages
-    pages = MAX_PAGES if pages > MAX_PAGES
-
-    urls = []
-    for i in 1..pages
-      urls << url.gsub("pageNumber=#{total_pages}", "pageNumber=#{i}")
-    end
-    urls
-  end
-
-  def self.scrape_reviews(review_url)
-    potential_review_divs = []
-    review_urls(review_url).each do |url|
-      page_divs = Nokogiri::HTML(open(url, 'User-Agent' => USER_AGENT).read).css('div').to_a
-      page_divs.map { |div| potential_review_divs << div }
-    end
+  def reviews
+    potential_review_divs = get_potential_reviews
 
     reviews = []
     for i in 0..potential_review_divs.size - 1
@@ -73,4 +46,40 @@ module AmazonScraper
     end
     reviews
   end
+
+  private
+    def get_potential_reviews
+      potential_review_divs = []
+      review_urls(@title_url).each do |url|
+        page_divs = Nokogiri::HTML(open(url, 'User-Agent' => @user_agent).read).css('div').to_a
+        page_divs.map { |div| potential_review_divs << div }
+      end
+      potential_review_divs
+    end
+
+    def get_paging_info(review_url)
+      last_page = nil
+      count = 0
+      loop do
+        doc = Nokogiri::HTML(open(review_url, 'User-Agent' => @user_agent).read)
+        last_page = doc.css('.paging a')[-2]
+        break unless last_page.nil?
+        puts "Amazon failed, retrying..."
+        count += 1
+        raise if count > 10
+      end
+      [last_page.text.to_i, last_page['href']]
+    end
+
+    def review_urls(review_url)
+      total_pages, url = get_paging_info(review_url)
+      pages = total_pages
+      pages = @max_pages if pages > @max_pages
+
+      urls = []
+      for i in 1..pages
+        urls << url.gsub("pageNumber=#{total_pages}", "pageNumber=#{i}")
+      end
+      urls
+    end
 end
