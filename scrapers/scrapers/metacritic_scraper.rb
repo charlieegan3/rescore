@@ -21,7 +21,8 @@ class MetacriticScraper
         review_hash[:date] = raw_review.css('.date').text.strip
         review_hash[:location] = nil
         review_hash[:title] = nil
-        reviews.push(review_hash)
+        review[:source] = {vendor: 'metacritic', url: @title_url}
+        reviews << review_hash
       end
     end
     reviews

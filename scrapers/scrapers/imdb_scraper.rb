@@ -33,7 +33,8 @@ class IMDbScraper
         review[:location] = doc.xpath("//div[@id='tn15content']/div[#{i}]/small[2]")[0].child.to_s
         review[:date] = doc.xpath("//div[@id='tn15content']/div[#{i}]/small[3]").text
         review[:content] = doc.xpath("//div[@id='tn15content']//p[#{(i.to_f/2).ceil.to_i}]").text
-        reviews.push(review)
+        review[:source] = {vendor: 'imdb', url: @title_url}
+        reviews << review
       end
     end
     reviews

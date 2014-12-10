@@ -31,6 +31,7 @@ class RtScraper
       review_hash[:content] = row.css('.user_review').first.text.strip
       # comply with the format
       review_hash[:title], review_hash[:location] = nil, nil
+      review[:source] = {vendor: 'rt', url: @title_url}
       reviews << review_hash
     end
     reviews

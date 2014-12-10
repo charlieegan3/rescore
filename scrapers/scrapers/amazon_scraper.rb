@@ -44,6 +44,7 @@ class AmazonScraper
         review[:username] = nil
         review[:location] = nil
       end
+      review[:source] = {vendor: 'amazon', url: @title_url}
       reviews << review
     end
     reviews
