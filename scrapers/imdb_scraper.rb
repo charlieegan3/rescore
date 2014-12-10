@@ -12,9 +12,13 @@ class IMDbScraper
   def reviews
     reviews = []
     review_urls(@title_url).each do |url|
-      print "Fetching: #{url}... " if @print
-      doc = Nokogiri::HTML(open(url, 'User-Agent' => @user_agent).read)
-      puts "done" if @print
+      if url.class == String
+        print "Fetching: #{url}... " if @print
+        doc = Nokogiri::HTML(open(url, 'User-Agent' => @user_agent).read)
+        puts "done" if @print
+      else
+        doc = url
+      end
       1.step(19, 2) do |i|
         review = {}
         rating = doc.xpath("//div[@id='tn15content']/div[#{i}]/img")
@@ -36,18 +40,21 @@ class IMDbScraper
   end
 
   private
-    def page_count(review_url)
+    def first_page(review_url)
       print "Fetching: #{review_url}... " if @print
       doc = Nokogiri::HTML(open(review_url, 'User-Agent' => @user_agent).read)
       puts "done" if @print
       pages = doc.css('#tn15content table')[1].css('td').first.text.gsub(':','')[/\d+$/].to_i
       pages = @max_pages if pages > @max_pages
+      pages -= 1 # we get the first page here ^
+      [pages, doc] # mega hack
     end
 
     def review_urls(title_url)
       review_url = title_url + "reviews"
-      start = 0; urls = []
-      page_count(review_url).times do
+      page_count, page = first_page(review_url)
+      start = 10; urls = [page]
+      page_count.times do
         urls << "#{review_url}?start=#{start}"
         start += 10
       end
