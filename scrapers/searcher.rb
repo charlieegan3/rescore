@@ -8,7 +8,7 @@ require 'open-uri'
 
 GoogleAjax.referrer = "www.resco.re"
 
-film_title = "The Hobbit: An Unexpected Journey"
+film_title = "Avatar 2009"
 
 puts metacritic_title_url = GoogleAjax::Search.web(film_title + " metacritic")[:results][0][:unescaped_url]
 puts amazon_title_url = GoogleAjax::Search.web(film_title + " amazon.com customer reviews")[:results][0][:unescaped_url]
