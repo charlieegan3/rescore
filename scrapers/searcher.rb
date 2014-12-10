@@ -1,7 +1,7 @@
-require_relative 'amazon_scraper'
-require_relative 'rt_scraper'
-require_relative 'metacritic_scraper'
-require_relative 'imdb_scraper'
+require_relative 'scrapers/amazon_scraper'
+require_relative 'scrapers/rt_scraper'
+require_relative 'scrapers/metacritic_scraper'
+require_relative 'scrapers/imdb_scraper'
 
 require 'googleajax'
 require 'open-uri'
