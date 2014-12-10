@@ -2,8 +2,8 @@ require 'nokogiri'
 require 'open-uri'
 
 class AmazonScraper
-  def initialize(title_url, max_pages = 5, print = true)
-    @user_agent = 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_7_0) AppleWebKit/535.2 (KHTML, like Gecko) Chrome/15.0.854.0 Safari/535.2'
+  def initialize(title_url, user_agent, max_pages = 5, print = true)
+    @user_agent = user_agent
     @max_pages = max_pages
     @title_url = title_url
     @title_url.gsub!('/dp/', '/product-reviews/')unless @title_url.include?('product-reviews')
