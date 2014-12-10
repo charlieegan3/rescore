@@ -20,7 +20,7 @@ class RtScraper
     reviews = []
     rows.each do |row|
       review_hash = {}
-      review_hash[:name] = row.css('td')[1].text.strip
+      review_hash[:username] = row.css('td')[1].text.strip
       useful = row.css('td')[2].text.strip
       review_hash[:useful] = useful if useful == 'Super Reviewer'
       review_hash[:date] = row.css('.fr.small.subtle').text
@@ -29,6 +29,8 @@ class RtScraper
         review_hash[:rating] += 0.5
       end
       review_hash[:content] = row.css('.user_review').first.text.strip
+      # comply with the format
+      review_hash[:title], review_hash[:location] = nil, nil
       reviews << review_hash
     end
     reviews
