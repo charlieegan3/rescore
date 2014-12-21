@@ -14,12 +14,18 @@ class Movie < ActiveRecord::Base
   end
 
   def collect_reviews
+    self.status = 'Starting review collection...'; save
     r = ReviewAggregator.new(title, self.page_depth)
     update_attribute(:reviews, [])
+    self.status = 'Collecting Metacritic reviews...'; save
     self.reviews += r.metacritic_reviews(metacritic_link)
+    self.status = 'Collecting Amazon reviews...'; save
     self.reviews += r.amazon_reviews(amazon_link)
+    self.status = 'Collecting IMDb reviews...'; save
     self.reviews += r.imdb_reviews(imdb_link)
+    self.status = 'Collecting Rotten Tomatoes reviews...'; save
     self.reviews += r.rotten_tomatoes_reviews(rotten_tomatoes_link)
+    self.status = nil; save
     save
   end
   handle_asynchronously :collect_reviews

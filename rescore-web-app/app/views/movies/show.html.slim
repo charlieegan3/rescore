@@ -9,12 +9,16 @@ ul
   li= link_to @movie.metacritic_link, @movie.metacritic_link
   li= link_to @movie.rotten_tomatoes_link, @movie.rotten_tomatoes_link
 
-=link_to 'Collect Reviews', collect_movie_path(@movie)
 p ="This movie will be scanned #{@movie.page_depth} pages deep."
-p ="Reviews: #{@movie.reviews.size}"
+-if @movie.status.nil? || @movie.status == ''
+  =link_to 'Collect Reviews', collect_movie_path(@movie)
+-else
+  p ="Status: #{@movie.status}"
+p ="Review Count: #{@movie.reviews.size}"
 table border=(1)
   tr
     th source
+    th rating
     th rating
     th content
     th useful
@@ -26,6 +30,7 @@ table border=(1)
     tr
       td =review[:source][:vendor]
       td =review[:rating]
+      td =review[:percentage]
       td =review[:content][0..50] + '...'
       td =review[:useful].reduce(:/).round(2) if review[:useful].class == Array
       td =review[:username]

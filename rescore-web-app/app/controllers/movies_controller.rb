@@ -40,6 +40,7 @@ class MoviesController < ApplicationController
   def collect
     @movie = Movie.find(params[:id])
     @movie.collect_reviews
+    @movie.update_attribute(:status, 'Waiting...')
     redirect_to movie_path(@movie)
   end
 
