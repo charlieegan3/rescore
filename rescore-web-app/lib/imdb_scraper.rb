@@ -24,8 +24,10 @@ class Imdb_Scraper
         rating = doc.xpath("//div[@id='tn15content']/div[#{i}]/img")
         unless rating.empty?
           review[:rating] = evaluate_rating(rating.attr('alt').text)
+          review[:percentage] = ((review[:rating].to_f / 1.0) * 100).round(2)
         else
           review[:rating] = nil
+          review[:percentage] = nil
         end
         review[:useful] = evaluate_useful(doc.xpath("//div[@id='tn15content']/div[#{i}]/small[1]").text)
         review[:title] = doc.xpath("//div[@id='tn15content']/div[#{i}]/h2").text

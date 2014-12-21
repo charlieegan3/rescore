@@ -24,6 +24,7 @@ class AmazonScraper
 
       review[:content] = potential_review_divs[i].text
       review[:rating] = domain.last.match(/\d.\d{1,} out of \d{1,}/).to_s.split(" out of ").map { |x| x.to_f }.first
+      review[:percentage] = ((review[:rating].to_f / 5.0) * 100).round(2)
       review[:useful] = domain.first.split('people').first.strip.split(' of ').map {|x| x.gsub(',','').to_i }
       review[:date] = domain.last.split(',').reverse.take(2).join('').gsub(/\s+/, ' ')
       review[:title] = domain.last.split('stars').last.split(',').first.strip

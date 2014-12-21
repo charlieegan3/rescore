@@ -15,6 +15,7 @@ class MetacriticScraper
       raw_reviews(review_url).each do |raw_review|
         review = {}
         review[:rating] = raw_review.css('.review_grade').first.text.gsub(/\s/,"").to_i
+        review[:percentage] = ((review[:rating].to_f / 10.0) * 100).round(2)
         review[:content] = extract_content(raw_review)
         review[:useful] = evaluate_useful(raw_review)
         review[:username] = raw_review.css('.name').text.strip

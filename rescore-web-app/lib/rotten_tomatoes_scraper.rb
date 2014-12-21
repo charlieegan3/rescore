@@ -25,6 +25,7 @@ class Rotten_Tomatoes_Scraper
       review[:useful] = useful if useful == 'Super Reviewer'
       review[:date] = row.css('.fr.small.subtle').text
       review[:rating] = row.css('.fl .glyphicon-star').size
+      review[:percentage] = ((review[:rating].to_f / 5.0) * 100).round(2)
       if row.css('.fl').text.strip == '½'
         review[:rating] += 0.5
       end
