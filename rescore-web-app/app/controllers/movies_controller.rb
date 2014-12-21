@@ -37,6 +37,12 @@ class MoviesController < ApplicationController
     redirect_to movie_path(@movie)
   end
 
+  def collect
+    @movie = Movie.find(params[:id])
+    @movie.collect_reviews
+    redirect_to movie_path(@movie)
+  end
+
   private
     def movie_params
       params.require(:movie).permit(:title, :imdb_link, :amazon_link, :metacritic_link, :rotten_tomatoes_link)

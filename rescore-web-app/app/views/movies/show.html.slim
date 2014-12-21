@@ -9,4 +9,14 @@ ul
   li= link_to @movie.metacritic_link, @movie.metacritic_link
   li= link_to @movie.rotten_tomatoes_link, @movie.rotten_tomatoes_link
 
+=link_to 'Collect Reviews', collect_movie_path(@movie)
+br
+=@movie.diagnostics
+br
+br
+=@movie.reviews
+
+
+br
+br
 =button_to 'Delete Movie', @movie, {onclick: "return confirm('Sure?')", method: :delete}

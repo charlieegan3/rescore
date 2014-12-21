@@ -13,4 +13,16 @@ class Movie < ActiveRecord::Base
     update_attribute(:rotten_tomatoes_link,
       GoogleAjax::Search.web(title + " rotten tomatoes")[:results][0][:unescaped_url])
   end
+
+  def collect_reviews
+    sleep 1
+    update_attribute(:diagnostics, {step: 1, time: Time.new})
+    sleep 1
+    update_attribute(:diagnostics, {step: 2, time: Time.new})
+    sleep 1
+    update_attribute(:diagnostics, {step: 3, time: Time.new})
+
+    update_attribute(:reviews, {done: 'done'})
+  end
+  handle_asynchronously :collect_reviews
 end
