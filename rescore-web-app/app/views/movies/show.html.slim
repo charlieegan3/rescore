@@ -27,7 +27,7 @@ table border=(1)
     th date
     th location
     th title
-  -@movie.reviews.each do |review|
+  -@movie.reviews.take(@sample_size).each do |review|
     tr
       td =review[:source][:vendor]
       td =review[:rating]
@@ -38,7 +38,10 @@ table border=(1)
       td =review[:date]
       td =review[:location]
       td =review[:title]
-
+-if params[:all]
+  =link_to "Hide reviews", movie_path(@movie)
+-else
+  =link_to "Show all #{@movie.reviews.size} reviews", movie_path(@movie, {all: true})
 br
 br
 =button_to 'Delete Movie', @movie, {onclick: "return confirm('Sure?')", method: :delete}

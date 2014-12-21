@@ -11,6 +11,9 @@ class MoviesController < ApplicationController
       f.title({text: "Rating Distribution"})
       f.options[:chart][:defaultSeriesType] = 'column'
     end
+
+    @sample_size = 10
+    @sample_size = @movie.reviews.size if params[:all]
   end
 
   def new
