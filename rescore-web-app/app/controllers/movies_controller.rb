@@ -39,6 +39,6 @@ class MoviesController < ApplicationController
 
   private
     def movie_params
-      params.require(:movie).permit(:title, :imdb_link, :amazon_link, :metacritic_link, :rt_link)
+      params.require(:movie).permit(:title, :imdb_link, :amazon_link, :metacritic_link, :rotten_tomatoes_link)
     end
 end

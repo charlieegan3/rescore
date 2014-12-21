@@ -11,12 +11,12 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20141221104354) do
+ActiveRecord::Schema.define(version: 20141221164020) do
 
   create_table "movies", force: true do |t|
     t.string   "title"
     t.string   "imdb_link"
-    t.string   "rt_link"
+    t.string   "rotten_tomatoes_link"
     t.string   "amazon_link"
     t.string   "metacritic_link"
     t.datetime "created_at"

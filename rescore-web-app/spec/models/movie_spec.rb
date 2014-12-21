@@ -9,6 +9,6 @@ RSpec.describe Movie, :type => :model do
     expect(movie.imdb_link).to_not be_nil
     expect(movie.amazon_link).to_not be_nil
     expect(movie.metacritic_link).to_not be_nil
-    expect(movie.rt_link).to_not be_nil
+    expect(movie.rotten_tomatoes_link).to_not be_nil
   end
 end

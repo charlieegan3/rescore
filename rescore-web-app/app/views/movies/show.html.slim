@@ -7,6 +7,6 @@ ul
   li= link_to @movie.imdb_link, @movie.imdb_link
   li= link_to @movie.amazon_link, @movie.amazon_link
   li= link_to @movie.metacritic_link, @movie.metacritic_link
-  li= link_to @movie.rt_link, @movie.rt_link
+  li= link_to @movie.rotten_tomatoes_link, @movie.rotten_tomatoes_link
 
 =button_to 'Delete Movie', @movie, {onclick: "return confirm('Sure?')", method: :delete}
