@@ -28,8 +28,11 @@ group :development, :test do
   gem 'guard'
   gem 'guard-rspec', require: false
   gem 'vcr'
-  gem 'webmock'
   gem 'capybara'
+end
+
+group :test do
+  gem 'webmock'
 end
 
 group :doc do

@@ -1,6 +1,5 @@
 class Movie < ActiveRecord::Base
-  serialize :diagnostics, Hash
-  serialize :reviews, Hash
+  serialize :reviews, Array
 
   def populate_source_links
     GoogleAjax.referrer = "www.resco.re"
@@ -15,14 +14,13 @@ class Movie < ActiveRecord::Base
   end
 
   def collect_reviews
-    sleep 1
-    update_attribute(:diagnostics, {step: 1, time: Time.new})
-    sleep 1
-    update_attribute(:diagnostics, {step: 2, time: Time.new})
-    sleep 1
-    update_attribute(:diagnostics, {step: 3, time: Time.new})
-
-    update_attribute(:reviews, {done: 'done'})
+    r = ReviewAggregator.new(title)
+    update_attribute(:reviews, [])
+    self.reviews += r.metacritic_reviews(metacritic_link)
+    self.reviews += r.amazon_reviews(amazon_link)
+    self.reviews += r.imdb_reviews(imdb_link)
+    self.reviews += r.rotten_tomatoes_reviews(rotten_tomatoes_link)
+    save
   end
   handle_asynchronously :collect_reviews
 end

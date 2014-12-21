@@ -1,7 +1,7 @@
 require 'nokogiri'
 require 'open-uri'
 
-class RtScraper
+class Rotten_Tomatoes_Scraper
   def initialize(title_url, user_agent, max_pages = 5, print = true)
     @user_agent = user_agent
     @max_pages = max_pages

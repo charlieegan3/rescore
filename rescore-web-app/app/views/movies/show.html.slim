@@ -11,10 +11,29 @@ ul
 
 =link_to 'Collect Reviews', collect_movie_path(@movie)
 br
-=@movie.diagnostics
-br
-br
-=@movie.reviews
+p ="Reviews: #{@movie.reviews.size}"
+table border=(1)
+  tr
+    th source
+    th rating
+    th content
+    th useful
+    th username
+    th useful
+    th date
+    th location
+    th title
+  -@movie.reviews.each do |review|
+    tr
+      td =review[:source][:vendor]
+      td =review[:rating]
+      td =review[:content][0..50] + '...'
+      td =review[:useful]
+      td =review[:username]
+      td =review[:useful]
+      td =review[:date]
+      td =review[:location]
+      td =review[:title]
 
 
 br

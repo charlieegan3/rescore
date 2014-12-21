@@ -1,9 +1,5 @@
-require_relative 'scrapers/amazon_scraper'
-require_relative 'scrapers/rt_scraper'
-require_relative 'scrapers/metacritic_scraper'
-require_relative 'scrapers/imdb_scraper'
-
 require 'open-uri'
+require 'pry'
 
 class ReviewAggregator
   def initialize(film_title, page_depth = 1, print = true)
@@ -13,36 +9,19 @@ class ReviewAggregator
     @print = true
   end
 
-  def reviews(include_diagnostics = true)
-    diagnostics = {}
-    start_time = Time.new
-
-    sources = source_urls
-    diagnostics[:source_collection_time] = Time.new - start_time; start_time = Time.new
-    diagnostics[:sources] = sources
-
-    reviews = []
-    reviews += MetacriticScraper.new(sources[:metacritic_title_url], @user_agent, @page_depth, @print).reviews
-    diagnostics[:metacritic_time] = Time.new - start_time; start_time = Time.new
-    reviews += AmazonScraper.new(sources[:amazon_title_url], @user_agent, @page_depth, @print).reviews
-    diagnostics[:amazon_time] = Time.new - start_time; start_time = Time.new
-    reviews += IMDbScraper.new(sources[:imdb_title_url], @user_agent, @page_depth, @print).reviews
-    diagnostics[:imdb_time] = Time.new - start_time; start_time = Time.new
-    reviews += RtScraper.new(sources[:rotten_title_url], @user_agent, @page_depth, @print).reviews
-    diagnostics[:rt_time] = Time.new - start_time; start_time = Time.new
-
-    return [diagnostics, reviews] if include_diagnostics
-    return reviews
+  def metacritic_reviews(url)
+    MetacriticScraper.new(url, @user_agent, @page_depth, @print).reviews
   end
 
-  private
-    def source_urls
-      GoogleAjax.referrer = "www.resco.re"
-      {
-        metacritic_title_url: GoogleAjax::Search.web(@film_title + " metacritic")[:results][0][:unescaped_url],
-        amazon_title_url: GoogleAjax::Search.web(@film_title + " amazon.com customer reviews")[:results][0][:unescaped_url],
-        imdb_title_url: GoogleAjax::Search.web(@film_title + " imdb")[:results][0][:unescaped_url],
-        rotten_title_url: GoogleAjax::Search.web(@film_title + " rotten tomatoes")[:results][0][:unescaped_url]
-      }
-    end
+  def amazon_reviews(url)
+    AmazonScraper.new(url, @user_agent, @page_depth, @print).reviews
+  end
+
+  def imdb_reviews(url)
+    Imdb_Scraper.new(url, @user_agent, @page_depth, @print).reviews
+  end
+
+  def rotten_tomatoes_reviews(url)
+    Rotten_Tomatoes_Scraper.new(url, @user_agent, @page_depth, @print).reviews
+  end
 end
