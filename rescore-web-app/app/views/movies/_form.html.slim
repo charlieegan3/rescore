@@ -1,5 +1,12 @@
 = form_for @movie do |f|
-  = f.label :title
-  = f.text_field :title
+  = f.text_field :title, placeholder: 'Title'
+  br
+  = f.text_field :imdb_link, placeholder: 'IMDb Link'
+  br
+  = f.text_field :amazon_link, placeholder: 'Amazon Link'
+  br
+  = f.text_field :metacritic_link, placeholder: 'Metacritic Link'
+  br
+  = f.text_field :rt_link, placeholder: 'Rotten Tomatoes Link'
   br
   = f.submit
