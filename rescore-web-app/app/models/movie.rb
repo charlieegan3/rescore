@@ -1,4 +1,7 @@
 class Movie < ActiveRecord::Base
+  serialize :diagnostics, Hash
+  serialize :reviews, Hash
+
   def populate_source_links
     GoogleAjax.referrer = "www.resco.re"
     update_attribute(:metacritic_link,
