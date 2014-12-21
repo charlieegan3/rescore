@@ -1,0 +1,9 @@
+h1 All Movies
+
+=link_to 'New', new_movie_path
+
+ul
+  -@movies.each do |m|
+    li
+      =link_to m.title, movie_path(m)
+      =button_to "Delete", m, {onclick: "return confirm('Sure?')", method: :delete}
