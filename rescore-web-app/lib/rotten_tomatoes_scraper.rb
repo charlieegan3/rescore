@@ -31,7 +31,7 @@ class Rotten_Tomatoes_Scraper
       review[:content] = row.css('.user_review').first.text.strip
       # comply with the format
       review[:title], review[:location] = nil, nil
-      review[:source] = {vendor: 'rt', url: @title_url}
+      review[:source] = {vendor: 'rotten_tomatoes', url: @title_url}
       reviews << review
     end
     reviews
