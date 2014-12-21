@@ -9,4 +9,7 @@
   br
   = f.text_field :rotten_tomatoes_link, placeholder: 'Rotten Tomatoes Link'
   br
+  = f.label :page_depth
+  = f.number_field(:page_depth, in: 1..10, step: 1)
+  br
   = f.submit

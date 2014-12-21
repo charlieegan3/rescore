@@ -14,7 +14,7 @@ class Movie < ActiveRecord::Base
   end
 
   def collect_reviews
-    r = ReviewAggregator.new(title)
+    r = ReviewAggregator.new(title, self.page_depth)
     update_attribute(:reviews, [])
     self.reviews += r.metacritic_reviews(metacritic_link)
     self.reviews += r.amazon_reviews(amazon_link)
