@@ -15,6 +15,7 @@ p ="This movie will be scanned #{@movie.page_depth} pages deep."
 -else
   p ="Status: #{@movie.status}"
 p ="Review Count: #{@movie.reviews.size}"
+=high_chart("ratings", @ratings_chart) unless @movie.reviews.empty?
 table border=(1)
   tr
     th source

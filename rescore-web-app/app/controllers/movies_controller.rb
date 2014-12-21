@@ -5,6 +5,12 @@ class MoviesController < ApplicationController
 
   def show
     @movie = Movie.find(params[:id])
+
+    @ratings_chart = LazyHighCharts::HighChart.new('column') do |f|
+      f.series(name: 'Ratings', data: @movie.rating_distribution)
+      f.title({text: "Rating Distribution"})
+      f.options[:chart][:defaultSeriesType] = 'column'
+    end
   end
 
   def new

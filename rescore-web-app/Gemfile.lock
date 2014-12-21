@@ -79,6 +79,7 @@ GEM
       guard (~> 2.1)
       guard-compat (~> 1.1)
       rspec (>= 2.99.0, < 4.0)
+    hash-deep-merge (0.1.1)
     hike (1.2.3)
     hitimes (1.2.2)
     i18n (0.7.0)
@@ -89,6 +90,9 @@ GEM
       railties (>= 3.0, < 5.0)
       thor (>= 0.14, < 2.0)
     json (1.8.1)
+    lazy_high_charts (1.5.4)
+      bundler (>= 1.0)
+      hash-deep-merge
     listen (2.8.4)
       celluloid (>= 0.15.2)
       rb-fsevent (>= 0.9.3)
@@ -211,6 +215,7 @@ DEPENDENCIES
   guard-rspec
   jbuilder (~> 2.0)
   jquery-rails
+  lazy_high_charts
   pry
   rails (= 4.1.8)
   rspec-rails (~> 3.0)
