@@ -46,6 +46,8 @@ GEM
     debug_inspector (0.0.2)
     erubis (2.7.0)
     execjs (2.2.2)
+    googleajax (1.0.1)
+      json (>= 1.0.0)
     hike (1.2.3)
     i18n (0.7.0)
     jbuilder (2.2.6)
@@ -129,6 +131,7 @@ DEPENDENCIES
   better_errors
   binding_of_caller
   coffee-rails (~> 4.0.0)
+  googleajax
   jbuilder (~> 2.0)
   jquery-rails
   pry

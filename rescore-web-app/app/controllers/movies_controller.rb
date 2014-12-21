@@ -31,6 +31,12 @@ class MoviesController < ApplicationController
     redirect_to movies_path
   end
 
+  def populate
+    @movie = Movie.find(params[:id])
+    @movie.populate_source_links
+    redirect_to movie_path(@movie)
+  end
+
   private
     def movie_params
       params.require(:movie).permit(:title, :imdb_link, :amazon_link, :metacritic_link, :rt_link)

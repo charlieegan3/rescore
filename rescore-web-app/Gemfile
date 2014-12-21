@@ -11,6 +11,8 @@ gem 'jbuilder', '~> 2.0'
 
 gem 'slim'
 
+gem 'googleajax'
+
 group :development do
   gem 'sqlite3'
   gem 'better_errors'
