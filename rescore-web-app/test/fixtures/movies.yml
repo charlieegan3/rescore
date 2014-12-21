@@ -1,0 +1,15 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  title: MyString
+  imdb_link: MyString
+  rt_link: MyString
+  amazon_link: MyString
+  metacritic_link: MyString
+
+two:
+  title: MyString
+  imdb_link: MyString
+  rt_link: MyString
+  amazon_link: MyString
+  metacritic_link: MyString
