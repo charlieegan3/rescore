@@ -1,3 +1,4 @@
 h1 =@movie.title
 h2 Edit
+=button_to "Delete", @movie, {onclick: "return confirm('Sure?')", method: :delete}
 =render 'form', locals: {movie: @movie}

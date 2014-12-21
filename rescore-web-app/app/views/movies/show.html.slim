@@ -1,3 +1,10 @@
 h1 =@movie.title
 h2 Show
 =link_to " Edit", edit_movie_path(@movie)
+br
+=button_to "Delete", @movie, {onclick: "return confirm('Sure?')", method: :delete}
+ul
+  li= @movie.imdb_link
+  li= @movie.amazon_link
+  li= @movie.metacritic_link
+  li= @movie.rt_link
