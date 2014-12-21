@@ -3,10 +3,7 @@ require_relative 'scrapers/rt_scraper'
 require_relative 'scrapers/metacritic_scraper'
 require_relative 'scrapers/imdb_scraper'
 
-require 'googleajax'
 require 'open-uri'
-
-require 'pry'
 
 class ReviewAggregator
   def initialize(film_title, page_depth = 1, print = true)
@@ -49,7 +46,3 @@ class ReviewAggregator
       }
     end
 end
-
-r = ReviewAggregator.new('avatar 2009').reviews
-
-binding.pry
