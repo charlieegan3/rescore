@@ -13,6 +13,8 @@ gem 'slim'
 
 gem 'googleajax'
 
+gem 'delayed_job_active_record'
+
 group :development do
   gem 'sqlite3'
   gem 'better_errors'
