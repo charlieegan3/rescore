@@ -19,6 +19,12 @@ group :development do
   gem 'binding_of_caller'
   gem 'pry'
   gem 'spring'
+  gem 'guard'
+  gem 'guard-rspec', require: false
+end
+
+group :development, :test do
+  gem 'rspec-rails', '~> 3.0'
 end
 
 group :doc do
