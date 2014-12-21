@@ -27,6 +27,7 @@ group :development, :test do
   gem 'guard-rspec', require: false
   gem 'vcr'
   gem 'webmock'
+  gem 'capybara'
 end
 
 group :doc do
