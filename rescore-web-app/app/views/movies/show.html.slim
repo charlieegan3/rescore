@@ -9,7 +9,7 @@ ul
     li =link_to 'Collect Reviews', collect_movie_path(@movie)
   -else
     li
-      ="Status: #{@movie.status}"
+      ="Status: #{@movie.status} (mash refresh)"
       =link_to 'Restart', collect_movie_path(@movie)
   -if params[:all]
     li =link_to "Hide Review and Cast List", movie_path(@movie)
