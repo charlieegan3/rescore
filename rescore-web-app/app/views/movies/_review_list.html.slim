@@ -14,9 +14,9 @@ table border=(1)
       td =review[:source][:vendor]
       td =review[:rating]
       td =review[:percentage]
-      td =review[:content][0..50] + '...'
+      td =review[:content][0..20] + '...'
       td =review[:useful].reduce(:/).round(2) if review[:useful].class == Array
       td =review[:username]
       td =review[:date]
       td =review[:location]
-      td =review[:title]
+      td =review[:title][0..20] + '...' rescue ""
