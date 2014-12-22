@@ -42,9 +42,15 @@ class MoviesController < ApplicationController
     redirect_to movies_path
   end
 
-  def populate
+  def populate_source_links
     @movie = Movie.find(params[:id])
     @movie.populate_source_links
+    redirect_to movie_path(@movie)
+  end
+
+  def populate_related_people
+    @movie = Movie.find(params[:id])
+    @movie.populate_related_people
     redirect_to movie_path(@movie)
   end
 

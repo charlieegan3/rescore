@@ -3,11 +3,14 @@ h1 =@movie.title
 strong Actions
 ul
   li =link_to 'Edit', edit_movie_path(@movie)
-  li =link_to 'Populate Source Links', populate_movie_path(@movie)
+  li =link_to 'Populate Source Links', populate_movie_source_links_path(@movie)
+  li =link_to 'Populate Related People', populate_movie_related_people_path(@movie)
   -if @movie.status.nil? || @movie.status == ''
     li =link_to 'Collect Reviews', collect_movie_path(@movie)
   -else
-    li ="Status: #{@movie.status}"
+    li
+      ="Status: #{@movie.status}"
+      =link_to 'Restart', collect_movie_path(@movie)
   -if params[:all]
     li =link_to "Hide Review and Cast List", movie_path(@movie)
   -else
