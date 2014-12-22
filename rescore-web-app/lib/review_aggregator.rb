@@ -1,5 +1,4 @@
 require 'open-uri'
-require 'pry'
 
 class ReviewAggregator
   def initialize(film_title, page_depth = 1, print = true)

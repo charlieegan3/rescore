@@ -21,5 +21,6 @@ module RescoreWebApp
     # config.i18n.default_locale = :de
 
     config.autoload_paths << Rails.root.join('lib')
+    config.autoload_paths << Rails.root.join('lib/scrapers')
   end
 end
