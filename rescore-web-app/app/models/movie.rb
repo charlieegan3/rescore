@@ -1,5 +1,12 @@
 class Movie < ActiveRecord::Base
   serialize :reviews, Array
+  serialize :related_people, Hash
+
+  before_save :default_values
+  def default_values
+    self.reviews ||= []
+    self.related_people ||= {}
+  end
 
   def populate_source_links
     GoogleAjax.referrer = "www.resco.re"
