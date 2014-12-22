@@ -15,7 +15,7 @@ class MoviesController < ApplicationController
     end
 
     @sample_size = 5
-    @sample_size = @movie.reviews.size if params[:all]
+    @sample_size = 1000 if params[:all]
   end
 
   def new
