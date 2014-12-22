@@ -10,6 +10,7 @@ class MetacriticScraper
   end
 
   def reviews
+    return [] if @title_url == '' || @title_url.nil?
     reviews = []
     review_urls(@title_url).each do |review_url|
       raw_reviews(review_url).each do |raw_review|

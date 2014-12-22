@@ -10,6 +10,7 @@ class Rotten_Tomatoes_Scraper
   end
 
   def reviews
+    return [] if @title_url == '' || @title_url.nil?
     rows = []
     review_urls(@title_url).each do |url|
       print "Fetching: #{url}... " if @print

@@ -11,6 +11,7 @@ class AmazonScraper
   end
 
   def reviews
+    return [] if @title_url == '' || @title_url.nil?
     potential_review_divs = get_potential_reviews
 
     reviews = []

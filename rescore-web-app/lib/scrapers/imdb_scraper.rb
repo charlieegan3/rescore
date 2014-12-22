@@ -10,6 +10,7 @@ class Imdb_Scraper
   end
 
   def reviews
+    return [] if @title_url == '' || @title_url.nil?
     reviews = []
     review_urls(@title_url).each do |url|
       if url.class == String
