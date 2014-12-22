@@ -8,6 +8,10 @@ ul
     li =link_to 'Collect Reviews', collect_movie_path(@movie)
   -else
     li ="Status: #{@movie.status}"
+  -if params[:all]
+    li =link_to "Hide Review and Cast List", movie_path(@movie)
+  -else
+    li =link_to "Show all Reviews and Cast Members", movie_path(@movie, {all: true})
   li =button_to 'Delete Movie', @movie, {onclick: "return confirm('Sure?')", method: :delete}
 
 strong Stats
@@ -26,3 +30,7 @@ strong Reviews
 =high_chart("ratings", @ratings_chart) unless @movie.reviews.empty?
 =render 'review_list', reviews: @movie.reviews.take(@sample_size)
 br
+br
+strong Related People
+=render 'cast_list', cast: @movie.related_people[:cast].take(@sample_size)
+

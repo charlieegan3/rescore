@@ -37,6 +37,14 @@ class Movie < ActiveRecord::Base
   end
   handle_asynchronously :collect_reviews
 
+  def populate_related_people
+    bf = BadFruit.new("6tuqnhbh49jqzngmyy78n8v3")
+    cast = bf.movies.search_by_name(title[0..15])[0].full_cast.map { |person|
+      {name: person.name, characters: person.characters}
+    }
+    update_attribute(:related_people, {cast: cast})
+  end
+
   def rating_distribution
     dup_hash(self.reviews.map {|x| (x[:percentage] / 10 unless x[:percentage].nil?).to_i * 10 }).to_a.
       sort_by {|x|x.first}.map {|x|

@@ -20,7 +20,3 @@ table border=(1)
       td =review[:date]
       td =review[:location]
       td =review[:title]
--if params[:all]
-  =link_to "Hide reviews", movie_path(@movie)
--else
-  =link_to "Show all #{@movie.reviews.size} reviews", movie_path(@movie, {all: true})
