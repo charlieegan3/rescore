@@ -1,3 +1,14 @@
 // Place all the styles related to the Movies controller here.
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
+
+input {
+  width: 400px;
+}
+
+.comment {
+  font-size: 0.8em;
+  margin-top: 0px;
+  margin-bottom: 5px;
+  color: green;
+}
