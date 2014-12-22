@@ -46,10 +46,12 @@ class Movie < ActiveRecord::Base
   end
 
   def rating_distribution
-    dup_hash(self.reviews.map {|x| (x[:percentage] / 10 unless x[:percentage].nil?).to_i * 10 }).to_a.
-      sort_by {|x|x.first}.map {|x|
-      x.last
-    }
+    counts = []
+    rounded_ratings = self.reviews.map {|x| (x[:percentage] / 10 unless x[:percentage].nil?).to_i * 10 }
+    (0..100).step(10) do |n|
+      counts << rounded_ratings.count(n)
+    end
+    counts
   end
 
   private
