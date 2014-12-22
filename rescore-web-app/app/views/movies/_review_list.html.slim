@@ -1,0 +1,26 @@
+table border=(1)
+  tr
+    th source
+    th rating
+    th rating
+    th content
+    th useful
+    th username
+    th date
+    th location
+    th title
+  -reviews.each do |review|
+    tr
+      td =review[:source][:vendor]
+      td =review[:rating]
+      td =review[:percentage]
+      td =review[:content][0..50] + '...'
+      td =review[:useful].reduce(:/).round(2) if review[:useful].class == Array
+      td =review[:username]
+      td =review[:date]
+      td =review[:location]
+      td =review[:title]
+-if params[:all]
+  =link_to "Hide reviews", movie_path(@movie)
+-else
+  =link_to "Show all #{@movie.reviews.size} reviews", movie_path(@movie, {all: true})

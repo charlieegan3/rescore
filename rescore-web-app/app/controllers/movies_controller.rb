@@ -8,11 +8,13 @@ class MoviesController < ApplicationController
 
     @ratings_chart = LazyHighCharts::HighChart.new('column') do |f|
       f.series(name: 'Ratings', data: @movie.rating_distribution)
-      f.title({text: "Rating Distribution"})
       f.options[:chart][:defaultSeriesType] = 'column'
+      f.options[:chart][:width] = '200'
+      f.options[:chart][:height] = '150'
+      f.options[:legend][:enabled] = false
     end
 
-    @sample_size = 10
+    @sample_size = 5
     @sample_size = @movie.reviews.size if params[:all]
   end
 

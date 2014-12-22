@@ -1,47 +1,28 @@
 h1 =@movie.title
-h2 Show
-=link_to 'Edit', edit_movie_path(@movie)
-br
-=link_to 'Populate Source Links', populate_movie_path(@movie)
+
+strong Actions
+ul
+  li =link_to 'Edit', edit_movie_path(@movie)
+  li =link_to 'Populate Source Links', populate_movie_path(@movie)
+  -if @movie.status.nil? || @movie.status == ''
+    li =link_to 'Collect Reviews', collect_movie_path(@movie)
+  -else
+    li ="Status: #{@movie.status}"
+  li =button_to 'Delete Movie', @movie, {onclick: "return confirm('Sure?')", method: :delete}
+
+strong Stats
+ul
+  li ="This movie will be scanned #{@movie.page_depth} pages deep."
+  li ="Review Count: #{@movie.reviews.size}"
+
+strong Source Links
 ul
   li= link_to @movie.imdb_link, @movie.imdb_link
   li= link_to @movie.amazon_link, @movie.amazon_link
   li= link_to @movie.metacritic_link, @movie.metacritic_link
   li= link_to @movie.rotten_tomatoes_link, @movie.rotten_tomatoes_link
 
-p ="This movie will be scanned #{@movie.page_depth} pages deep."
--if @movie.status.nil? || @movie.status == ''
-  =link_to 'Collect Reviews', collect_movie_path(@movie)
--else
-  p ="Status: #{@movie.status}"
-p ="Review Count: #{@movie.reviews.size}"
+strong Reviews
 =high_chart("ratings", @ratings_chart) unless @movie.reviews.empty?
-table border=(1)
-  tr
-    th source
-    th rating
-    th rating
-    th content
-    th useful
-    th username
-    th date
-    th location
-    th title
-  -@movie.reviews.take(@sample_size).each do |review|
-    tr
-      td =review[:source][:vendor]
-      td =review[:rating]
-      td =review[:percentage]
-      td =review[:content][0..50] + '...'
-      td =review[:useful].reduce(:/).round(2) if review[:useful].class == Array
-      td =review[:username]
-      td =review[:date]
-      td =review[:location]
-      td =review[:title]
--if params[:all]
-  =link_to "Hide reviews", movie_path(@movie)
--else
-  =link_to "Show all #{@movie.reviews.size} reviews", movie_path(@movie, {all: true})
+=render 'review_list', reviews: @movie.reviews.take(@sample_size)
 br
-br
-=button_to 'Delete Movie', @movie, {onclick: "return confirm('Sure?')", method: :delete}
