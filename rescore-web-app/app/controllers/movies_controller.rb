@@ -19,7 +19,7 @@ class MoviesController < ApplicationController
   end
 
   def new
-    @movie = Movie.new
+    @movie = Movie.new(page_depth: 1)
   end
 
   def edit

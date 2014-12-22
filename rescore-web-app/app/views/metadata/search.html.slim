@@ -11,6 +11,7 @@
       th year
       th cast
       th link
+      th create
     -@movies.each do |movie|
       tr
         td
@@ -23,5 +24,6 @@
             -movie.cast.each do |member|
               li =member['name']
         td =link_to 'View', movie.links['alternate']
+        td =link_to 'Create', new_movie_path(title: movie.name, image_url: movie.posters.thumbnail, year: movie.year, rotten_tomatoes_id: movie.id, rotten_tomatoes_link: movie.links['alternate'])
 
 
