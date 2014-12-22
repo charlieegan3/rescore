@@ -1,5 +1,8 @@
 h1 =@movie.title
 
+div style=('right: 0; top: 0; position: absolute')
+  =image_tag(@movie.image_url)
+
 strong Actions
 ul
   li =link_to 'Edit', edit_movie_path(@movie)
@@ -35,7 +38,7 @@ strong Reviews
 =high_chart("ratings", @ratings_chart) unless @movie.reviews.empty?
 =render 'review_list', reviews: @movie.reviews.take(@sample_size)
 br
-br
+
 strong Related People
 =render 'cast_list', cast: @movie.related_people[:cast].take(@sample_size) if @movie.related_people[:cast]
 
