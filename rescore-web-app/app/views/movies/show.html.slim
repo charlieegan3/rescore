@@ -19,6 +19,7 @@ ul
 
 strong Stats
 ul
+  li =@movie.rotten_tomatoes_id
   li ="This movie will be scanned #{@movie.page_depth} pages deep."
   li ="Review Count: #{@movie.reviews.size}"
   li ="Cast Count: #{@movie.related_people[:cast].size}" if @movie.related_people[:cast]
