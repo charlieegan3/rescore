@@ -18,6 +18,7 @@ strong Stats
 ul
   li ="This movie will be scanned #{@movie.page_depth} pages deep."
   li ="Review Count: #{@movie.reviews.size}"
+  li ="Cast Count: #{@movie.related_people[:cast].size}"
 
 strong Source Links
 ul
