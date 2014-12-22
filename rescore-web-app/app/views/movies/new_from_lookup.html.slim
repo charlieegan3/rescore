@@ -1,5 +1,5 @@
-=form_tag metadata_search_path, :method => 'get' do
-  = text_field_tag :query, params[:query]
+=form_tag new_movie_from_lookup_path, :method => 'get' do
+  = text_field_tag :query, params[:query], placeholder: 'Film Title'
   = submit_tag "Search", :name => nil
 
 -unless @movies.empty?

@@ -12,8 +12,7 @@ Rails.application.routes.draw do
   #   get 'products/:id/purchase' => 'catalog#purchase', as: :purchase
 
   # Example resource route (maps HTTP verbs to controller actions automatically):
-  get 'metadata' => 'metadata#search', as: :metadata_search
-
+  get 'new_from_lookup' => 'movies#new_from_lookup', as: :new_movie_from_lookup
   get 'movies/:id/populate_source_links' => 'movies#populate_source_links', as: :populate_movie_source_links
   get 'movies/:id/populate_related_people' => 'movies#populate_related_people', as: :populate_movie_related_people
   get 'movies/:id/collect' => 'movies#collect', as: :collect_movie
