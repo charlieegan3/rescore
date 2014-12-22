@@ -28,6 +28,7 @@ class Movie < ActiveRecord::Base
     self.status = nil; save
     save
   end
+  handle_asynchronously :collect_reviews
 
   def rating_distribution
     dup_hash(self.reviews.map {|x| (x[:percentage] / 10 unless x[:percentage].nil?).to_i * 10 }).to_a.
@@ -41,5 +42,4 @@ class Movie < ActiveRecord::Base
      ary.inject(Hash.new(0)) { |h,e| h[e] += 1; h }.select {
      |k,v| v > 1 }.inject({}) { |r, e| r[e.first] = e.last; r }
     end
-  handle_asynchronously :collect_reviews
 end
