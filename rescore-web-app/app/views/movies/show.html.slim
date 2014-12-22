@@ -18,7 +18,7 @@ strong Stats
 ul
   li ="This movie will be scanned #{@movie.page_depth} pages deep."
   li ="Review Count: #{@movie.reviews.size}"
-  li ="Cast Count: #{@movie.related_people[:cast].size}"
+  li ="Cast Count: #{@movie.related_people[:cast].size}" if @movie.related_people[:cast]
 
 strong Source Links
 ul
@@ -33,5 +33,5 @@ strong Reviews
 br
 br
 strong Related People
-=render 'cast_list', cast: @movie.related_people[:cast].take(@sample_size)
+=render 'cast_list', cast: @movie.related_people[:cast].take(@sample_size) if @movie.related_people[:cast]
 
