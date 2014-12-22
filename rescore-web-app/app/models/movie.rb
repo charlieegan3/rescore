@@ -39,7 +39,7 @@ class Movie < ActiveRecord::Base
 
   def populate_related_people
     bf = BadFruit.new("6tuqnhbh49jqzngmyy78n8v3")
-    cast = bf.movies.search_by_name(title[0..15])[0].full_cast.map { |person|
+    cast = bf.movies.search_by_id(self.rotten_tomatoes_id).full_cast.map { |person|
       {name: person.name, characters: person.characters}
     }
     update_attribute(:related_people, {cast: cast})

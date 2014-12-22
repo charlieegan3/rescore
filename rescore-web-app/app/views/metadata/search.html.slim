@@ -1,0 +1,27 @@
+=form_tag metadata_search_path, :method => 'get' do
+  = text_field_tag :query, params[:query]
+  = submit_tag "Search", :name => nil
+
+-unless @movies.empty?
+  table border=(1)
+    tr
+      th id
+      th poster
+      th title
+      th year
+      th cast
+      th link
+    -@movies.each do |movie|
+      tr
+        td
+          strong =movie.id
+        td =image_tag(movie.posters.thumbnail)
+        td =movie.name
+        td =movie.year
+        td
+          ul
+            -movie.cast.each do |member|
+              li =member['name']
+        td =link_to 'View', movie.links['alternate']
+
+
