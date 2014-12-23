@@ -17,7 +17,7 @@ class MoviesController < ApplicationController
     @sample_size = 5
     @sample_size = 1000 if params[:all]
 
-    # this cannot stay here
+    # this cannot stay here!
     @topic_sentiment  = {}
     @movie.reviews.each do |review|
       next if review[:rescore_review].nil?
@@ -31,6 +31,15 @@ class MoviesController < ApplicationController
       end
     end
     @topic_sentiment = @topic_sentiment.map {|k,v| [k, v.reduce(:+) / v.size] }
+
+    @chart2 = LazyHighCharts::HighChart.new('graph') do |f|
+      f.xAxis(:categories => @topic_sentiment.map { |k,_| k } )
+      f.series(:name => "Score", :yAxis => 0, :data => @topic_sentiment.map { |_,v| v } )
+      f.options[:chart][:defaultSeriesType] = 'column'
+      f.options[:chart][:height] = '150'
+      f.options[:chart][:width] = '300'
+      f.options[:legend][:enabled] = false
+    end
   end
 
   def new
