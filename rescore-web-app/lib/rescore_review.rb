@@ -1,6 +1,3 @@
-#WARNING, there is a conflict in sentiment_lib and engtagger that I'm silencing here
-$VERBOSE = nil
-
 class RescoreReview
   attr_accessor :text, :sentences, :film_name, :related_people
   def initialize(text)
