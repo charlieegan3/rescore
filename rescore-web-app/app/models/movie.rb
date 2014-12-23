@@ -47,7 +47,8 @@ class Movie < ActiveRecord::Base
 
   def build_summary
     summary = []
-    self.reviews.take(5).each do |review|
+    # warning, only 10 reviews!
+    self.reviews.take(10).each do |review|
       rescore_review = RescoreReview.new(review[:content])
       rescore_review.build_all
       review[:rescore_review] = rescore_review.sentences

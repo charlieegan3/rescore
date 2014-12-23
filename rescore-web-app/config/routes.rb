@@ -16,6 +16,7 @@ Rails.application.routes.draw do
   get 'movies/:id/populate_source_links' => 'movies#populate_source_links', as: :populate_movie_source_links
   get 'movies/:id/populate_related_people' => 'movies#populate_related_people', as: :populate_movie_related_people
   get 'movies/:id/collect' => 'movies#collect', as: :collect_movie
+  get 'movies/:id/build_summary' => 'movies#build_summary', as: :build_movie_summary
   resources :movies
 
   # Example resource route with options:

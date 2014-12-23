@@ -18,6 +18,7 @@ ul
     li =link_to "Hide Review and Cast List", movie_path(@movie)
   -else
     li =link_to "Show all Reviews and Cast Members", movie_path(@movie, {all: true})
+  li =link_to 'Build Summary', build_movie_summary_path(@movie)
   li =button_to 'Delete Movie', @movie, {onclick: "return confirm('Sure?')", method: :delete}
 
 strong Stats
@@ -48,4 +49,3 @@ table border=(1)
     tr
       td =k
       td =v.round(3)
-
