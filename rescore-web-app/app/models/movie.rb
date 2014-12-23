@@ -47,8 +47,9 @@ class Movie < ActiveRecord::Base
 
   def build_summary
     summary = []
-    # warning, only 10 reviews!
-    self.reviews.take(10).each do |review|
+    count = 0
+    self.reviews.each do |review|
+      puts self.status = "#{(((count += 1).to_f / self.reviews.size) * 100).floor}%"; save
       rescore_review = RescoreReview.new(review[:content])
       rescore_review.build_all
       review[:rescore_review] = rescore_review.sentences
@@ -57,6 +58,7 @@ class Movie < ActiveRecord::Base
     self.reviews = summary
     save
   end
+  handle_asynchronously :build_summary
 
   def rating_distribution
     counts = []
