@@ -6,20 +6,13 @@ class RescoreReview
   end
 
   def build_all
-    # if Language.check_language(self.text)
     extract_sentences
     include_cleaned_sentences
     evaluate_sentiment
     apply_context_tags
     apply_noun_phrases
-    guess_film_name_from_text
-    populate_related_people
     apply_people_tags
     get_emphasis
-    # else
-    #   puts "Failed to analyse review: language was not English."
-    #   return 0
-    # end
   end
 
   def time_all
