@@ -45,6 +45,10 @@ class Movie < ActiveRecord::Base
     update_attribute(:related_people, {cast: cast})
   end
 
+  def build_summary
+    binding.pry
+  end
+
   def rating_distribution
     counts = []
     rounded_ratings = self.reviews.map {|x| (x[:percentage] / 10 unless x[:percentage].nil?).to_i * 10 }

@@ -38,7 +38,6 @@ GEM
       rack (>= 0.9.0)
     binding_of_caller (0.7.2)
       debug_inspector (>= 0.0.1)
-    birch (0.0.8)
     builder (3.2.2)
     capybara (2.4.4)
       mime-types (>= 1.16)
@@ -121,7 +120,6 @@ GEM
     nokogumbo (1.1.12)
       nokogiri
     ots (0.5.4)
-    progressbar (0.21.0)
     pry (0.10.1)
       coderay (~> 1.1.0)
       method_source (~> 0.8.1)
@@ -173,7 +171,6 @@ GEM
       rspec-support (~> 3.1.0)
     rspec-support (3.1.2)
     ruby-stemmer (0.9.3)
-    rubyzip (0.9.9)
     sad_panda (1.0.1)
       ruby-stemmer
     safe_yaml (1.0.4)
@@ -187,9 +184,6 @@ GEM
       sass (~> 3.2.2)
       sprockets (~> 2.8, < 3.0)
       sprockets-rails (~> 2.0)
-    schiphol (1.0.1)
-      progressbar (>= 0.10.0)
-      rubyzip (~> 0.9.9)
     sdoc (0.4.1)
       json (~> 1.7, >= 1.7.7)
       rdoc (~> 4.0)
@@ -214,17 +208,12 @@ GEM
       sprockets (>= 2.8, < 4.0)
     sqlite3 (1.3.10)
     stemmer (1.0.1)
-    tactful_tokenizer (0.0.5)
     temple (0.6.9)
     thor (0.19.1)
     thread_safe (0.3.4)
     tilt (1.4.1)
     timers (4.0.1)
       hitimes
-    treat (2.1.0)
-      birch
-      schiphol
-      yomu
     turbolinks (2.5.3)
       coffee-rails
     tzinfo (1.2.2)
@@ -241,7 +230,6 @@ GEM
     whatlanguage (1.0.5)
     xpath (2.0.0)
       nokogiri (~> 1.3)
-    yomu (0.1.5)
 
 PLATFORMS
   ruby
@@ -275,8 +263,6 @@ DEPENDENCIES
   slim
   spring
   sqlite3
-  tactful_tokenizer
-  treat
   turbolinks
   uglifier (>= 1.3.0)
   unidecoder

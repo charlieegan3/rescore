@@ -1,5 +1,3 @@
-require 'engtagger'
-
 TRANSLATIONS = {'CC' =>      'Conjunction',
 'CD' =>      'Adjective',
 'DET' =>     'Determiner',

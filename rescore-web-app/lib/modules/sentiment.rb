@@ -1,8 +1,3 @@
-require 'simple_sentiment'
-require 'sad_panda'
-require 'sentiment_lib'
-require 'sentimental'
-
 module Sentiment
   class Sentiment::SentimentAnalyzer
     def initialize()

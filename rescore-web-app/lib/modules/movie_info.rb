@@ -1,9 +1,3 @@
-require 'ots'
-require 'googleajax'
-require 'sanitize'
-require 'unidecoder'
-require_relative 'BadFruit/lib/badfruit.rb'
-
 module MovieInfo
 
   # | ------------------------------------------------------------------------

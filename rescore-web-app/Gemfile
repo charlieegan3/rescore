@@ -30,8 +30,6 @@ gem 'sentiment_lib'
 gem 'sentimental'
 gem 'engtagger'
 gem 'punkt-segmenter'
-gem 'tactful_tokenizer'
-gem 'treat'
 
 group :development do
   gem 'sqlite3'
