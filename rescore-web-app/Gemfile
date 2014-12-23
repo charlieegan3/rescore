@@ -19,6 +19,20 @@ gem 'lazy_high_charts'
 
 gem 'badfruit'
 
+# NLP / Algorithm Gems
+gem 'ots'
+gem 'whatlanguage'
+gem 'sanitize'
+gem 'unidecoder'
+gem 'simple_sentiment'
+gem 'sad_panda'
+gem 'sentiment_lib'
+gem 'sentimental'
+gem 'engtagger'
+gem 'punkt-segmenter'
+gem 'tactful_tokenizer'
+gem 'treat'
+
 group :development do
   gem 'sqlite3'
   gem 'better_errors'
