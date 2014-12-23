@@ -46,7 +46,15 @@ class Movie < ActiveRecord::Base
   end
 
   def build_summary
-    binding.pry
+    summary = []
+    self.reviews.take(5).each do |review|
+      rescore_review = RescoreReview.new(review[:content])
+      rescore_review.build_all
+      review[:rescore_review] = rescore_review.sentences
+      summary << review
+    end
+    self.reviews = summary
+    save
   end
 
   def rating_distribution

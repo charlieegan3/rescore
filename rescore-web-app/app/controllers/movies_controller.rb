@@ -5,6 +5,7 @@ class MoviesController < ApplicationController
 
   def show
     @movie = Movie.find(params[:id])
+    # @movie.build_summary
 
     @ratings_chart = LazyHighCharts::HighChart.new('column') do |f|
       f.series(name: 'Ratings', data: @movie.rating_distribution)
@@ -16,6 +17,20 @@ class MoviesController < ApplicationController
 
     @sample_size = 5
     @sample_size = 1000 if params[:all]
+
+    # this cannot stay here
+    @topic_sentiment  = {}
+    @movie.reviews.each do |review|
+      review[:rescore_review].each do |sentence|
+        sentence[:context_tags].keys.each do |tag|
+          p tag
+          p @topic_sentiment
+          @topic_sentiment[tag] = [] if @topic_sentiment[tag].nil?
+          @topic_sentiment[tag] << sentence[:sentiment][:average]
+        end
+      end
+    end
+    @topic_sentiment = @topic_sentiment.map {|k,v| [k, v.reduce(:+) / v.size] }
   end
 
   def new

@@ -42,3 +42,10 @@ br
 strong Related People
 =render 'cast_list', cast: @movie.related_people[:cast].take(@sample_size) if @movie.related_people[:cast]
 
+strong Summary
+table border=(1)
+  -@topic_sentiment.each do |k,v|
+    tr
+      td =k
+      td =v.round(3)
+
