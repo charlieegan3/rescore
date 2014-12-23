@@ -1,8 +1,9 @@
 class RescoreReview
   attr_accessor :text, :sentences, :film_name, :related_people
-  def initialize(text)
+  def initialize(text, related_people)
     @text = text
     @sentences = []
+    @related_people = related_people
   end
 
   def build_all
@@ -108,10 +109,7 @@ class RescoreReview
   end
 
   def apply_people_tags
-    if @related_people.nil?
-      #puts 'No related people have been assigned'
-      return
-    end
+    return if @related_people.nil?
     previous_name = nil
     @sentences.each do |sentence|
       people = People.tag_sentence(sentence[:text], @related_people[:cast], @related_people[:director], previous_name, true)

@@ -11,7 +11,7 @@ module People
     # initialise hash
     if !cast.empty?
       cast.each do |c|
-        people_indexes[c.name] = []
+        people_indexes[c[:name]] = []
       end
     end
     if director.class.method_defined?(name)
@@ -21,27 +21,27 @@ module People
     # Tag sentence
     if !cast.empty?
       cast.each do |c|
-        if sentence.include?(c.name)
-          people_indexes[c.name] = Utils.get_indexes(sentence, c.name)
-          names.push(c.name) if !names.include?(c.name)
+        if sentence.include?(c[:name])
+          people_indexes[c[:name]] = Utils.get_indexes(sentence, c[:name])
+          names.push(c[:name]) if !names.include?(c[:name])
         end
-  
-        c.characters.each do |ch|
+
+        c[:characters].each do |ch|
           if sentence.include?(ch)
-            people_indexes[c.name] = Utils.get_indexes(sentence, ch) if actors_only == true
+            people_indexes[c[:name]] = Utils.get_indexes(sentence, ch) if actors_only == true
             people_indexes[ch.name] = Utils.get_indexes(sentence, ch.name) if actors_only == false
-            names.push(c.name) if !names.include?(c.name) && actors_only == true
+            names.push(c[:name]) if !names.include?(c[:name]) && actors_only == true
             names.push(ch) if !names.include?(ch) && actors_only == false
           end
         end
       end
     end
 
-    if director.class.method_defined?(name)
-      if sentence.include?(director.name)
-        names.push(director.name) if !names.include?(director.name)
-      end
-    end
+    # if director.class.method_defined?(name)
+    #   if sentence.include?(director.name)
+    #     names.push(director.name) if !names.include?(director.name)
+    #   end
+    # end
 
     if names.empty?
       pronouns = ["He", "he", "Him", "him", "His", "his", "She", "she", "Her", "her"]

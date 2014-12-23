@@ -50,12 +50,13 @@ class Movie < ActiveRecord::Base
     count = 0
     self.reviews.each do |review|
       puts self.status = "#{(((count += 1).to_f / self.reviews.size) * 100).floor}%"; save
-      rescore_review = RescoreReview.new(review[:content])
+      rescore_review = RescoreReview.new(review[:content], self.related_people)
       rescore_review.build_all
       review[:rescore_review] = rescore_review.sentences
       summary << review
     end
     self.reviews = summary
+    self.status = nil
     save
   end
   handle_asynchronously :build_summary
