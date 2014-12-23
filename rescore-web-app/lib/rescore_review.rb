@@ -1,15 +1,6 @@
 #WARNING, there is a conflict in sentiment_lib and engtagger that I'm silencing here
 $VERBOSE = nil
 
-require_relative 'modules/splitter'
-require_relative 'modules/sentiment'
-require_relative 'modules/context'
-require_relative 'modules/noun_phrases'
-require_relative 'modules/movie_info'
-require_relative 'modules/people'
-require_relative 'modules/emphasis'
-require_relative 'modules/language'
-
 class RescoreReview
   attr_accessor :text, :sentences, :film_name, :related_people
   def initialize(text)
@@ -18,20 +9,20 @@ class RescoreReview
   end
 
   def build_all
-    if Language.check_language(self.text)
-      extract_sentences
-      include_cleaned_sentences
-      evaluate_sentiment
-      apply_context_tags
-      apply_noun_phrases
-      guess_film_name_from_text
-      populate_related_people
-      apply_people_tags
-      get_emphasis
-    else
-      puts "Failed to analyse review: language was not English."
-      return 0
-    end
+    # if Language.check_language(self.text)
+    extract_sentences
+    include_cleaned_sentences
+    evaluate_sentiment
+    apply_context_tags
+    apply_noun_phrases
+    guess_film_name_from_text
+    populate_related_people
+    apply_people_tags
+    get_emphasis
+    # else
+    #   puts "Failed to analyse review: language was not English."
+    #   return 0
+    # end
   end
 
   def time_all
