@@ -1,7 +1,6 @@
 #WARNING, there is a conflict in sentiment_lib and engtagger that I'm silencing here
 $VERBOSE = nil
 
-require 'pry'
 require_relative 'modules/splitter'
 require_relative 'modules/sentiment'
 require_relative 'modules/context'
@@ -11,7 +10,7 @@ require_relative 'modules/people'
 require_relative 'modules/emphasis'
 require_relative 'modules/language'
 
-class Review
+class RescoreReview
   attr_accessor :text, :sentences, :film_name, :related_people
   def initialize(text)
     @text = text
