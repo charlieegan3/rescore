@@ -78,7 +78,8 @@ class MoviesController < ApplicationController
         :metacritic_link,
         :rotten_tomatoes_link,
         :rotten_tomatoes_id,
-        :image_url
+        :image_url,
+        :year
       )
     end
 end

@@ -1,31 +1,31 @@
 = form_for @movie do |f|
   div
     label Title&nbsp;
-    = f.text_field :title, placeholder: 'Title', value: params[:title]
+    = f.text_field :title, placeholder: 'Title', value: params[:title] || @movie.title
 
   fieldset
     legend Source Links
     p.comment These can be populated automatically once the movie is created.
     label IMDb Link&nbsp;
-    = f.text_field :imdb_link, placeholder: '(optional)'
+    = f.text_field :imdb_link, placeholder: '(optional)', value: @movie.imdb_link
     label Amazon Link&nbsp;
-    = f.text_field :amazon_link, placeholder: '(optional)'
+    = f.text_field :amazon_link, placeholder: '(optional)', value: @movie.amazon_link
     label Metacritic Link&nbsp;
-    = f.text_field :metacritic_link, placeholder: '(optional)'
+    = f.text_field :metacritic_link, placeholder: '(optional)', value: @movie.metacritic_link
     label Rotten Tomatoes Link&nbsp;
-    = f.text_field :rotten_tomatoes_link, placeholder: '(optional)', value: params[:rotten_tomatoes_link]
+    = f.text_field :rotten_tomatoes_link, placeholder: '(optional)', value: params[:rotten_tomatoes_link] || @movie.rotten_tomatoes_link
 
   fieldset
     legend Other
     label Rotten Tomatoes ID&nbsp;
     p.comment Used for metadata collection (cast, image, year)
-    = f.text_field :rotten_tomatoes_id, placeholder: 'Rotten Tomatoes ID', value: params[:rotten_tomatoes_id]
+    = f.text_field :rotten_tomatoes_id, placeholder: 'Rotten Tomatoes ID', value: params[:rotten_tomatoes_id] || @movie.rotten_tomatoes_id
     label Poster/Art URL&nbsp;
-    = f.text_field :image_url, placeholder: 'Image URL', value: params[:image_url]
+    = f.text_field :image_url, placeholder: 'Image URL', value: params[:image_url] || @movie.image_url
     label Year&nbsp;
-    = f.text_field :year, placeholder: 'Year', value: params[:year]
+    = f.text_field :year, placeholder: 'Year', value: params[:year] || @movie.year
     label Page Scan Depth&nbsp;
     p.comment The number of review pages per source that will be scanned - the larger the number the longer it takes
     = f.number_field(:page_depth, in: 1..10, step: 1)
   br
-  = f.submit 'Create', class: 'button expand'
+  = f.submit 'Save', class: 'button expand'
