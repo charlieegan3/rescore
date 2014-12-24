@@ -15,3 +15,7 @@
  *= require foundation_and_overrides
 
  */
+
+ .top-bar {
+  margin-bottom: 10px;
+ }
