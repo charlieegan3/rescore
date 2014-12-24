@@ -43,6 +43,11 @@ class MoviesController < ApplicationController
     redirect_to movies_path
   end
 
+  def status
+    @movie = Movie.find(params[:id])
+    render layout: false
+  end
+
   def populate_source_links
     @movie = Movie.find(params[:id])
     @movie.populate_source_links
@@ -58,6 +63,7 @@ class MoviesController < ApplicationController
   def build_summary
     @movie = Movie.find(params[:id])
     @movie.build_summary
+    @movie.update_attribute(:status, '0%')
     redirect_to movie_path(@movie)
   end
 

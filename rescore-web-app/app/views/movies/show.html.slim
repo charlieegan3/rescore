@@ -83,8 +83,9 @@
       -if !@movie.busy
         =link_to 'Build Summary', build_movie_summary_path(@movie), class: 'button'
       -else
-        .alert-box.alert
-          =@movie.status
+        div id=('build-progress')
+          .progress
+            span.meter id=("#{@movie.id}") style=("width: #{@movie.status}")
         =link_to 'Restart', build_movie_summary_path(@movie), class: 'button alert'
       -if @movie.has_summary
         table
