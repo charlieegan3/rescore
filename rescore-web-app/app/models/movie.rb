@@ -70,6 +70,18 @@ class Movie < ActiveRecord::Base
     counts
   end
 
+  def source_link_count
+    [self.imdb_link, self.amazon_link, self.metacritic_link, self.rotten_tomatoes_link].count {|l| l.include?('http')}
+  end
+
+  def busy
+    !self.status.nil?
+  end
+
+  def has_summary
+    !self.reviews.last[:rescore_review].nil?
+  end
+
   private
     def dup_hash(ary)
      ary.inject(Hash.new(0)) { |h,e| h[e] += 1; h }.select {

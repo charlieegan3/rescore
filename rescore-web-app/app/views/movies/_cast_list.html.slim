@@ -1,4 +1,6 @@
-ul
-  -cast.each do |member|
-    li
-      ="#{member[:name]} - #{member[:characters].join(',')}"
+table
+  tbody
+    -cast.each do |member|
+      tr
+        th =member[:name]
+        td =member[:characters].join(',')

@@ -14,8 +14,11 @@ class MoviesController < ApplicationController
       f.options[:legend][:enabled] = false
     end
 
-    @sample_size = 5
-    @sample_size = 1000 if params[:all]
+    @cast_count = 3
+    @cast_count = 1000 if params[:all_cast]
+
+    @review_count = 5
+    @review_count = 10000 if params[:all_reviews]
 
     # this cannot stay here!
     @topic_sentiment  = {}
