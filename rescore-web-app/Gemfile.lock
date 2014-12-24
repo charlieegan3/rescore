@@ -70,6 +70,9 @@ GEM
     execjs (2.2.2)
     ffi (1.9.6)
     formatador (0.2.5)
+    foundation-rails (5.4.5.0)
+      railties (>= 3.1.0)
+      sass (>= 3.2.0)
     googleajax (1.0.1)
       json (>= 1.0.0)
     guard (2.10.4)
@@ -242,6 +245,7 @@ DEPENDENCIES
   coffee-rails (~> 4.0.0)
   delayed_job_active_record
   engtagger
+  foundation-rails
   googleajax
   guard
   guard-rspec
