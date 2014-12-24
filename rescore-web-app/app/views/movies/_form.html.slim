@@ -8,30 +8,24 @@
     p.comment These can be populated automatically once the movie is created.
     label IMDb Link&nbsp;
     = f.text_field :imdb_link, placeholder: '(optional)'
-    br
     label Amazon Link&nbsp;
     = f.text_field :amazon_link, placeholder: '(optional)'
-    br
     label Metacritic Link&nbsp;
     = f.text_field :metacritic_link, placeholder: '(optional)'
-    br
     label Rotten Tomatoes Link&nbsp;
     = f.text_field :rotten_tomatoes_link, placeholder: '(optional)', value: params[:rotten_tomatoes_link]
 
   fieldset
     legend Other
-    p.comment Used for metadata collection (cast, image, year)
     label Rotten Tomatoes ID&nbsp;
+    p.comment Used for metadata collection (cast, image, year)
     = f.text_field :rotten_tomatoes_id, placeholder: 'Rotten Tomatoes ID', value: params[:rotten_tomatoes_id]
-    br
     label Poster/Art URL&nbsp;
     = f.text_field :image_url, placeholder: 'Image URL', value: params[:image_url]
-    br
     label Year&nbsp;
     = f.text_field :year, placeholder: 'Year', value: params[:year]
-    br
-    p.comment The number of review pages per source that will be scanned - the larger the number the longer it takes
     label Page Scan Depth&nbsp;
+    p.comment The number of review pages per source that will be scanned - the larger the number the longer it takes
     = f.number_field(:page_depth, in: 1..10, step: 1)
   br
-  = f.submit
+  = f.submit 'Create', class: 'button expand'
