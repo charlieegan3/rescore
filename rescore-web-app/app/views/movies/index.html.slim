@@ -1,9 +1,20 @@
-h1 All Movies
+.row
+  .large-12.columns
+    h1 Manage Movies
 
-=link_to 'New', new_movie_from_lookup_path
+    =link_to 'New', new_movie_from_lookup_path, class: 'button'
 
-ul
-  -@movies.each do |m|
-    li
-      =link_to m.title, movie_path(m)
-      =button_to "Delete", m, {onclick: "return confirm('Sure?')", method: :delete}
+    table
+      tr
+        th Image
+        th Title
+        th Created
+        th colspan=(2)
+          | Actions
+      -@movies.each do |m|
+        tr
+          td =image_tag(m.image_url)
+          td =m.title
+          td =distance_of_time_in_words(Time.new, m.created_at) + ' ago'
+          td =link_to 'View', movie_path(m), class: 'button'
+          td =button_to "Delete", m, {onclick: "return confirm('Sure?')", method: :delete, class: 'button alert'}
