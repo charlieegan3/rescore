@@ -6,43 +6,11 @@ class MoviesController < ApplicationController
   def show
     @movie = Movie.find(params[:id])
 
-    @ratings_chart = LazyHighCharts::HighChart.new('column') do |f|
-      f.series(name: 'Ratings', data: @movie.rating_distribution)
-      f.options[:chart][:defaultSeriesType] = 'column'
-      f.options[:chart][:width] = '200'
-      f.options[:chart][:height] = '150'
-      f.options[:legend][:enabled] = false
-    end
-
     @cast_count = 3
     @cast_count = 1000 if params[:all_cast]
 
     @review_count = 5
     @review_count = 10000 if params[:all_reviews]
-
-    # this cannot stay here!
-    @topic_sentiment  = {}
-    @movie.reviews.each do |review|
-      next if review[:rescore_review].nil?
-      review[:rescore_review].each do |sentence|
-        sentence[:context_tags].keys.each do |tag|
-          p tag
-          p @topic_sentiment
-          @topic_sentiment[tag] = [] if @topic_sentiment[tag].nil?
-          @topic_sentiment[tag] << sentence[:sentiment][:average]
-        end
-      end
-    end
-    @topic_sentiment = @topic_sentiment.map {|k,v| [k, v.reduce(:+) / v.size] }
-
-    @chart2 = LazyHighCharts::HighChart.new('graph') do |f|
-      f.xAxis(:categories => @topic_sentiment.map { |k,_| k } )
-      f.series(:name => "Score", :yAxis => 0, :data => @topic_sentiment.map { |_,v| v } )
-      f.options[:chart][:defaultSeriesType] = 'column'
-      f.options[:chart][:height] = '150'
-      f.options[:chart][:width] = '300'
-      f.options[:legend][:enabled] = false
-    end
   end
 
   def new

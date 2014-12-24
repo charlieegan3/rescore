@@ -1,10 +1,10 @@
 nav.top-bar
   ul.title-area
     li.name
-      h1 =link_to 'rescore', movies_path
+      h1 =link_to 'rescore', root_path
   section.top-bar-section
     ul.left
       li.divider
-      li
-        =link_to 'New', new_movie_from_lookup_path
+      li =link_to 'New', new_movie_from_lookup_path
       li.divider
+      li =link_to 'Manage', movies_path

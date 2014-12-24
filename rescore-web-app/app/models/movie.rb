@@ -82,6 +82,43 @@ class Movie < ActiveRecord::Base
     !self.reviews.last[:rescore_review].nil?
   end
 
+  def ratings_chart
+    LazyHighCharts::HighChart.new('column') do |f|
+      f.series(name: 'Ratings', data: self.rating_distribution)
+      f.options[:chart][:defaultSeriesType] = 'column'
+      f.options[:chart][:width] = '200'
+      f.options[:chart][:height] = '150'
+      f.options[:legend][:enabled] = false
+    end
+  end
+
+  def topics_sentiment
+    sentiment  = {}
+    self.reviews.each do |review|
+      next if review[:rescore_review].nil?
+      review[:rescore_review].each do |sentence|
+        sentence[:context_tags].keys.each do |tag|
+          p tag
+          p sentiment
+          sentiment[tag] = [] if sentiment[tag].nil?
+          sentiment[tag] << sentence[:sentiment][:average]
+        end
+      end
+    end
+    sentiment = sentiment.map {|k,v| [k, v.reduce(:+) / v.size] }
+  end
+
+  def topics_chart
+    LazyHighCharts::HighChart.new('graph') do |f|
+      f.xAxis(:categories => self.topics_sentiment.map { |k,_| k } )
+      f.series(:name => "Score", :yAxis => 0, :data => self.topics_sentiment.map { |_,v| v } )
+      f.options[:chart][:defaultSeriesType] = 'column'
+      f.options[:chart][:height] = '150'
+      f.options[:chart][:width] = '300'
+      f.options[:legend][:enabled] = false
+    end
+  end
+
   private
     def dup_hash(ary)
      ary.inject(Hash.new(0)) { |h,e| h[e] += 1; h }.select {

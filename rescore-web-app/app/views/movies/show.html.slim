@@ -67,7 +67,7 @@
         =link_to 'Restart', collect_movie_path(@movie), class: 'button alert'
       -unless @movie.reviews.empty?
         p ="#{@movie.reviews.size} reviews"
-        =high_chart("ratings", @ratings_chart)
+        =high_chart("ratings", @movie.ratings_chart)
         -if params[:all_reviews]
           =link_to 'Hide', movie_path(@movie)
         -else
@@ -85,8 +85,8 @@
         =link_to 'Restart', build_movie_summary_path(@movie), class: 'button alert'
       -if @movie.has_summary
         table
-          -@topic_sentiment.each do |k,v|
+          -@movie.topics_sentiment.each do |k,v|
             tr
               td =k
               td =v.round(3)
-        =high_chart("chart2", @chart2)
+        =high_chart("topics_chart", @movie.topics_chart)
