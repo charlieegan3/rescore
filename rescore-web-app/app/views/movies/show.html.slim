@@ -1,3 +1,21 @@
+javascript:
+    $(document).ready(function(){
+        $("#pop_src_btn").click(function(){
+          $("#pop_src_btn").html("Loading...");
+          $("#pop_src_btn").css("background-color", "green");
+        });
+
+        $("#pop_ppl_btn").click(function(){
+          $("#pop_ppl_btn").html("Loading...");
+          $("#pop_ppl_btn").css("background-color", "green");
+        });
+
+        $("#collect_btn").click(function(){
+          $("#collect_btn").html("Loading...");
+          $("#collect_btn").css("background-color", "green");
+        });
+    });
+
 .row
   .large-12.columns
     h1 =@movie.title
@@ -28,7 +46,7 @@
 
 .row
   .panel
-    =link_to 'Populate Source Links', populate_movie_source_links_path(@movie), class: 'button'
+    =link_to 'Populate Source Links', populate_movie_source_links_path(@movie), class: 'button', id: 'pop_src_btn'
     table
       tbody
         -unless @movie.imdb_link == ''
@@ -51,7 +69,7 @@
 -if @movie.source_link_count > 1
   .row
     .panel
-      =link_to 'Populate Related People', populate_movie_related_people_path(@movie), class: 'button'
+      =link_to 'Populate Related People', populate_movie_related_people_path(@movie), class: 'button', id: 'pop_ppl_btn'
       -if @movie.related_people[:cast]
         p ="#{@movie.related_people[:cast].size} cast members"
         -if params[:all_cast]
@@ -63,7 +81,7 @@
   .row
     .panel
       -if !@movie.busy
-        =link_to 'Collect Reviews', collect_movie_path(@movie), class: 'button'
+        =link_to 'Collect Reviews', collect_movie_path(@movie), class: 'button', id: 'collect_btn'
       -else
         .alert-box.alert
           =@movie.status
@@ -81,7 +99,7 @@
   .row
     .panel
       -if !@movie.busy
-        =link_to 'Build Summary', build_movie_summary_path(@movie), class: 'button'
+        =link_to 'Build Summary', build_movie_summary_path(@movie), class: 'button', id: 'summary_btn'
       -else
         div id=('build-progress')
           .progress
