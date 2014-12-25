@@ -4,6 +4,6 @@
       -@movies.each do |movie|
         tr
           td =image_tag(movie.image_url)
-          td =movie.title
+          td =link_to movie.title, movie_path(movie)
           td =high_chart("#{movie.id}-ratings", movie.ratings_chart)
           td =high_chart("#{movie.id}-topics", movie.topics_chart)
