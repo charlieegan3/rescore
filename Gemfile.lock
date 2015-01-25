@@ -93,6 +93,9 @@ GEM
     hash-deep-merge (0.1.1)
     hike (1.2.3)
     hitimes (1.2.2)
+    httparty (0.13.3)
+      json (~> 1.8)
+      multi_xml (>= 0.5.2)
     i18n (0.7.0)
     jbuilder (2.2.6)
       activesupport (>= 3.0.0, < 5)
@@ -116,6 +119,7 @@ GEM
     mini_portile (0.6.1)
     minitest (5.5.0)
     multi_json (1.10.1)
+    multi_xml (0.5.5)
     nenv (0.1.1)
     nokogiri (1.6.5)
       mini_portile (~> 0.6.0)
@@ -254,6 +258,7 @@ DEPENDENCIES
   googleajax
   guard
   guard-rspec
+  httparty
   jbuilder (~> 2.0)
   jquery-rails
   lazy_high_charts

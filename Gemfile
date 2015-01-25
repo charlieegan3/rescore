@@ -35,6 +35,7 @@ gem 'punkt-segmenter'
 group :production do
   gem 'pg'
   gem 'rails_12factor'
+  gem 'httparty'
 end
 
 group :development do
