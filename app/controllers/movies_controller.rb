@@ -20,7 +20,7 @@ class MoviesController < ApplicationController
   def new_from_lookup
     bf = BadFruit.new("6tuqnhbh49jqzngmyy78n8v3")
     @movies = []
-    @movies = bf.movies.search_by_name(params[:query]) if params[:query]
+    @movies = bf.movies.search_by_name(params[:query], 50) if params[:query]
   end
 
   def edit
