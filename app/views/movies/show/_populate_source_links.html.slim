@@ -1,0 +1,19 @@
+=link_to 'Populate Source Links', populate_movie_source_links_path(movie), class: 'button async'
+table
+  tbody
+    -unless movie.imdb_link == ''
+      tr
+        th IMDb
+        td = link_to movie.imdb_link, movie.imdb_link
+    -unless movie.amazon_link == ''
+      tr
+        th Amazon
+        td= link_to movie.amazon_link, movie.amazon_link
+    -unless movie.metacritic_link == ''
+      tr
+        th Metacritic
+        td= link_to movie.metacritic_link, movie.metacritic_link
+    -unless movie.rotten_tomatoes_link == ''
+      tr
+        th Rotten Tomatoes
+        td= link_to movie.rotten_tomatoes_link, movie.rotten_tomatoes_link
