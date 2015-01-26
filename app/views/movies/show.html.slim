@@ -1,114 +1,30 @@
 javascript:
-    $(document).ready(function(){
-        $("#pop_src_btn").click(function(){
-          $("#pop_src_btn").html("Loading...");
-          $("#pop_src_btn").css("background-color", "green");
-        });
-
-        $("#pop_ppl_btn").click(function(){
-          $("#pop_ppl_btn").html("Loading...");
-          $("#pop_ppl_btn").css("background-color", "green");
-        });
-
-        $("#collect_btn").click(function(){
-          $("#collect_btn").html("Loading...");
-          $("#collect_btn").css("background-color", "green");
-        });
-    });
+  $(document).ready(function(){
+      $(".async").click(function(){
+        $(this).html("Loading...");
+        $(this).css("background-color", "green");
+      });
+  });
 
 .row
   .large-12.columns
     h1 =@movie.title
-
 .row
   .panel
-    .row
-      .large-12.columns
-        ul.button-group
-          li =link_to 'Edit', edit_movie_path(@movie), class: 'button'
-          li =button_to 'Delete', @movie, {onclick: "return confirm('Sure?')", method: :delete, class: 'button alert'}
-
-    .row
-      .large-6.columns
-        table
-          tbody
-            tr
-              th Rotten Tomatoes ID
-              td =@movie.rotten_tomatoes_id
-            tr
-              th Scan Depth
-              td ="#{@movie.page_depth} pages"
-            tr
-              th Year
-              td =@movie.year
-      .large-6.columns
-        =image_tag(@movie.image_url)
-
+    =render 'movies/show/actions', movie: @movie
 .row
   .panel
-    =link_to 'Populate Source Links', populate_movie_source_links_path(@movie), class: 'button', id: 'pop_src_btn'
-    table
-      tbody
-        -unless @movie.imdb_link == ''
-          tr
-            th IMDb
-            td = link_to @movie.imdb_link, @movie.imdb_link
-        -unless @movie.amazon_link == ''
-          tr
-            th Amazon
-            td= link_to @movie.amazon_link, @movie.amazon_link
-        -unless @movie.metacritic_link == ''
-          tr
-            th Metacritic
-            td= link_to @movie.metacritic_link, @movie.metacritic_link
-        -unless @movie.rotten_tomatoes_link == ''
-          tr
-            th Rotten Tomatoes
-            td= link_to @movie.rotten_tomatoes_link, @movie.rotten_tomatoes_link
+    =render 'movies/show/populate_source_links', movie: @movie
 
 -if @movie.source_link_count > 1
   .row
     .panel
-      =link_to 'Populate Related People', populate_movie_related_people_path(@movie), class: 'button', id: 'pop_ppl_btn'
-      -if @movie.related_people[:cast]
-        p ="#{@movie.related_people[:cast].size} cast members"
-        -if params[:all_cast]
-          =link_to 'Hide', movie_path(@movie)
-        -else
-          =link_to 'Show All', movie_path(@movie, {all_cast: true})
-        =render 'movies/show/cast_list', cast: @movie.related_people[:cast].take(@cast_count)
-
+      =render 'movies/show/populate_related_people', movie: @movie
   .row
     .panel
-      -if !@movie.busy
-        =link_to 'Collect Reviews', collect_movie_path(@movie), class: 'button', id: 'collect_btn'
-      -else
-        .alert-box.alert
-          =@movie.status
-        =link_to 'Restart', collect_movie_path(@movie), class: 'button alert'
-      -unless @movie.reviews.empty?
-        p ="#{@movie.reviews.size} reviews"
-        =render "ratings_graph", id: @movie.id, ratings: @movie.rating_distribution
-        -if params[:all_reviews]
-          =link_to 'Hide', movie_path(@movie)
-        -else
-          =link_to 'Show All', movie_path(@movie, {all_reviews: true})
-        =render 'movies/show/review_list', reviews: @movie.reviews.take(@review_count)
+      =render 'movies/show/collect_reviews', movie: @movie
 
 -if !@movie.reviews.empty?
   .row
     .panel
-      -if !@movie.busy
-        =link_to 'Build Summary', build_movie_summary_path(@movie), class: 'button', id: 'summary_btn'
-      -else
-        div id=('build-progress')
-          .progress
-            span.meter id=("#{@movie.id}") style=("width: #{@movie.status}")
-        =link_to 'Restart', build_movie_summary_path(@movie), class: 'button alert'
-      -if @movie.has_summary
-        table
-          -@movie.topics_sentiment.each do |k,v|
-            tr
-              td =k
-              td =v.round(3)
-        =render "topics_graph", id: @movie.id, topics: @movie.topics_sentiment
+      =render 'movies/show/build_summary', movie: @movie

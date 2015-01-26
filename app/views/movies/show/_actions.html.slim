@@ -1,0 +1,21 @@
+.row
+  .large-12.columns
+    ul.button-group
+      li =link_to 'Edit', edit_movie_path(movie), class: 'button'
+      li =button_to 'Delete', movie, {onclick: "return confirm('Sure?')", method: :delete, class: 'button alert'}
+
+.row
+  .large-6.columns
+    table
+      tbody
+        tr
+          th Rotten Tomatoes ID
+          td =movie.rotten_tomatoes_id
+        tr
+          th Scan Depth
+          td ="#{movie.page_depth} pages"
+        tr
+          th Year
+          td =movie.year
+  .large-6.columns
+    =image_tag(movie.image_url)

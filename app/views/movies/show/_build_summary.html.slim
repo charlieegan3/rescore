@@ -1,0 +1,14 @@
+-if !movie.busy
+  =link_to 'Build Summary', build_movie_summary_path(movie), class: 'button async'
+-else
+  div id=('build-progress')
+    .progress
+      span.meter id=("#{movie.id}") style=("width: #{movie.status}")
+  =link_to 'Restart', build_movie_summary_path(movie), class: 'button alert'
+-if movie.has_summary
+  table
+    -movie.topics_sentiment.each do |k,v|
+      tr
+        td =k
+        td =v.round(3)
+  =render "topics_graph", id: movie.id, topics: movie.topics_sentiment
