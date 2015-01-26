@@ -16,21 +16,23 @@
     };
 
     var data = {
-        labels: <%= topics.map { |x| x[0].to_s.capitalize }.to_s.html_safe %>,
-        datasets: [
-            {
-                label: "Topics",
-                fillColor: "rgba(220,220,220,0.5)",
-                strokeColor: "rgba(220,220,220,0.8)",
-                highlightFill: "rgba(220,220,220,0.75)",
-                highlightStroke: "rgba(220,220,220,1)",
-                data: <%= topics.map { |x| x[1] } %>
-            }
-        ]
-    };
+      labels: <%= topics.map { |x| x[0].to_s.capitalize }.to_s.html_safe %>,
+      datasets: [
+        {
+            label: "My First dataset",
+            fillColor: "rgba(220,220,220,0.2)",
+            strokeColor: "rgba(220,220,220,1)",
+            pointColor: "rgba(220,220,220,1)",
+            pointStrokeColor: "#fff",
+            pointHighlightFill: "#fff",
+            pointHighlightStroke: "rgba(220,220,220,1)",
+            data: <%= topics.map { |x| x[1] * 10 } %>
+        }
+      ]
+    }
 
     var ctx_topics = $("#topics").get(0).getContext("2d");
-    var topicsChart = new Chart(ctx_topics).Bar(data, { barShowStroke: false });
+    var topicsChart = new Chart(ctx_topics).Radar(data, options);
   })
 </script>
 
