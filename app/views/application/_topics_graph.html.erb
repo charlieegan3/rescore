@@ -12,26 +12,38 @@
       barStrokeWidth : 2,
       barValueSpacing : 5,
       barDatasetSpacing : 1,
-      legendTemplate : ""
+      legendTemplate : "",
+      showTooltips: false,
+      pointLabelFontSize : 13
     };
 
     var data = {
-        labels: <%= topics.map { |x| x[0].to_s.capitalize }.to_s.html_safe %>,
-        datasets: [
-            {
-                label: "Topics",
-                fillColor: "rgba(220,220,220,0.5)",
-                strokeColor: "rgba(220,220,220,0.8)",
-                highlightFill: "rgba(220,220,220,0.75)",
-                highlightStroke: "rgba(220,220,220,1)",
-                data: <%= topics.map { |x| x[1] } %>
-            }
-        ]
-    };
+      labels: <%= topics.map { |x| x[0].to_s.capitalize + ": #{(x[1] * 100).floor}" }.to_s.html_safe %>,
+      datasets: [
+        {
+          fillColor: "rgba(220,100,100,0.2)",
+          strokeColor: "rgba(220,100,100,0.2)",
+          pointColor: "rgba(220,100,100,0.2)",
+          pointStrokeColor: "#fff",
+          pointHighlightFill: "#fff",
+          pointHighlightStroke: "rgba(220,220,220,1)",
+          data: [0,0,0,0,0,0]
+        },
+        {
+          fillColor: "rgba(150,220,100,1)",
+          strokeColor: "rgba(140,200,90,1)",
+          pointColor: "rgba(140,200,90,1)",
+          pointStrokeColor: "#fff",
+          pointHighlightFill: "#fff",
+          pointHighlightStroke: "rgba(220,220,220,1)",
+          data: <%= topics.map { |x| (x[1] * 100).floor } %>
+        }
+      ]
+    }
 
-    var ctx_topics = $("#topics").get(0).getContext("2d");
-    var topicsChart = new Chart(ctx_topics).Bar(data, { barShowStroke: false });
+    var ctx_topics = $("#<%= id %>_topics").get(0).getContext("2d");
+    var topicsChart = new Chart(ctx_topics).Radar(data, options);
   })
 </script>
 
-<canvas id="topics" width="400" height="400"></canvas>
+<canvas id="<%= id %>_topics" width="250" height="250"></canvas>
