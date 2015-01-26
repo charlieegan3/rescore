@@ -31,9 +31,9 @@
       ]
     }
 
-    var ctx_topics = $("#topics").get(0).getContext("2d");
+    var ctx_topics = $("#<%= id %>_topics").get(0).getContext("2d");
     var topicsChart = new Chart(ctx_topics).Radar(data, options);
   })
 </script>
 
-<canvas id="topics" width="400" height="400"></canvas>
+<canvas id="<%= id %>_topics" width="400" height="400"></canvas>
