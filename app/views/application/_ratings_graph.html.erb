@@ -29,10 +29,10 @@
             }
         ]
     };
-  
-    var ctx_ratings = $("#ratings").get(0).getContext("2d");
+
+    var ctx_ratings = $("#<%= id %>_ratings").get(0).getContext("2d");
     var ratingsChart = new Chart(ctx_ratings).Bar(data, { barShowStroke: false });
   })
 </script>
 
-<canvas id="ratings" width="400" height="400"></canvas>
+<canvas id="<%= id %>_ratings" width="400" height="400"></canvas>
