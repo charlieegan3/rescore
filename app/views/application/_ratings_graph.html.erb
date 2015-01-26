@@ -1,0 +1,38 @@
+<script type="text/javascript">
+  $(document).ready(function(){
+
+    var options = {
+      scaleBeginAtZero : true,
+      scaleShowGridLines : true,
+      scaleGridLineColor : "rgba(0,0,0,.05)",
+      scaleGridLineWidth : 1,
+      scaleShowHorizontalLines: true,
+      scaleShowVerticalLines: true,
+      barShowStroke : true,
+      barStrokeWidth : 2,
+      barValueSpacing : 5,
+      barDatasetSpacing : 1,
+      legendTemplate : ""
+    };
+
+    var data = {
+        labels: ["1/10", "2/10", "3/10", "4/10", "5/10", "6/10", "7/10", "8/10", "9/10", "10/10", ],
+        datasets: [
+            {
+                label: "Ratings",
+                fillColor: "rgba(220,220,220,0.5)",
+                strokeColor: "rgba(220,220,220,0.8)",
+                highlightFill: "rgba(220,220,220,0.75)",
+                highlightStroke: "rgba(220,220,220,1)",
+                //data: [65, 59, 80, 81, 56, 55, 40]
+                data: <%= ratings %>
+            }
+        ]
+    };
+  
+    var ctx_ratings = $("#ratings").get(0).getContext("2d");
+    var ratingsChart = new Chart(ctx_ratings).Bar(data, { barShowStroke: false });
+  })
+</script>
+
+<canvas id="ratings" width="400" height="400"></canvas>

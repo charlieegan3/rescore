@@ -16,8 +16,6 @@ gem 'googleajax'
 
 gem 'delayed_job_active_record'
 
-gem 'lazy_high_charts'
-
 gem 'badfruit', :git => 'https://github.com/IllegalCactus/BadFruit.git'
 
 # NLP / Algorithm Gems
