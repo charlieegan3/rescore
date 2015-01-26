@@ -21,18 +21,18 @@ class Movie < ActiveRecord::Base
   end
 
   def collect_reviews
-    self.status = 'Starting review collection...'; save
+    self.status = '0%'; save
     r = ReviewAggregator.new(title, self.page_depth)
     update_attribute(:reviews, [])
-    self.status = 'Collecting Metacritic reviews...'; save
+    self.status = '20%'; save
     self.reviews += r.metacritic_reviews(metacritic_link)
-    self.status = 'Collecting Amazon reviews...'; save
+    self.status = '40%'; save
     self.reviews += r.amazon_reviews(amazon_link)
-    self.status = 'Collecting IMDb reviews...'; save
+    self.status = '60%'; save
     self.reviews += r.imdb_reviews(imdb_link)
-    self.status = 'Collecting Rotten Tomatoes reviews...'; save
+    self.status = '80%'; save
     self.reviews += r.rotten_tomatoes_reviews(rotten_tomatoes_link)
-    self.status = nil; save
+    self.status = nil; self.task = nil;
     save
   end
   handle_asynchronously :collect_reviews
@@ -57,6 +57,7 @@ class Movie < ActiveRecord::Base
     end
     self.reviews = summary
     self.status = nil
+    self.task = nil
     save
   end
   handle_asynchronously :build_summary

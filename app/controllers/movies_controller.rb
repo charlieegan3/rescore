@@ -63,6 +63,7 @@ class MoviesController < ApplicationController
   def build_summary
     @movie = Movie.find(params[:id])
     @movie.build_summary
+    @movie.update_attribute(:task, 'summary')
     @movie.update_attribute(:status, '0%')
     redirect_to movie_path(@movie)
   end
@@ -70,7 +71,8 @@ class MoviesController < ApplicationController
   def collect
     @movie = Movie.find(params[:id])
     @movie.collect_reviews
-    @movie.update_attribute(:status, 'Waiting...')
+    @movie.update_attribute(:task, 'collect')
+    @movie.update_attribute(:status, '0%')
     redirect_to movie_path(@movie)
   end
 
