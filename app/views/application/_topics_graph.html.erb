@@ -2,7 +2,7 @@
   $(document).ready(function(){
 
     var options = {
-      scaleBeginAtZero : true,
+      scaleBeginAtZero : false,
       scaleShowGridLines : true,
       scaleGridLineColor : "rgba(0,0,0,.05)",
       scaleGridLineWidth : 1,
@@ -16,7 +16,7 @@
     };
 
     var data = {
-        labels: ["1/10", "2/10", "3/10", "4/10", "5/10", "6/10", "7/10", "8/10", "9/10", "10/10", ],
+        labels: <%= topics.map { |x| x[0].to_s.capitalize }.to_s.html_safe %>,
         datasets: [
             {
                 label: "Topics",
@@ -24,12 +24,11 @@
                 strokeColor: "rgba(220,220,220,0.8)",
                 highlightFill: "rgba(220,220,220,0.75)",
                 highlightStroke: "rgba(220,220,220,1)",
-                //data: [65, 59, 80, 81, 56, 55, 40]
-                data: <%= topics %>
+                data: <%= topics.map { |x| x[1] } %>
             }
         ]
     };
-  
+
     var ctx_topics = $("#topics").get(0).getContext("2d");
     var topicsChart = new Chart(ctx_topics).Bar(data, { barShowStroke: false });
   })
