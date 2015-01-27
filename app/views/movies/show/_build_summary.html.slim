@@ -9,14 +9,14 @@
   p Movie Busy
 -if movie.has_summary
   table
-    -movie.topics_sentiment.each do |k,v|
+    -movie.sentiment[:topics].each do |k,v|
       tr
         td =k
         td =v.round(3)
-  =render "topics_graph", id: movie.id, topics: movie.topics_sentiment
+  =render "topics_graph", id: movie.id, topics: movie.sentiment[:topics]
 
   table
-    -movie.people_sentiment.each do |k, v|
+    -movie.sentiment[:people].each do |k, v|
       tr
         td =k
         td =(v * 100).floor
