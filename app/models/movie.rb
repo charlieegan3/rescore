@@ -99,17 +99,6 @@ class Movie < ActiveRecord::Base
     sentiment = sentiment.map {|k,v| [k, v.reduce(:+) / v.size] }
   end
 
-  def topics_chart
-    LazyHighCharts::HighChart.new('graph') do |f|
-      f.xAxis(:categories => self.topics_sentiment.map { |k,_| k } )
-      f.series(:name => "Score", :yAxis => 0, :data => self.topics_sentiment.map { |_,v| v } )
-      f.options[:chart][:defaultSeriesType] = 'column'
-      f.options[:chart][:height] = '150'
-      f.options[:chart][:width] = '300'
-      f.options[:legend][:enabled] = false
-    end
-  end
-
   private
     def dup_hash(ary)
      ary.inject(Hash.new(0)) { |h,e| h[e] += 1; h }.select {
