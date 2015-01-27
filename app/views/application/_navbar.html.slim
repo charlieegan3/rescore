@@ -8,3 +8,7 @@ nav.top-bar
       li =link_to 'New', new_movie_from_lookup_path
       li.divider
       li =link_to 'Manage', movies_path
+      li.divider
+      li
+        form action="search_by_title"
+          input name="query" type="text" placeholder="Search movies" /
