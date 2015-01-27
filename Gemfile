@@ -14,6 +14,7 @@ gem 'foundation-rails'
 
 gem 'pg'
 
+gem 'seed_dumper'
 
 gem 'delayed_job_active_record'
 
