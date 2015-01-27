@@ -19,3 +19,8 @@
  .top-bar {
   margin-bottom: 10px;
  }
+
+ .nav-logo img {
+   max-height: 35px;
+   margin-bottom: 3px;
+ }
