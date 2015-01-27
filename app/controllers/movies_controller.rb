@@ -15,6 +15,10 @@ class MoviesController < ApplicationController
     @review_count = 10000 if params[:all_reviews]
   end
 
+  def search_by_title
+    @movies = Movie.where("title ILIKE ?", "%#{params[:query]}%")
+  end
+
   def new
     @movie = Movie.new(page_depth: 1)
   end
