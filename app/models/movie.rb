@@ -83,18 +83,29 @@ class Movie < ActiveRecord::Base
     !self.reviews.last[:rescore_review].nil?
   end
 
-  def topics_sentiment
-    sentiment  = {}
+  def sentiment
+    topics_sentiment  = {}
+    people_sentiment  = {}
     self.reviews.each do |review|
       next if review[:rescore_review].nil?
       review[:rescore_review].each do |sentence|
         sentence[:context_tags].keys.each do |tag|
-          sentiment[tag] = [] if sentiment[tag].nil?
-          sentiment[tag] << sentence[:sentiment][:average]
+          topics_sentiment[tag] = [] if topics_sentiment[tag].nil?
+          topics_sentiment[tag] << sentence[:sentiment][:average]
+        end
+        sentence[:people_tags].each do |tag|
+          name = tag.gsub('(FROM PREVIOUS REFERENCE)', '')
+          people_sentiment[name] = [] if people_sentiment[name].nil?
+          people_sentiment[name] << sentence[:sentiment][:average]
         end
       end
     end
-    sentiment = sentiment.map {|k,v| [k, v.reduce(:+) / v.size] }
+
+    topics_sentiment = topics_sentiment.map { |k, v| [k, v.reduce(:+) / v.size] }
+    people_sentiment = people_sentiment.sort_by { |_, v| v.size }.reverse
+    people_sentiment = people_sentiment.map { |k, v| [k, v.reduce(:+) / v.size, v.size] }
+
+    {topics: topics_sentiment, people: people_sentiment}
   end
 
   private
