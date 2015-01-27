@@ -97,6 +97,22 @@ class Movie < ActiveRecord::Base
     sentiment = sentiment.map {|k,v| [k, v.reduce(:+) / v.size] }
   end
 
+  def people_sentiment
+    sentiment  = {}
+    self.reviews.each do |review|
+      next if review[:rescore_review].nil?
+      review[:rescore_review].each do |sentence|
+        sentence[:people_tags].each do |tag|
+          name = tag.gsub('(FROM PREVIOUS REFERENCE)', '')
+          sentiment[name] = [] if sentiment[name].nil?
+          sentiment[name] << sentence[:sentiment][:average]
+        end
+      end
+    end
+    sentiment = sentiment.sort_by { |k, v| v.size }.reverse
+    sentiment = sentiment.map {|k, v| [k, v.reduce(:+) / v.size] }
+  end
+
   private
     def dup_hash(ary)
      ary.inject(Hash.new(0)) { |h,e| h[e] += 1; h }.select {
