@@ -10,4 +10,6 @@
             td =render "ratings_graph", id: movie.id, ratings: movie.rating_distribution
             td =render "topics_graph", id: movie.id, topics: movie.sentiment[:topics]
 -else
-  h3="No results found for '#{params[:query]}'"
+  .row
+    .large-12.columns
+      h3="No results found for '#{params[:query]}'"
