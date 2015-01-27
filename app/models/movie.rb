@@ -89,8 +89,6 @@ class Movie < ActiveRecord::Base
       next if review[:rescore_review].nil?
       review[:rescore_review].each do |sentence|
         sentence[:context_tags].keys.each do |tag|
-          p tag
-          p sentiment
           sentiment[tag] = [] if sentiment[tag].nil?
           sentiment[tag] << sentence[:sentiment][:average]
         end
