@@ -1,4 +1,6 @@
 class MoviesController < ApplicationController
+  http_basic_authenticate_with name: "admin", password: "1234qwer", :except => [:index, :show, :status]
+
   def index
     @movies = Movie.all
   end
