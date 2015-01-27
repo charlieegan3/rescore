@@ -1,4 +1,6 @@
 class MoviesController < ApplicationController
+  http_basic_authenticate_with name: "admin", password: "1234qwer", :except => [:index, :status, :search_by_title]
+
   def index
     @movies = Movie.all
   end
@@ -11,6 +13,10 @@ class MoviesController < ApplicationController
 
     @review_count = 5
     @review_count = 10000 if params[:all_reviews]
+  end
+
+  def search_by_title
+    @movies = Movie.where("title ILIKE ?", "%#{params[:query]}%")
   end
 
   def new
