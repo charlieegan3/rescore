@@ -13,5 +13,10 @@
       tr
         td =k
         td =v.round(3)
-  =movie.people_sentiment
   =render "topics_graph", id: movie.id, topics: movie.topics_sentiment
+
+  table
+    -movie.people_sentiment.each do |k, v|
+      tr
+        td =k
+        td =(v * 100).floor
