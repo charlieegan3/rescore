@@ -14,11 +14,9 @@ gem 'foundation-rails'
 
 gem 'pg'
 
-gem 'googleajax'
+gem 'seed_dumper'
 
 gem 'delayed_job_active_record'
-
-gem 'badfruit', :git => 'https://github.com/IllegalCactus/BadFruit.git'
 
 # NLP / Algorithm Gems
 gem 'ots'
@@ -31,6 +29,9 @@ gem 'sentiment_lib'
 gem 'sentimental'
 gem 'engtagger'
 gem 'punkt-segmenter'
+
+gem 'googleajax'
+gem 'badfruit', :git => 'https://github.com/IllegalCactus/BadFruit.git'
 
 group :production do
   gem 'rails_12factor'
