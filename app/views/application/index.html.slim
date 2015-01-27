@@ -6,4 +6,4 @@
           td =image_tag(movie.image_url)
           td =link_to movie.title, movie_path(movie)
           td =render "ratings_graph", id: movie.id, ratings: movie.rating_distribution
-          td =render "topics_graph", id: movie.id, topics: movie.topics_sentiment
+          td =render "topics_graph", id: movie.id, topics: movie.sentiment[:topics]
