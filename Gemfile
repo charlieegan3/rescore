@@ -12,6 +12,8 @@ gem 'jbuilder', '~> 2.0'
 gem 'slim'
 gem 'foundation-rails'
 
+gem 'pg'
+
 gem 'googleajax'
 
 gem 'delayed_job_active_record'
@@ -31,13 +33,11 @@ gem 'engtagger'
 gem 'punkt-segmenter'
 
 group :production do
-  gem 'pg'
   gem 'rails_12factor'
   gem 'httparty'
 end
 
 group :development do
-  gem 'sqlite3'
   gem 'better_errors'
   gem 'binding_of_caller'
   gem 'pry'
