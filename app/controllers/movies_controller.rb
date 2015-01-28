@@ -5,7 +5,7 @@ class MoviesController < ApplicationController
     @movies = Movie.all
   end
 
-  def show
+  def manage
     @movie = Movie.find(params[:id])
 
     @cast_count = 3
