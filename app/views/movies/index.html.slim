@@ -16,5 +16,5 @@
           td =image_tag(m.image_url)
           td =m.title
           td =distance_of_time_in_words(Time.new, m.created_at) + ' ago'
-          td =link_to 'View', movie_path(m), class: 'button'
+          td =link_to 'View', manage_movie_path(m), class: 'button'
           td =button_to "Delete", m, {onclick: "return confirm('Sure?')", method: :delete, class: 'button alert'}
