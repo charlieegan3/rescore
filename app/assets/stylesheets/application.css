@@ -28,3 +28,11 @@
 .slogan {
   text-align: center;
 }
+
+table.summary {
+  width: 100%;
+}
+
+table.summary td, table.summary th {
+  text-align: center;
+}

@@ -16,7 +16,7 @@
     };
 
     var data = {
-        labels: ["0★", "1★", "2★", "3★", "4★", "5★", "6★", "7★", "8★", "9★", "10★"],
+        labels: ["0★", "1★", "2★", "3★", "4★", "5★"],
         datasets: [
             {
                 label: "Ratings",
@@ -24,7 +24,7 @@
                 strokeColor: "rgba(220,220,220,0.8)",
                 highlightFill: "rgba(220,220,220,0.75)",
                 highlightStroke: "rgba(220,220,220,1)",
-                data: <%= ratings %>
+                data: <%= [ratings[0]] + [ratings[1..5], ratings[6..10]].transpose.map { |p| p.reduce(:+) } %>
             }
         ]
     };
@@ -34,4 +34,4 @@
   })
 </script>
 
-<canvas id="<%= id %>_ratings" width="350" height="250"></canvas>
+<canvas id="<%= id %>_ratings" width="250" height="250"></canvas>

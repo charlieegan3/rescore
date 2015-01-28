@@ -1,30 +1,43 @@
-javascript:
-  $(document).ready(function(){
-      $(".async").click(function(){
-        $(this).html("Loading...");
-        $(this).css("background-color", "green");
-      });
-  });
-
 .row
   .large-12.columns
     h1 =@movie.title
 .row
-  .panel
-    =render 'movies/show/actions', movie: @movie
+  .large-12
+    table.summary
+      thead
+        tr
+          th Cover
+          th Year
+          th Reviews
+          th Cast Members
+          th Updated
+          th Added
+      tbody
+        tr
+          td =image_tag(@movie.image_url)
+          td =@movie.year
+          td =@movie.reviews.size
+          td =@movie.related_people[:cast].size
+          td =distance_of_time_in_words(Time.new, @movie.updated_at).gsub('about ', '') + " ago"
+          td =distance_of_time_in_words(Time.new, @movie.created_at).gsub('about ', '') + " ago"
+
 .row
-  .panel
-    =render 'movies/show/populate_source_links', movie: @movie
-
--if @movie.source_link_count > 1
-  .row
+  .large-4.columns
     .panel
-      =render 'movies/show/populate_related_people', movie: @movie
-  .row
+      p
+        strong Aspect Sentiment
+      =render "topics_graph", id: @movie.id, topics: @movie.sentiment[:topics]
+  .large-4.columns
     .panel
-      =render 'movies/show/collect_reviews', movie: @movie
-
--if !@movie.reviews.empty?
-  .row
+      p
+        strong Rating Distribution
+      =render "ratings_graph", id: @movie.id, ratings: @movie.rating_distribution
+  .large-4.columns
     .panel
-      =render 'movies/show/build_summary', movie: @movie
+      p
+        strong Cast Sentiment
+      table
+        -@movie.sentiment[:people].each do |k, v|
+          tr
+            td =k
+            td =(v * 100).floor

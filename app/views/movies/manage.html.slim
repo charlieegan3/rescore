@@ -1,0 +1,30 @@
+javascript:
+  $(document).ready(function(){
+      $(".async").click(function(){
+        $(this).html("Loading...");
+        $(this).css("background-color", "green");
+      });
+  });
+
+.row
+  .large-12.columns
+    h1 =@movie.title
+.row
+  .panel
+    =render 'movies/show/actions', movie: @movie
+.row
+  .panel
+    =render 'movies/show/populate_source_links', movie: @movie
+
+-if @movie.source_link_count > 1
+  .row
+    .panel
+      =render 'movies/show/populate_related_people', movie: @movie
+  .row
+    .panel
+      =render 'movies/show/collect_reviews', movie: @movie
+
+-if !@movie.reviews.empty?
+  .row
+    .panel
+      =render 'movies/show/build_summary', movie: @movie
