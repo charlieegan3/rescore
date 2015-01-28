@@ -1,8 +1,12 @@
 class MoviesController < ApplicationController
-  http_basic_authenticate_with name: "admin", password: "1234qwer", :except => [:index, :status, :search_by_title]
+  http_basic_authenticate_with name: "admin", password: "1234qwer", :except => [:index, :show, :search_by_title]
 
   def index
     @movies = Movie.all
+  end
+
+  def show
+    @movie = Movie.find(params[:id])
   end
 
   def manage
