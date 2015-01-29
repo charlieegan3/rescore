@@ -44,13 +44,13 @@ class MoviesController < ApplicationController
 
   def create
     @movie = Movie.create(movie_params)
-    redirect_to movie_path(@movie)
+    redirect_to manage_movie_path(@movie)
   end
 
   def update
     @movie = Movie.find(params[:id])
     @movie.update_attributes(movie_params)
-    redirect_to movie_path(@movie)
+    redirect_to manage_movie_path(@movie)
   end
 
   def destroy
@@ -66,13 +66,13 @@ class MoviesController < ApplicationController
   def populate_source_links
     @movie = Movie.find(params[:id])
     @movie.populate_source_links
-    redirect_to movie_path(@movie)
+    redirect_to manage_movie_path(@movie)
   end
 
   def populate_related_people
     @movie = Movie.find(params[:id])
     @movie.populate_related_people
-    redirect_to movie_path(@movie)
+    redirect_to manage_movie_path(@movie)
   end
 
   def build_summary
@@ -80,7 +80,7 @@ class MoviesController < ApplicationController
     @movie.build_summary
     @movie.update_attribute(:task, 'summary')
     @movie.update_attribute(:status, '0%')
-    redirect_to movie_path(@movie)
+    redirect_to manage_movie_path(@movie)
   end
 
   def collect
@@ -88,7 +88,7 @@ class MoviesController < ApplicationController
     @movie.collect_reviews
     @movie.update_attribute(:task, 'collect')
     @movie.update_attribute(:status, '0%')
-    redirect_to movie_path(@movie)
+    redirect_to manage_movie_path(@movie)
   end
 
   private

@@ -9,7 +9,7 @@ var auto_refresh = setInterval(
         wait = 10000;
         document.location.reload(true);
       }
-      $('#build-progress').load($(".meter").attr('id') + '/status');
+      $('#build-progress').load('status');
     }
   },
 wait);
