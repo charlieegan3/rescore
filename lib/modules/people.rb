@@ -8,12 +8,7 @@ module People
     names = [] # The cast members detected in this sentence.
     people_indexes = {} # where in the sentence the person is mentioned.
 
-    # initialise hash
-    if !cast.empty?
-      cast.each do |c|
-        people_indexes[c[:name]] = []
-      end
-    end
+    # initialize director hash entry.
     if director.class.method_defined?(name)
       people_indexes[director.name] = []
     end
@@ -21,6 +16,7 @@ module People
     # Tag sentence
     if !cast.empty?
       cast.each do |c|
+        people_indexes[c[:name]] = []
         if sentence.include?(c[:name])
           people_indexes[c[:name]] = Utils.get_indexes(sentence, c[:name])
           names.push(c[:name]) if !names.include?(c[:name])
