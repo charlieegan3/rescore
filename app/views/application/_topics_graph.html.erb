@@ -14,7 +14,8 @@
       barDatasetSpacing : 1,
       legendTemplate : "",
       showTooltips: false,
-      pointLabelFontSize : 13
+      pointLabelFontSize : 13,
+      pointDot : false,
     };
 
     var data = {
@@ -23,19 +24,11 @@
         {
           fillColor: "rgba(220,100,100,0.2)",
           strokeColor: "rgba(220,100,100,0.2)",
-          pointColor: "rgba(220,100,100,0.2)",
-          pointStrokeColor: "#fff",
-          pointHighlightFill: "#fff",
-          pointHighlightStroke: "rgba(220,220,220,1)",
           data: [0,0,0,0,0,0]
         },
         {
           fillColor: "rgba(150,220,100,1)",
           strokeColor: "rgba(140,200,90,1)",
-          pointColor: "rgba(140,200,90,1)",
-          pointStrokeColor: "#fff",
-          pointHighlightFill: "#fff",
-          pointHighlightStroke: "rgba(220,220,220,1)",
           data: <%= topics.map { |x| (x[1] * 100).floor } %>
         }
       ]
