@@ -15,7 +15,7 @@
       strong =@movies.last.title
 
 
-    table
+    table.movie_table
       -@movies.each do |movie|
         tr
           td =image_tag(movie.image_url)
