@@ -9,7 +9,7 @@
       scaleShowHorizontalLines: true,
       scaleShowVerticalLines: true,
       barShowStroke : true,
-      barStrokeWidth : 2,
+      barStrokeWidth : 1,
       barValueSpacing : 5,
       barDatasetSpacing : 1,
       legendTemplate : ""
@@ -20,17 +20,15 @@
         datasets: [
             {
                 label: "Ratings",
-                fillColor: "rgba(220,220,220,0.5)",
-                strokeColor: "rgba(220,220,220,0.8)",
-                highlightFill: "rgba(220,220,220,0.75)",
-                highlightStroke: "rgba(220,220,220,1)",
+                fillColor: "#99DB6B",
+                strokeColor: "#8FC861",
                 data: <%= [ratings[0]] + [ratings[1..5], ratings[6..10]].transpose.map { |p| p.reduce(:+) } %>
             }
         ]
     };
 
     var ctx_ratings = $("#<%= id %>_ratings").get(0).getContext("2d");
-    var ratingsChart = new Chart(ctx_ratings).Bar(data, { barShowStroke: false });
+    var ratingsChart = new Chart(ctx_ratings).Bar(data);
   })
 </script>
 
