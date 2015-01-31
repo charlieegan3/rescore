@@ -6,7 +6,7 @@ module People
     #puts sentence
     sentence = sentence.to_ascii # Get rid of accented letters etc.
     names = [] # The cast members detected in this sentence.
-    people_indexes = {}
+    people_indexes = {} # where in the sentence the person is mentioned.
 
     # initialise hash
     if !cast.empty?
@@ -26,12 +26,12 @@ module People
           names.push(c[:name]) if !names.include?(c[:name])
         end
 
-        c[:characters].each do |ch|
-          if sentence.include?(ch)
-            people_indexes[c[:name]] = Utils.get_indexes(sentence, ch) if actors_only == true
-            people_indexes[ch.name] = Utils.get_indexes(sentence, ch.name) if actors_only == false
-            names.push(c[:name]) if !names.include?(c[:name]) && actors_only == true
-            names.push(ch) if !names.include?(ch) && actors_only == false
+        if actors_only == false
+          c[:characters].each do |ch|
+            if sentence.include?(ch)
+              people_indexes[ch.name] = Utils.get_indexes(sentence, ch.name)
+              names.push(ch) if !names.include?(ch)
+            end
           end
         end
       end
@@ -43,11 +43,13 @@ module People
     #   end
     # end
 
+    # Check for mentions using pronouns.
     if names.empty?
       pronouns = ["He", "he", "Him", "him", "His", "his", "She", "she", "Her", "her"]
         sentence.split.to_a.each do |word|
           if pronouns.include?(word) && prev_name != nil
-            names.push(prev_name + "(FROM PREVIOUS REFERENCE)") if !names.include?(prev_name + "(FROM PREVIOUS REFERENCE)")
+            names.push(prev_name)
+            break
           end
         end
     end
