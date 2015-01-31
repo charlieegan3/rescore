@@ -11,7 +11,7 @@ class RescoreReview
     include_cleaned_sentences
     evaluate_sentiment
     apply_context_tags
-    apply_noun_phrases
+    #apply_noun_phrases
     apply_people_tags
     get_emphasis
   end
