@@ -5,20 +5,20 @@ module People
 
     sentence = sentence.to_ascii # Get rid of accented letters etc.
     mentioned_actors = [] # The cast members detected in this sentence.
-    people_indexes = {} # where in the sentence the person is mentioned.
+    people_indexes = Hash.new([]) # where in the sentence the person is mentioned.
 
     # Tag sentence
     cast.each do |member|
       people_indexes[member[:name]] = []
       if sentence.include?(member[:name])
-        people_indexes[member[:name]] = Utils.get_indexes(sentence, member[:name])
-        mentioned_actors.push(member[:name]) if !mentioned_actors.include?(member[:name])
+        people_indexes[member[:name]] << Utils.get_indexes(sentence, member[:name])
+        mentioned_actors.push(member[:name])
       end
 
       member[:characters].each do |character|
         if sentence.include?(character)
-          people_indexes[character] = Utils.get_indexes(sentence, character)
-          mentioned_actors.push(character) if !mentioned_actors.include?(character)
+          people_indexes[member] << Utils.get_indexes(sentence, character)
+          mentioned_actors.push(member[:name])
         end
       end
     end
@@ -34,6 +34,6 @@ module People
         end
     end
 
-    return mentioned_actors, mentioned_actors.last, people_indexes
+    return mentioned_actors.uniq, mentioned_actors.last, people_indexes
   end
 end
