@@ -18,7 +18,8 @@ module Context
   def Context.tag_sentence(sentence)
     sentence_tags = {}
     sentence_tag_indexes = {}
-    keywords = OTS.parse(sentence).keywords
+    #keywords = OTS.parse(sentence).keywords
+    keywords = sentence.downcase.gsub(/\W/, ' ').split(/\s+/) # temporary solution, faster than OTS.
 
     CONTEXTS.each do |k,v|
       t = tags(keywords, v)

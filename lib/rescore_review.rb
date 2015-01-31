@@ -11,7 +11,7 @@ class RescoreReview
     include_cleaned_sentences
     evaluate_sentiment
     apply_context_tags
-    apply_noun_phrases
+    #apply_noun_phrases   -> Not being used currently (will be in future).
     apply_people_tags
     get_emphasis
   end
@@ -96,23 +96,11 @@ class RescoreReview
     @sentences.map { |sentence| sentence[:noun_phrases] = extracter.extract_noun_phrases(sentence[:clean_text]) }
   end
 
-  def guess_film_name_from_text
-    @film_name = MovieInfo.get_title(text)
-  end
-
-  def populate_related_people
-    if @film_name.nil?
-      #puts 'A film name was not found'
-      return
-    end
-    @related_people = MovieInfo.get_people(@film_name)
-  end
-
   def apply_people_tags
     return if @related_people.nil?
     previous_name = nil
     @sentences.each do |sentence|
-      people = People.tag_sentence(sentence[:text], @related_people[:cast], @related_people[:director], previous_name, true)
+      people = People.tag_sentence(sentence[:text], @related_people[:cast], previous_name)
       sentence[:people_tags], previous_name, sentence[:people_indexes] = people
       sentence[:people_indexes] = sentence[:people_indexes].to_a.reject! {|x| x[1].empty?}
     end

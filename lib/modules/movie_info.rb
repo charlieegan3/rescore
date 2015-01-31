@@ -9,34 +9,6 @@ module MovieInfo
 
   GoogleAjax.referrer = "hey"
 
-  def MovieInfo.get_title(review)
-    o = OTS.parse(review)
-    counts = {}
-    film = ""
-
-    o.topics.each do |t|
-      counts[t] = 0
-      review.split("\W").each do |word|
-        counts[t] += 1 if word == t
-      end
-    end
-
-    key = ""
-    if review.length < 200
-      key = review
-    else
-      key = review[0..200]
-    end
-
-    search = GoogleAjax::Search.web(key)
-    #p search
-    unless search[:results].empty?
-      return Sanitize.fragment(search[:results][0][:title]).gsub('Customer Reviews: ', '').gsub('Amazon', '').gsub('Torrent', '').gsub('Wikipedia', '').gsub('.com', '')
-    else
-      return nil
-    end
-  end
-
   def MovieInfo.get_people(title)
     begin
       bf = BadFruit.new("6tuqnhbh49jqzngmyy78n8v3")
