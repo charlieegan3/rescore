@@ -100,8 +100,11 @@ class Movie < ActiveRecord::Base
     end
 
     topics_sentiment = topics_sentiment.map { |k, v| [k, v.reduce(:+) / v.size] }
-    people_sentiment = people_sentiment.sort_by { |_, v| v.size }.reverse
-    people_sentiment = people_sentiment.map { |k, v| [k, v.reduce(:+) / v.size, v.size] }
+    people_sentiment = people_sentiment.sort_by { |_, v| v.size }
+    people_sentiment = people_sentiment.
+      map { |k, v| [k, v.reduce(:+) / v.size, v.size] }.reverse.
+      reject { |_, _, c| c < 3}.
+      sort_by { |_, v, c| (v * 100).to_f / c }.reverse
 
     {topics: topics_sentiment, people: people_sentiment}
   end

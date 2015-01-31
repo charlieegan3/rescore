@@ -1,0 +1,31 @@
+<script type="text/javascript">
+  google.load("visualization", "1", {packages:["corechart"]});
+  google.setOnLoadCallback(drawChart);
+  function drawChart() {
+    var data = new google.visualization.DataTable();
+
+    data.addColumn('number', 'Sentiment');
+    data.addColumn('number', 'Mentions');
+    data.addColumn({
+        type: 'string',
+        role: 'tooltip'
+    });
+
+    data.addRows(
+      <%= people.map { |p| p.reverse }.to_s.html_safe %>
+    );
+
+    var options = {
+      chartArea: {'width': '90%', 'height': '80%'},
+      backgroundColor: "transparent",
+      hAxis: {title: 'Mentions', textPosition: 'none', minValue: <%= people.map { |p| p[2] }.min %>, maxValue: <%= people.map { |p| p[2] }.max %>},
+      vAxis: {title: 'Sentiment', textPosition: 'none', minValue: <%= people.map { |p| p[1] }.min %>, maxValue: <%= people.map { |p| p[1] }.max %>},
+      legend: 'none'
+    };
+
+    var chart = new google.visualization.ScatterChart(document.getElementById('chart_div'));
+
+    chart.draw(data, options);
+  }
+</script>
+<div id="chart_div" width="250" height="250"></div>
