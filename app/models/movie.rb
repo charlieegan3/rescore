@@ -1,6 +1,8 @@
 class Movie < ActiveRecord::Base
   serialize :reviews, Array
   serialize :related_people, Hash
+  serialize :rating_distribution, Array
+  serialize :sentiment, Hash
 
   before_save :default_values
   def default_values
@@ -57,11 +59,13 @@ class Movie < ActiveRecord::Base
     self.reviews = summary
     self.status = nil
     self.task = nil
+    self.rating_distribution = set_rating_distribution
+    self.sentiment = set_sentiment
     save
   end
   handle_asynchronously :build_summary
 
-  def rating_distribution
+  def set_rating_distribution
     counts = []
     rounded_ratings = self.reviews.map {|x| (x[:percentage] / 10 unless x[:percentage].nil?).to_i * 10 }
     (0..100).step(10) do |n|
@@ -82,7 +86,7 @@ class Movie < ActiveRecord::Base
     !self.reviews.last[:rescore_review].nil?
   end
 
-  def sentiment
+  def set_sentiment
     topics_sentiment  = {}
     people_sentiment  = {}
     self.reviews.each do |review|
