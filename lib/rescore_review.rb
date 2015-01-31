@@ -100,14 +100,6 @@ class RescoreReview
     @film_name = MovieInfo.get_title(text)
   end
 
-  def populate_related_people
-    if @film_name.nil?
-      #puts 'A film name was not found'
-      return
-    end
-    @related_people = MovieInfo.get_people(@film_name)
-  end
-
   def apply_people_tags
     return if @related_people.nil?
     previous_name = nil
