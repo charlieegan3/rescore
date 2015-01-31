@@ -96,10 +96,6 @@ class RescoreReview
     @sentences.map { |sentence| sentence[:noun_phrases] = extracter.extract_noun_phrases(sentence[:clean_text]) }
   end
 
-  def guess_film_name_from_text
-    @film_name = MovieInfo.get_title(text)
-  end
-
   def apply_people_tags
     return if @related_people.nil?
     previous_name = nil
