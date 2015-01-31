@@ -36,3 +36,19 @@ table.summary {
 table.summary td, table.summary th {
   text-align: center;
 }
+
+.google-visualization-tooltip {
+  width: auto !important;
+  height: auto !important;
+}
+
+.google-visualization-tooltip-item-list {
+  margin-bottom: -7px !important;
+  margin-top: -7px !important;
+}
+
+li.google-visualization-tooltip-item {
+  font-size: 12px;
+  padding-left: 5px !important;
+  padding-left: 5px !important;
+}
