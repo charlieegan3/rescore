@@ -36,8 +36,4 @@
     .panel
       p
         strong Cast Sentiment
-      table
-        -@movie.sentiment[:people].each do |k, v|
-          tr
-            td =k
-            td =(v * 100).floor
+      =render "cast_sentiment_graph", id: @movie.id, people: @movie.sentiment[:people]
