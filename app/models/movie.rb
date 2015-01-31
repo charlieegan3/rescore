@@ -49,7 +49,6 @@ class Movie < ActiveRecord::Base
     summary = []
     count = 0
     self.reviews.each do |review|
-      #puts self.status = "#{(((count += 1).to_f / self.reviews.size) * 100).floor}%"; save
       rescore_review = RescoreReview.new(review[:content], self.related_people)
       rescore_review.build_all
       review[:rescore_review] = rescore_review.sentences
@@ -94,9 +93,8 @@ class Movie < ActiveRecord::Base
           topics_sentiment[tag] << sentence[:sentiment][:average]
         end
         sentence[:people_tags].each do |tag|
-          name = tag.gsub('(FROM PREVIOUS REFERENCE)', '')
-          people_sentiment[name] = [] if people_sentiment[name].nil?
-          people_sentiment[name] << sentence[:sentiment][:average]
+          people_sentiment[tag] = [] if people_sentiment[tag].nil?
+          people_sentiment[tag] << sentence[:sentiment][:average]
         end
       end
     end
