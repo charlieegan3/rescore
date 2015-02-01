@@ -35,7 +35,10 @@ class MoviesController < ApplicationController
   def new_from_lookup
     bf = BadFruit.new("6tuqnhbh49jqzngmyy78n8v3")
     @movies = []
-    @movies = bf.movies.search_by_name(params[:query], 50) if params[:query]
+    @movies = bf.movies.search_by_name(params[:query], 3) if params[:query]
+    @movies.each do |movie|
+      movie.genres = bf.movies.search_by_id(movie.id).genres
+    end
   end
 
   def edit
@@ -43,13 +46,17 @@ class MoviesController < ApplicationController
   end
 
   def create
-    @movie = Movie.create(movie_params)
+    params = movie_params
+    params[:genres] = params[:genres].split(', ')
+    @movie = Movie.create(params)
     redirect_to manage_movie_path(@movie)
   end
 
   def update
+    params = movie_params
+    params[:genres] = params[:genres].split(', ')
     @movie = Movie.find(params[:id])
-    @movie.update_attributes(movie_params)
+    @movie.update_attributes(params)
     redirect_to manage_movie_path(@movie)
   end
 
@@ -102,7 +109,8 @@ class MoviesController < ApplicationController
         :rotten_tomatoes_link,
         :rotten_tomatoes_id,
         :image_url,
-        :year
+        :year,
+        :genres
       )
     end
 end

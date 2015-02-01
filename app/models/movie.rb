@@ -1,6 +1,7 @@
 class Movie < ActiveRecord::Base
   serialize :reviews, Array
   serialize :related_people, Hash
+  serialize :genres, Array
   serialize :sentiment, Hash
   serialize :stats, Hash
 
