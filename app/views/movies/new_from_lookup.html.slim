@@ -11,6 +11,7 @@
           th poster
           th title
           th year
+          th genres
           th cast
           th link
           th create
@@ -21,9 +22,10 @@
             td =image_tag(movie.posters.thumbnail)
             td =movie.name
             td =movie.year
+            td =movie.genres.first
             td
               ul
                 -movie.cast.each do |member|
                   li =member['name']
             td =link_to 'View', movie.links['alternate'], class: 'button'
-            td =link_to 'Use as Template', new_movie_path(title: movie.name, image_url: movie.posters.thumbnail, year: movie.year, rotten_tomatoes_id: movie.id, rotten_tomatoes_link: movie.links['alternate']), class: 'button alert'
+            td =link_to 'Use as Template', new_movie_path(title: movie.name, image_url: movie.posters.thumbnail, year: movie.year, rotten_tomatoes_id: movie.id, rotten_tomatoes_link: movie.links['alternate'], genres: movie.genres), class: 'button alert'
