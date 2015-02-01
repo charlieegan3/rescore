@@ -62,6 +62,7 @@ class Movie < ActiveRecord::Base
     self.task = nil
     self.rating_distribution = set_rating_distribution
     self.sentiment = set_sentiment
+    self.stats = set_stats
     save
   end
   handle_asynchronously :build_summary
@@ -120,7 +121,7 @@ class Movie < ActiveRecord::Base
     {topics: topics_sentiment, people: people_sentiment, date: date_sentiment}
   end
 
-  def topic_counts
+  def set_stats
     topic_counts = Hash.new(0)
     self.reviews.each do |review|
       review[:rescore_review].each do |sentence|
@@ -129,7 +130,7 @@ class Movie < ActiveRecord::Base
         end
       end
     end
-    topic_counts.sort_by { |_, v| v }.reverse
+    {topic_counts: topic_counts.sort_by { |_, v| v }.reverse}
   end
 
   private
