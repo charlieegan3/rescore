@@ -27,6 +27,9 @@
 
 .slogan {
   text-align: center;
+  color: gray;
+  font-size: 20px;
+  font-family: Avenir, 'Helvetica Neue', Helvetica, Arial, sans-serif;
 }
 
 table.summary {
@@ -51,4 +54,8 @@ li.google-visualization-tooltip-item {
   font-size: 12px;
   padding-left: 5px !important;
   padding-left: 5px !important;
+}
+
+table.movie_table {
+  width: 100%;
 }
