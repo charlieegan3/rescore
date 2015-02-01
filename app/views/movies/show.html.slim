@@ -31,14 +31,20 @@
     .panel
       p
         strong Rating Distribution
-      =render "ratings_graph", id: @movie.id, ratings: @movie.rating_distribution
+      =render "ratings_graph", id: @movie.id, ratings: @movie.stats[:rating_distribution]
+  .large-4.columns
+    .panel
+      p
+        strong Aspect Discussion Focus
+      =render "topic_count_graph", id: @movie.id, topics: @movie.stats[:topic_counts]
+
+.row
   .large-4.columns
     .panel
       p
         strong Cast Sentiment
       =render "cast_sentiment_graph", id: @movie.id, people: @movie.sentiment[:people]
-.row
-  .large-12.columns
+  .large-8.columns
     .panel
       p
         strong Sentiment vs. Time
