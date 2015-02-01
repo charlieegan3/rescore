@@ -12,7 +12,7 @@
     var data = {
       labels: [<% date_sentiment.each_with_index do |item, index| %>
         <% if index % (date_sentiment.size / labels) == 0 %>
-          '<%= distance_of_time_in_words(item[0], time) %>',
+          '<%= distance_of_time_in_words(Date.parse(item[0]), time) %>',
         <% else %>
           '',
         <% end %>
