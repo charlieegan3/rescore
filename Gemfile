@@ -27,7 +27,7 @@ gem 'simple_sentiment'
 gem 'sad_panda'
 gem 'sentiment_lib'
 gem 'sentimental'
-gem 'engtagger'
+gem 'engtagger', :git => 'https://github.com/charlieegan3/engtagger.git'
 gem 'punkt-segmenter'
 
 gem 'googleajax'
@@ -42,7 +42,6 @@ group :development do
   gem 'better_errors'
   gem 'binding_of_caller'
   gem 'pry'
-  gem 'spring'
 end
 
 group :development, :test do
