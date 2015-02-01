@@ -1,0 +1,25 @@
+<script type="text/javascript">
+  $(document).ready(function(){
+
+    var options = {
+      segmentStrokeColor : "rgba(140,200,90,1)",
+      animationSteps : 50,
+    };
+
+    var data = [
+      <% topics.each_with_index do |topic, index| %>
+        {
+          value: <%= topic[1] %>,
+          color:"rgba(150,220,100,<%= 1 - (index.to_f / 10) %>)",
+          highlight: "rgba(140,200,90,<%= 1 - (index.to_f / 10) %>)",
+          label: "<%= topic[0].capitalize %>"
+        },
+      <% end %>
+    ]
+
+    var ctx_topic_count = $("#<%= id %>_topic_count").get(0).getContext("2d");
+    var topicsChart = new Chart(ctx_topic_count).Doughnut(data, options);
+  })
+</script>
+
+<canvas id="<%= id %>_topic_count" width="250" height="250"></canvas>

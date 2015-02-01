@@ -119,6 +119,18 @@ class Movie < ActiveRecord::Base
     {topics: topics_sentiment, people: people_sentiment, date: date_sentiment}
   end
 
+  def topic_counts
+    topic_counts = Hash.new(0)
+    self.reviews.each do |review|
+      review[:rescore_review].each do |sentence|
+        sentence[:context_tags].keys.each do |tag|
+          topic_counts[tag] += 1
+        end
+      end
+    end
+    topic_counts.sort_by { |_, v| v }.reverse
+  end
+
   private
     def dup_hash(ary)
      ary.inject(Hash.new(0)) { |h,e| h[e] += 1; h }.select {
