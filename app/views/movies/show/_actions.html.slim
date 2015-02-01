@@ -17,5 +17,8 @@
         tr
           th Year
           td =movie.year
+        tr
+          th Genres
+          td =movie.genres.join(', ')
   .large-6.columns
     =image_tag(movie.image_url)

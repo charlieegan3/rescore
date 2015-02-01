@@ -8,6 +8,7 @@
         tr
           th Cover
           th Year
+          th Genres
           th Reviews
           th Cast Members
           th Updated
@@ -16,6 +17,7 @@
         tr
           td =image_tag(@movie.image_url)
           td =@movie.year
+          td =@movie.genres.join(', ')
           td =@movie.reviews.size
           td =@movie.related_people[:cast].size
           td =distance_of_time_in_words(Time.new, @movie.updated_at).gsub('about ', '') + " ago"

@@ -24,6 +24,8 @@
     = f.text_field :image_url, placeholder: 'Image URL', value: params[:image_url] || @movie.image_url
     label Year&nbsp;
     = f.text_field :year, placeholder: 'Year', value: params[:year] || @movie.year
+    label Genres&nbsp;
+    = f.text_field :genres, placeholder: 'Genres', value: params[:genres].join(', ') || @movie.genres.join(', ')
     label Page Scan Depth&nbsp;
     p.comment The number of review pages per source that will be scanned - the larger the number the longer it takes
     = f.number_field(:page_depth, in: 1..10, step: 1)
