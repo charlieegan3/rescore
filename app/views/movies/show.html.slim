@@ -38,7 +38,12 @@
         strong Cast Sentiment
       =render "cast_sentiment_graph", id: @movie.id, people: @movie.sentiment[:people]
 .row
-  .large-12.columns
+  .large-4.columns
+    .panel
+      p
+        strong Aspect Discussion Counts
+      =render "topic_count_graph", id: @movie.id, topics: @movie.topic_counts
+  .large-8.columns
     .panel
       p
         strong Sentiment vs. Time
