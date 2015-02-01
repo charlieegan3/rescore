@@ -97,7 +97,7 @@ class Movie < ActiveRecord::Base
         end
       end
       sentiment_average /= review[:rescore_review].size
-      date_sentiment << [Date.parse(review[:date]).to_s, sentiment_average]
+      date_sentiment << [Date.parse(review[:date]).to_s, sentiment_average] unless review[:date] == ""
     end
 
     topics_sentiment = topics_sentiment.map { |k, v| [k, v.reduce(:+) / v.size] }
