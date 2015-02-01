@@ -7,7 +7,6 @@
   =link_to 'Restart', collect_movie_path(movie), class: 'button alert'
 -unless movie.reviews.empty?
   p ="#{movie.reviews.size} reviews"
-  =render "ratings_graph", id: movie.id, ratings: movie.rating_distribution
   -if params[:all_reviews]
     =link_to 'Hide', movie_path(movie)
   -else
