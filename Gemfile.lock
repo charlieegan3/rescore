@@ -6,7 +6,7 @@ GIT
 
 GIT
   remote: https://github.com/charlieegan3/engtagger.git
-  revision: 4568dd4a38d5043b4ac68c06cc011a1a9a3ee6a3
+  revision: ede324a46f459c8366d55beed40238a5d96e6ef8
   specs:
     engtagger (0.2.0)
 
