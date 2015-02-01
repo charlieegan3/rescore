@@ -2,23 +2,35 @@
   $(document).ready(function(){
 
     var options = {
-      segmentStrokeColor : "rgba(140,200,90,1)",
-      animationSteps : 50,
+      scaleBeginAtZero : true,
+      scaleShowGridLines : true,
+      scaleGridLineColor : "rgba(0,0,0,.05)",
+      scaleGridLineWidth : 1,
+      scaleShowHorizontalLines: true,
+      scaleShowVerticalLines: true,
+      barShowStroke : true,
+      barStrokeWidth : 2,
+      barValueSpacing : 5,
+      barDatasetSpacing : 1,
+      legendTemplate : "",
+      showTooltips: false,
+      pointLabelFontSize : 13,
+      pointDot : false,
     };
 
-    var data = [
-      <% topics.each_with_index do |topic, index| %>
+    var data = {
+      labels: <%= topics.map { |topic| topic[0].to_s.capitalize }.to_s.html_safe %>,
+      datasets: [
         {
-          value: <%= topic[1] %>,
-          color:"rgba(150,220,100,<%= 1 - (index.to_f / 10) %>)",
-          highlight: "rgba(140,200,90,<%= 1 - (index.to_f / 10) %>)",
-          label: "<%= topic[0].capitalize %>"
-        },
-      <% end %>
-    ]
+          fillColor: "rgba(150,220,100,1)",
+          strokeColor: "rgba(140,200,90,1)",
+          data: <%= topics.map { |topic| (topic[1] * 100).floor } %>
+        }
+      ]
+    }
 
-    var ctx_topic_count = $("#<%= id %>_topic_count").get(0).getContext("2d");
-    var topicsChart = new Chart(ctx_topic_count).Doughnut(data, options);
+    var ctx_topics = $("#<%= id %>_topic_count").get(0).getContext("2d");
+    var topicsChart = new Chart(ctx_topics).Radar(data, options);
   })
 </script>
 
