@@ -89,9 +89,12 @@ class Movie < ActiveRecord::Base
   def set_sentiment
     topics_sentiment  = {}
     people_sentiment  = {}
+    date_sentiment = []
     self.reviews.each do |review|
       next if review[:rescore_review].nil?
+      sentiment_average = 0
       review[:rescore_review].each do |sentence|
+        sentiment_average += sentence[:sentiment][:average]
         sentence[:context_tags].keys.each do |tag|
           topics_sentiment[tag] = [] if topics_sentiment[tag].nil?
           topics_sentiment[tag] << sentence[:sentiment][:average]
@@ -101,6 +104,8 @@ class Movie < ActiveRecord::Base
           people_sentiment[tag] << sentence[:sentiment][:average]
         end
       end
+      sentiment_average /= review[:rescore_review].size
+      date_sentiment << [Date.parse(review[:date]), sentiment_average]
     end
 
     topics_sentiment = topics_sentiment.map { |k, v| [k, v.reduce(:+) / v.size] }
@@ -109,8 +114,9 @@ class Movie < ActiveRecord::Base
       map { |k, v| [k, v.reduce(:+) / v.size, v.size] }.reverse.
       reject { |_, _, c| c < 3}.
       sort_by { |_, v, c| (v * 100).to_f / c }.reverse
+    date_sentiment = date_sentiment.sort_by {|date, value| date }
 
-    {topics: topics_sentiment, people: people_sentiment}
+    {topics: topics_sentiment, people: people_sentiment, date: date_sentiment}
   end
 
   private
