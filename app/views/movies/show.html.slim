@@ -42,7 +42,7 @@
     .panel
       p
         strong Aspect Discussion Counts
-      =render "topic_count_graph", id: @movie.id, topics: @movie.topic_counts
+      =render "topic_count_graph", id: @movie.id, topics: @movie.stats[:topic_counts]
   .large-8.columns
     .panel
       p
