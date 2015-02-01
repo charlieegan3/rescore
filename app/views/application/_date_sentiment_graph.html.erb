@@ -1,0 +1,34 @@
+<script type="text/javascript">
+  $(document).ready(function(){
+
+    var options = {
+      scaleShowLabels: false,
+      showTooltips: false,
+      pointDot : false,
+      pointDotRadius : 0,
+      scaleFontSize: 10
+    };
+
+    var data = {
+      labels: [<% date_sentiment.each_with_index do |item, index| %>
+        <% if index % (date_sentiment.size / labels) == 0 %>
+          '<%= distance_of_time_in_words(item[0], time) %>',
+        <% else %>
+          '',
+        <% end %>
+      <% end %>],
+      datasets: [
+        {
+          fillColor: "rgba(150,220,100,0.5)",
+          strokeColor: "rgba(140,200,90,1)",
+          data: <%= date_sentiment.map { |_, v| (v * 10).round() }.to_s.html_safe %>
+        }
+      ]
+    };
+
+    var ctx_ratings = $("#<%= id %>_dates").get(0).getContext("2d");
+    var ratingsChart = new Chart(ctx_ratings).Line(data, options);
+  })
+</script>
+
+<canvas id="<%= id %>_dates" width="920" height="150"></canvas>
