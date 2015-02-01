@@ -3,6 +3,7 @@ class Movie < ActiveRecord::Base
   serialize :related_people, Hash
   serialize :rating_distribution, Array
   serialize :sentiment, Hash
+  serialize :genres, Array
 
   before_save :default_values
   def default_values
