@@ -125,7 +125,7 @@ class Movie < ActiveRecord::Base
     (0..100).step(10) do |n|
       rating_distribution << rounded_ratings.count(n)
     end
-    {topic_counts: topic_counts.sort_by { |_, v| v }.reverse, rating_distribution: rating_distribution}
+    {topic_counts: topic_counts, rating_distribution: rating_distribution}
   end
 
   private
