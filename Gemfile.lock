@@ -4,6 +4,12 @@ GIT
   specs:
     badfruit (0.0.0)
 
+GIT
+  remote: https://github.com/charlieegan3/engtagger.git
+  revision: 4568dd4a38d5043b4ac68c06cc011a1a9a3ee6a3
+  specs:
+    engtagger (0.2.0)
+
 GEM
   remote: https://rubygems.org/
   specs:
@@ -68,7 +74,6 @@ GEM
       activerecord (>= 3.0, < 4.2)
       delayed_job (>= 3.0, < 4.1)
     diff-lcs (1.2.5)
-    engtagger (0.2.0)
     erubis (2.7.0)
     execjs (2.2.2)
     ffi (1.9.6)
@@ -206,7 +211,6 @@ GEM
       temple (~> 0.6.9)
       tilt (>= 1.3.3, < 2.1)
     slop (3.6.0)
-    spring (1.2.0)
     sprockets (2.12.3)
       hike (~> 1.2)
       multi_json (~> 1.0)
@@ -248,7 +252,7 @@ DEPENDENCIES
   capybara
   coffee-rails (~> 4.0.0)
   delayed_job_active_record
-  engtagger
+  engtagger!
   foundation-rails
   googleajax
   guard
@@ -272,7 +276,6 @@ DEPENDENCIES
   sentimental
   simple_sentiment
   slim
-  spring
   uglifier (>= 1.3.0)
   unidecoder
   vcr
