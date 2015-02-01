@@ -1,7 +1,6 @@
 class Movie < ActiveRecord::Base
   serialize :reviews, Array
   serialize :related_people, Hash
-  serialize :rating_distribution, Array
   serialize :sentiment, Hash
   serialize :stats, Hash
 
@@ -60,21 +59,11 @@ class Movie < ActiveRecord::Base
     self.reviews = summary
     self.status = nil
     self.task = nil
-    self.rating_distribution = set_rating_distribution
     self.sentiment = set_sentiment
     self.stats = set_stats
     save
   end
   handle_asynchronously :build_summary
-
-  def set_rating_distribution
-    counts = []
-    rounded_ratings = self.reviews.map {|x| (x[:percentage] / 10 unless x[:percentage].nil?).to_i * 10 }
-    (0..100).step(10) do |n|
-      counts << rounded_ratings.count(n)
-    end
-    counts
-  end
 
   def source_link_count
     [self.imdb_link, self.amazon_link, self.metacritic_link, self.rotten_tomatoes_link].count {|l| l.include?('http')}
@@ -130,7 +119,13 @@ class Movie < ActiveRecord::Base
         end
       end
     end
-    {topic_counts: topic_counts.sort_by { |_, v| v }.reverse}
+
+    rating_distribution = []
+    rounded_ratings = self.reviews.map {|x| (x[:percentage] / 10 unless x[:percentage].nil?).to_i * 10 }
+    (0..100).step(10) do |n|
+      rating_distribution << rounded_ratings.count(n)
+    end
+    {topic_counts: topic_counts.sort_by { |_, v| v }.reverse, rating_distribution: rating_distribution}
   end
 
   private
