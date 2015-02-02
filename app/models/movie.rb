@@ -78,7 +78,6 @@ class Movie < ActiveRecord::Base
   def set_sentiment
     topics_sentiment  = {}
     people_sentiment  = {}
-    date_sentiment = []
     reviews.each do |review|
       next if review[:rescore_review].nil? || review[:rescore_review].empty?
       sentiment_average = 0
@@ -94,7 +93,6 @@ class Movie < ActiveRecord::Base
         end
       end
       sentiment_average /= review[:rescore_review].size
-      date_sentiment << [Date.parse(review[:date]).to_s, sentiment_average] unless review[:date] == ""
     end
 
     topics_sentiment = topics_sentiment.map { |k, v| [k, v.reduce(:+) / v.size] }
@@ -103,9 +101,8 @@ class Movie < ActiveRecord::Base
       map { |k, v| [k, v.reduce(:+) / v.size, v.size] }.reverse.
       reject { |_, _, c| c < 3}.
       sort_by { |_, v, c| (v * 100).to_f / c }.reverse
-    date_sentiment = date_sentiment.sort_by {|date, value| date }
 
-    {topics: topics_sentiment, people: people_sentiment, date: date_sentiment}
+    {topics: topics_sentiment, people: people_sentiment}
   end
 
   def set_stats

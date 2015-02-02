@@ -46,8 +46,3 @@
       p
         strong Cast Sentiment
       =render "cast_sentiment_graph", id: @movie.id, people: @movie.sentiment[:people]
-  .large-8.columns
-    .panel
-      p
-        strong Sentiment vs. Time
-      =render "date_sentiment_graph", id: @movie.id, date_sentiment: @movie.sentiment[:date], time: Time.new, labels: 5
