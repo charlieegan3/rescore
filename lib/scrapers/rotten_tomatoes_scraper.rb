@@ -41,6 +41,7 @@ class Rotten_Tomatoes_Scraper
 
   private
     def review_urls(title_url)
+      title_url += '/' unless title_url.last == '/'
       review_url = title_url + "reviews/?type=user"
       page = 1; urls = []
       @max_pages.times do
