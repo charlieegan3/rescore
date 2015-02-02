@@ -58,4 +58,6 @@
       =render "ratings_graph", id: @movie.id, ratings: @movie.stats[:rating_distribution]
   .large-4.columns
     .panel
-      strong Moar!
+      p
+        strong Sentiment by Location
+      =render "locations_graph", id: @movie.id, locations: @movie.sentiment[:location]
