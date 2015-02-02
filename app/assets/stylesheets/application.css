@@ -15,9 +15,18 @@
  *= require foundation_and_overrides
 
  */
+ .container {
+  padding-top: 50px;
+}
 
  .top-bar {
   margin-bottom: 10px;
+ }
+
+ nav.top-bar {
+  position: fixed;
+  width: 100%;
+  z-index: 99;
  }
 
  .nav-logo img {
