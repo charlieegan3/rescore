@@ -73,6 +73,7 @@ GEM
     delayed_job_active_record (4.0.2)
       activerecord (>= 3.0, < 4.2)
       delayed_job (>= 3.0, < 4.1)
+    descriptive_statistics (2.3.0)
     diff-lcs (1.2.5)
     erubis (2.7.0)
     execjs (2.2.2)
@@ -252,6 +253,7 @@ DEPENDENCIES
   capybara
   coffee-rails (~> 4.0.0)
   delayed_job_active_record
+  descriptive_statistics
   engtagger!
   foundation-rails
   googleajax
