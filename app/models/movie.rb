@@ -51,6 +51,9 @@ class Movie < ActiveRecord::Base
   def build_summary
     summary = []
     count = 0
+    self.status = nil
+    self.task = nil
+    puts 'Analyzing...'
     self.reviews.each do |review|
       rescore_review = RescoreReview.new(review[:content], self.related_people)
       rescore_review.build_all
@@ -58,11 +61,12 @@ class Movie < ActiveRecord::Base
       summary << review
     end
     self.reviews = summary
-    self.status = nil
-    self.task = nil
+    save
+    puts 'Completed Analysis. Building Cache...'
     self.sentiment = set_sentiment
     self.stats = set_stats
     save
+    puts 'Complete'
   end
   handle_asynchronously :build_summary
 
@@ -83,7 +87,7 @@ class Movie < ActiveRecord::Base
     people_sentiment  = {}
     date_sentiment = []
     self.reviews.each do |review|
-      next if review[:rescore_review].nil?
+      next if review[:rescore_review].nil? || review[:rescore_review].empty?
       sentiment_average = 0
       review[:rescore_review].each do |sentence|
         sentiment_average += sentence[:sentiment][:average]
@@ -114,6 +118,7 @@ class Movie < ActiveRecord::Base
   def set_stats
     topic_counts = Hash.new(0)
     self.reviews.each do |review|
+      next if review[:rescore_review].nil?
       review[:rescore_review].each do |sentence|
         sentence[:context_tags].keys.each do |tag|
           topic_counts[tag] += 1
