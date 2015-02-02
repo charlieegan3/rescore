@@ -51,7 +51,8 @@ class Movie < ActiveRecord::Base
   def build_summary
     summary = []
     sentiment_analyzer = Sentiment::SentimentAnalyzer.new
-    reviews.each do |review|
+    reviews.each_with_index do |review, index|
+      update_attribute(:status, "#{(index.to_f/reviews.size).round(2) * 100}%") if index % 50 == 0
       rescore_review = RescoreReview.new(review[:content], related_people)
       rescore_review.build_all(sentiment_analyzer)
       review[:rescore_review] = rescore_review.sentences
