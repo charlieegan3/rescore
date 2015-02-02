@@ -53,9 +53,9 @@ class MoviesController < ApplicationController
   end
 
   def update
+    @movie = Movie.find(params[:id])
     params = movie_params
     params[:genres] = params[:genres].split(', ')
-    @movie = Movie.find(params[:id])
     @movie.update_attributes(params)
     redirect_to manage_movie_path(@movie)
   end
