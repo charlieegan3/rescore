@@ -127,6 +127,10 @@ class Movie < ActiveRecord::Base
     {topic_counts: topic_counts, rating_distribution: rating_distribution}
   end
 
+  def self.summarized
+    all.reject { |movie| movie.stats.empty? }
+  end
+
   private
     def dup_hash(ary)
      ary.inject(Hash.new(0)) { |h,e| h[e] += 1; h }.select {
