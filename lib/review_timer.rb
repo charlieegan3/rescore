@@ -1,9 +1,8 @@
-# Time the entire build process for a movie.
-# NOTE: turn off 'handle_asynchronously' in the movie.rb first.
-
 require_relative '../config/environment'
+Delayed::Worker.delay_jobs = false
 
 movie = Movie.last
+puts movie.title
 start = Time.now
 
 movie.build_summary
