@@ -79,6 +79,7 @@ class Movie < ActiveRecord::Base
     topics_sentiment  = {}
     people_sentiment  = {}
     average_sentiment = []
+    sentiment_averages = [] #this is review level
     reviews.each do |review|
       next if review[:rescore_review].nil? || review[:rescore_review].empty?
       sentiment_average = 0
@@ -95,6 +96,7 @@ class Movie < ActiveRecord::Base
         end
       end
       sentiment_average /= review[:rescore_review].size
+      sentiment_averages << sentiment_average
     end
 
     topics_sentiment = topics_sentiment.map { |k, v| [k, v.reduce(:+) / v.size] }
@@ -113,7 +115,9 @@ class Movie < ActiveRecord::Base
       average_sentiment[i] = ['', x[1]] unless labels.include? i
     end
 
-    {topics: topics_sentiment, people: people_sentiment, distribution: average_sentiment}
+    distribution_stats = [sentiment_averages.max - sentiment_averages.min, sentiment_averages.standard_deviation]
+
+    {topics: topics_sentiment, people: people_sentiment, distribution: average_sentiment, distribution_stats: distribution_stats }
   end
 
   def set_stats
