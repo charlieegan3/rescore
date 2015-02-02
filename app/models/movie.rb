@@ -50,23 +50,15 @@ class Movie < ActiveRecord::Base
 
   def build_summary
     summary = []
-    count = 0
-    self.status = nil
-    self.task = nil
-    puts 'Analyzing...'
+    sentiment_analyzer = Sentiment::SentimentAnalyzer.new
     self.reviews.each do |review|
       rescore_review = RescoreReview.new(review[:content], self.related_people)
-      rescore_review.build_all
+      rescore_review.build_all(sentiment_analyzer)
       review[:rescore_review] = rescore_review.sentences
       summary << review
     end
-    self.reviews = summary
-    save
-    puts 'Completed Analysis. Building Cache...'
-    self.sentiment = set_sentiment
-    self.stats = set_stats
-    save
-    puts 'Complete'
+    self.update_attribute(:reviews, summary)
+    self.update_attributes({sentiment: set_sentiment, stats: set_stats})
   end
   handle_asynchronously :build_summary
 
