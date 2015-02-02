@@ -1,6 +1,7 @@
 .row
   .large-12.columns
     ul.button-group
+      li =link_to 'Public View', movie_path(movie), class: 'button success'
       li =link_to 'Edit', edit_movie_path(movie), class: 'button'
       li =button_to 'Delete', movie, {onclick: "return confirm('Sure?')", method: :delete, class: 'button alert'}
 

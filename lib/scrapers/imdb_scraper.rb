@@ -32,8 +32,13 @@ class Imdb_Scraper
         end
         review[:useful] = evaluate_useful(doc.xpath("//div[@id='tn15content']/div[#{i}]/small[1]").text)
         review[:title] = doc.xpath("//div[@id='tn15content']/div[#{i}]/h2").text
-        review[:username] = doc.xpath("//div[@id='tn15content']/div[#{i}]/a[2]")[0].child.to_s
-        review[:location] = doc.xpath("//div[@id='tn15content']/div[#{i}]/small[2]")[0].child.to_s
+
+        review[:username] = doc.xpath("//div[@id='tn15content']/div[#{i}]/a[2]")[0]
+        review[:username] = review[:username].child.to_s unless review[:username].nil?
+
+        review[:location] = doc.xpath("//div[@id='tn15content']/div[#{i}]/small[2]")[0]
+        review[:location] = review[:location].child.to_s unless review[:location].nil?
+
         review[:date] = doc.xpath("//div[@id='tn15content']/div[#{i}]/small[3]").text
         review[:content] = doc.xpath("//div[@id='tn15content']//p[#{(i.to_f/2).ceil.to_i}]").text
         review[:source] = {vendor: 'imdb', url: @title_url}

@@ -7,8 +7,8 @@ class Movie < ActiveRecord::Base
 
   before_save :default_values
   def default_values
-    self.reviews ||= []
-    self.related_people ||= {}
+    reviews ||= []
+    related_people ||= {}
   end
 
   def populate_source_links
@@ -24,25 +24,25 @@ class Movie < ActiveRecord::Base
   end
 
   def collect_reviews
-    self.status = '0%'; save
-    r = ReviewAggregator.new(title, self.page_depth)
-    update_attribute(:reviews, [])
-    self.status = '20%'; save
-    self.reviews += r.metacritic_reviews(metacritic_link)
-    self.status = '40%'; save
-    self.reviews += r.amazon_reviews(amazon_link)
-    self.status = '60%'; save
-    self.reviews += r.imdb_reviews(imdb_link)
-    self.status = '80%'; save
-    self.reviews += r.rotten_tomatoes_reviews(rotten_tomatoes_link)
-    self.status = nil; self.task = nil;
-    save
+    update_attribute(:status, '0%')
+    r = ReviewAggregator.new(title, page_depth)
+    reviews = []
+    update_attribute(:status, '20%')
+    reviews += r.metacritic_reviews(metacritic_link)
+    update_attribute(:status, '40%')
+    reviews += r.amazon_reviews(amazon_link)
+    update_attribute(:status, '60%')
+    reviews += r.imdb_reviews(imdb_link)
+    update_attribute(:status, '80%')
+    reviews += r.rotten_tomatoes_reviews(rotten_tomatoes_link)
+    update_attribute(:reviews, reviews)
+    update_attributes({status: nil, task: nil})
   end
   handle_asynchronously :collect_reviews
 
   def populate_related_people
     bf = BadFruit.new("6tuqnhbh49jqzngmyy78n8v3")
-    cast = bf.movies.search_by_id(self.rotten_tomatoes_id).full_cast.map { |person|
+    cast = bf.movies.search_by_id(rotten_tomatoes_id).full_cast.map { |person|
       {name: person.name, characters: person.characters}
     }
     update_attribute(:related_people, {cast: cast})
@@ -50,40 +50,37 @@ class Movie < ActiveRecord::Base
 
   def build_summary
     summary = []
-    count = 0
-    self.reviews.each do |review|
-      rescore_review = RescoreReview.new(review[:content], self.related_people)
-      rescore_review.build_all
+    sentiment_analyzer = Sentiment::SentimentAnalyzer.new
+    reviews.each do |review|
+      rescore_review = RescoreReview.new(review[:content], related_people)
+      rescore_review.build_all(sentiment_analyzer)
       review[:rescore_review] = rescore_review.sentences
       summary << review
     end
-    self.reviews = summary
-    self.status = nil
-    self.task = nil
-    self.sentiment = set_sentiment
-    self.stats = set_stats
-    save
+    update_attribute(:reviews, summary)
+    update_attributes({sentiment: set_sentiment, stats: set_stats})
+    update_attributes({status: nil, task: nil})
   end
   handle_asynchronously :build_summary
 
   def source_link_count
-    [self.imdb_link, self.amazon_link, self.metacritic_link, self.rotten_tomatoes_link].count {|l| l.include?('http')}
+    [imdb_link, amazon_link, metacritic_link, rotten_tomatoes_link].count {|l| l.include?('http')}
   end
 
   def busy
-    !self.status.nil?
+    !status.nil?
   end
 
   def has_summary
-    !self.reviews.last[:rescore_review].nil?
+    !reviews.last[:rescore_review].nil?
   end
 
   def set_sentiment
     topics_sentiment  = {}
     people_sentiment  = {}
     date_sentiment = []
-    self.reviews.each do |review|
-      next if review[:rescore_review].nil?
+    reviews.each do |review|
+      next if review[:rescore_review].nil? || review[:rescore_review].empty?
       sentiment_average = 0
       review[:rescore_review].each do |sentence|
         sentiment_average += sentence[:sentiment][:average]
@@ -113,7 +110,8 @@ class Movie < ActiveRecord::Base
 
   def set_stats
     topic_counts = Hash.new(0)
-    self.reviews.each do |review|
+    reviews.each do |review|
+      next if review[:rescore_review].nil?
       review[:rescore_review].each do |sentence|
         sentence[:context_tags].keys.each do |tag|
           topic_counts[tag] += 1
@@ -122,11 +120,15 @@ class Movie < ActiveRecord::Base
     end
 
     rating_distribution = []
-    rounded_ratings = self.reviews.map {|x| (x[:percentage] / 10 unless x[:percentage].nil?).to_i * 10 }
+    rounded_ratings = reviews.map {|x| (x[:percentage] / 10 unless x[:percentage].nil?).to_i * 10 }
     (0..100).step(10) do |n|
       rating_distribution << rounded_ratings.count(n)
     end
     {topic_counts: topic_counts, rating_distribution: rating_distribution}
+  end
+
+  def self.summarized
+    all.reject { |movie| movie.stats.empty? }
   end
 
   private
