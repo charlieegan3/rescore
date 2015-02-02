@@ -75,7 +75,8 @@ class RescoreReview
   end
 
   def extract_sentences
-    @sentences = Splitter.punkt_extract_sentences(text)
+    @sentences = []
+    @sentences = Splitter.punkt_extract_sentences(text) unless text.length < 100
   end
 
   def include_cleaned_sentences
