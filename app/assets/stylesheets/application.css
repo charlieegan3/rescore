@@ -20,6 +20,12 @@
   margin-bottom: 10px;
  }
 
+ nav.top-bar{
+  position:fixed;
+  width:100%;
+  z-index:99;
+ }
+
  .nav-logo img {
    max-height: 35px;
    margin-bottom: 3px;
@@ -58,4 +64,7 @@ li.google-visualization-tooltip-item {
 
 table.movie_table {
   width: 100%;
+}
+.container {
+  padding-top:50px;
 }
