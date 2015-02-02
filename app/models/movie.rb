@@ -117,7 +117,24 @@ class Movie < ActiveRecord::Base
 
     distribution_stats = [sentiment_averages.max - sentiment_averages.min, sentiment_averages.standard_deviation]
 
-    {topics: topics_sentiment, people: people_sentiment, distribution: average_sentiment, distribution_stats: distribution_stats }
+    # collect locations and average sentiment
+    location_sentiment = reviews.map {|x| [x[:location], x[:rescore_review].map {|x| x[:sentiment][:average]}.mean]}
+    # reject inappropriate locations
+    location_sentiment.reject! { |e| e.first == '' || e.first.nil? }
+    # group locations and select groups greater than one in size
+    location_sentiment = location_sentiment.group_by { |e| e[0]}.to_a.select { |e| e[1].size > 1 }
+    # order and calculate scores for groups, sort groups by size
+    location_sentiment = location_sentiment.map { |e| [e[0], e[1].map { |e2| e2[1] }.reduce(:+), e[1].size ] }.sort_by { |e| e[1] }.reverse
+    # tidy names and score values
+    location_sentiment = location_sentiment.map { |e| [e[0].gsub('from ', ''), e[1].round(2) * 100, e[2]] }
+
+    {
+      topics: topics_sentiment,
+      people: people_sentiment,
+      distribution: average_sentiment,
+      location: location_sentiment,
+      distribution_stats: distribution_stats
+    }
   end
 
   def set_stats
