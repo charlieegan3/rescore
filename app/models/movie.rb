@@ -79,10 +79,12 @@ class Movie < ActiveRecord::Base
     topics_sentiment  = {}
     people_sentiment  = {}
     date_sentiment = []
+    average_sentiment = []
     reviews.each do |review|
       next if review[:rescore_review].nil? || review[:rescore_review].empty?
       sentiment_average = 0
       review[:rescore_review].each do |sentence|
+        average_sentiment << sentence[:sentiment][:average]
         sentiment_average += sentence[:sentiment][:average]
         sentence[:context_tags].keys.each do |tag|
           topics_sentiment[tag] = [] if topics_sentiment[tag].nil?
@@ -105,7 +107,16 @@ class Movie < ActiveRecord::Base
       sort_by { |_, v, c| (v * 100).to_f / c }.reverse
     date_sentiment = date_sentiment.sort_by {|date, value| date }
 
-    {topics: topics_sentiment, people: people_sentiment, date: date_sentiment}
+    average_sentiment = dup_hash(average_sentiment.map {|x| x.round(1)}).to_a.sort_by { |x| x[0] }
+    mean = average_sentiment.map { |x| x[0] }.mean
+    standard_deviation = average_sentiment.map { |x| x[0] }.standard_deviation
+    average_sentiment.map! { |x| [((x[0] - mean) / standard_deviation).round(2), x[1]] }
+    labels = [0, average_sentiment.size - 1, average_sentiment.size / 2, average_sentiment.size / 4, average_sentiment.size - average_sentiment.size / 4]
+    average_sentiment.each_with_index do |x, i|
+      average_sentiment[i] = ['', x[1]] unless labels.include? i
+    end
+
+    {topics: topics_sentiment, people: people_sentiment, date: date_sentiment, distribution: average_sentiment}
   end
 
   def set_stats
