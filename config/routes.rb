@@ -20,6 +20,7 @@ Rails.application.routes.draw do
   get 'movies/:id/collect' => 'movies#collect', as: :collect_movie
   get 'movies/:id/status' => 'movies#status', as: :movie_status
   get 'movies/:id/build_summary' => 'movies#build_summary', as: :build_movie_summary
+  get 'movies/compare' => 'movies#compare'
   resources :movies
 
   # Example resource route with options:

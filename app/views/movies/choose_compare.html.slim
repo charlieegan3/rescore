@@ -1,0 +1,13 @@
+.row
+  .large-12.columns
+    h1 ="Choose films to compare:"
+
+.row
+  = form_tag("/movies/compare", method: "get") do
+    .large-6.columns
+      p ="Film one:"
+      p =collection_select(:filmone, :id, Movie.all, :id, :title)
+    .large-6.columns
+      p ="Film two:"
+      p =collection_select(:filmtwo, :id, Movie.all, :id, :title)
+    = submit_tag 'Compare', class: 'button expand'

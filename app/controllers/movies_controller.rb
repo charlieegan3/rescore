@@ -1,5 +1,5 @@
 class MoviesController < ApplicationController
-  http_basic_authenticate_with name: "admin", password: "1234qwer", :except => [:index, :show, :search_by_title]
+  http_basic_authenticate_with name: "admin", password: "1234qwer", :except => [:index, :show, :search_by_title, :compare]
 
   def index
     @movies = Movie.all
@@ -11,6 +11,17 @@ class MoviesController < ApplicationController
     if @movie.reviews.nil? || @movie.related_people[:cast].nil?
       flash[:alert] = "This movie's information is not yet complete. Please try again later"
       redirect_to :root
+    end
+  end
+
+  def compare
+    if params[:filmone] && params[:filmtwo]
+      @movie_one = Movie.find(params[:filmone][:id])
+      @movie_two = Movie.find(params[:filmtwo][:id])
+      render 'compare'
+    else
+      flash[:notice] = "Please choose the films you want to compare."
+      render 'choose_compare'
     end
   end
 

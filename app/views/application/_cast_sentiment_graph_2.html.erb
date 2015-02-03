@@ -1,0 +1,54 @@
+<script type="text/javascript">
+  google.load("visualization", "1", {packages:["corechart"]});
+  google.setOnLoadCallback(drawChart);
+  function drawChart() {
+    var datatwo = new google.visualization.DataTable();
+
+    datatwo.addColumn('number', 'Sentiment');
+    datatwo.addColumn('number', 'Mentions');
+    datatwo.addColumn({
+        type: 'string',
+        role: 'tooltip'
+    });
+    datatwo.addColumn({
+        type: 'string',
+        role: 'style'
+    });
+
+    datatwo.addRows(
+      <%= people.map { |p| p.reverse << 'point { size: 6; shape-type: star; shape-dent: 0.6; fill-color: #99DB6B; stroke-color: #8FC861; stroke-width: 1.5' }.to_s.html_safe %>
+    );
+
+    var optionstwo = {
+      chartArea: {'width': '85%', 'height': '80%'},
+      backgroundColor: "transparent",
+      fontSize: 13,
+      colors: ['rgb(153,219,107)'],
+      tooltip: {isHtml: true},
+      hAxis: {
+        title: 'Mentions',
+        titleTextStyle: {color: 'rgb(110, 124, 128)', italic: false},
+        textPosition: 'none',
+        gridlines: {color: 'rgb(231, 231, 231)'},
+        baselineColor: 'rgb(200, 200, 200)',
+        minValue: <%= people.map { |p| p[2] }.min %>,
+        maxValue: <%= people.map { |p| p[2] }.max %>
+      },
+      vAxis: {
+        title: 'Sentiment',
+        titleTextStyle: {color: 'rgb(110, 124, 128)', italic: false},
+        textPosition: 'none',
+        gridlines: {color: 'rgb(231, 231, 231)'},
+        baselineColor: 'rgb(200, 200, 200)',
+        minValue: <%= people.map { |p| p[1] }.min %>,
+        maxValue: <%= people.map { |p| p[1] }.max %>
+      },
+      legend: 'none'
+    };
+
+    var charttwo = new google.visualization.ScatterChart(document.getElementById('charttwo_div'));
+
+    charttwo.draw(datatwo, optionstwo);
+  }
+</script>
+<div id="charttwo_div" width="250" height="250"></div>
