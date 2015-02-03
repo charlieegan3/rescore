@@ -100,7 +100,7 @@
     .panel
       p
         strong Cast Sentiment
-      =render "cast_sentiment_graph_2", id: @movie_two.id, people: @movie_two.sentiment[:people]
+      =render "cast_sentiment_graph", id: @movie_two.id, people: @movie_two.sentiment[:people]
 
 // Comparison row five.
 .row
@@ -132,4 +132,4 @@
       -if @movie_two.sentiment[:location].empty?
         p="No location data for this movie's reviews."
       -else
-        =render "locations_graph_2", id: @movie_two.id, locations: @movie_two.sentiment[:location]
+        =render "locations_graph", id: @movie_two.id, locations: @movie_two.sentiment[:location]
