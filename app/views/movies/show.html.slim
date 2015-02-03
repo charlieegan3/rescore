@@ -60,4 +60,7 @@
     .panel
       p
         strong Sentiment by Location
-      =render "locations_graph", id: @movie.id, locations: @movie.sentiment[:location]
+      -if @movie.sentiment[:location].empty?
+        p="No location data for this movie's reviews."
+      -else
+        =render "locations_graph_2", id: @movie.id, locations: @movie.sentiment[:location]
