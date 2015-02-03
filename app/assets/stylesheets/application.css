@@ -29,6 +29,11 @@
   z-index: 99;
  }
 
+ .top-bar-section ul.right {
+ 	float: right;
+ 	margin-right: 10px;
+ }
+
  .nav-logo img {
    max-height: 35px;
    margin-bottom: 3px;
