@@ -1,0 +1,30 @@
+<script type="text/javascript">
+  $(document).ready(function(){
+
+    var optionstwo = {
+      scaleBeginAtZero : true,
+      scaleShowGridLines : false,
+      showTooltips: false,
+      barShowStroke : false,
+      barValueSpacing : 10,
+      legendTemplate : "",
+      scaleFontSize: 11
+    };
+
+    var datatwo = {
+        labels: <%= locations.map { |p| "#{p[0]} (#{p[2]})" }.to_s.html_safe %>,
+        datasets: [
+            {
+                label: "Ratings",
+                fillColor: "rgba(153,219,107, 0.5)",
+                data: <%= locations.map { |p| p[1] } %>
+            }
+        ]
+    };
+
+    var ctx_locations_two = $("#<%= id %>_locations").get(0).getContext("2d");
+    var ratingsChart_two = new Chart(ctx_locations_two).Bar(datatwo, optionstwo);
+  })
+</script>
+
+<canvas id="<%= id %>_locations" width="250" height="250"></canvas>
