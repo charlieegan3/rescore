@@ -46,9 +46,9 @@
       legend: 'none'
     };
 
-    var chart = new google.visualization.ScatterChart(document.getElementById('chart_div'));
+    var chart = new google.visualization.ScatterChart(document.getElementById('<%= id %>_cast_sentiment'));
 
     chart.draw(data, options);
   }
 </script>
-<div id="chart_div" width="250" height="250"></div>
+<div id="<%= id %>_cast_sentiment" width="250" height="250"></div>
