@@ -1,8 +1,11 @@
 .row
   .large-12.columns
-    h1 ="Comparing #{@movie_one.title} with #{@movie_two.title}"
+    h3
+      |Comparing&nbsp;
+      span.radius.success.label =@movie_one.title
+      |&nbsp;with&nbsp;
+      span.radius.success.label =@movie_two.title
 
-// Movie one.
 .row
   .large-12
     table.summary
@@ -16,44 +19,23 @@
           th Updated
           th Added
       tbody
-        tr
-          td =image_tag(@movie_one.image_url)
-          td =@movie_one.year
-          td =@movie_one.genres.join(', ')
-          td =@movie_one.reviews.size
-          td =@movie_one.related_people[:cast].size
-          td =distance_of_time_in_words(Time.new, @movie_one.updated_at).gsub('about ', '') + " ago"
-          td =distance_of_time_in_words(Time.new, @movie_one.created_at).gsub('about ', '') + " ago"
-
-// Movie two.
-.row
-  .large-12
-    table.summary
-      thead
-        tr
-          th Cover
-          th Year
-          th Genres
-          th Reviews
-          th Cast Members
-          th Updated
-          th Added
-      tbody
-        tr
-          td =image_tag(@movie_two.image_url)
-          td =@movie_two.year
-          td =@movie_two.genres.join(', ')
-          td =@movie_two.reviews.size
-          td =@movie_two.related_people[:cast].size
-          td =distance_of_time_in_words(Time.new, @movie_two.updated_at).gsub('about ', '') + " ago"
-          td =distance_of_time_in_words(Time.new, @movie_two.created_at).gsub('about ', '') + " ago"
-
+        -[@movie_one, @movie_two].each do |movie|
+          tr
+            td =image_tag(movie.image_url)
+            td =movie.year
+            td =movie.genres.join(', ')
+            td =movie.reviews.size
+            td =movie.related_people[:cast].size
+            td =distance_of_time_in_words(Time.new, movie.updated_at).gsub('about ', '') + " ago"
+            td =distance_of_time_in_words(Time.new, movie.created_at).gsub('about ', '') + " ago"
 
 .row
   .large-6.columns
-      h3="#{@movie_one.title}"
+    p.title
+      strong="#{@movie_one.title}"
   .large-6.columns
-      h3="#{@movie_two.title}"
+    p.title
+      strong="#{@movie_two.title}"
 
 
 // Comparison row one.
