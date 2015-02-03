@@ -9,6 +9,8 @@ nav.top-bar
       li.divider
       li =link_to 'Manage', movies_path
       li.divider
+  section.top-bar-section
+    ul.right
       li
         form action="/movies/search_by_title"
           input name="query" type="text" placeholder="Search movies" /
