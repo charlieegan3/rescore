@@ -30,8 +30,8 @@
  }
 
  .top-bar-section ul.right {
- 	float: right;
- 	margin-right: 10px;
+  float: right;
+  margin-right: 10px;
  }
 
  .nav-logo img {
@@ -72,4 +72,12 @@ li.google-visualization-tooltip-item {
 
 table.movie_table {
   width: 100%;
+}
+
+h3 .label {
+  font-size: 1.1em;
+}
+
+p.title {
+  text-align: center;
 }
