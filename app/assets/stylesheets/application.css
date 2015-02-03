@@ -19,25 +19,25 @@
   padding-top: 50px;
 }
 
- .top-bar {
+.top-bar {
   margin-bottom: 10px;
- }
+}
 
- nav.top-bar {
+nav.top-bar {
   position: fixed;
   width: 100%;
   z-index: 99;
- }
+}
 
- .top-bar-section ul.right {
- 	float: right;
- 	margin-right: 10px;
- }
+.top-bar-section ul.right {
+  float: right;
+  margin-right: 10px;
+}
 
- .nav-logo img {
-   max-height: 35px;
-   margin-bottom: 3px;
- }
+.nav-logo img {
+  max-height: 35px;
+  margin-bottom: 3px;
+}
 
 .slogan {
   text-align: center;
@@ -72,4 +72,12 @@ li.google-visualization-tooltip-item {
 
 table.movie_table {
   width: 100%;
+}
+
+h3 .label {
+  font-size: 1.05em;
+}
+
+p.title {
+  text-align: center;
 }
