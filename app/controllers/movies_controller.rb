@@ -20,7 +20,6 @@ class MoviesController < ApplicationController
       @movie_two = Movie.find(params[:filmtwo][:id])
       render 'compare'
     else
-      flash[:notice] = "Please choose the films you want to compare."
       render 'choose_compare'
     end
   end
