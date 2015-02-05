@@ -58,8 +58,13 @@ class MoviesController < ApplicationController
   def create
     params = movie_params
     params[:genres] = params[:genres].split(', ')
-    @movie = Movie.create(params)
-    redirect_to manage_movie_path(@movie)
+    if Movie.exists?(title: params[:title])
+      flash[:alert] = "This movie already exists."
+      redirect_to new_movie_from_lookup_path
+    else
+      @movie = Movie.create(params)
+      redirect_to manage_movie_path(@movie)
+    end
   end
 
   def update
