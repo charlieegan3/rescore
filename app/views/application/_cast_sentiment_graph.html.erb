@@ -16,7 +16,7 @@
     });
 
     data.addRows(
-      <%= people.map { |p| p.reverse << 'point { size: 12; shape-type: star; shape-dent: 0.6; fill-color: #99DB6B; stroke-color: #8FC861; stroke-width: 1.5' }.to_s.html_safe %>
+      <%= people.map { |p| p.reverse << 'point { size: 6; shape-type: star; shape-dent: 0.6; fill-color: #99DB6B; stroke-color: #8FC861; stroke-width: 1.5' }.to_s.html_safe %>
     );
 
     var options = {
@@ -24,8 +24,6 @@
       backgroundColor: "transparent",
       fontSize: 13,
       colors: ['rgb(153,219,107)'],
-      pointShape: { type: 'star', sides: 5, },
-      pointSize: 20,
       tooltip: {isHtml: true},
       hAxis: {
         title: 'Mentions',
@@ -48,9 +46,9 @@
       legend: 'none'
     };
 
-    var chart = new google.visualization.ScatterChart(document.getElementById('chart_div'));
+    var chart = new google.visualization.ScatterChart(document.getElementById('<%= id %>_cast_sentiment'));
 
     chart.draw(data, options);
   }
 </script>
-<div id="chart_div" width="250" height="250"></div>
+<div id="<%= id %>_cast_sentiment" width="250" height="250"></div>

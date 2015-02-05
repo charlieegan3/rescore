@@ -51,7 +51,8 @@ class Movie < ActiveRecord::Base
   def build_summary
     summary = []
     sentiment_analyzer = Sentiment::SentimentAnalyzer.new
-    reviews.each do |review|
+    reviews.each_with_index do |review, index|
+      update_attribute(:status, "#{(index.to_f/reviews.size).round(2) * 100}%") if index % 50 == 0
       rescore_review = RescoreReview.new(review[:content], related_people)
       rescore_review.build_all(sentiment_analyzer)
       review[:rescore_review] = rescore_review.sentences
@@ -78,11 +79,13 @@ class Movie < ActiveRecord::Base
   def set_sentiment
     topics_sentiment  = {}
     people_sentiment  = {}
-    date_sentiment = []
+    average_sentiment = []
+    sentiment_averages = [] #this is review level
     reviews.each do |review|
       next if review[:rescore_review].nil? || review[:rescore_review].empty?
       sentiment_average = 0
       review[:rescore_review].each do |sentence|
+        average_sentiment << sentence[:sentiment][:average]
         sentiment_average += sentence[:sentiment][:average]
         sentence[:context_tags].keys.each do |tag|
           topics_sentiment[tag] = [] if topics_sentiment[tag].nil?
@@ -94,7 +97,7 @@ class Movie < ActiveRecord::Base
         end
       end
       sentiment_average /= review[:rescore_review].size
-      date_sentiment << [Date.parse(review[:date]).to_s, sentiment_average] unless review[:date] == ""
+      sentiment_averages << sentiment_average
     end
 
     topics_sentiment = topics_sentiment.map { |k, v| [k, v.reduce(:+) / v.size] }
@@ -103,9 +106,36 @@ class Movie < ActiveRecord::Base
       map { |k, v| [k, v.reduce(:+) / v.size, v.size] }.reverse.
       reject { |_, _, c| c < 3}.
       sort_by { |_, v, c| (v * 100).to_f / c }.reverse
-    date_sentiment = date_sentiment.sort_by {|date, value| date }
 
-    {topics: topics_sentiment, people: people_sentiment, date: date_sentiment}
+    average_sentiment = dup_hash(average_sentiment.map {|x| x.round(1)}).to_a.sort_by { |x| x[0] }
+    mean = average_sentiment.map { |x| x[0] }.mean
+    standard_deviation = average_sentiment.map { |x| x[0] }.standard_deviation
+    average_sentiment.map! { |x| [((x[0] - mean) / standard_deviation).round(2), x[1]] }
+    labels = [0, average_sentiment.size - 1, average_sentiment.size / 2, average_sentiment.size / 4, average_sentiment.size - average_sentiment.size / 4]
+    average_sentiment.each_with_index do |x, i|
+      average_sentiment[i] = ['', x[1]] unless labels.include? i
+    end
+
+    distribution_stats = [sentiment_averages.max - sentiment_averages.min, sentiment_averages.standard_deviation]
+
+    # collect locations and average sentiment
+    location_sentiment = reviews.map {|x| [x[:location], x[:rescore_review].map {|x| x[:sentiment][:average]}.mean]}
+    # reject inappropriate locations
+    location_sentiment.reject! { |e| e.first == '' || e.first.nil? }
+    # group locations and select groups greater than one in size
+    location_sentiment = location_sentiment.group_by { |e| e[0]}.to_a.select { |e| e[1].size > 1 }
+    # order and calculate scores for groups, sort groups by size
+    location_sentiment = location_sentiment.map { |e| [e[0], e[1].map { |e2| e2[1] }.reduce(:+), e[1].size ] }.sort_by { |e| e[1] }.reverse
+    # tidy names and score values
+    location_sentiment = location_sentiment.map { |e| [e[0].gsub('from ', ''), e[1].round(2) * 100, e[2]] }
+
+    {
+      topics: topics_sentiment,
+      people: people_sentiment,
+      distribution: average_sentiment,
+      location: location_sentiment,
+      distribution_stats: distribution_stats
+    }
   end
 
   def set_stats

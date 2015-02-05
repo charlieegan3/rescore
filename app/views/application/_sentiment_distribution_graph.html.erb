@@ -1,0 +1,27 @@
+<script type="text/javascript">
+  $(document).ready(function(){
+    var options = {
+      scaleShowLabels: false,
+      showTooltips: false,
+      pointDot : false,
+      pointDotRadius : 0,
+      scaleFontSize: 10
+    };
+
+    var data = {
+      labels: <%= sentiment.map {|x| x[0]}.to_s.html_safe %>,
+      datasets: [
+        {
+          fillColor: "rgba(150,220,100,0.5)",
+          strokeColor: "rgba(140,200,90,1)",
+          data: <%= sentiment.map {|x| x[1]}.to_s.html_safe %>
+        }
+      ]
+    };
+
+    var ctx_ratings = $("#<%= id %>_dist").get(0).getContext("2d");
+    var ratingsChart = new Chart(ctx_ratings).Bar(data, options);
+  })
+</script>
+
+<canvas id="<%= id %>_dist" width="250" height="224"></canvas>
