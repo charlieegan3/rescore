@@ -16,7 +16,7 @@ class Movie < ActiveRecord::Base
     update_attribute(:metacritic_link,
       GoogleAjax::Search.web(title + " metacritic")[:results][0][:unescaped_url])
     update_attribute(:amazon_link,
-      GoogleAjax::Search.web(title + " amazon.com customer reviews")[:results][0][:unescaped_url])
+      GoogleAjax::Search.web(title + " amazon.com movie customer reviews")[:results][0][:unescaped_url])
     update_attribute(:imdb_link,
       GoogleAjax::Search.web(title + " imdb")[:results][0][:unescaped_url])
     update_attribute(:rotten_tomatoes_link,
