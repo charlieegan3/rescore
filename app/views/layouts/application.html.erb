@@ -18,11 +18,11 @@
     <%= render 'navbar' %>
     <div class="container">
       <% if flash[:notice] %>
-        <div class="notice"><%= flash[:notice] %></div>
+        <div class="rescore-flash"><span class="success round radius label"><%= flash[:notice] %></span></div>
       <% end %>
       
       <% if flash[:alert] %>
-        <div class="alert"><%= flash[:alert] %></div>
+        <div class="rescore-flash"><span class="alert round radius label"><%= flash[:alert] %></span></div>
       <% end %>
 
       <%= yield %>
