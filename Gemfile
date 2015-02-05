@@ -30,12 +30,15 @@ gem 'sentimental'
 gem 'engtagger', :git => 'https://github.com/charlieegan3/engtagger.git', group: :development
 gem 'punkt-segmenter'
 
+gem 'descriptive_statistics'
+
 gem 'googleajax'
 gem 'badfruit', :git => 'https://github.com/IllegalCactus/BadFruit.git'
 
 group :production do
   gem 'rails_12factor'
   gem 'httparty'
+  gem 'foreman'
 end
 
 group :development do
