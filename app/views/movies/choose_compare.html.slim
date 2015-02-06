@@ -10,4 +10,4 @@
     .large-6.columns
       label ="Film two:"
       =collection_select(:filmtwo, :id, Movie.all, :id, :title)
-    = submit_tag 'Compare', class: 'button expand'
+    = submit_tag 'Compare', class: 'button expand', id: 'compare_submit'
