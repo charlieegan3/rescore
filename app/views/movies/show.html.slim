@@ -9,7 +9,8 @@
           th Cover
           th Year
           th Genres
-          th Directors
+          -unless @movie.related_people[:directors].nil?
+            th Directors
           th Reviews
           th Cast Members
           th Updated
@@ -19,9 +20,8 @@
           td =image_tag(@movie.image_url)
           td =@movie.year
           td =@movie.genres.join(', ')
-          td
-            -@movie.related_people[:directors].each do |d|
-              =d['name']
+          -unless @movie.related_people[:directors].nil?
+            td =@movie.related_people[:directors].map { |d| d['name'] }.join(', ')
           td =@movie.reviews.size
           td =@movie.related_people[:cast].size
           td =distance_of_time_in_words(Time.new, @movie.updated_at).gsub('about ', '') + " ago"
