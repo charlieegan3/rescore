@@ -18,5 +18,5 @@
 $(function(){ $(document).foundation(); });
 
 $(document).ready(function(){
-  $(".notice, .alert").delay(2400).hide("slow");
+  $(".rescore-flash").delay(2400).hide("slow");
 })
