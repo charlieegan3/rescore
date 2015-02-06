@@ -16,7 +16,6 @@
 
   <body>
     <%= render 'navbar' %>
-    <%= render "google_analytics" %>
     <div class="container">
       <% if flash[:notice] %>
         <div class="rescore-flash"><span class="success round radius label"><%= flash[:notice] %></span></div>
@@ -27,6 +26,8 @@
       <% end %>
 
       <%= yield %>
+
     </div>
   </body>
 </html>
+<%= render "google_analytics" %>
