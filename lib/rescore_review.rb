@@ -17,7 +17,7 @@ class RescoreReview
       sentence[:emphasis] = Emphasis.score(sentence[:text])
 
       next if @related_people.nil?
-      people = People.tag_sentence(sentence[:text], @related_people[:cast], previous_name)
+      people = People.tag_sentence(sentence[:text], @related_people, previous_name)
       sentence[:people_tags], previous_name, sentence[:people_indexes] = people
       sentence[:people_indexes] = sentence[:people_indexes].to_a.reject! {|x| x[1].empty?}
     end
