@@ -6,4 +6,8 @@ class ApplicationController < ActionController::Base
   def index
     @movies = Movie.summarized
   end
+
+  def about
+  	
+  end
 end
