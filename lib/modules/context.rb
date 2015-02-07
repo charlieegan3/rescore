@@ -24,20 +24,8 @@ module Context
     CONTEXTS.each do |k,v|
       t = tags(keywords, v)
       sentence_tags[k] = t unless t.empty?
-
-      if !t.empty?
-        t.each do |x|
-          sentence_tag_indexes[x] = []
-        end
-      end
     end
 
-    sentence_tags.each do |k, v|
-      v.each do |word|
-        sentence_tag_indexes[word] = Utils.get_indexes(sentence, word)
-      end
-    end
-
-    return sentence_tags, sentence_tag_indexes
+    return sentence_tags
   end
 end
