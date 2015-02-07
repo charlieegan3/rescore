@@ -4,11 +4,11 @@ require_relative 'utils'
 module Context
   CONTEXTS = {
     editing: ['editing', 'post', 'production', 'effects'],
-    sound: ['sound', 'music', 'surround', 'dolby', 'ears', 'audio', 'effects', 'sounds', 'score'],
+    sound: ['sound', 'music', 'surround', 'dolby', 'ears', 'audio', 'sounds', 'score'],
     plot: ['story', 'plot', 'tale', 'narrative', 'characters', 'character', 'journey', 'narration', 'persona'],
     dialog: ['dialog', 'lines', 'speech', 'discussion', 'conversation', 'language', 'spoken', 'delivery', 'discussion'],
     cast: ['acting', 'cast', 'performance', 'portrayal', 'depiction', 'characterization', 'impersonation', 'role', 'persona'],
-    vision: ['visuals', 'vision', 'screen', 'cgi', '3d','graphics', 'visual', 'eyes', 'spectacle', 'special', 'effects', 'beautiful', 'graphic']
+    vision: ['visuals', 'vision', 'imax', 'lifelike', 'screen', 'sharper', 'cgi', '3d', 'graphics', 'blurry', 'visual', 'eyes', 'spectacle', 'beautiful', 'graphic', 'colour', 'color', 'designs']
   }
 
   def Context.tags(keywords, context)
