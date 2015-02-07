@@ -163,6 +163,10 @@ class Movie < ActiveRecord::Base
     all.reject { |movie| movie.stats.empty? }
   end
 
+  def self.review_count
+    Movie.pluck(:reviews).map { |reviews| reviews.size }.reduce(:+)
+  end
+
   private
     def dup_hash(ary)
      ary.inject(Hash.new(0)) { |h,e| h[e] += 1; h }.select {

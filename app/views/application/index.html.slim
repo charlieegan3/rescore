@@ -7,18 +7,13 @@
       input name="query" type="text" placeholder="Search movies" /
 
     p
-      =@movies.map { |m| m.reviews.size }.reduce(:+)
+      =@review_count
       |&nbsp;reviews revisited
-    p ="#{@movies.size} movies reviewed"
+    p ="#{@movie_count} movies reviewed"
     p
       |Latest Movie:&nbsp;
-      strong =@movies.last.title
-
-
-    table.movie_table
-      -@movies.each do |movie|
-        tr
-          td =image_tag(movie.image_url)
-          td =link_to movie.title, movie_path(movie)
-          td =render "ratings_graph", id: movie.id, ratings: movie.stats[:rating_distribution]
-          td =render "topics_graph", id: movie.id, topics: movie.sentiment[:topics]
+      strong =link_to @movie.title, movie_path(@movie)
+.row
+  .large-4.columns =render "topics_graph", id: @movie.id, topics: @movie.sentiment[:topics]
+  .large-4.columns =image_tag(@movie.image_url, class: 'cover')
+  .large-4.columns =render "cast_sentiment_graph", id: @movie.id, people: @movie.sentiment[:people]

@@ -90,3 +90,9 @@ p.title {
 .rescore-flash {
   text-align: center;
 }
+
+.cover {
+  margin-left: 25%;
+  width: 50%;
+  margin-right: 25%;
+}
