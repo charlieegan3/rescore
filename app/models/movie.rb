@@ -79,7 +79,7 @@ class Movie < ActiveRecord::Base
   end
 
   def set_sentiment
-    topics_sentiment  = {}
+    topics_sentiment  = {plot: [], dialog: [], cast: [], sound: [], vision: [], editing: []}
     people_sentiment  = {}
     average_sentiment = []
     sentiment_averages = [] #this is review level
@@ -90,8 +90,7 @@ class Movie < ActiveRecord::Base
         average_sentiment << sentence[:sentiment][:average]
         sentiment_average += sentence[:sentiment][:average]
         sentence[:context_tags].keys.each do |tag|
-          topics_sentiment[tag] = [] if topics_sentiment[tag].nil?
-          topics_sentiment[tag] << sentence[:sentiment][:average]
+          topics_sentiment[tag] << sentence[:sentiment][:average] * sentence[:context_tags][tag]
         end
         sentence[:people_tags].each do |tag|
           people_sentiment[tag] = [] if people_sentiment[tag].nil?
