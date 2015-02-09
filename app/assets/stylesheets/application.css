@@ -82,6 +82,17 @@ p.title {
   text-align: center;
 }
 
+.about {
+  text-align:center;
+  padding-top:30px;
+ }
+
 .rescore-flash {
   text-align: center;
+}
+
+.cover {
+  margin-left: 25%;
+  width: 50%;
+  margin-right: 25%;
 }

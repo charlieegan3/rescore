@@ -42,10 +42,12 @@ class Movie < ActiveRecord::Base
 
   def populate_related_people
     bf = BadFruit.new("6tuqnhbh49jqzngmyy78n8v3")
-    cast = bf.movies.search_by_id(rotten_tomatoes_id).full_cast.map { |person|
+    movie = bf.movies.search_by_id(rotten_tomatoes_id)
+    cast = movie.full_cast.map { |person|
       {name: person.name, characters: person.characters}
     }
-    update_attribute(:related_people, {cast: cast})
+    directors = movie.directors
+    update_attribute(:related_people, {cast: cast, directors: directors})
   end
 
   def build_summary
@@ -77,7 +79,7 @@ class Movie < ActiveRecord::Base
   end
 
   def set_sentiment
-    topics_sentiment  = {}
+    topics_sentiment  = {plot: [], dialog: [], cast: [], sound: [], vision: [], editing: []}
     people_sentiment  = {}
     average_sentiment = []
     sentiment_averages = [] #this is review level
@@ -88,8 +90,7 @@ class Movie < ActiveRecord::Base
         average_sentiment << sentence[:sentiment][:average]
         sentiment_average += sentence[:sentiment][:average]
         sentence[:context_tags].keys.each do |tag|
-          topics_sentiment[tag] = [] if topics_sentiment[tag].nil?
-          topics_sentiment[tag] << sentence[:sentiment][:average]
+          topics_sentiment[tag] << sentence[:sentiment][:average] * sentence[:context_tags][tag]
         end
         sentence[:people_tags].each do |tag|
           people_sentiment[tag] = [] if people_sentiment[tag].nil?
@@ -159,6 +160,10 @@ class Movie < ActiveRecord::Base
 
   def self.summarized
     all.reject { |movie| movie.stats.empty? }
+  end
+
+  def self.review_count
+    Movie.pluck(:reviews).map { |reviews| reviews.size }.reduce(:+)
   end
 
   private
