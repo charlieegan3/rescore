@@ -7,7 +7,7 @@ module Context
     sound: ['sound', 'music', 'surround', 'dolby', 'ears', 'audio', 'effects', 'sounds', 'score'],
     plot: ['story', 'plot', 'tale', 'narrative', 'characters', 'character', 'journey', 'narration', 'persona'],
     dialog: ['dialog', 'lines', 'speech', 'discussion', 'conversation', 'language', 'spoken', 'delivery', 'discussion'],
-    cast: ['acting', 'cast', 'performance', 'portrayal', 'depiction', 'characterization', 'impersonation', 'role', 'persona'],
+    cast: [acting:[5], 'cast', 'performance', 'portrayal', 'depiction', 'characterization', 'impersonation', 'role', 'persona'],
     vision: ['visuals', 'vision', 'screen', 'CGI', '3D','graphics', 'visual', 'eyes', 'spectacle', 'special', 'effects', 'beautiful', 'graphic']
   }
 
