@@ -166,6 +166,14 @@ class Movie < ActiveRecord::Base
     Movie.pluck(:reviews).map { |reviews| reviews.size }.reduce(:+)
   end
 
+  def self.latest
+    order('created_at DESC').limit(1).select('id, title, image_url, year, genres, related_people, sentiment, stats, updated_at, created_at').first
+  end
+
+  def self.fast_find(id)
+    where(id: id).select('id, title, image_url, year, genres, related_people, sentiment, stats, updated_at, created_at').first
+  end
+
   private
     def dup_hash(ary)
      ary.inject(Hash.new(0)) { |h,e| h[e] += 1; h }.select {
