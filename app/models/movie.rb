@@ -141,7 +141,7 @@ class Movie < ActiveRecord::Base
   end
 
   def set_stats
-    topic_counts = topic_counts = {plot: 0, dialog: 0, cast: 0, sound: 0, vision: 0, editing: 0}
+    topic_counts = {plot: 0, dialog: 0, cast: 0, sound: 0, vision: 0, editing: 0}
     reviews.each do |review|
       next if review[:rescore_review].nil?
       review[:rescore_review].each do |sentence|
