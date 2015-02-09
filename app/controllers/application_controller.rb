@@ -4,9 +4,9 @@ class ApplicationController < ActionController::Base
   protect_from_forgery with: :exception
 
   def index
-    @review_count = Movie.review_count
-    @movie_count = Movie.all.size
-    @movie = Movie.last
+    @review_count = 1337 #Movie.review_count - lets cache this sometime
+    @movie_count = Movie.count
+    @movie = Movie.latest
   end
 
   def about

@@ -11,7 +11,6 @@
           th Genres
           -unless @movie.related_people[:directors].nil?
             th Directors
-          th Reviews
           th Cast Members
           th Updated
           th Added
@@ -22,7 +21,6 @@
           td =@movie.genres.join(', ')
           -unless @movie.related_people[:directors].nil?
             td =@movie.related_people[:directors].map { |d| d['name'] }.join(', ')
-          td =@movie.reviews.size
           td =@movie.related_people[:cast].size
           td =distance_of_time_in_words(Time.new, @movie.updated_at).gsub('about ', '') + " ago"
           td =distance_of_time_in_words(Time.new, @movie.created_at).gsub('about ', '') + " ago"
