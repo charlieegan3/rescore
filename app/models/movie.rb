@@ -14,13 +14,13 @@ class Movie < ActiveRecord::Base
   def populate_source_links
     GoogleAjax.referrer = "www.resco.re"
     update_attribute(:metacritic_link,
-      GoogleAjax::Search.web(title + " metacritic")[:results][0][:unescaped_url])
+      GoogleAjax::Search.web(title + " site:www.metacritic.com/movie/ "+ year.to_s)[:results][0][:unescaped_url])
     update_attribute(:amazon_link,
-      GoogleAjax::Search.web(title + " amazon.com customer reviews")[:results][0][:unescaped_url])
+      GoogleAjax::Search.web(title + " site:www.amazon.com dvd reviews " + year.to_s)[:results][0][:unescaped_url])
     update_attribute(:imdb_link,
-      GoogleAjax::Search.web(title + " imdb")[:results][0][:unescaped_url])
+      GoogleAjax::Search.web(title + " site:www.imdb.com/title/ " + year.to_s)[:results][0][:unescaped_url])
     update_attribute(:rotten_tomatoes_link,
-      GoogleAjax::Search.web(title + " rotten tomatoes")[:results][0][:unescaped_url])
+      GoogleAjax::Search.web(title + " site:www.rottentomatoes.com/m/ " + year.to_s)[:results][0][:unescaped_url])
   end
 
   def collect_reviews
@@ -59,6 +59,7 @@ class Movie < ActiveRecord::Base
       rescore_review.build_all(sentiment_analyzer)
       review[:rescore_review] = rescore_review.sentences
       summary << review
+      
     end
     update_attribute(:reviews, summary)
     update_attributes({sentiment: set_sentiment, stats: set_stats})
@@ -140,7 +141,7 @@ class Movie < ActiveRecord::Base
   end
 
   def set_stats
-    topic_counts = {plot: 0, dialog: 0, cast: 0, sound: 0, vision: 0, editing: 0}
+    topic_counts = Hash.new(0)
     reviews.each do |review|
       next if review[:rescore_review].nil?
       review[:rescore_review].each do |sentence|
@@ -164,14 +165,6 @@ class Movie < ActiveRecord::Base
 
   def self.review_count
     Movie.pluck(:reviews).map { |reviews| reviews.size }.reduce(:+)
-  end
-
-  def self.latest
-    order('created_at DESC').limit(1).select('id, title, image_url, year, genres, related_people, sentiment, stats, updated_at, created_at').first
-  end
-
-  def self.fast_find(id)
-    where(id: id).select('id, title, image_url, year, genres, related_people, sentiment, stats, updated_at, created_at').first
   end
 
   private
