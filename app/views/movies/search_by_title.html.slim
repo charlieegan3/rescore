@@ -2,13 +2,11 @@
   .row
     .large-12.columns
       h3="Results for '#{params[:query]}'"
-      table
+      table.movie_table
         -@movies.each do |movie|
           tr
-            td =image_tag(movie.image_url)
             td =link_to movie.title, movie_path(movie)
-            td =render "ratings_graph", id: movie.id, ratings: movie.rating_distribution
-            td =render "topics_graph", id: movie.id, topics: movie.sentiment[:topics]
+            td =image_tag(movie.image_url)
 -else
   .row
     .large-12.columns

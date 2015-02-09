@@ -4,6 +4,11 @@ class ApplicationController < ActionController::Base
   protect_from_forgery with: :exception
 
   def index
-    @movies = Movie.summarized
+    @review_count = Movie.review_count
+    @movie_count = Movie.all.size
+    @movie = Movie.last
+  end
+
+  def about
   end
 end

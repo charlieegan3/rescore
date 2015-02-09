@@ -12,6 +12,7 @@
     <%= javascript_include_tag "Chart.min.js" %>
     <script type="text/javascript" src="https://www.google.com/jsapi"></script>
     <%= csrf_meta_tags %>
+    <%= render "google_analytics" %>
   </head>
 
   <body>
@@ -20,7 +21,7 @@
       <% if flash[:notice] %>
         <div class="rescore-flash"><span class="success round radius label"><%= flash[:notice] %></span></div>
       <% end %>
-      
+
       <% if flash[:alert] %>
         <div class="rescore-flash"><span class="alert round radius label"><%= flash[:alert] %></span></div>
       <% end %>
