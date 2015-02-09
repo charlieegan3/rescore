@@ -6,8 +6,8 @@
   = form_tag(compare_movies_path, method: "get") do
     .large-6.columns
         label ="Film one:"
-        =collection_select(:filmone, :id, Movie.all, :id, :title)
+        =collection_select(:filmone, :id, Movie.all.shuffle, :id, :title)
     .large-6.columns
       label ="Film two:"
-      =collection_select(:filmtwo, :id, Movie.all, :id, :title)
+      =collection_select(:filmtwo, :id, Movie.all.shuffle , :id, :title)
     = submit_tag 'Compare', class: 'button expand', id: 'compare_submit'
