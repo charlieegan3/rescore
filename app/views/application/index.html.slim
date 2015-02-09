@@ -1,16 +1,16 @@
 .row
   .large-12.columns
-    =image_tag('/logo_large.jpg', :class => 'largelogo')
+    =image_tag('/logo_large.jpg', class: 'large-logo')
     p.slogan Reviews Revisited
 
     form action="/movies/search_by_title"
       input name="query" type="text" placeholder="Search movies" /
 
-    p
-      =@review_count
+    p.revisited
+      =review_count
       |&nbsp;reviews revisited
-    p ="#{@movie_count} movies reviewed"
-    p
+    p.reviewed ="#{movie_count} movies reviewed"
+    p.latest
       |Latest Movie:&nbsp;
       strong =link_to @movie.title, movie_path(@movie)
 .row
