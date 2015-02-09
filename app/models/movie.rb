@@ -141,11 +141,7 @@ class Movie < ActiveRecord::Base
   end
 
   def set_stats
-<<<<<<< HEAD
     topic_counts = topic_counts = {plot: 0, dialog: 0, cast: 0, sound: 0, vision: 0, editing: 0}
-=======
-    topic_counts = Hash.new(0)
->>>>>>> f1c720bf2ab50a303dfdba317065b12130a814fc
     reviews.each do |review|
       next if review[:rescore_review].nil?
       review[:rescore_review].each do |sentence|
@@ -171,8 +167,6 @@ class Movie < ActiveRecord::Base
     Movie.pluck(:reviews).map { |reviews| reviews.size }.reduce(:+)
   end
 
-<<<<<<< HEAD
-
   def self.latest
     order('created_at DESC').limit(1).select('id, title, image_url, year, genres, related_people, sentiment, stats, updated_at, created_at').first
   end
@@ -181,8 +175,6 @@ class Movie < ActiveRecord::Base
     where(id: id).select('id, title, image_url, year, genres, related_people, sentiment, stats, updated_at, created_at').first
   end
 
-=======
->>>>>>> f1c720bf2ab50a303dfdba317065b12130a814fc
   private
     def dup_hash(ary)
      ary.inject(Hash.new(0)) { |h,e| h[e] += 1; h }.select {
