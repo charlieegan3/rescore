@@ -6,12 +6,15 @@ module Sentiment
       @sentimentlib_analyzer = SentimentLib::Analyzer.new(:strategy => ::SentimentLib::Analysis::Strategies::BasicDictStrategy.new)
     end
 
-    def get_sentiment(sentence)
+    def get_sentiment(sentence, raw_sentence)
       scores = []
       scores << (SimpleSentiment.sentiment(sentence).score.to_f / 10).round(2) rescue scores << 0
       scores << ((SadPanda.polarity(sentence) - 5).to_f / 6).round(2)
       scores << @sentimentlib_analyzer.analyze(sentence).to_f.round(2) / 2
       scores << @sentimental_analyzer.get_score(sentence).to_f.round(2) / 2
+      if sentence.length > 2
+        scores << Emphasis.score(raw_sentence).to_f rescue scores << 0
+      end
       total = scores.reduce(:+).to_f
       average = total / 4
       corrected_average = ((total - scores.sort_by {|x| (average - x).abs }.last) / 4).round(2)
