@@ -1,7 +1,7 @@
 require_relative '../config/environment'
 Delayed::Worker.delay_jobs = false
 
-movie = Movie.find(5)
+movie = Movie.last
 puts movie.title
 start = Time.now
 
