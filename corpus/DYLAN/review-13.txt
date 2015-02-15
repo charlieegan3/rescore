@@ -1,0 +1,24 @@
+-----------------
+ORIGINAL
+-----------------
+
+ From the director of the horrible film "The Master" comes another incoherent bore with a running time that's a joke. Inherent Vice is verging on painful to sit through because it really isn't very interesting. I hated this film. 
+
+-----------------
+ANNOTATED
+-----------------
+
+From the director of the horrible film "The Master" comes another incoherent bore with a running time that's a joke.
+Film is boring. The story is incoherent/bad. Film is too long.
+movie: -2
+length: -2
+directing: -1
+
+Inherent Vice is verging on painful to sit through because it really isn't very interesting.
+Movie is not interesting. Painful to watch.
+movie: -2
+story: -1
+
+I hated this film.
+I hated this film.
+movie: -2

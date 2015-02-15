@@ -1,0 +1,53 @@
+-----------------
+ORIGINAL
+-----------------
+
+I`ve really tried to stay positive to The Hobbit trilogy, but it`s easy to understand why people respond with negativity. Personally, I enjoyed the film all the way until the battle begins. And for a while, I enjoyed the battle as well. It all follows the book to an acceptable point (except from the trolls, what are they doing there?). Suddenly, Jackson decides to make THAT turn away from the original story, and we don`t follow the battle of the five armies any longer, we follow Legolas, Tauriel, Fili, Kili, Dwalin and Thorin vs Azog, Bolg and another army. All that in an ice covered "battle arena," just to make the whole thing more epic. And suddenly, the battle is over, and now Jackson wants to focus on Bilbo, and just Bilbo, without concluding the other story lines 100%. And then the film`s over. The book is a fine prequel to LOTR, why don`t make the movies that way? I liked this movie for the most, but mentioned plot twists makes it impossible for me to give it 10/10.
+
+-----------------
+ANNOTATED
+-----------------
+
+I`ve really tried to stay positive to The Hobbit trilogy, but it`s easy to understand why people respond with negativity.
+People dislike this movie.
+movie: -1
+
+Personally, I enjoyed the film all the way until the battle begins.
+I enjoyed the movie. The battle scenes were bad.
+movie: 1
+story: -1
+
+And for a while, I enjoyed the battle as well.
+The battles were good.
+story: 1
+
+It all follows the book to an acceptable point (except from the trolls, what are they doing there?).
+Movie is faithful to book.
+movie: 1
+story: 1
+
+Suddenly, Jackson decides to make THAT turn away from the original story, and we don`t follow the battle of the five armies any longer, we follow Legolas, Tauriel, Fili, Kili, Dwalin and Thorin vs Azog, Bolg and another army.
+Story stops following the book.
+story: -1
+
+All that in an ice covered "battle arena," just to make the whole thing more epic.
+The battle scene was not so good.
+story: -1
+
+And suddenly, the battle is over, and now Jackson wants to focus on Bilbo, and just Bilbo, without concluding the other story lines 100%.
+Story ends too quickly.
+story: -1
+
+And then the film`s over.
+Movie finishes too quickly.
+movie: -1
+
+The book is a fine prequel to LOTR, why don`t make the movies that way?
+Movie does not follow book well.
+movie: -1
+story: -1
+
+I liked this movie for the most, but mentioned plot twists makes it impossible for me to give it 10/10.
+Movie was good. The story had some bad parts.
+movie: 1
+story: -1

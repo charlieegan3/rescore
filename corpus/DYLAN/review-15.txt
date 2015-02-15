@@ -1,0 +1,62 @@
+-----------------
+ORIGINAL
+-----------------
+
+Another 'has been' director that should quit making movies. Whoever gave him the money for this should be arrested and their assets frozen for all time. Judging by the number of people with me in the theater who got up and left this will probably and hopefully be the last anderson film ever. I love this guy, 'hard eight', 'boogie nights' and 'magnolia' were great films. 'magnolia' were great films. 'magnolia' is hard to watch but it's at the top of my favorites. Everything about the movie is genius. But this movie looks like a bunch of bored, rich actors run amuck. The movie is insulting and I'm not sure if that wasn't really the point. To make a great movie you have to get about a 100 things right all at once. This movie is 0 for 100. It's not just that it's not funny or entertaining. It's nothing. Or, maybe I just wasn't stoned enough ....not sure if there is enough weed in cali to make up for it though.
+
+-----------------
+ANNOTATED
+-----------------
+
+Another 'has been' director that should quit making movies.
+Director is bad. Movie is bad.
+directing: -2
+movie: -2
+
+Whoever gave him the money for this should be arrested and their assets frozen for all time.
+Movie was very bad.
+movie: -2
+
+Judging by the number of people with me in the theater who got up and left this will probably and hopefully be the last anderson film ever.
+Movie was very bad. Many people disliked it.
+movie: -2
+
+I love this guy, 'hard eight', 'boogie nights' and 'magnolia' were great films.
+I like the director. His other films were great.
+director: 1
+
+'magnolia' is hard to watch but it's at the top of my favorites.
+IGNORED
+
+Everything about the movie is genius.
+IGNORED
+
+But this movie looks like a bunch of bored, rich actors run amuck.
+This movie is bad. The actors are boring.
+movie: -1
+acting: -1
+
+The movie is insulting and I'm not sure if that wasn't really the point.
+The movie was terrible.
+movie: -2
+
+To make a great movie you have to get about a 100 things right all at once.
+This movie did not do everything well.
+movie: -1
+
+This movie is 0 for 100.
+This movie did nothing well.
+movie: -1
+
+It's not just that it's not funny or entertaining.
+The movie is not funny. The movie is not entertaining.
+movie: -1
+story: -1
+
+It's nothing.
+The movie is bad.
+movie: -2
+
+not sure if there is enough weed in cali to make up for it though.
+I didn't enjoy this movie.
+movie: -1

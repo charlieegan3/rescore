@@ -1,0 +1,61 @@
+-----------------
+ORIGINAL
+-----------------
+
+Excruciating! Yes big competently crafted fantasy production, but goes on way too long as expected from the adolescent director. A fitting end to a horribly over drawn bloated series that's as boring as it gets. Never have I wanted the end credits to roll more in a movie theatre. Note to the auteur: WAKE UP teenager! MORE is NOT more! You ruined your King Kong remake this way. You turned a pulpy, fun adventure yarn (albeit a cinematic classic in the original and the 1976 for that matter, especially compared to your re-telling) into a long in the tooth epic of boring action that guess what Peter? RUINED the pathos at the end of the story due to the audience being so wiped out from all your bs dinosaur chases and bug battles. We didn't give a damn about the girl and Kong at the hour 3 mark! We just wanted to escape from your 12-year-old clutches. You rank in the pantheon of most over-rated directors working today who don't understand editing. You're in bad company with the ranks of such failed editorial directors as PT Anderson, Judd Apatow, and Wes Anderson. All self indulgent little boys in love with their own s---, none students of say Hitchcock and in service of the Audience.
+
+-----------------
+ANNOTATED
+-----------------
+
+Excruciating!
+Movie is very bad.
+movie: -2
+
+Yes big competently crafted fantasy production, but goes on way too long as expected from the adolescent director.
+Visuals are good. The movie is too long. I don't like the director.
+directing: -1
+visuals: 1
+length: -1
+
+A fitting end to a horribly over drawn bloated series that's as boring as it gets.
+The movie is boring.
+length: -1
+movie: -1
+
+Never have I wanted the end credits to roll more in a movie theatre.
+The movie was bad. The movie was too long.
+movie: -1
+length: -1
+
+Note to the auteur: WAKE UP teenager! MORE is NOT more! You ruined your King Kong remake this way.
+The movie was too long.
+length: -1
+
+You turned a pulpy, fun adventure yarn (albeit a cinematic classic in the original and the 1976 for that matter, especially compared to your re-telling) into a long in the tooth epic of boring action that guess what Peter? RUINED the pathos at the end of the story due to the audience being so wiped out from all your bs dinosaur chases and bug battles.
+The movie was too long. There was too much action.
+length: -1
+movie: -1
+story: -1
+
+We didn't give a damn about the girl and Kong at the hour 3 mark!
+The story was boring. The writing was not convincing.
+story: -1
+
+We just wanted to escape from your 12-year-old clutches.
+Movie was too long. Movie was bad.
+length: -1
+
+
+You rank in the pantheon of most over-rated directors working today who don't understand editing.
+The editing was bad. The director is over-rated.
+directing: -1
+visuals: -2
+
+You're in bad company with the ranks of such failed editorial directors as PT Anderson, Judd Apatow, and Wes Anderson.
+I dislike the director.
+directing: -1
+
+All self indulgent little boys in love with their own s---, none students of say Hitchcock and in service of the Audience.
+The directing is bad.
+directing: -1
