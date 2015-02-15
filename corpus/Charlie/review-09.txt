@@ -1,0 +1,68 @@
+--------------------------------------------------------------------------------
+Original
+--------------------------------------------------------------------------------
+Breathtaking. Unique. Captivating. Enchanting.
+
+Within minutes of the start of this first chapter of an undeniably epic trilogy, the audience was left gasping at the intensity of the images on the screen. And we had nearly three hours to go.
+
+The scope of Tolkien's masterpiece may have eluded film-makers for decades, but director Peter Jackson makes good on his promise: he has not only brought us the tale of Frodo and his bold companions, he has brought us Middle Earth. And believe me, it is BIG. Sweeping vistas and hang-onto-your-seat camera shots send us zooming through the towering cities and citadels of Tolkien's imagination.
+
+But even more impressive than the stunning visuals and sound-effects-like-you've-never-heard-before are the actors who breathe life into the characters. Ian McKellen's portrayal of Gandalf is nothing short of awe-inspiring, and Elijah Wood's Frodo is one of the most unexpectedly captivating performances I've seen in a long time. The despair, terror, and determination of the Fellowship is all there, in spades. I left the theater aching...from tensing every muscle during the fight and flight sequences--the breathless and compelling kind we haven't seen since Spielberg gave us a desperate charge onto the D-Day beaches of Normandy.
+
+Those unfamiliar with Tolkien's world may quickly find themselves lost in it, but happily so. The depth of his creation cannot be grasped in a few hours, and it doesn't need to be; the struggle of good against evil explodes on the screen, and leaves little room for complaint.
+
+The movie ended with a stunned audience sitting on the edges of their seats, feeling somewhat bereft. We were exhausted, but no one wanted to wait a year for more.
+
+Jackson's ambitious first chapter is truly unlike anything you've seen this year. George Lucas and Chris Columbus take note: this is how you deliver on a cinematic promise.
+
+For everyone else: don't you dare miss it.
+
+--------------------------------------------------------------------------------
+Annotated
+--------------------------------------------------------------------------------
+Breathtaking. Unique. Captivating. Enchanting.
+This movie is breathtaking. The movie is unique. The movie is captivating. The movie is enchanting.
+unique: 2
+movie: 2+2+2+2
+
+Within minutes of the start of this first chapter of an undeniably epic trilogy, the audience was left gasping at the intensity of the images on the screen.
+The visuals are spectacular.
+visuals: 2
+
+The scope of Tolkien's masterpiece may have eluded film-makers for decades, but director Peter Jackson makes good on his promise: he has not only brought us the tale of Frodo and his bold companions, he has brought us Middle Earth.
+Peter Jackson has done a good job.
+Peter Jackson: 2
+
+And believe me, it is BIG. Sweeping vistas and hang-onto-your-seat camera shots send us zooming through the towering cities and citadels of Tolkien's imagination.
+The visuals and camera work are very good.
+visuals: 2
+camera work: 2
+
+But even more impressive than the stunning visuals and sound-effects-like-you've-never-heard-before are the actors who breathe life into the characters.
+The visuals are very good. The sound is very good. The cast is extremely good.
+visuals: 1
+sound: 1
+cast: 2
+
+Ian McKellen's portrayal of Gandalf is nothing short of awe-inspiring, and Elijah Wood's Frodo is one of the most unexpectedly captivating performances I've seen in a long time.
+Ian Mckellen is very good in the film. Elijah Wood is very good in the film.
+Ian Mckellen: 2
+Elijah Wood: 2
+
+The depth of his creation cannot be grasped in a few hours, and it doesn't need to be; the struggle of good against evil explodes on the screen, and leaves little room for complaint.
+The story is very good because it has depth. The story is enhanced by the visuals.
+story: 2
+depth: 2
+visuals: 1
+
+Jackson's ambitious first chapter is truly unlike anything you've seen this year.
+The movie is set to be one of the best movies of the year.
+movie: 2
+
+George Lucas and Chris Columbus take note: this is how you deliver on a cinematic promise.
+Peter Jackson has done a good job that is noteworthy.
+Peter Jackson: 2
+
+For everyone else: don't you dare miss it.
+This is a great movie. I recommend this movie.
+movie: 2

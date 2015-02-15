@@ -1,0 +1,21 @@
+-----------------
+ORIGINAL
+-----------------
+
+Wall-E is an astonishing film. The movie has barely a word spoken in the first 30 minutes but tells a story so magnificent, so touching, and so innocent it leaves you breathless. The movie injects something so rare in movies, sincerity that it might be Pixar's finest of all.
+
+-----------------
+ANNOTATED
+-----------------
+
+Wall-E is an astonishing film.
+The movie is astonishing.
+movie: +2
+
+The movie has barely a word spoken in the first 30 minutes but tells a story so magnificent, so touching, and so innocent it leaves you breathless.
+The movie has little dialog and tells an amazing story.
+plot: 2
+
+The movie injects something so rare in movies, sincerity that it might be Pixar's finest of all.
+The movie might be one of the studio's best films
+movie: 2

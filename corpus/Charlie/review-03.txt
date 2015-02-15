@@ -1,0 +1,45 @@
+-----------------
+ORIGINAL
+-----------------
+
+I give out high ratings like a greedy old man gives out money. It's rare, and films must EARN it. Comedies only get 10s if they are great movies, and I consider them classics. While there are many classics, Wall-E directed Andrew Stanton is incredible. For those with a great attention span, there will be magic, and curiosity. This movie is fantastic for all ages. For a deeper diagnosis, it is filled with longing as Wall-E wants to be with Eve, and it shows through his motions. Incredible. This film is a classic in my book. It deserves it. A-
+
+-----------------
+ANNOTATED
+-----------------
+
+I give out high ratings like a greedy old man gives out money.
+> IGNORED
+It's rare, and films must EARN it.
+> IGNORED
+Comedies only get 10s if they are great movies, and I consider them classics.
+> IGNORED
+While there are many classics, Wall-E directed Andrew Stanton is incredible.
+The director has done an incredible job with the movie.
+movie: 2
+director: 2
+
+For those with a great attention span, there will be magic, and curiosity.
+> IGNORED
+
+This movie is fantastic for all ages.
+The movie is very accessible.
+accessible: 2
+movie: 2
+
+For a deeper diagnosis, it is filled with longing as Wall-E wants to be with Eve, and it shows through his motions.
+The deep, excellent story is full of emotion.
+depth: 1
+plot: 2
+
+Incredible.
+The movie is incredible.
+movie: 2
+
+This film is a classic in my book.
+The movie is classic.
+originality: 2
+
+It deserves it.
+The movie is very good.
+movie: 2

@@ -1,0 +1,80 @@
+-----------------
+ORIGINAL
+-----------------
+
+When I started watching these movies I was filled with joy and glee and excitement and now I could care less. If these movies were not a big phenomenon, I would’ve never gone. This movie was a whole lot of nothing. Lots of pointless action, lack of characters, and was just empty. I don’t think I’ve ever seen a movie that has made me feel so empty. Seriously this was just that one time I went to the movies. This whole movie was just a let’s get this over with. I knew it was going to suck and suck. If you are reading this don’t see this movie it is waste of your time. Only see this if you have friends who are going to be talking that. If not stay away. If you aren’t a fan of these movies this one won’t change your mind. But thankfully its over and we can all move on. Congratulations Peter Jackson you are officially the next George Lucas. You created a beloved trilogy and then made a terrible prequel trilogy that we are all excited for and then were disappointed by replacing practical effects with CGI and great stories and characters with mediocre and terrible stories. I can’t wait for the abridged version.
+
+-----------------
+ANNOTATED
+-----------------
+
+When I started watching these movies I was filled with joy and glee and excitement and now I could care less.
+The movie was extremely disappointing.
+movie: -2
+
+If these movies were not a big phenomenon, I would’ve never gone.
+> IGNORED
+
+This movie was a whole lot of nothing.
+There is nothing to the movie.
+movie: -2
+
+Lots of pointless action, lack of characters, and was just empty.
+The action is bad. The characters are bad.
+plot: -2
+characters: -2
+
+I don’t think I’ve ever seen a movie that has made me feel so empty.
+The movie was extremely disappointing.
+movie: -2
+
+Seriously this was just that one time I went to the movies.
+> IGNORED
+
+This whole movie was just a let’s get this over with.
+The movie drags.
+length: -1
+movie: -1
+
+I knew it was going to suck and suck.
+The movie sucks.
+movie: -2
+
+If you are reading this don’t see this movie it is waste of your time.
+I do not recommend this movie.
+movie: -2
+recommend: -2
+
+Only see this if you have friends who are going to be talking that.
+> IGNORED
+
+If not stay away.
+Avoid this movie.
+movie: -1
+
+If you aren’t a fan of these movies this one won’t change your mind.
+This is a poor representation of the directors work.
+director: -1
+??? Not sure on this one
+
+But thankfully its over and we can all move on.
+The movie went on too long. The series of movies went on too long.
+movie: -2
+length: -2
+
+Congratulations Peter Jackson you are officially the next George Lucas.
+The reputation of the director is now poor.
+director: -2
+
+You created a beloved trilogy and then made a terrible prequel trilogy that we are all excited for and then were disappointed by replacing practical effects with CGI
+and great stories and characters with mediocre and terrible stories.
+The movie is disappointing. The visuals are poor. The characters are average. The plot is a poor adaption.
+movie: -2
+visuals: -1
+characters: 0
+plot: -1
+adaption: -1
+
+I can’t wait for the abridged version.
+The movie was too long.
+length: -2

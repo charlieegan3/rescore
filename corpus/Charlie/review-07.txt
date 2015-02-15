@@ -1,0 +1,35 @@
+-----------------
+ORIGINAL
+-----------------
+
+Very disappointed with this effort. Felt like Peter Jackson sold out. He was all about the integrity of the story when he started and now, in trying to reap 3 films from 1 book, he has marred his reputation. The film is 1 big fight scene from start to finish with totally implausible physical feats liberally splashed throughout. There is also an amateurish attempt to introduce a side story with Leggolas which is underdeveloped and poorly explained, possibly the product of poor editing. If money is what now drives Jackson, then he would have made more with his next lot of films if he'd preserved his reputation with this one.
+
+-----------------
+ANNOTATED
+-----------------
+
+Very disappointed with this effort.
+This movie is disappointing. The director has not done a good job.
+
+Felt like Peter Jackson sold out.
+The director has not done a good job.
+
+He was all about the integrity of the story when he started and now, in trying to reap 3 films from 1 book, he has marred his reputation.
+The director has failed to deliver. The the movie has damaged reputation of the director.
+director: -2 + -2
+
+The film is 1 big fight scene from start to finish with totally implausible physical feats liberally splashed throughout.
+The movie is factually unsound. The movie is silly.
+plot: -1
+movie: -2
+
+There is also an amateurish attempt to introduce a side story with Leggolas which is underdeveloped and poorly explained, possibly the product of poor editing.
+The presence of one character is poorly explained by poor editing. The bad plot is missing detail.
+character: -2
+plot: -2
+editing: -2
+
+If money is what now drives Jackson, then he would have made more with his next lot of films if he'd preserved his reputation with this one.
+The movie has damaged the reputation of the director. The movie is disappointing.
+movie: -1
+director: -2

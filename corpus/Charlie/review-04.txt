@@ -1,0 +1,28 @@
+-----------------
+ORIGINAL
+-----------------
+
+The first half is transcendent. Although WALL-E is a robot composed of assorted metals, he is anything but lifeless. One of the most endearing characters that I know of. Honestly, movie's don't get much more heart warming than this. Pixar's best.
+
+-----------------
+ANNOTATED
+-----------------
+
+The first half is transcendent.
+> IGNORED
+
+Although WALL-E is a robot composed of assorted metals, he is anything but lifeless.
+The robot character is lively.
+character/cast member: 1
+
+One of the most endearing characters that I know of.
+The character invokes affection.
+character/cast member: 2
+
+Honestly, movie's don't get much more heart warming than this.
+The movie is very enjoyable.
+movie: 2
+
+Pixar's best.
+The movie is one of the studios best
+movie: 2

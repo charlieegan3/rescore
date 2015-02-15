@@ -1,0 +1,36 @@
+-----------------
+ORIGINAL
+-----------------
+
+This movie was one of my favorites from Pixar. It involves an innocent little robot who has feelings for a robot named EVE (Extraterrestrial Vegetation Evaluator). I'll leave the wonderful story from there. This film proves that humans aren't the only things with feelings, and it shows it in an awesome way. The movie gives plenty of laughs. The storyline is a little predictable, butThis movie was one of my favorites from Pixar. It involves an innocent little robot who has feelings for a robot named EVE (Extraterrestrial Vegetation Evaluator). If only I could give this a 9.5!!
+
+-----------------
+ANNOTATED
+-----------------
+
+This movie was one of my favorites from Pixar.
+This is a great movie from the studio
+movie: 1
+
+It involves an innocent little robot who has feelings for a robot named EVE (Extraterrestrial Vegetation Evaluator).
+> IGNORED
+
+I'll leave the wonderful story from there.
+The story is amazing.
+
+This film proves that humans aren't the only things with feelings, and it shows it in an awesome way.
+This film shows an interesting idea in and amazing way.
+movie: 2
+
+The movie gives plenty of laughs.
+The movie is good and the movie is funny.
+movie: 1
+
+The storyline is a little predictable, butThis movie was one of my favorites from Pixar.
+The story is average. The movie is good.
+movie: 1
+story: 0
+
+If only I could give this a 9.5!!
+This movie is almost perfect.
+movie: 2

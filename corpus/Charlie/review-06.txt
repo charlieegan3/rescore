@@ -1,0 +1,22 @@
+-----------------
+ORIGINAL
+-----------------
+
+The last film is the first bad LOTR/Hobbit film: just filled with so much stupidity that had me facepalming rather than enraptured. I think the extra hour they are bound to "add" to the film for the DVD release is a must to save this monstrous mess and indeed there's at least 2 moments missing from the film that were shown in trailers. PJ just did not seem to be arsed this time around, he's clearly had enough and chucked this one out without proper editing.
+
+-----------------
+ANNOTATED
+-----------------
+
+The last film is the first bad LOTR/Hobbit film: just filled with so much stupidity that had me facepalming rather than enraptured.
+The movie is stupid and the movie ridiculously bad.
+movie: -2
+
+I think the extra hour they are bound to "add" to the film for the DVD release is a must to save this monstrous mess and indeed there's at least 2 moments missing from the film that were shown in trailers.
+The plot was lacking detail and the movie fails to deliver.
+plot: -2
+
+PJ just did not seem to be arsed this time around, he's clearly had enough and chucked this one out without proper editing.
+The director has done a bad job. The editing is poor.
+director: -2
+editing: -1

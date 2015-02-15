@@ -1,0 +1,26 @@
+-----------------
+ORIGINAL
+-----------------
+
+Its charming and intelligent plot is enough to make Wall-E an enjoyable experience. The lack of dialogue for almost fifty minutes it wasn't a problem but indeed a pleasure. Why do you need sounds when the visuals speak for themselves? Besides, I was pleased by the captivating love story and environmental messages.
+
+-----------------
+ANNOTATED
+-----------------
+
+Its charming and intelligent plot is enough to make Wall-E an enjoyable experience.
+The plot is good and it makes the movie good.
+movie: 1
+plot: 2
+
+The lack of dialogue for almost fifty minutes it wasn't a problem but indeed a pleasure.
+The movie has periods with no dialog - the movie is still very good.
+movie: 2
+
+Why do you need sounds when the visuals speak for themselves?
+The film is very visual in a good way.
+visuals: 2
+
+Besides, I was pleased by the captivating love story and environmental messages.
+The story is captivating. The story sends a meaningful message.
+story: 1 + 1
