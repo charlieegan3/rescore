@@ -59,7 +59,6 @@ class Movie < ActiveRecord::Base
       rescore_review.build_all(sentiment_analyzer)
       review[:rescore_review] = rescore_review.sentences
       summary << review
-      
     end
     update_attribute(:reviews, summary)
     update_attributes({sentiment: set_sentiment, stats: set_stats})
