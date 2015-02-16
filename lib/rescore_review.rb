@@ -15,6 +15,7 @@ class RescoreReview
       sentence[:sentiment] = sentiment_analyzer.get_sentiment(sentence[:clean_text])
       sentence[:context_tags] = Context.tag_sentence(sentence[:clean_text])
       sentence[:emphasis] = Emphasis.score(sentence[:text])
+
       next if @related_people.nil?
       people = People.tag_sentence(sentence[:text], @related_people, previous_name)
       sentence[:people_tags], previous_name, sentence[:people_indexes] = people
