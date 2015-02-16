@@ -6,9 +6,9 @@ class MoviesController < ApplicationController
   end
 
   def show
-    @movie = Movie.find(params[:id])
+    @movie = Movie.fast_find(params[:id])
 
-    if @movie.reviews.nil? || @movie.related_people[:cast].nil?
+    if @movie.stats.nil?
       flash[:alert] = "This movie's information is not yet complete. Please try again later"
       redirect_to :root
     end
@@ -16,8 +16,8 @@ class MoviesController < ApplicationController
 
   def compare
     if params[:filmone] && params[:filmtwo]
-      @movie_one = Movie.find(params[:filmone][:id])
-      @movie_two = Movie.find(params[:filmtwo][:id])
+      @movie_one = Movie.fast_find(params[:filmone][:id])
+      @movie_two = Movie.fast_find(params[:filmtwo][:id])
       render 'compare'
     else
       render 'choose_compare'
