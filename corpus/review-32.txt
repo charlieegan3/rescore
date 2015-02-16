@@ -1,0 +1,45 @@
+-----------------
+ORIGINAL
+-----------------
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+                   
+
+
+
+
+
+
+    
+    
+
+
+
+amznJQ.onReady('Airy', function() {
+  Airy.embed({"installFlashButtonText":"Install Flash Player","contentTitle":null,"autoplayCutOffTimeSeconds":null,"ageGate":{"monthNames":["January","February","March","April","May","June","July","August","September","October","November","December"],"deniedPrompt":"We're sorry. You are not old enough to watch this video.","submitText":"Submit","prompt":"This video is not intended for all audiences. What date were you born?"},"videoAds":null,"videoUnsupportedPrompt":"Sorry, this video is unsupported on this browser.","desiredMode":"hybrid","swfUrl":"http://g-ecx.images-amazon.com/images/G/01/vap/video/airy2/prod/2.0.968.0/flash/AiryBasicRenderer._V330351365_.swf","isAutoplayEnabled":null,"installFlashPrompt":"Adobe Flash Player is required to watch this video.","isLiveStream":null,"regionCode":"NA","contentId":"91xrWdvZDgS","playbackErrorPrompt":"Sorry, an error has occurred while attempting video playback. Please try again later.","contentMinAge":0,"isForesterTrackingDisabled":null,"streamingUrls":"http://ecx.images-amazon.com/images/I/91xrWdvZDgS.mp4","parentId":"airy-player-container-moSY04P1JI9D2F","foresterMetadataParams":{"client":"CustomerReviews","requestId":"08PDCH3J5WRBQ0RZ8Y5T","marketplaceId":"ATVPDKIKX0DER","session":"183-1935705-9856539"}});
+});
+
+
+ Length:: 0:13 MinsThe following is included in this WALL-E Gift Set:- 3-Disc Set: includes Blu-Ray movie, Blu-Ray special features disc, and a Digital Copy disc.  Slipcover included.- As with all Disney movies, the Disney Movie Rewards points are included (125 pts.)- WALL-E: The Intergalactic Guide - 47-page Hardcover book featuring lots of images from the film.- WALL-E Ultimate Sticker Book - contains more than 60 stickers.- Collectible Litho Set - one poster (8x10 inches each) for every Pixar film through Toy Story 3 (eleven posters in total) - they come packaged inside a protective envelope.- The outer box measures approx. 9x11 inches.  The box is very nice, and looks great on my shelf.Pixar has released a total of 5 Gift Sets.  I have posted links to the other 4 sets below.  Please note that every set comes with the same collectible lithos, but has different books and (obviously) a different blu-ray movie.Toy Story Disney Pixar LIMITED EDITION GIFT SET Includes 1 Disc Blu-Ray, 1 Disc DVD, Collectible Book, Sticker Book and Litho SetToy Story 2 Disney Pixar LIMITED EDITION GIFT SET Includes 1 Disc Blu-Ray, 1 Disc DVD, Collectible Book, Sticker Book and Litho SetMonsters, Inc. Disney Pixar LIMITED EDITION GIFT SET Includes 2 Disc Blu-Ray, 1 Disc DVD, 1 Disc Disneyfile Digital Copy, Collectible Book, Sticker Book and Litho SetUp Disney Pixar LIMITED EDITION GIFT SET Includes 2 Disc Blu-Ray, 1 Disc DVD, 1 Disc Disneyfile Digital Copy, Collectible Book, Sticker Book and Litho Set
+
+-----------------
+ANNOTATED
+-----------------

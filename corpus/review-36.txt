@@ -1,0 +1,53 @@
+-----------------
+ORIGINAL
+-----------------
+
+I think I'm a minority on my stance towards this movie. I don't have mixed feelings about it just to be edgy and apart from everyone else, it just rubbed me a little differently. I was largely absent from all the hype that surrounded it when it was released: I finally saw the movie towards the end of its theatrical run. With that being said, I had a much clearer perspective on it, seeingI think I'm a minority on my stance towards this movie. I don't have mixed feelings about it just to be edgy and apart from everyone else, it just rubbed me a little differently. I was largely absent from all the hype that surrounded it when it was released: I finally saw the movie towards the end of its theatrical run. With that being said, I had a much clearer perspective on it, seeing it in a theater with maybe 10 other people in it, and I can honestly say after seeing it, it's one of the most overrated movies of all time. For starters, I think the movie takes itself too seriously. At it's core, the plot is essentially an updated version of "Pocahontas" or "Dances With Wolves." I was genuinely entertained for the first half hour, in which you're introduced to the main characters and the setting of Pandora, but then movie started to take another turn. The whole thing was simply overshadowed by this very self-righteous, naturalist message about how we have to take care of the planet. Now don't get me wrong, I care for the environment, but when I feel like I'm watching a $300,000,000 EPA PSA, it kind of ruins the effect of a movie that comes from the director of Terminator 2. Throughout the movie, various other sci-fi elements are taken from movies like the Matrix and Jurassic Park, and subsequently accompanied by video game quality dialogue. In a word -- it's all over the place and just comes off sappy. Rather than a sophisticated narrative geared towards adults, Cameron just decided to go completely Saturday morning cartoon with this one, causing tons of merchandise and distribution out the ass that caters mainly to middle school boys who take garbage like this too seriously. But hey, it has amazing special effects, so I guess the it's saving grace is the familiarity of the director, and that it looks pretty.
+
+-----------------
+ANNOTATED
+-----------------
+
+I think I'm a minority on my stance towards this movie.
+<< IGNORE
+
+I don't have mixed feelings about it just to be edgy and apart from everyone else, it just rubbed me a little differently.
+<< IGNORE
+
+I was largely absent from all the hype that surrounded it when it was released: I finally saw the movie towards the end of its theatrical run.
+<< IGNORE
+
+With that being said, I had a much clearer perspective on it, seeing it in a theater with maybe 10 other people in it, and I can honestly say after seeing it, it's one of the most overrated movies of all time.
+This movie is overrated.
+movie -2
+
+For starters, I think the movie takes itself too seriously.
+The movie is not realistic.
+realism -2
+
+At it's core, the plot is essentially an updated version of "Pocahontas" or "Dances With Wolves."
+<< IGNORE
+
+I was genuinely entertained for the first half hour, in which you're introduced to the main characters and the setting of Pandora, but then movie started to take another turn.
+<< IGNORE
+
+The whole thing was simply overshadowed by this very self-righteous, naturalist message about how we have to take care of the planet.
+<< IGNORE
+
+Now don't get me wrong, I care for the environment, but when I feel like I'm watching a $300,000,000 EPA PSA, it kind of ruins the effect of a movie that comes from the director of Terminator 2.
+<< IGNORE
+
+Throughout the movie, various other sci-fi elements are taken from movies like the Matrix and Jurassic Park, and subsequently accompanied by video game quality dialogue.
+Dialogues are not realistic.
+realism -2
+
+In a word -- it's all over the place and just comes off sappy.
+<< IGNORE
+
+Rather than a sophisticated narrative geared towards adults, Cameron just decided to go completely Saturday morning cartoon with this one, causing tons of merchandise and distribution out the ass that caters mainly to middle school boys who take garbage like this too seriously.
+This movie is garbage.
+movie -2
+
+But hey, it has amazing special effects, so I guess the it's saving grace is the familiarity of the director, and that it looks pretty.
+The special effects are amazing.
+vision 2

@@ -1,0 +1,127 @@
+-----------------
+ORIGINAL
+-----------------
+
+If you've gotten to the point where you're reading movie reviews, you probably don't need a plot synopsis, so let's skip it.  So how good is this movie...?  I would say that this movie is to cinema what "An American Tragedy" is to literature - the most poorly made great piece of work of its time.It's a great movie in the following ways:  1) The script is tightly plotted.  Nothing is superfluous, nothing is overdone or overlooked, and the REAL RARITY?  YOU ACTUALLY HAVE TO PAY ATTENTION.  If you miss a second of this movie, you won't understand how the rest of it unfolds.  2) It's nice to watch some of the best living American actors all do their thing in a single film. Mark Wahlberg and Leonardo DiCaprio turn in particularly fine performances, and Matt Damon seemed to be extending his range (happily), playing a character for whom one cannot feel sorry, nor want to take home to meet Mom. 3)  Depending on how you feel about one liners generally, the one liners are good, and very apt.  I could go on about the familial and racial subtexts here as well, but suffice it to say that there is more than one character trying to please Daddy, and if you're black, Italian, Arab or Catholic, the first twenty minutes won't give you the warm fuzzies.The Departed is less than stellar in the following ways:  1) As mentioned in several other reviews, the ending is a bit ludicrous. It felt like plot twists were being made for their own sake, rather than for the good of the film or the story.  Without being a spoiler, let me just say here that I DID respect the choice NOT to pander to the mass audience's sensibilities in terms of what happens to the "good" and "bad" guys, or to reveal too much information in the end. 2) A few of these (albeit brilliant) actors are cast as themselves.  Jack Nicholson brought out Jack the bad guy/madman for us, and Alec Baldwin was as smarmy on screen as we filthy little pigs are accustomed to seeing him offscreen.  Most of these actors really brought their A-games though. And really, are Jack and Alec playing themselves the worst thing you could watch?  Methinks not! 3) Aside from the ending, my one complaint with the script is that it was over-plotted and under-characterized.  There were so many plot lines (two A lines, as well as B and C lines) that there just wasn't time for the main characters to have much of an arc.  From beginning to end, Costello is Costello, Sullivan is Sullivan and Costigan is Costigan.  The only two characters who seem to take themselves off the path they initially set out on were Mark Wahlberg and Vera Farmiga's characters.Departures in The Departed: Although the characters in this film are believeable and very well acted, make no mistake: this is a plot driven movie.  This seems contrary to the recent films of most of the lead actors, as well as for director Martin Scorcese.  Also, this is a film that was truly made in the editing room.  Although DiCaprio and Damon have the two A plot lines, they're in only 2 or 3 scenes together.  There's a lot of editorial juxtaposition, cutting back and forth, and it can get a bit obvious - and overbearing.  Another departure from Scorcese's style can be found in the cinematography, which is tighter and less panaromic than he seems to prefer.  However, once you've seen a shot of Jack Nicholson lit in redlight showering two half naked women in coke, you'll remember whose movie you're watching.All in all, I would say buy the movie.  But don't turn away - you'll miss something important.
+
+-----------------
+ANNOTATED
+-----------------
+
+If you've gotten to the point where you're reading movie reviews, you probably don't need a plot synopsis, so let's skip it.
+<< IGNORE
+
+So how good is this movie...?
+<< IGNORE
+
+I would say that this movie is to cinema what "An American Tragedy" is to literature - the most poorly made great piece of work of its time.
+The movie is poorly made.
+movie -2
+
+It's a great movie in the following ways:
+The movie is great.
+movie 2
+
+1) The script is tightly plotted.
+The plot is ellaborate.
+plot 1?
+
+Nothing is superfluous, nothing is overdone or overlooked, and the REAL RARITY?
+<< IGNORE
+
+YOU ACTUALLY HAVE TO PAY ATTENTION.
+<< IGNORE
+
+If you miss a second of this movie, you won't understand how the rest of it unfolds.
+<< IGNORE
+2) It's nice to watch some of the best living American actors all do their thing in a single film.
+The cast are some of the best American actors.
+cast 2
+
+Mark Wahlberg and Leonardo DiCaprio turn in particularly fine performances, and Matt Damon seemed to be extending his range (happily), playing a character for whom one cannot feel sorry, nor want to take home to meet Mom.
+Mark Wahlberg was fine.
+cast(Mark Wahlberg) 1
+Leonardo DiCaprio was fine.
+cast(Leonardo DiCaprio) 1
+cast(Matt Damon) ?
+
+3)  Depending on how you feel about one liners generally, the one liners are good, and very apt.
+<< IGNORE
+
+I could go on about the familial and racial subtexts here as well, but suffice it to say that there is more than one character trying to please Daddy, and if you're black, Italian, Arab or Catholic, the first twenty minutes won't give you the warm fuzzies.
+<< INGORE 
+
+The Departed is less than stellar in the following ways:
+<< IGNORE
+
+1) As mentioned in several other reviews, the ending is a bit ludicrous.
+The endning is a bit ludicrous.
+plot -1
+
+It felt like plot twists were being made for their own sake, rather than for the good of the film or the story.
+<< IGNORE
+
+Without being a spoiler, let me just say here that I DID respect the choice NOT to pander to the mass audience's sensibilities in terms of what happens to the "good" and "bad" guys, or to reveal too much information in the end.
+<< IGNORE
+
+2) A few of these (albeit brilliant) actors are cast as themselves.
+<< IGNORE
+
+Jack Nicholson brought out Jack the bad guy/madman for us, and Alec Baldwin was as smarmy on screen as we filthy little pigs are accustomed to seeing him offscreen.
+???
+
+Most of these actors really brought their A-games though.
+<< IGNORE
+
+And really, are Jack and Alec playing themselves the worst thing you could watch?
+<< IGNORE 
+
+Methinks not!
+<< IGNORE
+
+3) Aside from the ending, my one complaint with the script is that it was over-plotted and under-characterized.
+Plot is too complicated.
+plot -1
+Plot is too simple.
+plot -1
+
+There were so many plot lines (two A lines, as well as B and C lines) that there just wasn't time for the main characters to have much of an arc.
+<< IGNORE
+
+From beginning to end, Costello is Costello, Sullivan is Sullivan and Costigan is Costigan.
+<< IGNORE
+
+The only two characters who seem to take themselves off the path they initially set out on were Mark Wahlberg and Vera Farmiga's characters.
+<< IGNORE
+
+Departures in The Departed: Although the characters in this film are believeable and very well acted, make no mistake: this is a plot driven movie.
+The characters are realistic.
+realism 1
+The cast plays well.
+cast 2
+The movie is not realistic.
+realism -1
+
+This seems contrary to the recent films of most of the lead actors, as well as for director Martin Scorcese.
+<< IGNORE
+
+Also, this is a film that was truly made in the editing room.
+<< IGNORE
+
+Although DiCaprio and Damon have the two A plot lines, they're in only 2 or 3 scenes together.
+<< IGNORE
+
+There's a lot of editorial juxtaposition, cutting back and forth, and it can get a bit obvious - and overbearing.
+<< ?????
+
+Another departure from Scorcese's style can be found in the cinematography, which is tighter and less panaromic than he seems to prefer.
+<< IGNORE
+
+However, once you've seen a shot of Jack Nicholson lit in redlight showering two half naked women in coke, you'll remember whose movie you're watching.
+<< IGNORE
+
+All in all, I would say buy the movie.
+<< IGNORE
+
+But don't turn away - you'll miss something important.
+<< IGNORE

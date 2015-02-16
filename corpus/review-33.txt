@@ -1,0 +1,75 @@
+-----------------
+ORIGINAL
+-----------------
+
+I'm pretty familiar with James Cameron's work, so I know where his politics lie (anyone laughing with incredulity at the plot of AVATAR hasn't seen THE ABYSS and the extended ending, which is one of my favourite films). I'm also used to the fact his films tend to be rather long (ALIENS, THE ABYSS), but that isn't necessarily a criticism. So in some respect I was prepared for AVATAR. Admittedly I haven't seen it at the cinema or in 3D, but on Channel4, on a 16:9 42inch LCD TV, so the impact was lessened. But it made an impact nonetheless, and that's an understatement.Firstly, when was the last time you saw a sci-fi film in which humans aren't necessarily portrayed as the good guys, and don't necessarily win the day? Those who criticise the clichéd plot obviously are not aware that many films copy the plot of others; a conflicted protagonist wrestling with his conscience is a common device. For example, THE MAGNIFICENT SEVEN is a retelling of SEVEN SAMURAI (I saw elements of the Tom Cruise film, THE LAST SAMURAI in AVATAR, too). It may be a hackneyed plot, but this isn't a legitimate criticism.  Secondly, the CGI is so good that for once you actually forget about it; it settles into your subconscious and you accept it. The so-called 'emotion capture' is so good that you engage completely with the characters and forget they are CG. You stop looking for those tell-tale hints that  it's not real and you go with it. In so many CG-heavy films this isn't the case, and so it's a testament to Cameron and his army of CG artists who made this possible in such a visually arresting, ground-breaking way.If you're put off by the running time, I suggest you see something else. The ALIENS SPECIAL EDITION is 2hrs 40mins but it doesn't seem like it, and AVATAR is no different. Believe me, I've seen far shorter films that seemed much longer! At least Cameron knows how to keep the action moving along.Overall, I give it 9/10. Those who dismiss it on the grounds that it's unoriginal really are just picking nits.
+
+-----------------
+ANNOTATED
+-----------------
+
+I'm pretty familiar with James Cameron's work, so I know where his politics lie (anyone laughing with incredulity at the plot of AVATAR hasn't seen THE ABYSS and the extended ending, which is one of my favourite films).
+<< IGNORE
+
+I'm also used to the fact his films tend to be rather long (ALIENS, THE ABYSS), but that isn't necessarily a criticism.
+<< IGNORE
+
+So in some respect I was prepared for AVATAR.
+<< IGNORE
+
+Admittedly I haven't seen it at the cinema or in 3D, but on Channel4, on a 16:9 42inch LCD TV, so the impact was lessened.
+<< IGNORE
+
+But it made an impact nonetheless, and that's an understatement.
+The movie is powerful (good?)
+movie 1
+
+Firstly, when was the last time you saw a sci-fi film in which humans aren't necessarily portrayed as the good guys, and don't necessarily win the day?
+<< IGNORE
+
+Those who criticise the clichéd plot obviously are not aware that many films copy the plot of others; a conflicted protagonist wrestling with his conscience is a common device.
+The plot is decent. 
+plot 0
+
+For example, THE MAGNIFICENT SEVEN is a retelling of SEVEN SAMURAI (I saw elements of the Tom Cruise film, THE LAST SAMURAI in AVATAR, too).
+<< IGNORE
+
+It may be a hackneyed plot, but this isn't a legitimate criticism.
+The plot is not bad.
+plot 0
+
+Secondly, the CGI is so good that for once you actually forget about it; it settles into your subconscious and you accept it.
+The vision is so good.
+vision 2
+
+The so-called 'emotion capture' is so good that you engage completely with the characters and forget they are CG.
+The emotions are realistic.
+realism 2
+
+You stop looking for those tell-tale hints that it's not real and you go with it.
+<< IGNORE
+
+In so many CG-heavy films this isn't the case, and so it's a testament to Cameron and his army of CG artists who made this possible in such a visually arresting, ground-breaking way.
+The movie is visually ground-breaking.
+vision 2
+
+If you're put off by the running time, I suggest you see something else.
+The running time is off-putting.
+length -2
+
+The ALIENS SPECIAL EDITION is 2hrs 40mins but it doesn't seem like it, and AVATAR is no different.
+<< IGNORE
+
+Believe me, I've seen far shorter films that seemed much longer!
+<< IGNORE
+
+At least Cameron knows how to keep the action moving along.
+The movie is full of action.
+movie 2
+
+Overall, I give it 9/10.
+This movie is 9/10.
+movie 2 
+
+Those who dismiss it on the grounds that it's unoriginal really are just picking nits.
+<< IGNORE
