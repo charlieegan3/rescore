@@ -1,0 +1,41 @@
+-----------------
+ORIGINAL
+-----------------
+
+I'm not much of one for animated movies; not sure why.  The only other Pixar offering I've seen in its entirety was "Toy Story" (I enjoyed it, of course).  But something attracted me to "Wall-E," something about the simplicity of the story: A robot, stranded on an abandoned and (mostly) lifeless Earth, who develops human emotions.  Then, when another robot (EVE) comes in search of life, WALL-E falls in love, and eventually has to go on a quest to "rescue"  EVE from a city-sized spaceship run by maniacal machines and inhabited by overweight, oafish humans.Well, in that context, "WALL-E" doesn't sound so simple after all.  And, truthfully, it isn't.  There's the delightful story, brought to life by vivid animation and "vocal" work; WALL-E is perhaps the most "human" animated character I've ever encountered (God, that's a cliche if I've ever heard one, but it's true).  This little robot says very little, but you are absolutely enamored with him.Then there's the subtext.  It's not very subtle, of course: It's right there in your face, with grotesquely overweight humans who can't even walk anymore, driving around obvlivious to the beauty that surrounds them.  It's in the billboards advertising Buy 'N Large, the company that first took over the world, dumped all its trash into orbit, then had to leave the planet when the environment became too inhospitable.  This is an anti-consumerism movie at its grimmest, much in the vein of the old Disney cartoons (which were often based on Anderson's fairy tales, but had a lot of Brothers Grimm in them, as well).The thing is...this movie is hopeful.  That is perhaps its ultimate triumph: Not only does the film make you fall head over heels for what is essentially a sentient trashcan, it planets a seed of hope in you, a ray of light amongst the trash-strewn world the film inhabits.  "I don't want to survive," says a character, just realizing who he is.  "I want to live!"  And you will, too: "WALL-E" is hopeful, powerful stuff.  It's also hilarious, heart-warming, and beautifully animated.  Watch it for the message; watch it because it's a good movie.  Either way, you're going to be entertained.
+
+
+
+-----------------
+ANNOTATED
+-----------------
+
+
+I'm not much of one for animated movies; not sure why.  The only other Pixar offering I've seen in its entirety was "Toy Story" (I enjoyed it, of course).IGNORED
+
+
+
+
+The story is attractive and simple.Story:1
+
+A robot, stranded on an abandoned and (mostly) lifeless Earth, who develops human emotions.  Then, when another robot (EVE) comes in search of life, WALL-E falls in love, and eventually has to go on a quest to "rescue"  EVE from a city-sized spaceship run by maniacal machines and inhabited by overweight, oafish humans.Well, in that context, "WALL-E" doesn't sound so simple after all.  And, truthfully, it isn't. IGNORED
+
+.Delightful story.Story:2.
+
+Vivid animation.Visuals:2,
+
+WALL-E is perhaps the most "human" animated character I've ever encountered (God, that's a cliche if I've ever heard one, but it's true) Wall-E : 1 (I don't know)
+
+Wall-E is lovely.Wall-E:1
+
+Then there's the subtext.  It's not very subtle, of course: It's right there in your face, with grotesquely overweight humans who can't even walk anymore, driving around obvlivious to the beauty that surrounds them.  It's in the billboards advertising Buy 'N Large, the company that first took over the world, dumped all its trash into orbit, then had to leave the planet when the environment became too inhospitable.  This is an anti-consumerism movie at its grimmest, much in the vein of the old Disney cartoons (which were often based on Anderson's fairy tales, but had a lot of Brothers Grimm in them, as well). IGNORED
+
+Movie is hopeful.Movie:1.
+
+"Wall-E" is hopeful and powerful.Movie:2.
+
+Funny and heartwarming.MOVIE:1.
+
+Beautifully animated.Visuals:2.
+
+It is good and entertaining.Movie:1

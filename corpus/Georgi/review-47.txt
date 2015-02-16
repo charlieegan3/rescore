@@ -1,0 +1,24 @@
+-----------------
+ORIGINAL
+-----------------
+
+The people who thought this movie was boring must have the shortest attention spans ever.  It was amazing how nicely each character was developed considering most of them only say a few words!  Wall-E is a greatly lovable character who warmed my heart the entire movie.  I highly recommend this for anyone!  The message is great, the execution is lovely, and the whole thing is greatly entertaining
+
+.
+
+-----------------
+ANNOTATED
+-----------------
+
+
+The movie is interesting.Movie:1
+
+Characters were well developed.Characters:2.
+
+Wall-E is greatly lovable and heartwarming character.Wall-E : 2.
+
+I highly recommend this for anyone! Movie:2,
+
+The message is great.Message:2,
+
+Lovely executed and very entertaining.Movie:2 

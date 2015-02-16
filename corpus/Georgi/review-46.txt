@@ -1,0 +1,19 @@
+-----------------
+ORIGINAL
+-----------------
+
+ I was really surprised at the quality and depth of the movie. This is not your ordinary children's cartoon by any stretch of the imagination. This is a movie that Stanley Kubrick and Arthur C. Clarke would enjoy.
+
+ 
+
+-----------------
+ANNOTATED
+-----------------
+
+
+The movie is of good quality and deep.
+Movie:1.
+
+More than an ordinary children's cartoon.Movie:1.
+
+This is a movie that Stanley Kubrick and Arthur C. Clarke would enjoy(It is a big compliment but don't think a machine will ever be able to recognize it) == The movie is brilliant.Movie:2

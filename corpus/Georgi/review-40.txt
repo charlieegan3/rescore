@@ -1,0 +1,32 @@
+-----------------
+ORIGINAL
+-----------------
+
+Hugely influential and critically acclaimed director Martin Scorsese is notorious for his numerous gangster movies, including such time-tested classics as Mean Streets and Goodfellas. The Departed is his latest foray into the crime genre and is well on its way to becoming his best yet, despite the short amount of time it has seen in wide release. Set in Boston, The Departed focuses on the rivalry between Irish mob boss Frank Costello (Jack Nicholson) and the Massachusetts State Police by way of the rats that have infiltrated both organizations. Billy Costigan (Leonardo DiCaprio) and Collin Sullivan (Matt Damon), working for the police and the mob respectively, find themselves in constant struggle to keep their true identities hidden while tipping off their real employers. Before long, both Costigan and Sullivan start expressing suspicions to their superiors of an inside man that's leaking information. This sends both of the protagonists into paranoia overdrive, contributing greatly to the tension in scenes where they are behind enemy lines. Leonardo DiCaprio's portrayal of Costigan, whose skill at leading a double life comes from growing up in two very different parts of Boston, is wrought with anxiety and panic attacks induced by the risks he's forced to take on behalf of Queenan and Dignam who are at the head of the undercover operations. This Oscar-worthy performance by DiCaprio becomes the core of the film's anxious pacing and serves as a brilliant constrast to the charismatic charm and shameless ambition of Matt Damon's Sullivan. Jack Nicholson's turn as the completely amoral Costello provides an abundance of genuine laughs and ominous chills and would likely steal the scene every time were it not for the enormous talent working along with him. The plot, in true Shakespearean form, begins to spiral out of control after the climax, which becomes the first of many "did that just happen?" moments. Once things start to unravel, the ending becomes anyone's guess and a fantastic breath of fresh air in an era overwhelmed with predicatable and unnecessary twist endings. Audiences everywhere are bound to leave theatres completely exasperated and thrilled by what they've just seen and should they go back for a second viewing will come out just as satisfied as the first time around. The Departed is a film that succeeds on every level, ranking among Scorsese's best work and, like those other works, will undoubtedly be revered by many as a classic of the crime genre for both embracing the genre's traditions and boldly defying its storytelling conventions.
+
+-----------------
+ANNOTATED
+-----------------
+-
+
+Martin Scorsese is 
+
+hugely influential and critically acclaimed director.
+Director (Martin Scorsese):2
+ 
+The Departed is his latest foray into the crime genre and is well on its way to becoming his best yet.
+Movie:2. 
+ Set in Boston, The Departed focuses on the rivalry between Irish mob boss Frank Costello (Jack Nicholson) and the Massachusetts State Police by way of the rats that have infiltrated both organizations. Billy Costigan (Leonardo DiCaprio) and Collin Sullivan (Matt Damon), working for the police and the mob respectively, find themselves in constant struggle to keep their true identities hidden while tipping off their real employers. Before long, both Costigan and Sullivan start expressing suspicions to their superiors of an inside man that's leaking information. This sends both of the protagonists into paranoia overdrive, contributing greatly to the tension in scenes where they are behind enemy lines. Leonardo DiCaprio's portrayal of Costigan, whose skill at leading a double life comes from growing up in two very different parts of Boston, is wrought with anxiety and panic attacks induced by the risks he's forced to take on behalf of Queenan and Dignam who are at the head of the undercover operations. IGNORED(PLOT)
+ 
+This Oscar-worthy performance by DiCaprio.  
+DiCaprio:2
+Matt Damon is charismatic shameless. Matt Damon(cast):1
+
+Jack Nicholson  would likely steal the scene every time were it not for the enormous talent working along with him.
+Jack Nicholson:2 ,Cast:2 
+
+ The plot, in true Shakespearean form, begins to spiral out of control after the climax, which becomes the first of many "did that just happen?" moments.(Probably 0,no real adjectives)
+
+The ending is a fantastic.The Ending(Plot?):2
+Audiencies will be thrilled and satisfied.Movie:2
+The Departed succeeds on every level.Movie : 2.Scorsese's best work.Director:2.  
