@@ -1,0 +1,22 @@
+-----------------
+ORIGINAL
+-----------------
+
+WALL-E is probably their biggest gamble yet, but as always, Pixar pulls it off. There is virtually no dialogue for at least the first 15 minutes of the movie, yet the audience is suspended by the charm of a tiny little trash compacter, something that is unheard of in a modern kids movie (let alone a regular movie.) The film also contains an overt environmental message that probably wouldn't have been possible a few years ago. All in all, it's not Pixar's best, but it's still an enjoyable movie and a must see for the big screen because the visual environment is absolutely gorgeous.
+
+-----------------
+ANNOTATED
+-----------------
+
+
+WALL-E is a very successful gamble. Movie:2.
+
+
+No dialogue in the first 15 minutes.Dialogue:0 
+
+The audience is suspended by the charm of a tiny little trash compacter. Trash compactor(character):1.
+
+The film also contains an overt environmental message that probably wouldn't have been possible a few years ago. IGNORED
+
+Not Pixar's best.Movie:0.
+Enjoyable and a must see for the first 15 min. Movie:2.

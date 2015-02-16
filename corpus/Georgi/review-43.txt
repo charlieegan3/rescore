@@ -1,0 +1,13 @@
+-----------------
+ORIGINAL
+-----------------
+
+ Goes to show that you don't need characters to speak in order to make a classic. I haven't seen a robot as adorable as Wall-E since R2-D2 in the Star Wars movies. 
+
+-----------------
+ANNOTATED
+-----------------
+
+Movie is classic.Movie:2
+
+Wall-E is adorable.Wall-E : 2
