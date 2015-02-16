@@ -1,0 +1,73 @@
+-----------------
+ORIGINAL
+-----------------
+
+I am a of Scorsese and of some types of violent films.  This film is so freaking amazing, I have been watching it probably twice year since it came out.  So I saw a deal and got a copy.  It's been several years now, but at the time it blew my mind.  Everyone dies.  That's a great twist for a mob movie.  But that's just one detail.  I think Jack does an amazing job.  All the performances are a ten.  Great symbolism, scenery (I love Boston), story, soundtrack.  And long ago Mick sang, "all sinners saints, every cop a criminal."  So the nature of the human to have both sides, the duality that is explored, makes it all the more interesting.  Is Colin a product of his environment?  Does he just owe Frank everything?  Or is he really bad and will do anything to get ahead, whatever it is?  We certainly don't see him torn and tormented like Billy is.  The second disc has some great stuff.
+
+-----------------
+ANNOTATED
+-----------------
+
+I am a of Scorsese and of some types of violent films.
+<< IGNORE 
+
+This film is so freaking amazing, I have been watching it probably twice year since it came out.
+This movie is freaking amazing.
+movie 2
+
+So I saw a deal and got a copy.
+<< IGNORE
+
+It's been several years now, but at the time it blew my mind.
+The movie is mind-blowing
+movie 2
+
+Everyone dies.
+<< IGNORE
+
+That's a great twist for a mob movie.
+The movie has an interesting plot.
+plot 2
+
+But that's just one detail.
+<< IGNORE
+
+I think Jack does an amazing job.
+Jack is a great character.
+cast(Jack) 2
+
+All the performances are a ten.
+The cast is great.
+cast 2
+
+Great symbolism, scenery (I love Boston), story, soundtrack.
+
+The movie is great.
+symbolism/movie 2
+The vision is great.
+vision 2
+The plot is great.
+plot 2
+The soundtrack is great.
+soundtrack 2
+
+And long ago Mick sang, "all sinners saints, every cop a criminal."
+<< IGNORE
+
+So the nature of the human to have both sides, the duality that is explored, makes it all the more interesting.
+<< IGNORE
+
+Is Colin a product of his environment?
+<< IGNORE
+
+Does he just owe Frank everything?
+<< IGNORE
+
+Or is he really bad and will do anything to get ahead, whatever it is?
+<< IGNORE 
+
+We certainly don't see him torn and tormented like Billy is.
+<< IGNORE
+
+The second disc has some great stuff.
+<< IGNORE

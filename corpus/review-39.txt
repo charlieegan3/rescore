@@ -1,0 +1,104 @@
+-----------------
+ORIGINAL
+-----------------
+
+Two years after his beautiful film "The Aviator", director Martin Scorsese is back with the crimefilm "The Departed"Stepping out of the darkend theater just this morning, the film has left a big impression in my mind. The way Scorsese has remade the chinese film "Internal Affairs" is a true present for movie fans.The story follows Billy Costigan (DiCaprio) who goes undercover in the Irish mob group of Frank Costello (Nicholson) in Boston. But Costello also has a man on the inside at the policeforce named Colin Sullivan (Damon). When both the Policeforce as Costello discover that they have a rat somewhere in there crew, both undercover men try to keep their identity secret and keep themselfs alive while the search is on on both sides of the law for the rat...The casting of this well filmed story is maqnificent. First there is DiCaprio. The way he plays the leadcharacter in a strong and impressive style shows that DiCaprio is one of the finest actors of Hollywood these days. Matt Damon plays his role with his own take on it and gives a great performance. Jack Nicholson, as always, delivers. The legendary actor plays his role of mobboss Frank Costello in a fantastic, sometimes even scary way that intimidates the audience. Mark Wahlberg as the hardedge cop Dignam was a fine casting choice as well. Last but not least there is Martin Sheen as Oliver Queenan who knows how to portray his character in a good way. In the surporting roles there are Alec Baldwin and Vera Farmiga who also give nice performances.In short: an ultimate dream cast of all fine actors in a row which gives more than just a movie, it gives an everlasting masterpiece.As you can expect from a Scorsese picture, the violence is brutal, bloody and stays at a realistic level. Even though there isn't that much action in the film, there are enough thrilling situations like the conversations between the characters to keep the audience entertained. The way that the different conversations and situations are edited flows nicely and gives a great atmosphere.The 2 and a half hour length of the film is perfectly build up and leaves no boring moments cause of the interesting actors that give their best in every single scene. Beautiful shots with great cameramovements, great lighting and sets make the film complete and gives an unforgetable movie experience.The story, the characters, the tense situations keep you interested and hooked for 2 and a half hours of an interesting cat and mouse game that starts fullspeed and continues on a straight track right to a jawdropping finish. Drama, Crime and Thriller fans: see this film, this is the way a movie has to be done.Scorsese shows once again that he is one of the true masters in the filmbusiness.
+
+-----------------
+ANNOTATED
+-----------------
+
+Two years after his beautiful film "The Aviator", director Martin Scorsese is back with the crimefilm "The Departed"
+<< IGNORE
+
+Stepping out of the darkend theater just this morning, the film has left a big impression in my mind.
+The movie is very impressive.
+movie 2
+
+The way Scorsese has remade the chinese film "Internal Affairs" is a true present for movie fans.
+The movie is great.
+movie 2
+
+The story follows Billy Costigan (DiCaprio) who goes undercover in the Irish mob group of Frank  Costello (Nicholson) in Boston.
+<< IGNORE
+
+But Costello also has a man on the inside at the policeforce named Colin Sullivan (Damon).
+<< IGNORE 
+
+When both the Policeforce as Costello discover that they have a rat somewhere in there crew, both undercover men try to keep their identity secret and keep themselfs alive while the search is on on both sides of the law for the rat...
+<< IGNORE
+
+The casting of this well filmed story is maqnificent.
+The cast is magnificent
+cast 2
+
+First there is DiCaprio. The way he plays the leadcharacter in a strong and impressive style shows that DiCaprio is one of the finest actors of Hollywood these days.
+DiCaprio's playing is impressive
+Dicaprio is one of the best actors.
+cast(DiCaprio) 2+2
+
+Matt Damon plays his role with his own take on it and gives a great performance.
+Matt Damon's performance is great.
+cast(Matt Damon) 2
+
+Jack Nicholson, as always, delivers. The legendary actor plays his role of mobboss Frank Costello in a fantastic, sometimes even scary way that intimidates the audience.
+Jack's performance is fantastic.
+cast(Jack Nicholson) 2
+
+Mark Wahlberg as the hardedge cop Dignam was a fine casting choice as well.
+Mark Wahlberg's acting is fine.
+cast(Mark Wahlberg) 1
+
+Last but not least there is Martin Sheen as Oliver Queenan who knows how to portray his character in a good way.
+Martin Sheen's acting is good.
+cast(Martin Sheen) 1
+
+In the surporting roles there are Alec Baldwin and Vera Farmiga who also give nice performances.
+Alec Baldwin's acting is nice.
+cast(Alec Baldwin) 1
+Vera Famiga's acting is nice.
+cast(Vera Famiga) 1
+
+In short: an ultimate dream cast of all fine actors in a row which gives more than just a movie, it gives an everlasting masterpiece.
+The cast is full of good actors.
+cast 2
+The movie is an everlasting masterpiece.
+movie 2
+
+As you can expect from a Scorsese picture, the violence is brutal, bloody and stays at a realistic level.
+The movie is realistic.
+realism 1
+
+Even though there isn't that much action in the film, there are enough thrilling situations like the conversations between the characters to keep the audience entertained.
+The plot is interesting enough.
+plot 1
+
+The way that the different conversations and situations are edited flows nicely and gives a great atmosphere.
+The editing is great.
+editing 2
+
+The 2 and a half hour length of the film is perfectly build up and leaves no boring moments cause of the interesting actors that give their best in every single scene.
+The movie's length is sufficient.
+length 1
+
+Beautiful shots with great cameramovements, great lighting and sets make the film complete and gives an unforgetable movie experience.
+The shots are great.
+The lighting is great.
+vision 2+2
+The movie is unforgettable.
+The movie is complete.
+movie 2+2
+
+The story, the characters, the tense situations keep you interested and hooked for 2 and a half hours of an interesting cat and mouse game that starts fullspeed and continues on a straight track right to a jawdropping finish.
+The story is interesting.
+plot 2
+The characters are interesting.
+cast 2
+The ending is jaw-dropping.
+movie 1
+
+Drama, Crime and Thriller fans: see this film, this is the way a movie has to be done.
+<< IGNORE
+
+Scorsese shows once again that he is one of the true masters in the filmbusiness.
+<< IGNORE

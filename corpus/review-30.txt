@@ -1,0 +1,79 @@
+-----------------
+ORIGINAL
+-----------------
+
+If one were to try and describe each Pixar movie with one word, I would describe Wall-E with the word "soul".  No other animated movie, and few movies overall, come so close to describing the human condition as this one, and yet most of the major characters are not even human.  I first saw this movie in the theaters, and now own the DVD.  A careful watch of this movie reveals scene after scene that capture and expresses various facets of the human condition.  For example, take Wall-E's care of his pet cockroach; his finding twinkies for him to sleep are oddly reminiscent of the care many humans take of their dogs and cats.  Compare this with the condescension the Axiom's autopilot has of the ship's captain.  The power behind the throne, Pixar style!  Another revealing persona is M-O, the small cleaning robot.  I look at him, and reminisce about that one guy in the office who's always stuck refilling the printer paper, and instead of throwing away old printouts by other people, carefully stacks them by name besides the printer.  Or take Wall-E's courtship of EVE.  There have been many movies about the guy from the wrong side of the tracks hooking up with the girl from the right side, but surely none as innovative as this one, with as many ooh's and aah's.  Maybe the best is the portrayal of the future.  Probably no other movie so captures mankind's future as this movie, and for an American-made movie, Wall-E portrays the future of the world in which the American culture of consumerism and corporate-sponsored governance has become dominant.  Notice the fact that Buy N Large's CEO also happens to the last President of the world.  Could this be a take of George W. Bush?  Or maybe humanity's escape from a world it destroyed.  Could the world portrayed in Wall-E be be the equivalent of inner-city Detroit's destruction by neglect writ large oversaw by a people who'd rather satisfy their personal desires than their society's health.  Few other movies have provided such a strong yet nuanced criticism of modern society as this CGI masterpiece.  For those who say modern Hollywood does not produce great movies that are also great works of art, I recommend they watch this triumph by Pixar.  This is a must for any DVD collection.
+
+-----------------
+ANNOTATED
+-----------------
+
+If one were to try and describe each Pixar movie with one word, I would describe Wall-E with the word "soul".
+<< IGNORE
+
+No other animated movie, and few movies overall, come so close to describing the human condition as this one, and yet most of the major characters are not even human.
+This movie is very realistic.
+realism 2
+
+I first saw this movie in the theaters, and now own the DVD.
+<< IGNORE
+
+A careful watch of this movie reveals scene after scene that capture and expresses various facets of the human condition.
+This movie is very realistic.
+realism 2
+
+For example, take Wall-E's care of his pet cockroach; his finding twinkies for him to sleep are oddly reminiscent of the care many humans take of their dogs and cats.
+impossible to parse << IGNORE
+realism 2
+
+Compare this with the condescension the Axiom's autopilot has of the ship's captain.
+<< IGNORE
+
+The power behind the throne, Pixar style! 
+<< IGNORE
+
+Another revealing persona is M-O, the small cleaning robot.
+M-0 is a revealing character
+cast(M-0) 2
+realism 2
+
+I look at him, and reminisce about that one guy in the office who's always stuck refilling the printer paper, and instead of throwing away old printouts by other people, carefully stacks them by name besides the printer.
+<< IGNORE
+
+Or take Wall-E's courtship of EVE. There have been many movies about the guy from the wrong side of the tracks hooking up with the girl from the right side, but surely none as innovative as this one, with as many ooh's and aah's.
+The plot is innovative.
+plot 2
+
+Maybe the best is the portrayal of the future.
+The movie is realistic.
+realism 2
+
+Probably no other movie so captures mankind's future as this movie, and for an American-made movie, Wall-E portrays the future of the world in which the American culture of consumerism and corporate-sponsored governance has become dominant.
+The movie is realistic.
+plot 2
+
+Notice the fact that Buy N Large's CEO also happens to the last President of the world.
+<< IGNORE
+
+Could this be a take of George W. Bush?
+<< IGNORE
+
+Or maybe humanity's escape from a world it destroyed.
+<< IGNORE
+
+Could the world portrayed in Wall-E be be the equivalent of inner-city Detroit's destruction by neglect writ large oversaw by a people who'd rather satisfy their personal desires than their society's health.
+<< IGNORE
+
+Few other movies have provided such a strong yet nuanced criticism of modern society as this CGI masterpiece.
+The plot is ellaborate.
+The CGI is a masterpiece.
+plot 2
+vision 2
+
+For those who say modern Hollywood does not produce great movies that are also great works of art, I recommend they watch this triumph by Pixar.
+This movie is great.
+movie 2
+
+This is a must for any DVD collection.
+The movie is great.
+movie 2
