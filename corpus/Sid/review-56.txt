@@ -1,0 +1,36 @@
+-----------------
+ORIGINAL
+-----------------
+
+WALL-E is a special kind of movie that is soaked in wit, a spirit of adventure and, rarest of all, sincerity. There is an innocent joy evident within this film of which theaters have not seen in quite some time. WALL-E's powerful first half involves little dialogue and though some may find it boring, the movie never loses sight of where its going and what it wants to be. The second half isWALL-E is a special kind of movie that is soaked in wit, a spirit of adventure and, rarest of all, sincerity. There is an innocent joy evident within this film of which theaters have not seen in quite some time. WALL-E's powerful first half involves little dialogue and though some may find it boring, the movie never loses sight of where its going and what it wants to be. The second half is more standard Pixar fare but is enhanced by the attachment we grow towards WALL-E early on in the movie. This movie does not try to dazzle us with special effects or perplex us with a complex plot. The animation, though amazing, and the plot, though interesting, never overtake the characters in terms of importance. Pixar' took two significant risks with this movie: taking a slow approach to the scenes on Earth and having a largely speechless main character. Both paid off handsomely making WALL-E an affecting and enthralling classic.
+
+-----------------
+ANNOTATED
+-----------------
+WALL-E is a special kind of movie that is soaked in wit, a spirit of adventure and, rarest of all, sincerity. 
+movie is witty, adventurous, sincere
+> movie: +2
+> plot: +1
+
+There is an innocent joy evident within this film of which theaters have not seen in quite some time. 
+> movie: +1
+
+WALL-E's powerful first half involves little dialogue and though some may find it boring, the movie never loses sight of where its going and what it wants to be. 
+some may find the movie boring
+> movie: -1
+
+The second half is more standard Pixar fare but is enhanced by the attachment we grow towards WALL-E early on in the movie. 
+the film is enhanced by WALL-E
+> character[WALL-E]: +1
+
+This movie does not try to dazzle us with special effects or perplex us with a complex plot. 
+> neutral
+
+The animation, though amazing, and the plot, though interesting, never overtake the characters in terms of importance. 
+> visuals: +2
+> plot: +2
+> characters: +2
+
+Pixar' took two significant risks with this movie: taking a slow approach to the scenes on Earth and having a largely speechless main character. 
+Both paid off handsomely making WALL-E an affecting and enthralling classic.
+> movie: +2

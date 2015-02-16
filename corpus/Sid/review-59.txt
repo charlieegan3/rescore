@@ -1,0 +1,35 @@
+-----------------
+ORIGINAL
+-----------------
+
+It's not unusual for Pixar to make a movie that is unforgetable, flawlessly animated, and mind-blowingly beautiful; but WALL-E took Pixar awesomeness to a whole new level. Some people think that the movie is about "the dangers of consumerism", but Director Andrew Stanton himself said that the real main point of the movie is love, and WALL-E is one of the most powerful love stories you willIt's not unusual for Pixar to make a movie that is unforgetable, flawlessly animated, and mind-blowingly beautiful; but WALL-E took Pixar awesomeness to a whole new level. Some people think that the movie is about "the dangers of consumerism", but Director Andrew Stanton himself said that the real main point of the movie is love, and WALL-E is one of the most powerful love stories you will ever see. The movie has really cute lovable characters, stunningly beautiful music by Thomas Newman and Peter Gabriel, subtle humor, and tons of heart, soul, and emotion expressed with very little dialogue. It may seem like a major stretch, but this movie is yet another home run for Pixar. Easily the best movie of 2008, the best movie of decade, and (in my opinion) the best movie of all time. I give this "LOVEL-E" masterpiece my highest recommendation. 10/10 (I would give it an 11 if I could).
+
+-----------------
+ANNOTATED
+-----------------
+
+It's not unusual for Pixar to make a movie that is unforgetable, flawlessly animated, and mind-blowingly beautiful; but WALL-E took Pixar awesomeness to a whole new level. 
+movie is unforgetable, very animated, very beautiful, awesome.
+> movie: +4
+
+Some people think that the movie is about "the dangers of consumerism", but Director Andrew Stanton himself said that the real main point of the movie is love, and WALL-E is one of the most powerful love stories you will ever see. 
+film is a powerful love story
+> plot: +1
+
+The movie has really cute lovable characters, stunningly beautiful music by Thomas Newman and Peter Gabriel, subtle humor, and tons of heart, soul, and emotion expressed with very little dialogue. 
+cute and lovable characters, very beautiful music, funny, emotional, had little dialogue
+> characters: +2
+> music: +2
+> movie: +4
+
+It may seem like a major stretch, but this movie is yet another home run for Pixar. 
+movie is great
+> movie: +2
+
+
+Easily the best movie of 2008, the best movie of decade, and (in my opinion) the best movie of all time. 
+> translation: "I am overly exctatic about this movie and i am 10 years old."
+> movie: +5 ( or +infinity and forever on our landing page as top film? )
+
+I give this "LOVEL-E" masterpiece my highest recommendation. 10/10 (I would give it an 11 if I could).
+> movie: +3

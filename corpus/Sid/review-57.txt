@@ -1,0 +1,18 @@
+-----------------
+ORIGINAL
+-----------------
+
+ WALL-E was purely amazing. Nothing much else to say so ill fill in the last of the words needed with. CCCCCCCCCCCOOOOOOOOOLLLLLLLL MMMMMMMOOOOOOOOOOOOOOOOOVVVVVVVIIIIIIIEEEEEEE!!!! 
+
+-----------------
+ANNOTATED
+-----------------
+WALL-E was purely amazing. 
+> movie: +2
+
+Nothing much else to say so ill fill in the last of the words needed with. 
+> IGNORED 
+
+CCCCCCCCCCCOOOOOOOOOLLLLLLLL MMMMMMMOOOOOOOOOOOOOOOOOVVVVVVVIIIIIIIEEEEEEE!!!! 
+Cool movie
+> movie: +1

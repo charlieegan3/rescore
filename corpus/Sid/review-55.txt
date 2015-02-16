@@ -1,0 +1,22 @@
+-----------------
+ORIGINAL
+-----------------
+
+WALL-E Classroom Edition is a special classroom edition of Disney/Pixar's latest computer-animated feature film, which includes public performance rights, a printable teacher's guide, and exclusive bonus features created to reinforce educational concepts. The movie itself stars the charming WALL-E (Waste Allocation Load Lifter Earth-Class), a humble robot with a powerful message about the importance of being a responsible steward of the environment. Educational themes present in the DVD include a look at the effects of gravity on the human body, both in earth and space, and an amazing examination of modern day robots. A delightful presentation that shows rather than tells its story, WALL-E Classroom Edition rated G for General Audiences, and is suitable for science and nature students from kindergarten on up. 98 minutes, color.
+
+-----------------
+ANNOTATED
+-----------------
+
+WALL-E Classroom Edition is a special classroom edition of Disney/Pixar's latest computer-animated feature film, which includes public performance rights, a printable teacher's guide, and exclusive bonus features created to reinforce educational concepts. 
+> IGNORED
+
+The movie itself stars the charming WALL-E (Waste Allocation Load Lifter Earth-Class), a humble robot with a powerful message about the importance of being a responsible steward of the environment. 
+WALL-E (character) is charming, humble, with a powerful message.
+> characters: +3
+
+Educational themes present in the DVD include a look at the effects of gravity on the human body, both in earth and space, and an amazing examination of modern day robots.
+> IGNORED
+
+A delightful presentation that shows rather than tells its story, WALL-E Classroom Edition rated G for General Audiences, and is suitable for science and nature students from kindergarten on up. 98 minutes, color.
+> visuals: +1
