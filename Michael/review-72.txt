@@ -1,0 +1,21 @@
+-----------------
+ORIGINAL
+-----------------
+
+ Normally, fussing over every detail when creating art can make the big picture stiff and neglected. Instead Wall-E blossoms into a masterpiece from whatever angle you look at it. Bravo. 
+
+-----------------
+ANNOTATED
+-----------------
+
+Paying attention to detail too much can compromise the plot.
+Normally, fussing over every detail when creating art can make the big picture stiff and neglected.
+
+Instead Wall-E blossoms into a masterpiece from whatever angle you look at it.
+The movie is brilliant no matter what perspective the viewer looks at it from.
+plot: 2
+
+Bravo
+2
+
+
