@@ -1,0 +1,35 @@
+-----------------
+ORIGINAL
+-----------------
+
+The Hobbit was not even close to the standards of Lord of the Rings. How could it be? The Lord of the Rings rightfully deserved a trilogy ( one movie for each book). The Hobbit was a tiny book and they turned that into 3 movies! The Hobbit dragged and there were way too many made up scenes. The battle took up too much time in the movie and they missed out many key factors of the book. All in all there was too much action and straying away from the main point of the book.
+
+-----------------
+ANNOTATED
+-----------------
+
+The Hobbit was not even close to the standards of Lord of the Rings.
+The movie did not deliver.
+movie: -2
+
+How could it be? The Lord of the Rings rightfully deserved a trilogy ( one movie for each book).
+The movie is too long.
+length: -1
+movie: -2
+project admin/management: -2
+
+The Hobbit was a tiny book and they turned that into 3 movies! The Hobbit dragged and there were way too many made up scenes.
+The movie is a poor adaption. The movie is too long.
+plot: -2
+adaption: -2
+length: -1
+
+The battle took up too much time in the movie and they missed out many key factors of the book.
+The story is boring. The movie is a poor adaption.
+plot: -1
+adaption: -2
+length: -1
+
+All in all there was too much action and straying away from the main point of the book.
+The movie had the wrong focus.
+adaption: -2
