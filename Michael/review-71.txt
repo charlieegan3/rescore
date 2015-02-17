@@ -1,0 +1,18 @@
+-----------------
+ORIGINAL
+-----------------
+
+ A vivid experience everyone should partake on no matter what age. If you can fight the grueling and passive first 10-20 minutes, you shall be rewarded. 
+
+-----------------
+ANNOTATED
+-----------------
+
+A vivid experience everyone should partake on no matter what age.
+A stimulating experience suitable for all ages.
+plot: 2+2
+
+If you can fight the grueling and passive first 10-20 minutes, you shall be rewarded. 
+
+The first 10-20 minutes are not enjoyable. The first 10-20 minutes allow the viewer to watch what happens without any interest or specific changes to the overall movie experience. It is an advantage for the viewer's experience if the viewer remains interested in the movie after 20 minutes.
+Accessible: -1+2

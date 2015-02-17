@@ -1,0 +1,30 @@
+-----------------
+ORIGINAL
+-----------------
+
+ A classic disney movie. Amazing quality animation, great for kids and grownups. Loads of humor, cute moments, even thrilling. Character creation was the best, simple, yet straightforward, kept you interested for a long while thoughtout the movie. 
+
+-----------------
+ANNOTATED
+-----------------
+
+A classic disney movie
+movie: 2
+
+Amazing quality animation
+The animation was amazing. The animation was high quality.
+visual: 2
+
+great for kids and grownups.
+This movie is great for kids. This movie is great for adults.
+Accessible: 2
+
+Loads of humour, cute moments, even thrilling.
+The plot had humour. The plot had moments of romance. The plot was moderately thrilling.
+plot: 2+2+2
+
+Character creation was the best, simple, yet straightforward, kept you interested for a long while throughout the movie.
+The character creation was the best aspect of the movie. The character creation was simple. The character creation was also straightforward and did not comprimise the simplicity of the character creation. The character creation allowed the viewer to develop an interest in the movie for a long period of time.
+plot: 2+1+1+1
+
+
