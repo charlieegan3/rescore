@@ -1,0 +1,102 @@
+-----------------
+ORIGINAL
+-----------------
+
+I'm not usually a fan of cheeky gangster films that are both humorous and bloody. They amuse me, but they have little emotional impact. Though at times hilarious, this is not one of those films.The plot sold me. Either searching for a mole in the police department or following an undercover cop alongside a mad mob boss would have been enough. But both are in one movie. (Note: I'm afraid I hadn't seen Internal Affairs, which I hear has the same plot.)Leonardo DiCaprio plays Billy Costigan, the undercover police agent. Costigan's family is peopled with criminals, and he himself has a fierce temper. According to his superiors, Queenan (Martin Sheen) and Mark Wahlberg's Dignam, Costigan is also too intelligent and perhaps idealistic to be a cop. Thus, Costigan must gain the trust of Jack Nicholson's insane, unforgiving, and amusing Frank Costello, an Irish mafia kingpin.While one half of the plot monitors Costigan, the other follows Matt Damon's Colin Sullivan. Rather, the story-line revolves around the two of them. Sullivan is essentially Costigan's opposite, even though they have identical tasks and similar upbringings. Sullivan is the mafia's mole, nurtured by Costello from youth. He is a trusted, pragmatic police officer who is assigned to find Costello's mole - himself, of course. This means bad news for Costigan and possibly for Sullivan.This tale has countless "gasp" moments as key information is revealed to us or to unwitting characters for the first time. Scorsese lets us thoroughly invest in the characters, feeling their pain and fear.Acting is outstanding all around. DiCaprio is extremely sympathetic as Costigan. He is as passionate as Sullivan is empty. Damon is also excellent as Sullivan, a subtly drawn but disturbing character whose duplicity knows no ends. Nicholson is batty, merciless, but almost likable as Costello. Wahlberg is hysterical as the verbally abusive and fiery Dignam. Despite his cruel attitude towards Costigan, Dignam stubbornly protects him from exposure. Martin Sheen is likable as Queenan, and Ray Winstone is suitably dead eyed as the violent Mr. French. A special note must be given to Alec Baldwin. His police officer Ellerby is witty and perhaps on crack. (Not literally.)Vera Farmiga also plays an complex character. Madolyn is one of the only women in the film who is more than just decoration for the male characters. Her relationship with both Sullivan and Costigan further compares and contrasts the two men. Sullivan has money, and is clean cut and insensitive. Costigan is a drug addicted mess, but he displays genuine affection for and interest in Madolyn. Their sexual relationships are quite different as well. She is a smart woman making foolish choices.This movie is a series of wonderful quotes and moments. Various themes are threaded throughout this tense story. The parallels drawn between Costigan and Sullivan are fascinating. Sweeping camera shots and a variety of memorable music set the mood. The lyrics of Comfortably Numb are too perfect, as is the tone of every song. The Departed This film is about survival, which makes for an intense, entertaining, and powerful experience.
+
+-----------------
+ANNOTATED
+-----------------
+
+I'm not usually a fan of cheeky gangster films that are both humorous and bloody.
+> IGNORED
+
+They amuse me, but they have little emotional impact.
+> IGNORED
+
+Though at times hilarious, this is not one of those films.
+> IGNORED
+
+The plot sold me
+> No idea what he is trying to say
+
+Either searching for a mole in the police department or following an undercover cop alongside a mad mob boss would have been enough.
+> IGNORED
+
+But both are in one movie. 
+> IGNORED
+
+Note: I'm afraid I hadn't seen Internal Affairs, which I hear has the same plot
+> IGNORED
+
+Leonardo DiCaprio plays Billy Costigan, the undercover police agent. Costigan's family is peopled with criminals, and he himself has a fierce temper. According to his superiors, Queenan (Martin Sheen) and Mark Wahlberg's Dignam, Costigan is also too intelligent and perhaps idealistic to be a cop. Thus, Costigan must gain the trust of Jack Nicholson's insane, unforgiving, and amusing Frank Costello, an Irish mafia kingpin.While one half of the plot monitors Costigan, the other follows Matt Damon's Colin Sullivan. Rather, the story-line revolves around the two of them. Sullivan is essentially Costigan's opposite, even though they have identical tasks and similar upbringings. Sullivan is the mafia's mole, nurtured by Costello from youth. He is a trusted, pragmatic police officer who is assigned to find Costello's mole - himself, of course. This means bad news for Costigan and possibly for Sullivan.
+> IGNORED (summary of plot)
+
+This tale has countless "gasp" moments as key information is revealed to us or to unwitting characters for the first time. 
+> plot:1 
+
+Scorsese lets us thoroughly invest in the characters, feeling their pain and fear.
+Characters are very realistic/involving
+> characters: +1 
+
+Acting is outstanding all around. 
+> cast: +2 
+
+DiCaprio is extremely sympathetic as Costigan.
+> cast[DiCaprio]: +1
+> character[Costigan]: +1
+
+He is as passionate as Sullivan is empty. 
+>IGNORED
+
+Damon is also excellent as Sullivan, a subtly drawn but disturbing character whose duplicity knows no ends. 
+> cast[Damon]: +1
+> character[Sullivan]: +1
+
+Nicholson is batty, merciless, but almost likable as Costello. 
+Nicholson's acting as Costello is convincing?
+> cast[Nicholson]: +1
+
+Wahlberg is hysterical as the verbally abusive and fiery Dignam. 
+> entertaining: +1
+> cast[Wahlberg]: +1
+
+Despite his cruel attitude towards Costigan, Dignam stubbornly protects him from exposure. 
+> IGNORED
+
+Martin Sheen is likable as Queenan, and Ray Winstone is suitably dead eyed as the violent Mr. French.
+> cast: +1
+
+A special note must be given to Alec Baldwin. His police officer Ellerby is witty and perhaps on crack. (Not literally.)
+> cast[Alec Baldwin]: +1
+
+Vera Farmiga also plays an complex character. 
+> characters[Madolyn]: +1
+
+Madolyn is one of the only women in the film who is more than just decoration for the male characters. 
+Her relationship with both Sullivan and Costigan further compares and contrasts the two men.
+Sullivan has money, and is clean cut and insensitive. 
+Costigan is a drug addicted mess, but he displays genuine affection for and interest in Madolyn. 
+Their sexual relationships are quite different as well. 
+She is a smart woman making foolish choices.
+> IGNORED all of the above
+
+This movie is a series of wonderful quotes and moments. 
+> Dialog: +1
+> plot: +1
+
+Various themes are threaded throughout this tense story. 
+> plot: +1
+
+The parallels drawn between Costigan and Sullivan are fascinating. 
+> characters +1
+
+Sweeping camera shots and a variety of memorable music set the mood. 
+> visuals: +1
+> music: +1
+
+The lyrics of Comfortably Numb are too perfect, as is the tone of every song. 
+> music: +1
+
+The Departed This film is about survival, which makes for an intense, entertaining, and powerful experience.
+> movie: +2

@@ -1,0 +1,14 @@
+-----------------
+ORIGINAL
+-----------------
+
+ I preferred the other 2 by a wide margin, the start is the end of the second and after that imagine a 2 hours battle without any story developement. I should have rented it I guess. 
+
+-----------------
+ANNOTATED
+-----------------
+ I preferred the other 2 by a wide margin, the start is the end of the second and after that imagine a 2 hours battle without any story developement. 
+ >> plot: -1
+ 
+ I should have rented it I guess. 
+ >> IGNORED

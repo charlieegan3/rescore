@@ -1,0 +1,23 @@
+-----------------
+ORIGINAL
+-----------------
+
+ great entertainment, great writing, great animation, great everything. Rating: 88% 
+
+-----------------
+ANNOTATED
+-----------------
+
+great entertainment, great writing, great animation, great everything
+
+Great entertainment
+> movie: +2
+
+great writing
+> plot: +2
+
+great animation
+> visuals: +2
+
+great everything
+> movie: +2

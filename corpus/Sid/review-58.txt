@@ -1,0 +1,24 @@
+-----------------
+ORIGINAL
+-----------------
+
+A poor excuse for a finale to the Hobbit trilogy. Although I feel that the other two films were also rather weak, Jackson's failings as a storyteller really come into their own in The Battle of the Five Armies. The film is little more than a showy collection of battle scenes and special effects that drown a poor screenplay, and in themselves are as tiring as they are bloated and pointless.A poor excuse for a finale to the Hobbit trilogy. Although I feel that the other two films were also rather weak, Jackson's failings as a storyteller really come into their own in The Battle of the Five Armies. The film is little more than a showy collection of battle scenes and special effects that drown a poor screenplay, and in themselves are as tiring as they are bloated and pointless. Emotionally uninvolving, uninspiring and entirely forgettable: give me Jackson's old splatstick any day of the week!
+
+-----------------
+ANNOTATED
+-----------------
+A poor excuse for a finale to the Hobbit trilogy. 
+> movie: -1
+
+Although I feel that the other two films were also rather weak, Jackson's failings as a storyteller really come into their own in The Battle of the Five Armies. 
+director failed
+> director: -1
+
+The film is little more than a showy collection of battle scenes and special effects that drown a poor screenplay, and in themselves are as tiring as they are bloated and pointless.
+SFX drown poor screenplay and are tiring and pointless
+> SFX: +1
+> director: -1
+> movie: -1
+
+Emotionally uninvolving, uninspiring and entirely forgettable: give me Jackson's old splatstick any day of the week!
+> movie: -2
