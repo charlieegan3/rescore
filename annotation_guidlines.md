@@ -149,7 +149,7 @@ For each sentence:
 ```
 XML:
 
-```
+```xml
 <movie>
   <original>
     <title></title>
@@ -195,7 +195,7 @@ Annotated:
 
 Sample XML:
 
-```
+```xml
 <movie>
   <original>
     <title>The Hobbit: An Unexpected Journey</title>
