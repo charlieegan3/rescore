@@ -53,6 +53,7 @@ group :development, :test do
   gem 'guard-rspec', require: false
   gem 'vcr'
   gem 'capybara'
+  gem 'factory_girl'
 end
 
 group :test do
