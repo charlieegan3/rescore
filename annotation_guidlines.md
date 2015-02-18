@@ -125,7 +125,7 @@ credibility:
 
 ###Sentiment
 
-To reduce ambiguity we're taking sentiment values from: [sentimental](https://github.com/7compass/sentimental). The plan is to update & refine this as we move on.
+To reduce ambiguity we're taking sentiment values from: [sentimental](https://github.com/7compass/sentimental/blob/master/lib/sentiwords.txt). The plan is to update & refine this as we move on.
 
 Running `ruby lookup.rb {WORD}` from the root of the project runs a simple script to get a score for the word.
 
