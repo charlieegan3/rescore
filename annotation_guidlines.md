@@ -153,6 +153,7 @@ Original Review
 	-Body Text
 
 Annotated:
+Overall Sentiment: (+ve/-ve/neutral)
 For each sentence:
 	-Original Sentence Text
 	For each mentioned aspect:
@@ -162,103 +163,34 @@ For each sentence:
 	Annotator Comments
 	
 ```
-XML:
 
-```xml
-<movie>
-  <original>
-    <title></title>
-    <genre></genre>
-    <source></source>
-    <rating></rating>
-    <helpfullness></helpfullness>
-    <body></body>
-  </original>
-
-  <annotated>
-    <sentence>
-      <text></text>
-      <aspects>
-        <name></name>
-        <source></source>
-        <sentiment></sentiment>
-      </aspects>
-      <comments></comments>
-    </sentence>
-  </annotated>
-</movie>
-```
-Sample Human:
-
-```
-Original
-  The Hobbit: An Unexpected Journey
-  Adventure
-  IMDb
-  5
-  0.9
-  {{long drawn-out review by a disappointed fan}}
-
-Annotated:
-  This film was a mega disappointment.
-    movie
-      film
-      SCORE
-	No comments for this sentence
-  ...(Next Sentence)
-```
-
-Sample XML:
-
-```xml
-<movie>
-  <original>
-    <title>The Hobbit: An Unexpected Journey</title>
-    <genre>Adventure</genre>
-    <source>IMDb</source>
-    <rating>5</rating>
-    <helpfullness>0.9</helpfullness>
-    <body>{{long drawn-out review by a disappointed fan}}</body>
-  </original>
-
-  <annotated>
-    <sentence>
-      <text>This film was a mega disappointment.</text>
-      <aspects>
-        <name>movie</name>
-        <source>film</source>
-        <sentiment>SCORE</sentiment>
-      </aspects>
-      <comments>No comments for this sentence</comments>
-    </sentence>
-    ...
-  </annotated>
-</movie>
-```
-
-Sample JSON:
+JSON:
 
 ```json
 {
   "movie": {
     "original": {
-      "title": "The Hobbit: An Unexpected Journey",
-      "genre": "Adventure",
-      "source": "IMDb",
-      "rating": "5",
-      "helpfullness": "0.9",
-      "body": "{{long drawn-out review by a disappointed fan}}"
+      "title": "",
+      "genre": "",
+      "source": "",
+      "rating": "",
+      "helpfullness": "",
+      "body": ""
     },
     "annotated": {
-      "sentence": {
-        "text": "This film was a mega disappointment.",
-        "aspects": {
-          "name": "movie",
-          "source": "film",
-          "sentiment": "SCORE"
-        },
-        "comments": "No comments for this sentence"
-      }
+      "overall" : "(+ve/-ve/neutral)"
+      "sentences": [
+        {
+          "text": "",
+          "aspects": [
+            {
+              "name": "",
+              "source": "",
+              "sentiment": ""
+            },...]
+          "comments": ""
+         }
+      ]
     }
   }
 }
