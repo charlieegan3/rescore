@@ -16,8 +16,9 @@ Reviews should be selected for variation in:
 For version one of the corpus reviews and annotations should not cover:
 
 1. Emphasis and Exaggeration
-2. Negation & Double Negation
-3. Sentiment & Negation that span multiple sentences
+2. People & Cast
+3. Negation & Double Negation
+4. Sentiment & Negation that span multiple sentences
 
 We should differ reviews with more complex language to a later iteration.
 
@@ -161,7 +162,7 @@ For each sentence:
 
 JSON:
 
-```json
+```
 {
   "movie": {
     "original": {
