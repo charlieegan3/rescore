@@ -33,8 +33,7 @@ We should also assign 'untargetted' comments at the **movie as a whole.**
 editing:
   'editing' ->               100,
   'effects' ->               70
-  'production' ->            50,
-  'post' ->                  20,
+  'post production' ->       50,
   
 sound:
   'sound' ->                 100,
