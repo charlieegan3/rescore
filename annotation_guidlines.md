@@ -59,6 +59,7 @@ plot:
   
 dialog:
   'dialog' ->                100,
+  'dialogue' ->              100,
   'speech' ->                100,
   'spoken' ->                90,
   'discussion' ->            80,
