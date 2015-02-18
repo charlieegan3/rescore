@@ -1,0 +1,132 @@
+-----------------
+ORIGINAL
+-----------------
+
+Every time Martin Scorsese releases a new picture, the Oscar talk begins.  Obviously, the world waits breathlessly for the next "Taxi Driver" or "Raging Bull" or "Goodfellas"--but it's not easy to craft a film of such enduring appeal.  "The Aviator," his last Best Picture nominee, is a handsome biopic bolstered by good performances--but hardly elicits the same passion as the Scorsese classics.  And "Gangs of New York," the nominee prior to that, is a genuinely muddled mess led by a terrific performance by Daniel Day Lewis.  So that you may calibrate this review, I'm going to say it right now--in no way did "Gangs of New York" deserve to be among the top five films of it's year."The Departed" is this year's candidate, and I have no doubt it will receive many accolades from the Academy.  It's a vastly entertaining tale based on Hong Kong's "Infernal Affairs."  I don't know that I consider it to be among Scorsese's best work--but it certainly brings back a life and passion absent from some of his recent efforts.  Brasher and more viscerally exciting than "The Aviator," more coherent and intelligent than "Gangs of New York"--"The Departed" does remind you of the pictures made on the mean streets of Scorsese's earlier classics.  And while the film is abundantly entertaining, thrilling and twisty--it is not without flaws either.First, the good.  It's a terrific plot well executed--complicated and morally ambiguous.  You can't help but be impressed with the layer upon layer of complexity as our characters live in worlds that are based on lies.  How do you maintain the essence of yourself when you exist in a state of pretense?  How to you survive and thrive when one mistake could mean your life?  There are knotty ethical issues to be wrestled with throughout the picture--a lot more for the viewer to think about and contemplate than in your traditional action fare.Matt Damon and Leonardo DiCaprio give fully realized, dynamic performances.  It may be a career high for both actors--I appreciated their immersion into these men.  They are bold and challenging portraits of two people trapped within situations that now define them.  Free choice is limited and you can't play by the rules.  Ruthlessness and dishonesty become necessary to survive--their lives parallel beautifully even though they are at odds.  Nice characterizations from Mark Wahlberg and Martin Sheen are highlights as well.  Wahlberg, in particular, has rarely been so alive on the screen.One element in the film that has been debated is Jack Nicholson's performance, however.  Either you think it is a brilliant Jack Nicholson role or you wish for a little more restraint.  Well, I almost always wish for some restraint with modern Nicholson (aside form the nice nuanced role in "About Schmidt")--but here, his over-the-top portrait actually serves the film well.  I enjoyed his antics and it worked as a suitable counterpoint to the younger performers.The one element of the film I really struggled with, however, is the female character.  Played by Vera Farmiga--she is more of a plot convenience than a real asset to the film.  Awkwardly and unbelievably positioned between Damon and DiCaprio, she does little to heighten the drama.  It's a huge suspension of belief to put her into the middle of things--and with only an unnecessary romantic subplot to show for it, it just isn't worth it.  It's not Farmiga's fault, but the film came to a screeching halt every time she entered into it (especially her absurd doctor/patient interactions with DiCaprio).I definitely recommend "The Departed."  Close to a great film, it's deliriously entertaining.  KGHarris, 11/06.
+
+-----------------
+ANNOTATED
+-----------------
+
+Every time Martin Scorsese releases a new picture, the Oscar talk begins.
+Martin Scorsese is a good director
+directing: 1
+
+Obviously, the world waits breathlessly for the next "Taxi Driver" or "Raging Bull" or "Goodfellas"--but it's not easy to craft a film of such enduring appeal.
+This movie is not as good as the director's previous movies.
+movie: -1
+
+"The Aviator," his last Best Picture nominee, is a handsome biopic bolstered by good performances--but hardly elicits the same passion as the Scorsese classics.
+IGNORED
+
+And "Gangs of New York," the nominee prior to that, is a genuinely muddled mess led by a terrific performance by Daniel Day Lewis.
+IGNORED
+
+"The Departed" is this year's candidate, and I have no doubt it will receive many accolades from the Academy.
+IGNORED
+
+So that you may calibrate this review, I'm going to say it right now--in no way did "Gangs of New York" deserve to be among the top five films of it's year.
+This movie was not one of the best this year.
+movie: -1
+
+It's a vastly entertaining tale based on Hong Kong's "Infernal Affairs."
+The story is very entertaining.
+story: 2
+
+I don't know that I consider it to be among Scorsese's best work--but it certainly brings back a life and passion absent from some of his recent efforts.
+It's not the best movie, but I enjoyed it.
+movie: 1
+
+Brasher and more viscerally exciting than "The Aviator," more coherent and intelligent than "Gangs of New York"--"The Departed" does remind you of the pictures made on the mean streets of Scorsese's earlier classics.
+The movie was coherent and intelligent.
+movie: 1
+story: 1
+
+And while the film is abundantly entertaining, thrilling and twisty--it is not without flaws either.
+The film is very entertaining. The movie is thrilling. The movie has flaws.
+movie: 1
+story: 2
+
+First, the good.  It's a terrific plot well executed--complicated and morally ambiguous.
+The plot was very good.
+story: 2
+
+You can't help but be impressed with the layer upon layer of complexity as our characters live in worlds that are based on lies.
+Good plot and story.
+story: 2
+
+How do you maintain the essence of yourself when you exist in a state of pretense?
+IGNORED
+
+How to you survive and thrive when one mistake could mean your life?
+IGNORED
+
+There are knotty ethical issues to be wrestled with throughout the picture--a lot more for the viewer to think about and contemplate than in your traditional action fare.
+The story is intelligent. There is a lot to think about.
+story: 2
+
+Matt Damon and Leonardo DiCaprio give fully realized, dynamic performances.
+The acting was good. Matt Damon and Leonardo DiCaprio were good.
+acting: 2
+
+It may be a career high for both actors--I appreciated their immersion into these men.
+The characters and acting were good.
+story: 2
+acting: 2
+
+They are bold and challenging portraits of two people trapped within situations that now define them.
+Good acting.
+acting: 2
+
+Nice characterizations from Mark Wahlberg and Martin Sheen are highlights as well.
+Good acting. Mark Wahlberg and Martin Sheen were good.
+acting: 2
+
+Wahlberg, in particular, has rarely been so alive on the screen.
+Good acting. Mark Wahlberg was good.
+acting: 2
+
+One element in the film that has been debated is Jack Nicholson's performance, however.
+Jack Nicholson was not so good.
+acting: -1
+
+Either you think it is a brilliant Jack Nicholson role or you wish for a little more restraint.
+Jack Nicholson was ok.
+acting: 0
+
+Well, I almost always wish for some restraint with modern Nicholson (aside form the nice nuanced role in "About Schmidt")--but here, his over-the-top portrait actually serves the film well.
+I enjoyed Jack Nicholson's acting.
+acting: 2
+
+I enjoyed his antics and it worked as a suitable counterpoint to the younger performers.
+I enjoyed Jack Nicholson's acting.
+acting: 2
+
+The one element of the film I really struggled with, however, is the female character.
+I didn't like the female character.
+acting: -2
+
+Played by Vera Farmiga--she is more of a plot convenience than a real asset to the film.
+The writing for the female character was not good.
+plot: -1
+writing: -1
+acting: -1
+
+Awkwardly and unbelievably positioned between Damon and DiCaprio, she does little to heighten the drama.
+The writing for the female character was not good.
+plot: -1
+writing: -1
+acting: -1
+
+It's a huge suspension of belief to put her into the middle of things--and with only an unnecessary romantic subplot to show for it, it just isn't worth it.
+The romantic subplot was not well written.
+writing: -1
+plot: -1
+
+It's not Farmiga's fault, but the film came to a screeching halt every time she entered into it (especially her absurd doctor/patient interactions with DiCaprio)
+The writing for some of the characters was not good. The actor was good.
+writing: -1
+
+I definitely recommend "The Departed."  Close to a great film, it's deliriously entertaining.
+The movie is good, and I recommend it.
+movie: 2

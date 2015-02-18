@@ -1,0 +1,28 @@
+-----------------
+ORIGINAL
+-----------------
+
+I just got back from seeing this movie...and I must say, this movie was the best I have seen this year.STORY: The plot is pretty different from IA. A man accepted into the police force, meanwhile another man, William Costigner, has been almost rejected. William is a part of Costello's Irish mob, and the other guy is dating a psychiatrist. Now, Costigner and the other guy are chasing each other.THOUGHTS: Fantastic movie! My dad and I were almost late, to the movie, but thankfull we made it. Plus, it has a good ending!So go see this!
+
+-----------------
+ANNOTATED
+-----------------
+
+I just got back from seeing this movie...and I must say, this movie was the best I have seen this year.
+The movie was the best movie I have seen this year.
+movie: 2
+
+A man accepted into the police force, meanwhile another man, William Costigner, has been almost rejected.
+IGNORED
+
+William is a part of Costello's Irish mob, and the other guy is dating a psychiatrist.
+IGNORED
+
+THOUGHTS: Fantastic movie! My dad and I were almost late, to the movie, but thankfull we made it.
+Fantastic movie.
+movie: 2
+
+Plus, it has a good ending!So go see this!
+Good ending, I recommend this movie.
+movie: 2
+story: 1

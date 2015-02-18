@@ -1,0 +1,22 @@
+-----------------
+ORIGINAL
+-----------------
+
+It's a sort of absurdist/stoner "comedy" which isn't that funny. I've enjoyed all of PTA's prior films to varying degrees though this didn't resonate with me, my wife, or the majority of the audience in Manhattan as far as I could tell given the expressions I gathered from fellow theatergoers. All in all, I'd avoid unless you read the book for it and know what you are in for and appreciate this sort of oddball story and aren't expecting anything with any sort of tangible/semi-linear narrative.
+
+-----------------
+ANNOTATED
+-----------------
+
+It's a sort of absurdist/stoner "comedy" which isn't that funny.
+Movie is not funny.
+movie: -1
+story: -1
+
+I've enjoyed all of PTA's prior films to varying degrees though this didn't resonate with me, my wife, or the majority of the audience in Manhattan as far as I could tell given the expressions I gathered from fellow theatergoers.
+I did not enjoy the film.
+movie: -1
+
+All in all, I'd avoid unless you read the book for it and know what you are in for and appreciate this sort of oddball story and aren't expecting anything with any sort of tangible/semi-linear narrative
+The story and dialogue are not coherent/good.
+story: -1

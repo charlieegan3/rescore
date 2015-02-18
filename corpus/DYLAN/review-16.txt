@@ -1,0 +1,39 @@
+-----------------
+ORIGINAL
+-----------------
+
+The parts of the book that were actually included in the movie were done somewhat decently. However many of the added stories weren't very well written. Bard using his son as a component of his bow to kill Smaug was insulting to the excellently done dragon. The conversation between Legolas and his father was very cringe worthy and nothing looked more awkward than Galadriel carrying Gandalfs unconscious body. The Hobbit is also not supposed to heavily tie into Lord of the Rings. They are two very different tones that clash uncomfortably. I encourage the use of CGI in special effects but it needs to be done correctly. Including practical effects gives your CGI artists something with real light and texture to work off of. That could have helped because a lot of this movies CGI looked like it needed work or they ran out of money.
+
+-----------------
+ANNOTATED
+-----------------
+The parts of the book that were actually included in the movie were done somewhat decently.
+The movie stayed true to parts of the book.
+movie: 1
+story: 1
+
+However many of the added stories weren't very well written.
+Some of the writing was bad.
+story: -1
+
+Bard using his son as a component of his bow to kill Smaug was insulting to the excellently done dragon.
+The dragon scene was not good.
+story: -1
+
+The conversation between Legolas and his father was very cringe worthy and nothing looked more awkward than Galadriel carrying Gandalfs unconscious body.
+Some of the scenes were awkward.
+story: -1
+dialogue: -1
+
+The Hobbit is also not supposed to heavily tie into Lord of the Rings.
+The story did not follow the book.
+story: -1
+
+They are two very different tones that clash uncomfortably.
+The story was awkward. The story didn't follow the books.
+story: -1
+writing: -1
+
+That could have helped because a lot of this movies CGI looked like it needed work or they ran out of money.
+The special effects were bad.
+visuals: -1

@@ -1,0 +1,28 @@
+-----------------
+ORIGINAL
+-----------------
+
+I haven't read the Thomas Pynchon novel, but if it's anything like the movie I wouldn't make it thru the first chapter. Set in the early 70s, this California noir revolves around private eye Doc Sportello (Joaquin Phoenix, who is fun to watch) as he talks and talks and talks in convoluted language about the confusing plot. The story is hard to follow and director Paul Thomas Anderson's oblique style and often-unblinking camera make it even more frustrating. Despite the sparse sprinkling of jokes and the stoner sensibility, the deadly pacing make this meandering mystery a tedious exercise in self-conscious cinema.
+
+-----------------
+ANNOTATED
+-----------------
+
+I haven't read the Thomas Pynchon novel, but if it's anything like the movie I wouldn't make it thru the first chapter.
+The movie was bad.
+movie: -1
+
+Set in the early 70s, this California noir revolves around private eye Doc Sportello (Joaquin Phoenix, who is fun to watch) as he talks and talks and talks in convoluted language about the confusing plot.
+The plot is confusing. The writing is bad.
+story: -1
+dialogue: -1
+
+The story is hard to follow and director Paul Thomas Anderson's oblique style and often-unblinking camera make it even more frustrating.
+The story is hard to follow. The camera work is bad.
+story: -1
+visuals: -1
+
+Despite the sparse sprinkling of jokes and the stoner sensibility, the deadly pacing make this meandering mystery a tedious exercise in self-conscious cinema.
+The plot was bad and confusing.
+story: -1
+

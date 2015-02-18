@@ -1,0 +1,32 @@
+-----------------
+ORIGINAL
+-----------------
+
+When I read Tolkien books, It is so rich in details, customs, mythology, and deep characters that feels that you are inside. The movie presents superficial characters, cartooned overused action, childhood dialogues, unrealistic battles and unnecessary evil too evil to be credible, makes the movie BOORING! A 10 to the scenography, the rest is rubbish. This is another example of a movie that expends too much in CGI and nothing to good writers.
+
+-----------------
+ANNOTATED
+-----------------
+
+When I read Tolkien books, It is so rich in details, customs, mythology, and deep characters that feels that you are inside.
+The Tolkien books have great story, writing and characters.
+story: 1
+characters: 1
+writing: 1
+
+The movie presents superficial characters, cartooned overused action, childhood dialogues, unrealistic battles and unnecessary evil too evil to be credible, makes the movie BOORING! 
+Superficial characters, too much action, simple dialogue, unrealistic battles and boring movie.
+movie: -2
+story: -2
+characters -2
+
+A 10 to the scenography, the rest is rubbish.
+Great effects, movie is rubbish.
+visuals: 2
+movie: -2
+
+This is another example of a movie that expends too much in CGI and nothing to good writers.
+Good effects, bad writing.
+story: -1
+effects: 1
+
