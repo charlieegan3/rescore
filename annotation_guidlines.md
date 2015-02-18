@@ -125,14 +125,9 @@ credibility:
 
 ###Sentiment
 
-We currently use an average of score from the following dictionaries:
+To reduce ambiguity we're taking sentiment values from: [sentimental](https://github.com/7compass/sentimental). The plan is to update & refine this as we move on.
 
-* [sad_panda](https://github.com/mattThousand/sad_panda/blob/master/lib/sad_panda/emotions/term_polarities.rb) (this does a little more than a simple lookup)
-* [sentiment_lib](https://github.com/nzaillian/sentiment_lib/blob/master/lib/sentiment_lib/data/analysis/basic_dict/words.txt)
-* [simple_sentiment](https://github.com/jherr/sentiment/blob/master/lib/simple_sentiment/dictionary.rb)
-
-Is `-2, -1, 0, 1, 2` the best course of action here? Why not choose a dictionary and use the values in there?
-
+Running `ruby lookup.rb {WORD}` from the root of the project runs a simple script to get a score for the word.
 
 ##Format
 Comments & Justification:
