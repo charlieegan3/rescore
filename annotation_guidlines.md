@@ -173,17 +173,17 @@ JSON:
       "body": ""
     },
     "annotated": {
-      "overall" : "(+ve/-ve/neutral)"
-      "sentences": [
+      "overall" : "(+ve/-ve/neutral)",
+      "sentences" : [
         {
           "text": "",
-          "aspects": [
+          "aspects" : [
             {
               "name": "",
               "source": "",
               "sentiment": ""
-            },...]
-          "comments": ""
+            },...],
+          "comments" : ""
          }
       ]
     }
