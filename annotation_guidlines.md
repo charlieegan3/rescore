@@ -144,7 +144,7 @@ Original Review
 	-Film Genre
 	-Source
 	-Rating
-	-Helpfulness Scores (high/med/low)
+	-Helpfulness Scores (upvotes / downvotes)
 	-Body Text (On *one* line)
 
 Annotated:
