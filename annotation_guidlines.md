@@ -145,7 +145,7 @@ Original Review
 	-Source
 	-Rating
 	-Helpfulness Scores (high/med/low)
-	-Body Text
+	-Body Text (On *one* line)
 
 Annotated:
 Overall Sentiment: (+ve/-ve/neutral)
