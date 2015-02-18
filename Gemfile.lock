@@ -78,6 +78,8 @@ GEM
     dotenv (1.0.2)
     erubis (2.7.0)
     execjs (2.2.2)
+    factory_girl (4.5.0)
+      activesupport (>= 3.0.0)
     ffi (1.9.6)
     foreman (0.77.0)
       dotenv (~> 1.0.2)
@@ -259,6 +261,7 @@ DEPENDENCIES
   delayed_job_active_record
   descriptive_statistics
   engtagger!
+  factory_girl
   foreman
   foundation-rails
   googleajax
