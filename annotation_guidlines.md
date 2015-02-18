@@ -56,6 +56,7 @@ plot:
   'character' ->             50,
   'journey' ->               30,
   'persona' ->               20
+  'predictable' ->           80,
   
 dialog:
   'dialog' ->                100,
@@ -105,7 +106,21 @@ length:
   'dragged' ->             100,
   'boring' ->              50,
   'long' ->                50,
+  'bloated' ->             70	
 	...
+	
+credibility:
+  'true to the book' ->    100,
+  'believable' ->          100,
+  'true' ->                80,
+  'truthful' ->            80,
+  'truthfully' ->          70,
+  'honest' ->              70,
+  'implausible' ->         100,
+  'far-fetched' ->         100,
+  'improbable' ->          100,
+  ...
+  
 ```
 
 ###Sentiment
