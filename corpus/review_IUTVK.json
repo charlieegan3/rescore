@@ -1,0 +1,84 @@
+{
+  "title": "The Hobbit: The Battle of the Five Armies",
+  "genres": "Action, Adventure",
+  "source": "40/70",
+  "author": "Charlie Egan",
+  "body": "A great ending to one of the best trilogys in its genre. I loved every part. Great in every possible way. We will all miss this characters, Middle Eart and Peter Jackson audacity and creative vision. All six films are now part of the greatest fantasy films ever made. I'm glad i had the chance to witness them all.e",
+  "annotated_sentences": [
+    {
+      "text": "A great ending to one of the best trilogys in its genre.",
+      "aspects": {
+        "movie": {
+          "words": [
+            "great ending to one of the best trilogys"
+          ],
+          "score": "2"
+        }
+      },
+      "comment": ""
+    },
+    {
+      "text": "I loved every part.",
+      "aspects": {
+        "movie": {
+          "words": [
+            "every part"
+          ],
+          "score": "2"
+        }
+      },
+      "comment": "every part to movie keywords"
+    },
+    {
+      "text": "Great in every possible way.",
+      "aspects": {
+        "movie": {
+          "words": [
+            ""
+          ],
+          "score": "2"
+        }
+      },
+      "comment": "no noun represents the movie, movie is the default focus"
+    },
+    {
+      "text": "We will all miss this characters, Middle Eart and Peter Jackson audacity and creative vision.",
+      "aspects": {
+        "plot": {
+          "words": [
+            "characters",
+            "character"
+          ],
+          "score": "1"
+        }
+      },
+      "comment": ""
+    },
+    {
+      "text": "All six films are now part of the greatest fantasy films ever made.",
+      "aspects": {
+        "movie": {
+          "words": [
+            "all six films"
+          ],
+          "score": "2"
+        }
+      },
+      "comment": ""
+    },
+    {
+      "text": "I'm glad i had the chance to witness them all.e",
+      "aspects": {
+        "movie": {
+          "words": [
+            "them all"
+          ],
+          "score": "1"
+        }
+      },
+      "comment": ""
+    }
+  ],
+  "overall": "2",
+  "comment": ""
+}
