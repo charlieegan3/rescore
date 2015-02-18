@@ -235,3 +235,32 @@ Sample XML:
   </annotated>
 </movie>
 ```
+
+Sample JSON:
+
+```json
+{
+  "movie": {
+    "original": {
+      "title": "The Hobbit: An Unexpected Journey",
+      "genre": "Adventure",
+      "source": "IMDb",
+      "rating": "5",
+      "helpfullness": "0.9",
+      "body": "{{long drawn-out review by a disappointed fan}}"
+    },
+    "annotated": {
+      "sentence": {
+        "text": "This film was a mega disappointment.",
+        "aspects": {
+          "name": "movie",
+          "source": "film",
+          "sentiment": "SCORE"
+        },
+        "comments": "No comments for this sentence"
+      }
+    }
+  }
+}
+
+```
