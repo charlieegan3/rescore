@@ -131,64 +131,6 @@ To reduce ambiguity we're taking sentiment values from: [sentimental](https://gi
 Running `ruby lookup.rb {WORD}` from the root of the project runs a simple script to get a score for the word.
 
 ##Format
-Comments & Justification:
+Choose reviews based on the criteria in review selection.
 
-* Annotated reviews need to be 'machine readable' and convertible to XML
-* This is the 1st stage - only simple reviews **as described in 'Review Selection'**
-* If you need to write a comment consider the suitability of the review
-
-Human:
-
-```
-Original Review
-	-Film Title
-	-Film Genre
-	-Source
-	-Rating
-	-Helpfulness Scores (upvotes / downvotes)
-	-Body Text (On *one* line)
-
-Annotated:
-Overall Sentiment: (+ve/-ve/neutral)
-For each sentence:
-	-Original Sentence Text
-	For each mentioned aspect:
-		-Aspect Name
-		-Derived from word or phrase
-		-Suggested sentiment value
-	Annotator Comments
-	
-```
-
-JSON:
-
-```
-{
-  "movie": {
-    "original": {
-      "title": "",
-      "genre": "",
-      "source": "",
-      "rating": "",
-      "helpfullness": "",
-      "body": ""
-    },
-    "annotated": {
-      "overall" : "(+ve/-ve/neutral)",
-      "sentences" : [
-        {
-          "text": "",
-          "aspects" : [
-            {
-              "name": "",
-              "source": "",
-              "sentiment": ""
-            },...],
-          "comments" : ""
-         }
-      ]
-    }
-  }
-}
-
-```
+Use `ruby corpus/annotation_assistant.rb` to guide you through the process. It will save a `.json` file at the end.
