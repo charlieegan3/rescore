@@ -1,0 +1,53 @@
+{
+  "title": "Kingsman: The Secret Service",
+  "genres": "Action, Adventure, Thriller, Comedy, Crime",
+  "source": "http://www.metacritic.com/movie/kingsman-the-secret-service/user-reviews",
+  "score": "9/10",
+  "helpfulness": "3/6",
+  "author": "Charlie Egan",
+  "body": "This movie was so good. Some absolutely amazingly filmed scenes and the music was spot on. If you want to have a blast at the theaters this is the movie to see right now, highly recommend it.",
+  "annotated_sentences": [
+    {
+      "text": "This movie was so good.",
+      "aspects": {
+        "movie": {
+          "words": [
+            "This movie"
+          ],
+          "score": "1",
+          "justification": "so good"
+        }
+      },
+      "comment": "so good < incredible"
+    },
+    {
+      "text": "Some absolutely amazingly filmed scenes and the music was spot on. If you want to have a blast at the theaters this is the movie to see right now, highly recommend it.",
+      "aspects": {
+        "movie": {
+          "words": [
+            "the movie"
+          ],
+          "score": "2",
+          "justification": "highly recommend, the movie to see right now, have a blast"
+        },
+        "sound": {
+          "words": [
+            "music"
+          ],
+          "score": "2",
+          "justification": "spot on"
+        },
+        "cinematography": {
+          "words": [
+            "filmed scenes"
+          ],
+          "score": "2",
+          "justification": "absolutely amazingly"
+        }
+      },
+      "comment": "added new aspect cinematography, filmed scene didn't fit elsewhere"
+    }
+  ],
+  "overall": "2",
+  "comment": "demo video review"
+}
