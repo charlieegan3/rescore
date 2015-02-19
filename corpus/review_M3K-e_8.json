@@ -1,0 +1,102 @@
+{
+  "title": "Ex Machina",
+  "genres": "Drama, Sci-fi",
+  "source": "10/12",
+  "author": "Charlie Egan",
+  "body": "I rarely do this because there is so much rubbish out there but I'm going to recommend a movie. Writer Director Alex Garland has done an amazing job, it's beautifully shot, fantastically lit, intelligently written, brilliantly cast. the edit is original and brave, as is the direction of the edit, There is nothing superfluous, to the contrary it' has a sharp Zen like quality, clearly the application of a disciplined mind.The movie is's self is engaging, thoroughly watchable, the characters are simple and yet layered with complexity. The film strikes the perfect balance of not spoon feeding and not dumbing down but not being too arty or intellectual just for the sake of it. Best seen in a cinema I reckon.e",
+  "annotated_sentences": [
+    {
+      "text": "I rarely do this because there is so much rubbish out there but I'm going to recommend a movie.",
+      "aspects": {
+        "movie": {
+          "words": [
+            "a movie"
+          ],
+          "score": "1"
+        }
+      },
+      "comment": "the conversation about the movie is negative in other reviews"
+    },
+    {
+      "text": "Writer Director Alex Garland has done an amazing job, it's beautifully shot, fantastically lit, intelligently written, brilliantly cast.",
+      "aspects": {
+        "cast": {
+          "words": [
+            "cast"
+          ],
+          "score": "2"
+        },
+        "vision": {
+          "words": [
+            "beautiful"
+          ],
+          "score": "2"
+        },
+        "dialog": {
+          "words": [
+            "written"
+          ],
+          "score": "2"
+        },
+        "editing": {
+          "words": [
+            "shot"
+          ],
+          "score": "2"
+        }
+      },
+      "comment": "is intelligently written about dialog or plot? I said dialog here."
+    },
+    {
+      "text": "the edit is original and brave, as is the direction of the edit, There is nothing superfluous, to the contrary it' has a sharp Zen like quality, clearly the application of a disciplined mind.The movie is's self is engaging, thoroughly watchable, the characters are simple and yet layered with complexity.",
+      "aspects": {
+        "plot": {
+          "words": [
+            "characters",
+            "character"
+          ],
+          "score": "1"
+        },
+        "editing": {
+          "words": [
+            "the edit"
+          ],
+          "score": "2"
+        },
+        "length": {
+          "words": [
+            "nothing superfluous"
+          ],
+          "score": "1"
+        }
+      },
+      "comment": "I think nothing superfluous is a positive comment about length"
+    },
+    {
+      "text": "The film strikes the perfect balance of not spoon feeding and not dumbing down but not being too arty or intellectual just for the sake of it.",
+      "aspects": {
+        "movie": {
+          "words": [
+            "film"
+          ],
+          "score": "2"
+        }
+      },
+      "comment": "do we need a complexity aspect? or even a arty vs plain aspect?"
+    },
+    {
+      "text": "Best seen in a cinema I reckon.e",
+      "aspects": {
+        "movie": {
+          "words": [
+            ""
+          ],
+          "score": "1"
+        }
+      },
+      "comment": "I think this is positive, he may also be saying the movie wouldn't work off the big screen"
+    }
+  ],
+  "overall": "2",
+  "comment": "there are a number of suggested amendments in the comments on sentences"
+}
