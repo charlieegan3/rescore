@@ -196,4 +196,8 @@ review[:annotated_sentences] = annotated_sentences
 print 'Overall Sentiment: [-2, -1, 0, 1, 2]'.red; review[:overall] = gets.chomp
 print 'Final Comment: '.red; review[:comment] = gets.chomp
 
-File.open("review_#{SecureRandom.urlsafe_base64(5)}.json", 'w') { |file| file.write(JSON.pretty_generate(review)) }
+
+filename = "review_#{SecureRandom.hex(10)[0..4]}.json"
+File.open(filename, 'w') { |file| file.write(JSON.pretty_generate(review)) }
+system('clear')
+puts "Saved: ".green + filename
