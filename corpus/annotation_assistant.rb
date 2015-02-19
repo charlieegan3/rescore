@@ -1,3 +1,6 @@
+puts 'You will need these gems: punkt-segmenter, securerandom, colored, json'
+
+
 require 'punkt-segmenter'
 require 'securerandom'
 require 'colored'
