@@ -1,0 +1,128 @@
+{
+  "title": "Titanic",
+  "genres": "Drama, Romance",
+  "source": "imdb",
+  "score" : "10/10",
+  "helpfulness" : "40/70",
+  "author": "Charlie Egan",
+  "body": "To all the miserable people who have done everything from complain about the dialogue, the budget, the this and the that....who wants to hear it? IF you missed the point of this beyond-beautiful movie, that's your loss. The rest of us who deeply love this movie do not care what you think. I am a thirthysomething guy who has seen thousands of movies in my life, and this one stands in its own entity, in my book. It was not supposed to be a documentary, or a completely factual account of what happened that night. It is the most amazing love story ever attempted. I know that it is the cynical 90's and the millennium has everyone in a tizzy, but come on. Someone on this comments board complained that it made too much money! How lame is that? It made bundles of money in every civilized country on the planet, and is the top grossing film in the planet. I will gladly side with the majority this time around. Okay, cynics, time to crawl back under your rock, I am done.e",
+  "annotated_sentences": [
+    {
+      "text": "To all the miserable people who have done everything from complain about the dialogue, the budget, the this and the that....who wants to hear it?",
+      "aspects": {
+        "dialog": {
+          "words": [
+            "dialog",
+            "dialogue"
+          ],
+          "score": "0"
+        }
+      },
+      "comment": "talks about other review, and reviewers"
+    },
+    {
+      "text": "IF you missed the point of this beyond-beautiful movie, that's your loss.",
+      "aspects": {
+        "movie": {
+          "words": [
+            "beyond-beautiful movie"
+          ],
+          "score": "2"
+        }
+      },
+      "comment": ""
+    },
+    {
+      "text": "The rest of us who deeply love this movie do not care what you think.",
+      "aspects": {
+        "movie": {
+          "words": [
+            "this movie"
+          ],
+          "score": "2"
+        }
+      },
+      "comment": ""
+    },
+    {
+      "text": "I am a thirthysomething guy who has seen thousands of movies in my life, and this one stands in its own entity, in my book.",
+      "aspects": {
+        "movie": {
+          "words": [
+            "this one"
+          ],
+          "score": "2"
+        }
+      },
+      "comment": "one stands in its own entity is +ve"
+    },
+    {
+      "text": "It was not supposed to be a documentary, or a completely factual account of what happened that night.",
+      "aspects": {
+      },
+      "comment": "to complex"
+    },
+    {
+      "text": "It is the most amazing love story ever attempted.",
+      "aspects": {
+        "movie": {
+          "words": [
+            "It"
+          ],
+          "score": "2"
+        },
+        "plot": {
+          "words": [
+            "story"
+          ],
+          "score": "2"
+        }
+      },
+      "comment": ""
+    },
+    {
+      "text": "I know that it is the cynical 90's and the millennium has everyone in a tizzy, but come on.",
+      "aspects": {
+      },
+      "comment": ""
+    },
+    {
+      "text": "Someone on this comments board complained that it made too much money!",
+      "aspects": {
+      },
+      "comment": ""
+    },
+    {
+      "text": "How lame is that?",
+      "aspects": {
+      },
+      "comment": ""
+    },
+    {
+      "text": "It made bundles of money in every civilized country on the planet, and is the top grossing film in the planet.",
+      "aspects": {
+        "movie": {
+          "words": [
+            "It"
+          ],
+          "score": "0"
+        }
+      },
+      "comment": ""
+    },
+    {
+      "text": "I will gladly side with the majority this time around.",
+      "aspects": {
+      },
+      "comment": ""
+    },
+    {
+      "text": "Okay, cynics, time to crawl back under your rock, I am done.e",
+      "aspects": {
+      },
+      "comment": ""
+    }
+  ],
+  "overall": "2",
+  "comment": "review talks mostly about other reviewers and reviews, little content"
+}
