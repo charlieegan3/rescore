@@ -145,7 +145,7 @@ Punkt::SentenceTokenizer.new(review[:body]).
     end
   end
   puts 'Found: '.red + aspects.keys.join(', ')
-  puts 'Got one too many? Enter it below to remove it.'.red
+  puts 'Type an element to remove it from the list'.red
   puts 'Otherwise, enter to continue...'.green
   input = ''
   loop do
@@ -155,7 +155,7 @@ Punkt::SentenceTokenizer.new(review[:body]).
     puts 'Look ok? ['.red + aspects.keys.join(', ') + '] done? (enter to continue)'.red
   end
 
-  puts 'Missed one? Enter it below.'.red
+  puts 'Is the list missing an aspect thats mentioned? If so, type it below'.red
   puts 'Remember, ONLY one of these: '.black_on_red + keywords.keys.join(" ")
   puts 'Otherwise, enter to continue...'.green
   input = ''
@@ -179,8 +179,10 @@ Punkt::SentenceTokenizer.new(review[:body]).
   aspects.each do |k, v|
     puts 'Enter a sentiment score from [-2, -1, 0, 1, 2] for '.red + k.to_s
     score = gets.chomp
-    # add justification
-    aspects[k] = {words: v, score: score}
+    puts 'Enter the key phrase or word that justifies this score for: '.red + k.to_s
+    puts 'e.g. "crappy" and not "crappy movie"'.blue
+    justification = gets.chomp
+    aspects[k] = {words: v, score: score, justification: justification}
   end
   puts 'So the aspect list with scores is:'.red
   aspects.map {|k, v|
