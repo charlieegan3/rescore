@@ -110,15 +110,15 @@ puts 'ctrl+C to exit any time'.red
 print 'Film Title (e.g The Hobbit): '.green; review[:title] = gets.chomp
 print 'Genre(s) (e.g Action, Adventure): '.green; review[:genres] = gets.chomp
 print 'Review Source (e.g www.imdb.com/title/...): '.green; review[:source] = gets.chomp
-print 'Review Score: (out of 10, e.g 7/10): '.green; review[:source] = gets.chomp
-print 'Review Helpfulness Score: (e.g 100/120) :'.green; review[:source] = gets.chomp
+print 'Review Score: (out of 10, e.g 7/10): '.green; review[:score] = gets.chomp
+print 'Review Helpfulness Score: (e.g 100/120) :'.green; review[:helpfulness] = gets.chomp
 print 'Your Name: '.green; review[:author] = gets.chomp
 print 'Body (Paste review , type exit when done): '.green; review[:body] = ''
 
 while(review[:body][-4..-1] != 'exit') do
   review[:body] += gets.chomp
 end
-review[:body] = review[:body][0..review[:body].length - 4]
+review[:body] = review[:body][0..review[:body].length - 5]
 
 
 print 'Review Entry Complete. Proceed to analysis? (y/n)'.green
@@ -179,6 +179,7 @@ Punkt::SentenceTokenizer.new(review[:body]).
   aspects.each do |k, v|
     puts 'Enter a sentiment score from [-2, -1, 0, 1, 2] for '.red + k.to_s
     score = gets.chomp
+    # add justification
     aspects[k] = {words: v, score: score}
   end
   puts 'So the aspect list with scores is:'.red
