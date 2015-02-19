@@ -165,7 +165,7 @@ Punkt::SentenceTokenizer.new(review[:body]).
 
     puts 'Enter the phrase or word that suggests this:'.red
     spotted = gets.chomp
-    next if input == '' || spotted == '' || !keywords.keys.include?(input.to_sym)
+    next if input == '' || spotted == ''
     aspects[input] = [spotted]
     puts 'Look ok? ['.red + aspects.keys.join(', ') + '] done? (enter to continue)'.red
   end
