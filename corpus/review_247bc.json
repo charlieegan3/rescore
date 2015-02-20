@@ -1,0 +1,19 @@
+{
+  "title": "matrix",
+  "genres": "scifi",
+  "source": "imdb",
+  "score": "9/10",
+  "helpfulness": "100",
+  "author": "donna",
+  "body": "it was shit",
+  "annotated_sentences": [
+    {
+      "text": "it was shit",
+      "aspects": {
+      },
+      "comment": "not really"
+    }
+  ],
+  "overall": "1",
+  "comment": "no"
+}
