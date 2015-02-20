@@ -1,0 +1,199 @@
+{
+  "title": "The Shining",
+  "genres": "Horror",
+  "source": "http://www.imdb.com/title/tt0081505/reviews?ref_=tt_ov_rt",
+  "score": "9/10",
+  "helpfulness": "208/279",
+  "author": "FlickJunkie",
+  "body": "Chilling, majestic piece of cinematic fright, this film combines all the great elements of an intellectual thriller, with the grand vision of a director who has the instinctual capacity to pace a moody horror flick within the realm of his filmmaking genius that includes an eye for the original shot, an ice-cold soundtrack and an overall sense of dehumanization. This movie cuts through all the typical horror movies like a red-poker through a human eye, as it allows the viewer to not only feel the violence and psychosis of its protagonist, but appreciate the seed from which the derangement stems. One of the scariest things for people to face is the unknown and this film presents its plotting with just that thought in mind. The setting is perfect, in a desolate winter hideaway. The quietness of the moment is a character in itself, as the fermenting aggressor in Jack Torrance's mind wallows in this idle time, and breeds the devil's new playground. I always felt like the presence of evil was dormant in all of our minds, with only the circumstances of the moment, and the reasons given therein, needed to wake its violent ass and pounce over its unsuspecting victims. This film is a perfect example of this very thought.And it is within this film's subtle touches of the canvas, the clackity-clacks of the young boy's big wheel riding along the empty hallways of the hotel, the labyrinthian garden representing the mind's fine line between sane and insane, Kubrick's purposely transfixed editing inconsistencies, continuity errors and set mis-arrangements, that we discover a world guided by the righteous and tangible, but coaxed away by the powerful and unknown. I have never read the book upon which the film is based, but without that as a comparison point, I am proud to say that this is one of the most terrifying films that I have ever seen. I thought that the runtime of the film could've been cut by a little bit, but then again, I am not one of the most acclaimed directors in the history of film, so maybe I should keep my two-cent criticisms over a superb film, to myself. All in all, this movie captures your attention with its grand form and vision, ropes you in with some terror and eccentric direction, and ties you down and stabs you in the heart with its cold-eyed view of the man's mind gone overboard, creepy atmosphere and the loss of humanity.",
+  "annotated_sentences": [
+    {
+      "text": "Chilling, majestic piece of cinematic fright, this film combines all the great elements of an intellectual thriller, with the grand vision of a director who has the instinctual capacity to pace a moody horror flick within the realm of his filmmaking genius that includes an eye for the original shot, an ice-cold soundtrack and an overall sense of dehumanization.",
+      "aspects": {
+        "movie": {
+          "words": [
+            "Chilling, majestic piece of cinematic fright,"
+          ],
+          "score": "2",
+          "justification": "great elements"
+        },
+        "sound": {
+          "words": [
+            "sound"
+          ],
+          "score": "2",
+          "justification": "ice-cold soundtrack"
+        },
+        "vision": {
+          "words": [
+            "vision"
+          ],
+          "score": "grand vision",
+          "justification": "grand vision"
+        }
+      },
+      "comment": ""
+    },
+    {
+      "text": "This movie cuts through all the typical horror movies like a red-poker through a human eye, as it allows the viewer to not only feel the violence and psychosis of its protagonist, but appreciate the seed from which the derangement stems.",
+      "aspects": {
+        "movie": {
+          "words": [
+            "This movie"
+          ],
+          "score": "2",
+          "justification": "through all the typical horror movies like a red-poker through a human eye,"
+        },
+        "vision": {
+          "words": [
+            "allows the viewer to not only feel"
+          ],
+          "score": "2",
+          "justification": ""
+        }
+      },
+      "comment": ""
+    },
+    {
+      "text": "One of the scariest things for people to face is the unknown and this film presents its plotting with just that thought in mind.",
+      "aspects": {
+        "movie": {
+          "words": [
+            "this film presents"
+          ],
+          "score": "2",
+          "justification": ""
+        },
+        "plot": {
+          "words": [
+            "plot"
+          ],
+          "score": "plotting",
+          "justification": ""
+        }
+      },
+      "comment": ""
+    },
+    {
+      "text": "The setting is perfect, in a desolate winter hideaway.",
+      "aspects": {
+        "movie": {
+          "words": [
+            "The setting"
+          ],
+          "score": "1",
+          "justification": ""
+        }
+      },
+      "comment": ""
+    },
+    {
+      "text": "The quietness of the moment is a character in itself, as the fermenting aggressor in Jack Torrance's mind wallows in this idle time, and breeds the devil's new playground.",
+      "aspects": {
+        "movie": {
+          "words": [
+            "moment is a character"
+          ],
+          "score": "0",
+          "justification": ""
+        },
+        "plot": {
+          "words": [
+            "character"
+          ],
+          "score": "1",
+          "justification": ""
+        }
+      },
+      "comment": ""
+    },
+    {
+      "text": "I always felt like the presence of evil was dormant in all of our minds, with only the circumstances of the moment, and the reasons given therein, needed to wake its violent ass and pounce over its unsuspecting victims.",
+      "aspects": {
+      },
+      "comment": ""
+    },
+    {
+      "text": "This film is a perfect example of this very thought.And it is within this film's subtle touches of the canvas, the clackity-clacks of the young boy's big wheel riding along the empty hallways of the hotel, the labyrinthian garden representing the mind's fine line between sane and insane, Kubrick's purposely transfixed editing inconsistencies, continuity errors and set mis-arrangements, that we discover a world guided by the righteous and tangible, but coaxed away by the powerful and unknown.",
+      "aspects": {
+        "movie": {
+          "words": [
+            " This film"
+          ],
+          "score": "2",
+          "justification": ""
+        },
+        "editing": {
+          "words": [
+            "editing"
+          ],
+          "score": "2",
+          "justification": "transfixed editing"
+        },
+        "length": {
+          "words": [
+            "long"
+          ],
+          "score": "0",
+          "justification": ""
+        }
+      },
+      "comment": ""
+    },
+    {
+      "text": "I have never read the book upon which the film is based, but without that as a comparison point, I am proud to say that this is one of the most terrifying films that I have ever seen.",
+      "aspects": {
+        "movie": {
+          "words": [
+            "the film"
+          ],
+          "score": "2",
+          "justification": "most terrifying films"
+        }
+      },
+      "comment": ""
+    },
+    {
+      "text": "I thought that the runtime of the film could've been cut by a little bit, but then again, I am not one of the most acclaimed directors in the history of film, so maybe I should keep my two-cent criticisms over a superb film, to myself.",
+      "aspects": {
+        "movie": {
+          "words": [
+            "the film"
+          ],
+          "score": "1",
+          "justification": "film"
+        },
+        "plot": {
+          "words": [
+            "story"
+          ],
+          "score": "1",
+          "justification": ""
+        }
+      },
+      "comment": ""
+    },
+    {
+      "text": "All in all, this movie captures your attention with its grand form and vision, ropes you in with some terror and eccentric direction, and ties you down and stabs you in the heart with its cold-eyed view of the man's mind gone overboard, creepy atmosphere and the loss of humanity.",
+      "aspects": {
+        "movie": {
+          "words": [
+            "the movie"
+          ],
+          "score": "2",
+          "justification": "this movie captures"
+        },
+        "vision": {
+          "words": [
+            "vision"
+          ],
+          "score": "2",
+          "justification": "vision"
+        }
+      },
+      "comment": ""
+    }
+  ],
+  "overall": "2",
+  "comment": ""
+}
