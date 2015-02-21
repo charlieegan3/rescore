@@ -64,6 +64,7 @@ GEM
       coffee-script-source
       execjs
     coffee-script-source (1.8.0)
+    colored (1.2)
     crack (0.4.2)
       safe_yaml (~> 1.0.0)
     crass (0.2.1)
@@ -256,6 +257,7 @@ DEPENDENCIES
   binding_of_caller
   capybara
   coffee-rails (~> 4.0.0)
+  colored
   delayed_job_active_record
   descriptive_statistics
   engtagger!
