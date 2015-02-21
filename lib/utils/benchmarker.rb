@@ -1,5 +1,4 @@
 require_relative '../../config/environment'
-sentiment_analyzer = Sentiment::SentimentAnalyzer.new
 
 def format_aspect_hash(aspect_hash)
   aspect_hash.
@@ -8,11 +7,12 @@ def format_aspect_hash(aspect_hash)
     join(', ')
 end
 
-annotations, correct, wrong, sentiment_delta = 0, 0, 0, 0
+sentiment_analyzer = Sentiment::SentimentAnalyzer.new
 
 reviews = Dir['corpus/*.json']
-
 exit if reviews.empty?
+
+annotations, correct, wrong, sentiment_delta = 0, 0, 0, 0
 
 reviews.each do |annotated_review|
   puts " #{annotated_review} ".black_on_green
@@ -47,4 +47,3 @@ puts "sentiment_delta: #{sentiment_delta}" + ' (total difference (annotated vs c
 score = (((correct - wrong).to_f / annotations) * 100).to_i
 puts '-' * 50
 puts "score: #{score}%" + ' (correct - wrong) of annotations'.green
-
