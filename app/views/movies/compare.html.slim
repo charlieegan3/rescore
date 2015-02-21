@@ -28,6 +28,29 @@
             td =distance_of_time_in_words(Time.new, movie.created_at).gsub('about ', '') + " ago"
 
 .row
+  .large-12.columns
+    .panel
+      h3 ="Summary"
+      -@summary.each do |section|
+        h4 =section[0].to_s.gsub('_', ' ').capitalize
+        p =section[1]
+      table.comparison-summary
+        tbody
+          -@winners.each do |item|
+            tr
+              td =item[0].to_s.gsub('_', ' ').capitalize
+              -if @winners[item[0]] == @movie_one.title
+                td
+                  span.success.label =@movie_one.title
+                td
+                  span.alert.label =@movie_two.title
+              -else
+                td
+                  span.alert.label =@movie_one.title
+                td
+                  span.success.label =@movie_two.title
+
+.row
   -[@movie_one, @movie_two].each do |movie|
     .large-6.columns
       p.title

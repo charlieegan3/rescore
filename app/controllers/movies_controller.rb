@@ -18,6 +18,10 @@ class MoviesController < ApplicationController
     if params[:filmone] && params[:filmtwo]
       @movie_one = Movie.fast_find(params[:filmone][:id])
       @movie_two = Movie.fast_find(params[:filmtwo][:id])
+      cmp = view_context.comparison_summary(@movie_one, @movie_two)
+      @summary = cmp[0]
+      @winners = cmp[1]
+
       render 'compare'
     else
       render 'choose_compare'
