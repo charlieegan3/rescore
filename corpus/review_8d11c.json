@@ -1,0 +1,196 @@
+{
+  "title": "The Shawshank Redemption",
+  "genres": "Drama",
+  "source": "http://www.imdb.com/title/tt0111161/reviews?ref_=tt_urv",
+  "score": "8/10",
+  "helpfulness": "870/1170",
+  "author": "Si Cole",
+  "body": "I believe that this film is the best story ever told on film, and I'm about to tell you why.Tim Robbins plays Andy Dufresne, a city banker, wrongfully convicted of murdering his wife and her lover. He is sent to Shawshank Prison in 1947 and receives a double life sentence for the crime. Andy forms an unlikely friendship with \"Red\" (Morgan Freeman), the man who knows how to get things. Andy faces many trials in prison, but forms an alliance with the wardens because he is able to use his banking experience to help the corrupt officials amass personal fortunes. The story unfolds....I was so impressed with how every single subplot was given a great deal of respect and attention from the director. The acting was world-class. I have never seen Tim Robbins act as well since, Morgan Freeman maybe (e.g. Seven). The twists were unexpected, an although this film had a familiar feel, it wasn't even slightly pretentious or cliched, it was original. The cinematography was grand and expressive. It gave a real impression of the sheer magnitude of this daunting prison.But the one thing which makes THE SHAWSHANK REDEMPTION stand above all other films, is the attention given to the story. The film depends on the story and the way in which it unravels. It's a powerful, poignant, thought-provoking, challenging film like no other. If Andy were to comment on this film, I think he might say: \"Get busy watching, or get busy dying.\" Take his advice.Thoroughly recommended.",
+  "annotated_sentences": [
+    {
+      "text": "I believe that this film is the best story ever told on film, and I'm about to tell you why.Tim Robbins plays Andy Dufresne, a city banker, wrongfully convicted of murdering his wife and her lover.",
+      "aspects": {
+        "plot": {
+          "words": [
+            "story"
+          ],
+          "score": "2",
+          "justification": "best"
+        }
+      },
+      "comment": ""
+    },
+    {
+      "text": "He is sent to Shawshank Prison in 1947 and receives a double life sentence for the crime.",
+      "aspects": {
+      },
+      "comment": "plot details"
+    },
+    {
+      "text": "Andy forms an unlikely friendship with \"Red\" (Morgan Freeman), the man who knows how to get things.",
+      "aspects": {
+      },
+      "comment": "plot details"
+    },
+    {
+      "text": "Andy faces many trials in prison, but forms an alliance with the wardens because he is able to use his banking experience to help the corrupt officials amass personal fortunes.",
+      "aspects": {
+        "plot": {
+          "words": [
+            "persona"
+          ],
+          "score": "0",
+          "justification": ""
+        },
+        "cast": {
+          "words": [
+            "persona"
+          ],
+          "score": "0",
+          "justification": ""
+        }
+      },
+      "comment": "plot details"
+    },
+    {
+      "text": "The story unfolds....I was so impressed with how every single subplot was given a great deal of respect and attention from the director.",
+      "aspects": {
+        "plot": {
+          "words": [
+            "story",
+            "plot"
+          ],
+          "score": "1",
+          "justification": "respect and attention"
+        }
+      },
+      "comment": ""
+    },
+    {
+      "text": "The acting was world-class.",
+      "aspects": {
+        "cast": {
+          "words": [
+            "acting"
+          ],
+          "score": "2",
+          "justification": "world class"
+        }
+      },
+      "comment": ""
+    },
+    {
+      "text": "I have never seen Tim Robbins act as well since, Morgan Freeman maybe (e.g. Seven).",
+      "aspects": {
+        "cast": {
+          "words": [
+            "act"
+          ],
+          "score": "1",
+          "justification": "never seen Tim Robbins act as well"
+        }
+      },
+      "comment": ""
+    },
+    {
+      "text": "The twists were unexpected, an although this film had a familiar feel, it wasn't even slightly pretentious or cliched, it was original.",
+      "aspects": {
+        "plot": {
+          "words": [
+            "twists"
+          ],
+          "score": "1",
+          "justification": "original"
+        }
+      },
+      "comment": ""
+    },
+    {
+      "text": "The cinematography was grand and expressive.",
+      "aspects": {
+        "vision": {
+          "words": [
+            "cinematography"
+          ],
+          "score": "1",
+          "justification": "grand"
+        }
+      },
+      "comment": ""
+    },
+    {
+      "text": "It gave a real impression of the sheer magnitude of this daunting prison.But the one thing which makes THE SHAWSHANK REDEMPTION stand above all other films, is the attention given to the story.",
+      "aspects": {
+        "movie": {
+          "words": [
+            "Shawshank Redemption"
+          ],
+          "score": "2",
+          "justification": "stand above all other films"
+        },
+        "plot": {
+          "words": [
+            "story"
+          ],
+          "score": "1",
+          "justification": "attention given to the story"
+        }
+      },
+      "comment": ""
+    },
+    {
+      "text": "The film depends on the story and the way in which it unravels.",
+      "aspects": {
+        "plot": {
+          "words": [
+            "story"
+          ],
+          "score": "0",
+          "justification": ""
+        }
+      },
+      "comment": "no real sentiment"
+    },
+    {
+      "text": "It's a powerful, poignant, thought-provoking, challenging film like no other.",
+      "aspects": {
+        "movie": {
+          "words": [
+            "film"
+          ],
+          "score": "2",
+          "justification": "powerful, poignant, thought-provoking, challenging"
+        }
+      },
+      "comment": ""
+    },
+    {
+      "text": "If Andy were to comment on this film, I think he might say: \"Get busy watching, or get busy dying.",
+      "aspects": {
+        "movie": {
+          "words": [
+            "film"
+          ],
+          "score": "1",
+          "justification": "get busy watching"
+        }
+      },
+      "comment": ""
+    },
+    {
+      "text": "\" Take his advice.Thoroughly recommended.",
+      "aspects": {
+        "movie": {
+          "words": [
+            "recommended"
+          ],
+          "score": "2",
+          "justification": "thoroughly recommended"
+        }
+      },
+      "comment": ""
+    }
+  ],
+  "overall": "2",
+  "comment": ""
+}
