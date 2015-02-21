@@ -23,5 +23,6 @@ module RescoreWebApp
     config.autoload_paths << Rails.root.join('lib')
     config.autoload_paths << Rails.root.join('lib/scrapers')
     config.autoload_paths << Rails.root.join('lib/modules')
+    config.autoload_paths << Rails.root.join('lib/utils')
   end
 end
