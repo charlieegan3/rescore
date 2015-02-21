@@ -5,6 +5,10 @@ require 'vcr'
 Delayed::Worker.delay_jobs = false
 
 RSpec.describe MoviesController, :type => :feature do
+  before(:each) do
+    stub_template "application/_topics_graph.html.erb" => "This content"
+  end
+
   describe 'search_by_title' do
     it 'returns the correct result' do
       # VCR.turn_off!
