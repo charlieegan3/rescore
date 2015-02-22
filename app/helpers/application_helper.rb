@@ -7,21 +7,46 @@ module ApplicationHelper
 
     # Aspect sentiment.
     m1.sentiment[:topics].each_with_index do |topic, i|
-      summary[:aspect_sentiment] += " People seem to like #{topic[0].to_s} more in #{m2.title}."; winners[:aspect_sentiment] = m2.title if m2.sentiment[:topics][i][1] && topic[1] > m2.sentiment[:topics][i][1]
-      summary[:aspect_sentiment] += " People seem to like #{topic[0].to_s} more in #{m1.title}."; winners[:aspect_sentiment] = m1.title if m2.sentiment[:topics][i][1] && topic[1] < m2.sentiment[:topics][i][1]
+      if m2.sentiment[:topics][i][1] && topic[1] > m2.sentiment[:topics][i][1]
+        summary[:aspect_sentiment] += " People seem to like #{topic[0].to_s} more in #{m1.title}."
+        winners[:aspect_sentiment] = m1.title
+      end
+      if m2.sentiment[:topics][i][1] && topic[1] < m2.sentiment[:topics][i][1]
+        summary[:aspect_sentiment] += " People seem to like #{topic[0].to_s} more in #{m2.title}."
+        winners[:aspect_sentiment] = m2.title 
+      end
     end
 
     # Aspect discussion focus.
     m1.stats[:topic_counts].each do |topic|
-      summary[:aspect_focus] += " People seem to talk more about #{topic[0].to_s} than in #{m2.title}."; winners[:aspect_focus] = m2.title if m2.stats[:topic_counts][topic[0]][1] && topic[1] > m2.stats[:topic_counts][topic[0]][1]
-      summary[:aspect_focus] += " People seem to talk more about #{topic[0].to_s} than in #{m1.title}."; winners[:aspect_focus] = m1.title if m2.stats[:topic_counts][topic[0]][1] && topic[1] < m2.stats[:topic_counts][topic[0]][1]
+      if m2.stats[:topic_counts][topic[0]][1] && topic[1] > m2.stats[:topic_counts][topic[0]][1]
+        summary[:aspect_focus] += " People seem to talk more about #{topic[0].to_s} in #{m2.title} than in #{m1.title}."
+        winners[:aspect_focus] = m1.title
+      end
+      if m2.stats[:topic_counts][topic[0]][1] && topic[1] < m2.stats[:topic_counts][topic[0]][1]
+        summary[:aspect_focus] += " People seem to talk more about #{topic[0].to_s} in #{m1.title} than in #{m2.title}."
+        winners[:aspect_focus] = m2.title
+      end
     end
 
-    # Review Sentiment Distribution.
-    summary[:review_range] += " #{m2.title} has a higher range of review ratings."; winners[:review_range] = m2.title if m2.sentiment[:distribution_stats][0] && m2.sentiment[:distribution_stats][0] > m1.sentiment[:distribution_stats][0]
-    summary[:review_range] += " #{m1.title} has a higher range of review ratings."; winners[:review_range] = m1.title if m2.sentiment[:distribution_stats][0] && m2.sentiment[:distribution_stats][0] < m1.sentiment[:distribution_stats][0]
-    summary[:review_variation] += " #{m2.title} has a higher variation of review ratings."; winners[:review_variation] = m2.title if m2.sentiment[:distribution_stats][1] && m2.sentiment[:distribution_stats][1] > m1.sentiment[:distribution_stats][1]
-    summary[:review_variation] += " #{m1.title} has a higher variation of review ratings."; winners[:review_variation] = m1.title if m2.sentiment[:distribution_stats][1] && m2.sentiment[:distribution_stats][1] < m1.sentiment[:distribution_stats][1]
+    # Review Sentiment distribution and variation.
+    if m2.sentiment[:distribution_stats][0] && m2.sentiment[:distribution_stats][0] > m1.sentiment[:distribution_stats][0]
+      summary[:review_range] += " #{m2.title} has a higher range of review ratings."
+      winners[:review_range] = m2.title
+    end
+    if m2.sentiment[:distribution_stats][0] && m2.sentiment[:distribution_stats][0] < m1.sentiment[:distribution_stats][0]
+      summary[:review_range] += " #{m1.title} has a higher range of review ratings."
+      winners[:review_range] = m1.title
+    end
+
+    if m2.sentiment[:distribution_stats][1] && m2.sentiment[:distribution_stats][1] > m1.sentiment[:distribution_stats][1]
+      summary[:review_variation] += " #{m2.title} has a higher variation of review ratings."
+      winners[:review_variation] = m2.title
+    end
+    if m2.sentiment[:distribution_stats][1] && m2.sentiment[:distribution_stats][1] < m1.sentiment[:distribution_stats][1]
+      summary[:review_variation] += " #{m1.title} has a higher variation of review ratings."
+      winners[:review_variation] = m1.title
+    end
 
     return [summary, winners]
   end
