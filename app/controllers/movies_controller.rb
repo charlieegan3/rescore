@@ -20,6 +20,8 @@ class MoviesController < ApplicationController
       @movie_two = Movie.fast_find(params[:filmtwo][:id])
       render 'compare'
     else
+      @movie_one, @movie_two = Movie.first, Movie.last
+      @movie_one, @movie_two = Movie.all.shuffle.take(2) if Movie.count > 1
       render 'choose_compare'
     end
   end
