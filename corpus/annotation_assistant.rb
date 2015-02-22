@@ -10,7 +10,7 @@ print 'Genre(s) (e.g Action, Adventure): '.green; review[:genres] = gets.chomp
 print 'Review Source (e.g www.imdb.com/title/...): '.green; review[:source] = gets.chomp
 print 'Review Score: (out of 10, e.g 7/10): '.green; review[:score] = gets.chomp
 print 'Review Helpfulness Score: (e.g 100/120) :'.green; review[:helpfulness] = gets.chomp
-print 'Your Name: '.green; review[:author] = gets.chomp
+print 'Your Own Name: (e.g. Charlie Egan)'.green; review[:author] = gets.chomp
 print 'Body (Paste review , type exit when done): '.green; review[:body] = ''
 
 while(review[:body][-4..-1] != 'exit') do
