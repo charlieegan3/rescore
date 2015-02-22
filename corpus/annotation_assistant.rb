@@ -1,5 +1,4 @@
 require_relative '../config/environment'
-require_relative 'keywords'
 
 review = {}
 
@@ -37,7 +36,7 @@ Punkt::SentenceTokenizer.new(review[:body]).
     aspects[:movie] = [spotted]
   end
 
-  KEYWORDS.each do |k, v|
+  ASPECTS.each do |k, v|
     v.keys.each do |term|
       aspects[k] += [term] if s.include? term
     end
@@ -54,7 +53,7 @@ Punkt::SentenceTokenizer.new(review[:body]).
   end
 
   puts 'Is the list missing an aspect thats mentioned? If so, type it below'.red
-  puts 'Remember, ONLY one of these: '.black_on_red + KEYWORDS.keys.join(" ")
+  puts 'Remember, ONLY one of these: '.black_on_red + ASPECTS.keys.join(" ")
   puts 'Otherwise, enter to continue...'.green
   input = ''
   loop do
