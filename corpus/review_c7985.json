@@ -1,0 +1,125 @@
+{
+  "title": "Birdman",
+  "genres": "Comedy, Drama",
+  "source": "imdb",
+  "score": "1/10",
+  "helpfulness": "379/653",
+  "author": "Charlie Egan",
+  "body": "I left feeling that I had wasted two hours of my life, and I'm not the type who watches pop features like Rocky XVII. I enjoy the art house genre that this clearly belongs to. I don't know if this is a spoiler alert or not, but if you're waiting for the moment when the loose ends are all tied together in any coherent manner, you will be waiting in vain. That said, Michael Keaton and the cast give wonderful if sometimes overacted performances. You can see why critics like it - it's not the pap that they are forced to view day in and day out because it's their job to watch it. Professional critics, for their own sanity, grasp at any opportunity to promote something different or unusual. But just because it's good for them doesn't make it good for us, the casual movie goer. Since this is a play within a movie that is set in a theater, I got the feeling that there are inside jokes that those in or familiar with the business (such as critics) will get but which is over the heads the audience.",
+  "annotated_sentences": [
+    {
+      "text": "I left feeling that I had wasted two hours of my life, and I'm not the type who watches pop features like Rocky XVII.",
+      "aspects": {
+      },
+      "comment": "this is perhaps about the length but isn't really focused enough to qualify"
+    },
+    {
+      "text": "I enjoy the art house genre that this clearly belongs to.",
+      "aspects": {
+        "movie": {
+          "words": [
+            "this"
+          ],
+          "score": "1",
+          "justification": "enjoy"
+        }
+      },
+      "comment": ""
+    },
+    {
+      "text": "I don't know if this is a spoiler alert or not, but if you're waiting for the moment when the loose ends are all tied together in any coherent manner, you will be waiting in vain.",
+      "aspects": {
+        "plot": {
+          "words": [
+            "the loose ends"
+          ],
+          "score": "-2",
+          "justification": "waiting in vain"
+        }
+      },
+      "comment": "quite a tough sentence"
+    },
+    {
+      "text": "That said, Michael Keaton and the cast give wonderful if sometimes overacted performances.",
+      "aspects": {
+        "cast": {
+          "words": [
+            "cast",
+            "performance"
+          ],
+          "score": "1",
+          "justification": "wonderful - overacted"
+        }
+      },
+      "comment": "this wonderful is toned down by overacted"
+    },
+    {
+      "text": "You can see why critics like it - it's not the pap that they are forced to view day in and day out because it's their job to watch it.",
+      "aspects": {
+        "movie": {
+          "words": [
+            "it"
+          ],
+          "score": "1",
+          "justification": "like"
+        },
+        "novelty": {
+          "words": [
+            "not the pap"
+          ],
+          "score": "1",
+          "justification": "not the pap"
+        }
+      },
+      "comment": "added novelty, this could also be originality"
+    },
+    {
+      "text": "Professional critics, for their own sanity, grasp at any opportunity to promote something different or unusual.",
+      "aspects": {
+        "novelty": {
+          "words": [
+            "different, unusual"
+          ],
+          "score": "1",
+          "justification": "different, unusual"
+        }
+      },
+      "comment": "this is going to be a very hard sentence to pass"
+    },
+    {
+      "text": "But just because it's good for them doesn't make it good for us, the casual movie goer.",
+      "aspects": {
+        "movie": {
+          "words": [
+            "it"
+          ],
+          "score": "-1",
+          "justification": "doesn't make it good"
+        }
+      },
+      "comment": ""
+    },
+    {
+      "text": "Since this is a play within a movie that is set in a theater, I got the feeling that there are inside jokes that those in or familiar with the business (such as critics) will get but which is over the heads the audience.",
+      "aspects": {
+        "movie": {
+          "words": [
+            "this"
+          ],
+          "score": "-1",
+          "justification": "over the heads"
+        },
+        "dialog": {
+          "words": [
+            "jokes"
+          ],
+          "score": "-1",
+          "justification": "over the heads"
+        }
+      },
+      "comment": "another tough sentence"
+    }
+  ],
+  "overall": "-2",
+  "comment": "this is a fairly negative review all round. It is also going to be a very complex one to correctly compute a score for. There are a lot of complex features."
+}
