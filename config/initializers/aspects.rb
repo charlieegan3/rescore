@@ -1,4 +1,4 @@
-KEYWORDS = {
+ASPECTS = {
   editing: {
     'editing' => 100,
     'effects' => 70,
