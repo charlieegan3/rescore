@@ -1,0 +1,182 @@
+{
+  "title": "Whiplash",
+  "genres": "drama",
+  "source": "http://www.imdb.com/title/tt2582802/reviews?ref_=tt_ov_rt",
+  "score": "10/10",
+  "helpfulness": "73/101",
+  "author": "Wojtek",
+  "body": "There is so many excellent great things to say about this film. To start off I will say it may be slow and to different for some to enjoy and so that I warn you. Now I will say that I can not express the idea enough of how surprising this film is. Jk Simmons does an outstanding performance as the highly unpredictable hair trigger tempered teacher Fletcher, Miles Teller an actor who I've only seen in mediocre comedies also shines in a breakthrough performance as the ambitious drummer Andrew. The performance are outstanding and that's just the tip of the iceberg.My favorite thing about this film is how it has created it's own one of a kind spot in the music genre of film, it's atmosphere is unlike any other as well. The idea that this film is one of a kind can't be stressed enough, I guarantee you cannot find another film out there like this. This film expresses a shockingly high intensity for a music film. I believe that Jk Simmons acting is what fueled a lot of the intensity. When you watch this film even though it's pace will seem slow to most it's intensity is impossible to miss.I can see how a lot of certain people may find this film hard to enjoy but for me this film as slow as it is couldn't have been more intense. The mere fact that a music film shows some strong intensity like this one did is mind blowing to me. I don't know how many of you had this same experience or something similar then you already know what I'm talking about. I have a good feeling and I'm hopeful this film rakes in some acting Oscars because this film deserves at least one. I haven't read anything on this films page and I'm sure others have expressed similar opinions and all I can say is listen and trust me. I'm praying you enjoy this film and experience it's one of a kind intensity just as I did. Thanks for reading my review and enjoy. ",
+  "annotated_sentences": [
+    {
+      "text": "There is so many excellent great things to say about this film.",
+      "aspects": {
+        "movie": {
+          "words": [
+            "this film"
+          ],
+          "score": "2",
+          "justification": " so many excellent great things to say about this film"
+        }
+      },
+      "comment": "not sure which part is relevant"
+    },
+    {
+      "text": "To start off I will say it may be slow and to different for some to enjoy and so that I warn you.",
+      "aspects": {
+        "movie": {
+          "words": [
+            "it"
+          ],
+          "score": "0",
+          "justification": "slow"
+        }
+      },
+      "comment": "not sure if this sentence makes sense"
+    },
+    {
+      "text": "Now I will say that I can not express the idea enough of how surprising this film is.",
+      "aspects": {
+        "movie": {
+          "words": [
+            "this film"
+          ],
+          "score": "0",
+          "justification": "surprising"
+        }
+      },
+      "comment": "surprising neutral?"
+    },
+    {
+      "text": "Jk Simmons does an outstanding performance as the highly unpredictable hair trigger tempered teacher Fletcher, Miles Teller an actor who I've only seen in mediocre comedies also shines in a breakthrough performance as the ambitious drummer Andrew.",
+      "aspects": {
+        "cast": {
+          "words": [
+            "performance"
+          ],
+          "score": "2",
+          "justification": "outstanding"
+        }
+      },
+      "comment": ""
+    },
+    {
+      "text": "The performance are outstanding and that's just the tip of the iceberg.My favorite thing about this film is how it has created it's own one of a kind spot in the music genre of film, it's atmosphere is unlike any other as well.",
+      "aspects": {
+        "movie": {
+          "words": [
+            "it's atmosphere"
+          ],
+          "score": "1",
+          "justification": "unlike any other"
+        },
+        "sound": {
+          "words": [
+            "music"
+          ],
+          "score": "1",
+          "justification": " one of a kind"
+        },
+        "cast": {
+          "words": [
+            "performance"
+          ],
+          "score": "2",
+          "justification": "outstanding"
+        }
+      },
+      "comment": "what a bullcrap"
+    },
+    {
+      "text": "The idea that this film is one of a kind can't be stressed enough, I guarantee you cannot find another film out there like this.",
+      "aspects": {
+        "movie": {
+          "words": [
+            "this film"
+          ],
+          "score": "1",
+          "justification": "one of a kind"
+        }
+      },
+      "comment": ""
+    },
+    {
+      "text": "This film expresses a shockingly high intensity for a music film.",
+      "aspects": {
+      },
+      "comment": ""
+    },
+    {
+      "text": "I believe that Jk Simmons acting is what fueled a lot of the intensity.",
+      "aspects": {
+        "cast": {
+          "words": [
+            "acting"
+          ],
+          "score": "1",
+          "justification": " fueled a lot of the intensity"
+        }
+      },
+      "comment": ""
+    },
+    {
+      "text": "When you watch this film even though it's pace will seem slow to most it's intensity is impossible to miss.I can see how a lot of certain people may find this film hard to enjoy but for me this film as slow as it is couldn't have been more intense.",
+      "aspects": {
+        "movie": {
+          "words": [
+            "this film"
+          ],
+          "score": "1",
+          "justification": " couldn't have been more intense"
+        }
+      },
+      "comment": "not sure if the current format of this script allows to add multiple scores for one aspect :(, see \"it's pace will seem slow\""
+    },
+    {
+      "text": "The mere fact that a music film shows some strong intensity like this one did is mind blowing to me. I don't know how many of you had this same experience or something similar then you already know what I'm talking about.",
+      "aspects": {
+        "movie": {
+          "words": [
+            " a music film"
+          ],
+          "score": "2",
+          "justification": "mind blowing"
+        },
+        "sound": {
+          "words": [
+            "music"
+          ],
+          "score": "0",
+          "justification": "0"
+        }
+      },
+      "comment": "ignore music"
+    },
+    {
+      "text": "I have a good feeling and I'm hopeful this film rakes in some acting Oscars because this film deserves at least one.",
+      "aspects": {
+      },
+      "comment": "ignore"
+    },
+    {
+      "text": "I haven't read anything on this films page and I'm sure others have expressed similar opinions and all I can say is listen and trust me. I'm praying you enjoy this film and experience it's one of a kind intensity just as I did.",
+      "aspects": {
+        "movie": {
+          "words": [
+            "this film"
+          ],
+          "score": "2",
+          "justification": "it's one of a kind intensity"
+        }
+      },
+      "comment": ""
+    },
+    {
+      "text": "Thanks for reading my review and enjoy. ",
+      "aspects": {
+      },
+      "comment": ""
+    }
+  ],
+  "overall": "2",
+  "comment": "A useless review in which the author has only one expression to use (intense, as you can guess) and nothing real to say."
+}
