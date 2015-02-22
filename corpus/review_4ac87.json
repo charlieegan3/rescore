@@ -1,0 +1,146 @@
+{
+  "title": "Boyhood",
+  "genres": "Drama",
+  "source": "imdb",
+  "score": "5/10",
+  "helpfulness": "184/259",
+  "author": "Charlie Egan",
+  "body": "One of the more overrated films lately.The good: production, shooting, editing, sound -- were all good.The great: the idea of following the same boy and others for 11 years. Transitions from age to age were beautiful.The tiresome: the acting. It was OK, but nothing that grabs you. Ellar Coltrane was at his acting best when he was young, but gradually got more stilted. This could have been due to the director more than to him.The ugly: The script. Existential drivel, over and over. Every character was written in a way that remained two-dimensional, especially his sister and mother. Ethan Hawke as his father did the best job of any of them in bringing some depth of life to his role.",
+  "annotated_sentences": [
+    {
+      "text": "One of the more overrated films lately.The good: production, shooting, editing, sound -- were all good.The great: the idea of following the same boy and others for 11 years.",
+      "aspects": {
+        "movie": {
+          "words": [
+            "films"
+          ],
+          "score": "-1",
+          "justification": "overrated"
+        },
+        "editing": {
+          "words": [
+            "editing"
+          ],
+          "score": "1",
+          "justification": "good"
+        },
+        "sound": {
+          "words": [
+            "sound",
+            "ears"
+          ],
+          "score": "1",
+          "justification": "good"
+        },
+        "concept": {
+          "words": [
+            "the idea"
+          ],
+          "score": "2",
+          "justification": "great"
+        },
+        "cinematography": {
+          "words": [
+            "production, shooting"
+          ],
+          "score": "1",
+          "justification": "good"
+        }
+      },
+      "comment": "this should be multiple sentences, but the line breaks seemed to get removed by the script"
+    },
+    {
+      "text": "Transitions from age to age were beautiful.The tiresome: the acting.",
+      "aspects": {
+        "cast": {
+          "words": [
+            "acting"
+          ],
+          "score": "-2",
+          "justification": "tiresome"
+        },
+        "cinematography": {
+          "words": [
+            "transitions"
+          ],
+          "score": "2",
+          "justification": "beautiful"
+        }
+      },
+      "comment": "again, should be 2 sentences..."
+    },
+    {
+      "text": "It was OK, but nothing that grabs you.",
+      "aspects": {
+        "movie": {
+          "words": [
+            "it"
+          ],
+          "score": "0",
+          "justification": "okay, OK"
+        }
+      },
+      "comment": ""
+    },
+    {
+      "text": "Ellar Coltrane was at his acting best when he was young, but gradually got more stilted.",
+      "aspects": {
+        "cast": {
+          "words": [
+            "acting"
+          ],
+          "score": "-1",
+          "justification": "best -> stilted"
+        }
+      },
+      "comment": "hard to pick up"
+    },
+    {
+      "text": "This could have been due to the director more than to him.The ugly: The script.",
+      "aspects": {
+        "dialog": {
+          "words": [
+            "script"
+          ],
+          "score": "-2",
+          "justification": "ugly"
+        }
+      },
+      "comment": ""
+    },
+    {
+      "text": "Existential drivel, over and over.",
+      "aspects": {
+      },
+      "comment": "this is about the film, but it's hard to pick up"
+    },
+    {
+      "text": "Every character was written in a way that remained two-dimensional, especially his sister and mother.",
+      "aspects": {
+        "plot": {
+          "words": [
+            "character"
+          ],
+          "score": "1",
+          "justification": "two-dimensional"
+        }
+      },
+      "comment": ""
+    },
+    {
+      "text": "Ethan Hawke as his father did the best job of any of them in bringing some depth of life to his role.",
+      "aspects": {
+        "cast": {
+          "words": [
+            "role"
+          ],
+          "score": "1",
+          "justification": "best job, some depth of life"
+        }
+      },
+      "comment": ""
+    }
+  ],
+  "overall": "0",
+  "comment": "middle of the road"
+}
