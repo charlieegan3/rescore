@@ -15,6 +15,11 @@ class MoviesController < ApplicationController
   end
 
   def compare
+    if Movie.count <= 1
+      flash[:alert] = "Not enough movies to compare!"
+      redirect_to "/"
+      return
+    end
     if params[:filmone] && params[:filmtwo]
       @movie_one = Movie.fast_find(params[:filmone][:id])
       @movie_two = Movie.fast_find(params[:filmtwo][:id])
