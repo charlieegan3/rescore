@@ -1,0 +1,141 @@
+{
+  "title": "The Greatest Show on Earth ",
+  "genres": "Drama,romance",
+  "source": "imdb.com/title/tt0044672",
+  "score": "8/10",
+  "helpfulness": "54/61",
+  "author": "Georgi",
+  "body": "It constantly amazes me that people carp that this won best Picture, as though no movie before or since ever won when maybe they shouldn't have. It was a big picture, it had a great story, it gave a lot of bang for the buck and that has always been a factor in grabbing the Oscar. It does seem a bit dated to us now, used to high flying special effects, different acting styles, and quick cut editing, instead of letting the scene play out as it so often does here, but it's such a great story. The circus itself is a character and the way Demille used the audience to make them seem so individual is wonderful. And I'm not just referring to the Hope/Crosby cameo. Remember the fat guy with the kid scarfing down the ice cream laughing his head off while the kid looked confused? You could tell he was reliving his childhood and he became EveryMan to us with only seconds of screen time. That's mastery. The integration of the real circus people with the actors was seamless and if nothing else this movie captures a time when the circus was really a circus. Carp all you want, guys. But I think you may be too spoiled by ultra realism to appreciate the subtler gems in this very respectable film. .",
+  "annotated_sentences": [
+    {
+      "text": "It constantly amazes me that people carp that this won best Picture, as though no movie before or since ever won when maybe they shouldn't have.",
+      "aspects": {
+      },
+      "comment": ""
+    },
+    {
+      "text": "It was a big picture, it had a great story, it gave a lot of bang for the buck and that has always been a factor in grabbing the Oscar.",
+      "aspects": {
+        "movie": {
+          "words": [
+            "It"
+          ],
+          "score": "1",
+          "justification": "lot of bang for the buck"
+        },
+        "plot": {
+          "words": [
+            "story"
+          ],
+          "score": "2",
+          "justification": "great story"
+        }
+      },
+      "comment": ""
+    },
+    {
+      "text": "It does seem a bit dated to us now, used to high flying special effects, different acting styles, and quick cut editing, instead of letting the scene play out as it so often does here, but it's such a great story.",
+      "aspects": {
+        "movie": {
+          "words": [
+            "It"
+          ],
+          "score": "-1",
+          "justification": "outdated"
+        },
+        "plot": {
+          "words": [
+            "story"
+          ],
+          "score": "2",
+          "justification": "great story"
+        }
+      },
+      "comment": ""
+    },
+    {
+      "text": "The circus itself is a character and the way Demille used the audience to make them seem so individual is wonderful.",
+      "aspects": {
+        "plot": {
+          "words": [
+            "character"
+          ],
+          "score": "2",
+          "justification": "wanderful"
+        }
+      },
+      "comment": ""
+    },
+    {
+      "text": "And I'm not just referring to the Hope/Crosby cameo.",
+      "aspects": {
+      },
+      "comment": ""
+    },
+    {
+      "text": "Remember the fat guy with the kid scarfing down the ice cream laughing his head off while the kid looked confused?",
+      "aspects": {
+      },
+      "comment": ""
+    },
+    {
+      "text": "You could tell he was reliving his childhood and he became EveryMan to us with only seconds of screen time.",
+      "aspects": {
+        "vision": {
+          "words": [
+            "screen"
+          ],
+          "score": "0",
+          "justification": ""
+        }
+      },
+      "comment": "Not about anything"
+    },
+    {
+      "text": "That's mastery.",
+      "aspects": {
+      },
+      "comment": ""
+    },
+    {
+      "text": "The integration of the real circus people with the actors was seamless and if nothing else this movie captures a time when the circus was really a circus.",
+      "aspects": {
+        "movie": {
+          "words": [
+            "this movie"
+          ],
+          "score": "1",
+          "justification": "if nothing else "
+        }
+      },
+      "comment": "Strange to judge that sentance"
+    },
+    {
+      "text": "Carp all you want, guys.",
+      "aspects": {
+      },
+      "comment": ""
+    },
+    {
+      "text": "But I think you may be too spoiled by ultra realism to appreciate the subtler gems in this very respectable film.",
+      "aspects": {
+        "movie": {
+          "words": [
+            "film"
+          ],
+          "score": "1",
+          "justification": "very respectable"
+        }
+      },
+      "comment": ""
+    },
+    {
+      "text": ".",
+      "aspects": {
+      },
+      "comment": ""
+    }
+  ],
+  "overall": "1",
+  "comment": ""
+}
