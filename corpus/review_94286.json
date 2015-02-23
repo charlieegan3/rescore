@@ -1,0 +1,32 @@
+{
+  "title": "The Shining",
+  "genres": "Horror",
+  "source": "http://www.metacritic.com/movie/the-shining/user-reviews",
+  "score": "10/10",
+  "helpfulness": "4/5",
+  "author": "Donna Connelly",
+  "body": "My favorite film of Kubrick's. You feel like you're becoming as mad as Johnny while watching, building up cabin fever and fear in a mixture of nauseous scenes. ",
+  "annotated_sentences": [
+    {
+      "text": "My favorite film of Kubrick's.",
+      "aspects": {
+      },
+      "comment": ""
+    },
+    {
+      "text": "You feel like you're becoming as mad as Johnny while watching, building up cabin fever and fear in a mixture of nauseous scenes. ",
+      "aspects": {
+        "movie": {
+          "words": [
+            "nauseous scenes"
+          ],
+          "score": "0",
+          "justification": "you feel like you are becoming as mad as johnny"
+        }
+      },
+      "comment": ""
+    }
+  ],
+  "overall": "2",
+  "comment": ""
+}
