@@ -32,13 +32,8 @@ class Movie < ActiveRecord::Base
   handle_asynchronously :collect_reviews
 
   def populate_related_people
-    bf = BadFruit.new("6tuqnhbh49jqzngmyy78n8v3")
-    movie = bf.movies.search_by_id(rotten_tomatoes_id)
-    cast = movie.full_cast.map { |person|
-      {name: person.name, characters: person.characters}
-    }
-    directors = movie.directors
-    update_attribute(:related_people, {cast: cast, directors: directors})
+    p = PeopleSearcher.new(rotten_tomatoes_id)
+    update_attribute(:related_people, {cast: p.cast, directors: p.directors})
   end
 
   def build_summary
