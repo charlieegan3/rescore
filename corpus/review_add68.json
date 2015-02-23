@@ -1,0 +1,126 @@
+{
+  "title": "The 100-Year-Old Man Who Climbed Out the Window and Disappeared",
+  "genres": "Adventure, Comedy",
+  "source": "http://www.imdb.com/title/tt2113681/reviews",
+  "score": "10/10",
+  "helpfulness": "20/27",
+  "author": "Kestutis Sidlauskas",
+  "body": "I really liked the story and the acting from Robert Gustafsson. A funny film with great scenario and well done history facts. With great finishing twists and quiet good computer effects.Combining world war 2 and the cold war is just fantastic. And having a ''look back'' in every couple scene makes the storyline much more attractive. It's very funny to have the same Swedish man appearing in big historic events from 1940 and until the end of the cold war.I wish I could be as cool when I reach 100 years old.A must see Nordic comedy film with great actors and a great plot. I haven't seen a film like this for years. ",
+  "annotated_sentences": [
+    {
+      "text": "I really liked the story and the acting from Robert Gustafsson.",
+      "aspects": {
+        "plot": {
+          "words": [
+            "story"
+          ],
+          "score": "1",
+          "justification": "really liked"
+        },
+        "cast": {
+          "words": [
+            "acting"
+          ],
+          "score": "1",
+          "justification": "really liked"
+        }
+      },
+      "comment": "two aspects described in one phrase"
+    },
+    {
+      "text": "A funny film with great scenario and well done history facts.",
+      "aspects": {
+        "movie": {
+          "words": [
+            "film"
+          ],
+          "score": "1",
+          "justification": "funny"
+        },
+        "plot": {
+          "words": [
+            "story"
+          ],
+          "score": "1",
+          "justification": "great"
+        },
+        "credibility": {
+          "words": [
+            "history facts"
+          ],
+          "score": "1",
+          "justification": "well done"
+        }
+      },
+      "comment": ""
+    },
+    {
+      "text": "With great finishing twists and quiet good computer effects.Combining world war 2 and the cold war is just fantastic.",
+      "aspects": {
+        "editing": {
+          "words": [
+            "effects"
+          ],
+          "score": "1",
+          "justification": "quite good"
+        },
+        "plot": {
+          "words": [
+            "finishing twists"
+          ],
+          "score": "2",
+          "justification": "great, fantastic"
+        }
+      },
+      "comment": ""
+    },
+    {
+      "text": "And having a ''look back'' in every couple scene makes the storyline much more attractive.",
+      "aspects": {
+        "plot": {
+          "words": [
+            "story"
+          ],
+          "score": "1",
+          "justification": "attractive"
+        }
+      },
+      "comment": ""
+    },
+    {
+      "text": "It's very funny to have the same Swedish man appearing in big historic events from 1940 and until the end of the cold war.I wish I could be as cool when I reach 100 years old.A must see Nordic comedy film with great actors and a great plot.",
+      "aspects": {
+        "movie": {
+          "words": [
+            "comedy, film"
+          ],
+          "score": "2",
+          "justification": "must see"
+        },
+        "plot": {
+          "words": [
+            "plot"
+          ],
+          "score": "1",
+          "justification": "funny, great"
+        },
+        "cast": {
+          "words": [
+            "actors"
+          ],
+          "score": "1",
+          "justification": "great"
+        }
+      },
+      "comment": ""
+    },
+    {
+      "text": "I haven't seen a film like this for years. ",
+      "aspects": {
+      },
+      "comment": ""
+    }
+  ],
+  "overall": "2",
+  "comment": ""
+}
