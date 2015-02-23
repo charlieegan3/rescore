@@ -1,0 +1,80 @@
+{
+  "title": "Guardians of the Galaxy",
+  "genres": "Action,Adventure,Sci-Fi",
+  "source": "imdb.com/title/tt2015381",
+  "score": "9/10",
+  "helpfulness": "152/230",
+  "author": "Georgi",
+  "body": "With each new film they release, Marvel outdo themselves time after time, from 'Captain America: The Winter Soldier' to 'X-Men: Days of Future Past' and now to this amazing and irreverent superhero blockbuster packed full of humour and action in a visually stunning galaxy. Previous Marvel films have tried too hard to place humour in situations that didn't require it, 'Guardians of the Galaxy' however employs it frequently and due to the constant stream of jokes it works perfectly. Chris Pratt is by far one of Marvel's best casting choices since Robert Downey Jr. as 'Iron Man', even beyond this the other acting bodies were cast perfectly. The visual effects are utterly stunning and the battle scenes are epic, 'Guardians' is a truly amazing and thrilling superhero flick full of visual splendour..",
+  "annotated_sentences": [
+    {
+      "text": "With each new film they release, Marvel outdo themselves time after time, from 'Captain America: The Winter Soldier' to 'X-Men: Days of Future Past' and now to this amazing and irreverent superhero blockbuster packed full of humour and action in a visually stunning galaxy.",
+      "aspects": {
+        "movie": {
+          "words": [
+            "new film"
+          ],
+          "score": "2",
+          "justification": "amazing blockbuster"
+        },
+        "vision": {
+          "words": [
+            "visual"
+          ],
+          "score": "2",
+          "justification": "visually stunning"
+        }
+      },
+      "comment": ""
+    },
+    {
+      "text": "Previous Marvel films have tried too hard to place humour in situations that didn't require it, 'Guardians of the Galaxy' however employs it frequently and due to the constant stream of jokes it works perfectly.",
+      "aspects": {
+        "movie": {
+          "words": [
+            "Guardians of the Galaxy"
+          ],
+          "score": "2",
+          "justification": "works perfectly"
+        }
+      },
+      "comment": "based on the humour"
+    },
+    {
+      "text": "Chris Pratt is by far one of Marvel's best casting choices since Robert Downey Jr. as 'Iron Man', even beyond this the other acting bodies were cast perfectly.",
+      "aspects": {
+        "cast": {
+          "words": [
+            "acting",
+            "cast"
+          ],
+          "score": "2",
+          "justification": "cast perfectly"
+        }
+      },
+      "comment": ""
+    },
+    {
+      "text": "The visual effects are utterly stunning and the battle scenes are epic, 'Guardians' is a truly amazing and thrilling superhero flick full of visual splendour..",
+      "aspects": {
+        "movie": {
+          "words": [
+            "Guardians"
+          ],
+          "score": "2",
+          "justification": "amazing and thrilling"
+        },
+        "vision": {
+          "words": [
+            "visual"
+          ],
+          "score": "2",
+          "justification": "visual splendour"
+        }
+      },
+      "comment": ""
+    }
+  ],
+  "overall": "2",
+  "comment": "Perfect "
+}
