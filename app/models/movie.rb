@@ -12,15 +12,13 @@ class Movie < ActiveRecord::Base
   end
 
   def populate_source_links
-    GoogleAjax.referrer = "www.resco.re"
-    update_attribute(:metacritic_link,
-      GoogleAjax::Search.web(title + " site:www.metacritic.com/movie/ "+ year.to_s)[:results][0][:unescaped_url])
-    update_attribute(:amazon_link,
-      GoogleAjax::Search.web(title + " site:www.amazon.com dvd reviews " + year.to_s)[:results][0][:unescaped_url])
-    update_attribute(:imdb_link,
-      GoogleAjax::Search.web(title + " site:www.imdb.com/title/ " + year.to_s)[:results][0][:unescaped_url])
-    update_attribute(:rotten_tomatoes_link,
-      GoogleAjax::Search.web(title + " site:www.rottentomatoes.com/m/ " + year.to_s)[:results][0][:unescaped_url])
+    s = SourceSearcher.new(title, year)
+    update_attributes({
+      metacritic_link: s.metacritic_link,
+      amazon_link: s.amazon_link,
+      imdb_link: s.imdb_link,
+      rotten_tomatoes_link: s.rotten_tomatoes_link
+    })
   end
 
   def collect_reviews
