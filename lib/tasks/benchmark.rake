@@ -8,8 +8,6 @@ def format_aspect_hash(aspect_hash)
 end
 
 task :benchmark, :print do |t, args|
-  sentiment_analyzer = Sentiment::SentimentAnalyzer.new
-
   reviews = Dir['corpus/*.json']
   exit if reviews.empty?
 
@@ -20,7 +18,7 @@ task :benchmark, :print do |t, args|
     annotated_review = JSON.parse(File.read(annotated_review))
     rescore_review = RescoreReview.new(annotated_review['body'], nil)
 
-    rescore_review.build_all(sentiment_analyzer).each_with_index do |s, i|
+    rescore_review.build_all.each_with_index do |s, i|
       ac = AspectComparator.new(annotated_review['annotated_sentences'][i], s)
       comparison = ac.compare
 
