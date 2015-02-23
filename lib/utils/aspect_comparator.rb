@@ -7,6 +7,7 @@ class AspectComparator
   def compare
     annotated_aspects = aspects_from_annotation(@annotated_sentence)
     computed_aspects = aspects_from_computed(@computed_sentence)
+    annotated_aspects.delete('movie')
     scores = hits(annotated_aspects, computed_aspects)
     {
       annotated_aspects: annotated_aspects,
