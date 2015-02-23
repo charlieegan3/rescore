@@ -63,7 +63,7 @@ class Movie < ActiveRecord::Base
     update_attributes({sentiment: set_sentiment, stats: set_stats})
     update_attributes({status: nil, task: nil})
   end
-  # handle_asynchronously :build_summary
+  handle_asynchronously :build_summary
 
   def source_link_count
     [imdb_link, amazon_link, metacritic_link, rotten_tomatoes_link].count {|l| l.include?('http')}
