@@ -11,6 +11,7 @@ ASPECTS = {
     'dolby' => 100,
     'audio' => 100,
     'sounds' => 100,
+    'soundtrack' => 100,
     'surround' => 80,
     'ears' => 20,
     'score' => 10
@@ -19,6 +20,8 @@ ASPECTS = {
   plot: {
     'story' => 100,
     'plot' => 100,
+    'villain' => 100,
+    'protagonist' => 100,
     'narrative' => 80,
     'predictable' => 80,
     'narration' => 80,
@@ -32,8 +35,11 @@ ASPECTS = {
   dialog: {
     'dialog' => 100,
     'dialogue' => 100,
+    'script' => 100,
     'speech' => 100,
     'spoken' => 90,
+    'jokes' => 90,
+    'comedy' => 80,
     'discussion' => 80,
     'conversation' => 80,
     'lines' => 70,
@@ -44,11 +50,13 @@ ASPECTS = {
   cast: {
     'acting' => 100,
     'cast' => 100,
+    'overacted' => 100,
     'performance' => 90,
     'portrayal' => 90,
     'depiction' => 90,
     'characterization' => 90,
     'impersonation' => 90,
+    'played' => 70,
     'role' => 70,
     'persona' => 50
   },
@@ -63,12 +71,10 @@ ASPECTS = {
     'graphic' => 90,
     'colour' => 90,
     'color' => 90,
-    'vision' => 90,
     'blurry' => 80,
     'lifelike' => 80,
     'screen' => 70,
     'spectacle' => 60,
-    'eyes' => 30,
     'beautiful' => 20,
     'designs' => 8
   },
@@ -90,5 +96,25 @@ ASPECTS = {
     'truthful' => 80,
     'truthfully' => 70,
     'honest' => 70
+  },
+
+  cinematography: {
+    'cinematography' => 100,
+    'production' => 80,
+    'shot' => 80,
+    'shooting' => 80,
+    'scene' => 80,
+    'image' => 20
+  },
+
+  concept: {
+    'concept' => 100,
+    'idea' => 100
+  },
+
+  novelty: {
+    'novel idea' => 100,
+    'original' => 100,
+    'something different' => 100
   }
 }
