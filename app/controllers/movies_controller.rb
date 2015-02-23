@@ -1,5 +1,5 @@
 class MoviesController < ApplicationController
-  http_basic_authenticate_with name: "admin", password: "1234qwer", :except => [:index, :show, :search_by_title, :compare]
+  http_basic_authenticate_with name: "admin", password: "1234qwer", :except => [:show, :search_by_title, :compare]
 
   def index
     @movies = Movie.all
@@ -15,6 +15,10 @@ class MoviesController < ApplicationController
   end
 
   def compare
+    if Movie.count <= 1
+      flash[:alert] = "Not enough movies to compare!"
+      return redirect_to :root
+    end
     if params[:filmone] && params[:filmtwo]
       @movie_one = Movie.fast_find(params[:filmone][:id])
       @movie_two = Movie.fast_find(params[:filmtwo][:id])
