@@ -24,19 +24,12 @@ class Movie < ActiveRecord::Base
   end
 
   def collect_reviews
-    update_attribute(:status, '0%')
-    r = ReviewAggregator.new(title, page_depth)
-    reviews = []
-    update_attribute(:status, '20%')
-    reviews += r.metacritic_reviews(metacritic_link)
-    update_attribute(:status, '40%')
-    reviews += r.amazon_reviews(amazon_link)
-    update_attribute(:status, '60%')
-    reviews += r.imdb_reviews(imdb_link)
-    update_attribute(:status, '80%')
-    reviews += r.rotten_tomatoes_reviews(rotten_tomatoes_link)
-    update_attribute(:reviews, reviews)
-    update_attributes({status: nil, task: nil})
+    r = ReviewCollector.new(title, page_depth)
+    update_attributes({reviews: [], status: '0%'})
+    update_attributes({reviews: reviews + r.metacritic_reviews(metacritic_link), status: '25%'})
+    update_attributes({reviews: reviews + r.amazon_reviews(amazon_link), status: '50%'})
+    update_attributes({reviews: reviews + r.imdb_reviews(imdb_link), status: '75%'})
+    update_attributes({reviews: reviews + r.rotten_tomatoes_reviews(rotten_tomatoes_link), status: nil})
   end
   handle_asynchronously :collect_reviews
 
