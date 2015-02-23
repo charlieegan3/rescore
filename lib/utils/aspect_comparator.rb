@@ -21,8 +21,7 @@ class AspectComparator
     end
 
     def aspects_from_computed(sentence)
-      score = normalise(sentence[:sentiment][:corrected_average])
-      Hash[sentence[:context_tags].keys.map {|key| [key.to_s, score] }]
+      Hash[sentence[:context_tags].keys.map {|key| [key.to_s, sentence[:sentiment]] }]
     end
 
     def hits(expected, calculated)
@@ -33,9 +32,5 @@ class AspectComparator
       correct.map { |aspect| sentiment_delta += (expected[aspect] - calculated[aspect]).abs }
 
       {correct: correct.size, wrong: wrong.size, delta: sentiment_delta}
-    end
-
-    def normalise(decimal)
-      ((((decimal * 10) / 5).round * 5).to_f / 5).to_i
     end
 end

@@ -52,11 +52,10 @@ class Movie < ActiveRecord::Base
 
   def build_summary
     summary = []
-    sentiment_analyzer = Sentiment::SentimentAnalyzer.new
     reviews.each_with_index do |review, index|
       update_attribute(:status, "#{(index.to_f/reviews.size).round(2) * 100}%") if index % 50 == 0
       rescore_review = RescoreReview.new(review[:content], related_people)
-      rescore_review.build_all(sentiment_analyzer)
+      rescore_review.build_all
       review[:rescore_review] = rescore_review.sentences
       summary << review
     end
@@ -64,7 +63,7 @@ class Movie < ActiveRecord::Base
     update_attributes({sentiment: set_sentiment, stats: set_stats})
     update_attributes({status: nil, task: nil})
   end
-  handle_asynchronously :build_summary
+  # handle_asynchronously :build_summary
 
   def source_link_count
     [imdb_link, amazon_link, metacritic_link, rotten_tomatoes_link].count {|l| l.include?('http')}
@@ -79,7 +78,7 @@ class Movie < ActiveRecord::Base
   end
 
   def set_sentiment
-    topics_sentiment  = {plot: [], dialog: [], cast: [], sound: [], vision: [], editing: []}
+    topics_sentiment  = Hash[ASPECTS.map {|k,v| [k, []]}]
     people_sentiment  = {}
     average_sentiment = []
     sentiment_averages = [] #this is review level
@@ -87,14 +86,14 @@ class Movie < ActiveRecord::Base
       next if review[:rescore_review].nil? || review[:rescore_review].empty?
       sentiment_average = 0
       review[:rescore_review].each do |sentence|
-        average_sentiment << sentence[:sentiment][:average]
-        sentiment_average += sentence[:sentiment][:average]
+        average_sentiment << sentence[:sentiment]
+        sentiment_average += sentence[:sentiment]
         sentence[:context_tags].keys.each do |tag|
-          topics_sentiment[tag] << sentence[:sentiment][:average] * sentence[:context_tags][tag]
+          topics_sentiment[tag] << sentence[:sentiment] * sentence[:context_tags][tag]
         end
         sentence[:people_tags].each do |tag|
           people_sentiment[tag] = [] if people_sentiment[tag].nil?
-          people_sentiment[tag] << sentence[:sentiment][:average]
+          people_sentiment[tag] << sentence[:sentiment]
         end
       end
       sentiment_average /= review[:rescore_review].size
@@ -120,7 +119,7 @@ class Movie < ActiveRecord::Base
     distribution_stats = [sentiment_averages.max - sentiment_averages.min, sentiment_averages.standard_deviation]
 
     # collect locations and average sentiment
-    location_sentiment = reviews.map {|x| [x[:location], x[:rescore_review].map {|x| x[:sentiment][:average]}.mean]}
+    location_sentiment = reviews.map {|x| [x[:location], x[:rescore_review].map {|x| x[:sentiment]}.mean]}
     # reject inappropriate locations
     location_sentiment.reject! { |e| e.first == '' || e.first.nil? }
     # group locations and select groups greater than one in size
@@ -140,7 +139,7 @@ class Movie < ActiveRecord::Base
   end
 
   def set_stats
-    topic_counts = {plot: 0, dialog: 0, cast: 0, sound: 0, vision: 0, editing: 0}
+    topic_counts = Hash[ASPECTS.map {|k,v| [k, 0]}]
     reviews.each do |review|
       next if review[:rescore_review].nil?
       review[:rescore_review].each do |sentence|
