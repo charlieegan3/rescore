@@ -125,22 +125,8 @@ class Movie < ActiveRecord::Base
   end
 
   def set_stats
-    topic_counts = Hash[ASPECTS.map {|k,v| [k, 0]}]
-    reviews.each do |review|
-      next if review[:rescore_review].nil?
-      review[:rescore_review].each do |sentence|
-        sentence[:context_tags].keys.each do |tag|
-          topic_counts[tag] += 1
-        end
-      end
-    end
-
-    rating_distribution = []
-    rounded_ratings = reviews.map {|x| (x[:percentage] / 10 unless x[:percentage].nil?).to_i * 10 }
-    (0..100).step(10) do |n|
-      rating_distribution << rounded_ratings.count(n)
-    end
-    {topic_counts: topic_counts, rating_distribution: rating_distribution}
+    s = StatCalculator.new(reviews)
+    {topic_counts: s.topic_counts, rating_distribution: s.rating_distribution}
   end
 
   def self.summarized
