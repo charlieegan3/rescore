@@ -1,0 +1,53 @@
+{
+  "title": "The Matrix",
+  "genres": " Action, Adventure, Sci-Fi, Thriller",
+  "source": "http://www.metacritic.com/movie/the-matrix",
+  "score": "10/10",
+  "helpfulness": "7/8",
+  "author": "Donna Connelly",
+  "body": "An excellent movie with tons of special effects, fight scenes, etc., and the best thing is that they are all done perfectly. A really good film with an interesting story behind it. YOU'LL ENJOY IT. ",
+  "annotated_sentences": [
+    {
+      "text": "An excellent movie with tons of special effects, fight scenes, etc., and the best thing is that they are all done perfectly.",
+      "aspects": {
+        "movie": {
+          "words": [
+            "movie"
+          ],
+          "score": "2",
+          "justification": "An excellent movie "
+        },
+        "cinematography": {
+          "words": [
+            "scene"
+          ],
+          "score": "2",
+          "justification": "tons of special effects, fight scenes,"
+        }
+      },
+      "comment": ""
+    },
+    {
+      "text": "A really good film with an interesting story behind it. YOU'LL ENJOY IT. ",
+      "aspects": {
+        "movie": {
+          "words": [
+            "film"
+          ],
+          "score": "2",
+          "justification": "A really good film"
+        },
+        "plot": {
+          "words": [
+            "story"
+          ],
+          "score": "1",
+          "justification": "interesting story behind it."
+        }
+      },
+      "comment": ""
+    }
+  ],
+  "overall": "2",
+  "comment": ""
+}
