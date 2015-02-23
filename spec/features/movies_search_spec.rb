@@ -9,13 +9,6 @@ RSpec.describe MoviesController, :type => :feature do
     movie = FactoryGirl::create(:movie)
   end
 
-  describe 'manage' do
-    it 'lists the existing films' do
-      visit ('/movies')
-      expect(page).to have_content 'Gladiator'
-    end
-  end
-
   describe 'search_by_title' do
     it 'returns the correct result' do
       visit('/')
