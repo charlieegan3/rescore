@@ -5,14 +5,9 @@ module Context
   def Context.tag_sentence(sentence)
     sentence_tags = Hash.new([])
 
-    keywords = sentence.gsub(/\W/, ' ').split(/\s+/).
-      select { |word| word.length > 3 }
-
     ASPECTS.each do |context, terms|
-      keywords.each do |keyword|
-        if terms.keys.include? keyword
-          sentence_tags[context] += [terms[keyword]]
-        end
+      terms.keys.each do |term|
+        sentence_tags[context] += [terms[term]] if sentence.match(/(\W|\A)#{term}(\W|\z)/)
       end
     end
 
