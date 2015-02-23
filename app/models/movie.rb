@@ -37,17 +37,11 @@ class Movie < ActiveRecord::Base
   end
 
   def build_summary
-    summary = []
-    reviews.each_with_index do |review, index|
-      update_attribute(:status, "#{(index.to_f/reviews.size).round(2) * 100}%") if index % 50 == 0
-      rescore_review = RescoreReview.new(review[:content], related_people)
-      rescore_review.build_all
-      review[:rescore_review] = rescore_review.sentences
-      summary << review
-    end
-    update_attribute(:reviews, summary)
-    update_attributes({sentiment: set_sentiment, stats: set_stats})
-    update_attributes({status: nil, task: nil})
+    r = RescoreReviewer.new(self)
+    update_attribute(:reviews, r.rescored_reviews)
+    update_attributes({
+      sentiment: set_sentiment, stats: set_stats, status: nil, task: nil
+    })
   end
   handle_asynchronously :build_summary
 
