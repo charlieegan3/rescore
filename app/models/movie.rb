@@ -158,7 +158,7 @@ class Movie < ActiveRecord::Base
     {topic_counts: topic_counts, rating_distribution: rating_distribution}
   end
 
-  def comparison_summary(movie_one, movie_two)
+  def self.comparison_summary(movie_one, movie_two)
     m1 = movie_one
     m2 = movie_two
     summary = {:aspect_sentiment => [], :aspect_focus => [], :review_range => [], :review_variation => []}
