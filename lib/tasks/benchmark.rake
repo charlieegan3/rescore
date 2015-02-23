@@ -7,6 +7,21 @@ def format_aspect_hash(aspect_hash)
     join(' - ')
 end
 
+def sentence_scores(sentence)
+  scores = []
+  words = sentence.split(/\W+/)
+  words.each do |word|
+    score = POLARITIES[word] || '?'
+    if score.to_s.include? '?'
+      scores << score.to_s.rjust(word.length).white
+    else
+      scores << score.to_s.rjust(word.length).red
+    end
+  end
+  puts words.join(' ')
+  puts scores.join(' ')
+end
+
 task :benchmark, :print do |t, args|
   reviews = Dir['corpus/*.json']
   exit if reviews.empty?
@@ -28,11 +43,24 @@ task :benchmark, :print do |t, args|
       wrong += comparison[:scores][:wrong]
       sentiment_delta += comparison[:scores][:delta]
 
-      next if (comparison[:annotated_aspects] == comparison[:computed_aspects]) || args[:print].nil?
+      if comparison[:annotated_aspects].size == comparison[:computed_aspects].size
+        pass = comparison[:annotated_aspects].map do |k, v|
+          if comparison[:computed_aspects][k].nil?
+            false
+          else
+            comparison[:computed_aspects][k][:score] == v[:score]
+          end
+        end.uniq == [true] || comparison[:computed_aspects] == {} && comparison[:annotated_aspects] == {}
+      else
+        pass = false
+      end
+
+      next if pass ||  args[:print].nil?
 
       puts " #{i + 1}:".yellow_on_black + ' ' + s[:text]
       puts "Annotated: ".cyan + format_aspect_hash(comparison[:annotated_aspects]).blue
       puts "Computed:  ".cyan + format_aspect_hash(comparison[:computed_aspects]).blue
+      sentence_scores(s[:text])
     end
   end
 
