@@ -1,0 +1,322 @@
+{
+  "title": "Rocky",
+  "genres": "Action",
+  "source": "http://www.imdb.com/title/tt0075148/reviews?ref_=tt_ov_rt",
+  "score": "10/10",
+  "helpfulness": "222/279",
+  "author": "Donna",
+  "body": "\"Your gonna eat lightning and your gonna crap thunder\"Rocky is about a poor boxer living his life in Philadalphia. His life changes when an invitation from the heavyweight champ Apollo Creed is given to him.Romance, Drama, Fight.Story- With minimum resources and low money, this movie was an underdog itself. Stallone wrote it and fought to play Rocky. When they were low on resources, they changed the story all together and made it even better. The story is flawless and keeps you on the edge of your seat. 9/10Music- The best thing about the movie itself. The music in this movie is guaranteed to give you goosebumps every time you watch it. Bill Conti gives you an excellent score throughout the movie, including the famous \"gonna fly now\". 10/10Acting- 4 nominated performances in this movie. The acting is very good as well, especially Burgess Meredith who offers one of the greatest acts I have ever seen. Stallone plays Rocky Balboa and changes his voice very well to be Rocky. He did a very good job. Talia Shire plays Adrian, a shy pet store owner who has never had a BF before. She did a good job as well. Burt Young plays the drunkard Paulie. Burgess Merideth plays the boxing trainer Mickey. I have never seen a better performance. 9.5/10Stallone fought for this triumphant movie that made me want to go the distance (sounds corny but its true). It made me strive to work harder and not give up. If you haven't seen this, buy it and watch it. I'll guarantee it will change you too. A classic.I give it a perfect 10/10 ",
+  "annotated_sentences": [
+    {
+      "text": "\"Your gonna eat lightning and your gonna crap thunder\"Rocky is about a poor boxer living his life in Philadalphia.",
+      "aspects": {
+        "movie": {
+          "words": [
+            "Rocky"
+          ],
+          "score": "2",
+          "justification": ""
+        },
+        "plot": {
+          "words": [
+            "poor boxer living his life in Philadalphia."
+          ],
+          "score": "2",
+          "justification": ""
+        }
+      },
+      "comment": ""
+    },
+    {
+      "text": "His life changes when an invitation from the heavyweight champ Apollo Creed is given to him.Romance, Drama, Fight.Story- With minimum resources and low money, this movie was an underdog itself.",
+      "aspects": {
+        "movie": {
+          "words": [
+            "this movie"
+          ],
+          "score": "2",
+          "justification": "story"
+        }
+      },
+      "comment": ""
+    },
+    {
+      "text": "Stallone wrote it and fought to play Rocky.",
+      "aspects": {
+        "movie": {
+          "words": [
+            "to play"
+          ],
+          "score": "2",
+          "justification": ""
+        },
+        "vision": {
+          "words": [
+            "Stallone wrote it "
+          ],
+          "score": "2",
+          "justification": " fought to play Rocky."
+        }
+      },
+      "comment": ""
+    },
+    {
+      "text": "When they were low on resources, they changed the story all together and made it even better.",
+      "aspects": {
+        "plot": {
+          "words": [
+            "story"
+          ],
+          "score": "",
+          "justification": ""
+        }
+      },
+      "comment": ""
+    },
+    {
+      "text": "The story is flawless and keeps you on the edge of your seat.",
+      "aspects": {
+        "movie": {
+          "words": [
+            "the story"
+          ],
+          "score": "2",
+          "justification": "story"
+        },
+        "plot": {
+          "words": [
+            "story"
+          ],
+          "score": "2",
+          "justification": "keeps you on edge of your seat"
+        }
+      },
+      "comment": ""
+    },
+    {
+      "text": "9/10Music- The best thing about the movie itself.",
+      "aspects": {
+        "movie": {
+          "words": [
+            "movie"
+          ],
+          "score": "1",
+          "justification": "best thing"
+        },
+        "sound": {
+          "words": [
+            "music"
+          ],
+          "score": "2",
+          "justification": "9/10 music"
+        }
+      },
+      "comment": ""
+    },
+    {
+      "text": "The music in this movie is guaranteed to give you goosebumps every time you watch it.",
+      "aspects": {
+        "movie": {
+          "words": [
+            "movie"
+          ],
+          "score": "2",
+          "justification": "music in movie is guaranteed"
+        },
+        "sound": {
+          "words": [
+            "music"
+          ],
+          "score": "2",
+          "justification": ""
+        }
+      },
+      "comment": ""
+    },
+    {
+      "text": "Bill Conti gives you an excellent score throughout the movie, including the famous \"gonna fly now\".",
+      "aspects": {
+        "movie": {
+          "words": [
+            "movie"
+          ],
+          "score": "0",
+          "justification": ""
+        },
+        "sound": {
+          "words": [
+            "score"
+          ],
+          "score": "2",
+          "justification": "excellent score"
+        }
+      },
+      "comment": ""
+    },
+    {
+      "text": "10/10Acting- 4 nominated performances in this movie.",
+      "aspects": {
+        "movie": {
+          "words": [
+            "movie"
+          ],
+          "score": "0",
+          "justification": ""
+        },
+        "cast": {
+          "words": [
+            "performance"
+          ],
+          "score": "2",
+          "justification": "10/10"
+        }
+      },
+      "comment": ""
+    },
+    {
+      "text": "The acting is very good as well, especially Burgess Meredith who offers one of the greatest acts I have ever seen.",
+      "aspects": {
+        "movie": {
+          "words": [
+            "acting"
+          ],
+          "score": "0",
+          "justification": "the acting"
+        },
+        "cast": {
+          "words": [
+            "acting"
+          ],
+          "score": "2",
+          "justification": "greatest acts"
+        }
+      },
+      "comment": ""
+    },
+    {
+      "text": "Stallone plays Rocky Balboa and changes his voice very well to be Rocky.",
+      "aspects": {
+        "movie": {
+          "words": [
+            "plays"
+          ],
+          "score": "0",
+          "justification": ""
+        }
+      },
+      "comment": ""
+    },
+    {
+      "text": "He did a very good job.",
+      "aspects": {
+      },
+      "comment": ""
+    },
+    {
+      "text": "Talia Shire plays Adrian, a shy pet store owner who has never had a BF before.",
+      "aspects": {
+        "movie": {
+          "words": [
+            "plays"
+          ],
+          "score": "0",
+          "justification": ""
+        }
+      },
+      "comment": ""
+    },
+    {
+      "text": "She did a good job as well.",
+      "aspects": {
+      },
+      "comment": ""
+    },
+    {
+      "text": "Burt Young plays the drunkard Paulie.",
+      "aspects": {
+      },
+      "comment": ""
+    },
+    {
+      "text": "Burgess Merideth plays the boxing trainer Mickey.",
+      "aspects": {
+      },
+      "comment": ""
+    },
+    {
+      "text": "I have never seen a better performance.",
+      "aspects": {
+        "cast": {
+          "words": [
+            "performance"
+          ],
+          "score": "",
+          "justification": ""
+        }
+      },
+      "comment": ""
+    },
+    {
+      "text": "9.5/10Stallone fought for this triumphant movie that made me want to go the distance (sounds corny but its true).",
+      "aspects": {
+        "movie": {
+          "words": [
+            "movie"
+          ],
+          "score": "2",
+          "justification": "triumphant movie"
+        },
+        "sound": {
+          "words": [
+            "sound",
+            "sounds"
+          ],
+          "score": "0",
+          "justification": "sounds corny"
+        },
+        "credibility": {
+          "words": [
+            "true"
+          ],
+          "score": "2",
+          "justification": ""
+        }
+      },
+      "comment": ""
+    },
+    {
+      "text": "It made me strive to work harder and not give up. If you haven't seen this, buy it and watch it.",
+      "aspects": {
+        "movie": {
+          "words": [
+            "buy it watch it"
+          ],
+          "score": "2",
+          "justification": ""
+        }
+      },
+      "comment": ""
+    },
+    {
+      "text": "I'll guarantee it will change you too.",
+      "aspects": {
+      },
+      "comment": ""
+    },
+    {
+      "text": "A classic.I give it a perfect 10/10 ",
+      "aspects": {
+        "movie": {
+          "words": [
+            "a classic"
+          ],
+          "score": "2",
+          "justification": ""
+        }
+      },
+      "comment": ""
+    }
+  ],
+  "overall": "",
+  "comment": ""
+}
