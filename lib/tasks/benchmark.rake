@@ -3,8 +3,8 @@ require_relative '../../config/environment'
 def format_aspect_hash(aspect_hash)
   aspect_hash.
     sort_by { |k,_| k }.
-    map { |aspect, score| "#{aspect}: #{score}" }.
-    join(', ')
+    map { |aspect, score| "(#{aspect}: #{score.values.join('/')})" }.
+    join(' - ')
 end
 
 task :benchmark, :print do |t, args|
@@ -14,8 +14,9 @@ task :benchmark, :print do |t, args|
   annotations, correct, wrong, sentiment_delta = 0, 0, 0, 0
 
   reviews.each do |annotated_review|
-    puts " #{annotated_review} ".black_on_green
+    print " #{annotated_review} ".black_on_green
     annotated_review = JSON.parse(File.read(annotated_review))
+    puts ' - ' + annotated_review['author'].red
     rescore_review = RescoreReview.new(annotated_review['body'], nil)
 
     rescore_review.build_all.each_with_index do |s, i|
