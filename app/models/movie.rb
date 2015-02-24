@@ -12,56 +12,36 @@ class Movie < ActiveRecord::Base
   end
 
   def populate_source_links
-    GoogleAjax.referrer = "www.resco.re"
-    update_attribute(:metacritic_link,
-      GoogleAjax::Search.web(title + " site:www.metacritic.com/movie/ "+ year.to_s)[:results][0][:unescaped_url])
-    update_attribute(:amazon_link,
-      GoogleAjax::Search.web(title + " site:www.amazon.com dvd reviews " + year.to_s)[:results][0][:unescaped_url])
-    update_attribute(:imdb_link,
-      GoogleAjax::Search.web(title + " site:www.imdb.com/title/ " + year.to_s)[:results][0][:unescaped_url])
-    update_attribute(:rotten_tomatoes_link,
-      GoogleAjax::Search.web(title + " site:www.rottentomatoes.com/m/ " + year.to_s)[:results][0][:unescaped_url])
+    s = SourceSearcher.new(title, year)
+    update_attributes({
+      metacritic_link: s.metacritic_link,
+      amazon_link: s.amazon_link,
+      imdb_link: s.imdb_link,
+      rotten_tomatoes_link: s.rotten_tomatoes_link
+    })
   end
 
   def collect_reviews
-    update_attribute(:status, '0%')
-    r = ReviewAggregator.new(title, page_depth)
-    reviews = []
-    update_attribute(:status, '20%')
-    reviews += r.metacritic_reviews(metacritic_link)
-    update_attribute(:status, '40%')
-    reviews += r.amazon_reviews(amazon_link)
-    update_attribute(:status, '60%')
-    reviews += r.imdb_reviews(imdb_link)
-    update_attribute(:status, '80%')
-    reviews += r.rotten_tomatoes_reviews(rotten_tomatoes_link)
-    update_attribute(:reviews, reviews)
-    update_attributes({status: nil, task: nil})
+    r = ReviewCollector.new(title, page_depth)
+    update_attributes({reviews: [], status: '0%'})
+    update_attributes({reviews: reviews + r.metacritic_reviews(metacritic_link), status: '25%'})
+    update_attributes({reviews: reviews + r.amazon_reviews(amazon_link), status: '50%'})
+    update_attributes({reviews: reviews + r.imdb_reviews(imdb_link), status: '75%'})
+    update_attributes({reviews: reviews + r.rotten_tomatoes_reviews(rotten_tomatoes_link), status: nil})
   end
   handle_asynchronously :collect_reviews
 
   def populate_related_people
-    bf = BadFruit.new("6tuqnhbh49jqzngmyy78n8v3")
-    movie = bf.movies.search_by_id(rotten_tomatoes_id)
-    cast = movie.full_cast.map { |person|
-      {name: person.name, characters: person.characters}
-    }
-    directors = movie.directors
-    update_attribute(:related_people, {cast: cast, directors: directors})
+    p = PeopleSearcher.new(rotten_tomatoes_id)
+    update_attribute(:related_people, {cast: p.cast, directors: p.directors})
   end
 
   def build_summary
-    summary = []
-    reviews.each_with_index do |review, index|
-      update_attribute(:status, "#{(index.to_f/reviews.size).round(2) * 100}%") if index % 50 == 0
-      rescore_review = RescoreReview.new(review[:content], related_people)
-      rescore_review.build_all
-      review[:rescore_review] = rescore_review.sentences
-      summary << review
-    end
-    update_attribute(:reviews, summary)
-    update_attributes({sentiment: set_sentiment, stats: set_stats})
-    update_attributes({status: nil, task: nil})
+    r = RescoreReviewer.new(self)
+    update_attribute(:reviews, r.rescored_reviews)
+    update_attributes({
+      sentiment: set_sentiment, stats: set_stats, status: nil, task: nil
+    })
   end
   handle_asynchronously :build_summary
 
@@ -78,83 +58,20 @@ class Movie < ActiveRecord::Base
   end
 
   def set_sentiment
-    topics_sentiment  = Hash[ASPECTS.map {|k,v| [k, []]}]
-    people_sentiment  = {}
-    average_sentiment = []
-    sentiment_averages = [] #this is review level
-    reviews.each do |review|
-      next if review[:rescore_review].nil? || review[:rescore_review].empty?
-      sentiment_average = 0
-      review[:rescore_review].each do |sentence|
-        average_sentiment << sentence[:sentiment]
-        sentiment_average += sentence[:sentiment]
-        sentence[:context_tags].keys.each do |tag|
-          topics_sentiment[tag] << sentence[:sentiment] * sentence[:context_tags][tag]
-        end
-        sentence[:people_tags].each do |tag|
-          people_sentiment[tag] = [] if people_sentiment[tag].nil?
-          people_sentiment[tag] << sentence[:sentiment]
-        end
-      end
-      sentiment_average /= review[:rescore_review].size
-      sentiment_averages << sentiment_average
-    end
-
-    topics_sentiment = topics_sentiment.map { |k, v| [k, v.reduce(:+) / v.size] }
-    people_sentiment = people_sentiment.sort_by { |_, v| v.size }
-    people_sentiment = people_sentiment.
-      map { |k, v| [k, v.reduce(:+) / v.size, v.size] }.reverse.
-      reject { |_, _, c| c < 3}.
-      sort_by { |_, v, c| (v * 100).to_f / c }.reverse
-
-    average_sentiment = dup_hash(average_sentiment.map {|x| x.round(1)}).to_a.sort_by { |x| x[0] }
-    mean = average_sentiment.map { |x| x[0] }.mean
-    standard_deviation = average_sentiment.map { |x| x[0] }.standard_deviation
-    average_sentiment.map! { |x| [((x[0] - mean) / standard_deviation).round(2), x[1]] }
-    labels = [0, average_sentiment.size - 1, average_sentiment.size / 2, average_sentiment.size / 4, average_sentiment.size - average_sentiment.size / 4]
-    average_sentiment.each_with_index do |x, i|
-      average_sentiment[i] = ['', x[1]] unless labels.include? i
-    end
-
-    distribution_stats = [sentiment_averages.max - sentiment_averages.min, sentiment_averages.standard_deviation]
-
-    # collect locations and average sentiment
-    location_sentiment = reviews.map {|x| [x[:location], x[:rescore_review].map {|x| x[:sentiment]}.mean]}
-    # reject inappropriate locations
-    location_sentiment.reject! { |e| e.first == '' || e.first.nil? }
-    # group locations and select groups greater than one in size
-    location_sentiment = location_sentiment.group_by { |e| e[0]}.to_a.select { |e| e[1].size > 1 }
-    # order and calculate scores for groups, sort groups by size
-    location_sentiment = location_sentiment.map { |e| [e[0], e[1].map { |e2| e2[1] }.reduce(:+), e[1].size ] }.sort_by { |e| e[1] }.reverse
-    # tidy names and score values
-    location_sentiment = location_sentiment.map { |e| [e[0].gsub('from ', ''), e[1].round(2) * 100, e[2]] }
-
+    s = SentimentCalculator.new(reviews)
+    s.build
     {
-      topics: topics_sentiment,
-      people: people_sentiment,
-      distribution: average_sentiment,
-      location: location_sentiment,
-      distribution_stats: distribution_stats
+      topics: s.topics_sentiment,
+      people: s.people_sentiment,
+      distribution: s.sentence_sentiment,
+      location: s.location_sentiment,
+      distribution_stats: s.review_sentiment
     }
   end
 
   def set_stats
-    topic_counts = Hash[ASPECTS.map {|k,v| [k, 0]}]
-    reviews.each do |review|
-      next if review[:rescore_review].nil?
-      review[:rescore_review].each do |sentence|
-        sentence[:context_tags].keys.each do |tag|
-          topic_counts[tag] += 1
-        end
-      end
-    end
-
-    rating_distribution = []
-    rounded_ratings = reviews.map {|x| (x[:percentage] / 10 unless x[:percentage].nil?).to_i * 10 }
-    (0..100).step(10) do |n|
-      rating_distribution << rounded_ratings.count(n)
-    end
-    {topic_counts: topic_counts, rating_distribution: rating_distribution}
+    s = StatCalculator.new(reviews)
+    {topic_counts: s.topic_counts, rating_distribution: s.rating_distribution}
   end
 
   def self.summarized
@@ -172,10 +89,4 @@ class Movie < ActiveRecord::Base
   def self.fast_find(id)
     where(id: id).select('id, title, image_url, year, genres, related_people, sentiment, stats, updated_at, created_at').first
   end
-
-  private
-    def dup_hash(ary)
-     ary.inject(Hash.new(0)) { |h,e| h[e] += 1; h }.select {
-     |k,v| v > 1 }.inject({}) { |r, e| r[e.first] = e.last; r }
-    end
 end

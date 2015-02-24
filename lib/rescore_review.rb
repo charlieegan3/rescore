@@ -21,5 +21,6 @@ class RescoreReview
       sentence[:people_tags], previous_name, sentence[:people_indexes] = people
       sentence[:people_indexes] = sentence[:people_indexes].to_a.reject! {|x| x[1].empty?}
     end
+    self
   end
 end
