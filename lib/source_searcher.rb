@@ -6,19 +6,19 @@ class SourceSearcher
   end
 
   def metacritic_link
-    top_hit('www.rottentomatoes.com/m/')
+    top_hit('www.metacritic.com/movie/')
   end
 
   def amazon_link
-    top_hit('www.imdb.com/title/')
-  end
-
-  def imdb_link
     top_hit('www.amazon.com dvd reviews')
   end
 
+  def imdb_link
+    top_hit('www.imdb.com/title/')
+  end
+
   def rotten_tomatoes_link
-    top_hit('www.metacritic.com/movie/')
+    top_hit('www.rottentomatoes.com/m/')
   end
 
   private
