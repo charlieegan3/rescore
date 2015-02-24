@@ -3,7 +3,7 @@
     h1 ="Compare Movies"
 
 .row
-  = form_tag(compare_movies_path, method: "get") do
+  = form_tag(compare_movies_path, method: "get", id: "compare_form") do
     .large-6.columns
         label ="Film one:"
         =collection_select(:filmone, :id, Movie.all.shuffle, :id, :title)
