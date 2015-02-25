@@ -1,0 +1,39 @@
+<script type="text/javascript">
+  $(document).ready(function(){
+
+    var options = {
+      scaleBeginAtZero : true,
+      scaleShowGridLines : true,
+      scaleGridLineColor : "rgba(0,0,0,.05)",
+      scaleGridLineWidth : 1,
+      scaleShowHorizontalLines: true,
+      scaleShowVerticalLines: true,
+      barShowStroke : true,
+      barStrokeWidth : 1,
+      barValueSpacing : 5,
+      barDatasetSpacing : 1,
+      legendTemplate : ""
+    };
+
+    var data = {
+      labels: ["0★", "1★", "2★", "3★", "4★", "5★"],
+      datasets: [
+        {
+          fillColor: "rgba(255,119,0,0.5)",
+          strokeColor: "rgba(255,119,0,1)",
+          data: <%= [ratings[0]] + [ratings[1..5], ratings[6..10]].transpose.map { |p| p.reduce(:+) } %>
+        },
+        {
+          fillColor: "rgba(140,200,90,0.5)",
+          strokeColor: "rgba(140,200,90,1)",
+          data: <%= ([0] + sentiment.map {|x| x[1]}).to_s.html_safe %>
+        }
+      ]
+    };
+
+    var ctx_ratings = $("#<%= id %>_sentiment_ratings").get(0).getContext("2d");
+    var ratingsChart = new Chart(ctx_ratings).Bar(data);
+  })
+</script>
+
+<canvas id="<%= id %>_sentiment_ratings" width="450" height="300"></canvas>
