@@ -45,7 +45,8 @@ class SentimentCalculator
   end
 
   def review_sentiment
-    [@review_sentiment.max - @review_sentiment.min, @review_sentiment.standard_deviation]
+    values = dup_hash(@review_sentiment).sort_by { |k, _| k }.map { |k, v| v }
+    {range: @review_sentiment.max - @review_sentiment.min, st_dev: @review_sentiment.standard_deviation, values: values}
   end
 
   def location_sentiment
