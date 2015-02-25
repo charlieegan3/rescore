@@ -2,9 +2,9 @@
   .large-12.columns
     h3
       |Comparing&nbsp;
-      span.radius.success.label =@movie_one.title
+      span.radius.success.label =@movie_1.title
       |&nbsp;with&nbsp;
-      span.radius.success.label =@movie_two.title
+      span.radius.success.label =@movie_2.title
 
 .row
   .large-12
@@ -18,7 +18,7 @@
           th Updated
           th Added
       tbody
-        -[@movie_one, @movie_two].each do |movie|
+        -[@movie_1, @movie_2].each do |movie|
           tr
             td =image_tag(movie.image_url)
             td =movie.year
@@ -28,7 +28,7 @@
             td =distance_of_time_in_words(Time.new, movie.created_at).gsub('about ', '') + " ago"
 
 .row
-  -[@movie_one, @movie_two].each do |movie|
+  -[@movie_1, @movie_2].each do |movie|
     .large-6.columns
       p.title
         =link_to(movie_path(movie))
@@ -39,35 +39,35 @@
     .panel
       p
         strong Aspect Sentiment vs Discussion Focus
-      =render "aspects_graph", id: @movie_one.id, aspects: @movie_one.sentiment[:topics], counts: @movie_one.stats[:topic_counts]
+      =render "aspects_graph", id: @movie_1.id, aspects: @movie_1.sentiment[:topics], counts: @movie_1.stats[:topic_counts]
   .large-6.columns
     .panel
       p
         strong Aspect Sentiment vs Discussion Focus
-      =render "aspects_graph", id: @movie_two.id, aspects: @movie_two.sentiment[:topics], counts: @movie_two.stats[:topic_counts]
+      =render "aspects_graph", id: @movie_2.id, aspects: @movie_2.sentiment[:topics], counts: @movie_2.stats[:topic_counts]
 .row
   .large-6.columns
     .panel
       p
         strong Average Sentiment vs User Ratings
-      =render "sentiment_ratings_graph", id: @movie_one.id, ratings: @movie_one.stats[:rating_distribution], sentiment: @movie_one.sentiment[:distribution_stats][:values]
+      =render "sentiment_ratings_graph", id: @movie_1.id, ratings: @movie_1.stats[:rating_distribution], sentiment: @movie_1.sentiment[:distribution_stats][:values]
   .large-6.columns
     .panel
       p
         strong Average Sentiment vs User Ratings
-      =render "sentiment_ratings_graph", id: @movie_two.id, ratings: @movie_two.stats[:rating_distribution], sentiment: @movie_two.sentiment[:distribution_stats][:values]
+      =render "sentiment_ratings_graph", id: @movie_2.id, ratings: @movie_2.stats[:rating_distribution], sentiment: @movie_2.sentiment[:distribution_stats][:values]
 
--unless @movie_one.sentiment[:people].empty? || @movie_two.sentiment[:people].empty?
+-unless @movie_1.sentiment[:people].empty? || @movie_2.sentiment[:people].empty?
   .row
     .large-6.columns
       .panel
         p
           strong Cast Sentiment
-        -unless @movie_one.sentiment[:people].empty?
-          =render "cast_sentiment_graph", id: @movie_one.id, people: @movie_one.sentiment[:people]
+        -unless @movie_1.sentiment[:people].empty?
+          =render "cast_sentiment_graph", id: @movie_1.id, people: @movie_1.sentiment[:people]
     .large-6.columns
       .panel
         p
           strong Cast Sentiment
-        -unless @movie_two.sentiment[:people].empty?
-          =render "cast_sentiment_graph", id: @movie_two.id, people: @movie_two.sentiment[:people]
+        -unless @movie_2.sentiment[:people].empty?
+          =render "cast_sentiment_graph", id: @movie_2.id, people: @movie_2.sentiment[:people]
