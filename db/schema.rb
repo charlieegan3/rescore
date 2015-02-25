@@ -11,7 +11,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20150201203748) do
+ActiveRecord::Schema.define(version: 20150225205446) do
 
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
@@ -51,6 +51,13 @@ ActiveRecord::Schema.define(version: 20150201203748) do
     t.text     "sentiment"
     t.text     "stats"
     t.text     "genres"
+  end
+
+  create_table "statistics", force: true do |t|
+    t.string   "identifier"
+    t.text     "value"
+    t.datetime "created_at"
+    t.datetime "updated_at"
   end
 
 end
