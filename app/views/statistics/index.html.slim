@@ -1,2 +1,7 @@
 .row
   h1 Statistics
+  table
+    -@statistics.each do |stat|
+      tr
+        td =stat.identifier
+        td =stat.value
