@@ -16,9 +16,14 @@ class MoviesController < ApplicationController
 
   def compare
     if params[:filmone] && params[:filmtwo]
-      @movie_one = Movie.fast_find(params[:filmone][:id])
-      @movie_two = Movie.fast_find(params[:filmtwo][:id])
-      render 'compare'
+      if params[:filmone] != params[:filmtwo]
+        @movie_one = Movie.fast_find(params[:filmone][:id])
+        @movie_two = Movie.fast_find(params[:filmtwo][:id])
+        render 'compare'
+      else
+        flash[:alert] = 'Please choose different films to compare.'
+        redirect_to compare_movies_path
+      end
     else
       render 'choose_compare'
     end
