@@ -18,14 +18,12 @@ class MoviesController < ApplicationController
     if Movie.count <= 1
       flash[:alert] = "Not enough movies to compare!"
       return redirect_to :root
-    end
-    if params[:filmone] && params[:filmtwo]
-      @movie_one = Movie.fast_find(params[:filmone][:id])
-      @movie_two = Movie.fast_find(params[:filmtwo][:id])
-      render 'compare'
+    elsif params[:m1] && params[:m2]
+      @movie_1 = Movie.fast_find(params[:m1])
+      @movie_2 = Movie.fast_find(params[:m2])
+      return render 'compare'
     else
-      @movie_one, @movie_two = Movie.first, Movie.last
-      @movie_one, @movie_two = Movie.all.shuffle.take(2) if Movie.count > 1
+      @options = Movie.all.pluck(:title, :id).shuffle
       render 'choose_compare'
     end
   end
