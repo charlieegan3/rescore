@@ -7,6 +7,4 @@ task :refresh do
   Statistic.create(identifier: 'topic_counts', value: Movie.topic_counts)
   Statistic.create(identifier: 'topic_sentiments', value: Movie.topic_sentiments)
   Statistic.create(identifier: 'people_count', value: {count: Movie.people_count})
-
-
 end
