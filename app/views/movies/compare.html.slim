@@ -35,58 +35,39 @@
           strong="#{movie.title}"
 
 .row
-  -[@movie_one, @movie_two].each do |movie|
-    .large-6.columns
-      .panel
-        p
-          strong Aspect Sentiment
-        =render "topics_graph", id: movie.id, topics: movie.sentiment[:topics]
-
+  .large-6.columns
+    .panel
+      p
+        strong Aspect Sentiment vs Discussion Focus
+      =render "aspects_graph", id: @movie_one.id, aspects: @movie_one.sentiment[:topics], counts: @movie_one.stats[:topic_counts]
+  .large-6.columns
+    .panel
+      p
+        strong Aspect Sentiment vs Discussion Focus
+      =render "aspects_graph", id: @movie_two.id, aspects: @movie_two.sentiment[:topics], counts: @movie_two.stats[:topic_counts]
 .row
-  -[@movie_one, @movie_two].each do |movie|
-    .large-6.columns
-      .panel
-        p
-          strong Review Sentiment Distribution
-        =render "sentiment_distribution_graph", id: movie.id, sentiment: movie.sentiment[:distribution]
-        p
-          strong Range:&nbsp;
-          =(movie.sentiment[:distribution_stats][0] * 100).to_i
-          |&nbsp;&nbsp;
-          strong Variation:&nbsp;
-          =(movie.sentiment[:distribution_stats][1] * 100).to_i
+  .large-6.columns
+    .panel
+      p
+        strong Average Sentiment vs User Ratings
+      =render "sentiment_ratings_graph", id: @movie_one.id, ratings: @movie_one.stats[:rating_distribution], sentiment: @movie_one.sentiment[:distribution_stats][:values]
+  .large-6.columns
+    .panel
+      p
+        strong Average Sentiment vs User Ratings
+      =render "sentiment_ratings_graph", id: @movie_two.id, ratings: @movie_two.stats[:rating_distribution], sentiment: @movie_two.sentiment[:distribution_stats][:values]
 
-.row
-  -[@movie_one, @movie_two].each do |movie|
-    .large-6.columns
-      .panel
-        p
-          strong Aspect Discussion Focus
-        =render "topic_count_graph", id: movie.id, topics: movie.stats[:topic_counts]
-
-.row
-  -[@movie_one, @movie_two].each do |movie|
+-unless @movie_one.sentiment[:people].empty? || @movie_two.sentiment[:people].empty?
+  .row
     .large-6.columns
       .panel
         p
           strong Cast Sentiment
-        =render "cast_sentiment_graph", id: movie.id, people: movie.sentiment[:people]
-
-.row
-  -[@movie_one, @movie_two].each do |movie|
+        -unless @movie_one.sentiment[:people].empty?
+          =render "cast_sentiment_graph", id: @movie_one.id, people: @movie_one.sentiment[:people]
     .large-6.columns
       .panel
         p
-          strong Rating Distribution
-        =render "ratings_graph", id: movie.id, ratings: movie.stats[:rating_distribution]
-
-.row
-  -[@movie_one, @movie_two].each do |movie|
-    .large-6.columns
-      .panel
-        p
-          strong Sentiment by Location
-        -if movie.sentiment[:location].empty?
-          p="No location data for this movie's reviews."
-        -else
-          =render "locations_graph", id: movie.id, locations: movie.sentiment[:location]
+          strong Cast Sentiment
+        -unless @movie_two.sentiment[:people].empty?
+          =render "cast_sentiment_graph", id: @movie_two.id, people: @movie_two.sentiment[:people]
