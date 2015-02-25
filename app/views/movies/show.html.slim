@@ -26,6 +26,16 @@
           td =distance_of_time_in_words(Time.new, @movie.created_at).gsub('about ', '') + " ago"
 
 .row
+  .large-3.columns
+    .panel
+      p Additional Stats
+  .large-6.columns
+    .panel
+      =render "aspects_graph", id: @movie.id, aspects: @movie.sentiment[:topics], counts: @movie.stats[:topic_counts]
+  .large-3.columns
+    .panel
+      p Additional Stats
+.row
   .large-4.columns
     .panel
       p
