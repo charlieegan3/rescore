@@ -6,9 +6,17 @@
     form action="/movies/search_by_title"
       input name="query" type="text" placeholder="Search movies" /
 
-    p.revisited
+.row
+  .large-6.columns
+    p.stat
       =@review_count
       |&nbsp;reviews revisited
-    p.reviewed ="#{@movie_count} movies reviewed"
-
-=render("latest_movie")
+  .large-6.columns
+    p.stat
+      ="#{@movie_count} movies reviewed"
+.row
+  .large-12.columns
+      p.stat
+        |Latest Movie&nbsp;
+        br
+        strong =link_to @movie.title, movie_path(@movie)
