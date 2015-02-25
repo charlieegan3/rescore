@@ -1,0 +1,152 @@
+{
+  "title": "Maps to the Stars",
+  "genres": "Drama",
+  "source": "http://www.imdb.com/title/tt2172584/reviews?ref_=tt_ov_rt",
+  "score": "9/10",
+  "helpfulness": "27/44",
+  "author": "Wojtek",
+  "body": "This film is a feast for Cronenberg-Fans and I loved it. Yeah, Hollywood. I worked there for a while and then I quit because I thought it was insane. David Cronenberg surely seems to feel the same way. This is a good story with a fluid script, beautiful filming and great actors. Lots of industry-talk (yes, they really do talk that way) and all the stress, the pushing for success, the attention needed at all cost and the eagerness to do anything it takes to get there are greatly told. As well as all the bad things even a small success can do to people. The story is mainly about a family in Cronenberg-condition, meaning they are really messed up and totally unpredictable, way beyond mental sanity. The irony is that in this insane Hollywood environment that appears to be quite normal, and inevitably it generates a great body-count. Of course, Dad is a shrink and bestselling author. He doesn't seem to do a great job at home, though, as his 13 year old child-star-son is in drug rehab and his daughter was just released from a mental institution and is on a 12-steps-program. Mom is way out there and sometimes it gets hilarious indeed. The end is almost poetic and a fitting conclusion to all the madness going on. Applause to Julianne Moore for her outstanding performance. The only thing that I found not necessary was the overly explicit sex- scene. ",
+  "annotated_sentences": [
+    {
+      "text": "This film is a feast for Cronenberg-Fans and I loved it.",
+      "aspects": {
+        "movie": {
+          "words": [
+            "This film"
+          ],
+          "score": "1",
+          "justification": "feast"
+        }
+      },
+      "comment": "careful - doesn't always have to be positive"
+    },
+    {
+      "text": "Yeah, Hollywood.",
+      "aspects": {
+      },
+      "comment": "ignore"
+    },
+    {
+      "text": "I worked there for a while and then I quit because I thought it was insane.",
+      "aspects": {
+      },
+      "comment": "ignore"
+    },
+    {
+      "text": "David Cronenberg surely seems to feel the same way.",
+      "aspects": {
+      },
+      "comment": "ignore"
+    },
+    {
+      "text": "This is a good story with a fluid script, beautiful filming and great actors.",
+      "aspects": {
+        "movie": {
+          "words": [
+            "This"
+          ],
+          "score": "1",
+          "justification": "good story"
+        },
+        "plot": {
+          "words": [
+            "story"
+          ],
+          "score": "1",
+          "justification": "fluid"
+        },
+        "vision": {
+          "words": [
+            "beautiful"
+          ],
+          "score": "2",
+          "justification": "beautiful"
+        },
+        "cast": {
+          "words": [
+            "actors"
+          ],
+          "score": "2",
+          "justification": "great"
+        }
+      },
+      "comment": "weeeeeeeeeeeeeeeeeeeeeeeeeee!"
+    },
+    {
+      "text": "Lots of industry-talk (yes, they really do talk that way) and all the stress, the pushing for success, the attention needed at all cost and the eagerness to do anything it takes to get there are greatly told.",
+      "aspects": {
+      },
+      "comment": "ignore"
+    },
+    {
+      "text": "As well as all the bad things even a small success can do to people.",
+      "aspects": {
+      },
+      "comment": "ignore"
+    },
+    {
+      "text": "The story is mainly about a family in Cronenberg-condition, meaning they are really messed up and totally unpredictable, way beyond mental sanity.",
+      "aspects": {
+      },
+      "comment": "ignore"
+    },
+    {
+      "text": "The irony is that in this insane Hollywood environment that appears to be quite normal, and inevitably it generates a great body-count.",
+      "aspects": {
+      },
+      "comment": "why detected sound?"
+    },
+    {
+      "text": "Of course, Dad is a shrink and bestselling author.",
+      "aspects": {
+      },
+      "comment": "ignore"
+    },
+    {
+      "text": "He doesn't seem to do a great job at home, though, as his 13 year old child-star-son is in drug rehab and his daughter was just released from a mental institution and is on a 12-steps-program.",
+      "aspects": {
+      },
+      "comment": "ignore"
+    },
+    {
+      "text": "Mom is way out there and sometimes it gets hilarious indeed.",
+      "aspects": {
+      },
+      "comment": "ignore"
+    },
+    {
+      "text": "The end is almost poetic and a fitting conclusion to all the madness going on.",
+      "aspects": {
+        "plot": {
+          "words": [
+            "The end"
+          ],
+          "score": "1",
+          "justification": "almost poetic"
+        }
+      },
+      "comment": "I might be wrong - maybe 2 for just poetic?"
+    },
+    {
+      "text": "Applause to Julianne Moore for her outstanding performance.",
+      "aspects": {
+        "cast": {
+          "words": [
+            "performance"
+          ],
+          "score": "2",
+          "justification": "outstanding"
+        }
+      },
+      "comment": "not about just her, counts as cast or particular actor?"
+    },
+    {
+      "text": "The only thing that I found not necessary was the overly explicit sex- scene. ",
+      "aspects": {
+      },
+      "comment": "ignore"
+    }
+  ],
+  "overall": "2",
+  "comment": "no comment"
+}
