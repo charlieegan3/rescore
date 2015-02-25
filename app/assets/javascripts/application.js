@@ -19,11 +19,4 @@ $(function(){ $(document).foundation(); });
 
 $(document).ready(function(){
   $(".rescore-flash").delay(2400).hide("slow");
-  
-  $("#compare_submit").click(function(e){
-    if($("#filmone_id").val() === $("#filmtwo_id").val()) {
-      e.preventDefault();
-      alert("Please choose different films to compare.");
-    }
-  })
 })
