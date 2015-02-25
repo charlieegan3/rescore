@@ -21,7 +21,9 @@ class SentimentCalculator
   end
 
   def topics_sentiment
-    @topics_sentiment.map { |k, v| [k, v.reduce(:+) / v.size] }
+    counts = Hash[@topics_sentiment.map { |k, v| [k, v.reduce(:+) / v.size] }]
+    total = counts.inject(0) {|sum, k| sum += k[1] }
+    counts.inject(counts) { |h,(k,v)| h[k] = v.to_f / total; h }
   end
 
   def people_sentiment
