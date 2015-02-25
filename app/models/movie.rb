@@ -79,7 +79,29 @@ class Movie < ActiveRecord::Base
   end
 
   def self.review_count
-    Movie.pluck(:reviews).map { |reviews| reviews.size }.reduce(:+)
+    Movie.all.pluck(:reviews).inject(0) { |sum, e| sum += e.size }
+  end
+
+  def self.topic_counts
+    {}.tap do |counts|
+      Movie.all.pluck(:stats).each do |stats|
+        counts.merge!(stats[:topic_counts]) { |k, a, b| a + b }
+      end
+    end
+  end
+
+  def self.topic_sentiments
+    {}.tap do |counts|
+      Movie.all.pluck(:sentiment).each do |sentiments|
+        counts.merge!(Hash[sentiments[:topics]]) { |k, a, b| a + b }
+      end
+    end
+  end
+
+  def self.people_count
+    Movie.all.pluck(:related_people).inject([]) do  |people, list|
+      people += list[:cast] + list[:directors]
+    end.map {|x| x[:name]}.uniq.size
   end
 
   def self.latest
