@@ -40,13 +40,13 @@
     .panel
       p
         strong Average Sentiment vs User Ratings
-      =render "sentiment_ratings_graph", id: @movie.id, ratings: @movie.stats[:rating_distribution], sentiment: @movie.sentiment[:distribution]
+      =render "sentiment_ratings_graph", id: @movie.id, ratings: @movie.stats[:rating_distribution], sentiment: @movie.sentiment[:distribution_stats][:values]
       p
         strong Range:&nbsp;
-        =(@movie.sentiment[:distribution_stats][0] * 100).to_i
+        =(@movie.sentiment[:distribution_stats][:range] * 100).to_i
         |&nbsp;&nbsp;
         strong Variation:&nbsp;
-        =(@movie.sentiment[:distribution_stats][1] * 100).to_i
+        =(@movie.sentiment[:distribution_stats][:st_dev] * 100).to_i
 .row
   .large-6.columns
     .panel
