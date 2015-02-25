@@ -1,0 +1,152 @@
+{
+  "title": "'71",
+  "genres": "Drama",
+  "source": "http://www.imdb.com/title/tt2614684/reviews?ref_=tt_ov_rt",
+  "score": "10/10",
+  "helpfulness": "33/44",
+  "author": "Wojtek",
+  "body": "Introduced by a hard-hitting boxing fight; the ethos of '71 is immediately understood. It is brutal, thrilling and an utterly dramatic directorial debut from Yann Demange. Part of a new regiment, Jack O'Connell's lead character, Gary Hook, is deployed to Belfast, Northern Ireland to help control an emergency situation caused by IRA terrorism. Gaining an essence of Full Metal Jacket meeting I am Solider – the film is quite honest in what it wants to be, and the narrative because of it flows consistently in the right direction. Sent into the front-line urban warfare, Hook's regiment, under the command of Lieutenant Armitage (Sam Reid) is quickly bombarded with urine and pooh packages. Then quickly followed by one of the most realistic, violent and dramatic riots that has ever appeared in film. Soon, Hook is separated from his group and forced to survive as a lone-wolf in the devilish-toned IRA hostile territory. All quickly intensifies to an incredible Bourne-style chase through the streets of terror; what with the cars alight at each corner, crisp cinematography - everything feels authentic. 'They do not care about you, to them, you are just a piece of meat' – one character announces to Hook. But how wrong they are, as '71 soon turns into a game of cat vs. cat vs. mouse in a hunt of find him first. Led by Jack O'Connell (Starred Up), his performance is uncanny – but just one of the many highlights that '71 serves up. Co-starring alongside, Sean Harris and Paul Anderson play undercover superiors, yet are as corrupt as Bad Lieutenant. Regimented like the army, '71 is on point. Everything is there for a reason, and it shows on screen. Struck with luck, but unlucky to have been there in the first place, Jack O'Connell prospers and carries the film even when it is unneeded and secures it as one of this year's best thrillers. ",
+  "annotated_sentences": [
+    {
+      "text": "Introduced by a hard-hitting boxing fight; the ethos of '71 is immediately understood.",
+      "aspects": {
+      },
+      "comment": "ignore"
+    },
+    {
+      "text": "It is brutal, thrilling and an utterly dramatic directorial debut from Yann Demange.",
+      "aspects": {
+        "movie": {
+          "words": [
+            "It"
+          ],
+          "score": "2",
+          "justification": "thrilling; utterly dramatic"
+        }
+      },
+      "comment": "2 things"
+    },
+    {
+      "text": "Part of a new regiment, Jack O'Connell's lead character, Gary Hook, is deployed to Belfast, Northern Ireland to help control an emergency situation caused by IRA terrorism.",
+      "aspects": {
+      },
+      "comment": "ignore"
+    },
+    {
+      "text": "Gaining an essence of Full Metal Jacket meeting I am Solider – the film is quite honest in what it wants to be, and the narrative because of it flows consistently in the right direction.",
+      "aspects": {
+        "plot": {
+          "words": [
+            "narrative"
+          ],
+          "score": "1",
+          "justification": "consistently"
+        },
+        "credibility": {
+          "words": [
+            "honest"
+          ],
+          "score": "1",
+          "justification": "quite honest"
+        }
+      },
+      "comment": "wohooo! got both more or less right? yes? no?"
+    },
+    {
+      "text": "Sent into the front-line urban warfare, Hook's regiment, under the command of Lieutenant Armitage (Sam Reid) is quickly bombarded with urine and pooh packages.",
+      "aspects": {
+      },
+      "comment": "ignore"
+    },
+    {
+      "text": "Then quickly followed by one of the most realistic, violent and dramatic riots that has ever appeared in film.",
+      "aspects": {
+        "credibility": {
+          "words": [
+            "realistic"
+          ],
+          "score": "2",
+          "justification": "most realistic"
+        }
+      },
+      "comment": "how to deal with this?"
+    },
+    {
+      "text": "Soon, Hook is separated from his group and forced to survive as a lone-wolf in the devilish-toned IRA hostile territory.",
+      "aspects": {
+      },
+      "comment": "ignore"
+    },
+    {
+      "text": "All quickly intensifies to an incredible Bourne-style chase through the streets of terror; what with the cars alight at each corner, crisp cinematography - everything feels authentic.",
+      "aspects": {
+        "credibility": {
+          "words": [
+            "everything"
+          ],
+          "score": "2",
+          "justification": "authentic"
+        }
+      },
+      "comment": "keyword - everything - might be worts seeing it as having an aspect itself - cf. nothing"
+    },
+    {
+      "text": "'They do not care about you, to them, you are just a piece of meat' – one character announces to Hook.",
+      "aspects": {
+      },
+      "comment": "ignore"
+    },
+    {
+      "text": "But how wrong they are, as '71 soon turns into a game of cat vs. cat vs. mouse in a hunt of find him first.",
+      "aspects": {
+      },
+      "comment": "ignore"
+    },
+    {
+      "text": "Led by Jack O'Connell (Starred Up), his performance is uncanny – but just one of the many highlights that '71 serves up.",
+      "aspects": {
+        "cast": {
+          "words": [
+            "performance"
+          ],
+          "score": "2",
+          "justification": "uncanny"
+        }
+      },
+      "comment": "cast or person?"
+    },
+    {
+      "text": "Co-starring alongside, Sean Harris and Paul Anderson play undercover superiors, yet are as corrupt as Bad Lieutenant.",
+      "aspects": {
+      },
+      "comment": "why length detected? play?"
+    },
+    {
+      "text": "Regimented like the army, '71 is on point.",
+      "aspects": {
+      },
+      "comment": "ignore"
+    },
+    {
+      "text": "Everything is there for a reason, and it shows on screen.",
+      "aspects": {
+      },
+      "comment": "ignore"
+    },
+    {
+      "text": "Struck with luck, but unlucky to have been there in the first place, Jack O'Connell prospers and carries the film even when it is unneeded and secures it as one of this year's best thrillers. ",
+      "aspects": {
+        "movie": {
+          "words": [
+            "it"
+          ],
+          "score": "2",
+          "justification": "this year's best"
+        }
+      },
+      "comment": "difficult but managable. what about that actor?"
+    }
+  ],
+  "overall": "2",
+  "comment": "some difficult sentences to think about"
+}
