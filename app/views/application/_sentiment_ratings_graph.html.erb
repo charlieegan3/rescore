@@ -16,12 +16,12 @@
     };
 
     var data = {
-      labels: ["0★", "1★", "2★", "3★", "4★", "5★"],
+      labels: ["1★", "2★", "3★", "4★", "5★"],
       datasets: [
         {
           fillColor: "rgba(140,200,90,0.5)",
           strokeColor: "rgba(140,200,90,1)",
-          data: <%= [ratings[0]] + [ratings[1..5], ratings[6..10]].transpose.map { |p| p.reduce(:+) } %>
+          data: <%= [ratings[1..5], ratings[6..10]].transpose.map { |p| p.reduce(:+) } %>
         },
         {
           fillColor: "rgba(255,119,0,0.5)",
