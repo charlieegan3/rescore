@@ -28,10 +28,10 @@
             "films"
           ],
           "score": "2",
-          "justification": "landmark"
+          "justification": "one of the greatest"
         }
       },
-      "comment": ""
+      "comment": "Woj: landmark might not be the best choice here, to actually be added to sentlist tbh"
     },
     {
       "text": "I bought Goodfellas last week and I got to watch the film a couple days ago. I really just couldn't lay my eyes off the film and everything about it was just simply worth watching.",
@@ -44,18 +44,18 @@
           "justification": "I really couldn't lay my eyes off the film"
         }
       },
-      "comment": ""
+      "comment": "Woj: add to sent: n't lay my eyes off"
     },
     {
       "text": "The acting was excellent, Ray Liotta, Robert DeNiro, Joe Pesci, Lorraine Bracco, and other actors did great and almost all of the characters they portrayed were 100% accurate.",
       "aspects": {
-        "plot": {
+        "credibility": {
           "words": [
             "characters",
             "character"
           ],
-          "score": "2",
-          "justification": "excellent"
+          "score": "1",
+          "justification": "accurate"
         },
         "cast": {
           "words": [
@@ -78,7 +78,7 @@
           "justification": "excellent"
         }
       },
-      "comment": ""
+      "comment": "Woj: fine with focusing on camera shots, but also camera-work - add to list?"
     },
     {
       "text": "The soundtrack too is one of the best soundtracks ever made and the song \"Layla,\" put chills down my spine of how great this song fitted the film.",
@@ -91,7 +91,7 @@
           "justification": "best soundtracks ever made"
         }
       },
-      "comment": ""
+      "comment": "Wojt: add best x ever multiple entries to all aspects?"
     },
     {
       "text": "Overall, Martin Scorsese made his best film in my opinion and him and Nicholas Pileggi made an excellent and sharp script that made this, the greatest mob film still today.Hedeen's Outlook: 10/10!!",
@@ -120,6 +120,6 @@
       "comment": ""
     }
   ],
-  "overall": "0",
+  "overall": "2",
   "comment": ""
 }

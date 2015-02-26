@@ -43,10 +43,10 @@
         },
         "plot": {
           "words": [
-            "story"
+            "screenplay"
           ],
           "score": "2",
-          "justification": "beautifully tight screenplay without a wasted scene"
+          "justification": "beautifully tight"
         }
       },
       "comment": ""
@@ -61,9 +61,16 @@
           ],
           "score": "2",
           "justification": "on top form"
+        },
+	"cast": {
+          "words": [
+            "performance"
+          ],
+          "score": "2",
+          "justification": "stellar"
         }
       },
-      "comment": "what about the performance?"
+      "comment": "Woj: cast post edited - might not work ;) ; should add stellar to dictionary"
     },
     {
       "text": "The Turing Test.",
@@ -94,7 +101,7 @@
           "justification": "No"
         }
       },
-      "comment": "neutral"
+      "comment": "neutral - should not detect sentiment in the sentence, so if it does, can erase my "0" "
     },
     {
       "text": "No interstellar spaceships.",
@@ -116,7 +123,7 @@
             "film"
           ],
           "score": "2",
-          "justification": "most remarkable"
+          "justification": "remarkable"
         },
         "cast": {
           "words": [
@@ -126,7 +133,7 @@
           "justification": "to perfection"
         }
       },
-      "comment": ""
+      "comment": "Again perfection might mean more than one aspect, but most likely acting"
     },
     {
       "text": "A film about a story that matters, about events that changed history and simply about a man without whom you might not even be able to read this review on your Turing machine. ",

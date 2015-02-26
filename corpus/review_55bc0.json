@@ -12,20 +12,20 @@
       "aspects": {
         "movie": {
           "words": [
-            "new film"
+            "blockbuster"
           ],
           "score": "2",
-          "justification": "amazing blockbuster"
+          "justification": "amazing, irreverent"
         },
         "vision": {
           "words": [
             "visual"
           ],
           "score": "2",
-          "justification": "visually stunning"
+          "justification": "stunning"
         }
       },
-      "comment": ""
+      "comment": "Woj: problem with other titles in the same sentence :("
     },
     {
       "text": "Previous Marvel films have tried too hard to place humour in situations that didn't require it, 'Guardians of the Galaxy' however employs it frequently and due to the constant stream of jokes it works perfectly.",
@@ -52,7 +52,7 @@
           "justification": "cast perfectly"
         }
       },
-      "comment": ""
+      "comment": "Woj: would mark words differently, don't know how though"
     },
     {
       "text": "The visual effects are utterly stunning and the battle scenes are epic, 'Guardians' is a truly amazing and thrilling superhero flick full of visual splendour..",
@@ -69,7 +69,14 @@
             "visual"
           ],
           "score": "2",
-          "justification": "visual splendour"
+          "justification": "splendour"
+        },
+	"vision": {
+          "words": [
+            "visual effects"
+          ],
+          "score": "2",
+          "justification": "stunning"
         }
       },
       "comment": ""
