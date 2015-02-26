@@ -1,0 +1,21 @@
+.row
+  .large-12.columns
+    h1 Statistics
+.row
+  .large-6.columns
+    .panel
+      p
+        strong Global Aspect Sentiment vs Discussion Focus
+      =render "aspects_graph", id: 'stats', aspects: @aspects, counts: @counts
+  .large-6.columns
+    .panel
+      p
+        strong ="#{Movie.count} "
+        | movies
+        br
+        strong ="#{@review_count} "
+        | reviews
+        br
+        strong ="#{@people_count} "
+        | people
+      p This needs expansion. Open to ideas.
