@@ -109,6 +109,6 @@ class Movie < ActiveRecord::Base
   end
 
   def self.fast_find(id)
-    where(id: id).select('id, title, image_url, year, genres, related_people, sentiment, stats, updated_at, created_at').first
+    where(id: id).select('id, title, image_url, year, genres, related_people, sentiment, stats, updated_at, created_at, imdb_link, metacritic_link, rotten_tomatoes_link, amazon_link').first
   end
 end
