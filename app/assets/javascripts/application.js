@@ -25,5 +25,5 @@ $(document).ready(function(){
       e.preventDefault();
       alert("Please choose different films to compare.");
     }
-  })
+  });
 })
