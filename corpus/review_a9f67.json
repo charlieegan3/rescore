@@ -1,0 +1,285 @@
+{
+  "title": "The Grand Budapest Hotel",
+  "genres": "Adventure, Comedy, Drama",
+  "source": "imdb",
+  "score": "10/10",
+  "helpfulness": "331/416",
+  "author": "Charlie Egan",
+  "body": "It has often been said that Wes Anderson walks the fine line between folly and genius. In the \"Grand Budapest Hotel\", however, this distinction no longer exists: the ridiculous becomes brilliant, and brilliant has never been this ridiculous. It is his best work, or at least the film which has all of Anderson's creative impulses working in one direction, producing a coherent work of art. His films have always been quirky, charming and out-of-this world, but never before has the audience been immersed in Andersonland as fully as with this film. The colours, the camera movement that switches between different parts of the set, the music, the lens angle distortion, the ridiculously stellar cast, all of Anderson's trademark elements, combine to produce the ultimate Anderson film. The absolutely ridiculous CGI is used perfectly to add to the surrealism of the movie. It is also extremely well crafted, not only visually, but structurally. Unlike some of his previous work, the editing, the pacing and the rhythm of \"Budapest\" are pitch-perfect.Is it a great film? I'm not sure. It does not attempt to cope with the issues of death, love, despair, the big ones. On the other hand, it seeps with nostalgia, a bittersweet longing for an age long past, and the fascinating characters it produced. It is technically a detective comedy, and one has to note that the genre seems to suit Anderson's peculiar brand of filmmaking very well. But never before has Hitchcock's Macguffin been as explicitly embodied as by the \"Boy With the Apple\". The plot is merely a mechanism that allows Anderson to transport his vision onto the screen, a vision of a peculiar world seemingly different from our own, but filled with just as much loss and, at the same time, human compassion as ours. There is comedy, but its either very subtle or incredibly over the top, and most viewers are uncomfortable with both. There isn't a single 'ordinary shot', pretty much every image is out of place to such an extent that they begin to form one coherent film, and a fantastic one at that.",
+  "annotated_sentences": [
+    {
+      "text": "It has often been said that Wes Anderson walks the fine line between folly and genius.",
+      "aspects": {
+      },
+      "comment": "Comment is hard to extract from"
+    },
+    {
+      "text": "In the \"Grand Budapest Hotel\", however, this distinction no longer exists: the ridiculous becomes brilliant, and brilliant has never been this ridiculous.",
+      "aspects": {
+        "movie": {
+          "words": [
+            "title of the film"
+          ],
+          "score": "2",
+          "justification": "brilliant"
+        }
+      },
+      "comment": "ridiculous makes this sentence harder"
+    },
+    {
+      "text": "It is his best work, or at least the film which has all of Anderson's creative impulses working in one direction, producing a coherent work of art.",
+      "aspects": {
+        "movie": {
+          "words": [
+            "the film"
+          ],
+          "score": "2",
+          "justification": "work of art"
+        }
+      },
+      "comment": "very wordy"
+    },
+    {
+      "text": "His films have always been quirky, charming and out-of-this world, but never before has the audience been immersed in Andersonland as fully as with this film.",
+      "aspects": {
+        "movie": {
+          "words": [
+            "his films"
+          ],
+          "score": "2",
+          "justification": "immersed"
+        },
+        "novelty": {
+          "words": [
+            "quirky, charming"
+          ],
+          "score": "2",
+          "justification": "charming, out of this world"
+        }
+      },
+      "comment": ""
+    },
+    {
+      "text": "The colours, the camera movement that switches between different parts of the set, the music, the lens angle distortion, the ridiculously stellar cast, all of Anderson's trademark elements, combine to produce the ultimate Anderson film.",
+      "aspects": {
+        "movie": {
+          "words": [
+            "film"
+          ],
+          "score": "2",
+          "justification": "ultimate"
+        },
+        "sound": {
+          "words": [
+            "music"
+          ],
+          "score": "2",
+          "justification": "ultimate"
+        },
+        "cast": {
+          "words": [
+            "cast"
+          ],
+          "score": "2",
+          "justification": "stellar"
+        },
+        "vision": {
+          "words": [
+            "colour"
+          ],
+          "score": "2",
+          "justification": "lens, camera, distortion"
+        },
+        "cinematography": {
+          "words": [
+            "camera movement"
+          ],
+          "score": "2",
+          "justification": "camera movement"
+        }
+      },
+      "comment": ""
+    },
+    {
+      "text": "The absolutely ridiculous CGI is used perfectly to add to the surrealism of the movie.",
+      "aspects": {
+        "vision": {
+          "words": [
+            "surrealism, CGI"
+          ],
+          "score": "2",
+          "justification": "perfectly"
+        }
+      },
+      "comment": ""
+    },
+    {
+      "text": "It is also extremely well crafted, not only visually, but structurally.",
+      "aspects": {
+        "movie": {
+          "words": [
+            "it"
+          ],
+          "score": "2",
+          "justification": "extremely well crafted"
+        },
+        "vision": {
+          "words": [
+            "visual"
+          ],
+          "score": "2",
+          "justification": "extremely well crafted"
+        },
+        "plot": {
+          "words": [
+            "structurally"
+          ],
+          "score": "2",
+          "justification": "extremely well crafted"
+        }
+      },
+      "comment": ""
+    },
+    {
+      "text": "Unlike some of his previous work, the editing, the pacing and the rhythm of \"Budapest\" are pitch-perfect.Is it a great film?",
+      "aspects": {
+        "movie": {
+          "words": [
+            "unlike some of his previous work"
+          ],
+          "score": "2",
+          "justification": "pitch-perfect"
+        },
+        "editing": {
+          "words": [
+            "editing"
+          ],
+          "score": "2",
+          "justification": "pitch-perfect"
+        },
+        "plot": {
+          "words": [
+            "pacing, rhythm"
+          ],
+          "score": "2",
+          "justification": "pitch-perfect"
+        }
+      },
+      "comment": ""
+    },
+    {
+      "text": "I'm not sure.",
+      "aspects": {
+        "movie": {
+          "words": [
+            ""
+          ],
+          "score": "0",
+          "justification": "not sure"
+        }
+      },
+      "comment": "hard to take much from this"
+    },
+    {
+      "text": "It does not attempt to cope with the issues of death, love, despair, the big ones.",
+      "aspects": {
+        "movie": {
+          "words": [
+            "it"
+          ],
+          "score": "-1",
+          "justification": "does not attempt to cope"
+        }
+      },
+      "comment": ""
+    },
+    {
+      "text": "On the other hand, it seeps with nostalgia, a bittersweet longing for an age long past, and the fascinating characters it produced.",
+      "aspects": {
+        "movie": {
+          "words": [
+            "it"
+          ],
+          "score": "",
+          "justification": ""
+        },
+        "plot": {
+          "words": [
+            "characters",
+            "character"
+          ],
+          "score": "2",
+          "justification": "fascinating"
+        },
+        "cinematography": {
+          "words": [
+            "nostalgia"
+          ],
+          "score": "2",
+          "justification": "seeps with nostalgia"
+        }
+      },
+      "comment": "bit of a tough sentence"
+    },
+    {
+      "text": "It is technically a detective comedy, and one has to note that the genre seems to suit Anderson's peculiar brand of filmmaking very well.",
+      "aspects": {
+        "movie": {
+          "words": [
+            "It"
+          ],
+          "score": "1",
+          "justification": "suit... very well"
+        }
+      },
+      "comment": ""
+    },
+    {
+      "text": "But never before has Hitchcock's Macguffin been as explicitly embodied as by the \"Boy With the Apple\".",
+      "aspects": {
+      },
+      "comment": "not relevant"
+    },
+    {
+      "text": "The plot is merely a mechanism that allows Anderson to transport his vision onto the screen, a vision of a peculiar world seemingly different from our own, but filled with just as much loss and, at the same time, human compassion as ours.",
+      "aspects": {
+        "plot": {
+          "words": [
+            "plot"
+          ],
+          "score": "-1",
+          "justification": "merely a mechanism"
+        }
+      },
+      "comment": "i think this is -ve, might be wrong"
+    },
+    {
+      "text": "There is comedy, but its either very subtle or incredibly over the top, and most viewers are uncomfortable with both.",
+      "aspects": {
+        "dialog": {
+          "words": [
+            "comedy"
+          ],
+          "score": "-2",
+          "justification": "uncomfortable"
+        }
+      },
+      "comment": ""
+    },
+    {
+      "text": "There isn't a single 'ordinary shot', pretty much every image is out of place to such an extent that they begin to form one coherent film, and a fantastic one at that.",
+      "aspects": {
+        "cinematography": {
+          "words": [
+            "shot, image"
+          ],
+          "score": "2",
+          "justification": "fantastic"
+        }
+      },
+      "comment": ""
+    }
+  ],
+  "overall": "1",
+  "comment": "I think this isn't a 10 star review"
+}

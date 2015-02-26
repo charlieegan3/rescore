@@ -1,0 +1,121 @@
+{
+  "title": "Unbroken",
+  "genres": "Biography",
+  "source": "http://www.imdb.com/title/tt1809398/reviews?ref_=tt_ov_rt",
+  "score": "5/10",
+  "helpfulness": "113/197",
+  "author": "Wojtek",
+  "body": "Just came out of a pre-release screening. It was fine. Above all, the word I would use would be \"safe\". It was a movie created not to fail, and it doesn't. Watching it is a reasonable way to spend 2 and a half hours. A bunch of bad stuff happens to Zamperini, he survives it in an inspiring way, the end. IMDb movie reviews have to be 10 lines, but Unbroken doesn't really deserve it. There's more to be said about Zamperini the person than the film itself. It was narratively predictable, but that's forgivable given the nature of the film. The problem is it was visually predictable too. If someone were to right a textbook on how to make an inspiring movie, they could dryly and apathetically describe this movie shot for shot. ",
+  "annotated_sentences": [
+    {
+      "text": "Just came out of a pre-release screening.",
+      "aspects": {
+        "ignore": {
+          "words": [
+            "ignore"
+          ],
+          "score": "0",
+          "justification": "-"
+        }
+      },
+      "comment": "ignore - my bad"
+    },
+    {
+      "text": "It was fine.",
+      "aspects": {
+        "movie": {
+          "words": [
+            "It"
+          ],
+          "score": "1",
+          "justification": "fine"
+        }
+      },
+      "comment": ""
+    },
+    {
+      "text": "Above all, the word I would use would be \"safe\".",
+      "aspects": {
+      },
+      "comment": "difficult to link it to the previous sentence, but maybe we could try?"
+    },
+    {
+      "text": "It was a movie created not to fail, and it doesn't.",
+      "aspects": {
+        "movie": {
+          "words": [
+            "a movie"
+          ],
+          "score": "1",
+          "justification": "created not to fail, and it doesn't"
+        }
+      },
+      "comment": "impossible to detect at this stage"
+    },
+    {
+      "text": "Watching it is a reasonable way to spend 2 and a half hours.",
+      "aspects": {
+      },
+      "comment": "ignore"
+    },
+    {
+      "text": "A bunch of bad stuff happens to Zamperini, he survives it in an inspiring way, the end.",
+      "aspects": {
+      },
+      "comment": "ignore"
+    },
+    {
+      "text": "IMDb movie reviews have to be 10 lines, but Unbroken doesn't really deserve it.",
+      "aspects": {
+        "dialog": {
+          "words": [
+            "lines"
+          ],
+          "score": "0",
+          "justification": "-"
+        }
+      },
+      "comment": "ignore - my bad"
+    },
+    {
+      "text": "There's more to be said about Zamperini the person than the film itself.",
+      "aspects": {
+      },
+      "comment": "ignore"
+    },
+    {
+      "text": "It was narratively predictable, but that's forgivable given the nature of the film.",
+      "aspects": {
+        "movie": {
+          "words": [
+            "It"
+          ],
+          "score": "0",
+          "justification": "predictable"
+        }
+      },
+      "comment": ""
+    },
+    {
+      "text": "The problem is it was visually predictable too.",
+      "aspects": {
+        "vision": {
+          "words": [
+            "visual"
+          ],
+          "score": "0",
+          "justification": "predictable"
+        }
+      },
+      "comment": "add visally (and more adverbs to describe different aspects)"
+    },
+    {
+      "text": "If someone were to right a textbook on how to make an inspiring movie, they could dryly and apathetically describe this movie shot for shot. ",
+      "aspects": {
+      },
+      "comment": "ignore"
+    }
+  ],
+  "overall": "0",
+  "comment": "sorry for the mistake"
+}

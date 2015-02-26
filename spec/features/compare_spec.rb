@@ -16,20 +16,20 @@ RSpec.describe MoviesController, :type => :feature do
       visit('/movies/compare')
 
       within("#compare_form") do
-       page.select @movie.title, :from => 'filmone_id'
-       page.select @movie.title, :from => 'filmtwo_id'
+       page.select @movie.title, :from => 'm1_select'
+       page.select @movie.title, :from => 'm2_select'
       end
 
       click_button 'compare_submit'
-      expect(page).to have_content 'Compare Movies'
+      expect(page).to have_content 'Comparing'
     end
 
     it 'accepts two different movies as choices' do
       visit('/movies/compare')
 
       within("#compare_form") do
-       page.select @movie.title, :from => 'filmone_id'
-       page.select @movie2.title, :from => 'filmtwo_id'
+       page.select @movie.title, :from => 'm1_select'
+       page.select @movie2.title, :from => 'm2_select'
       end
 
       click_button 'compare_submit'

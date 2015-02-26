@@ -1,0 +1,103 @@
+{
+  "title": "Whiplash",
+  "genres": "Drama, Music",
+  "source": "http://www.imdb.com/title/tt2582802/reviews",
+  "score": "9/10",
+  "helpfulness": "58/80",
+  "author": "Kestutis Sidlauskas",
+  "body": "Whiplash is low budget film making at its finest, and surely promises big things from rookie director/writer Damien Chazelle. Seeing this film in theaters was the first time this year that I have completely enraptured (granted, I have not seen all of the top films that have come out so far). Also, I am a succor for quality films about musicians, and Whiplash ranks in my all time favorites in that genre. The tension did not let up from the very first scene, especially as soon as the incredible J.K. Simmons enters. Simmons, along with Miles Teller (who's Project X days are now long behind him) have some of the best on screen chemistry I've seen. They're connected; one cannot act without it affecting the other. The film is almost entirely focused on this relationship, and the simplicity definitely services the film. I hope people will go and see it and vote with their pocketbooks for excellent low budget films. ",
+  "annotated_sentences": [
+    {
+      "text": "Whiplash is low budget film making at its finest, and surely promises big things from rookie director/writer Damien Chazelle.",
+      "aspects": {
+        "movie": {
+          "words": [
+            "film making"
+          ],
+          "score": "2",
+          "justification": "at its finest, promises big things"
+        }
+      },
+      "comment": ""
+    },
+    {
+      "text": "Seeing this film in theaters was the first time this year that I have completely enraptured (granted, I have not seen all of the top films that have come out so far).",
+      "aspects": {
+        "movie": {
+          "words": [
+            "film"
+          ],
+          "score": "2",
+          "justification": "i have completely enraptured"
+        }
+      },
+      "comment": "not your usual sentence, but still relays strong positive info"
+    },
+    {
+      "text": "Also, I am a succor for quality films about musicians, and Whiplash ranks in my all time favorites in that genre.",
+      "aspects": {
+        "movie": {
+          "words": [
+            "Whiplash"
+          ],
+          "score": "2",
+          "justification": "ranks in my all time favorites"
+        }
+      },
+      "comment": ""
+    },
+    {
+      "text": "The tension did not let up from the very first scene, especially as soon as the incredible J.K. Simmons enters.",
+      "aspects": {
+        "plot": {
+          "words": [
+            "tension"
+          ],
+          "score": "1",
+          "justification": "did not let up from the very first scene"
+        }
+      },
+      "comment": ""
+    },
+    {
+      "text": "Simmons, along with Miles Teller (who's Project X days are now long behind him) have some of the best on screen chemistry I've seen.",
+      "aspects": {
+        "cast": {
+          "words": [
+            "Simmons, Miles Teller"
+          ],
+          "score": "2",
+          "justification": "best on screen chemistry i've seen"
+        }
+      },
+      "comment": ""
+    },
+    {
+      "text": "They're connected; one cannot act without it affecting the other.",
+      "aspects": {
+      },
+      "comment": ""
+    },
+    {
+      "text": "The film is almost entirely focused on this relationship, and the simplicity definitely services the film.",
+      "aspects": {
+        "plot": {
+          "words": [
+            "focused on this relationship"
+          ],
+          "score": "1",
+          "justification": "services the film"
+        }
+      },
+      "comment": ""
+    },
+    {
+      "text": "I hope people will go and see it and vote with their pocketbooks for excellent low budget films. ",
+      "aspects": {
+      },
+      "comment": ""
+    }
+  ],
+  "overall": "2",
+  "comment": ""
+}

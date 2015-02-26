@@ -1,4 +1,4 @@
-require_relative '../config/environment'
+require_relative '../../config/environment'
 Delayed::Worker.delay_jobs = false
 
 movie = Movie.last
