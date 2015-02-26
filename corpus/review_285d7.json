@@ -1,0 +1,70 @@
+{
+  "title": "Frozen",
+  "genres": "animation",
+  "source": "http://www.imdb.com/title/tt2294629/reviews?start=20",
+  "score": "5/10",
+  "helpfulness": "23/36",
+  "author": "Wojtek",
+  "body": "Watching frozen before all the hype would probably have been a more enjoyable experience. Sadly, I have missed it when it went out in cinemas.Compared to other Disney movies, especially the recent ones like Rapuntzel and Princess and the Frog, Frozen comes out as a disappointment. I would go as far as say that the message this film passes to children is actually bad.Elsa, for example, takes only one decision by herself and that is to run away from all of her problems. She completely disregards the fact that she put every other living being in the kingdom in danger. She only snaps out of it when she discovers the proverbial 'force of love' by act of providence.Anna, on the other hand, makes a series of very bad decisions and survives only by a miracle. (e.g.: walking out in blizzard in summer clothes or leaving the whole kingdom in hands of a stranger she just met).Songs are extremely repetitive with one exception of 'Let it go'.I really hope the next Disney classic will be a more enjoyable experience. ",
+  "annotated_sentences": [
+    {
+      "text": "Watching frozen before all the hype would probably have been a more enjoyable experience.",
+      "aspects": {
+      },
+      "comment": "ignore"
+    },
+    {
+      "text": "Sadly, I have missed it when it went out in cinemas.Compared to other Disney movies, especially the recent ones like Rapuntzel and Princess and the Frog, Frozen comes out as a disappointment.",
+      "aspects": {
+        "movie": {
+          "words": [
+            "Frozen"
+          ],
+          "score": "-1",
+          "justification": "disappointment"
+        }
+      },
+      "comment": "or the whole phrase: \"comes out as disappointment\"?"
+    },
+    {
+      "text": "I would go as far as say that the message this film passes to children is actually bad.Elsa, for example, takes only one decision by herself and that is to run away from all of her problems.",
+      "aspects": {
+        "movie": {
+          "words": [
+            "the message"
+          ],
+          "score": "-1",
+          "justification": "bad"
+        }
+      },
+      "comment": "not sure about this one"
+    },
+    {
+      "text": "She completely disregards the fact that she put every other living being in the kingdom in danger.",
+      "aspects": {
+      },
+      "comment": "ignore"
+    },
+    {
+      "text": "She only snaps out of it when she discovers the proverbial 'force of love' by act of providence.Anna, on the other hand, makes a series of very bad decisions and survives only by a miracle.",
+      "aspects": {
+      },
+      "comment": "ignore"
+    },
+    {
+      "text": "(e.g.: walking out in blizzard in summer clothes or leaving the whole kingdom in hands of a stranger she just met).Songs are extremely repetitive with one exception of 'Let it go'.I really hope the next Disney classic will be a more enjoyable experience. ",
+      "aspects": {
+        "sound": {
+          "words": [
+            "Songs"
+          ],
+          "score": "-1",
+          "justification": "extremely repetitive"
+        }
+      },
+      "comment": "not sure if not -2"
+    }
+  ],
+  "overall": "-1",
+  "comment": "no comment"
+}

@@ -1,0 +1,65 @@
+{
+  "title": "Kingsman: The Secret Service",
+  "genres": "Action, Adventure, Thriller, Comedy, Crime",
+  "source": "http://www.metacritic.com/movie/kingsman-the-secret-service/user-reviews",
+  "score": "10/10",
+  "helpfulness": "8/10",
+  "author": "Charlie Egan",
+  "body": "What is wrong with these critics? The movie is fantastic. Firth kicks ass which I did not expect at all and the main villain played by Samuel L Jackson is genius. A comical, kick ass film that I would happily watch again and again and again.",
+  "annotated_sentences": [
+    {
+      "text": "What is wrong with these critics?",
+      "aspects": {
+      },
+      "comment": "this sentence is about the other reviews"
+    },
+    {
+      "text": "The movie is fantastic.",
+      "aspects": {
+        "movie": {
+          "words": [
+            "The movie"
+          ],
+          "score": "2",
+          "justification": "fantastic"
+        }
+      },
+      "comment": "simple sentence - no issues"
+    },
+    {
+      "text": "Firth kicks ass which I did not expect at all and the main villain played by Samuel L Jackson is genius.",
+      "aspects": {
+        "cast": {
+          "words": [
+            "played"
+          ],
+          "score": "2",
+          "justification": "genius"
+        },
+        "plot": {
+          "words": [
+            "main villain"
+          ],
+          "score": "2",
+          "justification": "genius"
+        }
+      },
+      "comment": "this sentence contians feature that we do want to cover, just not right now."
+    },
+    {
+      "text": "A comical, kick ass film that I would happily watch again and again and again.",
+      "aspects": {
+        "movie": {
+          "words": [
+            "film"
+          ],
+          "score": "2",
+          "justification": "kick ass, comical, happily watch again"
+        }
+      },
+      "comment": ""
+    }
+  ],
+  "overall": "2",
+  "comment": ""
+}

@@ -5,22 +5,19 @@
 
     form id="search_form" action="/movies/search_by_title"
       input name="query" type="text" placeholder="Search movies" /
-      input id="movie_search_submit" type="submit" style="position: absolute; left: -9999px; width: 1px; height: 1px;">
-
-    p.revisited
-      =@review_count
-      |&nbsp;reviews revisited
-    p.reviewed ="#{@movie_count} movies reviewed"
+      input id="movie_search_submit" type="submit" style="position: absolute; left: -9999px; width: 1px; height: 1px;"
 
 .row
+  .large-6.columns
+    p.stat
+      =@review_count
+      |&nbsp;reviews revisited
+  .large-6.columns
+    p.stat
+      ="#{@movie_count} movies reviewed"
+.row
   .large-12.columns
-    -if Movie.count > 0
-      p.latest
-        |Latest Movie:&nbsp;
+      p.stat
+        |Latest Movie&nbsp;
+        br
         strong =link_to @movie.title, movie_path(@movie)
-      .row
-        .large-4.columns =render "topics_graph", id: @movie.id, topics: @movie.sentiment[:topics]
-        .large-4.columns =image_tag(@movie.image_url, class: 'cover')
-        .large-4.columns =render "cast_sentiment_graph", id: @movie.id, people: @movie.sentiment[:people]
-    -else
-      h3 ="No movies found."
