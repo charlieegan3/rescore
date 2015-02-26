@@ -81,17 +81,14 @@ class Movie < ActiveRecord::Base
   def self.comparison_summary(movie_one, movie_two)
     m1 = movie_one
     m2 = movie_two
-    summary = {:aspect_sentiment => [], :aspect_focus => [], :review_range => [], :review_variation => []}
     winners = {:aspect_sentiment => nil, :aspect_focus => nil, :review_range => nil, :review_variation => nil}
 
     # Aspect sentiment.
     m1.sentiment[:topics].each do |topic|
       if m2.sentiment[:topics][topic[0]] && topic[1] > m2.sentiment[:topics][topic[0]]
-        summary[:aspect_sentiment] << " People seem to like #{topic[0].to_s} more in #{m1.title}."
         winners[:aspect_sentiment] = m1.title
       end
       if m2.sentiment[:topics][topic[0]] && topic[1] < m2.sentiment[:topics][topic[0]]
-        summary[:aspect_sentiment] << " People seem to like #{topic[0].to_s} more in #{m2.title}."
         winners[:aspect_sentiment] = m2.title
       end
     end
@@ -99,39 +96,31 @@ class Movie < ActiveRecord::Base
     # Aspect discussion focus.
     m1.stats[:topic_counts].each do |topic|
       if m2.stats[:topic_counts][topic[0]] && topic[1] > m2.stats[:topic_counts][topic[0]]
-        summary[:aspect_focus] << " People seem to talk more about #{topic[0].to_s} in #{m2.title} than in #{m1.title}."
         winners[:aspect_focus] = m1.title
       end
       if m2.stats[:topic_counts][topic[0]] && topic[1] < m2.stats[:topic_counts][topic[0]]
-        summary[:aspect_focus] << " People seem to talk more about #{topic[0].to_s} in #{m1.title} than in #{m2.title}."
         winners[:aspect_focus] = m2.title
       end
     end
 
     # Review Sentiment distribution and variation.
     if m2.sentiment[:distribution_stats][:range] && m2.sentiment[:distribution_stats][:range] > m1.sentiment[:distribution_stats][:range]
-      summary[:review_range] << " #{m2.title} has a higher range of review ratings."
       winners[:review_range] = m2.title
     elsif m2.sentiment[:distribution_stats][:range] && m2.sentiment[:distribution_stats][:range] < m1.sentiment[:distribution_stats][:range]
-      summary[:review_range] << " #{m1.title} has a higher range of review ratings."
       winners[:review_range] = m1.title
     else
-      summary[:review_range] << " Both movies have an equal range of review ratings."
       winners[:review_range] = :both
     end
 
     if m2.sentiment[:distribution_stats][:st_dev] && m2.sentiment[:distribution_stats][:st_dev] > m1.sentiment[:distribution_stats][:st_dev]
-      summary[:review_variation] << " #{m2.title} has a higher variation of review ratings."
       winners[:review_variation] = m2.title
     elsif m2.sentiment[:distribution_stats][:st_dev] && m2.sentiment[:distribution_stats][:st_dev] < m1.sentiment[:distribution_stats][:st_dev]
-      summary[:review_variation] << " #{m1.title} has a higher variation of review ratings."
       winners[:review_variation] = m1.title
     else
-      summary[:review_variation] << " Both movies have an equal variation of review ratings."
       winners[:review_variation] = :both
     end
 
-    return [summary, winners]
+    return winners
   end
 
   def self.summarized

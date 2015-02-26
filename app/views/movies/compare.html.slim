@@ -30,14 +30,6 @@
 .row
   .large-12.columns
     h3 ="Summary"
-    -@summary.each do |section|
-      .large-6.columns
-        .panel
-          h4 =section[0].to_s.gsub('_', ' ').capitalize
-          ul
-          -section[1].each do |sentence|
-            li
-              p =sentence
     table.comparison-summary
       tbody
         -@winners.each do |item|
