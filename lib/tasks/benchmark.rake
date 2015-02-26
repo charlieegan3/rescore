@@ -35,7 +35,7 @@ task :benchmark, :print do |t, args|
     puts ' - ' + annotated_review['author'].red
     rescore_review = RescoreReview.new(annotated_review['body'], nil)
 
-    rescore_review.build_all.each_with_index do |s, i|
+    rescore_review.build_all.sentences.each_with_index do |s, i|
       ac = AspectComparator.new(annotated_review['annotated_sentences'][i], s)
       comparison = ac.compare
 
