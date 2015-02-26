@@ -63,7 +63,9 @@ class MetacriticScraper
     end
 
     def evaluate_useful(raw_review)
-      total_ups = raw_review.css('.total_ups').first.text.to_f
+      total_ups = raw_review.css('.total_ups').first
+      return if total_ups.nil?
+      total_ups = total_ups.text.to_f
       total_thumbs = raw_review.css('.total_thumbs').first.text.to_i
       [total_ups, total_thumbs]
     end

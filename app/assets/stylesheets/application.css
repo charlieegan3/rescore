@@ -59,12 +59,8 @@ nav.top-bar {
   margin-top: 200px;
 }
 
-.revisited {
-  float:left;
-}
-
-.reviewed {
-  margin-left: 230px; 
+.stat {
+  text-align: center;
 }
 
 table.summary {

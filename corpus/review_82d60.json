@@ -1,0 +1,77 @@
+{
+  "title": "OLYMPUS has fallen",
+  "genres": "Action,Thriller",
+  "source": "http://www.imdb.com/title/tt2302755/?ref_=nv_sr_2",
+  "score": "3/10",
+  "helpfulness": "159/307",
+  "author": "Georgi",
+  "body": "At first, I thought that I may not be doing enough justice to the movie and maybe comparing too much which Argo. However after some thinking, I realized that this movie is truly bizarre. The director and story writers did whatever they pleased to show some mindless action. But there are much better movies for that like die hard (this movie seems in fact an attempt to be Die Hard), mission impossible and James Bond movies which at least create those settings where one can still indulge in the action.I think the intent in this movie was to say that the entire US military and homeland security is a big failure run by an incompetent management throughout and there is only one savior to the White House who is a banished member of President's security team. Maybe I went to the movie with high hopes. Toning them to the rock bottom might help..",
+  "annotated_sentences": [
+    {
+      "text": "At first, I thought that I may not be doing enough justice to the movie and maybe comparing too much which Argo.",
+      "aspects": {
+        "movie": {
+          "words": [
+            "the movie"
+          ],
+          "score": "0",
+          "justification": "not enough justice"
+        }
+      },
+      "comment": "Comparing with other movie"
+    },
+    {
+      "text": "However after some thinking, I realized that this movie is truly bizarre.",
+      "aspects": {
+        "movie": {
+          "words": [
+            "movie"
+          ],
+          "score": "-2",
+          "justification": "truly bizare"
+        }
+      },
+      "comment": ""
+    },
+    {
+      "text": "The director and story writers did whatever they pleased to show some mindless action.",
+      "aspects": {
+        "plot": {
+          "words": [
+            "story"
+          ],
+          "score": "-2",
+          "justification": "mindless action"
+        }
+      },
+      "comment": ""
+    },
+    {
+      "text": "But there are much better movies for that like die hard (this movie seems in fact an attempt to be Die Hard), mission impossible and James Bond movies which at least create those settings where one can still indulge in the action.I think the intent in this movie was to say that the entire US military and homeland security is a big failure run by an incompetent management throughout and there is only one savior to the White House who is a banished member of President's security team.",
+      "aspects": {
+        "movie": {
+          "words": [
+            "this movie"
+          ],
+          "score": "0",
+          "justification": ""
+        }
+      },
+      "comment": "talking about the plot and comparing "
+    },
+    {
+      "text": "Maybe I went to the movie with high hopes.",
+      "aspects": {
+      },
+      "comment": ""
+    },
+    {
+      "text": "Toning them to the rock bottom might help..",
+      "aspects": {
+      },
+      "comment": ""
+    }
+  ],
+  "overall": "-1",
+  "comment": ""
+}

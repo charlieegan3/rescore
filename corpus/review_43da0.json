@@ -1,0 +1,103 @@
+{
+  "title": "Birdman",
+  "genres": "drama",
+  "source": "http://www.imdb.com/title/tt2562232/reviews?ref_=tt_ov_rt",
+  "score": "2/10",
+  "helpfulness": "199/356",
+  "author": "Wojtek",
+  "body": "Ha! Where to start?First of all, I am not a professional critic but I do work in the entertainment business. I am not motivated by politics or corporate positioning and have no vested interest in this or other films competing in the current marketplace. With that said, this is a pretentious experiment that only daft art school students and guilty \"professional\" critics can appreciate. Fans of the theater will find it amusing for the first hour until it begins to feel like Ground Hog Day meets All That Jazz, orchestrated by Paul Thomas Anderson's nails on a chalkboard.Performances: Exactly what you would expect from talented actors but the fun ends there.Creativity: A one trick pony, think Hitchcock's Rope without the fun, that will make you want to get the heck out of the \"theater\". Keep in mind, you need to avoid seeing this if you get motion sickness. Cotton mouth, here it comes!Execution: As an example of what can be done in and around a Broadway theater, with a \"single\" take, it succeeds only as an experimental museum piece. Even then, most folks would walk out before the end.It's one of the most pointless, sluggish, and taxing experiences you will have in the theater. ",
+  "annotated_sentences": [
+    {
+      "text": "Ha!",
+      "aspects": {
+      },
+      "comment": "ignore"
+    },
+    {
+      "text": "Where to start?First of all, I am not a professional critic but I do work in the entertainment business.",
+      "aspects": {
+      },
+      "comment": "ignore"
+    },
+    {
+      "text": "I am not motivated by politics or corporate positioning and have no vested interest in this or other films competing in the current marketplace.",
+      "aspects": {
+      },
+      "comment": "ignore"
+    },
+    {
+      "text": "With that said, this is a pretentious experiment that only daft art school students and guilty \"professional\" critics can appreciate.",
+      "aspects": {
+        "movie": {
+          "words": [
+            "this"
+          ],
+          "score": "-1",
+          "justification": "pretentious"
+        }
+      },
+      "comment": "add pretentious?"
+    },
+    {
+      "text": "Fans of the theater will find it amusing for the first hour until it begins to feel like Ground Hog Day meets All That Jazz, orchestrated by Paul Thomas Anderson's nails on a chalkboard.Performances: Exactly what you would expect from talented actors but the fun ends there.Creativity: A one trick pony, think Hitchcock's Rope without the fun, that will make you want to get the heck out of the \"theater\".",
+      "aspects": {
+        "movie": {
+          "words": [
+            "it"
+          ],
+          "score": "1",
+          "justification": "Fans of the theater will find it amusing"
+        },
+        "cast": {
+          "words": [
+            "actors"
+          ],
+          "score": "1",
+          "justification": "Exactly what you would expect from talented actors"
+        }
+      },
+      "comment": "can't express the general idea of the sentence (should be negative)"
+    },
+    {
+      "text": "Keep in mind, you need to avoid seeing this if you get motion sickness.",
+      "aspects": {
+        "movie": {
+          "words": [
+            "this"
+          ],
+          "score": "-1",
+          "justification": "avoid seeing this"
+        }
+      },
+      "comment": ""
+    },
+    {
+      "text": "Cotton mouth, here it comes!Execution: As an example of what can be done in and around a Broadway theater, with a \"single\" take, it succeeds only as an experimental museum piece.",
+      "aspects": {
+        "movie": {
+          "words": [
+            "it"
+          ],
+          "score": "0",
+          "justification": "it succeeds only as an experimental museum piece"
+        }
+      },
+      "comment": ""
+    },
+    {
+      "text": "Even then, most folks would walk out before the end.It's one of the most pointless, sluggish, and taxing experiences you will have in the theater. ",
+      "aspects": {
+        "movie": {
+          "words": [
+            "It's"
+          ],
+          "score": "-2",
+          "justification": "It's one of the most pointless, sluggish, and taxing experiences"
+        }
+      },
+      "comment": ""
+    }
+  ],
+  "overall": "-1",
+  "comment": ""
+}

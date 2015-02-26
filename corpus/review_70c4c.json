@@ -1,0 +1,179 @@
+{
+  "title": "Frozen",
+  "genres": "animation",
+  "source": "http://www.imdb.com/title/tt2294629/reviews?ref_=tt_ov_rt",
+  "score": "3/10",
+  "helpfulness": "119/189",
+  "author": "Wojtek",
+  "body": "Let me start this off by saying that I generally like Disney films, and that this is not some anti-kiddie flick internet geek writing this. Now that I have that out of the way, I would like to tell you how terrible this movie is. First of all, there is only one song that I think was actually good. The first song in the film is a fantastic number about the hardships of winter, with a great track, expert vocals and a grand, sweeping tone. The rest of the songs are not nearly so good, as they are all sung by the protagonists, which is fine the first few times but gets really monotonous by about halfway through. The movie also wasn't especially funny, which is a saving grace in some of Disney's other lackluster releases. The comic relief character was okay (in that he wasn't nearly as annoying as everyone else) but he was only there to provide some moderately executed slapstick comedy, and the only funny spoken line in the movie. While the script is fine for a TV special or maybe the first episode of a Nickelodeon series, it is definitely not right for a high-profile animated film. Let's just say, there are trolls. Singing, incredibly annoying trolls who show up basically just for the hell of it, and then disappear without a trace. And, while there was one character turn which was actually quite well executed, it is wasted almost immediately, because it changes absolutely nothing about the story. No events drastically alter because of it, there's no clever subtext, and the entire thing feels like it was just inserted so the screenwriter could show how clever he was. I mean, the trip to the cinemas wasn't completely pointless. There was a quite funny Mickey Mouse cartoon they played before the picture, and the trailer for the Lego movie looks like it could be worth something. Otherwise, this movie was terrible. Avoid it if you can, unless you have some kids you need to get out of the house. If so, make sure you bring a good book. ",
+  "annotated_sentences": [
+    {
+      "text": "Let me start this off by saying that I generally like Disney films, and that this is not some anti-kiddie flick internet geek writing this.",
+      "aspects": {
+      },
+      "comment": "ignore"
+    },
+    {
+      "text": "Now that I have that out of the way, I would like to tell you how terrible this movie is.",
+      "aspects": {
+        "movie": {
+          "words": [
+            "this movie"
+          ],
+          "score": "-2",
+          "justification": "terrible"
+        }
+      },
+      "comment": ""
+    },
+    {
+      "text": "First of all, there is only one song that I think was actually good.",
+      "aspects": {
+        "sound": {
+          "words": [
+            "only one song"
+          ],
+          "score": "0",
+          "justification": "only one was good"
+        }
+      },
+      "comment": "difficult to parse, to be honest"
+    },
+    {
+      "text": "The first song in the film is a fantastic number about the hardships of winter, with a great track, expert vocals and a grand, sweeping tone.",
+      "aspects": {
+        "sound": {
+          "words": [
+            "the first song"
+          ],
+          "score": "2",
+          "justification": "fantastic"
+        }
+      },
+      "comment": "should more expressions describe this positive sentiment?"
+    },
+    {
+      "text": "The rest of the songs are not nearly so good, as they are all sung by the protagonists, which is fine the first few times but gets really monotonous by about halfway through.",
+      "aspects": {
+        "sound": {
+          "words": [
+            "the rest of the songs"
+          ],
+          "score": "0",
+          "justification": "not nearly so good"
+        }
+      },
+      "comment": "again: possible to analyse or not?"
+    },
+    {
+      "text": "The movie also wasn't especially funny, which is a saving grace in some of Disney's other lackluster releases.",
+      "aspects": {
+        "movie": {
+          "words": [
+            "The movie"
+          ],
+          "score": "-1",
+          "justification": "wasn't especially funny"
+        }
+      },
+      "comment": "marked negation as well - not sure if did it right"
+    },
+    {
+      "text": "The comic relief character was okay (in that he wasn't nearly as annoying as everyone else) but he was only there to provide some moderately executed slapstick comedy, and the only funny spoken line in the movie.",
+      "aspects": {
+        "plot": {
+          "words": [
+            "the comic relief character"
+          ],
+          "score": "1",
+          "justification": "okay"
+        }
+      },
+      "comment": ""
+    },
+    {
+      "text": "While the script is fine for a TV special or maybe the first episode of a Nickelodeon series, it is definitely not right for a high-profile animated film.",
+      "aspects": {
+        "plot": {
+          "words": [
+            "the script"
+          ],
+          "score": "-2",
+          "justification": "definitely not right"
+        }
+      },
+      "comment": "is difficult to parse (the first part of the sentence)"
+    },
+    {
+      "text": "Let's just say, there are trolls.",
+      "aspects": {
+      },
+      "comment": "ignore"
+    },
+    {
+      "text": "Singing, incredibly annoying trolls who show up basically just for the hell of it, and then disappear without a trace.",
+      "aspects": {
+      },
+      "comment": "not possible to assign trolls to plot (would have to put all kinds of creatures etc. as characters)"
+    },
+    {
+      "text": "And, while there was one character turn which was actually quite well executed, it is wasted almost immediately, because it changes absolutely nothing about the story.",
+      "aspects": {
+        "plot": {
+          "words": [
+            "story",
+            "character"
+          ],
+          "score": "0",
+          "justification": "quite well executed, changes absolutely nothing about the story"
+        }
+      },
+      "comment": "very difficult to put together"
+    },
+    {
+      "text": "No events drastically alter because of it, there's no clever subtext, and the entire thing feels like it was just inserted so the screenwriter could show how clever he was.",
+      "aspects": {
+      },
+      "comment": "not possible to get the idea at this stage"
+    },
+    {
+      "text": "I mean, the trip to the cinemas wasn't completely pointless.",
+      "aspects": {
+      },
+      "comment": "ignore?"
+    },
+    {
+      "text": "There was a quite funny Mickey Mouse cartoon they played before the picture, and the trailer for the Lego movie looks like it could be worth something.",
+      "aspects": {
+      },
+      "comment": "ignore"
+    },
+    {
+      "text": "Otherwise, this movie was terrible.",
+      "aspects": {
+        "movie": {
+          "words": [
+            "this movie"
+          ],
+          "score": "-2",
+          "justification": "terrible"
+        }
+      },
+      "comment": ""
+    },
+    {
+      "text": "Avoid it if you can, unless you have some kids you need to get out of the house.",
+      "aspects": {
+      },
+      "comment": "ignore, might be too complicated"
+    },
+    {
+      "text": "If so, make sure you bring a good book. ",
+      "aspects": {
+      },
+      "comment": ""
+    }
+  ],
+  "overall": "-2",
+  "comment": "nice review with plenty of difficult stuff to parse"
+}
