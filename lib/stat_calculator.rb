@@ -4,7 +4,7 @@ class StatCalculator
   end
 
   def topic_counts
-    Hash[ASPECTS.map {|k,v| [k, 0]}].tap do |topic_counts|
+    counts = Hash[ASPECTS.map {|k,v| [k, 0]}].tap do |topic_counts|
       @reviews.map { |r| r[:rescore_review] }.each do |review|
         next if review.nil?
         review.each do |sentence|
@@ -12,6 +12,8 @@ class StatCalculator
         end
       end
     end
+    total = counts.inject(0) {|sum, k| sum += k[1] }
+    counts.inject(counts) { |h,(k,v)| h[k] = v.to_f / total; h }
   end
 
   def rating_distribution
