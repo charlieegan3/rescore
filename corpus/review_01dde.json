@@ -31,6 +31,13 @@
       "aspects": {
         "cast": {
           "words": [
+            "played"
+          ],
+          "score": "2",
+          "justification": "genius"
+        },
+        "plot": {
+          "words": [
             "main villain"
           ],
           "score": "2",

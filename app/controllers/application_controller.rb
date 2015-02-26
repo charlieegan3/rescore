@@ -6,7 +6,8 @@ class ApplicationController < ActionController::Base
   def index
     @review_count = 1337 #Movie.review_count - lets cache this sometime
     @movie_count = Movie.count
-    @movie = Movie.latest
+    @movie = Movie.latest if Movie.latest.complete?
+    @movie = Movie.first if !Movie.latest.complete?
   end
 
   def about

@@ -26,43 +26,35 @@
           td =distance_of_time_in_words(Time.new, @movie.created_at).gsub('about ', '') + " ago"
 
 .row
-  .large-4.columns
+  .large-12.columns
     .panel
       p
-        strong Aspect Sentiment
-      =render "topics_graph", id: @movie.id, topics: @movie.sentiment[:topics]
-  .large-4.columns
+        strong NLG Summary Area
+.row
+  .large-6.columns
     .panel
       p
-        strong Review Sentiment Distribution
-      =render "sentiment_distribution_graph", id: @movie.id, sentiment: @movie.sentiment[:distribution]
+        strong Aspect Sentiment vs Discussion Focus
+      =render "aspects_graph", id: @movie.id, aspects: @movie.sentiment[:topics], counts: @movie.stats[:topic_counts]
+  .large-6.columns
+    .panel
+      p
+        strong Average Sentiment vs User Ratings
+      =render "sentiment_ratings_graph", id: @movie.id, ratings: @movie.stats[:rating_distribution], sentiment: @movie.sentiment[:distribution_stats][:values]
       p
         strong Range:&nbsp;
-        =(@movie.sentiment[:distribution_stats][0] * 100).to_i
+        =(@movie.sentiment[:distribution_stats][:range] * 100).to_i
         |&nbsp;&nbsp;
         strong Variation:&nbsp;
-        =(@movie.sentiment[:distribution_stats][1] * 100).to_i
-  .large-4.columns
-    .panel
-      p
-        strong Aspect Discussion Focus
-      =render "topic_count_graph", id: @movie.id, topics: @movie.stats[:topic_counts]
+        =(@movie.sentiment[:distribution_stats][:st_dev] * 100).to_i
 .row
-  .large-4.columns
+  .large-6.columns
     .panel
       p
         strong Cast Sentiment
-      =render "cast_sentiment_graph", id: @movie.id, people: @movie.sentiment[:people]
-  .large-4.columns
+      -unless @movie.sentiment[:people].empty?
+        =render "cast_sentiment_graph", id: @movie.id, people: @movie.sentiment[:people]
+  .large-6.columns
     .panel
-      p
-        strong Rating Distribution
-      =render "ratings_graph", id: @movie.id, ratings: @movie.stats[:rating_distribution]
-  .large-4.columns
-    .panel
-      p
-        strong Sentiment by Location
-      -if @movie.sentiment[:location].empty?
-        p="No location data for this movie's reviews."
-      -else
-        =render "locations_graph", id: @movie.id, locations: @movie.sentiment[:location]
+      p Additional Stats
+

@@ -2,9 +2,9 @@
   .large-12.columns
     h3
       |Comparing&nbsp;
-      span.radius.success.label =@movie_one.title
+      span.radius.success.label =@movie_1.title
       |&nbsp;with&nbsp;
-      span.radius.success.label =@movie_two.title
+      span.radius.success.label =@movie_2.title
 
 .row
   .large-12
@@ -18,7 +18,7 @@
           th Updated
           th Added
       tbody
-        -[@movie_one, @movie_two].each do |movie|
+        -[@movie_1, @movie_2].each do |movie|
           tr
             td =image_tag(movie.image_url)
             td =movie.year
@@ -28,92 +28,49 @@
             td =distance_of_time_in_words(Time.new, movie.created_at).gsub('about ', '') + " ago"
 
 .row
-  .large-12.columns
-    h3 ="Summary"
-    -@summary.each do |section|
-      .large-6.columns
-        .panel
-          h4 =section[0].to_s.gsub('_', ' ').capitalize
-          ul
-          -section[1].each do |sentence|
-            li
-              p =sentence
-    table.comparison-summary
-      tbody
-        -@winners.each do |item|
-          tr
-            td =item[0].to_s.gsub('_', ' ').capitalize
-            -if @winners[item[0]] == @movie_one.title
-              td
-                span.success.label =@movie_one.title
-              td
-                span.alert.label =@movie_two.title
-            -else
-              td
-                span.alert.label =@movie_one.title
-              td
-                span.success.label =@movie_two.title
+  .large-6.columns
+    p.title
+      =link_to(movie_path(@movie_1))
+        strong="#{@movie_1.title}"
+  .large-6.columns
+    p.title
+      =link_to(movie_path(@movie_2))
+        strong="#{@movie_2.title}"
 
 .row
-  -[@movie_one, @movie_two].each do |movie|
-    .large-6.columns
-      p.title
-        =link_to(movie_path(movie))
-          strong="#{movie.title}"
-
+  .large-6.columns
+    .panel
+      p
+        strong Aspect Sentiment vs Discussion Focus
+      =render "aspects_graph", id: @movie_1.id, aspects: @movie_1.sentiment[:topics], counts: @movie_1.stats[:topic_counts]
+  .large-6.columns
+    .panel
+      p
+        strong Aspect Sentiment vs Discussion Focus
+      =render "aspects_graph", id: @movie_2.id, aspects: @movie_2.sentiment[:topics], counts: @movie_2.stats[:topic_counts]
 .row
-  -[@movie_one, @movie_two].each do |movie|
-    .large-6.columns
-      .panel
-        p
-          strong Aspect Sentiment
-        =render "topics_graph", id: movie.id, topics: movie.sentiment[:topics]
+  .large-6.columns
+    .panel
+      p
+        strong Average Sentiment vs User Ratings
+      =render "sentiment_ratings_graph", id: @movie_1.id, ratings: @movie_1.stats[:rating_distribution], sentiment: @movie_1.sentiment[:distribution_stats][:values]
+  .large-6.columns
+    .panel
+      p
+        strong Average Sentiment vs User Ratings
+      =render "sentiment_ratings_graph", id: @movie_2.id, ratings: @movie_2.stats[:rating_distribution], sentiment: @movie_2.sentiment[:distribution_stats][:values]
 
-.row
-  -[@movie_one, @movie_two].each do |movie|
-    .large-6.columns
-      .panel
-        p
-          strong Review Sentiment Distribution
-        =render "sentiment_distribution_graph", id: movie.id, sentiment: movie.sentiment[:distribution]
-        p
-          strong Range:&nbsp;
-          =(movie.sentiment[:distribution_stats][0] * 100).to_i
-          |&nbsp;&nbsp;
-          strong Variation:&nbsp;
-          =(movie.sentiment[:distribution_stats][1] * 100).to_i
-
-.row
-  -[@movie_one, @movie_two].each do |movie|
-    .large-6.columns
-      .panel
-        p
-          strong Aspect Discussion Focus
-        =render "topic_count_graph", id: movie.id, topics: movie.stats[:topic_counts]
-
-.row
-  -[@movie_one, @movie_two].each do |movie|
+-unless @movie_1.sentiment[:people].empty? || @movie_2.sentiment[:people].empty?
+  .row
     .large-6.columns
       .panel
         p
           strong Cast Sentiment
-        =render "cast_sentiment_graph", id: movie.id, people: movie.sentiment[:people]
-
-.row
-  -[@movie_one, @movie_two].each do |movie|
+        -unless @movie_1.sentiment[:people].empty?
+          =render "cast_sentiment_graph", id: @movie_1.id, people: @movie_1.sentiment[:people]
     .large-6.columns
       .panel
         p
-          strong Rating Distribution
-        =render "ratings_graph", id: movie.id, ratings: movie.stats[:rating_distribution]
-
-.row
-  -[@movie_one, @movie_two].each do |movie|
-    .large-6.columns
-      .panel
-        p
-          strong Sentiment by Location
-        -if movie.sentiment[:location].empty?
-          p="No location data for this movie's reviews."
-        -else
-          =render "locations_graph", id: movie.id, locations: movie.sentiment[:location]
+          strong Cast Sentiment
+        -unless @movie_2.sentiment[:people].empty?
+          =render "cast_sentiment_graph", id: @movie_2.id, people: @movie_2.sentiment[:people]
