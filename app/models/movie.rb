@@ -74,6 +74,10 @@ class Movie < ActiveRecord::Base
     {topic_counts: s.topic_counts, rating_distribution: s.rating_distribution}
   end
 
+  def complete?
+    return self.stats.present?
+  end
+
   def self.summarized
     all.reject { |movie| movie.stats.empty? }
   end
