@@ -29,7 +29,16 @@
   .large-12.columns
     .panel
       p
-        strong NLG Summary Area
+        strong Summary
+      ul
+        -@summary.each do |section|
+          -if @indicators[section[0]]
+            li
+              span.success.label =@summary[section[0]]
+          -else
+            li
+              span.alert.label =@summary[section[0]]
+
 .row
   .large-6.columns
     .panel
