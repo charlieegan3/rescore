@@ -2,6 +2,15 @@
   .large-12.columns
     h1 =@movie.title
 .row
+.row 
+  = link_to 'IMDb', @movie.imdb_link
+.row
+  = link_to 'Amazon', @movie.amazon_link
+.row 
+  = link_to 'Metacritic', @movie.metacritic_link
+.row
+  = link_to 'Rotten Tomatoes', @movie.rotten_tomatoes_link
+.row
   .large-12
     table.summary
       thead
