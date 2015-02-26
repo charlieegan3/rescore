@@ -22,8 +22,7 @@ class MoviesController < ApplicationController
       @movie_1 = Movie.fast_find(params[:m1])
       @movie_2 = Movie.fast_find(params[:m2])
       cmp = Movie.comparison_summary(@movie_1, @movie_2)
-      @summary = cmp[0]
-      @winners = cmp[1]
+      @winners = cmp
       return render 'compare'
     else
       @options = Movie.all.pluck(:title, :id).shuffle
