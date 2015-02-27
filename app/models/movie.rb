@@ -86,12 +86,11 @@ class Movie < ActiveRecord::Base
     Movie.all.pluck(:reviews).inject(0) { |sum, e| sum += e.size }
   end
 
-  def self.review_variation
+  def self.variation
     var = 0
     sum = 0
-    Movie.all.pluck(:sentiment).each do |sent|
-      sum += (sent[:distribution_stats][:st_dev] * 100).to_i
-    end
+
+    Movie.all.pluck(:sentiment).inject(0) {|sum, e| sum += e.size}
     var / Movie.count
   end
 
