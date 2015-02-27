@@ -1,0 +1,115 @@
+{
+  "title": "Kingsman: The Secret Service",
+  "genres": " Action, Adventure, Comedy",
+  "source": "http://www.imdb.com/title/tt2802144/reviews",
+  "score": "10/10",
+  "helpfulness": "59/94",
+  "author": "Kestutis Sidlauskas",
+  "body": "Kingsman: The Secret Service marks the third film in a row that director Matthew Vaughn has adapted from a comic book background. His two predeceasing being Kick-Ass (2010) and X-Men: First Class (2011) - which, by all means, were pretty damn good!Over the last few decades, both comic and superhero movies, mostly fall into the easy trap of taking themselves too seriously. Where Vaughn's vision lies, and so-far proved by his former comic adapted films is that they draw a clean balance to where drama and serious character development ends, and cartoonish humour meets, leaving a unique entertainment that stands out.Based on the comic by Mark Millar (who also created Kick-Ass), the film sees a young – no better way to put it – chav, called Gary 'Eggsy' Unwin (Taron Egerton), taken under the wing of Harry Hart (Colin Firth), a spy for her majesty's secret service. With the aid of Michael Caine and Mark Strong, they soon come face-to-face with the villainous Richmond Valentine (Samuel L. Jackson); an ego- centric - Steve Jobs-type - billionaire madman (with a lisp), who hates the sight of blood – yet holds a vision of mass biological warfare.Licenced to thrill, Kingsman' is almost a love-letter to the James Bond films – but not too far as a parody, like Austin Powers - but more a homage to the franchise - a 007 meets Kick-Ass, of sorts. At a point, Colin Firth's character, Harry, even mocks the thought by saying 'give me a far-fetched, theoretical plot any day…'Fans of Bond and Kick-Ass are certain to love it, as through rollercoasters of action, comedy and espionage, comes a bucket of winks, references and nods to the world of spy movies. Just like the colourful, gadget ridden Bond films of the 1960's, Kingsman is very fun to watch, with 'wham, bam, thank-you ma'am' style of mayhem, one- liners and bonkers soundtrack crazed all over it.The comic the film was based on was already hugely entertaining – in fact, probably the best we have read. Littered with Millar's creative quirkiness and with Vaughn's auteur film-making, has left a stylized-spectacle of ultra-violence.Portraying the lead character of 'Eggsy', Taron Egerton (also in this month's Testament of Youth), proves to be an outstanding newcomer as he brings the character to life with an energizing vibe of a comparing ethic of chav lifestyle vs. gentleman's class.Alongside, and tackling the mentor, come father type role, is Colin Firth, who based on previous filmography alone could easily be classed as Britain's most boring and typecast actor. Until now, the mold romantic films is broken as he picks up a gun and finds an encyclopedia of wit and enters openly new territory. It's Colin Firth like you have never seen before! – and it is bad-ass.Squeezing in with a 15 rating (somehow), Kingsman is never short of violence and its guts and guns galore, when kneecapping; slicing off body parts and explosions become all too familiar. Given the calibre of talent involved, Kingsman' does not fall stereotype and gimmicky like other YA spy adventures like Stormbreaker, or Spy Kids, but instead, a well-deserved mash-up of espionage and true cinematic excitement. ",
+  "annotated_sentences": [
+    {
+      "text": "Kingsman: The Secret Service marks the third film in a row that director Matthew Vaughn has adapted from a comic book background.",
+      "aspects": {
+      },
+      "comment": ""
+    },
+    {
+      "text": "His two predeceasing being Kick-Ass (2010) and X-Men: First Class (2011) - which, by all means, were pretty damn good!Over the last few decades, both comic and superhero movies, mostly fall into the easy trap of taking themselves too seriously.",
+      "aspects": {
+      },
+      "comment": ""
+    },
+    {
+      "text": "Where Vaughn's vision lies, and so-far proved by his former comic adapted films is that they draw a clean balance to where drama and serious character development ends, and cartoonish humour meets, leaving a unique entertainment that stands out.Based on the comic by Mark Millar (who also created Kick-Ass), the film sees a young – no better way to put it – chav, called Gary 'Eggsy' Unwin (Taron Egerton), taken under the wing of Harry Hart (Colin Firth), a spy for her majesty's secret service.",
+      "aspects": {
+      },
+      "comment": ""
+    },
+    {
+      "text": "With the aid of Michael Caine and Mark Strong, they soon come face-to-face with the villainous Richmond Valentine (Samuel L. Jackson); an ego- centric - Steve Jobs-type - billionaire madman (with a lisp), who hates the sight of blood – yet holds a vision of mass biological warfare.Licenced to thrill, Kingsman' is almost a love-letter to the James Bond films – but not too far as a parody, like Austin Powers - but more a homage to the franchise - a 007 meets Kick-Ass, of sorts.",
+      "aspects": {
+      },
+      "comment": ""
+    },
+    {
+      "text": "At a point, Colin Firth's character, Harry, even mocks the thought by saying 'give me a far-fetched, theoretical plot any day…'Fans of Bond and Kick-Ass are certain to love it, as through rollercoasters of action, comedy and espionage, comes a bucket of winks, references and nods to the world of spy movies.",
+      "aspects": {
+      },
+      "comment": ""
+    },
+    {
+      "text": "Just like the colourful, gadget ridden Bond films of the 1960's, Kingsman is very fun to watch, with 'wham, bam, thank-you ma'am' style of mayhem, one- liners and bonkers soundtrack crazed all over it.The comic the film was based on was already hugely entertaining – in fact, probably the best we have read.",
+      "aspects": {
+        "movie": {
+          "words": [
+            "Kingsman"
+          ],
+          "score": "1",
+          "justification": "very fun to watch"
+        }
+      },
+      "comment": ""
+    },
+    {
+      "text": "Littered with Millar's creative quirkiness and with Vaughn's auteur film-making, has left a stylized-spectacle of ultra-violence.Portraying the lead character of 'Eggsy', Taron Egerton (also in this month's Testament of Youth), proves to be an outstanding newcomer as he brings the character to life with an energizing vibe of a comparing ethic of chav lifestyle vs. gentleman's class.Alongside, and tackling the mentor, come father type role, is Colin Firth, who based on previous filmography alone could easily be classed as Britain's most boring and typecast actor.",
+      "aspects": {
+        "cast": {
+          "words": [
+            "cast",
+            "role"
+          ],
+          "score": "1",
+          "justification": "outstanding newcomer"
+        },
+        "vision": {
+          "words": [
+            "spectacle"
+          ],
+          "score": "1",
+          "justification": "stylized"
+        },
+        "cinematography": {
+          "words": [
+            "film-making"
+          ],
+          "score": "2",
+          "justification": "creative, auteur"
+        }
+      },
+      "comment": "damn, tough one here"
+    },
+    {
+      "text": "Until now, the mold romantic films is broken as he picks up a gun and finds an encyclopedia of wit and enters openly new territory.",
+      "aspects": {
+      },
+      "comment": ""
+    },
+    {
+      "text": "It's Colin Firth like you have never seen before!",
+      "aspects": {
+      },
+      "comment": ""
+    },
+    {
+      "text": "– and it is bad-ass.Squeezing in with a 15 rating (somehow), Kingsman is never short of violence and its guts and guns galore, when kneecapping; slicing off body parts and explosions become all too familiar.",
+      "aspects": {
+      },
+      "comment": ""
+    },
+    {
+      "text": "Given the calibre of talent involved, Kingsman' does not fall stereotype and gimmicky like other YA spy adventures like Stormbreaker, or Spy Kids, but instead, a well-deserved mash-up of espionage and true cinematic excitement. ",
+      "aspects": {
+        "movie": {
+          "words": [
+            "Kingsman"
+          ],
+          "score": "2",
+          "justification": "true cinematic excitement"
+        }
+      },
+      "comment": ""
+    }
+  ],
+  "overall": "2",
+  "comment": "the reason i put this in is because there are a lot of sentences that do not give us sentiment - summarizing or talking about other films. And when he does give us sentiment - they're kind of tricky"
+}
