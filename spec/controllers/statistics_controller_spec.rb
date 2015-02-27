@@ -5,10 +5,10 @@ RSpec.describe StatisticsController, :type => :controller do
 
   describe 'index' do
     it 'displays if there are enough statistics' do
-      review_count = FactoryGirl::create(:statistic, identifier: 'review_count')
-      people_count = FactoryGirl::create(:statistic, identifier: 'people_count')
-      topic_sentiments = FactoryGirl::create(:statistic, identifier: 'topic_sentiments')
-      topic_counts = FactoryGirl::create(:statistic, identifier: 'topic_counts')
+      review_count = FactoryGirl::create(:review_count_statistic, identifier: 'review_count')
+      people_count = FactoryGirl::create(:people_count_statistic, identifier: 'people_count')
+      topic_sentiments = FactoryGirl::create(:topic_sentiments_statistic, identifier: 'topic_sentiments')
+      topic_counts = FactoryGirl::create(:topic_counts_statistic, identifier: 'topic_counts')
       get :index
       expect(response).to render_template('index')
     end
