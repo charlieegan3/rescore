@@ -26,7 +26,7 @@
           td =distance_of_time_in_words(Time.new, @movie.created_at).gsub('about ', '') + " ago"
 
 .row
-  .large-12.columns
+  .large-6.columns
     .panel
       p
         strong Summary
@@ -37,6 +37,14 @@
                 span.success.label =@summary[section]
             -else
                 span.alert.label =@summary[section]
+  .large-6.columns
+    .panel
+      p
+        strong Main points
+      ul
+        -@facts.each do |fact|
+          li
+            =fact
 
 .row
   .large-6.columns
