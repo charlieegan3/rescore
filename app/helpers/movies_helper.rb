@@ -3,6 +3,7 @@ module MoviesHelper
   def show_summary(movie)
     summary = {:review_count => "", :topic_counts => "", :topic_sentiments => "", :people_count => ""}
     indicators = {:review_count => false, :topic_counts => false, :topic_sentiments => false, :people_count => false}
+    facts = []
 
     if movie.reviews.size >= Statistic.find_by_identifier('review_count').value[:count] / Movie.count
       summary[:review_count] = "#{movie.title} has an above average review count."
@@ -32,7 +33,15 @@ module MoviesHelper
       summary[:topic_sentiments] = "#{movie.title} has a below average overall topic sentiment."
     end
 
-    [summary, indicators]
+    facts << "People seem to talk about #{movie.stats[:topic_counts].max_by{|k,v| v}[0].to_s} the most."
+
+    mvar = Movie.review_variation
+    facts << "#{movie.title} has a high variation of ratings." if (movie.sentiment[:distribution_stats][:st_dev] * 100).to_i >= mvar
+    facts << "#{movie.title} has a low variation of ratings." if (movie.sentiment[:distribution_stats][:st_dev] * 100).to_i < mvar
+
+    facts << "#{movie.sentiment[:topics].max_by{|k,v| v}[0].to_s.capitalize} is the most favoured aspect of the movie."
+
+    [summary, indicators, facts]
   end
 
 end
