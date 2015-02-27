@@ -1,0 +1,69 @@
+{
+  "title": "12 Years a Slave",
+  "genres": "Biography, Drama, History",
+  "source": "http://www.imdb.com/title/tt2024544/reviews?ref_=tt_urv",
+  "score": "10/10",
+  "helpfulness": "252/400",
+  "author": "Todor Dimitrov",
+  "body": "Well, to begin, I cannot remember the last time I could not get up at the end of a movie. I literally could not rise up from my seat. My body felt as though it were being weighed down by something considerably larger and heavier than myself... History had it's way with me( I am an African American woman). Thank you Mr. McQueen, Mr. Ejiofor, Ms. Nyong'o, Ms. Paulson and others, and yes, even Mr. Fassbender. I am not a film critic nor a movie hobbyist, although I try to stay current, but what I am is a human being trying to understand the various problems and issues within our country. This movie is a potent reminder of why we are where we are as a society today. How man can be so unflinchingly cruel to his fellow man, especially if he looks, speaks or behaves differently, I will never understand. ",
+  "annotated_sentences": [
+    {
+      "text": "Well, to begin, I cannot remember the last time I could not get up at the end of a movie.",
+      "aspects": {
+      },
+      "comment": "The sentence talks about movies in general."
+    },
+    {
+      "text": "I literally could not rise up from my seat.",
+      "aspects": {
+      },
+      "comment": "No relevant information."
+    },
+    {
+      "text": "My body felt as though it were being weighed down by something considerably larger and heavier than myself... History had it's way with me( I am an African American woman).",
+      "aspects": {
+      },
+      "comment": "Irrelevant."
+    },
+    {
+      "text": "Thank you Mr. McQueen, Mr. Ejiofor, Ms. Nyong'o, Ms. Paulson and others, and yes, even Mr. Fassbender.",
+      "aspects": {
+      },
+      "comment": ""
+    },
+    {
+      "text": "I am not a film critic nor a movie hobbyist, although I try to stay current, but what I am is a human being trying to understand the various problems and issues within our country.",
+      "aspects": {
+      },
+      "comment": ""
+    },
+    {
+      "text": "This movie is a potent reminder of why we are where we are as a society today.",
+      "aspects": {
+        "movie": {
+          "words": [
+            "This movie"
+          ],
+          "score": "0",
+          "justification": ""
+        }
+      },
+      "comment": "She talks about the overall effect of the movie but nothing specific."
+    },
+    {
+      "text": "How man can be so unflinchingly cruel to his fellow man, especially if he looks, speaks or behaves differently, I will never understand. ",
+      "aspects": {
+        "plot": {
+          "words": [
+            "the sentence as a whole "
+          ],
+          "score": "0",
+          "justification": ""
+        }
+      },
+      "comment": "Not sure if i should have taken this sentence in consideration, based on her thoughts for the plot of the movie as a whole."
+    }
+  ],
+  "overall": "0",
+  "comment": ""
+}
