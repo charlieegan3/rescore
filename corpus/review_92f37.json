@@ -1,0 +1,108 @@
+{
+  "title": "Armageddon",
+  "genres": "action",
+  "source": "http://www.imdb.com/title/tt0120591/reviews?start=10",
+  "score": "4/10",
+  "helpfulness": "43/72",
+  "author": "Charlie Egan",
+  "body": "Half of the movie is is flashing lights and shaky camera. The rest is made up of predictable characters (think science vs. government, 'know-how' vs. authority, etc.) What is the worst aspect about this movie? Is it the cars being thrown around in the first 5 minutes, is the horrible 'Russian' accent of the 'cosmonaut', is it the uninspired characters, the poorly integrated Top 40 hits, or the \"US will save the world\" vitriol? No. It's the fact that regardless of the \"sad\" ending - there is very little suspense in this movie - we basically know what's going to happen.The one good part of this movie: \"American components, Russian components: all made in Taiwan!\"",
+  "annotated_sentences": [
+    {
+      "text": "Half of the movie is is flashing lights and shaky camera.",
+      "aspects": {
+        "movie": {
+          "words": [
+            "the movie"
+          ],
+          "score": "-1",
+          "justification": "shaky"
+        },
+        "vision": {
+          "words": [
+            "camera"
+          ],
+          "score": "-1",
+          "justification": "shaky"
+        }
+      },
+      "comment": ""
+    },
+    {
+      "text": "The rest is made up of predictable characters (think science vs. government, 'know-how' vs. authority, etc.) What is the worst aspect about this movie?",
+      "aspects": {
+        "plot": {
+          "words": [
+            "predictable",
+            "characters",
+            "character"
+          ],
+          "score": "-1",
+          "justification": "predictable"
+        }
+      },
+      "comment": ""
+    },
+    {
+      "text": "Is it the cars being thrown around in the first 5 minutes, is the horrible 'Russian' accent of the 'cosmonaut', is it the uninspired characters, the poorly integrated Top 40 hits, or the \"US will save the world\" vitriol?",
+      "aspects": {
+        "plot": {
+          "words": [
+            "characters",
+            "character"
+          ],
+          "score": "-2",
+          "justification": "uninspired"
+        },
+        "cast": {
+          "words": [
+            "accent"
+          ],
+          "score": "-2",
+          "justification": "horrible"
+        },
+        "music": {
+          "words": [
+            "top 40 hits"
+          ],
+          "score": "-2",
+          "justification": "poorly integrated"
+        }
+      },
+      "comment": ""
+    },
+    {
+      "text": "No.",
+      "aspects": {
+      },
+      "comment": ""
+    },
+    {
+      "text": "It's the fact that regardless of the \"sad\" ending - there is very little suspense in this movie - we basically know what's going to happen.The one good part of this movie: \"American components, Russian components: all made in Taiwan!",
+      "aspects": {
+        "movie": {
+          "words": [
+            "this movie"
+          ],
+          "score": "0",
+          "justification": "good part, very little suspense"
+        },
+        "plot": {
+          "words": [
+            "ending, suspense"
+          ],
+          "score": "-2",
+          "justification": "little suspense, \"sad\""
+        }
+      },
+      "comment": "this movie has both +ve and -ve here"
+    },
+    {
+      "text": "\"",
+      "aspects": {
+      },
+      "comment": ""
+    }
+  ],
+  "overall": "-2",
+  "comment": "Sentence splitting is bad here"
+}
