@@ -14,7 +14,7 @@ class Imdb_Scraper
     reviews = []
     review_urls(@title_url).each do |url|
       if url.class == String
-        print "Fetching: #{url}... " if @print
+        print "Fetching: ".green + "#{url}... " if @print
         doc = Nokogiri::HTML(open(url, 'User-Agent' => @user_agent).read)
         puts "done" if @print
       else
@@ -50,7 +50,7 @@ class Imdb_Scraper
 
   private
     def first_page(review_url)
-      print "Fetching: #{review_url}... " if @print
+      print "Fetching: ".green + "#{review_url}... " if @print
       doc = Nokogiri::HTML(open(review_url, 'User-Agent' => @user_agent).read)
       puts "done" if @print
       pages = doc.css('#tn15content table')[1].css('td').first.text.gsub(':','')[/\d+$/].to_i
