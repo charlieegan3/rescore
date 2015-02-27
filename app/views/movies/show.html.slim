@@ -31,13 +31,12 @@
       p
         strong Summary
       ul
-        -@summary.each do |section|
-          -if @indicators[section[0]]
-            li
-              span.success.label =@summary[section[0]]
-          -else
-            li
-              span.alert.label =@summary[section[0]]
+        -@summary.each do |section, value|
+          li
+            -if @indicators[section]
+                span.success.label =@summary[section]
+            -else
+                span.alert.label =@summary[section]
 
 .row
   .large-6.columns
