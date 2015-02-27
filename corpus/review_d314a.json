@@ -1,0 +1,136 @@
+{
+  "title": "Interstellar",
+  "genres": "Sci-Fi",
+  "source": "http://www.imdb.com/title/tt0816692/reviews?start=20",
+  "score": "1/10",
+  "helpfulness": "91/154",
+  "author": "Charlie Egan",
+  "body": "My honest rating would be 6 for that movie but I rated it 1 to balance the \"emotional\" ratings. Cast and the part with Matt Damon were good. The rest was a bad combination of Gravity, 2001: A Space Odyssey, a bit Mr. Nobody in the wrap of a lot of useless drama... If you have a thinking mind which does not surrender to the dirty drama games of the commercial script writers then your brain cells will hurt like a b... after seeing that much nonsense. Unfortunately, that is the destiny of almost all movies playing with the time concept except the Back to the Future trilogy. What concerns me more than the quality of the movie itself is the number of blown-up ratings threatening the credibility of IMDb, which I always trust. Who are you people? Some fake rating generator AI? Thousands of people voting for 1$ per day? Last words: Don't go! They don't deserve your money because they did not put enough effort to create a meaningful story and I would accept any meaning in its own logic.",
+  "annotated_sentences": [
+    {
+      "text": "My honest rating would be 6 for that movie but I rated it 1 to balance the \"emotional\" ratings.",
+      "aspects": {
+        "movie": {
+          "words": [
+            "that movie"
+          ],
+          "score": "1",
+          "justification": "rating would be 6"
+        }
+      },
+      "comment": ""
+    },
+    {
+      "text": "Cast and the part with Matt Damon were good.",
+      "aspects": {
+        "cast": {
+          "words": [
+            "cast"
+          ],
+          "score": "1",
+          "justification": "good"
+        },
+        "plot": {
+          "words": [
+            "the part with"
+          ],
+          "score": "1",
+          "justification": "good"
+        }
+      },
+      "comment": ""
+    },
+    {
+      "text": "The rest was a bad combination of Gravity, 2001: A Space Odyssey, a bit Mr. Nobody in the wrap of a lot of useless drama... If you have a thinking mind which does not surrender to the dirty drama games of the commercial script writers then your brain cells will hurt like a b... after seeing that much nonsense.",
+      "aspects": {
+        "movie": {
+          "words": [
+            "the rest"
+          ],
+          "score": "-2",
+          "justification": "hurt like a b, much nonsense, useless drama, bad combination"
+        },
+        "dialog": {
+          "words": [
+            "script"
+          ],
+          "score": "-2",
+          "justification": "hurt like a b, nonsense"
+        }
+      },
+      "comment": ""
+    },
+    {
+      "text": "Unfortunately, that is the destiny of almost all movies playing with the time concept except the Back to the Future trilogy.",
+      "aspects": {
+        "movie": {
+          "words": [
+            "all movies"
+          ],
+          "score": "-1",
+          "justification": "Unfortunately"
+        },
+        "concept": {
+          "words": [
+            "concept"
+          ],
+          "score": "-1",
+          "justification": "Unfortunately"
+        }
+      },
+      "comment": ""
+    },
+    {
+      "text": "What concerns me more than the quality of the movie itself is the number of blown-up ratings threatening the credibility of IMDb, which I always trust.",
+      "aspects": {
+        "movie": {
+          "words": [
+            "the movie"
+          ],
+          "score": "-2",
+          "justification": "concerns, threatening the credibility"
+        }
+      },
+      "comment": ""
+    },
+    {
+      "text": "Who are you people?",
+      "aspects": {
+      },
+      "comment": ""
+    },
+    {
+      "text": "Some fake rating generator AI?",
+      "aspects": {
+      },
+      "comment": ""
+    },
+    {
+      "text": "Thousands of people voting for 1$ per day?",
+      "aspects": {
+      },
+      "comment": ""
+    },
+    {
+      "text": "Last words: Don't go!",
+      "aspects": {
+      },
+      "comment": ""
+    },
+    {
+      "text": "They don't deserve your money because they did not put enough effort to create a meaningful story and I would accept any meaning in its own logic.",
+      "aspects": {
+        "plot": {
+          "words": [
+            "story"
+          ],
+          "score": "-2",
+          "justification": "not put enough effort"
+        }
+      },
+      "comment": ""
+    }
+  ],
+  "overall": "-2",
+  "comment": ""
+}
