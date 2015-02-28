@@ -55,7 +55,11 @@ nav.top-bar {
   margin-left: auto;
 }
 
-.stat {
+.stat-left {
+  text-align: right;
+}
+
+.stat-center {
   text-align: center;
 }
 
@@ -113,4 +117,15 @@ p.title {
   margin-left: 25%;
   width: 50%;
   margin-right: 25%;
+}
+
+.search-box {
+  margin-left: auto;
+  margin-right: auto;
+  max-width: 60%;
+}
+
+.muted {
+  font-size: 0.8em;
+  color: DarkGrey;
 }
