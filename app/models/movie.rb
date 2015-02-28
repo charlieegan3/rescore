@@ -71,7 +71,7 @@ class Movie < ActiveRecord::Base
 
   def set_stats
     s = StatCalculator.new(reviews)
-    {topic_counts: s.topic_counts, rating_distribution: s.rating_distribution}
+    {topic_counts: s.topic_counts, rating_distribution: s.rating_distribution, review_count: s.review_count}
   end
 
   def complete?
@@ -87,8 +87,7 @@ class Movie < ActiveRecord::Base
   end
 
   def self.variation
-    Movie.all.pluck(:sentiment).inject(0) {|sum, e| sum += e.size} if Movie.count > 0
-    0 if Movie.count == 0
+    Movie.all.pluck(:sentiment).inject(0) {|sum, e| sum += e.size}
   end
 
   def self.topic_counts

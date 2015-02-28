@@ -6,7 +6,7 @@ class MoviesController < ApplicationController
   end
 
   def show
-    @movie = Movie.find(params[:id])
+    @movie = Movie.fast_find(params[:id])
     @summary, @indicators, @facts = view_context.show_summary(@movie)
 
     if @movie.stats.nil?
