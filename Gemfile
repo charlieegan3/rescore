@@ -49,11 +49,14 @@ group :development do
 end
 
 group :development, :test do
+  gem 'pry'
   gem 'rspec-rails', '~> 3.0'
   gem 'guard'
   gem 'guard-rspec', require: false
   gem 'vcr'
   gem 'capybara'
+  gem 'factory_girl'
+  gem 'launchy'
 end
 
 group :test do

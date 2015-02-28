@@ -32,7 +32,7 @@ class MetacriticScraper
 
   private
     def page_count(review_url)
-      print "Fetching: #{review_url}... " if @print
+      print "Fetching: ".green + "#{review_url}..." if @print
       doc = Nokogiri::HTML(open(review_url, 'User-Agent' => @user_agent).read)
       puts "done" if @print
       pages = doc.css('#tn15content table')[1].css('td').first.text.gsub(':','')[/\d+$/].to_i
@@ -41,7 +41,7 @@ class MetacriticScraper
 
     def review_urls(title_url)
       review_url = title_url + '/user-reviews'
-      print "Fetching: #{review_url}... " if @print
+      print "Fetching: ".green + "#{review_url}..." if @print
       doc = Nokogiri::HTML(open(review_url, 'User-Agent' => @user_agent).read)
       puts "done" if @print
       total_pages = doc.css('.page.last_page').text.to_i
@@ -55,7 +55,7 @@ class MetacriticScraper
     end
 
     def raw_reviews(review_url)
-      print "Fetching: #{review_url}... " if @print
+      print "Fetching: ".green + "#{review_url}..." if @print
       xml = Nokogiri::HTML(open(review_url, 'User-Agent' => @user_agent).read)
       puts "done" if @print
       xml.css('.critic_reviews_module').first.remove

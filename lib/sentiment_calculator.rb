@@ -2,7 +2,7 @@ class SentimentCalculator
   def initialize(reviews)
     @reviews = reviews
 
-    @topics_sentiment = Hash[ASPECTS.map {|k,v| [k, []]}]
+    @topics_sentiment = Hash[ASPECTS.map {|k,v| [k, [0]]}]
     @people_sentiment = Hash.new([])
     @sentence_sentiment = []
     @review_sentiment = []

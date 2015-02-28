@@ -13,7 +13,7 @@ class Rotten_Tomatoes_Scraper
     return [] if @title_url == '' || @title_url.nil?
     rows = []
     review_urls(@title_url).each do |url|
-      print "Fetching: #{url}... " if @print
+      print "Fetching: ".green + "#{url}..." if @print
       doc = Nokogiri::HTML(open(url, 'User-Agent' => @user_agent).read)
       puts "done" if @print
       rows += doc.css('.table-striped tr')
