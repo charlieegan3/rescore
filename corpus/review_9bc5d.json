@@ -16,6 +16,13 @@
     {
       "text": "The writing is laughable and sophomoric.",
       "aspects": {
+        "dialog": {
+          "words": [
+            "writing"
+          ],
+          "score": "-2",
+          "justification": "laughable, sophomoric."
+        }
       },
       "comment": ""
     },
@@ -108,7 +115,7 @@
             "this"
           ],
           "score": "-2",
-          "justification": "I would really like to see this fail hard"
+          "justification": "fail hard"
         }
       },
       "comment": ""
