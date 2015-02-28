@@ -25,6 +25,10 @@ class StatCalculator
     end
   end
 
+  def review_count
+    @reviews.size
+  end
+
   private
     def rounded(ratings)
       ratings.map { |r| (r / 10 unless r.nil?).to_i * 10 }
