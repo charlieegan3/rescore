@@ -1,0 +1,98 @@
+{
+  "title": "Stand by me",
+  "genres": "Drama",
+  "source": "http://www.imdb.com/title/tt0092005/reviews?start=10",
+  "score": "8/10",
+  "helpfulness": "9/15",
+  "author": "Donna Connelly",
+  "body": "The most amazing film, truly one of the best i have ever seen, Incredibly funny and the performances from the young boys in the film were just the best i have ever seen in my life. I'm very surprised that they are not as famous as i would of thought they would be to this day. There is a lot of bad language in the film but it just makes it seem more realistic. There were also some tearful moments in it too especially towards the end but i think that just made the movie seem even more special to me. This film has everything, its funny, its adventurous, its tearful and it has a friendship based plot. every time someone asks me what my favourite movie is i always say this one. Don't miss out watch it! ",
+  "annotated_sentences": [
+    {
+      "text": "The most amazing film, truly one of the best i have ever seen, Incredibly funny and the performances from the young boys in the film were just the best i have ever seen in my life.",
+      "aspects": {
+        "movie": {
+          "words": [
+            "film"
+          ],
+          "score": "2",
+          "justification": "The most amazing film"
+        },
+        "cast": {
+          "words": [
+            "performance"
+          ],
+          "score": "2",
+          "justification": "truly one of the best, best i have ever seen"
+        }
+      },
+      "comment": ""
+    },
+    {
+      "text": "I'm very surprised that they are not as famous as i would of thought they would be to this day. There is a lot of bad language in the film but it just makes it seem more realistic.",
+      "aspects": {
+        "dialog": {
+          "words": [
+            "language"
+          ],
+          "score": "2",
+          "justification": "more realistic"
+        }
+      },
+      "comment": ""
+    },
+    {
+      "text": "There were also some tearful moments in it too especially towards the end but i think that just made the movie seem even more special to me.",
+      "aspects": {
+        "movie": {
+          "words": [
+            "the movie"
+          ],
+          "score": "2",
+          "justification": "even more special"
+        }
+      },
+      "comment": ""
+    },
+    {
+      "text": "This film has everything, its funny, its adventurous, its tearful and it has a friendship based plot.",
+      "aspects": {
+        "movie": {
+          "words": [
+            "this film"
+          ],
+          "score": "2",
+          "justification": "has everything, funny, adventurous, tearful"
+        },
+        "plot": {
+          "words": [
+            "plot"
+          ],
+          "score": "1",
+          "justification": "friendship based"
+        }
+      },
+      "comment": ""
+    },
+    {
+      "text": "every time someone asks me what my favourite movie is i always say this one.",
+      "aspects": {
+        "movie": {
+          "words": [
+            "it"
+          ],
+          "score": "2",
+          "justification": "favourite move"
+        }
+      },
+      "comment": ""
+    },
+    {
+      "text": "Don't miss out watch it",
+      "aspects": {
+      },
+      "comment": ""
+    }
+  ],
+  "overall": "2",
+  "comment": "missed the end of sentance didnt think it was relevant"
+
