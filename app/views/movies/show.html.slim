@@ -51,15 +51,9 @@
 .row
   .large-6.columns
     .panel
-      p
-        strong
-        span.has-tip aria-haspopup="true" data-tooltip="" title="How much each aspect is talked about, and how positive/negatively." Aspect Sentiment vs Discussion Focus
       =render "aspects_graph", id: @movie.id, aspects: @movie.sentiment[:topics], counts: @movie.stats[:topic_counts]
   .large-6.columns
     .panel
-      p
-        strong
-        span.has-tip aria-haspopup="true" data-tooltip="" title="Original user ratings, and the actual calculated sentiment from their review." Average Sentiment vs User Ratings
       =render "sentiment_ratings_graph", id: @movie.id, ratings: @movie.stats[:rating_distribution], sentiment: @movie.sentiment[:distribution_stats][:values]
       p
         strong Range:&nbsp;
