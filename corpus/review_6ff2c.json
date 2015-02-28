@@ -56,12 +56,12 @@
     {
       "text": "This film has everything, its funny, its adventurous, its tearful and it has a friendship based plot.",
       "aspects": {
-        "plot": {
+        "movie": {
           "words": [
             "this film"
           ],
           "score": "2",
-          "justification": "has everything"
+          "justification": "has everything, funny, adventurous, tearful"
         }
       },
       "comment": ""
