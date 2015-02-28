@@ -9,5 +9,6 @@ class Statistic < ActiveRecord::Base
     create(identifier: 'topic_counts', value: Movie.topic_counts)
     create(identifier: 'topic_sentiments', value: Movie.topic_sentiments)
     create(identifier: 'people_count', value: {count: Movie.people_count})
+    create(identifier: 'sentiment_variation', value: {count: Movie.variation})
   end
 end

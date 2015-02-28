@@ -87,11 +87,10 @@ class Movie < ActiveRecord::Base
   end
 
   def self.variation
-    var = 0
     sum = 0
-
     Movie.all.pluck(:sentiment).inject(0) {|sum, e| sum += e.size}
-    var / Movie.count
+    sum / Movie.count if Movie.count > 0
+    0 if Movie.count <= 0
   end
 
   def self.topic_counts
