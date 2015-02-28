@@ -3,16 +3,17 @@
     h3 ="Summary"
     table.comparison-summary
       tbody
-        -@winners.each do |item|
+        - winners = comparison_summary(@movie_1, @movie_2)
+        -winners.each do |category, value|
           tr
-            td =item[0].to_s.gsub('_', ' ').capitalize
-            -if @winners[item[0]] == :both
+            td =category.to_s.gsub('_', ' ').capitalize
+            -if winners[category] == :both
                 td
                   span.success.label =@movie_1.title
                 td
                   span.success.label =@movie_2.title
             -else
-              -if @winners[item[0]] == @movie_1.title
+              -if winners[category] == @movie_1.title
                 td
                   span.success.label =@movie_1.title
                 td
