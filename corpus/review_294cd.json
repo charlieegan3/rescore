@@ -26,15 +26,15 @@
           "words": [
             "acting"
           ],
-          "score": "0",
-          "justification": ""
+          "score": "-1",
+          "justification": "overacting"
         },
         "novelty": {
           "words": [
             "original"
           ],
-          "score": "0",
-          "justification": ""
+          "score": "-1",
+          "justification": "lack originality"
         }
       },
       "comment": "Talks about horror movies in general."
@@ -48,6 +48,20 @@
     {
       "text": "It was well-acted, and had a great story.",
       "aspects": {
+        "cast": {
+          "words": [
+            "well-acted"
+          ],
+          "score": "1",
+          "justification": "well-acted"
+        },
+        "plot": {
+          "words": [
+            "story"
+          ],
+          "score": "1",
+          "justification": "great story"
+        }
       },
       "comment": "Doesn't mean this film."
     },
@@ -90,7 +104,7 @@
             "movie"
           ],
           "score": "1",
-          "justification": "One of the creepiest parts of the movie is the feeling of isolation that Kubrick makes"
+          "justification": "creepiest parts"
         }
       },
       "comment": "Creepy is positive, as it's a horror movie"
