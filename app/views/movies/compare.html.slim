@@ -27,8 +27,13 @@
             td =distance_of_time_in_words(Time.new, movie.updated_at).gsub('about ', '') + " ago"
             td =distance_of_time_in_words(Time.new, movie.created_at).gsub('about ', '') + " ago"
 
-=render 'compare_summary_table'
+  .large-12.columns
+    h3
+      span.has-tip aria-haspopup="true" data-tooltip="" title="This table shows which movie has a higher value in each category."
+        |Summary
+    =render 'compare_summary_table'
 
+.row
   .large-6.columns
     p.title
       =link_to(movie_path(@movie_1))
