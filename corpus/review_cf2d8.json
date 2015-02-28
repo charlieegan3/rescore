@@ -1,0 +1,92 @@
+{
+  "title": "Jaws",
+  "genres": "Thriller",
+  "source": "http://www.imdb.com/title/tt0073195/reviews?start=10",
+  "score": "10/10",
+  "helpfulness": "63/118",
+  "author": "Donna Connelly",
+  "body": "Jaws is an epic movie and it is My favorite shark film.Great acting by Roy Scheider and Richard Dreyfuss but the acting was superb in My opinion by Robert Shaw! The shark itself was awesome! The view of the water in Jaws is spooky and it makes you feel that anything can be in it! The music by John Williams is great and the direction by Steven Spielberg is terrific!Jaws has three other sequels but they aren't classics like this! If you like shark movies and haven't seen Jaws or even if you have check out Jaws today!",
+  "annotated_sentences": [
+    {
+      "text": "Jaws is an epic movie and it is My favorite shark film.Great acting by Roy Scheider and Richard Dreyfuss but the acting was superb in My opinion by Robert Shaw!",
+      "aspects": {
+        "movie": {
+          "words": [
+            "movie"
+          ],
+          "score": "2",
+          "justification": "epic"
+        },
+        "cast": {
+          "words": [
+            "acting"
+          ],
+          "score": "2",
+          "justification": "great acting"
+        }
+      },
+      "comment": ""
+    },
+    {
+      "text": "The shark itself was awesome!",
+      "aspects": {
+      },
+      "comment": "irrelevant"
+    },
+    {
+      "text": "The view of the water in Jaws is spooky and it makes you feel that anything can be in it!",
+      "aspects": {
+        "movie": {
+          "words": [
+            "makes you feel"
+          ],
+          "score": "2",
+          "justification": "spooky"
+        },
+        "cinematography": {
+          "words": [
+            "the view"
+          ],
+          "score": "2",
+          "justification": "view of the water "
+        }
+      },
+      "comment": ""
+    },
+    {
+      "text": "The music by John Williams is great and the direction by Steven Spielberg is terrific!Jaws has three other sequels but they aren't classics like this!",
+      "aspects": {
+        "movie": {
+          "words": [
+            "jaws"
+          ],
+          "score": "2",
+          "justification": "three other sequels"
+        },
+        "sound": {
+          "words": [
+            "music"
+          ],
+          "score": "2",
+          "justification": "the music"
+        }
+      },
+      "comment": ""
+    },
+    {
+      "text": "If you like shark movies and haven't seen Jaws or even if you have check out Jaws today!",
+      "aspects": {
+        "movie": {
+          "words": [
+            "movies"
+          ],
+          "score": "2",
+          "justification": "check out "
+        }
+      },
+      "comment": ""
+    }
+  ],
+  "overall": "2",
+  "comment": ""
+}
