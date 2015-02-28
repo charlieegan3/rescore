@@ -1,0 +1,190 @@
+{
+  "title": "See no Evil",
+  "genres": "Horror",
+  "source": "imdb.com",
+  "score": "5/10",
+  "helpfulness": "31/42",
+  "author": "Georgi",
+  "body": "Okay, this is a B-Movie, Horror by numbers. The good news is it doesn't try or pretend to be anything else. So it just concentrates on being the best B-Movie, horror by numbers flick it can manage. It succeeded, but as you can tell by the rating, that still doesn't make it a good film.Okay, so the positives. The acting is pretty reasonable and this lot, including Kane can probably do much better horrors in the future. The special effects, while simply being generic for this day and age were also pretty reasonable. Nothing ground breaking or stand out impressive for either of these. Probably the most notable thing was Kane himself, but it's not a great surprise seeing as his day job is to play a Psycho.On the downside however the whole plot was so incredibly bog standard you get bored with it early on, stop really caring who's going to live or die and just try and enjoy the visuals. The story naturally revolves around a couple of young but tough women (like that's new) who have a tendency of getting all the men around them killed. The older characters are very peripheral and somewhat wasted. But that's part of the hangover from the \"scary movie\" sub-genre, which fortunately seems to be slowly fading into the distance and morphing into marginally better films such as this.The worst part of the movie was the supposed plot twist. This was something that if you were to ask yourself what the most obvious, generic thing that could happen would be, you'll have guessed it long before it happens.Anyway, as I said the film is at least honest and for a short disposable hack and slash horror it's pretty reasonable. Having said that, there are better films even in for B-Movie slashers. So really, unless your a WWE fan, or you really like this kind of movie, I wouldn't bother.",
+  "annotated_sentences": [
+    {
+      "text": "Okay, this is a B-Movie, Horror by numbers.",
+      "aspects": {
+      },
+      "comment": ""
+    },
+    {
+      "text": "The good news is it doesn't try or pretend to be anything else.",
+      "aspects": {
+      },
+      "comment": ""
+    },
+    {
+      "text": "So it just concentrates on being the best B-Movie, horror by numbers flick it can manage.",
+      "aspects": {
+        "movie": {
+          "words": [
+            "B-Movie"
+          ],
+          "score": "1",
+          "justification": "it can manage "
+        }
+      },
+      "comment": ""
+    },
+    {
+      "text": "It succeeded, but as you can tell by the rating, that still doesn't make it a good film.Okay, so the positives.",
+      "aspects": {
+        "movie": {
+          "words": [
+            "It"
+          ],
+          "score": "0",
+          "justification": "Succeeded,doesn't make it good movie"
+        }
+      },
+      "comment": ""
+    },
+    {
+      "text": "The acting is pretty reasonable and this lot, including Kane can probably do much better horrors in the future.",
+      "aspects": {
+        "cast": {
+          "words": [
+            "acting"
+          ],
+          "score": "1",
+          "justification": "pretty reasonable"
+        }
+      },
+      "comment": ""
+    },
+    {
+      "text": "The special effects, while simply being generic for this day and age were also pretty reasonable.",
+      "aspects": {
+        "editing": {
+          "words": [
+            "effects"
+          ],
+          "score": "1",
+          "justification": "pretty reasonable"
+        }
+      },
+      "comment": ""
+    },
+    {
+      "text": "Nothing ground breaking or stand out impressive for either of these.",
+      "aspects": {
+      },
+      "comment": ""
+    },
+    {
+      "text": "Probably the most notable thing was Kane himself, but it's not a great surprise seeing as his day job is to play a Psycho.On the downside however the whole plot was so incredibly bog standard you get bored with it early on, stop really caring who's going to live or die and just try and enjoy the visuals.",
+      "aspects": {
+        "plot": {
+          "words": [
+            "plot"
+          ],
+          "score": "-2",
+          "justification": "incredibly bog standart,bored"
+        },
+        "vision": {
+          "words": [
+            "visuals",
+            "visual"
+          ],
+          "score": "1",
+          "justification": "enjoy"
+        },
+        "cast": {
+          "words": [
+            "Kane"
+          ],
+          "score": "1",
+          "justification": "notable"
+        }
+      },
+      "comment": ""
+    },
+    {
+      "text": "The story naturally revolves around a couple of young but tough women (like that's new) who have a tendency of getting all the men around them killed.",
+      "aspects": {
+      },
+      "comment": ""
+    },
+    {
+      "text": "The older characters are very peripheral and somewhat wasted.",
+      "aspects": {
+        "plot": {
+          "words": [
+            "characters",
+            "character"
+          ],
+          "score": "-1",
+          "justification": "somewhat wasted"
+        }
+      },
+      "comment": ""
+    },
+    {
+      "text": "But that's part of the hangover from the \"scary movie\" sub-genre, which fortunately seems to be slowly fading into the distance and morphing into marginally better films such as this.The worst part of the movie was the supposed plot twist.",
+      "aspects": {
+        "movie": {
+          "words": [
+            "this"
+          ],
+          "score": "1",
+          "justification": "marginally better"
+        },
+        "plot": {
+          "words": [
+            "plot"
+          ],
+          "score": "-2",
+          "justification": "worst part"
+        }
+      },
+      "comment": ""
+    },
+    {
+      "text": "This was something that if you were to ask yourself what the most obvious, generic thing that could happen would be, you'll have guessed it long before it happens.Anyway, as I said the film is at least honest and for a short disposable hack and slash horror it's pretty reasonable.",
+      "aspects": {
+        "movie": {
+          "words": [
+            "film"
+          ],
+          "score": "1",
+          "justification": "pretty reasonable,honest"
+        },
+        "plot": {
+          "words": [
+            "This"
+          ],
+          "score": "-2",
+          "justification": "mors generic,obvious"
+        }
+      },
+      "comment": ""
+    },
+    {
+      "text": "Having said that, there are better films even in for B-Movie slashers.",
+      "aspects": {
+      },
+      "comment": ""
+    },
+    {
+      "text": "So really, unless your a WWE fan, or you really like this kind of movie, I wouldn't bother.",
+      "aspects": {
+        "movie": {
+          "words": [
+            "this kind of movie"
+          ],
+          "score": "-1",
+          "justification": "wouldn't bother"
+        }
+      },
+      "comment": ""
+    }
+  ],
+  "overall": "0",
+  "comment": ""
+}
