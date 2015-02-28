@@ -13,7 +13,7 @@ print 'Your Own Name: (e.g. Charlie Egan)'.green; review[:author] = gets.chomp
 print 'Body (Paste review , type exit when done): '.green; review[:body] = ''
 
 while(review[:body][-4..-1] != 'exit') do
-  review[:body] += gets.chomp
+  review[:body] += " " + gets.chomp
 end
 review[:body] = review[:body][0..review[:body].length - 5]
 
