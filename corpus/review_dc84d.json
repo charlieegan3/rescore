@@ -1,0 +1,152 @@
+{
+  "title": "American Hustle",
+  "genres": "Drama, Crime",
+  "source": "http://www.imdb.com/title/tt1800241/reviews?ref_=tt_urv",
+  "score": "6/10",
+  "helpfulness": "441/647",
+  "author": "Todor Dimitrov",
+  "body": "Despite it's stellar cast and great production creds, \"American Hustle\" is little more than a sinners-with-a-heart of gold story. YAWN!!! It plays like a particularly sad Woody Allen movie without the jokes. The film is definitely not a comedy, though Jennifer Lawrence provides not only the best character but most of the few laughs the film has.Christian Bale and Jeremy Renner are particularly effective in their parts. Bradley Cooper does a solid job with the most complex character in the film. Amy Adams is fine, but not award worthy for a change.Watch \"The Grifters\" if you want a devilishly clever con-film, because it is 1,000,000 times better.Honestly, the NY Film Critics Assn. must have gotten a con-sized pay off for calling this the best film of the year. Is it awful? No. But neither is it memorable. Fun soundtrack, great costumes, hair/make-up and photography can't make up for a plot which is dull and characters who are so uninteresting. ",
+  "annotated_sentences": [
+    {
+      "text": "Despite it's stellar cast and great production creds, \"American Hustle\" is little more than a sinners-with-a-heart of gold story.",
+      "aspects": {
+        "movie": {
+          "words": [
+            "American Hustle"
+          ],
+          "score": "1",
+          "justification": "little more than a sinners-with-a-heart of gold story"
+        }
+      },
+      "comment": "Removed plot, cast and cinematography because he just mentions them but no specific detail."
+    },
+    {
+      "text": "YAWN!!!",
+      "aspects": {
+      },
+      "comment": "Don't know how to treat that one. Maybe as a negative for plot ?"
+    },
+    {
+      "text": "It plays like a particularly sad Woody Allen movie without the jokes.",
+      "aspects": {
+        "plot": {
+          "words": [
+            "it plays"
+          ],
+          "score": "-1",
+          "justification": "a particularly sad Woody Allen movie without the jokes"
+        }
+      },
+      "comment": "It mentions the story in the last sentence so i think he meant the plot in this one."
+    },
+    {
+      "text": "The film is definitely not a comedy, though Jennifer Lawrence provides not only the best character but most of the few laughs the film has.Christian Bale and Jeremy Renner are particularly effective in their parts.",
+      "aspects": {
+        "movie": {
+          "words": [
+            "the film"
+          ],
+          "score": "0",
+          "justification": "not a comedy"
+        },
+        "plot": {
+          "words": [
+            "character"
+          ],
+          "score": "0",
+          "justification": ""
+        },
+        "cast": {
+          "words": [
+            "Jennifer Lawrence provides not only the best character, Christian Bale and Jeremy Renner are particularly effective in their parts"
+          ],
+          "score": "2",
+          "justification": "best character, particularly effective in their parts"
+        }
+      },
+      "comment": "Maybe i should have removed movie and plot because he doesn't specifically talk about them."
+    },
+    {
+      "text": "Bradley Cooper does a solid job with the most complex character in the film.",
+      "aspects": {
+        "cast": {
+          "words": [
+            "Bradley Cooper"
+          ],
+          "score": "2",
+          "justification": "solid job"
+        }
+      },
+      "comment": "Maybe we should include character in the cast aspect?"
+    },
+    {
+      "text": "Amy Adams is fine, but not award worthy for a change.Watch \"The Grifters\" if you want a devilishly clever con-film, because it is 1,000,000 times better.Honestly, the NY Film Critics Assn.",
+      "aspects": {
+        "cast": {
+          "words": [
+            "Amy Adams"
+          ],
+          "score": "1",
+          "justification": "fine"
+        }
+      },
+      "comment": ""
+    },
+    {
+      "text": "must have gotten a con-sized pay off for calling this the best film of the year.",
+      "aspects": {
+        "movie": {
+          "words": [
+            "film"
+          ],
+          "score": "0",
+          "justification": "con-sized pay off for calling this the best film of the year"
+        }
+      },
+      "comment": "Not sure if i should have included that. It split the sentence in two because this one and the last one are one sentence."
+    },
+    {
+      "text": "Is it awful?",
+      "aspects": {
+      },
+      "comment": ""
+    },
+    {
+      "text": "No.",
+      "aspects": {
+      },
+      "comment": "Don't think this is important because he is just saying that it is not awful which doesn't necessarily mean something."
+    },
+    {
+      "text": "But neither is it memorable.",
+      "aspects": {
+      },
+      "comment": ""
+    },
+    {
+      "text": "Fun soundtrack, great costumes, hair/make-up and photography can't make up for a plot which is dull and characters who are so uninteresting. ",
+      "aspects": {
+        "sound": {
+          "words": [
+            "sound",
+            "soundtrack"
+          ],
+          "score": "1",
+          "justification": "fun"
+        },
+        "plot": {
+          "words": [
+            "plot",
+            "characters",
+            "character"
+          ],
+          "score": "-2",
+          "justification": "dull"
+        }
+      },
+      "comment": ""
+    }
+  ],
+  "overall": "1",
+  "comment": ""
+}

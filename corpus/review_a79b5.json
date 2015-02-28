@@ -1,0 +1,270 @@
+{
+  "title": "The Wolf of Wall Street",
+  "genres": "Biography, Comedy, Crime",
+  "source": "http://www.imdb.com/title/tt0993846/reviews?ref_=tt_urv",
+  "score": "1/10",
+  "helpfulness": "542/919",
+  "author": "Todor Dimitrov",
+  "body": "I've always thought that there must be a very good reason for a movie to last 3 hours. Wolf of wall street does last 3 hours but there no shadow of a good reason for it. It could have lasted 1 hour and it would have been already too long.It is difficult to summarize all the things I didn't like but let's try:1- Characters development is simply not existent. There is no depth, just one-dimension flat characters that only do drugs, sex, and money. I am not against showing drugs or sex or money in a movie, if it helps the plot. But in this case, it didn't. It was 2 hours of absolute useless display of all the possible debaucheries on earth, without them helping in building up the characters. 2- If a guy manages to build up an empire based on a fraud, I'd like to see what happens to his victims too, and, sorry if I am not a master of Wall street, but I'd like to have 5 minutes of the movie spent in explaining what was this fraud about. 3- If the guy, once again, not only builds his own empire, but also drags other people in that, I suppose he must have some smartness, or intelligence, or be a master manipulator.. whatever it is, it cannot be just (once again) cocaine and prostitute. If they wanted to depict the guys as villains, they failed miserably. 4- the only relatively interesting part (the trial etc) is cut to 30-45 minutes max. Once again, I supposed it could have been a good chance to show some introspection of the characters, some development..something! But no, once again, nothing. We only notice that now the beer is not alcoholic. So sad. 5-Finally, DiCaprio performance: he did his job, probably, but he was alway over the top (and not in a good sense). Too much of everything, to the point that he fell into being ridiculous more than believable.Ah, one last note. Wall Street? Where is it in all the story? I expected to see some connections to WS in fact, like what was going on in the meantime but there is - sorry to repeat myself- basically nothing about it.",
+  "annotated_sentences": [
+    {
+      "text": "I've always thought that there must be a very good reason for a movie to last 3 hours.",
+      "aspects": {
+      },
+      "comment": "Talks about movies in general."
+    },
+    {
+      "text": "Wolf of wall street does last 3 hours but there no shadow of a good reason for it.",
+      "aspects": {
+        "movie": {
+          "words": [
+            "Wolf of wall street"
+          ],
+          "score": "0",
+          "justification": "Wolf of wall street does last"
+        },
+        "length": {
+          "words": [
+            "3 hours"
+          ],
+          "score": "-1",
+          "justification": "there no shadow of a good reason"
+        }
+      },
+      "comment": "I think the only important aspect is the length even though he talks about the movie."
+    },
+    {
+      "text": "It could have lasted 1 hour and it would have been already too long.It is difficult to summarize all the things I didn't like but let's try:1- Characters development is simply not existent.",
+      "aspects": {
+        "movie": {
+          "words": [
+            "all the things i didn't like "
+          ],
+          "score": "-2",
+          "justification": "all the things i didn't like"
+        },
+        "length": {
+          "words": [
+            "long"
+          ],
+          "score": "-2",
+          "justification": "It could have lasted 1 hour and it would have been already too long."
+        },
+        "plot": {
+          "words": [
+            "characters development"
+          ],
+          "score": "-2",
+          "justification": "Characters development is simply not existent."
+        }
+      },
+      "comment": ""
+    },
+    {
+      "text": "There is no depth, just one-dimension flat characters that only do drugs, sex, and money.",
+      "aspects": {
+        "plot": {
+          "words": [
+            "characters",
+            "character"
+          ],
+          "score": "-2",
+          "justification": "There is no depth, just one-dimension flat characters"
+        }
+      },
+      "comment": ""
+    },
+    {
+      "text": "I am not against showing drugs or sex or money in a movie, if it helps the plot.",
+      "aspects": {
+      },
+      "comment": "Not talking about the movie but in general."
+    },
+    {
+      "text": "But in this case, it didn't.",
+      "aspects": {
+        "plot": {
+          "words": [
+            "in this case"
+          ],
+          "score": "-2",
+          "justification": "it didn't"
+        }
+      },
+      "comment": "Very confusing if not connected to the other sentence. Not sure if i did the right thing with this sentence."
+    },
+    {
+      "text": "It was 2 hours of absolute useless display of all the possible debaucheries on earth, without them helping in building up the characters.",
+      "aspects": {
+        "plot": {
+          "words": [
+            "characters",
+            "character"
+          ],
+          "score": "-2",
+          "justification": "building up the characters"
+        },
+        "length": {
+          "words": [
+            "it was 2 hours"
+          ],
+          "score": "-2",
+          "justification": "It was 2 hours of absolute useless display"
+        }
+      },
+      "comment": "It found plot right, but even though it said 2 hours it didn't add the length."
+    },
+    {
+      "text": "2- If a guy manages to build up an empire based on a fraud, I'd like to see what happens to his victims too, and, sorry if I am not a master of Wall street, but I'd like to have 5 minutes of the movie spent in explaining what was this fraud about.",
+      "aspects": {
+        "plot": {
+          "words": [
+            "Wall street, explaining what was this fraud about"
+          ],
+          "score": "-2",
+          "justification": ""
+        }
+      },
+      "comment": "This is a very common sense sentence and i am not sure if i should have added it as part of the plot aspect."
+    },
+    {
+      "text": "3- If the guy, once again, not only builds his own empire, but also drags other people in that, I suppose he must have some smartness, or intelligence, or be a master manipulator.. whatever it is, it cannot be just (once again) cocaine and prostitute.",
+      "aspects": {
+        "plot": {
+          "words": [
+            "if the guy"
+          ],
+          "score": "-2",
+          "justification": "it cannot be just (once again)"
+        }
+      },
+      "comment": "Again same sentence."
+    },
+    {
+      "text": "If they wanted to depict the guys as villains, they failed miserably.",
+      "aspects": {
+        "plot": {
+          "words": [
+            "If they wanted to depict the guys"
+          ],
+          "score": "-2",
+          "justification": "they failed miserably"
+        }
+      },
+      "comment": ""
+    },
+    {
+      "text": "4- the only relatively interesting part (the trial etc) is cut to 30-45 minutes max.",
+      "aspects": {
+        "movie": {
+          "words": [
+            "the only relatively interesting part (the trial etc)"
+          ],
+          "score": "1",
+          "justification": "relatively interesting"
+        },
+        "length": {
+          "words": [
+            "30-45 minutes"
+          ],
+          "score": "-1",
+          "justification": "is cut to 30-45 minutes max"
+        }
+      },
+      "comment": "Not sure if the score for the movie should be 1 or 0 because of the 'relatively' interesting part."
+    },
+    {
+      "text": "Once again, I supposed it could have been a good chance to show some introspection of the characters, some development..something!",
+      "aspects": {
+        "plot": {
+          "words": [
+            "characters",
+            "character"
+          ],
+          "score": "-2",
+          "justification": "some development..something!"
+        }
+      },
+      "comment": ""
+    },
+    {
+      "text": "But no, once again, nothing.",
+      "aspects": {
+        "plot": {
+          "words": [
+            "once again"
+          ],
+          "score": "-2",
+          "justification": "But no, once again, nothing."
+        }
+      },
+      "comment": "Connecting to the last sentence."
+    },
+    {
+      "text": "We only notice that now the beer is not alcoholic.",
+      "aspects": {
+      },
+      "comment": ""
+    },
+    {
+      "text": "So sad. 5-Finally, DiCaprio performance: he did his job, probably, but he was alway over the top (and not in a good sense).",
+      "aspects": {
+        "cast": {
+          "words": [
+            "performance"
+          ],
+          "score": "-1",
+          "justification": "he did his job, probably, but he was alway over the top (and not in a good sense)."
+        }
+      },
+      "comment": ""
+    },
+    {
+      "text": "Too much of everything, to the point that he fell into being ridiculous more than believable.Ah, one last note.",
+      "aspects": {
+        "credibility": {
+          "words": [
+            "believable"
+          ],
+          "score": "-2",
+          "justification": "fell into being ridiculous more than believable"
+        }
+      },
+      "comment": ""
+    },
+    {
+      "text": "Wall Street?",
+      "aspects": {
+      },
+      "comment": ""
+    },
+    {
+      "text": "Where is it in all the story?",
+      "aspects": {
+        "plot": {
+          "words": [
+            "story"
+          ],
+          "score": "-2",
+          "justification": "Where is it in all the story?"
+        }
+      },
+      "comment": ""
+    },
+    {
+      "text": "I expected to see some connections to WS in fact, like what was going on in the meantime but there is - sorry to repeat myself- basically nothing about it.",
+      "aspects": {
+        "plot": {
+          "words": [
+            "I expected to see "
+          ],
+          "score": "-2",
+          "justification": "basically nothing"
+        }
+      },
+      "comment": ""
+    }
+  ],
+  "overall": "-2",
+  "comment": "Very difficult review to score"
+}
