@@ -3,7 +3,7 @@ class SentimentCalculator
     @reviews = reviews
 
     @topics_sentiment = Hash[ASPECTS.map {|k,v| [k, [0]]}]
-    @people_sentiment = Hash.new([])
+    @people_sentiment = Hash.new{|hash, key| hash[key] = Array.new}
     @sentence_sentiment = []
     @review_sentiment = []
   end
@@ -29,7 +29,7 @@ class SentimentCalculator
   def people_sentiment
     @people_sentiment = @people_sentiment.sort_by { |_, v| v.size }
     @people_sentiment = @people_sentiment.
-      map { |k, v| [k, v.reduce(:+) / v.size, v.size] }.reverse.
+      map { |k, v| [k, v.reduce(:+).to_f / v.size, v.size] }.reverse.
       reject { |_, _, c| c < 3}.
       sort_by { |_, v, c| (v * 100).to_f / c }.reverse
   end
