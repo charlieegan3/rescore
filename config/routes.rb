@@ -7,6 +7,8 @@ Rails.application.routes.draw do
   get 'about' => 'application#about', as: :about
   get 'stats' => 'statistics#index', as: :stats
 
+  get 'stats/refresh' => 'statistics#refresh', as: :stats_refresh
+
   # Example of regular route:
   #   get 'products/:id' => 'catalog#view'
 
