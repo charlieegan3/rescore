@@ -27,12 +27,16 @@
             td =distance_of_time_in_words(Time.new, movie.updated_at).gsub('about ', '') + " ago"
             td =distance_of_time_in_words(Time.new, movie.created_at).gsub('about ', '') + " ago"
 
-.row
-  -[@movie_1, @movie_2].each do |movie|
-    .large-6.columns
-      p.title
-        =link_to(movie_path(movie))
-          strong="#{movie.title}"
+=render 'compare_summary_table'
+
+  .large-6.columns
+    p.title
+      =link_to(movie_path(@movie_1))
+        strong="#{@movie_1.title}"
+  .large-6.columns
+    p.title
+      =link_to(movie_path(@movie_2))
+        strong="#{@movie_2.title}"
 
 .row
   .large-6.columns

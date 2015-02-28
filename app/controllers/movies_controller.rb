@@ -22,9 +22,8 @@ class MoviesController < ApplicationController
     elsif params[:m1] && params[:m2]
       @movie_1 = Movie.fast_find(params[:m1])
       @movie_2 = Movie.fast_find(params[:m2])
-      return render 'compare'
     else
-      @options = Movie.all.pluck(:title, :id).shuffle
+      @options = Movie.complete_movies.pluck(:title, :id).shuffle
       render 'choose_compare'
     end
   end

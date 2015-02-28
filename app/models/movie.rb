@@ -40,7 +40,7 @@ class Movie < ActiveRecord::Base
     r = RescoreReviewer.new(self)
     update_attribute(:reviews, r.rescored_reviews)
     update_attributes({
-      sentiment: set_sentiment, stats: set_stats, status: nil, task: nil
+      sentiment: set_sentiment, stats: set_stats, status: nil, task: nil, complete: true
     })
   end
   handle_asynchronously :build_summary
@@ -74,12 +74,12 @@ class Movie < ActiveRecord::Base
     {topic_counts: s.topic_counts, rating_distribution: s.rating_distribution, review_count: s.review_count}
   end
 
-  def complete?
-    return self.stats.present?
-  end
-
   def self.summarized
     all.reject { |movie| movie.stats.empty? }
+  end
+
+  def self.complete_movies
+    Movie.where(:complete => true)
   end
 
   def self.review_count
