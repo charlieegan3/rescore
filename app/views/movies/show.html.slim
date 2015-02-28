@@ -29,7 +29,8 @@
   .large-6.columns
     .panel
       p
-        strong Summary
+        strong
+        span.has-tip aria-haspopup="true" data-tooltip="" title="Overview of this movie, compared to all others." Summary
       ul
         -@summary.each do |section, value|
           li
@@ -40,7 +41,8 @@
   .large-6.columns
     .panel
       p
-        strong Main points
+        strong
+        span.has-tip aria-haspopup="true" data-tooltip="" title="Interesting facts about this movie." Main points
       ul
         -@facts.each do |fact|
           li
@@ -49,13 +51,9 @@
 .row
   .large-6.columns
     .panel
-      p
-        strong Aspect Sentiment vs Discussion Focus
       =render "aspects_graph", id: @movie.id, aspects: @movie.sentiment[:topics], counts: @movie.stats[:topic_counts]
   .large-6.columns
     .panel
-      p
-        strong Average Sentiment vs User Ratings
       =render "sentiment_ratings_graph", id: @movie.id, ratings: @movie.stats[:rating_distribution], sentiment: @movie.sentiment[:distribution_stats][:values]
       p
         strong Range:&nbsp;

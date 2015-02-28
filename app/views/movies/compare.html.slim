@@ -41,24 +41,16 @@
 .row
   .large-6.columns
     .panel
-      p
-        strong Aspect Sentiment vs Discussion Focus
       =render "aspects_graph", id: @movie_1.id, aspects: @movie_1.sentiment[:topics], counts: @movie_1.stats[:topic_counts]
   .large-6.columns
     .panel
-      p
-        strong Aspect Sentiment vs Discussion Focus
       =render "aspects_graph", id: @movie_2.id, aspects: @movie_2.sentiment[:topics], counts: @movie_2.stats[:topic_counts]
 .row
   .large-6.columns
     .panel
-      p
-        strong Average Sentiment vs User Ratings
       =render "sentiment_ratings_graph", id: @movie_1.id, ratings: @movie_1.stats[:rating_distribution], sentiment: @movie_1.sentiment[:distribution_stats][:values]
   .large-6.columns
     .panel
-      p
-        strong Average Sentiment vs User Ratings
       =render "sentiment_ratings_graph", id: @movie_2.id, ratings: @movie_2.stats[:rating_distribution], sentiment: @movie_2.sentiment[:distribution_stats][:values]
 
 -unless @movie_1.sentiment[:people].empty? || @movie_2.sentiment[:people].empty?
