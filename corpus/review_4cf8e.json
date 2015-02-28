@@ -1,0 +1,38 @@
+{
+  "title": "The Terminator",
+  "genres": "Action, Sci-Fi, Thriller",
+  "source": "http://www.metacritic.com/movie/the-terminator",
+  "score": "10/10",
+  "helpfulness": "5/7",
+  "author": "Donna Connelly",
+  "body": "This movie was down right action packed. Arnold Schwartezennager rules!! ",
+  "annotated_sentences": [
+    {
+      "text": "This movie was down right action packed.",
+      "aspects": {
+        "movie": {
+          "words": [
+            "This movie"
+          ],
+          "score": "2",
+          "justification": "This movie was down right action packed"
+        }
+      },
+      "comment": ""
+    },
+    {
+      "text": "Arnold Schwartezennager rules!",
+      "aspects": {
+      },
+      "comment": ""
+    },
+    {
+      "text": "! ",
+      "aspects": {
+      },
+      "comment": ""
+    }
+  ],
+  "overall": "2",
+  "comment": ""
+}
