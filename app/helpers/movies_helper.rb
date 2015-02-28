@@ -35,9 +35,9 @@ module MoviesHelper
 
     facts << "People seem to talk about #{movie.stats[:topic_counts].max_by{|k,v| v}[0].to_s} the most."
 
-    mvar = Movie.variation
-    facts << "#{movie.title} has a high variation of ratings." if (movie.sentiment[:distribution_stats][:st_dev] * 100).to_i >= mvar
-    facts << "#{movie.title} has a low variation of ratings." if (movie.sentiment[:distribution_stats][:st_dev] * 100).to_i < mvar
+    mvar = Statistic.find_by_identifier('sentiment_variation')
+    facts << "#{movie.title} has a high variation of ratings." if (movie.sentiment[:distribution_stats][:st_dev] * 100).to_i >= mvar if mvar
+    facts << "#{movie.title} has a low variation of ratings." if (movie.sentiment[:distribution_stats][:st_dev] * 100).to_i < mvar if mvar
 
     facts << "#{movie.sentiment[:topics].max_by{|k,v| v}[0].to_s.capitalize} is the most favoured aspect of the movie."
 
