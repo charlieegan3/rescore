@@ -11,7 +11,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20150227202405) do
+ActiveRecord::Schema.define(version: 20150228220150) do
 
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
@@ -52,6 +52,7 @@ ActiveRecord::Schema.define(version: 20150227202405) do
     t.text     "stats"
     t.text     "genres"
     t.boolean  "complete"
+    t.string   "slug"
   end
 
   create_table "statistics", force: true do |t|
