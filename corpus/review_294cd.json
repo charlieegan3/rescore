@@ -1,0 +1,179 @@
+{
+  "title": "The Shining",
+  "genres": "Horror",
+  "source": "http://www.imdb.com/title/tt0081505/reviews?ref_=tt_urv",
+  "score": "8/10",
+  "helpfulness": "163/256",
+  "author": "Dylan Hanning",
+  "body": "I was never a big fan of horror movies. They usually try cheap tricks to scare their audiences like loud noises and creepy children. They usually lack originality and contain overacting galore. The only horror movie i like was Stir of Echoes with Kevin Bacon. It was well-acted, and had a great story. But it has been joined and maybe even surpassed by Stanley Kubrick's The Shining, quite possibly the scariest movie ever.The movie follows a writer (Jack Nicholson) and his family who agree to watch over a hotel while it is closed for the winter. There were rumors of the place being haunted and the last resident went crazy and murdered his family. But Jack is convinced it will be OK and he can use the quiet to overcome his writer's block. After months of solitude and silence however, Jack becomes a grumpy and later violent. Is it cabin fever or is there something in the hotel that is driving him mad?One of the creepiest parts about the movie is the feeling of isolation that Kubrick makes. The hotel is very silent, and the rooms are huge, yet always empty. It is also eerily calm when Jack's son is riding his bike through the barren hallways. Jack Nicholson's performance is also one of his very best, scaring the hell out of me and making me sure to get out once in awhile. My favorite scene is when he is talking to a ghost from inside a walk-in refrigerator.The Shining is tops for horror movies in my opinion, beating the snot out of crap like the Ring and The Blair Witch Project. It may be a oldie, but is definitely a goodie. 8/10",
+  "annotated_sentences": [
+    {
+      "text": "I was never a big fan of horror movies.",
+      "aspects": {
+      },
+      "comment": "Talks about horror movies in general."
+    },
+    {
+      "text": "They usually try cheap tricks to scare their audiences like loud noises and creepy children.",
+      "aspects": {
+      },
+      "comment": "Talks about horror movies in general."
+    },
+    {
+      "text": "They usually lack originality and contain overacting galore.",
+      "aspects": {
+        "cast": {
+          "words": [
+            "acting"
+          ],
+          "score": "-1",
+          "justification": "overacting"
+        },
+        "novelty": {
+          "words": [
+            "original"
+          ],
+          "score": "-1",
+          "justification": "lack originality"
+        }
+      },
+      "comment": "Talks about horror movies in general."
+    },
+    {
+      "text": "The only horror movie i like was Stir of Echoes with Kevin Bacon.",
+      "aspects": {
+      },
+      "comment": ""
+    },
+    {
+      "text": "It was well-acted, and had a great story.",
+      "aspects": {
+        "cast": {
+          "words": [
+            "well-acted"
+          ],
+          "score": "1",
+          "justification": "well-acted"
+        },
+        "plot": {
+          "words": [
+            "story"
+          ],
+          "score": "1",
+          "justification": "great story"
+        }
+      },
+      "comment": "Doesn't mean this film."
+    },
+    {
+      "text": "But it has been joined and maybe even surpassed by Stanley Kubrick's The Shining, quite possibly the scariest movie ever.The movie follows a writer (Jack Nicholson) and his family who agree to watch over a hotel while it is closed for the winter.",
+      "aspects": {
+        "movie": {
+          "words": [
+            "movie"
+          ],
+          "score": "2",
+          "justification": "Scariest movie ever"
+        }
+      },
+      "comment": ""
+    },
+    {
+      "text": "There were rumors of the place being haunted and the last resident went crazy and murdered his family.",
+      "aspects": {
+      },
+      "comment": "Irrelevant plot description"
+    },
+    {
+      "text": "But Jack is convinced it will be OK and he can use the quiet to overcome his writer's block.",
+      "aspects": {
+      },
+      "comment": "Irrelevant plot details."
+    },
+    {
+      "text": "After months of solitude and silence however, Jack becomes a grumpy and later violent.",
+      "aspects": {
+      },
+      "comment": "Irrelevant plot details."
+    },
+    {
+      "text": "Is it cabin fever or is there something in the hotel that is driving him mad?One of the creepiest parts about the movie is the feeling of isolation that Kubrick makes.",
+      "aspects": {
+        "movie": {
+          "words": [
+            "movie"
+          ],
+          "score": "1",
+          "justification": "creepiest parts"
+        }
+      },
+      "comment": "Creepy is positive, as it's a horror movie"
+    },
+    {
+      "text": "The hotel is very silent, and the rooms are huge, yet always empty.",
+      "aspects": {
+      },
+      "comment": "Irrelevant plot details"
+    },
+    {
+      "text": "It is also eerily calm when Jack's son is riding his bike through the barren hallways.",
+      "aspects": {
+        "movie": {
+          "words": [
+            "It"
+          ],
+          "score": "1",
+          "justification": "Eerily calm"
+        }
+      },
+      "comment": "Eerily calm is positive, as it's a horror movie"
+    },
+    {
+      "text": "Jack Nicholson's performance is also one of his very best, scaring the hell out of me and making me sure to get out once in awhile.",
+      "aspects": {
+        "cast": {
+          "words": [
+            "performance"
+          ],
+          "score": "2",
+          "justification": "Jack Nicholson's performance is also one of his very best"
+        }
+      },
+      "comment": ""
+    },
+    {
+      "text": "My favorite scene is when he is talking to a ghost from inside a walk-in refrigerator.The Shining is tops for horror movies in my opinion, beating the snot out of crap like the Ring and The Blair Witch Project.",
+      "aspects": {
+        "movie": {
+          "words": [
+            "The Shining"
+          ],
+          "score": "2",
+          "justification": "The Shining is tops for horror movies"
+        }
+      },
+      "comment": ""
+    },
+    {
+      "text": "It may be a oldie, but is definitely a goodie.",
+      "aspects": {
+        "movie": {
+          "words": [
+            "It"
+          ],
+          "score": "1",
+          "justification": "is definitely a goodie"
+        }
+      },
+      "comment": ""
+    },
+    {
+      "text": "8/10",
+      "aspects": {
+      },
+      "comment": "Irrelevant"
+    }
+  ],
+  "overall": "2",
+  "comment": "Overall very positive, has irrelevant plot details. Positive sentiment is usually quite ambigious, i.e. negative words which are positive given horror movie context."
+}
