@@ -35,7 +35,7 @@
             "language"
           ],
           "score": "2",
-          "justification": "more realistic"
+          "justification": "bad language"
         }
       },
       "comment": ""
@@ -48,7 +48,7 @@
             "the movie"
           ],
           "score": "2",
-          "justification": "even more special"
+          "justification": "just made the movie"
         }
       },
       "comment": ""
@@ -58,10 +58,10 @@
       "aspects": {
         "plot": {
           "words": [
-            "this film"
+            "plot"
           ],
           "score": "2",
-          "justification": "has everything"
+          "justification": "frienship based plot"
         }
       },
       "comment": ""
@@ -71,7 +71,7 @@
       "aspects": {
         "movie": {
           "words": [
-            "it"
+            "movie"
           ],
           "score": "2",
           "justification": "favourite move"
@@ -80,7 +80,7 @@
       "comment": ""
     },
     {
-      "text": "Don't miss out watch it",
+      "text": "Don't miss out watch it! ",
       "aspects": {
       },
       "comment": ""
@@ -88,4 +88,4 @@
   ],
   "overall": "2",
   "comment": "missed the end of sentance didnt think it was relevant"
-
+}
