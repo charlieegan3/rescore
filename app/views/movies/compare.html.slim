@@ -27,30 +27,7 @@
             td =distance_of_time_in_words(Time.new, movie.updated_at).gsub('about ', '') + " ago"
             td =distance_of_time_in_words(Time.new, movie.created_at).gsub('about ', '') + " ago"
 
-.row
-  .large-12.columns
-    h3 ="Summary"
-    table.comparison-summary
-      tbody
-        -@winners.each do |item|
-          tr
-            td =item[0].to_s.gsub('_', ' ').capitalize
-            -if @winners[item[0]] == :both
-                td
-                  span.success.label =@movie_1.title
-                td
-                  span.success.label =@movie_2.title
-            -else
-              -if @winners[item[0]] == @movie_1.title
-                td
-                  span.success.label =@movie_1.title
-                td
-                  span.alert.label =@movie_2.title
-              -else
-                td
-                  span.alert.label =@movie_1.title
-                td
-                  span.success.label =@movie_2.title
+=render 'compare_summary_table'
 
   .large-6.columns
     p.title
