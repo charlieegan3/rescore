@@ -10,6 +10,13 @@
     {
       "text": "Der Untergang' is probably the only WW2 movie I've ever seen, which only deals with facts and is utterly deprived of any form of commercialism whatsoever.",
       "aspects": {
+        "credibility": {
+          "words": [
+            "facts"
+          ],
+          "score": "1",
+          "justification": "deprived of any form of commercialism"
+        }
       },
       "comment": ""
     },
