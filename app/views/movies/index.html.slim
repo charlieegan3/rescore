@@ -1,4 +1,4 @@
-.row
+.row.movie-grid
   -@movies.each do |m|
     =link_to image_tag(m.image_url, class: 'thumbnail'), movie_path(m)
 

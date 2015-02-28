@@ -127,3 +127,7 @@ p.title {
   border: 2px solid black;
   box-shadow: 0px 5px 5px LightGrey;
 }
+
+.movie-grid {
+  text-align: center;
+}
