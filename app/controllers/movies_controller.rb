@@ -1,8 +1,12 @@
 class MoviesController < ApplicationController
-  http_basic_authenticate_with name: "admin", password: "1234qwer", :except => [:show, :search_by_title, :compare]
+  http_basic_authenticate_with name: "admin", password: "1234qwer", except: [:index, :show, :search_by_title, :compare]
 
   def index
-    @movies = Movie.all
+    @movies = Movie.all.order('created_at DESC')
+  end
+
+  def admin
+    @movies = Movie.all.order('created_at DESC')
   end
 
   def show
