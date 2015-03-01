@@ -1,32 +1,41 @@
 .row
   .large-12.columns
     h1 =@movie.title
-.row
-  .large-12
-    table.summary
-      thead
-        tr
-          th Cover
-          th Year
-          th Genres
-          -unless @movie.related_people[:directors].nil?
-            th Directors
-          th Cast Members
-          th Updated
-          th Added
-      tbody
-        tr
-          td =image_tag(@movie.image_url)
-          td =@movie.year
-          td =@movie.genres.join(', ')
-          -unless @movie.related_people[:directors].nil?
-            td =@movie.related_people[:directors].map { |d| d['name'] }.join(', ')
-          td =@movie.related_people[:cast].size
-          td =distance_of_time_in_words(Time.new, @movie.updated_at).gsub('about ', '') + " ago"
-          td =distance_of_time_in_words(Time.new, @movie.created_at).gsub('about ', '') + " ago"
 
 .row
+  .large-2.columns
+    =image_tag(@movie.image_url, class: 'large-cover')
+  .large-4.columns
+    table.summary
+      tr
+        th Year
+        td =@movie.year
+      tr
+        th Genres
+        td =@movie.genres.join(', ')
+      -unless @movie.related_people[:directors].nil?
+        tr
+          th Directors
+          td   =@movie.related_people[:directors].map { |d| d['name'] }.join(', ')
+      tr
+        th Starring
+        td =@movie.related_people[:cast].to_a.take(3).map { |member| member[:name] }.join(', ')
+      tr
+        th Updated
+        td =distance_of_time_in_words(Time.new, @movie.updated_at).gsub('about ', '') + " ago"
+      tr
+        th Added
+        td =distance_of_time_in_words(Time.new, @movie.created_at).gsub('about ', '') + " ago"
+
   .large-6.columns
+    .panel
+      p
+        strong
+        span.has-tip aria-haspopup="true" data-tooltip="" title="Interesting facts about this movie." Main points
+      ul
+        -@facts.each do |fact|
+          li
+            =fact
     .panel
       p
         strong
@@ -38,15 +47,6 @@
                 span.success.label =@summary[section]
             -else
                 span.alert.label =@summary[section]
-  .large-6.columns
-    .panel
-      p
-        strong
-        span.has-tip aria-haspopup="true" data-tooltip="" title="Interesting facts about this movie." Main points
-      ul
-        -@facts.each do |fact|
-          li
-            =fact
 
 .row
   .large-6.columns
