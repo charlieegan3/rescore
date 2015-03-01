@@ -1,16 +1,9 @@
 module MoviesHelper
 
   def show_summary(movie)
-    summary = {review_count: "", topic_counts: "", topic_sentiments: "", people_count: ""}
-    indicators = {review_count: false, topic_counts: false, topic_sentiments: false, people_count: false}
+    summary = {topic_counts: "", topic_sentiments: "", people_count: ""}
+    indicators = {topic_counts: false, topic_sentiments: false, people_count: false}
     facts = []
-
-    if movie.stats[:review_count] >= Statistic.find_by_identifier('review_count').value[:count] / Movie.count
-      summary[:review_count] = "Has an above average review count."
-      indicators[:review_count] = true
-    else
-      summary[:review_count] = "Has a below average review count."
-    end
 
     if movie.related_people.size >= Statistic.find_by_identifier('people_count').value[:count] / Movie.count
       summary[:people_count] = "Has an above average number of cast members."
@@ -20,10 +13,10 @@ module MoviesHelper
     end
 
     if movie.stats[:topic_counts].values.sum >= Statistic.find_by_identifier('topic_counts').value.values.sum / Movie.count
-      summary[:topic_counts] = "Has an above average number of overall aspect discussion."
+      summary[:topic_counts] = "Has an above average amount of overall aspect discussion."
       indicators[:topic_counts] = true
     else
-      summary[:topic_counts] = "Has a below average number of overall aspect discussion."
+      summary[:topic_counts] = "Has a below average amount of overall aspect discussion."
     end
 
     if movie.sentiment[:topics].values.sum >= Statistic.find_by_identifier('topic_sentiments').value.values.sum / Movie.count
