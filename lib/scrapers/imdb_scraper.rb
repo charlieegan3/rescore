@@ -5,7 +5,7 @@ class Imdb_Scraper
   def initialize(title_url, user_agent, max_pages = 5, print = true)
     @user_agent = user_agent
     @max_pages = max_pages
-    @title_url = title_url
+    @title_url = title_url.split('/').take(5).join('/')
     @print = print
   end
 
@@ -60,7 +60,7 @@ class Imdb_Scraper
     end
 
     def review_urls(title_url)
-      review_url = title_url + "reviews"
+      review_url = title_url + "/reviews"
       page_count, page = first_page(review_url)
       start = 10; urls = [page]
       page_count.times do
