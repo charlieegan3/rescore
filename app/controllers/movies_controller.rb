@@ -10,7 +10,7 @@ class MoviesController < ApplicationController
   end
 
   def show
-    @movie = Movie.find(params[:id])
+    @movie = Movie.find(params[:id], false)
     @summary, @indicators, @facts = view_context.show_summary(@movie)
 
     if @movie.stats.nil?
@@ -29,8 +29,8 @@ class MoviesController < ApplicationController
         flash[:alert] = "Please choose different films to compare."
         return redirect_to "/movies/compare"
       end
-      @movie_1 = Movie.find(params[:m1])
-      @movie_2 = Movie.find(params[:m2])
+      @movie_1 = Movie.find(params[:m1], false)
+      @movie_2 = Movie.find(params[:m2], false)
     else
       @options = Movie.complete_movies.pluck(:title, :id).shuffle
       render 'choose_compare'
@@ -65,7 +65,7 @@ class MoviesController < ApplicationController
   end
 
   def edit
-    @movie = Movie.find(params[:id])
+    @movie = Movie.find(params[:id], false)
   end
 
   def create
@@ -81,7 +81,7 @@ class MoviesController < ApplicationController
   end
 
   def update
-    @movie = Movie.find(params[:id])
+    @movie = Movie.find(params[:id], false)
     params = movie_params
     params[:genres] = params[:genres].split(', ')
     @movie.update_attributes(params)
@@ -94,18 +94,18 @@ class MoviesController < ApplicationController
   end
 
   def status
-    @movie = Movie.find(params[:id])
+    @movie = Movie.find(params[:id], false)
     render layout: false
   end
 
   def populate_source_links
-    @movie = Movie.find(params[:id])
+    @movie = Movie.find(params[:id], false)
     @movie.populate_source_links
     redirect_to manage_movie_path(@movie)
   end
 
   def populate_related_people
-    @movie = Movie.find(params[:id])
+    @movie = Movie.find(params[:id], false)
     @movie.populate_related_people
     redirect_to manage_movie_path(@movie)
   end
