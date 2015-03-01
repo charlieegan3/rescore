@@ -1,74 +1,77 @@
 .row
   .large-12.columns
     h1 =@movie.title
+
 .row
-  .large-12
-    table.summary
-      thead
-        tr
-          th Cover
-          th Year
-          th Genres
+  .large-6.columns
+    .row
+      .large-5.columns
+        .panel
+          =image_tag(@movie.image_url, class: 'large-cover')
+      .large-7.columns
+        table.summary
+          tr
+            th Year
+            td =@movie.year
+          tr
+            th Genres
+            td =@movie.genres.join(', ')
           -unless @movie.related_people[:directors].nil?
-            th Directors
-          th Cast Members
-          th Updated
-          th Added
-      tbody
-        tr
-          td =image_tag(@movie.image_url)
-          td =@movie.year
-          td =@movie.genres.join(', ')
-          -unless @movie.related_people[:directors].nil?
-            td =@movie.related_people[:directors].map { |d| d['name'] }.join(', ')
-          td =@movie.related_people[:cast].size
-          td =distance_of_time_in_words(Time.new, @movie.updated_at).gsub('about ', '') + " ago"
-          td =distance_of_time_in_words(Time.new, @movie.created_at).gsub('about ', '') + " ago"
+            tr
+              th Directors
+              td   =@movie.related_people[:directors].map { |d| d['name'] }.join(', ')
+          tr
+            th Starring
+            td =@movie.related_people[:cast].to_a.take(3).map { |member| member[:name] }.join(', ')
+          tr
+            th Updated
+            td =distance_of_time_in_words(Time.new, @movie.updated_at).gsub('about ', '') + " ago"
+          tr
+            th Added
+            td =distance_of_time_in_words(Time.new, @movie.created_at).gsub('about ', '') + " ago"
+    .row
+      .large-12.columns
+        .panel
+          p
+            strong
+            span.has-tip aria-haspopup="true" data-tooltip="" title="Interesting facts about this movie." Summary
+          ul
+            -@facts.each do |fact|
+              li
+                =fact
+    .row
+      .large-12.columns
+        .panel
+          p
+            strong
+            span.has-tip aria-haspopup="true" data-tooltip="" title="Overview of this movie, compared to all others." Comparison
+          ul
+            -@summary.each do |section, value|
+              li
+                -if @indicators[section]
+                    span.success.label =@summary[section]
+                -else
+                    span.alert.label =@summary[section]
+    .row
+      .large-12.columns
+        .panel
+          p
+            strong Cast Sentiment
+          -unless @movie.sentiment[:people].empty?
+            =render "cast_sentiment_graph", id: @movie.id, people: @movie.sentiment[:people]
 
-.row
   .large-6.columns
-    .panel
-      p
-        strong
-        span.has-tip aria-haspopup="true" data-tooltip="" title="Overview of this movie, compared to all others." Summary
-      ul
-        -@summary.each do |section, value|
-          li
-            -if @indicators[section]
-                span.success.label =@summary[section]
-            -else
-                span.alert.label =@summary[section]
-  .large-6.columns
-    .panel
-      p
-        strong
-        span.has-tip aria-haspopup="true" data-tooltip="" title="Interesting facts about this movie." Main points
-      ul
-        -@facts.each do |fact|
-          li
-            =fact
-
-.row
-  .large-6.columns
-    .panel
-      =render "aspects_graph", id: @movie.id, aspects: @movie.sentiment[:topics], counts: @movie.stats[:topic_counts]
-  .large-6.columns
-    .panel
-      =render "sentiment_ratings_graph", id: @movie.id, ratings: @movie.stats[:rating_distribution], sentiment: @movie.sentiment[:distribution_stats][:values]
-      p
-        strong Range:&nbsp;
-        =(@movie.sentiment[:distribution_stats][:range] * 100).to_i
-        |&nbsp;&nbsp;
-        strong Variation:&nbsp;
-        =(@movie.sentiment[:distribution_stats][:st_dev] * 100).to_i
-.row
-  .large-6.columns
-    .panel
-      p
-        strong Cast Sentiment
-      -unless @movie.sentiment[:people].empty?
-        =render "cast_sentiment_graph", id: @movie.id, people: @movie.sentiment[:people]
-  .large-6.columns
-    .panel
-      p Additional Stats
-
+    .row
+      .large-12.columns
+        .panel
+          =render "aspects_graph", id: @movie.id, aspects: @movie.sentiment[:topics], counts: @movie.stats[:topic_counts]
+    .row
+      .large-12.columns
+        .panel
+          =render "sentiment_ratings_graph", id: @movie.id, ratings: @movie.stats[:rating_distribution], sentiment: @movie.sentiment[:distribution_stats][:values]
+          p
+            strong Range:&nbsp;
+            =(@movie.sentiment[:distribution_stats][:range] * 100).to_i
+            |&nbsp;&nbsp;
+            strong Variation:&nbsp;
+            =(@movie.sentiment[:distribution_stats][:st_dev] * 100).to_i
