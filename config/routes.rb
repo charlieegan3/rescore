@@ -24,8 +24,7 @@ Rails.application.routes.draw do
   get 'movies/compare' => 'movies#compare', as: :compare_movies
   resources :movies
 
-  get 'api/' => 'api#review', as: :api
-
+  get 'api' => 'api#review', as: :api
 
   # Example resource route with options:
   #   resources :products do
