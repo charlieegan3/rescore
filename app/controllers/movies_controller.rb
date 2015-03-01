@@ -6,7 +6,7 @@ class MoviesController < ApplicationController
   end
 
   def show
-    @movie = Movie.fast_find(params[:id])
+    @movie = Movie.find(params[:id])
     @summary, @indicators, @facts = view_context.show_summary(@movie)
 
     if @movie.stats.nil?
@@ -20,8 +20,8 @@ class MoviesController < ApplicationController
       flash[:alert] = "Not enough movies to compare!"
       return redirect_to :root
     elsif params[:m1] && params[:m2]
-      @movie_1 = Movie.fast_find(params[:m1])
-      @movie_2 = Movie.fast_find(params[:m2])
+      @movie_1 = Movie.find(params[:m1])
+      @movie_2 = Movie.find(params[:m2])
     else
       @options = Movie.complete_movies.pluck(:title, :id).shuffle
       render 'choose_compare'
@@ -29,7 +29,7 @@ class MoviesController < ApplicationController
   end
 
   def manage
-    @movie = Movie.find(params[:id])
+    @movie = Movie.find(params[:id], true)
 
     @cast_count = 3
     @cast_count = 1000 if params[:all_cast]
