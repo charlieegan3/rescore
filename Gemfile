@@ -35,6 +35,8 @@ gem 'descriptive_statistics'
 gem 'googleajax'
 gem 'badfruit', :git => 'https://github.com/IllegalCactus/BadFruit.git'
 
+gem 'colored'
+
 group :production do
   gem 'rails_12factor'
   gem 'httparty'
@@ -44,7 +46,6 @@ end
 group :development do
   gem 'better_errors'
   gem 'binding_of_caller'
-  gem 'colored'
 end
 
 group :development, :test do
