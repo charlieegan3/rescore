@@ -24,6 +24,11 @@ class MoviesController < ApplicationController
       flash[:alert] = "Not enough movies to compare!"
       return redirect_to :root
     elsif params[:m1] && params[:m2]
+      if params[:m1] == params[:m2]
+        params[:m1] = params[:m2] = ""
+        flash[:alert] = "Please choose different films to compare."
+        return redirect_to "/movies/compare"
+      end
       @movie_1 = Movie.find(params[:m1])
       @movie_2 = Movie.find(params[:m2])
     else
