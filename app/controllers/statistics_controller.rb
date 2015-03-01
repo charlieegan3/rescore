@@ -11,7 +11,7 @@ class StatisticsController < ApplicationController
 
   def refresh
     Statistic.refresh
-    flash[:alert] = "Stats Updated"
+    flash[:notice] = "Stats Updated"
     redirect_to :movie_admin
   end
 end
