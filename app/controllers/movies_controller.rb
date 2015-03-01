@@ -2,11 +2,11 @@ class MoviesController < ApplicationController
   http_basic_authenticate_with name: "admin", password: "1234qwer", except: [:index, :show, :search_by_title, :compare]
 
   def index
-    @movies = Movie.all.order('created_at DESC')
+    @movies = Movie.complete.order('created_at DESC')
   end
 
   def admin
-    @movies = Movie.all.order('created_at DESC')
+    @movies = Movie.order('created_at DESC')
   end
 
   def show
@@ -32,7 +32,7 @@ class MoviesController < ApplicationController
       @movie_1 = Movie.find(params[:m1], false)
       @movie_2 = Movie.find(params[:m2], false)
     else
-      @options = Movie.complete_movies.pluck(:title, :id).shuffle
+      @options = Movie.complete.pluck(:title, :id).shuffle
       render 'choose_compare'
     end
   end
