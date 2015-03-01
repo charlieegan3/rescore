@@ -5,7 +5,7 @@ class ApplicationController < ActionController::Base
 
   def index
     @review_count = Statistic.find_by_identifier('review_count').value[:count]
-    @movie_count = Movie.complete_movies.size
+    @movie_count = Movie.complete.size
     @movie = Movie.latest
   end
 
