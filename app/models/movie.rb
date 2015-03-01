@@ -131,13 +131,12 @@ class Movie < ActiveRecord::Base
     complete_movies.order('created_at DESC').limit(1).select(columns).first
   end
 
-  def self.find(input, include_reviews = false)
-    columns = Movie.attribute_names - ['reviews']
+  def self.find(input, include_reviews = true)
     param = input.to_i == 0 ? {slug: input} : {id: input}
     if include_reviews
       where(param).first
     else
-      where(param).select(columns).first
+      where(param).select(Movie.attribute_names - ['reviews']).first
     end
   end
 end
