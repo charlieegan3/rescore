@@ -1,7 +1,5 @@
 .row
   .large-12.columns
-    h3
-      span.has-tip aria-haspopup="true" data-tooltip="" title="This table shows which movie has a higher value in each category." Summary
     table.comparison-summary
       tbody
         - winners = comparison_summary(@movie_1, @movie_2)
