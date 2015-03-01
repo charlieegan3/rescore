@@ -23,17 +23,4 @@ class RescoreReview
     end
     self
   end
-
-  def build_all_for_api
-    @sentences = Splitter.punkt_extract_sentences(text) unless text.length < 100
-
-    previous_name = nil
-    @sentences.each do |sentence|
-      sentence[:clean_text] = sentence[:text].downcase.split(/\W*\s+\W*/).join(" ").strip
-      sentence[:sentiment] = Sentiment.evaluate_sentence(sentence[:clean_text])
-      sentence[:context_tags] = Context.tag_sentence(sentence[:clean_text])
-      sentence[:emphasis] = Emphasis.score(sentence[:text])
-    end
-    self
-  end
 end
