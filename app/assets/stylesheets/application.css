@@ -119,6 +119,10 @@ p.title {
   margin-right: 25%;
 }
 
+.large-cover {
+  width: 100%;
+}
+
 .thumbnail {
   width: 70px;
   min-width: 70px;
