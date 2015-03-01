@@ -58,7 +58,9 @@ class MetacriticScraper
       print "Fetching: ".green + "#{review_url}..." if @print
       xml = Nokogiri::HTML(open(review_url, 'User-Agent' => @user_agent).read)
       puts "done" if @print
-      xml.css('.critic_reviews_module').first.remove
+      unless xml.css('.critic_reviews_module').empty?
+        xml.css('.critic_reviews_module').first.remove
+      end
       xml.css('.review').to_a
     end
 
