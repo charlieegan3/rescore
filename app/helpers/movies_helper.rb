@@ -20,17 +20,17 @@ module MoviesHelper
     end
 
     if movie.stats[:topic_counts].values.sum >= Statistic.find_by_identifier('topic_counts').value.values.sum / Movie.count
-      summary[:topic_counts] = "Has an above average number of topics."
+      summary[:topic_counts] = "Has an above average number of overall aspect discussion."
       indicators[:topic_counts] = true
     else
-      summary[:topic_counts] = "Has a below average number of topics."
+      summary[:topic_counts] = "Has a below average number of overall aspect discussion."
     end
 
     if movie.sentiment[:topics].values.sum >= Statistic.find_by_identifier('topic_sentiments').value.values.sum / Movie.count
-      summary[:topic_sentiments] = "Has an above average overall topic sentiment."
+      summary[:topic_sentiments] = "Has an above average overall aspect sentiment."
       indicators[:topic_sentiments] = true
     else
-      summary[:topic_sentiments] = "Has a below average overall topic sentiment."
+      summary[:topic_sentiments] = "Has a below average overall aspect sentiment."
     end
 
     facts << "People seem to talk about #{movie.stats[:topic_counts].max_by{|k,v| v}[0].to_s} the most."
