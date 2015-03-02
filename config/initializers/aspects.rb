@@ -2,7 +2,7 @@ ASPECTS = {
   editing: {
     'editing' => 100,
     'effects' => 70,
-    'post production' => 50
+    'post production' => 50,
   },
 
   sound: {
@@ -14,22 +14,30 @@ ASPECTS = {
     'soundtrack' => 100,
     'surround' => 80,
     'ears' => 20,
-    'score' => 10
+    'score' => 10,
   },
 
   plot: {
     'story' => 100,
+    'storyline' => 100,
     'plot' => 100,
     'villain' => 100,
     'protagonist' => 100,
     'narrative' => 80,
-    'predictable' => 80,
     'narration' => 80,
+    'narratively' => 80,
+    'twists' => 70,
+    'pacing' => 60,
+    'rhythm' => 60,
+    'scenario' => 50,
+    'structurally' => 50,
+    'nostalgia' => 50,
+    'structured' => 50,
     'tale' => 30,
     'characters' => 50,
     'character' => 50,
     'journey' => 30,
-    'persona' => 20
+    'persona' => 20,
   },
 
   dialog: {
@@ -42,27 +50,33 @@ ASPECTS = {
     'comedy' => 80,
     'discussion' => 80,
     'conversation' => 80,
-    'lines' => 70,
     'language' => 70,
-    'delivery' => 50
+    'delivery' => 50,
   },
 
   cast: {
     'acting' => 100,
+    'actors' => 100,
+    'actresses' => 100,
     'cast' => 100,
     'overacted' => 100,
     'performance' => 90,
+    'performances' => 90,
     'portrayal' => 90,
     'depiction' => 90,
     'characterization' => 90,
     'impersonation' => 90,
+    'act' => 70,
+    'star' => 70,
     'played' => 70,
+    'plays a' => 70,
     'role' => 70,
-    'persona' => 50
+    'persona' => 50,
   },
 
   vision: {
     'visuals' => 100,
+    'visually' => 100,
     'imax' => 100,
     'cgi' => 100,
     '3d' => 100,
@@ -71,19 +85,20 @@ ASPECTS = {
     'graphic' => 90,
     'colour' => 90,
     'color' => 90,
+    'lighting' => 90,
     'blurry' => 80,
     'lifelike' => 80,
-    'screen' => 70,
+    'cool to look at' => 50,
     'spectacle' => 60,
-    'beautiful' => 20,
-    'designs' => 8
+    'camera' => 30,
+    'lens' => 10,
+    'designs' => 8,
   },
 
   length: {
     'dragged' => 100,
     'bloated' => 70,
     'boring' => 50,
-    'long' => 50
   },
 
   credibility: {
@@ -92,29 +107,38 @@ ASPECTS = {
     'improbable' => 100,
     'far-fetched' => 100,
     'implausible' => 100,
+    'capturing' => 100,
     'true' => 80,
     'truthful' => 80,
     'truthfully' => 70,
-    'honest' => 70
+    'honest' => 70,
+    'facts' => 70,
+    'didn\'t buy' => 50,
   },
 
   cinematography: {
     'cinematography' => 100,
+    'film making' => 100,
+    'filmmaking' => 100,
     'production' => 80,
-    'shot' => 80,
     'shooting' => 80,
+    'camera movement' => 80,
     'scene' => 80,
-    'image' => 20
+    'image' => 20,
   },
 
   concept: {
     'concept' => 100,
-    'idea' => 100
+    'interesting idea' => 100,
+    'notion' => 100,
   },
 
   novelty: {
     'novel idea' => 100,
     'original' => 100,
-    'something different' => 100
+    'something different' => 100,
+    'freshness' => 100,
+    'charming' => 100,
+    'quirky' => 100,
   }
 }

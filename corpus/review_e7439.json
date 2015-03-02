@@ -154,6 +154,13 @@
     {
       "text": "I have a good feeling and I'm hopeful this film rakes in some acting Oscars because this film deserves at least one.",
       "aspects": {
+        "cast": {
+          "words": [
+            "acting"
+          ],
+          "score": "1",
+          "justification": "good feeling, deserves, acting Oscars"
+        }
       },
       "comment": "ignore"
     },

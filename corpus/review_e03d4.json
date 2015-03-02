@@ -10,13 +10,6 @@
     {
       "text": "Just came out of a pre-release screening.",
       "aspects": {
-        "ignore": {
-          "words": [
-            "ignore"
-          ],
-          "score": "0",
-          "justification": "-"
-        }
       },
       "comment": "ignore - my bad"
     },
@@ -67,12 +60,12 @@
     {
       "text": "IMDb movie reviews have to be 10 lines, but Unbroken doesn't really deserve it.",
       "aspects": {
-        "dialog": {
+        "movie": {
           "words": [
-            "lines"
+            "title"
           ],
-          "score": "0",
-          "justification": "-"
+          "score": "-2",
+          "justification": "doesn't really deserve it, doesn't deserve it."
         }
       },
       "comment": "ignore - my bad"
@@ -91,6 +84,13 @@
             "It"
           ],
           "score": "0",
+          "justification": "predictable - 1, forgivable +1"
+        },
+        "plot": {
+          "words": [
+            "narratively"
+          ],
+          "score": "-1",
           "justification": "predictable"
         }
       },
@@ -103,7 +103,7 @@
           "words": [
             "visual"
           ],
-          "score": "0",
+          "score": "-1",
           "justification": "predictable"
         }
       },
