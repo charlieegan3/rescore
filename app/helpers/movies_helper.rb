@@ -1,40 +1,39 @@
 module MoviesHelper
-
-  def show_summary(movie)
-    summary = {topic_counts: "", topic_sentiments: "", people_count: ""}
-    indicators = {topic_counts: false, topic_sentiments: false, people_count: false}
-    facts = []
-
-    if movie.related_people.size >= Statistic.find_by_identifier('people_count').value[:count] / Movie.count
-      summary[:people_count] = "Has an above average number of cast members."
-      indicators[:people_count] = true
-    else
-      summary[:people_count] = "Has a below average number of cast members."
+  def topic_counts(movie)
+    topic_count_sum = Statistic.find_by_identifier('topic_counts').value.values.sum
+    if movie.stats[:topic_counts].values.sum >= topic_count_sum / Movie.count
+      return ["Has an above average amount of overall aspect discussion.", true]
     end
+    ["Has a below average amount of overall aspect discussion.", false]
+  end
 
-    if movie.stats[:topic_counts].values.sum >= Statistic.find_by_identifier('topic_counts').value.values.sum / Movie.count
-      summary[:topic_counts] = "Has an above average amount of overall aspect discussion."
-      indicators[:topic_counts] = true
-    else
-      summary[:topic_counts] = "Has a below average amount of overall aspect discussion."
+  def topic_sentiments(movie)
+    topic_sentiments_sum = Statistic.find_by_identifier('topic_sentiments').value.values.sum
+    if movie.sentiment[:topics].values.sum >= topic_sentiments_sum / Movie.count
+      return ["Has an above average overall aspect sentiment.", true]
     end
+    ["Has a below average overall aspect sentiment.", false]
+  end
 
-    if movie.sentiment[:topics].values.sum >= Statistic.find_by_identifier('topic_sentiments').value.values.sum / Movie.count
-      summary[:topic_sentiments] = "Has an above average overall aspect sentiment."
-      indicators[:topic_sentiments] = true
-    else
-      summary[:topic_sentiments] = "Has a below average overall aspect sentiment."
+  def people_count(movie)
+    global_people_count = Statistic.find_by_identifier('people_count').value[:count]
+    if movie.related_people.size >= global_people_count / Movie.count
+      return ["Has an above average number of cast members.", true]
     end
+    ["Has a below average number of cast members.", false]
+  end
 
-    facts << "People seem to talk about #{movie.stats[:topic_counts].max_by{|k,v| v}[0].to_s} the most."
-
+  def facts(movie)
     sentiment_variation = Statistic.find_by_identifier('sentiment_variation').value[:variation]
-    facts << "#{movie.title} has a high variation of ratings." if (movie.sentiment[:distribution_stats][:st_dev] * 100).to_i >= sentiment_variation
-    facts << "#{movie.title} has a low variation of ratings." if (movie.sentiment[:distribution_stats][:st_dev] * 100).to_i < sentiment_variation
-
-    facts << "#{movie.sentiment[:topics].max_by{|k,v| v}[0].to_s.capitalize} is the most favoured aspect of the movie."
-
-    [summary, indicators, facts]
+    [].tap do |facts|
+      if (movie.sentiment[:distribution_stats][:st_dev] * 100).to_i >= sentiment_variation
+        facts << "#{movie.title} has a high variation of ratings."
+      else
+        facts << "#{movie.title} has a low variation of ratings."
+      end
+      facts << "#{movie.sentiment[:topics].max_by{|k,v| v}[0].to_s.capitalize} is the most favoured aspect of the movie."
+      facts << "People seem to talk about #{movie.stats[:topic_counts].max_by{|k,v| v}[0].to_s} the most."
+    end
   end
 
   def comparison_summary(movie_1, movie_2)
