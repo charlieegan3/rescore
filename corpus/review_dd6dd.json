@@ -129,6 +129,13 @@
     {
       "text": "The source material for the movie; Louis's story, is extraordinary and exciting, its unfortunate that the movie does very little to give it justice. ",
       "aspects": {
+        "movie": {
+          "words": [
+            "the movie"
+          ],
+          "score": "-2",
+          "justification": "unfortunate, does very little to give it justice"
+        },
         "plot": {
           "words": [
             "story"
