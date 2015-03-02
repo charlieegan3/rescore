@@ -20,8 +20,8 @@
           "words": [
             "This movie"
           ],
-          "score": "0",
-          "justification": "does little beyond telling the story"
+          "score": "-1",
+          "justification": "little beyond, little else, drawn out"
         },
         "plot": {
           "words": [
@@ -30,7 +30,21 @@
           ],
           "score": "-1",
           "justification": "no character growth"
-        }
+        },
+        "credibility": {
+          "words": [
+            "missing details"
+          ],
+          "score": "-1",
+          "justification": "missing details"
+        },
+        "length": {
+          "words": [
+            "drawn out",
+          ],
+          "score": "-1",
+          "justification": "drawn out"
+        },
       },
       "comment": "very difficult, but possible to achieve"
     },
@@ -52,12 +66,26 @@
     {
       "text": "Louis is shown first as a troublesome child, then a youth learning to run, then an Olympian, and finally a soldier; between these scenes, however, there is no transition, no story about him deciding to go for the Olympics, and no story on whether he was drafted or voluntarily signed up to be a soldier.",
       "aspects": {
+        "plot": {
+          "words": [
+            "no story"
+          ],
+          "score": "-2",
+          "justification": "no story"
+        }
       },
-      "comment": "next to impossible at this stage"
+      "comment": "next to impossible at this stage, the movie is missing crucial details, this is isn't feasible."
     },
     {
       "text": "This results in the movie being very oddly paced and Louis having little substance to his background.",
       "aspects": {
+        "plot": {
+          "words": [
+            "paced"
+          ],
+          "score": "-1",
+          "justification": "oddly paced"
+        }
       },
       "comment": "ditto"
     },
@@ -88,16 +116,37 @@
     {
       "text": "One of the biggest rules of film is to \"show them, not tell them,\" and considering that the written part of the story at the end contains more interesting parts of his life than most the movie, it seems the film was barely able to \"show us\" as well.",
       "aspects": {
+        "movie": {
+          "words": [
+            "the film"
+          ],
+          "score": "-1",
+          "justification": "barely able to"
+        }
       },
-      "comment": "same problem - very difficult to find kntence semantics"
+      "comment": "same problem - very difficult to find sentence semantics"
     },
     {
       "text": "The source material for the movie; Louis's story, is extraordinary and exciting, its unfortunate that the movie does very little to give it justice. ",
       "aspects": {
+        "movie": {
+          "words": [
+            "the movie"
+          ],
+          "score": "-2",
+          "justification": "unfortunate, does very little to give it justice"
+        },
+        "plot": {
+          "words": [
+            "story"
+          ],
+          "score": "2",
+          "justification": "extraordinary and exciting"
+        }
       },
-      "comment": "same problem as above"
+      "comment": "think we can be forgiven for counting this as plot"
     }
   ],
   "overall": "-1",
-  "comment": "another difficult review"
+  "comment": "another difficult review +1"
 }

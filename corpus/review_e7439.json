@@ -15,10 +15,10 @@
             "this film"
           ],
           "score": "2",
-          "justification": " so many excellent great things to say about this film"
+          "justification": "excellent, great"
         }
       },
-      "comment": "not sure which part is relevant"
+      "comment": "not sure which part is relevant, it just talks about the movie as a whole"
     },
     {
       "text": "To start off I will say it may be slow and to different for some to enjoy and so that I warn you.",
@@ -29,6 +29,20 @@
           ],
           "score": "0",
           "justification": "slow"
+        },
+        "length": {
+          "words": [
+            "slow"
+          ],
+          "score": "-1",
+          "justification": "slow"
+        },
+        "novelty": {
+          "words": [
+            "different"
+          ],
+          "score": "1",
+          "justification": "to(o) different"
         }
       },
       "comment": "not sure if this sentence makes sense"
@@ -40,11 +54,11 @@
           "words": [
             "this film"
           ],
-          "score": "0",
+          "score": "1",
           "justification": "surprising"
         }
       },
-      "comment": "surprising neutral?"
+      "comment": "surprising neutral? who knows! +1 for good measure"
     },
     {
       "text": "Jk Simmons does an outstanding performance as the highly unpredictable hair trigger tempered teacher Fletcher, Miles Teller an actor who I've only seen in mediocre comedies also shines in a breakthrough performance as the ambitious drummer Andrew.",
@@ -54,7 +68,7 @@
             "performance"
           ],
           "score": "2",
-          "justification": "outstanding"
+          "justification": "outstanding, shines, breakthrough, highly unpredictable"
         }
       },
       "comment": ""
@@ -74,7 +88,7 @@
             "music"
           ],
           "score": "1",
-          "justification": " one of a kind"
+          "justification": "favorite thing, one of a kind"
         },
         "cast": {
           "words": [
@@ -82,9 +96,16 @@
           ],
           "score": "2",
           "justification": "outstanding"
+        },
+        "novelty": {
+          "words": [
+            "unlike any other"
+          ],
+          "score": "2",
+          "justification": "unlike any other"
         }
       },
-      "comment": "what a bullcrap"
+      "comment": "what a bullcrap, what aspect is 'atmosphere'?"
     },
     {
       "text": "The idea that this film is one of a kind can't be stressed enough, I guarantee you cannot find another film out there like this.",
@@ -93,7 +114,7 @@
           "words": [
             "this film"
           ],
-          "score": "1",
+          "score": "2",
           "justification": "one of a kind"
         }
       },
@@ -113,10 +134,10 @@
             "acting"
           ],
           "score": "1",
-          "justification": " fueled a lot of the intensity"
+          "justification": "fueled, intensity"
         }
       },
-      "comment": ""
+      "comment": "perhaps 2?"
     },
     {
       "text": "When you watch this film even though it's pace will seem slow to most it's intensity is impossible to miss.I can see how a lot of certain people may find this film hard to enjoy but for me this film as slow as it is couldn't have been more intense.",
@@ -126,46 +147,60 @@
             "this film"
           ],
           "score": "1",
-          "justification": " couldn't have been more intense"
+          "justification": "couldn't have been more intense"
+        },
+        "length": {
+          "words": [
+            "pace"
+          ],
+          "score": "-1",
+          "justification": "slow"
         }
       },
-      "comment": "not sure if the current format of this script allows to add multiple scores for one aspect :(, see \"it's pace will seem slow\""
+      "comment": "not sure if the current format of this script allows to add multiple scores for one aspect :(, see \"it's pace will seem slow\" - not sure what for?"
     },
     {
       "text": "The mere fact that a music film shows some strong intensity like this one did is mind blowing to me. I don't know how many of you had this same experience or something similar then you already know what I'm talking about.",
       "aspects": {
         "movie": {
           "words": [
-            " a music film"
+            "film"
           ],
           "score": "2",
           "justification": "mind blowing"
-        },
-        "sound": {
-          "words": [
-            "music"
-          ],
-          "score": "0",
-          "justification": "0"
         }
       },
-      "comment": "ignore music"
+      "comment": "this guy's use of 'music film' is odd"
     },
     {
       "text": "I have a good feeling and I'm hopeful this film rakes in some acting Oscars because this film deserves at least one.",
       "aspects": {
+        "movie": {
+          "words": [
+            "film"
+          ],
+          "score": "1",
+          "justification": "deserves, rakes in some"
+        },
+        "cast": {
+          "words": [
+            "acting"
+          ],
+          "score": "1",
+          "justification": "acting Oscars"
+        }
       },
-      "comment": "ignore"
+      "comment": "this is a tough one."
     },
     {
       "text": "I haven't read anything on this films page and I'm sure others have expressed similar opinions and all I can say is listen and trust me. I'm praying you enjoy this film and experience it's one of a kind intensity just as I did.",
       "aspects": {
         "movie": {
           "words": [
-            "this film"
+            "this film, it's"
           ],
           "score": "2",
-          "justification": "it's one of a kind intensity"
+          "justification": "one of a kind, intensity"
         }
       },
       "comment": ""
@@ -174,9 +209,9 @@
       "text": "Thanks for reading my review and enjoy. ",
       "aspects": {
       },
-      "comment": ""
+      "comment": "it's ok, my pleasure"
     }
   ],
   "overall": "2",
-  "comment": "A useless review in which the author has only one expression to use (intense, as you can guess) and nothing real to say."
+  "comment": "A useless review in which the author has only one expression to use (intense, as you can guess) and nothing real to say. the use of 'music film' is weird..."
 }
