@@ -21,7 +21,7 @@ RSpec.describe MoviesController, :type => :feature do
       end
 
       click_button 'compare_submit'
-      expect(page).to have_content 'Comparing'
+      expect(page).to have_content 'Please choose different films to compare.'
     end
 
     it 'accepts two different movies as choices' do
