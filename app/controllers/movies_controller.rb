@@ -11,7 +11,6 @@ class MoviesController < ApplicationController
 
   def show
     @movie = Movie.find(params[:id], false)
-    @summary, @indicators, @facts = view_context.show_summary(@movie)
 
     if @movie.stats.nil?
       flash[:alert] = "This movie's information is not yet complete. Please try again later"
