@@ -135,8 +135,15 @@
     {
       "text": "Leto looks good in drag but the character seems a composite of others.",
       "aspects": {
+        "plot": {
+          "words": [
+            "character"
+          ],
+          "score": "1",
+          "justification": "looks good"
+        }
       },
-      "comment": "too complex, this is still plot"
+      "comment": "too complex, this is still plot, handle negation later"
     },
     {
       "text": "They do all the things required to win awards, but in the end, will this movie be remembered?",
