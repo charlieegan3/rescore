@@ -11,7 +11,7 @@ module MovieInfo
 
   def MovieInfo.get_people(title)
     begin
-      bf = BadFruit.new(Bf.key)
+      bf = BadFruit.new(BADFRUIT_KEY)
       query = bf.movies.search_by_name(title[0..15]) # Try to cut out irrelevant bits of string.
 
       cast = query[0].full_cast

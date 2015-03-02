@@ -55,7 +55,7 @@ class MoviesController < ApplicationController
   end
 
   def new_from_lookup
-    bf = BadFruit.new(Bf.key)
+    bf = BadFruit.new(BADFRUIT_KEY)
     @movies = []
     @movies = bf.movies.search_by_name(params[:query], 3) if params[:query]
     @movies.each do |movie|
