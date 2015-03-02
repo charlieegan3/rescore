@@ -3,13 +3,11 @@
     h1 =@movie.title
 .row
 .row 
-  = link_to 'IMDb', @movie.imdb_link
-.row
-  = link_to 'Amazon', @movie.amazon_link
-.row 
-  = link_to 'Metacritic', @movie.metacritic_link
-.row
-  = link_to 'Rotten Tomatoes', @movie.rotten_tomatoes_link
+.large-12.columns
+  = link_to image_tag('imdb1.jpg'), @movie.imdb_link
+  = link_to image_tag('amazon1.jpg'), @movie.amazon_link
+  = link_to image_tag('mc1.jpg'), @movie.metacritic_link
+  = link_to image_tag('rotten1.jpg'), @movie.rotten_tomatoes_link
 .row
   .large-12
     table.summary
