@@ -121,7 +121,7 @@
       "aspects": {
         "movie": {
           "words": [
-            "Steve McQueen/created"
+            "masterpiece"
           ],
           "score": "2",
           "justification": "masterpiece"
@@ -210,7 +210,7 @@
       "aspects": {
         "cast": {
           "words": [
-            "Lupita or appearance"
+            "appearance"
           ],
           "score": "2",
           "justification": "stunning"
