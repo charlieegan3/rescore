@@ -72,10 +72,10 @@ class AmazonScraper
         doc = Nokogiri::HTML(open(review_url, 'User-Agent' => @user_agent).read)
         puts "done" if @print
         last_page = doc.css('.paging a')[-2]
+        return [1, review_url] if count > 5
         break unless last_page.nil?
         puts "Amazon failed, retrying..." if @print
         count += 1
-        raise if count > 10
       end
       [last_page.text.to_i, last_page['href']]
     end

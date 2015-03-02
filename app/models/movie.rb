@@ -92,21 +92,21 @@ class Movie < ActiveRecord::Base
     all.reject { |movie| movie.stats.empty? }
   end
 
-  def self.complete_movies
+  def self.complete
     Movie.where(:complete => true)
   end
 
   def self.review_count
-    Movie.all.pluck(:reviews).inject(0) { |sum, e| sum += e.size }
+    Movie.complete.pluck(:reviews).inject(0) { |sum, e| sum += e.size }
   end
 
   def self.variation
-    Movie.all.pluck(:sentiment).inject(0) {|sum, e| sum += e.size}
+    Movie.complete.pluck(:sentiment).inject(0) {|sum, e| sum += e.size}
   end
 
   def self.topic_counts
     {}.tap do |counts|
-      Movie.all.pluck(:stats).each do |stats|
+      Movie.complete.pluck(:stats).each do |stats|
         counts.merge!(stats[:topic_counts]) { |k, a, b| a + b }
       end
     end
@@ -114,30 +114,29 @@ class Movie < ActiveRecord::Base
 
   def self.topic_sentiments
     {}.tap do |counts|
-      Movie.all.pluck(:sentiment).each do |sentiments|
+      Movie.complete.pluck(:sentiment).each do |sentiments|
         counts.merge!(Hash[sentiments[:topics]]) { |k, a, b| a + b }
       end
     end
   end
 
   def self.people_count
-    Movie.all.pluck(:related_people).inject([]) do  |people, list|
+    Movie.complete.pluck(:related_people).inject([]) do  |people, list|
       people += list[:cast] + list[:directors]
     end.map {|x| x[:name]}.uniq.size
   end
 
   def self.latest
     columns = Movie.attribute_names - ['reviews']
-    complete_movies.order('created_at DESC').limit(1).select(columns).first
+    complete.order('created_at DESC').limit(1).select(columns).first
   end
 
-  def self.find(input, include_reviews = false)
-    columns = Movie.attribute_names - ['reviews']
+  def self.find(input, include_reviews = true)
     param = input.to_i == 0 ? {slug: input} : {id: input}
     if include_reviews
       where(param).first
     else
-      where(param).select(columns).first
+      where(param).select(Movie.attribute_names - ['reviews']).first
     end
   end
 end
