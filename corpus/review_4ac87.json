@@ -83,7 +83,20 @@
       "comment": ""
     },
     {
-      "text": "This could have been due to the director more than to him.The ugly: The script.",
+	"text": "Ellar Coltrane was at his acting best when he was young, but gradually got more stilted.",
+	"aspects": {
+		"cast": {
+			"words": [
+				"acting"
+				],
+				"score": "-1",
+				"justification": "best -> stilted"
+			}
+		},
+		"comment": "hard to pick up"
+	},
+{
+"text": "This could have been due to the director more than to him.The ugly: The script.",
       "aspects": {
         "dialog": {
           "words": [
