@@ -32,9 +32,7 @@
     .row
       .large-12.columns
         .panel
-          p
-            strong
-            span.has-tip aria-haspopup="true" data-tooltip="" title="Interesting facts about this movie." Summary
+          span.has-tip aria-haspopup="true" data-tooltip="" title="Interesting facts about this movie." Summary
           ul
             -facts(@movie).each do |fact|
               li
@@ -43,9 +41,7 @@
     .row
       .large-12.columns
         .panel
-          p
-            strong
-            span.has-tip aria-haspopup="true" data-tooltip="" title="Overview of this movie, compared to all others." Comparison
+          span.has-tip aria-haspopup="true" data-tooltip="" title="Overview of this movie, compared to all others." Comparison
           ul
             -[topic_counts(@movie), topic_sentiments(@movie), people_count(@movie)].each do |comment, indicator|
               li
