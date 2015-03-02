@@ -36,9 +36,10 @@
             strong
             span.has-tip aria-haspopup="true" data-tooltip="" title="Interesting facts about this movie." Summary
           ul
-            -@facts.each do |fact|
+            -facts(@movie).each do |fact|
               li
                 =fact
+
     .row
       .large-12.columns
         .panel
@@ -46,12 +47,12 @@
             strong
             span.has-tip aria-haspopup="true" data-tooltip="" title="Overview of this movie, compared to all others." Comparison
           ul
-            -@summary.each do |section, value|
+            -[topic_counts(@movie), topic_sentiments(@movie), people_count(@movie)].each do |comment, indicator|
               li
-                -if @indicators[section]
-                    span.success.label =@summary[section]
+                -if indicator
+                  span.success.label =comment
                 -else
-                    span.alert.label =@summary[section]
+                  span.alert.label =comment
     .row
       .large-12.columns
         .panel
