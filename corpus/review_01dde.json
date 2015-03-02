@@ -44,7 +44,7 @@
           "justification": "genius"
         }
       },
-      "comment": "this sentence contians feature that we do want to cover, just not right now."
+      "comment": "this sentence contians feature that we do want to cover, just not right now. // which feature is this? actor rating? (kick ass)."
     },
     {
       "text": "A comical, kick ass film that I would happily watch again and again and again.",
@@ -57,7 +57,7 @@
           "justification": "kick ass, comical, happily watch again"
         }
       },
-      "comment": ""
+      "comment": "Should there not be multiple 2's here as there are multiple positive scores"
     }
   ],
   "overall": "2",

@@ -5,7 +5,7 @@
   "score" : "10/10",
   "helpfulness" : "40/70",
   "author": "Charlie Egan",
-  "body": "A great ending to one of the best trilogys in its genre. I loved every part. Great in every possible way. We will all miss this characters, Middle Eart and Peter Jackson audacity and creative vision. All six films are now part of the greatest fantasy films ever made. I'm glad i had the chance to witness them all.e",
+  "body": "A great ending to one of the best trilogys in its genre. I loved every part. Great in every possible way. We will all miss these characters, Middle Earth and Peter Jackson audacity and creative vision. All six films are now part of the greatest fantasy films ever made. I'm glad i had the chance to witness them all.",
   "annotated_sentences": [
     {
       "text": "A great ending to one of the best trilogys in its genre.",
@@ -44,7 +44,7 @@
       "comment": "no noun represents the movie, movie is the default focus"
     },
     {
-      "text": "We will all miss this characters, Middle Eart and Peter Jackson audacity and creative vision.",
+      "text": "We will all miss these characters, Middle Earth and Peter Jackson audacity and creative vision.",
       "aspects": {
         "plot": {
           "words": [
@@ -69,7 +69,7 @@
       "comment": ""
     },
     {
-      "text": "I'm glad i had the chance to witness them all.e",
+      "text": "I'm glad i had the chance to witness them all.",
       "aspects": {
         "movie": {
           "words": [
