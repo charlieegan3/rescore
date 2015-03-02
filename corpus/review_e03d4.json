@@ -10,15 +10,8 @@
     {
       "text": "Just came out of a pre-release screening.",
       "aspects": {
-        "ignore": {
-          "words": [
-            "ignore"
-          ],
-          "score": "0",
-          "justification": "-"
-        }
       },
-      "comment": "ignore - my bad"
+      "comment": "ignore"
     },
     {
       "text": "It was fine.",
@@ -50,11 +43,18 @@
           "justification": "created not to fail, and it doesn't"
         }
       },
-      "comment": "impossible to detect at this stage"
+      "comment": "impossible to detect at this stage, getting into negation here."
     },
     {
       "text": "Watching it is a reasonable way to spend 2 and a half hours.",
       "aspects": {
+        "movie": {
+          "words": [
+            "it"
+          ],
+          "score": "1",
+          "justification": "reasonable"
+        }
       },
       "comment": "ignore"
     },
@@ -73,15 +73,22 @@
           ],
           "score": "0",
           "justification": "-"
+        },
+        "movie": {
+          "words": [
+            "Unbroken"
+          ],
+          "score": "-1",
+          "justification": "doesn't really deserve"
         }
       },
-      "comment": "ignore - my bad"
+      "comment": "this is getting into negation"
     },
     {
       "text": "There's more to be said about Zamperini the person than the film itself.",
       "aspects": {
       },
-      "comment": "ignore"
+      "comment": "this talks about the film in a negative way that's near impossible to detect"
     },
     {
       "text": "It was narratively predictable, but that's forgivable given the nature of the film.",
@@ -91,10 +98,10 @@
             "It"
           ],
           "score": "0",
-          "justification": "predictable"
+          "justification": "predictable -1 but forgivable +1"
         }
       },
-      "comment": ""
+      "comment": "negation"
     },
     {
       "text": "The problem is it was visually predictable too.",
@@ -107,7 +114,7 @@
           "justification": "predictable"
         }
       },
-      "comment": "add visally (and more adverbs to describe different aspects)"
+      "comment": "add visually (and more adverbs to describe different aspects), what does visually predictable mean?"
     },
     {
       "text": "If someone were to right a textbook on how to make an inspiring movie, they could dryly and apathetically describe this movie shot for shot. ",
@@ -117,5 +124,5 @@
     }
   ],
   "overall": "0",
-  "comment": "sorry for the mistake"
+  "comment": ""
 }

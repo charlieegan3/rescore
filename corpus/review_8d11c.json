@@ -35,20 +35,6 @@
     {
       "text": "Andy faces many trials in prison, but forms an alliance with the wardens because he is able to use his banking experience to help the corrupt officials amass personal fortunes.",
       "aspects": {
-        "plot": {
-          "words": [
-            "persona"
-          ],
-          "score": "0",
-          "justification": ""
-        },
-        "cast": {
-          "words": [
-            "persona"
-          ],
-          "score": "0",
-          "justification": ""
-        }
       },
       "comment": "plot details"
     },
@@ -60,8 +46,8 @@
             "story",
             "plot"
           ],
-          "score": "1",
-          "justification": "respect and attention"
+          "score": "2",
+          "justification": "so impressed, great deal, respect and attention"
         }
       },
       "comment": ""
@@ -87,7 +73,7 @@
             "act"
           ],
           "score": "1",
-          "justification": "never seen Tim Robbins act as well"
+          "justification": "act as well, (act this well), so well"
         }
       },
       "comment": ""
@@ -103,17 +89,17 @@
           "justification": "original"
         }
       },
-      "comment": ""
+      "comment": "negation present"
     },
     {
       "text": "The cinematography was grand and expressive.",
       "aspects": {
-        "vision": {
+        "cinematography": {
           "words": [
             "cinematography"
           ],
           "score": "1",
-          "justification": "grand"
+          "justification": "grand, expressive"
         }
       },
       "comment": ""
@@ -134,6 +120,13 @@
           ],
           "score": "1",
           "justification": "attention given to the story"
+        },
+        "credibility": {
+          "words": [
+            "real impression"
+          ],
+          "score": "1",
+          "justification": "real impression"
         }
       },
       "comment": ""
@@ -175,22 +168,22 @@
           "justification": "get busy watching"
         }
       },
-      "comment": ""
+      "comment": "an obscure one!"
     },
     {
       "text": "\" Take his advice.Thoroughly recommended.",
       "aspects": {
         "movie": {
           "words": [
-            "recommended"
+            ""
           ],
           "score": "2",
           "justification": "thoroughly recommended"
         }
       },
-      "comment": ""
+      "comment": "no mention of the aspect should default to the movie"
     }
   ],
   "overall": "2",
-  "comment": ""
+  "comment": "edited by Charlie Egan, 26th Feb"
 }
