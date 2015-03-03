@@ -8,7 +8,7 @@
       .large-5.columns
         .panel
           =image_tag(@movie.image_url, class: 'large-cover')
-        .large-12.columns
+        div.source-links
           = link_to image_tag('/imdb_icon.jpg'), @movie.imdb_link
           = link_to image_tag('/amazon_icon.jpg'), @movie.amazon_link
           = link_to image_tag('/metacritic_icon.jpg'), @movie.metacritic_link
