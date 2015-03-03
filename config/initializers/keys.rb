@@ -1,1 +1,3 @@
-BADFRUIT_KEY = "6tuqnhbh49jqzngmyy78n8v3"
+BADFRUIT_KEY = '6tuqnhbh49jqzngmyy78n8v3'
+TWITTER_KEY = '4iXopvjq5m7BzmgmJ4dlw6lMf'
+TWITTER_SECRET = 'Dx4LZnwvtmc9BMQxqJuXY9NIcL0mMB9rtE1WgLyphA15BYdLYs'

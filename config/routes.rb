@@ -28,6 +28,9 @@ Rails.application.routes.draw do
   get 'movies/:id/build_summary' => 'movies#build_summary', as: :build_movie_summary
   resources :movies
 
+  get "/auth/:provider/callback" => "sessions#create"
+  get "/signout" => "sessions#destroy", :as => :signout
+
   # Example resource route with options:
   #   resources :products do
   #     member do
