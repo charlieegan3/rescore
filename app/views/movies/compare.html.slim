@@ -27,34 +27,35 @@
             td =distance_of_time_in_words(Time.new, movie.updated_at).gsub('about ', '') + " ago"
             td =distance_of_time_in_words(Time.new, movie.created_at).gsub('about ', '') + " ago"
 
+  .large-12.columns
+    h3
+      span.has-tip aria-haspopup="true" data-tooltip="" title="This table shows which movie has a higher value in each category."
+        |Summary
+    =render 'compare_summary_table'
+
 .row
-  -[@movie_1, @movie_2].each do |movie|
-    .large-6.columns
-      p.title
-        =link_to(movie_path(movie))
-          strong="#{movie.title}"
+  .large-6.columns
+    p.title
+      =link_to(movie_path(@movie_1))
+        strong="#{@movie_1.title}"
+  .large-6.columns
+    p.title
+      =link_to(movie_path(@movie_2))
+        strong="#{@movie_2.title}"
 
 .row
   .large-6.columns
     .panel
-      p
-        strong Aspect Sentiment vs Discussion Focus
       =render "aspects_graph", id: @movie_1.id, aspects: @movie_1.sentiment[:topics], counts: @movie_1.stats[:topic_counts]
   .large-6.columns
     .panel
-      p
-        strong Aspect Sentiment vs Discussion Focus
       =render "aspects_graph", id: @movie_2.id, aspects: @movie_2.sentiment[:topics], counts: @movie_2.stats[:topic_counts]
 .row
   .large-6.columns
     .panel
-      p
-        strong Average Sentiment vs User Ratings
       =render "sentiment_ratings_graph", id: @movie_1.id, ratings: @movie_1.stats[:rating_distribution], sentiment: @movie_1.sentiment[:distribution_stats][:values]
   .large-6.columns
     .panel
-      p
-        strong Average Sentiment vs User Ratings
       =render "sentiment_ratings_graph", id: @movie_2.id, ratings: @movie_2.stats[:rating_distribution], sentiment: @movie_2.sentiment[:distribution_stats][:values]
 
 -unless @movie_1.sentiment[:people].empty? || @movie_2.sentiment[:people].empty?

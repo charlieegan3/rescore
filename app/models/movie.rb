@@ -6,6 +6,16 @@ class Movie < ActiveRecord::Base
   serialize :stats, Hash
 
   before_save :default_values
+  before_validation :set_slug if :title_changed?
+
+  def set_slug
+    self.slug = self.title.parameterize
+  end
+
+  def to_param
+    self.slug
+  end
+
   def default_values
     reviews ||= []
     related_people ||= {}
@@ -40,7 +50,7 @@ class Movie < ActiveRecord::Base
     r = RescoreReviewer.new(self)
     update_attribute(:reviews, r.rescored_reviews)
     update_attributes({
-      sentiment: set_sentiment, stats: set_stats, status: nil, task: nil
+      sentiment: set_sentiment, stats: set_stats, status: nil, task: nil, complete: true
     })
   end
   handle_asynchronously :build_summary
@@ -71,20 +81,32 @@ class Movie < ActiveRecord::Base
 
   def set_stats
     s = StatCalculator.new(reviews)
-    {topic_counts: s.topic_counts, rating_distribution: s.rating_distribution}
+    {topic_counts: s.topic_counts, rating_distribution: s.rating_distribution, review_count: s.review_count}
+  end
+
+  def complete?
+    return self.stats.present?
   end
 
   def self.summarized
     all.reject { |movie| movie.stats.empty? }
   end
 
+  def self.complete
+    Movie.where(:complete => true)
+  end
+
   def self.review_count
-    Movie.all.pluck(:reviews).inject(0) { |sum, e| sum += e.size }
+    Movie.complete.pluck(:reviews).inject(0) { |sum, e| sum += e.size }
+  end
+
+  def self.variation
+    Movie.complete.pluck(:sentiment).inject(0) {|sum, e| sum += e.size}
   end
 
   def self.topic_counts
     {}.tap do |counts|
-      Movie.all.pluck(:stats).each do |stats|
+      Movie.complete.pluck(:stats).each do |stats|
         counts.merge!(stats[:topic_counts]) { |k, a, b| a + b }
       end
     end
@@ -92,23 +114,29 @@ class Movie < ActiveRecord::Base
 
   def self.topic_sentiments
     {}.tap do |counts|
-      Movie.all.pluck(:sentiment).each do |sentiments|
+      Movie.complete.pluck(:sentiment).each do |sentiments|
         counts.merge!(Hash[sentiments[:topics]]) { |k, a, b| a + b }
       end
     end
   end
 
   def self.people_count
-    Movie.all.pluck(:related_people).inject([]) do  |people, list|
+    Movie.complete.pluck(:related_people).inject([]) do  |people, list|
       people += list[:cast] + list[:directors]
     end.map {|x| x[:name]}.uniq.size
   end
 
   def self.latest
-    order('created_at DESC').limit(1).select('id, title, image_url, year, genres, related_people, sentiment, stats, updated_at, created_at').first
+    columns = Movie.attribute_names - ['reviews']
+    complete.order('created_at DESC').limit(1).select(columns).first
   end
 
-  def self.fast_find(id)
-    where(id: id).select('id, title, image_url, year, genres, related_people, sentiment, stats, updated_at, created_at, imdb_link, metacritic_link, rotten_tomatoes_link, amazon_link').first
+  def self.find(input, include_reviews = true)
+    param = input.to_i == 0 ? {slug: input} : {id: input}
+    if include_reviews
+      where(param).first
+    else
+      where(param).select(Movie.attribute_names - ['reviews']).first
+    end
   end
 end

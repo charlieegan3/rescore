@@ -18,12 +18,5 @@
 $(function(){ $(document).foundation(); });
 
 $(document).ready(function(){
-  $(".rescore-flash").delay(2400).hide("slow");
-
-  $("#compare_submit").click(function(e){
-    if($("#m1_select").val() === $("#m2_select").val()) {
-      e.preventDefault();
-      alert("Please choose different films to compare.");
-    }
-  })
+  $(".rescore-flash").delay(2400).fadeOut("slow");
 })

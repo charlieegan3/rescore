@@ -56,7 +56,7 @@ class AmazonScraper
     def get_potential_reviews
       potential_review_divs = []
       review_urls(@title_url).each do |url|
-        print "Fetching: #{url}... " if @print
+        print "Fetching: ".green + "#{url}..." if @print
         page_divs = Nokogiri::HTML(open(url, 'User-Agent' => @user_agent).read).css('div').to_a
         puts "done" if @print
         page_divs.map { |div| potential_review_divs << div }
@@ -68,14 +68,14 @@ class AmazonScraper
       last_page = nil
       count = 0
       loop do
-        print "Fetching: #{review_url}... " if @print
+        print "Fetching: ".green + "#{review_url}..." if @print
         doc = Nokogiri::HTML(open(review_url, 'User-Agent' => @user_agent).read)
         puts "done" if @print
         last_page = doc.css('.paging a')[-2]
+        return [1, review_url] if count > 5
         break unless last_page.nil?
         puts "Amazon failed, retrying..." if @print
         count += 1
-        raise if count > 10
       end
       [last_page.text.to_i, last_page['href']]
     end

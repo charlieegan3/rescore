@@ -1,0 +1,107 @@
+{
+  "title": "Der Untergang",
+  "genres": "Drama,History",
+  "source": "http://www.imdb.com/title/tt0363163/?ref_=nv_sr_1",
+  "score": "10/10",
+  "helpfulness": "377/457",
+  "author": "Georgi",
+  "body": "Der Untergang' is probably the only WW2 movie I've ever seen, which only deals with facts and is utterly deprived of any form of commercialism whatsoever. Bruno Ganz is truly excellent in his role as Adolf Hitler, a tired man who sees his \"Reich\" fall, but cannot accept it. Overall (type)casting is very good; all the actors chosen to portray a famous/notorious character look a lot like the real deal, especially Goebbels. Although I'm not a fan of long war movies, these 2,5 hours passed very quickly due to excellent acting, great sets, FX and storyline. Somehow, every scene is dripping with underlying tension that never really explodes; a kind of unsettling unbelieved grips you when you see seemingly ordinary people commit astonishing atrocities and sins towards mankind, just for their faith and loyalty to one man, Hitler, who himself walks the edge of reason. .",
+  "annotated_sentences": [
+    {
+      "text": "Der Untergang' is probably the only WW2 movie I've ever seen, which only deals with facts and is utterly deprived of any form of commercialism whatsoever.",
+      "aspects": {
+        "credibility": {
+          "words": [
+            "facts"
+          ],
+          "score": "1",
+          "justification": "deprived of any form of commercialism"
+        }
+      },
+      "comment": ""
+    },
+    {
+      "text": "Bruno Ganz is truly excellent in his role as Adolf Hitler, a tired man who sees his \"Reich\" fall, but cannot accept it. Overall (type)casting is very good; all the actors chosen to portray a famous/notorious character look a lot like the real deal, especially Goebbels.",
+      "aspects": {
+        "cast": {
+          "words": [
+            "cast",
+            "role"
+          ],
+          "score": "2",
+          "justification": "very good"
+        }
+      },
+      "comment": ""
+    },
+    {
+      "text": "Although I'm not a fan of long war movies, these 2,5 hours passed very quickly due to excellent acting, great sets, FX and storyline.",
+      "aspects": {
+        "plot": {
+          "words": [
+            "story"
+          ],
+          "score": "2",
+          "justification": "excellent"
+        },
+        "cast": {
+          "words": [
+            "acting"
+          ],
+          "score": "2",
+          "justification": "excellent"
+        },
+        "length": {
+          "words": [
+            "long"
+          ],
+          "score": "2",
+          "justification": "quickly"
+        },
+        "cinematography": {
+          "words": [
+            "great sets"
+          ],
+          "score": "2",
+          "justification": "excellent"
+        },
+        "editing": {
+          "words": [
+            "FX"
+          ],
+          "score": "2",
+          "justification": "excellent"
+        }
+      },
+      "comment": ""
+    },
+    {
+      "text": "Somehow, every scene is dripping with underlying tension that never really explodes; a kind of unsettling unbelieved grips you when you see seemingly ordinary people commit astonishing atrocities and sins towards mankind, just for their faith and loyalty to one man, Hitler, who himself walks the edge of reason.",
+      "aspects": {
+        "movie": {
+          "words": [
+            "every scene"
+          ],
+          "score": "1",
+          "justification": "grips you"
+        },
+        "cinematography": {
+          "words": [
+            "scene"
+          ],
+          "score": "2",
+          "justification": "dripping with tension"
+        }
+      },
+      "comment": ""
+    },
+    {
+      "text": ".",
+      "aspects": {
+      },
+      "comment": ""
+    }
+  ],
+  "overall": "2",
+  "comment": "Very positive reveiw"
+}

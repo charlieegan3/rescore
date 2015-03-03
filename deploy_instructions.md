@@ -1,32 +1,39 @@
 ##Initial Setup
 
-1. Create Dokku/Docker Droplet on Digital Ocean
-2. Got to the Droplet's ip address on port 2000 and fill out the details
-3. ssh in as root and run:
+1. Create Ubuntu 14.04 droplet on Digital Ocean
+2. Install dokku-alt `sudo bash -c "$(curl -fsSL https://raw.githubusercontent.com/dokku-alt/dokku-alt/master/bootstrap.sh)"`
+3. Visit: `http://<ip>:2000/`
+4. ssh in as root and:
 
     `cd /var/lib/dokku/plugins`
-	`git clone https://github.com/Kloadut/dokku-pg-plugin postgresql`
-    `git clone https://github.com/statianzo/dokku-shoreman.git`
+	`git clone https://github.com/neam/dokku-custom-domains.git`
 	`dokku plugins-install`
 	
-4. Add: dokku@ip address (not **git@**) to local repo:
-	`git remote add dokku dokku@IPADDRESS:APP NAME`
 5. Setup dokku database:
-    `dokku postgresql:create test-app`
-6. Push to dokku, consider procfile:
+    `dokku postgresql:create APP_NAME`
+	
+6. Add: dokku@ip address (not **git@**) to local repo:
+	`git remote add dokku dokku@IPADDRESS:APP_NAME`
+
+7. Push to dokku, consider procfile:
     `git push dokku master`
 
-7. Check it's running:
+8. Check it's running:
 	`docker ps -a`
-8. Setup Rails:
+	
+9. Setup:
 
-	`dokku run APP NAME rake db:migrate`
-	`dokku run APP NAME rake db:seeds`
+```
+postgresql:link APP_NAME APP_NAME
+dokku run APP_NAME rake db:migrate	
+dokku run APP_NAME rake db:seeds
+```
 
-9. Link to nginx:
-	`nginx:build-config APP NAME`
-10. Check where it's running:
-	`dokku urls test-app`
+10. Set the domains:
+	`dokku domains:set www.1.com 1.com 2.com www.2.com`
+
+11. Check where it's running:
+	`dokku urls APP_NAME`
 
 ##Other Notes
 **Procfile Contents:**
@@ -36,4 +43,4 @@
 
 **Restart App:**
 
-	dokku deploy APP NAME
+	dokku deploy APP_NAME

@@ -55,11 +55,11 @@ nav.top-bar {
   margin-left: auto;
 }
 
-.latest {
-  margin-top: 200px;
+.stat-left {
+  text-align: right;
 }
 
-.stat {
+.stat-center {
   text-align: center;
 }
 
@@ -91,6 +91,11 @@ table.movie_table {
   width: 100%;
 }
 
+table.comparison-summary {
+  margin-left: auto;
+  margin-right: auto;
+}
+
 h3 .label {
   font-size: 1.05em;
 }
@@ -112,4 +117,36 @@ p.title {
   margin-left: 25%;
   width: 50%;
   margin-right: 25%;
+}
+
+.large-cover {
+  width: 100%;
+}
+
+.thumbnail {
+  width: 70px;
+  min-width: 70px;
+  max-width: 70px;
+  height: 100px;
+  min-height: 100px;
+  max-height: 100px;
+  margin: 7px;
+  border-radius: 3px;
+  border: 2px solid black;
+  box-shadow: 0px 5px 5px LightGrey;
+}
+
+.movie-grid {
+  text-align: center;
+}
+
+.search-box {
+  margin-left: auto;
+  margin-right: auto;
+  max-width: 60%;
+}
+
+.muted {
+  font-size: 0.8em;
+  color: DarkGrey;
 }
