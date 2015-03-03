@@ -32,10 +32,11 @@
         },
         "cast": {
           "words": [
-            "plays a"
+            "plays a",
+            "performance"
           ],
           "score": "2",
-          "justification": "assured performance"
+          "justification": "assured"
         }
       },
       "comment": ""

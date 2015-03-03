@@ -131,6 +131,7 @@ ASPECTS = {
     'concept' => 100,
     'interesting idea' => 100,
     'notion' => 100,
+    'interesting' => 80,
   },
 
   novelty: {
@@ -140,5 +141,10 @@ ASPECTS = {
     'freshness' => 100,
     'charming' => 100,
     'quirky' => 100,
+    'something new',
+    'fresh' => 100,
+    'inventive' => 100,
+    'revolutionary' => 100,
+    'unique' => 100,
   }
 }
