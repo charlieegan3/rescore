@@ -2,12 +2,12 @@
   .large-12.columns
     h1 =@movie.title
 .row
-.row 
+.row
 .large-12.columns
-  = link_to image_tag('imdb1.jpg'), @movie.imdb_link
-  = link_to image_tag('amazon1.jpg'), @movie.amazon_link
-  = link_to image_tag('mc1.jpg'), @movie.metacritic_link
-  = link_to image_tag('rotten1.jpg'), @movie.rotten_tomatoes_link
+  = link_to image_tag('/imdb_icon.jpg'), @movie.imdb_link
+  = link_to image_tag('/amazon_icon.jpg'), @movie.amazon_link
+  = link_to image_tag('/metacritic_icon.jpg'), @movie.metacritic_link
+  = link_to image_tag('/rotten_tomatoes_icon.jpg'), @movie.rotten_tomatoes_link
 .row
   .large-12
     table.summary
