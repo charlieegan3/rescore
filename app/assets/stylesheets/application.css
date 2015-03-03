@@ -123,6 +123,11 @@ p.title {
   width: 100%;
 }
 
+.source-links {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
 .thumbnail {
   width: 70px;
   min-width: 70px;
