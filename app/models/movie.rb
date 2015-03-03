@@ -101,7 +101,7 @@ class Movie < ActiveRecord::Base
   end
 
   def self.variation
-    Movie.complete.pluck(:sentiment).inject(0) {|sum, e| sum += e.size}
+    Movie.complete.pluck(:sentiment).map{ |e| e[:distribution_stats][:st_dev]}.reduce(:+) / Movie.count
   end
 
   def self.topic_counts

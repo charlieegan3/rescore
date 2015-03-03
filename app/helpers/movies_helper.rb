@@ -25,8 +25,9 @@ module MoviesHelper
 
   def facts(movie)
     sentiment_variation = Statistic.find_by_identifier('sentiment_variation').value[:variation]
+    var = (movie.sentiment[:distribution_stats][:st_dev])
     [].tap do |facts|
-      if (movie.sentiment[:distribution_stats][:st_dev] * 100).to_i >= sentiment_variation
+      if var >= sentiment_variation
         facts << "#{movie.title} has a high variation of ratings."
       else
         facts << "#{movie.title} has a low variation of ratings."
