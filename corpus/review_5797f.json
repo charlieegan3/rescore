@@ -18,7 +18,7 @@
           "justification": "feast"
         }
       },
-      "comment": "careful - doesn't always have to be positive"
+      "comment": "careful - doesn't always have to be positive; Woj: BTW I love/d it might be one of those 'special cases' worth looking for alongside 'didnt disappoint me' etc."
     },
     {
       "text": "Yeah, Hollywood.",
@@ -41,23 +41,23 @@
     {
       "text": "This is a good story with a fluid script, beautiful filming and great actors.",
       "aspects": {
-        "movie": {
-          "words": [
-            "This"
-          ],
-          "score": "1",
-          "justification": "good story"
-        },
         "plot": {
           "words": [
             "story"
+          ],
+          "score": "1",
+          "justification": "good"
+        },
+        "plot": {
+          "words": [
+            "script"
           ],
           "score": "1",
           "justification": "fluid"
         },
         "vision": {
           "words": [
-            "beautiful"
+            "filming"
           ],
           "score": "2",
           "justification": "beautiful"
@@ -94,7 +94,7 @@
       "text": "The irony is that in this insane Hollywood environment that appears to be quite normal, and inevitably it generates a great body-count.",
       "aspects": {
       },
-      "comment": "why detected sound?"
+      "comment": "why detected sound? -Yeah, why?"
     },
     {
       "text": "Of course, Dad is a shrink and bestselling author.",
@@ -122,10 +122,10 @@
             "The end"
           ],
           "score": "1",
-          "justification": "almost poetic"
+          "justification": "poetic"
         }
       },
-      "comment": "I might be wrong - maybe 2 for just poetic?"
+      "comment": "I might be wrong - maybe 2 for just poetic? Woj: or 1 for poetic"
     },
     {
       "text": "Applause to Julianne Moore for her outstanding performance.",

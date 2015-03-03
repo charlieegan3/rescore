@@ -57,8 +57,6 @@
     .row
       .large-12.columns
         .panel
-          p
-            strong Cast Sentiment
           -unless @movie.sentiment[:people].empty?
             =render "cast_sentiment_graph", id: @movie.id, people: @movie.sentiment[:people]
 

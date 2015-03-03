@@ -56,7 +56,7 @@
           "words": [
             "acting"
           ],
-          "score": "-2",
+          "score": "-1",
           "justification": "tiresome"
         },
         "cinematography": {
@@ -83,20 +83,20 @@
       "comment": ""
     },
     {
-      "text": "Ellar Coltrane was at his acting best when he was young, but gradually got more stilted.",
-      "aspects": {
-        "cast": {
-          "words": [
-            "acting"
-          ],
-          "score": "-1",
-          "justification": "best -> stilted"
-        }
-      },
-      "comment": "hard to pick up"
-    },
-    {
-      "text": "This could have been due to the director more than to him.The ugly: The script.",
+	"text": "Ellar Coltrane was at his acting best when he was young, but gradually got more stilted.",
+	"aspects": {
+		"cast": {
+			"words": [
+				"acting"
+				],
+				"score": "-1",
+				"justification": "best -> stilted"
+			}
+		},
+		"comment": "hard to pick up"
+	},
+{
+"text": "This could have been due to the director more than to him.The ugly: The script.",
       "aspects": {
         "dialog": {
           "words": [
@@ -138,7 +138,7 @@
           "justification": "best job, some depth of life"
         }
       },
-      "comment": ""
+      "comment": "Woj: add phrases like good job, best job, as well as depth into sentiments?"
     }
   ],
   "overall": "0",
