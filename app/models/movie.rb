@@ -2,6 +2,7 @@ class Movie < ActiveRecord::Base
   serialize :reviews, Array
   serialize :related_people, Hash
   serialize :genres, Array
+  serialize :references, Array
   serialize :sentiment, Hash
   serialize :stats, Hash
 
@@ -37,7 +38,8 @@ class Movie < ActiveRecord::Base
     update_attributes({reviews: reviews + r.metacritic_reviews(metacritic_link), status: '25%'})
     update_attributes({reviews: reviews + r.amazon_reviews(amazon_link), status: '50%'})
     update_attributes({reviews: reviews + r.imdb_reviews(imdb_link), status: '75%'})
-    update_attributes({reviews: reviews + r.rotten_tomatoes_reviews(rotten_tomatoes_link), status: nil})
+    update_attributes({reviews: reviews + r.rotten_tomatoes_reviews(rotten_tomatoes_link), status: '100%'})
+    update_attributes({references: reviews.map { |r| r[:source][:url] }.uniq, status: nil})
   end
   handle_asynchronously :collect_reviews
 

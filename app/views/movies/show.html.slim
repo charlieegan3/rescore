@@ -28,12 +28,6 @@
           tr
             th Starring
             td =@movie.related_people[:cast].to_a.take(3).map { |member| member[:name] }.join(', ')
-          tr
-            th Updated
-            td =distance_of_time_in_words(Time.new, @movie.updated_at).gsub('about ', '') + " ago"
-          tr
-            th Added
-            td =distance_of_time_in_words(Time.new, @movie.created_at).gsub('about ', '') + " ago"
     .row
       .large-12.columns
         .panel
@@ -75,3 +69,21 @@
             |&nbsp;&nbsp;
             strong Variation:&nbsp;
             =(@movie.sentiment[:distribution_stats][:st_dev] * 100).to_i
+
+.row
+  .large-12.columns
+    .large-12.columns
+      p.references
+        strong Added:&nbsp;
+        =@movie.created_at.strftime("%e %B %Y")
+        =" (Updated " + distance_of_time_in_words(Time.new, @movie.updated_at).gsub('about ', '') + " ago)"
+.row
+  .large-12.columns
+    .large-1.columns
+      p.references
+        strong References
+    .large-11.columns.references
+      -@movie.references.each do |reference|
+        =link_to reference.gsub('http://www.', ''), reference
+        br
+br
