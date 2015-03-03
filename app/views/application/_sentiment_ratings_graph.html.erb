@@ -16,12 +16,12 @@
     };
 
     var data = {
-      labels: ["0★", "1★", "2★", "3★", "4★", "5★"],
+      labels: ["1★", "2★", "3★", "4★", "5★"],
       datasets: [
         {
           fillColor: "rgba(140,200,90,0.5)",
           strokeColor: "rgba(140,200,90,1)",
-          data: <%= [ratings[0]] + [ratings[1..5], ratings[6..10]].transpose.map { |p| p.reduce(:+) } %>
+          data: <%= [ratings[1..5], ratings[6..10]].transpose.map { |p| p.reduce(:+) } %>
         },
         {
           fillColor: "rgba(255,119,0,0.5)",
@@ -35,6 +35,10 @@
     var ratingsChart = new Chart(ctx_ratings).Bar(data);
   })
 </script>
+
+<p>
+  <strong></strong><span aria-haspopup="true" class="has-tip" data-tooltip="" title="Original user ratings, and the actual calculated sentiment from their review.">Average Sentiment vs User Ratings</span>
+</p>
 
 <canvas id="<%= id %>_sentiment_ratings" width="450" height="274"></canvas>
 

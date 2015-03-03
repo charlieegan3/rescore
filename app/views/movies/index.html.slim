@@ -1,20 +1,4 @@
-.row
-  .large-12.columns
-    h1 Manage Movies
+.row.movie-grid
+  -@movies.each do |m|
+    =link_to image_tag(m.image_url, class: 'thumbnail'), movie_path(m)
 
-    =link_to 'New', new_movie_from_lookup_path, class: 'button'
-
-    table
-      tr
-        th Image
-        th Title
-        th Created
-        th colspan=(2)
-          | Actions
-      -@movies.each do |m|
-        tr
-          td =image_tag(m.image_url)
-          td =m.title
-          td =distance_of_time_in_words(Time.new, m.created_at) + ' ago'
-          td =link_to 'Manage', manage_movie_path(m), class: 'button'
-          td =button_to "Delete", m, {onclick: "return confirm('Sure?')", method: :delete, class: 'button alert'}

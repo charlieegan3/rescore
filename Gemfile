@@ -35,6 +35,8 @@ gem 'descriptive_statistics'
 gem 'googleajax'
 gem 'badfruit', :git => 'https://github.com/IllegalCactus/BadFruit.git'
 
+gem 'colored'
+
 group :production do
   gem 'rails_12factor'
   gem 'httparty'
@@ -44,16 +46,17 @@ end
 group :development do
   gem 'better_errors'
   gem 'binding_of_caller'
-  gem 'pry'
-  gem 'colored'
 end
 
 group :development, :test do
+  gem 'pry'
   gem 'rspec-rails', '~> 3.0'
   gem 'guard'
   gem 'guard-rspec', require: false
   gem 'vcr'
   gem 'capybara'
+  gem 'factory_girl'
+  gem 'launchy'
 end
 
 group :test do

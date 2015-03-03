@@ -1,0 +1,245 @@
+{
+  "title": "The Dark Knight",
+  "genres": "Action, Crime, Drama",
+  "source": "http://www.imdb.com/title/tt0468569/reviews?ref_=tt_urv",
+  "score": "10/10",
+  "helpfulness": "2918/3855",
+  "author": "Dylan Hanning",
+  "body": "We've been subjected to enormous amounts of hype and marketing for the Dark Knight. We've seen Joker scavenger hunts and one of the largest viral campaigns in advertising history and it culminates with the actual release of the movie.Everything that's been said is pretty much spot on. This is the first time I can remember where a summer blockbuster film far surpasses the hype.For as much action as there is in this movie, it's the acting that makes it a great piece of work. Between all the punches, explosions and stunt-work is some great dialog work. All the actors have their moments.Bale's Batman is the definitive Batman because we see everything in this character finally on film. Martial arts skills, cunning, great tactical thinking, forensic application, technological genius to advance or improve Luscious Fox's inventions/technological breakthroughs, intimidating personality, and even a little swashbuckling. As for Heath, yes he gets credit for his performance as the Joker. But you have to also recognize Jonathan and Chris Nolan for the writing and treatment of the character. It's not just the fact that Ledger makes the Joker so menacing, but the Nolans have given the character this great manifesto that drives its actions. The Joker's stance on chaos, order, anarchy, the morality of the average modern human being make the character so interesting psychologically. The Nolans drafted a complex character and only a perfect performance could've pulled something like this off. That's how difficult of a role this was, and that's why Ledger's performance is so great.This isn't an action movie. It's a film that explores literary themes of the hero and villain, as well as order and anarchy. Yes, listen to the dialog because it's all in there.",
+  "annotated_sentences": [
+    {
+      "text": "We've been subjected to enormous amounts of hype and marketing for the Dark Knight.",
+      "aspects": {
+        "movie": {
+          "words": [
+            "Dark Knight"
+          ],
+          "score": "0",
+          "justification": "hype and marketing"
+        }
+      },
+      "comment": "Doesn't comment on whether the movie lives up to hype or not"
+    },
+    {
+      "text": "We've seen Joker scavenger hunts and one of the largest viral campaigns in advertising history and it culminates with the actual release of the movie.Everything that's been said is pretty much spot on.",
+      "aspects": {
+        "movie": {
+          "words": [
+            "movie"
+          ],
+          "score": "0",
+          "justification": ""
+        }
+      },
+      "comment": "Again, just discusses irrelevant marketing."
+    },
+    {
+      "text": "This is the first time I can remember where a summer blockbuster film far surpasses the hype.For as much action as there is in this movie, it's the acting that makes it a great piece of work.",
+      "aspects": {
+        "movie": {
+          "words": [
+            "film"
+          ],
+          "score": "2",
+          "justification": "a great piece of work"
+        },
+        "cast": {
+          "words": [
+            "acting"
+          ],
+          "score": "2",
+          "justification": "great piece of work"
+        }
+      },
+      "comment": ""
+    },
+    {
+      "text": "Between all the punches, explosions and stunt-work is some great dialog work.",
+      "aspects": {
+        "dialog": {
+          "words": [
+            "dialog"
+          ],
+          "score": "1",
+          "justification": "great dialog work"
+        },
+        "cinematography": {
+          "words": [
+            "punches, explosions and stunt-work"
+          ],
+          "score": "0",
+          "justification": ""
+        }
+      },
+      "comment": "No sentiment expressed towards action"
+    },
+    {
+      "text": "All the actors have their moments.Bale's Batman is the definitive Batman because we see everything in this character finally on film.",
+      "aspects": {
+        "cast": {
+          "words": [
+            "actors"
+          ],
+          "score": "1",
+          "justification": "have their moments"
+        }
+      },
+      "comment": ""
+    },
+    {
+      "text": "Martial arts skills, cunning, great tactical thinking, forensic application, technological genius to advance or improve Luscious Fox's inventions/technological breakthroughs, intimidating personality, and even a little swashbuckling.",
+      "aspects": {
+        "plot": {
+          "words": [
+            "persona"
+          ],
+          "score": "2",
+          "justification": "cunning, great, genius, intimidating"
+        },
+        "cast": {
+          "words": [
+            "persona"
+          ],
+          "score": "1",
+          "justification": "intimidating personality"
+        }
+      },
+      "comment": ""
+    },
+    {
+      "text": "As for Heath, yes he gets credit for his performance as the Joker.",
+      "aspects": {
+        "cast": {
+          "words": [
+            "performance"
+          ],
+          "score": "1",
+          "justification": "credit"
+        }
+      },
+      "comment": ""
+    },
+    {
+      "text": "But you have to also recognize Jonathan and Chris Nolan for the writing and treatment of the character.",
+      "aspects": {
+        "plot": {
+          "words": [
+            "character"
+          ],
+          "score": "1",
+          "justification": "recognize"
+        }
+      },
+      "comment": ""
+    },
+    {
+      "text": "It's not just the fact that Ledger makes the Joker so menacing, but the Nolans have given the character this great manifesto that drives its actions.",
+      "aspects": {
+        "plot": {
+          "words": [
+            "character"
+          ],
+          "score": "1",
+          "justification": "so menacing, great manifesto"
+        },
+        "cast": {
+          "words": [
+            "Ledger"
+          ],
+          "score": "1",
+          "justification": "makes the Joker so menacing"
+        }
+      },
+      "comment": ""
+    },
+    {
+      "text": "The Joker's stance on chaos, order, anarchy, the morality of the average modern human being make the character so interesting psychologically.",
+      "aspects": {
+        "plot": {
+          "words": [
+            "character"
+          ],
+          "score": "1",
+          "justification": "so interesting"
+        }
+      },
+      "comment": ""
+    },
+    {
+      "text": "The Nolans drafted a complex character and only a perfect performance could've pulled something like this off.",
+      "aspects": {
+        "plot": {
+          "words": [
+            "character"
+          ],
+          "score": "1",
+          "justification": "complex character"
+        },
+        "cast": {
+          "words": [
+            "performance"
+          ],
+          "score": "2",
+          "justification": "a perfect performance"
+        }
+      },
+      "comment": ""
+    },
+    {
+      "text": "That's how difficult of a role this was, and that's why Ledger's performance is so great.This isn't an action movie.",
+      "aspects": {
+        "movie": {
+          "words": [
+            ""
+          ],
+          "score": "0",
+          "justification": "This isn't an action movie"
+        },
+        "cast": {
+          "words": [
+            "performance",
+            "role"
+          ],
+          "score": "2",
+          "justification": "performance, so great"
+        }
+      },
+      "comment": ""
+    },
+    {
+      "text": "It's a film that explores literary themes of the hero and villain, as well as order and anarchy.",
+      "aspects": {
+        "movie": {
+          "words": [
+            "It's a film"
+          ],
+          "score": "0",
+          "justification": "film"
+        },
+        "plot": {
+          "words": [
+            "villain"
+          ],
+          "score": "1",
+          "justification": "explores literary themes"
+        }
+      },
+      "comment": ""
+    },
+    {
+      "text": "Yes, listen to the dialog because it's all in there.",
+      "aspects": {
+        "dialog": {
+          "words": [
+            "dialog"
+          ],
+          "score": "0",
+          "justification": "dialog"
+        }
+      },
+      "comment": "No sentiment."
+    }
+  ],
+  "overall": "2",
+  "comment": "Overall very positive, many irrelevant sentences at start."
+}

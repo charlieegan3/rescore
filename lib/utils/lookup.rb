@@ -1,8 +1,3 @@
-require 'sentimental'
+require_relative '../../config/environment'
 
-Sentimental.load_defaults
-
-word = ARGV[0]
-analyzer = Sentimental.new
-p analyzer.get_score(word)
-
+p POLARITIES[ARGV[0]]

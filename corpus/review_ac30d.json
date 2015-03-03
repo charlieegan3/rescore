@@ -1,0 +1,135 @@
+{
+  "title": "Ghost Rider",
+  "genres": "Action,Horror",
+  "source": "http://www.imdb.com/title/tt0259324/reviews?ref_=tt_urv",
+  "score": "7/10",
+  "helpfulness": "307/499",
+  "author": "Georgi",
+  "body": " If you go into this movie hoping to see Academy Award caliber acting or a dramatic plot that's going to move you emotionally, then you're going to the wrong movie. However, if you're looking for a movie that's a lot of fun and is going to keep you entertained, then this is exactly what you're looking for.The visual effects in this movie are, simply put, amazing. Ghost Rider is just one of those movies that's cool to look at. As I said before, the acting sometimes falls a bit flat, but Nicolas Cage does exactly what's expected of him for the role. It's a bit cliché and humorous at times, but this is a movie based on a comic book, so you have to expect that sort of thing.Sam Elliot and Peter Fonda provide the best acting in the movie, while Wes Bentley does a solid job as Blackheart and Eva Mendez is just a very beautiful actress who fits in well as Roxanne.There are a lot of little gripes about this movie if you look too hard and overthink it, but as a die-hard Ghost Rider fan, I didn't mind these things so much. It stayed relatively true to the original series, while borrowing elements from the 90's series to help make the movie more visually impressive, which I felt worked really well.I've been waiting for this movie since they started trying to make it over eight years ago and overall, I'd have to say I really enjoyed seeing my favorite comic book character finally make it onto the big screen.If you want to go see a movie where you can just sit back, relax, and enjoy the ride; then go see Ghost Rider without any worry of disappointment.",
+  "annotated_sentences": [
+    {
+      "text": " If you go into this movie hoping to see Academy Award caliber acting or a dramatic plot that's going to move you emotionally, then you're going to the wrong movie.",
+      "aspects": {
+        "movie": {
+          "words": [
+            "this movie"
+          ],
+          "score": "-1",
+          "justification": "wrong movie"
+        },
+        "plot": {
+          "words": [
+            "plot"
+          ],
+          "score": "-1",
+          "justification": "dramatic movie - wrong"
+        },
+        "cast": {
+          "words": [
+            "acting"
+          ],
+          "score": "-1",
+          "justification": "Award-winning acting - wrong"
+        }
+      },
+      "comment": ""
+    },
+    {
+      "text": "However, if you're looking for a movie that's a lot of fun and is going to keep you entertained, then this is exactly what you're looking for.The visual effects in this movie are, simply put, amazing.",
+      "aspects": {
+        "movie": {
+          "words": [
+            "movie"
+          ],
+          "score": "1",
+          "justification": "fun,entertain"
+        },
+        "editing": {
+          "words": [
+            "effects"
+          ],
+          "score": "2",
+          "justification": "amazing"
+        }
+      },
+      "comment": ""
+    },
+    {
+      "text": "Ghost Rider is just one of those movies that's cool to look at.",
+      "aspects": {
+        "vision": {
+          "words": [
+            "look at"
+          ],
+          "score": "2",
+          "justification": "cool"
+        }
+      },
+      "comment": ""
+    },
+    {
+      "text": "As I said before, the acting sometimes falls a bit flat, but Nicolas Cage does exactly what's expected of him for the role.",
+      "aspects": {
+        "cast": {
+          "words": [
+            "acting",
+            "role"
+          ],
+          "score": "1",
+          "justification": "falls a bit flat,exactly what is expected"
+        }
+      },
+      "comment": ""
+    },
+    {
+      "text": "It's a bit cliché and humorous at times, but this is a movie based on a comic book, so you have to expect that sort of thing.Sam Elliot and Peter Fonda provide the best acting in the movie, while Wes Bentley does a solid job as Blackheart and Eva Mendez is just a very beautiful actress who fits in well as Roxanne.There are a lot of little gripes about this movie if you look too hard and overthink it, but as a die-hard Ghost Rider fan, I didn't mind these things so much.",
+      "aspects": {
+        "movie": {
+          "words": [
+            "it's,movie"
+          ],
+          "score": "1",
+          "justification": "cliche,humorous"
+        },
+        "cast": {
+          "words": [
+            "acting"
+          ],
+          "score": "2",
+          "justification": "best acting,solid,fits well"
+        }
+      },
+      "comment": ""
+    },
+    {
+      "text": "It stayed relatively true to the original series, while borrowing elements from the 90's series to help make the movie more visually impressive, which I felt worked really well.I've been waiting for this movie since they started trying to make it over eight years ago and overall, I'd have to say I really enjoyed seeing my favorite comic book character finally make it onto the big screen.If you want to go see a movie where you can just sit back, relax, and enjoy the ride; then go see Ghost Rider without any worry of disappointment.",
+      "aspects": {
+        "movie": {
+          "words": [
+            "this movie"
+          ],
+          "score": "1",
+          "justification": "enjoyed,without worry of disappointment"
+        },
+        "vision": {
+          "words": [
+            "visual",
+            "screen"
+          ],
+          "score": "2",
+          "justification": "visually impresive"
+        },
+        "credibility": {
+          "words": [
+            "true"
+          ],
+          "score": "2",
+          "justification": "true to the original"
+        }
+      },
+      "comment": ""
+    }
+  ],
+  "overall": "1",
+  "comment": ""
+}

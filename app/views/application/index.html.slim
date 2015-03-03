@@ -3,20 +3,23 @@
     =image_tag('/logo_large.jpg', class: 'large-logo')
     p.slogan Reviews Revisited
 
-    form action="/movies/search_by_title"
+.row
+  .search-box
+    form id="search_form" action="/movies/search_by_title"
       input name="query" type="text" placeholder="Search movies" /
+      input id="movie_search_submit" type="submit" style="position: absolute; left: -9999px; width: 1px; height: 1px;"
+
+.row
+  .large-12.columns
+      p.stat-center
+        |Latest Movie:&nbsp;
+        strong =link_to @movie.title, movie_path(@movie)
 
 .row
   .large-6.columns
-    p.stat
+    p.stat-left.muted
       =@review_count
       |&nbsp;reviews revisited
   .large-6.columns
-    p.stat
+    p.muted
       ="#{@movie_count} movies reviewed"
-.row
-  .large-12.columns
-      p.stat
-        |Latest Movie&nbsp;
-        br
-        strong =link_to @movie.title, movie_path(@movie)

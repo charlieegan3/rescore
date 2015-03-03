@@ -4,8 +4,8 @@ class ApplicationController < ActionController::Base
   protect_from_forgery with: :exception
 
   def index
-    @review_count = 1337 #Movie.review_count - lets cache this sometime
-    @movie_count = Movie.count
+    @review_count = Statistic.find_by_identifier('review_count').value[:count]
+    @movie_count = Movie.complete.size
     @movie = Movie.latest
   end
 

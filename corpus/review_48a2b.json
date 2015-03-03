@@ -1,0 +1,156 @@
+{
+  "title": "Dallas Buyers Club",
+  "genres": "Biography, Drama",
+  "source": "http://www.imdb.com/title/tt0790636/",
+  "score": "5/10",
+  "helpfulness": "11/19",
+  "author": "Charlie Egan",
+  "body": "This movie suffers from the same problem that so many \"based on a true story\" Hollywood movies do: somewhere between those \"real events\" and what we see on screen, it becomes just far less believable. Sure some artistic license in telling a good yarn is fine, but McConaughey's character just seems too versatile. I didn't buy the doctor falling for him.. sure she might, but show the chemistry! The portrayal of the FDA, regardless of how accurate it is (I've no idea) needs more nuance. I guess this comes down to what kind of movie watcher you are.. if you just want to hear a good story, this is fine. if you like your movies to \"feel\" real, not so fine. All in all then just a bit above average. The story had potential to be a really great movie though. Matthew McConaughey gives it his all. Leto looks good in drag but the character seems a composite of others. They do all the things required to win awards, but in the end, will this movie be remembered? I doubt it.",
+  "annotated_sentences": [
+    {
+      "text": "This movie suffers from the same problem that so many \"based on a true story\" Hollywood movies do: somewhere between those \"real events\" and what we see on screen, it becomes just far less believable.",
+      "aspects": {
+        "movie": {
+          "words": [
+            "this movie"
+          ],
+          "score": "-2",
+          "justification": "suffers"
+        },
+        "plot": {
+          "words": [
+            "story"
+          ],
+          "score": "-2",
+          "justification": "far less believable, same problem, suffers"
+        },
+        "credibility": {
+          "words": [
+            "believable",
+            "true"
+          ],
+          "score": "-2",
+          "justification": "less believable"
+        }
+      },
+      "comment": ""
+    },
+    {
+      "text": "Sure some artistic license in telling a good yarn is fine, but McConaughey's character just seems too versatile.",
+      "aspects": {
+        "plot": {
+          "words": [
+            "character"
+          ],
+          "score": "-1",
+          "justification": "too versatile, artisitic license"
+        }
+      },
+      "comment": ""
+    },
+    {
+      "text": "I didn't buy the doctor falling for him.. sure she might, but show the chemistry!",
+      "aspects": {
+        "credibility": {
+          "words": [
+            "I didn't buy"
+          ],
+          "score": "-1",
+          "justification": "I didn't buy"
+        }
+      },
+      "comment": ""
+    },
+    {
+      "text": "The portrayal of the FDA, regardless of how accurate it is (I've no idea) needs more nuance.",
+      "aspects": {
+        "plot": {
+          "words": [
+            "The portrayal of the"
+          ],
+          "score": "-1",
+          "justification": "needs more nuance"
+        }
+      },
+      "comment": ""
+    },
+    {
+      "text": "I guess this comes down to what kind of movie watcher you are.. if you just want to hear a good story, this is fine.",
+      "aspects": {
+        "plot": {
+          "words": [
+            "story"
+          ],
+          "score": "1",
+          "justification": "good"
+        }
+      },
+      "comment": ""
+    },
+    {
+      "text": "if you like your movies to \"feel\" real, not so fine.",
+      "aspects": {
+      },
+      "comment": "this is about credibility, too hard to detect"
+    },
+    {
+      "text": "All in all then just a bit above average.",
+      "aspects": {
+        "movie": {
+          "words": [
+            "All in all"
+          ],
+          "score": "0",
+          "justification": "bit above average"
+        }
+      },
+      "comment": "still not +ve enough for me"
+    },
+    {
+      "text": "The story had potential to be a really great movie though.",
+      "aspects": {
+        "movie": {
+          "words": [
+            "movie"
+          ],
+          "score": "-1",
+          "justification": "had potential"
+        },
+        "plot": {
+          "words": [
+            "story"
+          ],
+          "score": "-1",
+          "justification": "had potential"
+        }
+      },
+      "comment": ""
+    },
+    {
+      "text": "Matthew McConaughey gives it his all.",
+      "aspects": {
+      },
+      "comment": ""
+    },
+    {
+      "text": "Leto looks good in drag but the character seems a composite of others.",
+      "aspects": {
+      },
+      "comment": "too complex, this is still plot"
+    },
+    {
+      "text": "They do all the things required to win awards, but in the end, will this movie be remembered?",
+      "aspects": {
+      },
+      "comment": ""
+    },
+    {
+      "text": "I doubt it.",
+      "aspects": {
+      },
+      "comment": ""
+    }
+  ],
+  "overall": "-1",
+  "comment": ""
+}
