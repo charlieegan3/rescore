@@ -1,5 +1,6 @@
 class User < ActiveRecord::Base
   validates :screen_name, uniqueness: true
+  has_many :favorites
 
   def self.create_with_omniauth(auth)
     user = User.find_by_screen_name(auth['extra']['raw_info']['screen_name'])
