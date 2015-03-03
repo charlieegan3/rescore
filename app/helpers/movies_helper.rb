@@ -15,15 +15,8 @@ module MoviesHelper
     ["Has a below average overall aspect sentiment.", false]
   end
 
-  def people_count(movie)
-    global_people_count = Statistic.find_by_identifier('people_count').value[:count]
-    if movie.related_people.size >= global_people_count / Movie.count
-      return ["Has an above average number of cast members.", true]
-    end
-    ["Has a below average number of cast members.", false]
-  end
-
   def facts(movie)
+    global_people_count = Statistic.find_by_identifier('people_count').value[:count]
     sentiment_variation = Statistic.find_by_identifier('sentiment_variation').value[:variation]
     var = (movie.sentiment[:distribution_stats][:st_dev])
     [].tap do |facts|
@@ -32,6 +25,12 @@ module MoviesHelper
       else
         facts << "#{movie.title} has a low variation of ratings."
       end
+
+      if movie.related_people.size >= global_people_count / Movie.count
+        facts << "Has an above average number of cast members."
+      end
+      facts << "Has a below average number of cast members."
+
       facts << "#{movie.sentiment[:topics].max_by{|k,v| v}[0].to_s.capitalize} is the most favoured aspect of the movie."
       facts << "People seem to talk about #{movie.stats[:topic_counts].max_by{|k,v| v}[0].to_s} the most."
     end

@@ -43,7 +43,7 @@
         .panel
           span.has-tip aria-haspopup="true" data-tooltip="" title="Overview of this movie, compared to all others." Comparison
           ul
-            -[topic_counts(@movie), topic_sentiments(@movie), people_count(@movie)].each do |comment, indicator|
+            -[topic_counts(@movie), topic_sentiments(@movie)].each do |comment, indicator|
               li
                 -if indicator
                   span.success.label =comment
