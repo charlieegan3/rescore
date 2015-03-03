@@ -15,6 +15,13 @@ nav.top-bar
       li.divider
   section.top-bar-section
     ul.right
+      -if current_user
+        li
+          =link_to "Sign Out", signout_path
+      -else
+        li
+          =link_to "Sign in with Twitter", "/auth/twitter"
+      li
       li
         form action="/movies/search_by_title"
           input name="query" type="text" placeholder="Search movies" /

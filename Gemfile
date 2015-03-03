@@ -37,6 +37,8 @@ gem 'badfruit', :git => 'https://github.com/IllegalCactus/BadFruit.git'
 
 gem 'colored'
 
+gem 'omniauth-twitter'
+
 group :production do
   gem 'rails_12factor'
   gem 'httparty'
@@ -56,6 +58,7 @@ group :development, :test do
   gem 'vcr'
   gem 'capybara'
   gem 'factory_girl'
+  gem 'shoulda-matchers', '2.8.0'
   gem 'launchy'
 end
 
