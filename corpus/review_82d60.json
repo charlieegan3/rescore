@@ -18,7 +18,7 @@
           "justification": "not enough justice"
         }
       },
-      "comment": "Comparing with other movie"
+      "comment": "Comparing with other movie Woj - which means it should ignore - detected by rescore?"
     },
     {
       "text": "However after some thinking, I realized that this movie is truly bizarre.",
@@ -27,8 +27,8 @@
           "words": [
             "movie"
           ],
-          "score": "-2",
-          "justification": "truly bizare"
+          "score": "0",
+          "justification": "bizarre"
         }
       },
       "comment": ""
@@ -38,7 +38,7 @@
       "aspects": {
         "plot": {
           "words": [
-            "story"
+            "action"
           ],
           "score": "-2",
           "justification": "mindless action"

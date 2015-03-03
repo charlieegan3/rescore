@@ -27,7 +27,7 @@
             "film"
           ],
           "score": "2",
-          "justification": "worth the wait,hands down the best film"
+          "justification": "worth the wait, the best"
         }
       },
       "comment": ""
@@ -52,10 +52,10 @@
             "the film"
           ],
           "score": "1",
-          "justification": "never let's you take a brake"
+          "justification": "never lets you take a brake"
         }
       },
-      "comment": ""
+      "comment": "Woj: another nice phrase to be added"
     },
     {
       "text": "12 Years a Slave is dark and raw, it exposes everything, without sugarcoating it.",
@@ -68,7 +68,7 @@
           "justification": "dark and raw"
         }
       },
-      "comment": "dark and raw are not positives,but not negatives here too"
+      "comment": "dark and raw are not positives,but not negatives here too; Woj: I think they should mostly be seen as positives in the context of movies."
     },
     {
       "text": "It is definitely hard to watch; Several people walked out of the the theatre but in my opinion, it is not only worth watching but necessary.",
@@ -78,10 +78,10 @@
             "it"
           ],
           "score": "2",
-          "justification": "worth watching,necessary"
+          "justification": "worth watching"
         }
       },
-      "comment": ""
+      "comment": "Woj: what about hard to watch?"
     },
     {
       "text": "Films exploring themes of slavery are few and far in between and never has one been quite as exhaustive and effective as this one.",
@@ -94,7 +94,7 @@
           "justification": "effective and exhaustive"
         }
       },
-      "comment": ""
+      "comment": "Woj: not sure but maybe exhaustive could be mapped to plot/credibility?"
     },
     {
       "text": "Beautifully shot and edited, the film features moments of tension, heartbreak and a few laughs here and there.",
@@ -104,10 +104,17 @@
             "edited"
           ],
           "score": "2",
-          "justification": "beautifully shot and edited"
+          "justification": "beautifully"
+        },
+	"vision": {
+          "words": [
+            "shot"
+          ],
+          "score": "2",
+          "justification": "beautifully"
         }
       },
-      "comment": ""
+      "comment": "Woj: missed one aspect"
     },
     {
       "text": "Steve McQueen has created another masterpiece.Most actors get very little screen time.",
@@ -120,7 +127,7 @@
           "justification": "masterpiece"
         }
       },
-      "comment": ""
+      "comment": "Woj: how do we go about the director's name?"
     },
     {
       "text": "Paul Giamatti and Sarah Paulson are seen for a few minutes but both are great as usual.",
@@ -130,7 +137,7 @@
             "Paul Giamatti and Sarah Paulson"
           ],
           "score": "2",
-          "justification": "great as usual"
+          "justification": "great"
         }
       },
       "comment": ""
@@ -174,7 +181,7 @@
             "performance"
           ],
           "score": "2 ",
-          "justification": "best performance"
+          "justification": "best"
         }
       },
       "comment": ""
@@ -187,7 +194,7 @@
             "Paul Dano"
           ],
           "score": "2",
-          "justification": "incredible use of it"
+          "justification": "incredible"
         }
       },
       "comment": ""
@@ -196,14 +203,14 @@
       "text": "As Benedict's worker, he despises slaves and the songs he sings to Solomon makes an incredibly powerful scene, one of the most disturbing in the film.",
       "aspects": {
       },
-      "comment": ""
+      "comment": "Woj: not sure if I wouldn't assign cast aspect here"
     },
     {
       "text": "Lupita Nyong'o's first appearance in a feature film is stunning, as she plays a heart breaking young slave.",
       "aspects": {
         "cast": {
           "words": [
-            "Lupita"
+            "appearance"
           ],
           "score": "2",
           "justification": "stunning"
@@ -228,7 +235,7 @@
           "justification": "true star"
         }
       },
-      "comment": ""
+      "comment": "Woj: would limit to just 'star' to avoid the confusion we talked about today"
     },
     {
       "text": "His performance as Solomon is stunning and unforgettable, I truly hope he wins the Oscar for it this year.All in all, if you get a chance to see 12 Years a Slave, don't miss it.",
@@ -248,7 +255,7 @@
           "justification": "stunning and unforgetable"
         }
       },
-      "comment": ""
+      "comment": "Don't miss it - another key phrase"
     },
     {
       "text": "Not everyone will be able to stomach it but it's an outstanding film that deserves and needs to be seen.",

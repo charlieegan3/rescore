@@ -15,17 +15,24 @@
             "movie"
           ],
           "score": "2",
-          "justification": "An excellent movie "
+          "justification": "excellent"
         },
         "cinematography": {
           "words": [
-            "scene"
+            "scenes"
+          ],
+          "score": "2",
+          "justification": "perfectly"
+        },
+	"vision": {
+          "words": [
+            "special effects"
           ],
           "score": "2",
           "justification": "perfectly"
         }
       },
-      "comment": ""
+      "comment": "Woj: might be wrong :("
     },
     {
       "text": "A really good film with an interesting story behind it. YOU'LL ENJOY IT. ",
@@ -35,17 +42,17 @@
             "film"
           ],
           "score": "2",
-          "justification": "A really good film"
+          "justification": "really good"
         },
         "plot": {
           "words": [
             "story"
           ],
           "score": "1",
-          "justification": "interesting story behind it."
+          "justification": "interesting"
         }
       },
-      "comment": ""
+      "comment": "Woj: really good has to be a separate entry 2 to tell difference from good 1"
     }
   ],
   "overall": "2",
