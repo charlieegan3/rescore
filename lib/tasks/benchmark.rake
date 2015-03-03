@@ -24,7 +24,7 @@ end
 
 task :benchmark, :print do |t, args|
   reviews = Dir['corpus/*.json']
-  # reviews = ['corpus/review_c7985.json'] # enable for single review only
+   reviews = ['corpus/review_01dde.json', 'corpus/review_0bd48.json', 'corpus/review_1413f.json', 'corpus/review_16cf1.json', 'corpus/review_285d7.json', 'corpus/review_2ab79.json', 'corpus/review_3c218.json', 'corpus/review_43636.json', 'corpus/review_43da0.json'] # enable for single review only
   exit if reviews.empty?
 
   annotations, correct, wrong, sentiment_delta = 0, 0, 0, 0
