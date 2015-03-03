@@ -8,6 +8,7 @@ RSpec.describe "application/stats", :type => :view do
     FactoryGirl::create(:topic_sentiments_statistic)
     FactoryGirl::create(:people_count_statistic)
   end
+
   it "counts the movies" do
     review_count = Statistic.find_by_identifier('review_count').value[:count]
     people_count = Statistic.find_by_identifier('people_count').value[:count]
