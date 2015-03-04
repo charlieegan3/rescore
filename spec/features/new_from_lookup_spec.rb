@@ -9,9 +9,26 @@ RSpec.describe MoviesController, :type => :feature do
     page.driver.browser.basic_authorize('admin', '1234qwer')
   end
 
+  describe 'admin' do
+    it 'lists the current movies correctly' do
+      FactoryGirl::create(:movie, title: 'Alien')
+      visit('/movies/admin')
+      expect(page).to have_content 'Alien'
+    end
+
+    it 'lets admin udpate stats properly' do
+      FactoryGirl::create(:movie, title: 'Alien')
+      visit('/movies/admin')
+      expect(page).to have_content 'Refresh Average Stats'
+      click_on 'refresh_stats_btn'
+      expect(page).to have_content 'Stats Updated'
+      expect(Statistic.count).to eq(5)
+    end
+  end
+
   describe 'new_from_lookup' do
     it 'rejects same two movies as choices' do
-      visit('http://localhost:3000/movies/new_from_lookup')
+      visit('/movies/new_from_lookup')
 
       within("#new_from_lookup_form") do
        fill_in 'query', with: 'The Godfather'
