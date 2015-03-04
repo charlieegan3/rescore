@@ -26,7 +26,9 @@ Rails.application.routes.draw do
   get 'movies/:id/populate_related_people' => 'movies#populate_related_people', as: :populate_movie_related_people
   get 'movies/:id/collect' => 'movies#collect', as: :collect_movie
   get 'movies/:id/build_summary' => 'movies#build_summary', as: :build_movie_summary
+  get 'movies/:id/favorite' => 'favorites#set', as: :favorite_movie
   resources :movies
+
 
   get "/auth/:provider/callback" => "sessions#create"
   get "/signout" => "sessions#destroy", :as => :signout

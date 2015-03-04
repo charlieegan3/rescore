@@ -18,4 +18,9 @@ FactoryGirl.define do
     identifier 'people_count'
     value ({:count => 10})
   end
+
+  factory :sentiment_variation_statistic, class: Statistic do
+    identifier 'sentiment_variation'
+    value({:variation=>45})
+  end
 end
