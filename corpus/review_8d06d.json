@@ -12,13 +12,13 @@
       "aspects": {
         "movie": {
           "words": [
-            "Dark Knight"
+            "movie_title"
           ],
-          "score": "0",
-          "justification": "hype and marketing"
+          "score": "-1",
+          "justification": "subjected, hype and marketing"
         }
       },
-      "comment": "Doesn't comment on whether the movie lives up to hype or not"
+      "comment": "Doesn't comment on whether the movie lives up to hype or not. charlie: I'd say subjected + hype are negative"
     },
     {
       "text": "We've seen Joker scavenger hunts and one of the largest viral campaigns in advertising history and it culminates with the actual release of the movie.Everything that's been said is pretty much spot on.",
@@ -38,10 +38,10 @@
       "aspects": {
         "movie": {
           "words": [
-            "film"
+            "film","it"
           ],
           "score": "2",
-          "justification": "a great piece of work"
+          "justification": "a great piece of work, far surpasses"
         },
         "cast": {
           "words": [
@@ -58,10 +58,10 @@
       "aspects": {
         "dialog": {
           "words": [
-            "dialog"
+            "dialog work"
           ],
           "score": "1",
-          "justification": "great dialog work"
+          "justification": "great"
         },
         "cinematography": {
           "words": [
@@ -91,7 +91,8 @@
       "aspects": {
         "plot": {
           "words": [
-            "persona"
+            "persona",
+            "personality"
           ],
           "score": "2",
           "justification": "cunning, great, genius, intimidating"
@@ -114,7 +115,7 @@
             "performance"
           ],
           "score": "1",
-          "justification": "credit"
+          "justification": "gets credit"
         }
       },
       "comment": ""
@@ -140,17 +141,10 @@
             "character"
           ],
           "score": "1",
-          "justification": "so menacing, great manifesto"
-        },
-        "cast": {
-          "words": [
-            "Ledger"
-          ],
-          "score": "1",
-          "justification": "makes the Joker so menacing"
+          "justification": "so menacing, great manifesto, drives"
         }
       },
-      "comment": ""
+      "comment": "charlie: cast member annotations are separate"
     },
     {
       "text": "The Joker's stance on chaos, order, anarchy, the morality of the average modern human being make the character so interesting psychologically.",
@@ -159,11 +153,11 @@
           "words": [
             "character"
           ],
-          "score": "1",
+          "score": "2",
           "justification": "so interesting"
         }
       },
-      "comment": ""
+      "comment": "charlie: upped this to a 2"
     },
     {
       "text": "The Nolans drafted a complex character and only a perfect performance could've pulled something like this off.",
@@ -188,13 +182,6 @@
     {
       "text": "That's how difficult of a role this was, and that's why Ledger's performance is so great.This isn't an action movie.",
       "aspects": {
-        "movie": {
-          "words": [
-            ""
-          ],
-          "score": "0",
-          "justification": "This isn't an action movie"
-        },
         "cast": {
           "words": [
             "performance",
@@ -204,27 +191,27 @@
           "justification": "performance, so great"
         }
       },
-      "comment": ""
+      "comment": "charlie: removed annotation without sentiment"
     },
     {
       "text": "It's a film that explores literary themes of the hero and villain, as well as order and anarchy.",
       "aspects": {
-        "movie": {
-          "words": [
-            "It's a film"
-          ],
-          "score": "0",
-          "justification": "film"
-        },
         "plot": {
           "words": [
-            "villain"
+            "villain", "hero"
           ],
           "score": "1",
-          "justification": "explores literary themes"
+          "justification": "explores"
+        },
+        "concept": {
+          "words": [
+            "literary themes"
+          ],
+          "score": "1",
+          "justification": "explores"
         }
       },
-      "comment": ""
+      "comment": "charlie: @woj unsure about adding concept here."
     },
     {
       "text": "Yes, listen to the dialog because it's all in there.",
@@ -233,11 +220,11 @@
           "words": [
             "dialog"
           ],
-          "score": "0",
-          "justification": "dialog"
+          "score": "1",
+          "justification": "it's all in there"
         }
       },
-      "comment": "No sentiment."
+      "comment": "No sentiment. charlie: i think it's marginally +ve"
     }
   ],
   "overall": "2",

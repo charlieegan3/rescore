@@ -15,17 +15,17 @@
             "the movie"
           ],
           "score": "-1",
-          "justification": "shaky"
+          "justification": "shaky, half of the movie is"
         },
         "vision": {
           "words": [
             "camera"
           ],
           "score": "-1",
-          "justification": "shaky"
+          "justification": "shaky, half of the movie is"
         }
       },
-      "comment": ""
+      "comment": "'half of the movie is', can only be -ve"
     },
     {
       "text": "The rest is made up of predictable characters (think science vs. government, 'know-how' vs. authority, etc.) What is the worst aspect about this movie?",

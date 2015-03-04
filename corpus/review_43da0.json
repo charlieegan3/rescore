@@ -33,10 +33,10 @@
             "this"
           ],
           "score": "-1",
-          "justification": "pretentious"
+          "justification": "pretentious, experiment, daft"
         }
       },
-      "comment": "add pretentious?"
+      "comment": "add pretentious? charlie: I could go to -2"
     },
     {
       "text": "Fans of the theater will find it amusing for the first hour until it begins to feel like Ground Hog Day meets All That Jazz, orchestrated by Paul Thomas Anderson's nails on a chalkboard.Performances: Exactly what you would expect from talented actors but the fun ends there.Creativity: A one trick pony, think Hitchcock's Rope without the fun, that will make you want to get the heck out of the \"theater\".",
@@ -50,10 +50,17 @@
         },
         "cast": {
           "words": [
-            "actors"
+            "actors, performances"
           ],
           "score": "1",
           "justification": "Exactly what you would expect from talented actors"
+        },
+        "concept": {
+          "words": [
+            "creativity"
+          ],
+          "score": "-2",
+          "justification": "one trick pony, want to get the heck out of the theater"
         }
       },
       "comment": "can't express the general idea of the sentence (should be negative)"
@@ -78,11 +85,18 @@
           "words": [
             "it"
           ],
-          "score": "0",
+          "score": "-1",
+          "justification": "it succeeds only as an experimental museum piece"
+        },
+        "cinematography": {
+          "words": [
+            "execution"
+          ],
+          "score": "-1",
           "justification": "it succeeds only as an experimental museum piece"
         }
       },
-      "comment": ""
+      "comment": "charlie: I believe these to be correct, however hard to reach programatically"
     },
     {
       "text": "Even then, most folks would walk out before the end.It's one of the most pointless, sluggish, and taxing experiences you will have in the theater. ",
@@ -92,12 +106,12 @@
             "It's"
           ],
           "score": "-2",
-          "justification": "It's one of the most pointless, sluggish, and taxing experiences"
+          "justification": "pointless, sluggish, taxing, walk out before the end"
         }
       },
       "comment": ""
     }
   ],
-  "overall": "-1",
+  "overall": "-2",
   "comment": ""
 }

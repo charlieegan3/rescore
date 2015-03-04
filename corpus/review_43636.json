@@ -12,6 +12,13 @@
       "aspects": {
         "movie": {
           "words": [
+            "film_title"
+          ],
+          "score": "2",
+          "justification": "at its finest, promises big things"
+        },
+        "cinematography": {
+          "words": [
             "film making"
           ],
           "score": "2",
@@ -28,7 +35,7 @@
             "film"
           ],
           "score": "2",
-          "justification": "i have completely enraptured"
+          "justification": "completely enraptured"
         }
       },
       "comment": "not your usual sentence, but still relays strong positive info"
@@ -38,13 +45,13 @@
       "aspects": {
         "movie": {
           "words": [
-            "Whiplash"
+            "film_title"
           ],
           "score": "2",
-          "justification": "ranks in my all time favorites"
+          "justification": "quality, ranks in my all time favorites"
         }
       },
-      "comment": ""
+      "comment": "charlie: succor? :)"
     },
     {
       "text": "The tension did not let up from the very first scene, especially as soon as the incredible J.K. Simmons enters.",
@@ -54,20 +61,21 @@
             "tension"
           ],
           "score": "1",
-          "justification": "did not let up from the very first scene"
+          "justification": "did not let up, especially"
         }
       },
-      "comment": ""
+      "comment": "charlie: I'd stretch to a 2"
     },
     {
       "text": "Simmons, along with Miles Teller (who's Project X days are now long behind him) have some of the best on screen chemistry I've seen.",
       "aspects": {
         "cast": {
           "words": [
-            "Simmons, Miles Teller"
+            "Simmons, Miles Teller",
+            "on screen chemistry"
           ],
           "score": "2",
-          "justification": "best on screen chemistry i've seen"
+          "justification": "best on screen chemistry"
         }
       },
       "comment": ""
@@ -89,13 +97,20 @@
           "justification": "services the film"
         }
       },
-      "comment": ""
+      "comment": "charlie: can 'focused'/focuses be a generic plot word?"
     },
     {
       "text": "I hope people will go and see it and vote with their pocketbooks for excellent low budget films. ",
       "aspects": {
+        "movie": {
+          "words": [
+            "low budget films"
+          ],
+          "score": "2",
+          "justification": "vote with their pocketbooks, excellent"
+        }
       },
-      "comment": ""
+      "comment": "I know this isn't a 100% keyword, but I think there's a good enough probability"
     }
   ],
   "overall": "2",
