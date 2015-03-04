@@ -7,7 +7,7 @@ module MovieInfo
   # | get_people() finds the cast list and director for a film, given a title.
   # | ------------------------------------------------------------------------
 
-  GoogleAjax.referrer = "hey"
+  GoogleAjax.referrer = GOOGLE_AJAX_REFERRER
 
   def MovieInfo.get_people(title)
     begin

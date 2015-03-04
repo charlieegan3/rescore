@@ -3,7 +3,7 @@ require 'open-uri'
 class ReviewCollector
   def initialize(film_title, page_depth = 1, print = true)
     @film_title = film_title
-    @user_agent = 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_7_0) AppleWebKit/535.2 (KHTML, like Gecko) Chrome/15.0.854.0 Safari/535.2'
+    @user_agent = USER_AGENT_STRING
     @page_depth = page_depth
     @print = true
   end
