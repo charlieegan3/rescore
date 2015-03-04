@@ -7,11 +7,11 @@ module MovieInfo
   # | get_people() finds the cast list and director for a film, given a title.
   # | ------------------------------------------------------------------------
 
-  GoogleAjax.referrer = "hey"
+  GoogleAjax.referrer = GOOGLE_AJAX_REFERRER
 
   def MovieInfo.get_people(title)
     begin
-      bf = BadFruit.new("6tuqnhbh49jqzngmyy78n8v3")
+      bf = BadFruit.new(BADFRUIT_KEY)
       query = bf.movies.search_by_name(title[0..15]) # Try to cut out irrelevant bits of string.
 
       cast = query[0].full_cast

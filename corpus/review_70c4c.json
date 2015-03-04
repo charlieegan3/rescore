@@ -44,7 +44,7 @@
       "aspects": {
         "sound": {
           "words": [
-            "the first song"
+            "song"
           ],
           "score": "2",
           "justification": "fantastic"
@@ -59,7 +59,7 @@
           "words": [
             "the rest of the songs"
           ],
-          "score": "0",
+          "score": "-1",
           "justification": "not nearly so good"
         }
       },
@@ -85,11 +85,11 @@
           "words": [
             "the comic relief character"
           ],
-          "score": "1",
+          "score": "0",
           "justification": "okay"
         }
       },
-      "comment": ""
+      "comment": "Woj: adjusted to other ok = 0's that I've seen"
     },
     {
       "text": "While the script is fine for a TV special or maybe the first episode of a Nickelodeon series, it is definitely not right for a high-profile animated film.",
@@ -125,10 +125,10 @@
             "character"
           ],
           "score": "0",
-          "justification": "quite well executed, changes absolutely nothing about the story"
+          "justification": "quite well executed, changes absolutely nothing"
         }
       },
-      "comment": "very difficult to put together"
+      "comment": "very difficult to put together; maybe add some key phrases: adds nothing, changes nothing, contributes nothing"
     },
     {
       "text": "No events drastically alter because of it, there's no clever subtext, and the entire thing feels like it was just inserted so the screenwriter could show how clever he was.",
@@ -140,7 +140,7 @@
       "text": "I mean, the trip to the cinemas wasn't completely pointless.",
       "aspects": {
       },
-      "comment": "ignore?"
+      "comment": "ignore"
     },
     {
       "text": "There was a quite funny Mickey Mouse cartoon they played before the picture, and the trailer for the Lego movie looks like it could be worth something.",
@@ -165,7 +165,7 @@
       "text": "Avoid it if you can, unless you have some kids you need to get out of the house.",
       "aspects": {
       },
-      "comment": "ignore, might be too complicated"
+      "comment": "Woj: key-phrase: avoid it"
     },
     {
       "text": "If so, make sure you bring a good book. ",
