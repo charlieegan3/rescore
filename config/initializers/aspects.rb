@@ -141,7 +141,7 @@ ASPECTS = {
     'freshness' => 100,
     'charming' => 100,
     'quirky' => 100,
-    'something new',
+    'something new' => 100,
     'fresh' => 100,
     'inventive' => 100,
     'revolutionary' => 100,
