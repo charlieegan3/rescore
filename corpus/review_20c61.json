@@ -1,0 +1,133 @@
+{
+  "title": "Seven Pounds",
+  "genres": "Drama",
+  "source": "http://www.imdb.com/title/tt0814314/reviews.",
+  "score": "10/10",
+  "helpfulness": "204/288",
+  "author": "Kestutis Sidlauskas",
+  "body": " This movie... is amazing. Not even watching \"The green mile\" and \"Million dollar baby\" did i get the same feeling i do off this. This is truly a masterpiece.  I wont go in to detail about the movie, since there is already a lot of comments here to get that information. No, i wright this comment ( my first ever) because i wanted to express myself. This is my new favorite movie, and if you don't go see it, you misses out one a truly amazing experience. I think i cried to 1 movie before, not a lot of crying, but still and that was green mile. But this.. this movie got me crying for real. The sacrifice Ben (will smith) makes in this movie is truly a gift for the people he does it too. I don't think i said to much to spoil anything, i hope not, cause that will be me taken the joy out of what is a amazing movie.  Now, after you read this, you should go buy this movie (when it comes on DVD), and watch it. And treasure it, and maybe it will bring something to your life, as it has to mine.  Love Tais.   ",
+  "annotated_sentences": [
+    {
+      "text": " This movie... is amazing.",
+      "aspects": {
+        "movie": {
+          "words": [
+            "movie"
+          ],
+          "score": "2",
+          "justification": "amazing"
+        }
+      },
+      "comment": ""
+    },
+    {
+      "text": "Not even watching \"The green mile\" and \"Million dollar baby\" did i get the same feeling i do off this.",
+      "aspects": {
+      },
+      "comment": "too indirect compliment to expect our algorithm to detect imho"
+    },
+    {
+      "text": "This is truly a masterpiece.",
+      "aspects": {
+        "movie": {
+          "words": [
+            "this"
+          ],
+          "score": "2",
+          "justification": "masterpiece"
+        }
+      },
+      "comment": ""
+    },
+    {
+      "text": "I wont go in to detail about the movie, since there is already a lot of comments here to get that information.",
+      "aspects": {
+      },
+      "comment": ""
+    },
+    {
+      "text": "No, i wright this comment ( my first ever) because i wanted to express myself.",
+      "aspects": {
+      },
+      "comment": ""
+    },
+    {
+      "text": "This is my new favorite movie, and if you don't go see it, you misses out one a truly amazing experience.",
+      "aspects": {
+        "movie": {
+          "words": [
+            "movie"
+          ],
+          "score": "2",
+          "justification": "favorite, amazing experience"
+        }
+      },
+      "comment": ""
+    },
+    {
+      "text": "I think i cried to 1 movie before, not a lot of crying, but still and that was green mile.",
+      "aspects": {
+      },
+      "comment": ""
+    },
+    {
+      "text": "But this.. this movie got me crying for real.",
+      "aspects": {
+        "movie": {
+          "words": [
+            "movie"
+          ],
+          "score": "0",
+          "justification": "got me crying"
+        }
+      },
+      "comment": "Thought if it should be plot, but then what sentiment does 'got me crying' give? obviously, in this case it's positive, but in other.. What do you all think?"
+    },
+    {
+      "text": "The sacrifice Ben (will smith) makes in this movie is truly a gift for the people he does it too.",
+      "aspects": {
+      },
+      "comment": "talking about plot, but not really a compliment to the plot as just describing a good deed within the plot"
+    },
+    {
+      "text": "I don't think i said to much to spoil anything, i hope not, cause that will be me taken the joy out of what is a amazing movie.",
+      "aspects": {
+        "movie": {
+          "words": [
+            "movie"
+          ],
+          "score": "2",
+          "justification": "amazing"
+        }
+      },
+      "comment": "lol the english on this one."
+    },
+    {
+      "text": "Now, after you read this, you should go buy this movie (when it comes on DVD), and watch it.",
+      "aspects": {
+        "movie": {
+          "words": [
+            "movie"
+          ],
+          "score": "1",
+          "justification": "should go buy"
+        }
+      },
+      "comment": "recommendation is still a positive sentiment, no?"
+    },
+    {
+      "text": "And treasure it, and maybe it will bring something to your life, as it has to mine.",
+      "aspects": {
+      },
+      "comment": "not specific enough"
+    },
+    {
+      "text": "Love Tais.   ",
+      "aspects": {
+      },
+      "comment": ""
+    }
+  ],
+  "overall": "2",
+  "comment": "broken english, but obviously a fan of the film."
+}
