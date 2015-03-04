@@ -1,0 +1,163 @@
+{
+  "title": "Saving Private Ryan",
+  "genres": "Action, Drama, War",
+  "source": "http://www.imdb.com/title/tt0120815/reviews?ref_=tt_urv",
+  "score": "10/10",
+  "helpfulness": "161/240",
+  "author": "Dylan Hanning",
+  "body": "  It's been over a year since first seeing Saving Private Ryan -- it's a worthy effort by Speilberg--his best since Shindler's List by far. You've probably heard about the amount of violence, blood, and gore and that's all true--it's got the Viet Nam movie style violence (and then some) but it's not gratuitous. Were it sanitized like early WWII movies, modern audiences probably wouldn't take it as seriously.  The movie has that trademark Speilberg style--the structure is all tied up and unified from beginning to end, the emotional symbols abound, the music swelling when he's working at your emotions, the hand held camera that worked so well in Shindler's List to give you a feeling of participation, camera angles and periods of silence to disorient you (like Shindler), suspense techniques learned from Hitch... It's a movie that stays with you for a period afterwards.  Hanks will be the early front runner for Oscar after this flick--Academy members like him AND it IS his best acting job ever. While Speilberg will likely be criticized for attempting to manipulate the audience's emotions while keeping a distance from the inner core of his characters, Tom Hanks reveals a really complex military leader in this story, and does so without overacting--somehow it comes from within. While you may not empathize deeply with many of the platoon, you will still feel something because of the relationship that is formed with Hanks.  After the initial set-up, you will have the opportunity to participate in the D-Day operation and experience the horror of it. Those who have been in a real war can comment about how realistic or not Speilberg captures its chaotic horror in this scene.  In my case I again feel very lucky that my draft number was high, so I never had to face Nam like many of my classmates. Speilberg reminds us brutally in \"Saving Private Ryan\" that we All have a debt to pay to the brave souls who have sacrificed so much for us. What Tom Hanks does with his performance is to remind us of this debt in a very personal way. ",
+  "annotated_sentences": [
+    {
+      "text": "  It's been over a year since first seeing Saving Private Ryan -- it's a worthy effort by Speilberg--his best since Shindler's List by far.",
+      "aspects": {
+        "movie": {
+          "words": [
+            "it's"
+          ],
+          "score": "1",
+          "justification": "a worthy effort"
+        }
+      },
+      "comment": ""
+    },
+    {
+      "text": "You've probably heard about the amount of violence, blood, and gore and that's all true--it's got the Viet Nam movie style violence (and then some) but it's not gratuitous.",
+      "aspects": {
+        "vision": {
+          "words": [
+            "violence"
+          ],
+          "score": "1",
+          "justification": "not gratuitous"
+        }
+      },
+      "comment": ""
+    },
+    {
+      "text": "Were it sanitized like early WWII movies, modern audiences probably wouldn't take it as seriously.",
+      "aspects": {
+      },
+      "comment": "Not sure if this expressses sentiment at all?"
+    },
+    {
+      "text": "The movie has that trademark Speilberg style--the structure is all tied up and unified from beginning to end, the emotional symbols abound, the music swelling when he's working at your emotions, the hand held camera that worked so well in Shindler's List to give you a feeling of participation, camera angles and periods of silence to disorient you (like Shindler), suspense techniques learned from Hitch...",
+      "aspects": {
+        "movie": {
+          "words": [
+            "The movie"
+          ],
+          "score": "1",
+          "justification": "trademark...suspense techniques learned from Hitch"
+        },
+        "sound": {
+          "words": [
+            "music"
+          ],
+          "score": "1",
+          "justification": "the music swelling when he's working at your emotions"
+        },
+        "vision": {
+          "words": [
+            "camera"
+          ],
+          "score": "1",
+          "justification": "the hand held camera that worked so well...give you a feeling of participation"
+        }
+      },
+      "comment": ""
+    },
+    {
+      "text": "It's a movie that stays with you for a period afterwards.",
+      "aspects": {
+        "movie": {
+          "words": [
+            "movie"
+          ],
+          "score": "1",
+          "justification": "stays with you"
+        }
+      },
+      "comment": ""
+    },
+    {
+      "text": "Hanks will be the early front runner for Oscar after this flick--Academy members like him AND it IS his best acting job ever.",
+      "aspects": {
+        "cast": {
+          "words": [
+            "acting",
+            "act"
+          ],
+          "score": "2",
+          "justification": "front runner for Oscar...best acting job ever"
+        }
+      },
+      "comment": ""
+    },
+    {
+      "text": "While Speilberg will likely be criticized for attempting to manipulate the audience's emotions while keeping a distance from the inner core of his characters, Tom Hanks reveals a really complex military leader in this story, and does so without overacting--somehow it comes from within.",
+      "aspects": {
+        "cast": {
+          "words": [
+            "acting",
+            "act"
+          ],
+          "score": "1",
+          "justification": "complex...without overacting"
+        }
+      },
+      "comment": ""
+    },
+    {
+      "text": "While you may not empathize deeply with many of the platoon, you will still feel something because of the relationship that is formed with Hanks.",
+      "aspects": {
+        "cast": {
+          "words": [
+            "Hanks"
+          ],
+          "score": "1",
+          "justification": "relationship that is formed with Hanks"
+        }
+      },
+      "comment": "(Not sure if they mean the relationship between the characters?)"
+    },
+    {
+      "text": "After the initial set-up, you will have the opportunity to participate in the D-Day operation and experience the horror of it.",
+      "aspects": {
+      },
+      "comment": "Wow can't wait for the 4-D version..."
+    },
+    {
+      "text": "Those who have been in a real war can comment about how realistic or not Speilberg captures its chaotic horror in this scene.",
+      "aspects": {
+        "cinematography": {
+          "words": [
+            "scene"
+          ],
+          "score": "0",
+          "justification": "how realistic or not"
+        }
+      },
+      "comment": "Doesn't express opinion either way"
+    },
+    {
+      "text": "In my case I again feel very lucky that my draft number was high, so I never had to face Nam like many of my classmates.",
+      "aspects": {
+      },
+      "comment": "irrelevant life story"
+    },
+    {
+      "text": "Speilberg reminds us brutally in \"Saving Private Ryan\" that we All have a debt to pay to the brave souls who have sacrificed so much for us.",
+      "aspects": {
+      },
+      "comment": "yawn"
+    },
+    {
+      "text": "What Tom Hanks does with his performance is to remind us of this debt in a very personal way. ",
+      "aspects": {
+      },
+      "comment": "sure"
+    }
+  ],
+  "overall": "1",
+  "comment": ""
+}
