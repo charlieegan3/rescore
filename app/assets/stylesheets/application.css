@@ -155,3 +155,15 @@ p.title {
   font-size: 0.8em;
   color: DarkGrey;
 }
+
+.fi-heart {
+  font-size: 2em;
+}
+
+.active {
+  color: red;
+}
+
+.inactive {
+  color: LightGrey;
+}

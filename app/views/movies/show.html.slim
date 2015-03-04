@@ -58,17 +58,34 @@
       .large-12.columns
         .panel
           -unless @movie.sentiment[:people].empty?
-            =render "cast_sentiment_graph", id: @movie.id, people: @movie.sentiment[:people]
+            =render "application/cast_sentiment_graph", id: @movie.id, people: @movie.sentiment[:people]
 
   .large-6.columns
     .row
       .large-12.columns
         .panel
-          =render "aspects_graph", id: @movie.id, aspects: @movie.sentiment[:topics], counts: @movie.stats[:topic_counts]
+          -if current_user
+            -path = favorite_movie_path(@movie, favorite: {movie_id: @movie.id})
+            -if current_user.favorites.map {|f| f.movie_id }.include?(@movie.id)
+              p
+                =link_to(path, id: 'favorite') do
+                  span.has-tip aria-haspopup="true" data-tooltip="" title="Remove this movie to your favorites"
+                    i.fi-heart.active
+            -else
+              p
+                =link_to(path, id: 'favorite') do
+                  span.has-tip aria-haspopup="true" data-tooltip="" title="Add this movie to your favorites"
+                    i.fi-heart.inactive
+          p.muted More user actions coming soon
+
     .row
       .large-12.columns
         .panel
-          =render "sentiment_ratings_graph", id: @movie.id, ratings: @movie.stats[:rating_distribution], sentiment: @movie.sentiment[:distribution_stats][:values]
+          =render "application/aspects_graph", id: @movie.id, aspects: @movie.sentiment[:topics], counts: @movie.stats[:topic_counts]
+    .row
+      .large-12.columns
+        .panel
+          =render "application/sentiment_ratings_graph", id: @movie.id, ratings: @movie.stats[:rating_distribution], sentiment: @movie.sentiment[:distribution_stats][:values]
           p
             strong Range:&nbsp;
             =(@movie.sentiment[:distribution_stats][:range] * 100).to_i
