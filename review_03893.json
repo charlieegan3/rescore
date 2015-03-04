@@ -1,0 +1,153 @@
+{
+  "title": "Alien",
+  "genres": "Horror, Scifi",
+  "source": "http://www.imdb.com/title/tt0078748/reviews?ref_=tt_urv",
+  "score": "10/10",
+  "helpfulness": "91/107",
+  "author": "Dylan Hanning",
+  "body": " This is one of the finest science fiction films ever made. Everything is so carefully and expertly constructed to the point that repeated viewings are just as good as the first. Also, the atmosphere, along with the amazing sets, is real shocker and few movies have managed to create the same kind eerie feeling.  The story starts with the crew of the cargo vessel \"Nostromo\" waking up before schedule. They soon realize their on-board computer has detected life on a nearby planet and they go to investigate. One of them unwillingly brings back an...ALIEN (!) which soon becomes a very unwanted passenger. The introduction of the title creature in the famous chest-burster scene is a real jolter. Especially if you watch it after dinner.  The music, too, must be mentioned and it moves the story along with unrelenting terror. However, the lack of music, in certain scenes, works just as well and this combination makes for one of the best musical montages to be put on film.  This is a classic film that spawned a series, which is good overall, and a bunch of copycats, many of which are just sad. \"Alien\" came first and it is easily one the best. 10/10  Rated R: violence/gore and profanity ",
+  "annotated_sentences": [
+    {
+      "text": " This is one of the finest science fiction films ever made.",
+      "aspects": {
+        "movie": {
+          "words": [
+            "films"
+          ],
+          "score": "2",
+          "justification": "finest science fiction films ever made"
+        }
+      },
+      "comment": ""
+    },
+    {
+      "text": "Everything is so carefully and expertly constructed to the point that repeated viewings are just as good as the first.",
+      "aspects": {
+        "movie": {
+          "words": [
+            ""
+          ],
+          "score": "2",
+          "justification": "carefully and expertly constructed...repeated viewings are just as good"
+        }
+      },
+      "comment": ""
+    },
+    {
+      "text": "Also, the atmosphere, along with the amazing sets, is real shocker and few movies have managed to create the same kind eerie feeling.",
+      "aspects": {
+        "cinematography": {
+          "words": [
+            "sets"
+          ],
+          "score": "2",
+          "justification": "amazing"
+        }
+      },
+      "comment": ""
+    },
+    {
+      "text": "The story starts with the crew of the cargo vessel \"Nostromo\" waking up before schedule.",
+      "aspects": {
+      },
+      "comment": "plot details"
+    },
+    {
+      "text": "They soon realize their on-board computer has detected life on a nearby planet and they go to investigate.",
+      "aspects": {
+      },
+      "comment": "plot details"
+    },
+    {
+      "text": "One of them unwillingly brings back an...ALIEN (!",
+      "aspects": {
+      },
+      "comment": "plot details"
+    },
+    {
+      "text": ") which soon becomes a very unwanted passenger.",
+      "aspects": {
+      },
+      "comment": "plot details"
+    },
+    {
+      "text": "The introduction of the title creature in the famous chest-burster scene is a real jolter.",
+      "aspects": {
+        "cinematography": {
+          "words": [
+            "scene"
+          ],
+          "score": "1",
+          "justification": "a real jolter"
+        }
+      },
+      "comment": "Not a lot of sentiment, but since it's horror 'jolter' is arguably positive"
+    },
+    {
+      "text": "Especially if you watch it after dinner.",
+      "aspects": {
+      },
+      "comment": ""
+    },
+    {
+      "text": "The music, too, must be mentioned and it moves the story along with unrelenting terror.",
+      "aspects": {
+        "sound": {
+          "words": [
+            "music"
+          ],
+          "score": "1",
+          "justification": "moves the story along....terror"
+        }
+      },
+      "comment": ""
+    },
+    {
+      "text": "However, the lack of music, in certain scenes, works just as well and this combination makes for one of the best musical montages to be put on film.",
+      "aspects": {
+        "sound": {
+          "words": [
+            "music"
+          ],
+          "score": "2",
+          "justification": "best musical montages to be put on film"
+        }
+      },
+      "comment": ""
+    },
+    {
+      "text": "This is a classic film that spawned a series, which is good overall, and a bunch of copycats, many of which are just sad.",
+      "aspects": {
+        "movie": {
+          "words": [
+            "film"
+          ],
+          "score": "1",
+          "justification": "classic"
+        }
+      },
+      "comment": ""
+    },
+    {
+      "text": "\"Alien\" came first and it is easily one the best.",
+      "aspects": {
+        "movie": {
+          "words": [
+            ""
+          ],
+          "score": "2",
+          "justification": "easily one of the best"
+        }
+      },
+      "comment": ""
+    },
+    {
+      "text": "10/10  Rated R: violence/gore and profanity ",
+      "aspects": {
+      },
+      "comment": ""
+    }
+  ],
+  "overall": "1",
+  "comment": ""
+}
