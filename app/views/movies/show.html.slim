@@ -8,6 +8,11 @@
       .large-5.columns
         .panel
           =image_tag(@movie.image_url, class: 'large-cover')
+        div.source-links
+          = link_to image_tag('/imdb_icon.jpg'), @movie.imdb_link
+          = link_to image_tag('/amazon_icon.jpg'), @movie.amazon_link
+          = link_to image_tag('/metacritic_icon.jpg'), @movie.metacritic_link
+          = link_to image_tag('/rotten_tomatoes_icon.jpg'), @movie.rotten_tomatoes_link
       .large-7.columns
         table.summary
           tr
@@ -23,40 +28,29 @@
           tr
             th Starring
             td =@movie.related_people[:cast].to_a.take(3).map { |member| member[:name] }.join(', ')
-          tr
-            th Updated
-            td =distance_of_time_in_words(Time.new, @movie.updated_at).gsub('about ', '') + " ago"
-          tr
-            th Added
-            td =distance_of_time_in_words(Time.new, @movie.created_at).gsub('about ', '') + " ago"
     .row
       .large-12.columns
         .panel
-          p
-            strong
-            span.has-tip aria-haspopup="true" data-tooltip="" title="Interesting facts about this movie." Summary
+          span.has-tip aria-haspopup="true" data-tooltip="" title="Interesting facts about this movie." Summary
           ul
-            -@facts.each do |fact|
+            -facts(@movie).each do |fact|
               li
                 =fact
+
     .row
       .large-12.columns
         .panel
-          p
-            strong
-            span.has-tip aria-haspopup="true" data-tooltip="" title="Overview of this movie, compared to all others." Comparison
+          span.has-tip aria-haspopup="true" data-tooltip="" title="Overview of this movie, compared to all others." Comparison
           ul
-            -@summary.each do |section, value|
+            -[topic_counts(@movie), topic_sentiments(@movie)].each do |comment, indicator|
               li
-                -if @indicators[section]
-                    span.success.label =@summary[section]
+                -if indicator
+                  span.success.label =comment
                 -else
-                    span.alert.label =@summary[section]
+                  span.alert.label =comment
     .row
       .large-12.columns
         .panel
-          p
-            strong Cast Sentiment
           -unless @movie.sentiment[:people].empty?
             =render "cast_sentiment_graph", id: @movie.id, people: @movie.sentiment[:people]
 
@@ -75,3 +69,21 @@
             |&nbsp;&nbsp;
             strong Variation:&nbsp;
             =(@movie.sentiment[:distribution_stats][:st_dev] * 100).to_i
+
+.row
+  .large-12.columns
+    .large-12.columns
+      p.references
+        strong Added:&nbsp;
+        =@movie.created_at.strftime("%e %B %Y")
+        =" (Updated " + distance_of_time_in_words(Time.new, @movie.updated_at).gsub('about ', '') + " ago)"
+.row
+  .large-12.columns
+    .large-1.columns
+      p.references
+        strong References
+    .large-11.columns.references
+      -@movie.references.each do |reference|
+        =link_to reference.gsub('http://www.', ''), reference
+        br
+br

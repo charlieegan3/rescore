@@ -35,14 +35,15 @@
             "film"
           ],
           "score": "1",
-          "justification": "funny"
+          "justification": "funny, great scenario, well done"
         },
-        "plot": {
+        "dialog": {
           "words": [
-            "scenario"
+            "scenario",
+            "funny"
           ],
           "score": "1",
-          "justification": "great"
+          "justification": "funny"
         },
         "credibility": {
           "words": [
@@ -62,7 +63,14 @@
             "effects"
           ],
           "score": "1",
-          "justification": "quite good"
+          "justification": "(quite) good, (quiet good should also be added as it's a common SP)"
+        },
+        "vision": {
+          "words": [
+            "computer effects"
+          ],
+          "score": "1",
+          "justification": "(quite) good, (quiet good should also be added as it's a common SP)"
         },
         "plot": {
           "words": [
@@ -72,17 +80,24 @@
           "justification": "great, fantastic"
         }
       },
-      "comment": ""
+      "comment": "Are effects and vision too similar?"
     },
     {
       "text": "And having a ''look back'' in every couple scene makes the storyline much more attractive.",
       "aspects": {
         "plot": {
           "words": [
-            "story"
+            "storyline"
           ],
           "score": "1",
           "justification": "attractive"
+        },
+        "cinematography": {
+          "words": [
+            "scene, look back"
+          ],
+          "score": "1",
+          "justification": "attractive "
         }
       },
       "comment": ""
@@ -112,7 +127,7 @@
           "justification": "great"
         }
       },
-      "comment": ""
+      "comment": "shame about the splitting..."
     },
     {
       "text": "I haven't seen a film like this for years. ",
