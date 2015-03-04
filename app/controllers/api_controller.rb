@@ -9,7 +9,6 @@ class ApiController < ApplicationController
 
   def review
     rescore_review = RescoreReview.new(params["review"], nil)
-    # render layout: false  #for some reason this gives a "missing template" error
     rescore_review.build_all
     render json: rescore_review
   end
