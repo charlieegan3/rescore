@@ -10,18 +10,32 @@
     {
       "text": "Introduced by a hard-hitting boxing fight; the ethos of '71 is immediately understood.",
       "aspects": {
+        "concept": {
+          "words": [
+            "ethos"
+          ],
+          "score": "1",
+          "justification": "immediately understood"
+        }
       },
-      "comment": "ignore"
+      "comment": ""
     },
     {
       "text": "It is brutal, thrilling and an utterly dramatic directorial debut from Yann Demange.",
       "aspects": {
         "movie": {
           "words": [
-            "It"
+            "it"
           ],
           "score": "2",
-          "justification": "thrilling; utterly dramatic"
+          "justification": "thrilling, utterly dramatic, brutal"
+        },
+        "cinematography": {
+          "words": [
+            "directorial"
+          ],
+          "score": "2",
+          "justification": "thrilling, utterly dramatic, brutal"
         }
       },
       "comment": "2 things"
@@ -40,7 +54,7 @@
             "narrative"
           ],
           "score": "1",
-          "justification": "consistently"
+          "justification": "consistently, right direction"
         },
         "credibility": {
           "words": [
@@ -69,7 +83,7 @@
           "justification": "most realistic"
         }
       },
-      "comment": "how to deal with this?"
+      "comment": "how to deal with this? charlie: think this is fine as you've got it"
     },
     {
       "text": "Soon, Hook is separated from his group and forced to survive as a lone-wolf in the devilish-toned IRA hostile territory.",
@@ -80,15 +94,30 @@
     {
       "text": "All quickly intensifies to an incredible Bourne-style chase through the streets of terror; what with the cars alight at each corner, crisp cinematography - everything feels authentic.",
       "aspects": {
+        "movie": {
+          "words": [
+            "everything",
+            "all"
+          ],
+          "score": "2",
+          "justification": "quickly intensifies, authentic"
+        },
         "credibility": {
           "words": [
-            "everything"
+            "authentic"
           ],
           "score": "2",
           "justification": "authentic"
+        },
+        "cinematography": {
+          "words": [
+            "cinematography"
+          ],
+          "score": "2",
+          "justification": "crisp"
         }
       },
-      "comment": "keyword - everything - might be worts seeing it as having an aspect itself - cf. nothing"
+      "comment": ""
     },
     {
       "text": "'They do not care about you, to them, you are just a piece of meat' – one character announces to Hook.",
@@ -110,26 +139,40 @@
             "performance"
           ],
           "score": "2",
-          "justification": "uncanny"
+          "justification": "uncanny, highlights"
         }
       },
-      "comment": "cast or person?"
+      "comment": "cast or person? charlie: both"
     },
     {
       "text": "Co-starring alongside, Sean Harris and Paul Anderson play undercover superiors, yet are as corrupt as Bad Lieutenant.",
       "aspects": {
       },
-      "comment": "why length detected? play?"
+      "comment": "why length detected? play? charlie: would have been the 'long' in alongside in the old matching"
     },
     {
       "text": "Regimented like the army, '71 is on point.",
       "aspects": {
+        "movie": {
+          "words": [
+            "film_title"
+          ],
+          "score": "2",
+          "justification": "on point"
+        }
       },
       "comment": "ignore"
     },
     {
       "text": "Everything is there for a reason, and it shows on screen.",
       "aspects": {
+        "movie": {
+          "words": [
+            "everything"
+          ],
+          "score": "1",
+          "justification": "it shows on screen"
+        }
       },
       "comment": "ignore"
     },
@@ -141,10 +184,10 @@
             "it"
           ],
           "score": "2",
-          "justification": "this year's best"
+          "justification": "this year's best, thrillers"
         }
       },
-      "comment": "difficult but managable. what about that actor?"
+      "comment": "difficult but managable. what about that actor? charlie: actor tagging is separate from these annotations"
     }
   ],
   "overall": "2",
