@@ -37,18 +37,6 @@
             -facts(@movie).each do |fact|
               li
                 =fact
-
-    .row
-      .large-12.columns
-        .panel
-          span.has-tip aria-haspopup="true" data-tooltip="" title="Overview of this movie, compared to all others." Comparison
-          ul
-            -[topic_counts(@movie), topic_sentiments(@movie)].each do |comment, indicator|
-              li
-                -if indicator
-                  span.success.label =comment
-                -else
-                  span.alert.label =comment
     .row
       .large-12.columns
         .panel

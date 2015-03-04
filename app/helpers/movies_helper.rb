@@ -1,19 +1,4 @@
 module MoviesHelper
-  def topic_counts(movie)
-    topic_count_sum = Statistic.find_by_identifier('topic_counts').value.values.sum
-    if movie.stats[:topic_counts].values.sum >= topic_count_sum / Movie.count
-      return ["Has a high amount of overall discussion.", true]
-    end
-    ["Has a low amount of overall discussion.", false]
-  end
-
-  def topic_sentiments(movie)
-    topic_sentiments_sum = Statistic.find_by_identifier('topic_sentiments').value.values.sum
-    if movie.sentiment[:topics].values.sum >= topic_sentiments_sum / Movie.count
-      return ["Has an above average overall aspect sentiment.", true]
-    end
-    ["Has a below average overall aspect sentiment.", false]
-  end
 
   def facts(movie)
     global_people_count = Statistic.find_by_identifier('people_count').value[:count]
