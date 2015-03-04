@@ -11,10 +11,11 @@ module MoviesHelper
         facts << "#{movie.title} has a low variation of ratings."
       end
 
-      if movie.related_people.size >= global_people_count / Movie.count
+      if (movie.related_people[:cast].size + movie.related_people[:directors].size) >= (global_people_count / Movie.count)
         facts << "Has an above average number of cast members."
+      else
+        facts << "Has a below average number of cast members."
       end
-      facts << "Has a below average number of cast members."
 
       facts << "#{movie.sentiment[:topics].max_by{|k,v| v}[0].to_s.capitalize} is the most favoured aspect of the movie."
       facts << "People seem to talk about #{movie.stats[:topic_counts].max_by{|k,v| v}[0].to_s} the most."
