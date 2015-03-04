@@ -19,5 +19,6 @@ RSpec.describe "application/stats", :type => :view do
     expect(page).to have_content("#{Movie.count} movies")
     expect(page).to have_content("#{review_count} reviews")
     expect(page).to have_content("#{people_count} people")
+    expect(page).to have_css("canvas#stats_aspects")
   end
 end
