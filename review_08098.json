@@ -15,7 +15,7 @@
             "it's"
           ],
           "score": "2",
-          "justification": "masterpiece"
+          "justification": "masterpiece, just as good, if not better"
         }
       },
       "comment": ""
@@ -28,7 +28,7 @@
             "film"
           ],
           "score": "1",
-          "justification": "widely recognized"
+          "justification": "widely recognized, ever made"
         }
       },
       "comment": ""
@@ -39,6 +39,13 @@
         "movie": {
           "words": [
             "movie"
+          ],
+          "score": "2",
+          "justification": "milestone in motion picture history"
+        },
+        "novelty": {
+          "words": [
+            "milestone", "motion picture history"
           ],
           "score": "2",
           "justification": "milestone in motion picture history"
@@ -81,17 +88,17 @@
       "aspects": {
         "movie": {
           "words": [
-            "The Seven Samurai"
+            "film-title"
           ],
-          "score": "1",
-          "justification": "gifted, power, richness"
+          "score": "2",
+          "justification": "gifted, meaning, power, richness"
         },
         "cinematography": {
           "words": [
             "technique"
           ],
-          "score": "1",
-          "justification": "power, richness, technique"
+          "score": "2",
+          "justification": "gifted, meaning, power, richness, technique"
         }
       },
       "comment": "Hard to annotate, but definitely positive. Debatable what the 'power, richness, and technique' refers to..."
@@ -108,10 +115,10 @@
         },
         "cinematography": {
           "words": [
-            "image"
+            "image", "cinematic"
           ],
           "score": "2",
-          "justification": "true cinematic poetry"
+          "justification": "true cinematic poetry, rich, emotion"
         }
       },
       "comment": ""
@@ -124,7 +131,7 @@
             "film"
           ],
           "score": "2",
-          "justification": "true beauty, excellence and magic"
+          "justification": "true beauty, excellence and magic, art form"
         }
       },
       "comment": ""
