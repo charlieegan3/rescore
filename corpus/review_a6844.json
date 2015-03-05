@@ -26,13 +26,14 @@
         "cast": {
           "words": [
             "cast",
-            "role"
+            "role",
+            "cast-member mention"
           ],
           "score": "2",
-          "justification": "very good"
+          "justification": "very good, truly excellent"
         }
       },
-      "comment": "don't think that the truly excellent part need extra attention so just leaving it"
+      "comment": "don't think that the truly excellent part need extra attention so just leaving it. charlie: how's that?"
     },
     {
       "text": "Although I'm not a fan of long war movies, these 2,5 hours passed very quickly due to excellent acting, great sets, FX and storyline.",

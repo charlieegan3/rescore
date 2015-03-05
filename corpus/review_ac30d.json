@@ -42,7 +42,7 @@
             "movie"
           ],
           "score": "1",
-          "justification": "fun, entertain"
+          "justification": "fun, entertain, keeps you entertained"
         },
         "vision": {
           "words": [
@@ -52,7 +52,7 @@
           "justification": "amazing"
         }
       },
-      "comment": "Woj: keep(s) enterteained to be added"
+      "comment": "Woj: keep(s) entertained to be added"
     },
     {
       "text": "Ghost Rider is just one of those movies that's cool to look at.",
@@ -109,7 +109,7 @@
             "this movie"
           ],
           "score": "1",
-          "justification": "enjoyed, without ... disappointment"
+          "justification": "enjoyed"
         },
         "vision": {
           "words": [
@@ -127,7 +127,7 @@
           "justification": "true to the original"
         }
       },
-      "comment": ""
+      "comment": "without disappointment is negation"
     }
   ],
   "overall": "1",

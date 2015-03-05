@@ -27,10 +27,10 @@
             "it"
           ],
           "score": "-2",
-          "justification": "really ... BAD"
+          "justification": "sadly, BAD"
         }
       },
-      "comment": ""
+      "comment": "'really' is emphasis"
     },
     {
       "text": "As much as I wanted to like this movie, I just couldn't; not even as a Die Hard fan (no pun intended).",
@@ -40,16 +40,23 @@
             "this movie"
           ],
           "score": "-1",
-          "justification": "couldn't ... like"
+          "justification": "couldn't -> like"
         }
       },
-      "comment": ""
+      "comment": "negation"
     },
     {
       "text": "FIRST, let's look at the selling point.",
       "aspects": {
+        "movie": {
+          "words": [
+            ""
+          ],
+          "score": "1",
+          "justification": "selling point"
+        }
       },
-      "comment": ""
+      "comment": "default to movie scope"
     },
     {
       "text": "We're promised one thing and that is a larger scale than that of the last movie.",
@@ -96,15 +103,15 @@
     {
       "text": "Because the whole movie feels like one action- forced chase.",
       "aspects": {
-        "cast": {
+        "movie": {
           "words": [
-            "act"
+            "whole movie"
           ],
-          "score": "0",
-          "justification": "-"
+          "score": "-1",
+          "justification": "forced"
         }
       },
-      "comment": "should not have been detected"
+      "comment": "should not have been detected. charlie: so I changed it :)"
     },
     {
       "text": "I say action-forced, because everything is so over-the-top to the point where there is no rise of tension, but rather endless pandemonium from start to finish.",
@@ -114,7 +121,7 @@
             "everything"
           ],
           "score": "-2",
-          "justification": "over-the-top"
+          "justification": "over-the-top, no rise of tension, endless pandemonium"
         },
         "plot": {
           "words": [
@@ -131,32 +138,39 @@
       "aspects": {
         "movie": {
           "words": [
-            "-"
+            ""
           ],
-          "score": "-1",
-          "justification": "no excitement"
+          "score": "-2",
+          "justification": "no excitement, no emotional investment"
         }
       },
-      "comment": "not sure how to do it again"
+      "comment": "default to movie scope"
     },
     {
       "text": "Everything just LOOKS grandiose and doesn't feel like anything to that magnitude.",
       "aspects": {
         "vision": {
           "words": [
-            "LOOKS"
+            "looks"
           ],
           "score": "2",
           "justification": "grandiose"
         }
       },
-      "comment": "well??"
+      "comment": "well?? charlie: this is negative but it's not a common enough format to fuss over"
     },
     {
       "text": "Besides, unlike the previous Die Hard movies, the terrorist threats in this movie never get carried out.",
       "aspects": {
+        "movie": {
+          "words": [
+            "this movie"
+          ],
+          "score": "-1",
+          "justification": "never get carried out"
+        }
       },
-      "comment": ""
+      "comment": "'never get carried out' ~ lacking in my book"
     },
     {
       "text": "Everything is just a battle to prevent the threat. I would also argue that the shorter running time is a sign of laziness and a factor to why the movie feels so insignificant.",
@@ -170,13 +184,13 @@
         },
         "length": {
           "words": [
-            "running time"
+            "running time, shorter"
           ],
           "score": "-1",
-          "justification": "shorter... laziness"
+          "justification": "just, laziness"
         }
       },
-      "comment": "not sure how to bite the running time problem here"
+      "comment": "not sure how to bite the running time problem here, i'd say it looks ok now."
     },
     {
       "text": "My other big problem is that the movie is repetitive and boring.",
@@ -185,15 +199,15 @@
           "words": [
             "the movie"
           ],
-          "score": "-1",
-          "justification": "repetitive"
+          "score": "-2",
+          "justification": "repetitive, boring"
         },
         "length": {
           "words": [
             "boring"
           ],
-          "score": "-1",
-          "justification": "boring"
+          "score": "-2",
+          "justification": "repetitive, boring"
         }
       },
       "comment": ""
@@ -246,6 +260,13 @@
     {
       "text": "Speaking of which, the new McClane is really unlikable.",
       "aspects": {
+        "cast": {
+          "words": [
+            "character mention"
+          ],
+          "score": "-1",
+          "justification": "unlikable"
+        }
       },
       "comment": "cast - no cast?"
     },
@@ -264,6 +285,20 @@
     {
       "text": "I can't speak much about the \"villain\" (played by Radivoje Bukvić) without spoiling the movie, but all I have to say is that he has little to no part in the whole movie.",
       "aspects": {
+        "plot": {
+          "words": [
+            "villain"
+          ],
+          "score": "-1",
+          "justification": "little to no part"
+        },
+        "cast": {
+          "words": [
+            "cast-member mention"
+          ],
+          "score": "-1",
+          "justification": "little to no part"
+        }
       },
       "comment": ""
     },
@@ -282,7 +317,7 @@
             "The evil Russian"
           ],
           "score": "-1",
-          "justification": "cliche"
+          "justification": "cliche, cliché"
         }
       },
       "comment": ""
@@ -295,7 +330,7 @@
             "the movie"
           ],
           "score": "1",
-          "justification": "fun to watch"
+          "justification": "fun to watch, positive note, some 'oh shit' moments"
         }
       },
       "comment": ""
@@ -305,10 +340,10 @@
       "aspects": {
         "movie": {
           "words": [
-            "this one"
+            "this one", "film title"
           ],
           "score": "-2",
-          "justification": "stay clear out of..."
+          "justification": "stay clear out of, stay clear of"
         }
       },
       "comment": ""

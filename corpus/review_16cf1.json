@@ -15,19 +15,21 @@
             "dialog",
             "dialogue"
           ],
-          "score": "0"
+          "score": "0",
+          "justification": "miserable, complain"
         }
       },
-      "comment": "talks about other review, and reviewers"
+      "comment": "talks about other review, and reviewers, still mentions dialogue"
     },
     {
       "text": "IF you missed the point of this beyond-beautiful movie, that's your loss.",
       "aspects": {
         "movie": {
           "words": [
-            "beyond-beautiful movie"
+            "movie"
           ],
-          "score": "2"
+          "score": "2",
+          "justification": "beyond-beautiful"
         }
       },
       "comment": ""
@@ -39,7 +41,8 @@
           "words": [
             "this movie"
           ],
-          "score": "2"
+          "score": "2",
+          "justification": "love"
         }
       },
       "comment": "luv"
@@ -51,7 +54,8 @@
           "words": [
             "this one"
           ],
-          "score": "2"
+          "score": "2",
+          "justification": "one stands in its own entity"
         }
       },
       "comment": "stands ... own entity -> +ve"
