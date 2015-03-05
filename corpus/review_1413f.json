@@ -17,7 +17,7 @@
           "score": "2"
         }
       },
-      "comment": ""
+      "comment": "didn't we have ending as a keyword to plot"
     },
     {
       "text": "I loved every part.",
@@ -29,7 +29,7 @@
           "score": "2"
         }
       },
-      "comment": "every part to movie keywords"
+      "comment": "every part to movie keywords, Woj: possibly loved as well?"
     },
     {
       "text": "Great in every possible way.",
@@ -54,7 +54,7 @@
           "score": "1"
         }
       },
-      "comment": ""
+      "comment": "so what defines the sentiment for the characters here?"
     },
     {
       "text": "All six films are now part of the greatest fantasy films ever made.",
@@ -69,7 +69,7 @@
       "comment": ""
     },
     {
-      "text": "I'm glad i had the chance to witness them all.e",
+      "text": "I'm glad i had the chance to witness them all",
       "aspects": {
         "movie": {
           "words": [
@@ -78,9 +78,9 @@
           "score": "1"
         }
       },
-      "comment": ""
+      "comment": "this should be neutral"
     }
   ],
   "overall": "2",
-  "comment": ""
+  "comment": "second marker Woj"
 }

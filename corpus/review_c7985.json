@@ -11,7 +11,7 @@
       "text": "I left feeling that I had wasted two hours of my life, and I'm not the type who watches pop features like Rocky XVII.",
       "aspects": {
       },
-      "comment": "this is perhaps about the length but isn't really focused enough to qualify"
+      "comment": "this is perhaps about the length but isn't really focused enough to qualify. Woj: oh yeah! add wasted .... life as a length -2 - definitely"
     },
     {
       "text": "I enjoy the art house genre that this clearly belongs to.",
@@ -34,7 +34,7 @@
             "the loose ends"
           ],
           "score": "-2",
-          "justification": "waiting in vain"
+          "justification": "waiting ... in vain"
         }
       },
       "comment": "quite a tough sentence"
@@ -97,7 +97,7 @@
           "justification": "doesn't make it good"
         }
       },
-      "comment": ""
+      "comment": "would chuck it all - too complicated"
     },
     {
       "text": "Since this is a play within a movie that is set in a theater, I got the feeling that there are inside jokes that those in or familiar with the business (such as critics) will get but which is over the heads the audience.",
@@ -120,6 +120,6 @@
       "comment": "another tough sentence"
     }
   ],
-  "overall": "-2",
-  "comment": "this is a fairly negative review all round. It is also going to be a very complex one to correctly compute a score for. There are a lot of complex features."
+  "overall": "-1",
+  "comment": "this is a fairly negative review all round. It is also going to be a very complex one to correctly compute a score for. There are a lot of complex features. second marker Woj"
 }

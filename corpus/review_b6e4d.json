@@ -17,7 +17,7 @@
           "score": "1"
         }
       },
-      "comment": "the conversation about the movie is negative in other reviews"
+      "comment": "the conversation about the movie is negative in other reviews; Woj add going to recommend as positive?"
     },
     {
       "text": "Writer Director Alex Garland has done an amazing job, it's beautifully shot, fantastically lit, intelligently written, brilliantly cast.",
@@ -45,6 +45,12 @@
             "shot"
           ],
           "score": "2"
+        },
+        "movie": {
+          "words": [
+            "job"
+          ],
+          "score": "2"
         }
       },
       "comment": "is intelligently written about dialog or plot? I said dialog here."
@@ -70,6 +76,12 @@
             "nothing superfluous"
           ],
           "score": "1"
+        },
+        "movie": {
+          "words": [
+            "engaging"
+          ],
+          "score": "1"
         }
       },
       "comment": "I think nothing superfluous is a positive comment about length"
@@ -84,21 +96,21 @@
           "score": "2"
         }
       },
-      "comment": "do we need a complexity aspect? or even a arty vs plain aspect?"
+      "comment": "do we need a complexity aspect? or even a arty vs plain aspect? Woj: is perfect the sentiment carrier here?"
     },
     {
-      "text": "Best seen in a cinema I reckon.e",
+      "text": "Best seen in a cinema I reckon",
       "aspects": {
         "movie": {
           "words": [
             ""
           ],
-          "score": "1"
+          "score": "0"
         }
       },
-      "comment": "I think this is positive, he may also be saying the movie wouldn't work off the big screen"
+      "comment": "I think this is positive, he may also be saying the movie wouldn't work off the big screen. I think it's not relevant."
     }
   ],
   "overall": "2",
-  "comment": "there are a number of suggested amendments in the comments on sentences"
+  "comment": "there are a number of suggested amendments in the comments on sentences. second marker Woj"
 }

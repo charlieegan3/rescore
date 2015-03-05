@@ -39,7 +39,7 @@
           "justification": "assured"
         }
       },
-      "comment": ""
+      "comment": "yeah, make your sentences even longer, bitch"
     },
     {
       "text": "The writer here has taken care not to paint one side entirely good or bad and that is how it was.",
@@ -69,9 +69,16 @@
           ],
           "score": "2",
           "justification": "beautifully"
+        },
+        "vision": {
+          "words": [
+            "design"
+          ],
+          "score": "2",
+          "justification": "beautifully"
         }
       },
-      "comment": "not sure if this is the best way to do it"
+      "comment": "not sure if this is the best way to do it, Woj: maybe it looks better now?"
     },
     {
       "text": "The editing, directing, lighting is all bang on the money but greatest of all is the casting, for it is not only O'Connell who shines here, but the younger members of the cast almost upstage him with their brilliant performances.",
@@ -163,22 +170,22 @@
     {
       "text": "This film is living proof that we can make thrilling and exciting cinema in the UK but still leave some room for Social Commentary within the context of a great story - an excellent thriller which hints at the dark path that was to follow in Northern Ireland for many years.",
       "aspects": {
-        "movie": {
+        "story": {
           "words": [
             "thriller"
           ],
           "score": "2",
           "justification": "excellent"
         },
-        "plot": {
+        "movie": {
           "words": [
-            "story"
+            "cinema"
           ],
           "score": "2",
-          "justification": "thrilling"
+          "justification": "thrilling, exciting"
         }
       },
-      "comment": "not sure if this is right"
+      "comment": "not sure if this is right, Woj: is it better now? add thriller as story?"
     },
     {
       "text": "Strongly recommended. ",
@@ -191,9 +198,9 @@
           "justification": "Strongly recommended"
         }
       },
-      "comment": ""
+      "comment": "add recommended to dic"
     }
   ],
   "overall": "2",
-  "comment": "See last sentence - no way to anchor sentiment - many difficult sentences."
+  "comment": "See last sentence - no way to anchor sentiment - many difficult sentences. second marker Woj lol"
 }

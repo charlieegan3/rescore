@@ -1,0 +1,319 @@
+{
+  "title": "A Good Day to Die Hard",
+  "genres": "Action",
+  "source": "http://www.imdb.com/title/tt1606378/reviews?ref_=tt_ov_rt",
+  "score": "2/10",
+  "helpfulness": "463/569",
+  "author": "Wojtek",
+  "body": "  So what did everyone do as soon as they heard John Moore was directing the next Die Hard film? Look up his filmography and see titles like the remake of Omen and Max Payne. And now, sadly, A Good Day to Die Hard will join Moore's list of bad films, because it really is BAD.  As much as I wanted to like this movie, I just couldn't; not even as a Die Hard fan (no pun intended).  FIRST, let's look at the selling point. We're promised one thing and that is a larger scale than that of the last movie. You see, the first Die Hard took place in a plaza. The second one took place in an airport. The third was in New York, and the fourth was in the entire nation of USA. So logically, Die Hard 5 was going to go international. Ironically, A Good Day to Die Hard feels like the smallest film out of the five. Why? Because the whole movie feels like one action- forced chase. I say action-forced, because everything is so over-the-top to the point where there is no rise of tension, but rather endless pandemonium from start to finish. No emotional investment, no excitement. Everything just LOOKS grandiose and doesn't feel like anything to that magnitude. Besides, unlike the previous Die Hard movies, the terrorist threats in this movie never get carried out. Everything is just a battle to prevent the threat. I would also argue that the shorter running time is a sign of laziness and a factor to why the movie feels so insignificant.  My other big problem is that the movie is repetitive and boring. The one-liners aren't clever (by the way, there was no \"Yippee Ki-Yay, mother****er\" delivered. EDIT: some people have claimed to have heard it, I haven't). The jokes aren't funny. The bad family relationship story is getting really tiresome, especially when Die Hard 4 focused primarily on the father-daughter relationship. Speaking of which, the new McClane is really unlikable. Unlike Lucy McClane who just came off as a brat, Jack McClane is introduced pulling a gun on his father. Why would we ever like this kid, especially when we've known and loved Bruce Willis' character for four movies?  I can't speak much about the \"villain\" (played by Radivoje Bukvić) without spoiling the movie, but all I have to say is that he has little to no part in the whole movie. The evil Russian comes off as a cliché, anti-American terrorist, and he possesses and carries out no threat. I'm dying to talk about the story here, but let's just say it has a really stupid ending.  In an attempt to end the review on a more positive note, I'd like to say that the movie does have some \"oh sh*t\" moments that can be fun to watch. However, I'd stay clear out of this one (unless you're a Die Hard fan). ",
+  "annotated_sentences": [
+    {
+      "text": "  So what did everyone do as soon as they heard John Moore was directing the next Die Hard film?",
+      "aspects": {
+      },
+      "comment": "ignore"
+    },
+    {
+      "text": "Look up his filmography and see titles like the remake of Omen and Max Payne.",
+      "aspects": {
+      },
+      "comment": "ignore"
+    },
+    {
+      "text": "And now, sadly, A Good Day to Die Hard will join Moore's list of bad films, because it really is BAD.",
+      "aspects": {
+        "movie": {
+          "words": [
+            "it"
+          ],
+          "score": "-2",
+          "justification": "really ... BAD"
+        }
+      },
+      "comment": ""
+    },
+    {
+      "text": "As much as I wanted to like this movie, I just couldn't; not even as a Die Hard fan (no pun intended).",
+      "aspects": {
+        "movie": {
+          "words": [
+            "this movie"
+          ],
+          "score": "-1",
+          "justification": "couldn't ... like"
+        }
+      },
+      "comment": ""
+    },
+    {
+      "text": "FIRST, let's look at the selling point.",
+      "aspects": {
+      },
+      "comment": ""
+    },
+    {
+      "text": "We're promised one thing and that is a larger scale than that of the last movie.",
+      "aspects": {
+      },
+      "comment": ""
+    },
+    {
+      "text": "You see, the first Die Hard took place in a plaza.",
+      "aspects": {
+      },
+      "comment": ""
+    },
+    {
+      "text": "The second one took place in an airport.",
+      "aspects": {
+      },
+      "comment": ""
+    },
+    {
+      "text": "The third was in New York, and the fourth was in the entire nation of USA.",
+      "aspects": {
+      },
+      "comment": ""
+    },
+    {
+      "text": "So logically, Die Hard 5 was going to go international.",
+      "aspects": {
+      },
+      "comment": ""
+    },
+    {
+      "text": "Ironically, A Good Day to Die Hard feels like the smallest film out of the five.",
+      "aspects": {
+      },
+      "comment": "does say it's bad, but only with respect to the whole series"
+    },
+    {
+      "text": "Why?",
+      "aspects": {
+      },
+      "comment": ""
+    },
+    {
+      "text": "Because the whole movie feels like one action- forced chase.",
+      "aspects": {
+        "cast": {
+          "words": [
+            "act"
+          ],
+          "score": "0",
+          "justification": "-"
+        }
+      },
+      "comment": "should not have been detected"
+    },
+    {
+      "text": "I say action-forced, because everything is so over-the-top to the point where there is no rise of tension, but rather endless pandemonium from start to finish.",
+      "aspects": {
+        "movie": {
+          "words": [
+            "everything"
+          ],
+          "score": "-2",
+          "justification": "over-the-top"
+        },
+        "plot": {
+          "words": [
+            "action-forced"
+          ],
+          "score": "-1",
+          "justification": "action-forced"
+        }
+      },
+      "comment": ""
+    },
+    {
+      "text": "No emotional investment, no excitement.",
+      "aspects": {
+        "movie": {
+          "words": [
+            "-"
+          ],
+          "score": "-1",
+          "justification": "no excitement"
+        }
+      },
+      "comment": "not sure how to do it again"
+    },
+    {
+      "text": "Everything just LOOKS grandiose and doesn't feel like anything to that magnitude.",
+      "aspects": {
+        "vision": {
+          "words": [
+            "LOOKS"
+          ],
+          "score": "2",
+          "justification": "grandiose"
+        }
+      },
+      "comment": "well??"
+    },
+    {
+      "text": "Besides, unlike the previous Die Hard movies, the terrorist threats in this movie never get carried out.",
+      "aspects": {
+      },
+      "comment": ""
+    },
+    {
+      "text": "Everything is just a battle to prevent the threat. I would also argue that the shorter running time is a sign of laziness and a factor to why the movie feels so insignificant.",
+      "aspects": {
+        "movie": {
+          "words": [
+            "movie"
+          ],
+          "score": "-1",
+          "justification": "insignificant"
+        },
+        "length": {
+          "words": [
+            "running time"
+          ],
+          "score": "-1",
+          "justification": "shorter... laziness"
+        }
+      },
+      "comment": "not sure how to bite the running time problem here"
+    },
+    {
+      "text": "My other big problem is that the movie is repetitive and boring.",
+      "aspects": {
+        "movie": {
+          "words": [
+            "the movie"
+          ],
+          "score": "-1",
+          "justification": "repetitive"
+        },
+        "length": {
+          "words": [
+            "boring"
+          ],
+          "score": "-1",
+          "justification": "boring"
+        }
+      },
+      "comment": ""
+    },
+    {
+      "text": "The one-liners aren't clever (by the way, there was no \"Yippee Ki-Yay, mother****er\" delivered.",
+      "aspects": {
+        "dialog": {
+          "words": [
+            "one-liners"
+          ],
+          "score": "-1",
+          "justification": "aren't clever"
+        }
+      },
+      "comment": ""
+    },
+    {
+      "text": "EDIT: some people have claimed to have heard it, I haven't).",
+      "aspects": {
+      },
+      "comment": ""
+    },
+    {
+      "text": "The jokes aren't funny.",
+      "aspects": {
+        "dialog": {
+          "words": [
+            "jokes"
+          ],
+          "score": "-1",
+          "justification": "aren't funny"
+        }
+      },
+      "comment": ""
+    },
+    {
+      "text": "The bad family relationship story is getting really tiresome, especially when Die Hard 4 focused primarily on the father-daughter relationship.",
+      "aspects": {
+        "plot": {
+          "words": [
+            "story"
+          ],
+          "score": "-1",
+          "justification": "tiresome"
+        }
+      },
+      "comment": ""
+    },
+    {
+      "text": "Speaking of which, the new McClane is really unlikable.",
+      "aspects": {
+      },
+      "comment": "cast - no cast?"
+    },
+    {
+      "text": "Unlike Lucy McClane who just came off as a brat, Jack McClane is introduced pulling a gun on his father.",
+      "aspects": {
+      },
+      "comment": ""
+    },
+    {
+      "text": "Why would we ever like this kid, especially when we've known and loved Bruce Willis' character for four movies?",
+      "aspects": {
+      },
+      "comment": "ignore"
+    },
+    {
+      "text": "I can't speak much about the \"villain\" (played by Radivoje Bukvić) without spoiling the movie, but all I have to say is that he has little to no part in the whole movie.",
+      "aspects": {
+      },
+      "comment": ""
+    },
+    {
+      "text": "The evil Russian comes off as a cliché, anti-American terrorist, and he possesses and carries out no threat. I'm dying to talk about the story here, but let's just say it has a really stupid ending.",
+      "aspects": {
+        "plot": {
+          "words": [
+            "story"
+          ],
+          "score": "-1",
+          "justification": "stupid"
+        },
+        "cast": {
+          "words": [
+            "The evil Russian"
+          ],
+          "score": "-1",
+          "justification": "cliche"
+        }
+      },
+      "comment": ""
+    },
+    {
+      "text": "In an attempt to end the review on a more positive note, I'd like to say that the movie does have some \"oh sh*t\" moments that can be fun to watch.",
+      "aspects": {
+        "movie": {
+          "words": [
+            "the movie"
+          ],
+          "score": "1",
+          "justification": "fun to watch"
+        }
+      },
+      "comment": ""
+    },
+    {
+      "text": "However, I'd stay clear out of this one (unless you're a Die Hard fan). ",
+      "aspects": {
+        "movie": {
+          "words": [
+            "this one"
+          ],
+          "score": "-2",
+          "justification": "stay clear out of..."
+        }
+      },
+      "comment": ""
+    }
+  ],
+  "overall": "-2",
+  "comment": "Woj"
+}
