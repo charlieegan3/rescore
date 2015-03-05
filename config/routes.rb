@@ -29,9 +29,11 @@ Rails.application.routes.draw do
   get 'movies/:id/favorite' => 'favorites#set', as: :favorite_movie
   resources :movies
 
-
   get "/auth/:provider/callback" => "sessions#create"
   get "/signout" => "sessions#destroy", :as => :signout
+
+  get 'api' => 'api#index', as: :api
+  post 'api' => 'api#review'
 
   # Example resource route with options:
   #   resources :products do

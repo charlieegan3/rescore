@@ -85,10 +85,10 @@
         },
         "vision": {
           "words": [
-            "colour"
+            "colour, lens, camera, distortion"
           ],
           "score": "2",
-          "justification": "lens, camera, distortion"
+          "justification": "ultimate"
         },
         "cinematography": {
           "words": [
@@ -138,7 +138,7 @@
           "justification": "extremely well crafted"
         }
       },
-      "comment": ""
+      "comment": "needs exaggeration to work"
     },
     {
       "text": "Unlike some of his previous work, the editing, the pacing and the rhythm of \"Budapest\" are pitch-perfect.Is it a great film?",
@@ -206,17 +206,11 @@
         "plot": {
           "words": [
             "characters",
-            "character"
-          ],
-          "score": "2",
-          "justification": "fascinating"
-        },
-        "cinematography": {
-          "words": [
+            "character",
             "nostalgia"
           ],
           "score": "2",
-          "justification": "seeps with nostalgia"
+          "justification": "seeps with, fascinating"
         }
       },
       "comment": "bit of a tough sentence"
@@ -227,6 +221,13 @@
         "movie": {
           "words": [
             "It"
+          ],
+          "score": "1",
+          "justification": "suit... very well"
+        },
+        "dialog": {
+          "words": [
+            "comedy"
           ],
           "score": "1",
           "justification": "suit... very well"

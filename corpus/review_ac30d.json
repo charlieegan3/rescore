@@ -50,6 +50,13 @@
           ],
           "score": "2",
           "justification": "amazing"
+        },
+        "vision": {
+          "words": [
+            "visual effects"
+          ],
+          "score": "2",
+          "justification": "amazing"
         }
       },
       "comment": ""
@@ -59,9 +66,9 @@
       "aspects": {
         "vision": {
           "words": [
-            "look at"
+            "to look at"
           ],
-          "score": "2",
+          "score": "1",
           "justification": "cool"
         }
       },

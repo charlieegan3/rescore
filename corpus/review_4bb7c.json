@@ -101,7 +101,7 @@
           "justification": "No"
         }
       },
-      "comment": "neutral - should not detect sentiment in the sentence, so if it does, can erase my "0" "
+      "comment": "neutral - should not detect sentiment in the sentence, so if it does, can erase my 0"
     },
     {
       "text": "No interstellar spaceships.",

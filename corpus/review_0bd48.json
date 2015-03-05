@@ -29,6 +29,14 @@
           ],
           "score": "2",
           "justification": "extremely well written"
+        },
+        "cast": {
+          "words": [
+            "plays a",
+            "performance"
+          ],
+          "score": "2",
+          "justification": "assured"
         }
       },
       "comment": ""
@@ -48,7 +56,14 @@
     {
       "text": "I don't want to be accused of gushing praise, but there is much to compliment the whole team involved here, from the tones of the production design, beautifully capturing the mood feel and look of the 1970's in drab pastels and the grey of urban decay.",
       "aspects": {
-        "vision": {
+        "cinematography": {
+          "words": [
+            "production"
+          ],
+          "score": "1",
+          "justification": "compliment"
+        },
+        "credibility": {
           "words": [
             "capturing"
           ],
@@ -122,6 +137,13 @@
     {
       "text": "The film also takes time to give Hooks character some context, so we have some idea of his own life and attachments back home.",
       "aspects": {
+        "plot": {
+          "words": [
+            "character"
+          ],
+          "score": "1",
+          "justification": "takes time"
+        }
       },
       "comment": "ignore"
     },
@@ -147,6 +169,13 @@
           ],
           "score": "2",
           "justification": "excellent"
+        },
+        "plot": {
+          "words": [
+            "story"
+          ],
+          "score": "2",
+          "justification": "thrilling"
         }
       },
       "comment": "not sure if this is right"

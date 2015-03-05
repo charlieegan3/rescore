@@ -67,19 +67,12 @@
     {
       "text": "IMDb movie reviews have to be 10 lines, but Unbroken doesn't really deserve it.",
       "aspects": {
-        "dialog": {
-          "words": [
-            "lines"
-          ],
-          "score": "0",
-          "justification": "-"
-        },
         "movie": {
           "words": [
-            "Unbroken"
+            "title"
           ],
           "score": "-1",
-          "justification": "doesn't really deserve"
+          "justification": "doesn't ... deserve."
         }
       },
       "comment": "this is getting into negation"
@@ -98,6 +91,13 @@
             "It"
           ],
           "score": "0",
+          "justification": "predictable - 1, forgivable +1"
+        },
+        "plot": {
+          "words": [
+            "narratively"
+          ],
+          "score": "-1",
           "justification": "predictable -1 but forgivable +1"
         }
       },
@@ -110,7 +110,7 @@
           "words": [
             "visual"
           ],
-          "score": "0",
+          "score": "-1",
           "justification": "predictable"
         }
       },
