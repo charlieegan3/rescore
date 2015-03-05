@@ -18,17 +18,31 @@
       "aspects": {
         "movie": {
           "words": [
-            "Caligari"
+            "film-title"
           ],
-          "score": "1",
-          "justification": "Magnificently fake"
+          "score": "0",
+          "justification": "magnificently(+1) fake(-1)"
+        },
+        "credibility": {
+          "words": [
+            "fake"
+          ],
+          "score": "-1",
+          "justification": "fake"
         }
       },
-      "comment": "one of those phrases that you wouldn't know how to react to if you didn't know he gave a 4.5/5"
+      "comment": "one of those phrases that you wouldn't know how to react to if you didn't know he gave a 4.5/5. charlie: I'd say 0"
     },
     {
       "text": "No one was trying to fool anyone with the obviously phony backdrops, the painted shadows on the walls, the flat prop trees, or the misshapen doors, windows, and walkways.",
       "aspects": {
+        "credibility": {
+          "words": [
+            "phony"
+          ],
+          "score": "-1",
+          "justification": "phony, misshapen"
+        }
       },
       "comment": ""
     },
@@ -53,10 +67,10 @@
             "visual"
           ],
           "score": "1",
-          "justification": "continues to set a standard"
+          "justification": "continues to set a standard, flair"
         }
       },
-      "comment": "you take a more serious review and a few sentences in start to regret it. but gotta do it as well, don't I?"
+      "comment": "you take a more serious review and a few sentences in start to regret it. but gotta do it as well, don't I? charlie: appreciate the effort :)"
     },
     {
       "text": "It’s also one hell of a movie.",
@@ -76,7 +90,7 @@
       "aspects": {
         "movie": {
           "words": [
-            "The Cabinet Of Dr. Caligari"
+            "film-title"
           ],
           "score": "2",
           "justification": "eerie, efficient"
@@ -93,6 +107,13 @@
           ],
           "score": "1",
           "justification": "tantalizingly"
+        },
+        "plot": {
+          "words": [
+            "flashes back"
+          ],
+          "score": "0",
+          "justification": ""
         }
       },
       "comment": ""
@@ -100,31 +121,59 @@
     {
       "text": "But the flashback doesn’t start right away.",
       "aspects": {
+        "plot": {
+          "words": [
+            "flashback"
+          ],
+          "score": "0",
+          "justification": ""
+        }
       },
       "comment": ""
     },
     {
       "text": "First, Wiene and cinematographer Willy Hameister iris in and out several times in succession, as Francis sets the scene for his bench-mate, talking about a mountain village and fateful carnival.",
       "aspects": {
+        "plot": {
+          "words": [
+            "sets the scene"
+          ],
+          "score": "0",
+          "justification": ""
+        }
       },
       "comment": ""
     },
     {
       "text": "The halting intro has a mesmerizing effect—apt for a film about a hypnotist.",
       "aspects": {
+        "movie": {
+          "words": [
+            "a film"
+          ],
+          "score": "1",
+          "justification": "mesmerizing effect-apt"
+        },
         "vision": {
           "words": [
-            "intro"
+            "mesmerizing"
           ],
           "score": "1",
           "justification": "mesmerizing effect-apt"
         }
       },
-      "comment": "talks about vision, but no specific word to describe it. perhaps skip?"
+      "comment": "talks about vision, but no specific word to describe it. perhaps skip? charlie: mesmerizing can be a vision word"
     },
     {
       "text": "Francis’ flashback tells of a man named Dr. Caligari (Werner Krauss), with a curious carnival act: He travels with a sleepwalker named Cesare (Conrad Veidt), whom Caligari claims is under his spell, and can both predict the future and read minds.",
       "aspects": {
+        "plot": {
+          "words": [
+            "flashback"
+          ],
+          "score": "0",
+          "justification": ""
+        }
       },
       "comment": "summarizing"
     },
@@ -148,7 +197,9 @@
             "sound",
             "music",
             "soundtrack",
-            "score"
+            "score",
+            "orchestrated",
+            "moody piece"
           ],
           "score": "2",
           "justification": "excellent, richly orchestrated"
@@ -159,6 +210,13 @@
     {
       "text": "The cleaned-up picture of this new Caligari may be a revelation to anyone whose primary memories of the movie are of hazy, distorted old video transfers of battered prints.",
       "aspects": {
+        "vision": {
+          "words": [
+            "hazy", "distorted"
+          ],
+          "score": "2",
+          "justification": "revelation"
+        }
       },
       "comment": ""
     },
@@ -167,7 +225,7 @@
       "aspects": {
         "vision": {
           "words": [
-            "level of detail"
+            "level of detail", "4K"
           ],
           "score": "1",
           "justification": "clearer, more impressive"
@@ -186,7 +244,7 @@
           "justification": "modern"
         },
       },
-      "comment": ""
+      "comment": "charlie: this is a tough sentence"
     },
     {
       "text": "Caligari illustrates something more eternal: about great manipulators, and the underlying anxiety that either society has gone mad, or we have.",
@@ -196,20 +254,20 @@
             "illustrates something"
           ],
           "score": "1",
-          "justification": "more eternal"
+          "justification": "more eternal, great, gone mad"
         }
       },
-      "comment": "didn't know exactly how to annotate this - have a look"
+      "comment": "didn't know exactly how to annotate this. charlie: tricky one, made some suggestions"
     },
     {
       "text": "One of the big reasons The Cabinet Of Dr. Caligari still seems so vital is because artists and theoreticians haven’t stopped being influenced by it.",
       "aspects": {
         "movie": {
           "words": [
-            "The Cabinet Of Dr. Caligari"
+            "file-title"
           ],
           "score": "1",
-          "justification": "Vital"
+          "justification": "vital"
         }
       },
       "comment": ""
@@ -237,10 +295,10 @@
       "aspects": {
         "movie": {
           "words": [
-            "The Cabinet Of Dr. Caligari"
+            "file-title"
           ],
-          "score": "2",
-          "justification": "pervaded popular culture"
+          "score": "1",
+          "justification": "pervaded popular culture, funky"
         }
       },
       "comment": ""
@@ -267,9 +325,16 @@
           ],
           "score": "1",
           "justification": "eye-catching"
+        },
+        "plot": {
+          "words": [
+            "villian"
+          ],
+          "score": "0",
+          "justification": ""
         }
       },
-      "comment": ""
+      "comment": "no sentiment attached to plot"
     },
     {
       "text": "But it’s also symbolic, showing how strong words can compel.  ",
