@@ -26,7 +26,8 @@
           "words": [
             "every part"
           ],
-          "score": "2"
+          "score": "2",
+          "justification": "loved"
         }
       },
       "comment": "every part to movie keywords, Woj: possibly loved as well?"
@@ -51,7 +52,8 @@
             "characters",
             "character"
           ],
-          "score": "1"
+          "score": "1",
+          "justification": "miss this, audacity, creative vision"
         }
       },
       "comment": "so what defines the sentiment for the characters here?"

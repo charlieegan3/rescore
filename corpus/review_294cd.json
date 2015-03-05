@@ -26,18 +26,18 @@
           "words": [
             "acting"
           ],
-          "score": "-1",
-          "justification": "overacting"
+          "score": "0",
+          "justification": "(overacting)"
         },
         "novelty": {
           "words": [
             "original"
           ],
-          "score": "-1",
-          "justification": "lack originality"
+          "score": "0",
+          "justification": "(lack originality)"
         }
       },
-      "comment": "Talks about horror movies in general. Woj: any chance the presence of they could neutralise these sentiments which are clearly not about the movie itself?"
+      "comment": "They counteracts sentiment, ideally"
     },
     {
       "text": "The only horror movie i like was Stir of Echoes with Kevin Bacon.",

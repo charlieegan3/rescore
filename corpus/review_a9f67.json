@@ -20,11 +20,11 @@
           "words": [
             "title of the film"
           ],
-          "score": "2",
+          "score": "1",
           "justification": "brilliant"
         }
       },
-      "comment": "ridiculous makes this sentence harder, which also means that the sentence is not worth 2, tbh"
+      "comment": "ridiculous makes this sentence harder, which also means that the sentence is not worth 2 charlie: changed"
     },
     {
       "text": "It is his best work, or at least the film which has all of Anderson's creative impulses working in one direction, producing a coherent work of art.",
@@ -250,22 +250,15 @@
     {
       "text": "There is comedy, but its either very subtle or incredibly over the top, and most viewers are uncomfortable with both.",
       "aspects": {
-        "movie": {
-          "words": [
-            "viewers"
-          ],
-          "score": "-1",
-          "justification": "uncomfortable"
-        },
         "dialog": {
           "words": [
             "comedy"
           ],
           "score": "-2",
-          "justification": "incredibly over the top"
+          "justification": "incredibly over the top, uncomfortable"
         }
       },
-      "comment": "that's how I would see it. plus add OTT"
+      "comment": "that's how I would see it. plus add OTT charlie: personally think this is just dialog"
     },
     {
       "text": "There isn't a single 'ordinary shot', pretty much every image is out of place to such an extent that they begin to form one coherent film, and a fantastic one at that.",
@@ -278,7 +271,7 @@
           "justification": "fantastic"
         }
       },
-      "comment": "out of place?"
+      "comment": "out of place? charlie: ambigious"
     }
   ],
   "overall": "1",

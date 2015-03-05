@@ -14,7 +14,8 @@
           "words": [
             "a movie"
           ],
-          "score": "1"
+          "score": "1",
+          "justification": "recommend"
         }
       },
       "comment": "the conversation about the movie is negative in other reviews; Woj add going to recommend as positive?"
@@ -26,34 +27,32 @@
           "words": [
             "cast"
           ],
-          "score": "2"
+          "score": "2",
+          "justification": "brilliantly"
         },
         "vision": {
           "words": [
-            "beautiful"
+            "shot"
           ],
-          "score": "2"
+          "score": "2",
+          "justification": "beautifully"
         },
         "dialog": {
           "words": [
             "written"
           ],
-          "score": "2"
-        },
-        "editing": {
-          "words": [
-            "shot"
-          ],
-          "score": "2"
+          "score": "2",
+          "justification": "intelligently"
         },
         "movie": {
           "words": [
-            "job"
+            "job", "it's"
           ],
-          "score": "2"
+          "score": "2",
+          "justification": "all of the above"
         }
       },
-      "comment": "is intelligently written about dialog or plot? I said dialog here."
+      "comment": "is intelligently written about dialog or plot? I said dialog here. charlie: looks good to me now"
     },
     {
       "text": "the edit is original and brave, as is the direction of the edit, There is nothing superfluous, to the contrary it' has a sharp Zen like quality, clearly the application of a disciplined mind.The movie is's self is engaging, thoroughly watchable, the characters are simple and yet layered with complexity.",

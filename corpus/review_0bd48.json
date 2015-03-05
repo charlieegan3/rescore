@@ -170,7 +170,7 @@
     {
       "text": "This film is living proof that we can make thrilling and exciting cinema in the UK but still leave some room for Social Commentary within the context of a great story - an excellent thriller which hints at the dark path that was to follow in Northern Ireland for many years.",
       "aspects": {
-        "story": {
+        "plot": {
           "words": [
             "thriller"
           ],
@@ -185,7 +185,7 @@
           "justification": "thrilling, exciting"
         }
       },
-      "comment": "not sure if this is right, Woj: is it better now? add thriller as story?"
+      "comment": "not sure if this is right, Woj: is it better now? add thriller as story? charlie: as plot"
     },
     {
       "text": "Strongly recommended. ",

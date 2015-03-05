@@ -25,7 +25,7 @@
       "aspects": {
         "cast": {
           "words": [
-            "Arnold"
+            "cast-member-mention"
           ],
           "score": "2",
           "justification": "rules"
@@ -41,5 +41,5 @@
     }
   ],
   "overall": "2",
-  "comment": "shit review tbh, second marker Woj"
+  "comment": "second marker Woj, 3rd charlie"
 }

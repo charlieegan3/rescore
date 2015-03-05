@@ -22,17 +22,17 @@
             "performance"
           ],
           "score": "2",
-          "justification": "best, ... ever seen"
+          "justification": "best"
         },
         "dialog": {
           "words": [
-            "film"
+            "funny"
           ],
-          "score": "2",
-          "justification": "incredibly funny"
+          "score": "1",
+          "justification": "funny"
         }
       },
-      "comment": ""
+      "comment": "account for exaggeration later"
     },
     {
       "text": "I'm very surprised that they are not as famous as i would of thought they would be to this day. There is a lot of bad language in the film but it just makes it seem more realistic.",
@@ -43,9 +43,16 @@
           ],
           "score": "2",
           "justification": "realistic"
+        },
+        "dialog": {
+          "words": [
+            "language"
+          ],
+          "score": "2",
+          "justification": "realistic"
         }
       },
-      "comment": "Woj: lanugage indicated dialog, we need sth more general"
+      "comment": "Woj: lanugage indicated dialog, we need sth more general. charlie: added it"
     },
     {
       "text": "There were also some tearful moments in it too especially towards the end but i think that just made the movie seem even more special to me.",
@@ -58,7 +65,7 @@
           "justification": "special"
         }
       },
-      "comment": "Woj: maybe to subjective?"
+      "comment": "Woj: maybe to subjective? charlie: think this is ok"
     },
     {
       "text": "This film has everything, its funny, its adventurous, its tearful and it has a friendship based plot.",
@@ -69,13 +76,6 @@
           ],
           "score": "2",
           "justification": "has everything, adventurous"
-        },
-        "credibility": {
-          "words": [
-            "this film"
-          ],
-          "score": "2",
-          "justification": "funny"
         },
         "plot": {
           "words": [
@@ -98,7 +98,7 @@
           "justification": "favourite"
         }
       },
-      "comment": ""
+      "comment": "favourite would get a 2 from me"
     },
     {
       "text": "Don't miss out watch it",
