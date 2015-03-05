@@ -44,7 +44,7 @@
           "justification": "genius"
         }
       },
-      "comment": "this sentence contians feature that we do want to cover, just not right now."
+      "comment": "this sentence contians feature that we do want to cover, just not right now. what about kicks ass? let's at least add it to dictionary"
     },
     {
       "text": "A comical, kick ass film that I would happily watch again and again and again.",
@@ -54,12 +54,12 @@
             "film"
           ],
           "score": "2",
-          "justification": "kick ass, comical, happily watch again"
+          "justification": "kick ass, comical, happily watch again - yep"
         }
       },
       "comment": ""
     }
   ],
   "overall": "2",
-  "comment": ""
+  "comment": "second marker Woj"
 }

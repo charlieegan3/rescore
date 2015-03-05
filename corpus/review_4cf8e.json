@@ -18,13 +18,20 @@
           "justification": "down right action packed"
         }
       },
-      "comment": ""
+      "comment": "not sure if this is positive out of context"
     },
     {
       "text": "Arnold Schwartezennager rules!",
       "aspects": {
+        "cast": {
+          "words": [
+            "Arnold"
+          ],
+          "score": "2",
+          "justification": "rules"
+        }
       },
-      "comment": ""
+      "comment": "even if we don't do people, let's add rules"
     },
     {
       "text": "! ",
@@ -34,5 +41,5 @@
     }
   ],
   "overall": "2",
-  "comment": ""
+  "comment": "shit review tbh, second marker Woj"
 }

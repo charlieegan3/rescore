@@ -15,14 +15,21 @@
             "film"
           ],
           "score": "2",
-          "justification": "The most amazing film"
+          "justification": "most amazing"
         },
         "cast": {
           "words": [
             "performance"
           ],
           "score": "2",
-          "justification": "truly one of the best, best i have ever seen"
+          "justification": "best, ... ever seen"
+        },
+        "dialog": {
+          "words": [
+            "film"
+          ],
+          "score": "2",
+          "justification": "incredibly funny"
         }
       },
       "comment": ""
@@ -30,15 +37,15 @@
     {
       "text": "I'm very surprised that they are not as famous as i would of thought they would be to this day. There is a lot of bad language in the film but it just makes it seem more realistic.",
       "aspects": {
-        "dialog": {
+        "credibility": {
           "words": [
-            "language"
+            "film"
           ],
           "score": "2",
-          "justification": "more realistic"
+          "justification": "realistic"
         }
       },
-      "comment": ""
+      "comment": "Woj: lanugage indicated dialog, we need sth more general"
     },
     {
       "text": "There were also some tearful moments in it too especially towards the end but i think that just made the movie seem even more special to me.",
@@ -48,10 +55,10 @@
             "the movie"
           ],
           "score": "2",
-          "justification": "even more special"
+          "justification": "special"
         }
       },
-      "comment": ""
+      "comment": "Woj: maybe to subjective?"
     },
     {
       "text": "This film has everything, its funny, its adventurous, its tearful and it has a friendship based plot.",
@@ -61,7 +68,14 @@
             "this film"
           ],
           "score": "2",
-          "justification": "has everything, funny, adventurous, tearful"
+          "justification": "has everything, adventurous"
+        },
+        "credibility": {
+          "words": [
+            "this film"
+          ],
+          "score": "2",
+          "justification": "funny"
         },
         "plot": {
           "words": [
@@ -80,8 +94,8 @@
           "words": [
             "it"
           ],
-          "score": "2",
-          "justification": "favourite move"
+          "score": "1",
+          "justification": "favourite"
         }
       },
       "comment": ""
@@ -94,5 +108,5 @@
     }
   ],
   "overall": "2",
-  "comment": "missed the end of sentance didnt think it was relevant"
+  "comment": "missed the end of sentance didnt think it was relevant Woj This is all so subjective!!!! second marker Woj"
 }
