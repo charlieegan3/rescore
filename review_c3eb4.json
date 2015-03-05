@@ -15,7 +15,7 @@
             "it's"
           ],
           "score": "1",
-          "justification": "a worthy effort"
+          "justification": "a worthy effort, his best"
         }
       },
       "comment": ""
@@ -25,10 +25,10 @@
       "aspects": {
         "vision": {
           "words": [
-            "violence"
+            "blood", "gore"
           ],
           "score": "1",
-          "justification": "not gratuitous"
+          "justification": "all true"
         }
       },
       "comment": ""
@@ -47,14 +47,14 @@
             "The movie"
           ],
           "score": "1",
-          "justification": "trademark...suspense techniques learned from Hitch"
+          "justification": "trademark, suspense"
         },
         "sound": {
           "words": [
             "music"
           ],
           "score": "1",
-          "justification": "the music swelling when he's working at your emotions"
+          "justification": "the music swelling"
         },
         "vision": {
           "words": [
@@ -62,9 +62,16 @@
           ],
           "score": "1",
           "justification": "the hand held camera that worked so well...give you a feeling of participation"
+        },
+        "cinematography": {
+          "words": [
+            "techniques"
+          ],
+          "score": "1",
+          "justification": ""
         }
       },
-      "comment": ""
+      "comment": "Charlie: this is a hard sentence"
     },
     {
       "text": "It's a movie that stays with you for a period afterwards.",
@@ -88,7 +95,7 @@
             "act"
           ],
           "score": "2",
-          "justification": "front runner for Oscar...best acting job ever"
+          "justification": "front runner, best job ever"
         }
       },
       "comment": ""
@@ -102,7 +109,7 @@
             "act"
           ],
           "score": "1",
-          "justification": "complex...without overacting"
+          "justification": "complex, without overacting, comes from within"
         }
       },
       "comment": ""
@@ -112,10 +119,10 @@
       "aspects": {
         "cast": {
           "words": [
-            "Hanks"
+            "relationship formed with", "empathize", "cast-member-name"
           ],
           "score": "1",
-          "justification": "relationship that is formed with Hanks"
+          "justification": "relationship, feel"
         }
       },
       "comment": "(Not sure if they mean the relationship between the characters?)"
@@ -143,17 +150,24 @@
       "text": "In my case I again feel very lucky that my draft number was high, so I never had to face Nam like many of my classmates.",
       "aspects": {
       },
-      "comment": "irrelevant life story"
+      "comment": "life story"
     },
     {
       "text": "Speilberg reminds us brutally in \"Saving Private Ryan\" that we All have a debt to pay to the brave souls who have sacrificed so much for us.",
       "aspects": {
       },
-      "comment": "yawn"
+      "comment": "life story"
     },
     {
       "text": "What Tom Hanks does with his performance is to remind us of this debt in a very personal way. ",
       "aspects": {
+        "cast": {
+          "words": [
+            "performance"
+          ],
+          "score": "1",
+          "justification": "personal way"
+        }
       },
       "comment": "sure"
     }
