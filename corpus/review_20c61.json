@@ -24,7 +24,7 @@
       "text": "Not even watching \"The green mile\" and \"Million dollar baby\" did i get the same feeling i do off this.",
       "aspects": {
       },
-      "comment": "too indirect compliment to expect our algorithm to detect imho"
+      "comment": "too indirect compliment to expect our algorithm to detect"
     },
     {
       "text": "This is truly a masterpiece.",
@@ -49,7 +49,7 @@
       "text": "No, i wright this comment ( my first ever) because i wanted to express myself.",
       "aspects": {
       },
-      "comment": ""
+      "comment": "charlie: good for you"
     },
     {
       "text": "This is my new favorite movie, and if you don't go see it, you misses out one a truly amazing experience.",
@@ -77,11 +77,11 @@
           "words": [
             "movie"
           ],
-          "score": "0",
+          "score": "1",
           "justification": "got me crying"
         }
       },
-      "comment": "Thought if it should be plot, but then what sentiment does 'got me crying' give? obviously, in this case it's positive, but in other.. What do you all think?"
+      "comment": "Thought if it should be plot, but then what sentiment does 'got me crying' give? obviously, in this case it's positive, but in other.. What do you all think? charlie: I think if the movie made them cry it must have been good in some way"
     },
     {
       "text": "The sacrifice Ben (will smith) makes in this movie is truly a gift for the people he does it too.",
@@ -100,7 +100,7 @@
           "justification": "amazing"
         }
       },
-      "comment": "lol the english on this one."
+      "comment": "lol the english on this one. charlie: yeah, an interesting one..."
     },
     {
       "text": "Now, after you read this, you should go buy this movie (when it comes on DVD), and watch it.",
@@ -113,11 +113,18 @@
           "justification": "should go buy"
         }
       },
-      "comment": "recommendation is still a positive sentiment, no?"
+      "comment": "recommendation is still a positive sentiment, no? charlie: looks good to me"
     },
     {
       "text": "And treasure it, and maybe it will bring something to your life, as it has to mine.",
       "aspects": {
+        "movie": {
+          "words": [
+            "it"
+          ],
+          "score": "1",
+          "justification": "treasure, bring something to your life"
+        }
       },
       "comment": "not specific enough"
     },
