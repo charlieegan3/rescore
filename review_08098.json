@@ -1,0 +1,142 @@
+{
+  "title": "Seven Samurai",
+  "genres": "Drama",
+  "source": "http://www.imdb.com/title/tt0047478/reviews?ref_=tt_urv",
+  "score": "10/10",
+  "helpfulness": "281/340",
+  "author": "Dylan Hanning",
+  "body": " Akira Kurosawa's masterpiece... The Japanese equivalent to Orson Welles' Citizen Kane.. I say it's just as good, if not even better. Not only Kurosawa's most well known film, but the most widely recognized Japanese film ever made. This movie will forever be known as a milestone in motion picture history.  The story revolves around a village that has become a group of bandits' common looting and pillaging ground. The villagers cannot take this any longer and go to town to hire warriors to defend the village from the bandits. A wandering ronin, Kambei (Takashi Shimura) agrees to help them and with his help, they recruit six others that agree to take the job. The seven samurai teach the villagers how to stand up to the bandits and defend themselves. Finally, when the time comes, they engage in a fierce battle with the attacking bandits.  About once in every 20 years or so we are gifted with a film that has the meaning, power, richness, and technique that The Seven Samurai has. I cannot urge anyone enough to see this film, the images are true cinematic poetry rich with so much emotion that I cannot even describe them in words. If you have never seen any of Kurosawa's works, then please see Seven Samurai... you will witness the true beauty, excellence and magic that the art form known as film is capable of. ",
+  "annotated_sentences": [
+    {
+      "text": " Akira Kurosawa's masterpiece... The Japanese equivalent to Orson Welles' Citizen Kane.. I say it's just as good, if not even better.",
+      "aspects": {
+        "movie": {
+          "words": [
+            "it's"
+          ],
+          "score": "2",
+          "justification": "masterpiece, just as good, if not better"
+        }
+      },
+      "comment": ""
+    },
+    {
+      "text": "Not only Kurosawa's most well known film, but the most widely recognized Japanese film ever made.",
+      "aspects": {
+        "movie": {
+          "words": [
+            "film"
+          ],
+          "score": "1",
+          "justification": "widely recognized, ever made"
+        }
+      },
+      "comment": ""
+    },
+    {
+      "text": "This movie will forever be known as a milestone in motion picture history.",
+      "aspects": {
+        "movie": {
+          "words": [
+            "movie"
+          ],
+          "score": "2",
+          "justification": "milestone in motion picture history"
+        },
+        "novelty": {
+          "words": [
+            "milestone", "motion picture history"
+          ],
+          "score": "2",
+          "justification": "milestone in motion picture history"
+        }
+      },
+      "comment": ""
+    },
+    {
+      "text": "The story revolves around a village that has become a group of bandits' common looting and pillaging ground.",
+      "aspects": {
+      },
+      "comment": "irrelevant plot details"
+    },
+    {
+      "text": "The villagers cannot take this any longer and go to town to hire warriors to defend the village from the bandits.",
+      "aspects": {
+      },
+      "comment": "irrelevant plot details"
+    },
+    {
+      "text": "A wandering ronin, Kambei (Takashi Shimura) agrees to help them and with his help, they recruit six others that agree to take the job.",
+      "aspects": {
+      },
+      "comment": "irrelevant plot details"
+    },
+    {
+      "text": "The seven samurai teach the villagers how to stand up to the bandits and defend themselves.",
+      "aspects": {
+      },
+      "comment": "irrelevant"
+    },
+    {
+      "text": "Finally, when the time comes, they engage in a fierce battle with the attacking bandits.",
+      "aspects": {
+      },
+      "comment": "irrelevant"
+    },
+    {
+      "text": "About once in every 20 years or so we are gifted with a film that has the meaning, power, richness, and technique that The Seven Samurai has.",
+      "aspects": {
+        "movie": {
+          "words": [
+            "film-title"
+          ],
+          "score": "2",
+          "justification": "gifted, meaning, power, richness"
+        },
+        "cinematography": {
+          "words": [
+            "technique"
+          ],
+          "score": "2",
+          "justification": "gifted, meaning, power, richness, technique"
+        }
+      },
+      "comment": "Hard to annotate, but definitely positive. Debatable what the 'power, richness, and technique' refers to..."
+    },
+    {
+      "text": "I cannot urge anyone enough to see this film, the images are true cinematic poetry rich with so much emotion that I cannot even describe them in words.",
+      "aspects": {
+        "movie": {
+          "words": [
+            "film"
+          ],
+          "score": "2",
+          "justification": "urge anyone...to see this film"
+        },
+        "cinematography": {
+          "words": [
+            "image", "cinematic"
+          ],
+          "score": "2",
+          "justification": "true cinematic poetry, rich, emotion"
+        }
+      },
+      "comment": ""
+    },
+    {
+      "text": "If you have never seen any of Kurosawa's works, then please see Seven Samurai... you will witness the true beauty, excellence and magic that the art form known as film is capable of. ",
+      "aspects": {
+        "movie": {
+          "words": [
+            "film"
+          ],
+          "score": "2",
+          "justification": "true beauty, excellence and magic, art form"
+        }
+      },
+      "comment": ""
+    }
+  ],
+  "overall": "2",
+  "comment": "Overall very positive, but doesn't go into many specific details about aspects."
+}
