@@ -24,6 +24,14 @@ RSpec.describe MoviesController, :type => :feature do
       expect(page).to have_content 'Stats Updated'
       expect(Statistic.count).to eq(5)
     end
+
+    it 'lets admin delete movies' do
+      pending "the movie shouldn't be on the list after 'delete' is clicked."
+    end
+
+    it 'lets admin manage movies' do
+      pending "Clicking 'manage' should take user to manage page."
+    end
   end
 
   describe 'new_from_lookup' do
