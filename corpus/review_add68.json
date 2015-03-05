@@ -39,6 +39,7 @@
         },
         "dialog": {
           "words": [
+            "scenario",
             "funny"
           ],
           "score": "1",
@@ -115,14 +116,14 @@
           "words": [
             "plot"
           ],
-          "score": "1",
+          "score": "2",
           "justification": "funny, great"
         },
         "cast": {
           "words": [
             "actors"
           ],
-          "score": "1",
+          "score": "2",
           "justification": "great"
         }
       },
