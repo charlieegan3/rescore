@@ -15,7 +15,7 @@
             "films"
           ],
           "score": "2",
-          "justification": "finest science fiction films ever made"
+          "justification": "finest"
         }
       },
       "comment": ""
@@ -25,10 +25,10 @@
       "aspects": {
         "movie": {
           "words": [
-            ""
+            "everything"
           ],
           "score": "2",
-          "justification": "carefully and expertly constructed...repeated viewings are just as good"
+          "justification": "carefully constructed, expertly constructed, just as good"
         }
       },
       "comment": ""
@@ -38,7 +38,7 @@
       "aspects": {
         "cinematography": {
           "words": [
-            "sets"
+            "sets", "atmosphere"
           ],
           "score": "2",
           "justification": "amazing"
@@ -97,20 +97,20 @@
             "music"
           ],
           "score": "1",
-          "justification": "moves the story along....terror"
+          "justification": "moves the story along, unrelenting terror"
         }
       },
-      "comment": ""
+      "comment": "Charlie: think this is hard to detect"
     },
     {
       "text": "However, the lack of music, in certain scenes, works just as well and this combination makes for one of the best musical montages to be put on film.",
       "aspects": {
         "sound": {
           "words": [
-            "music"
+            "music", "musical", "montage"
           ],
           "score": "2",
-          "justification": "best musical montages to be put on film"
+          "justification": "best, works just as well"
         }
       },
       "comment": ""
@@ -122,8 +122,8 @@
           "words": [
             "film"
           ],
-          "score": "1",
-          "justification": "classic"
+          "score": "2",
+          "justification": "classic, good overall"
         }
       },
       "comment": ""
@@ -133,10 +133,10 @@
       "aspects": {
         "movie": {
           "words": [
-            ""
+            "film_title"
           ],
           "score": "2",
-          "justification": "easily one of the best"
+          "justification": "one of the best"
         }
       },
       "comment": ""
@@ -144,6 +144,13 @@
     {
       "text": "10/10  Rated R: violence/gore and profanity ",
       "aspects": {
+        "movie": {
+          "words": [
+            "-"
+          ],
+          "score": "2",
+          "justification": "10/10"
+        }
       },
       "comment": ""
     }
