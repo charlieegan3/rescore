@@ -1,12 +1,13 @@
-POLARITIES = {  
-  'wellconnected' => 2,
-  'welleducated' => 1,
-  'wellestablished' => 1,
-  'wellinformed' => 2,
-  'wellintentioned' => 2,
-  'wellmanaged' => 2,
-  'wellpositioned' => 1,
-  'wellpublicized' => 1,
-  'wellreceived' => 2,
-  'wellregarded' => 2
+PHRASE_POLARITIES = {  
+  'well connected' => 2,
+  'well educated' => 1,
+  'well established' => 1,
+  'well informed' => 2,
+  'well intentioned' => 2,
+  'well managed' => 2,
+  'well positioned' => 1,
+  'well publicized' => 1,
+  'well publicised' => 1,
+  'well received' => 2,
+  'well regarded' => 2
 }
