@@ -124,8 +124,8 @@
           "words": [
             "role"
           ],
-          "score": "-2",
-          "justification": "poiled brat, pretending"
+          "score": "-1",
+          "justification": "spoiled brat, pretending, come across as a"
         },
         "credibility": {
           "words": [
@@ -179,6 +179,13 @@
     {
       "text": "8) The car chase scene - oh my.",
       "aspects": {
+        "cinematography": {
+          "words": [
+            "scene"
+          ],
+          "score": "0",
+          "justification": ""
+        }
       },
       "comment": "oh my could go either way, should scene be cinematography?"
     },

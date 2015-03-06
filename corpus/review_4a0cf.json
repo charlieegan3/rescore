@@ -187,7 +187,7 @@
             "running time, shorter"
           ],
           "score": "-1",
-          "justification": "just, laziness"
+          "justification": "laziness"
         }
       },
       "comment": "not sure how to bite the running time problem here, i'd say it looks ok now."
@@ -207,7 +207,7 @@
             "boring"
           ],
           "score": "-2",
-          "justification": "repetitive, boring"
+          "justification": "boring"
         }
       },
       "comment": ""
