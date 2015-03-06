@@ -1,0 +1,228 @@
+{
+  "title": "A Good Day to Die Hard",
+  "genres": "Drama!",
+  "source": "http://www.imdb.com/title/tt1606378/reviews?ref_=tt_ov_rt",
+  "score": "2/10",
+  "helpfulness": "368/440",
+  "author": "Wojtek",
+  "body": "  As a fan of the Die Hard series I feel the need to warn others - Don't waste 97 minutes of your life on this movie! Yes, it really is that bad.  Here's a concise summary of why it's just so bad:  1) John McClane's role is really as a side-kick. Why do this to the big man .... why?  2) The movie lacks a bad guy. Does the movie have people that are bad - of course, but it lacks that McClane v Super-villain factor.  3) There's very little of the Die Hard humour we've all grown to love.  4) The movie parodies the Hans Gruber death sequence - never - never do this.  5) Jai Courtney is terrible. It's hard to discern if it's the role he's been asked to play or him, but either way he come across as a spoiled brat pretending to be Jason Bourne.  6) There's hardly any script - it's as if the script were sandwiched in post production to fit around the bangs and crashes.  7) It's not in the USA. This sounds trivial but it's not - the film just doesn't work outside of its tried and tested environment.  8) The car chase scene - oh my. If you do choose to watch the movie after reading this the good news is that yes, it does eventually end - although it may not feel this way.  So in summary, go plant a tree, play football, go for a walk, in fact - do anything but for the love of all that you hold dear - don't waste your life on this. ",
+  "annotated_sentences": [
+    {
+      "text": "  As a fan of the Die Hard series I feel the need to warn others - Don't waste 97 minutes of your life on this movie!",
+      "aspects": {
+        "movie": {
+          "words": [
+            "this movie"
+          ],
+          "score": "-1",
+          "justification": "waste"
+        }
+      },
+      "comment": ""
+    },
+    {
+      "text": "Yes, it really is that bad.",
+      "aspects": {
+        "movie": {
+          "words": [
+            "it"
+          ],
+          "score": "-1",
+          "justification": "bad"
+        }
+      },
+      "comment": ""
+    },
+    {
+      "text": "Here's a concise summary of why it's just so bad:  1) John McClane's role is really as a side-kick.",
+      "aspects": {
+        "movie": {
+          "words": [
+            "it's"
+          ],
+          "score": "-1",
+          "justification": "bad"
+        }
+      },
+      "comment": ""
+    },
+    {
+      "text": "Why do this to the big man .... why?",
+      "aspects": {
+      },
+      "comment": ""
+    },
+    {
+      "text": "2) The movie lacks a bad guy.",
+      "aspects": {
+        "movie": {
+          "words": [
+            "movie"
+          ],
+          "score": "-1",
+          "justification": "lacks"
+        }
+      },
+      "comment": "hardly an explicit problem. charlie: I'd say it's an issue :)"
+    },
+    {
+      "text": "Does the movie have people that are bad - of course, but it lacks that McClane v Super-villain factor.",
+      "aspects": {
+        "movie": {
+          "words": [
+            "movie"
+          ],
+          "score": "-1",
+          "justification": "it lacks"
+        }
+      },
+      "comment": "-"
+    },
+    {
+      "text": "3) There's very little of the Die Hard humour we've all grown to love.",
+      "aspects": {
+        "dialog": {
+          "words": [
+            "humour"
+          ],
+          "score": "-2",
+          "justification": "very little"
+        }
+      },
+      "comment": ""
+    },
+    {
+      "text": "4) The movie parodies the Hans Gruber death sequence - never - never do this.",
+      "aspects": {
+        "movie": {
+          "words": [
+            "movie"
+          ],
+          "score": "-1",
+          "justification": "never do this"
+        }
+      },
+      "comment": ""
+    },
+    {
+      "text": "5) Jai Courtney is terrible.",
+      "aspects": {
+        "cast": {
+          "words": [
+            "cast-member"
+          ],
+          "score": "-2",
+          "justification": "terrible"
+        }
+      },
+      "comment": ""
+    },
+    {
+      "text": "It's hard to discern if it's the role he's been asked to play or him, but either way he come across as a spoiled brat pretending to be Jason Bourne.",
+      "aspects": {
+        "cast": {
+          "words": [
+            "role"
+          ],
+          "score": "-1",
+          "justification": "spoiled brat, pretending, come across as a"
+        },
+        "credibility": {
+          "words": [
+            "pretending"
+          ],
+          "score": "-1",
+          "justification": "pretending"
+        }
+      },
+      "comment": "-"
+    },
+    {
+      "text": "6) There's hardly any script - it's as if the script were sandwiched in post production to fit around the bangs and crashes.",
+      "aspects": {
+        "plot": {
+          "words": [
+            "script"
+          ],
+          "score": "-2",
+          "justification": "hardly any"
+        },
+        "effects": {
+          "words": [
+            "post production"
+          ],
+          "score": "0",
+          "justification": ""
+        }
+      },
+      "comment": "effects are only mentioned"
+    },
+    {
+      "text": "7) It's not in the USA.",
+      "aspects": {
+      },
+      "comment": ""
+    },
+    {
+      "text": "This sounds trivial but it's not - the film just doesn't work outside of its tried and tested environment.",
+      "aspects": {
+        "movie": {
+          "words": [
+            "the film"
+          ],
+          "score": "-1",
+          "justification": "doesn't work"
+        }
+      },
+      "comment": ""
+    },
+    {
+      "text": "8) The car chase scene - oh my.",
+      "aspects": {
+        "cinematography": {
+          "words": [
+            "scene"
+          ],
+          "score": "0",
+          "justification": ""
+        }
+      },
+      "comment": "oh my could go either way, should scene be cinematography?"
+    },
+    {
+      "text": "If you do choose to watch the movie after reading this the good news is that yes, it does eventually end - although it may not feel this way.",
+      "aspects": {
+        "movie": {
+          "words": [
+            "the movie"
+          ],
+          "score": "-1",
+          "justification": "does eventually end"
+        },
+        "length": {
+          "words": [
+            "eventually end"
+          ],
+          "score": "-1",
+          "justification": "does eventually end"
+        }
+      },
+      "comment": ""
+    },
+    {
+      "text": "So in summary, go plant a tree, play football, go for a walk, in fact - do anything but for the love of all that you hold dear - don't waste your life on this. ",
+      "aspects": {
+        "movie": {
+          "words": [
+            "this"
+          ],
+          "score": "-2",
+          "justification": "don't waste your life"
+        }
+      },
+      "comment": ""
+    }
+  ],
+  "overall": "-2",
+  "comment": "lots of bullcrap Woj"
+}

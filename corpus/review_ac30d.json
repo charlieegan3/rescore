@@ -42,14 +42,7 @@
             "movie"
           ],
           "score": "1",
-          "justification": "fun,entertain"
-        },
-        "editing": {
-          "words": [
-            "effects"
-          ],
-          "score": "2",
-          "justification": "amazing"
+          "justification": "fun, entertain, keeps you entertained"
         },
         "vision": {
           "words": [
@@ -59,7 +52,7 @@
           "justification": "amazing"
         }
       },
-      "comment": ""
+      "comment": "Woj: keep(s) entertained to be added"
     },
     {
       "text": "Ghost Rider is just one of those movies that's cool to look at.",
@@ -82,8 +75,8 @@
             "acting",
             "role"
           ],
-          "score": "1",
-          "justification": "falls a bit flat,exactly what is expected"
+          "score": "0",
+          "justification": "falls a bit flat, exactly what's expected"
         }
       },
       "comment": ""
@@ -91,22 +84,22 @@
     {
       "text": "It's a bit cliché and humorous at times, but this is a movie based on a comic book, so you have to expect that sort of thing.Sam Elliot and Peter Fonda provide the best acting in the movie, while Wes Bentley does a solid job as Blackheart and Eva Mendez is just a very beautiful actress who fits in well as Roxanne.There are a lot of little gripes about this movie if you look too hard and overthink it, but as a die-hard Ghost Rider fan, I didn't mind these things so much.",
       "aspects": {
-        "movie": {
+        "novelty": {
           "words": [
-            "it's,movie"
+            "it's"
           ],
-          "score": "1",
-          "justification": "cliche,humorous"
+          "score": "0",
+          "justification": "cliché"
         },
         "cast": {
           "words": [
             "acting"
           ],
           "score": "2",
-          "justification": "best acting,solid,fits well"
+          "justification": "best, solid, fit in well"
         }
       },
-      "comment": ""
+      "comment": "add cliche to novelty, fits well to cast"
     },
     {
       "text": "It stayed relatively true to the original series, while borrowing elements from the 90's series to help make the movie more visually impressive, which I felt worked really well.I've been waiting for this movie since they started trying to make it over eight years ago and overall, I'd have to say I really enjoyed seeing my favorite comic book character finally make it onto the big screen.If you want to go see a movie where you can just sit back, relax, and enjoy the ride; then go see Ghost Rider without any worry of disappointment.",
@@ -116,7 +109,7 @@
             "this movie"
           ],
           "score": "1",
-          "justification": "enjoyed,without worry of disappointment"
+          "justification": "enjoyed, without disappointment"
         },
         "vision": {
           "words": [
@@ -130,13 +123,13 @@
           "words": [
             "true"
           ],
-          "score": "2",
+          "score": "1",
           "justification": "true to the original"
         }
       },
-      "comment": ""
+      "comment": "without disappointment is negation"
     }
   ],
   "overall": "1",
-  "comment": ""
+  "comment": "second marker Woj"
 }
