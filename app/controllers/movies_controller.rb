@@ -15,10 +15,12 @@ class MoviesController < ApplicationController
     if @movie.stats.nil?
       flash[:alert] = "This movie's information is not yet complete. Please try again later"
       redirect_to :root
-    elsif params[:format]=="json"
-      render json: @movie
-    elsif params[:format]=="xml"
-      render xml: @movie
+    else
+      respond_to do |format|
+        format.html
+        format.json  { render :json => @movie }
+        format.xml  {render :xml => @movie}
+      end
     end
   end
 
