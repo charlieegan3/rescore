@@ -20,11 +20,11 @@
           "words": [
             "title of the film"
           ],
-          "score": "2",
+          "score": "1",
           "justification": "brilliant"
         }
       },
-      "comment": "ridiculous makes this sentence harder"
+      "comment": "ridiculous makes this sentence harder, which also means that the sentence is not worth 2 charlie: changed"
     },
     {
       "text": "It is his best work, or at least the film which has all of Anderson's creative impulses working in one direction, producing a coherent work of art.",
@@ -37,7 +37,7 @@
           "justification": "work of art"
         }
       },
-      "comment": "very wordy"
+      "comment": "very wordy, add work of art, coherent as 0 or 1, his best, her best are also useful keywords"
     },
     {
       "text": "His films have always been quirky, charming and out-of-this world, but never before has the audience been immersed in Andersonland as fully as with this film.",
@@ -57,7 +57,7 @@
           "justification": "charming, out of this world"
         }
       },
-      "comment": ""
+      "comment": "add charming and out of this world/planet"
     },
     {
       "text": "The colours, the camera movement that switches between different parts of the set, the music, the lens angle distortion, the ridiculously stellar cast, all of Anderson's trademark elements, combine to produce the ultimate Anderson film.",
@@ -98,7 +98,7 @@
           "justification": "camera movement"
         }
       },
-      "comment": ""
+      "comment": "yeah - that's what I was thinking about when I said I couldnt tell the diff between cinematography and vision"
     },
     {
       "text": "The absolutely ridiculous CGI is used perfectly to add to the surrealism of the movie.",
@@ -125,7 +125,7 @@
         },
         "vision": {
           "words": [
-            "visual"
+            "visually"
           ],
           "score": "2",
           "justification": "extremely well crafted"
@@ -143,13 +143,6 @@
     {
       "text": "Unlike some of his previous work, the editing, the pacing and the rhythm of \"Budapest\" are pitch-perfect.Is it a great film?",
       "aspects": {
-        "movie": {
-          "words": [
-            "unlike some of his previous work"
-          ],
-          "score": "2",
-          "justification": "pitch-perfect"
-        },
         "editing": {
           "words": [
             "editing"
@@ -191,7 +184,7 @@
           "justification": "does not attempt to cope"
         }
       },
-      "comment": ""
+      "comment": "might add does not attempt to movie"
     },
     {
       "text": "On the other hand, it seeps with nostalgia, a bittersweet longing for an age long past, and the fascinating characters it produced.",
@@ -252,7 +245,7 @@
           "justification": "merely a mechanism"
         }
       },
-      "comment": "i think this is -ve, might be wrong"
+      "comment": "i think this is -ve, might be wrong - or neutral, but I agree that merely is -1, add it?"
     },
     {
       "text": "There is comedy, but its either very subtle or incredibly over the top, and most viewers are uncomfortable with both.",
@@ -262,10 +255,10 @@
             "comedy"
           ],
           "score": "-2",
-          "justification": "uncomfortable"
+          "justification": "incredibly over the top, uncomfortable"
         }
       },
-      "comment": ""
+      "comment": "that's how I would see it. plus add OTT charlie: personally think this is just dialog"
     },
     {
       "text": "There isn't a single 'ordinary shot', pretty much every image is out of place to such an extent that they begin to form one coherent film, and a fantastic one at that.",
@@ -278,9 +271,9 @@
           "justification": "fantastic"
         }
       },
-      "comment": ""
+      "comment": "out of place? charlie: ambiguous, but it is +ve and ideally detected as such"
     }
   ],
   "overall": "1",
-  "comment": "I think this isn't a 10 star review"
+  "comment": "I think this isn't a 10 star review. Woj: A very misleading review. second marker Woj"
 }

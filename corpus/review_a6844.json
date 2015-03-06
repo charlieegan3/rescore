@@ -15,10 +15,10 @@
             "facts"
           ],
           "score": "1",
-          "justification": "deprived of any form of commercialism"
+          "justification": "facts, deals with facts"
         }
       },
-      "comment": ""
+      "comment": "add the above + 'fact' + only deals with facts"
     },
     {
       "text": "Bruno Ganz is truly excellent in his role as Adolf Hitler, a tired man who sees his \"Reich\" fall, but cannot accept it. Overall (type)casting is very good; all the actors chosen to portray a famous/notorious character look a lot like the real deal, especially Goebbels.",
@@ -26,13 +26,14 @@
         "cast": {
           "words": [
             "cast",
-            "role"
+            "role",
+            "cast-member mention"
           ],
           "score": "2",
-          "justification": "very good"
+          "justification": "very good, truly excellent"
         }
       },
-      "comment": ""
+      "comment": "don't think that the truly excellent part need extra attention so just leaving it. charlie: how's that?"
     },
     {
       "text": "Although I'm not a fan of long war movies, these 2,5 hours passed very quickly due to excellent acting, great sets, FX and storyline.",
@@ -42,7 +43,7 @@
             "story"
           ],
           "score": "2",
-          "justification": "excellent"
+          "justification": "great"
         },
         "cast": {
           "words": [
@@ -56,24 +57,24 @@
             "long"
           ],
           "score": "2",
-          "justification": "quickly"
+          "justification": "quickly, or passed quickly"
         },
         "cinematography": {
           "words": [
             "great sets"
           ],
           "score": "2",
-          "justification": "excellent"
+          "justification": "great"
         },
         "editing": {
           "words": [
             "FX"
           ],
           "score": "2",
-          "justification": "excellent"
+          "justification": "great"
         }
       },
-      "comment": ""
+      "comment": "story ticks the plot box, but storyline should also be added to dictionary"
     },
     {
       "text": "Somehow, every scene is dripping with underlying tension that never really explodes; a kind of unsettling unbelieved grips you when you see seemingly ordinary people commit astonishing atrocities and sins towards mankind, just for their faith and loyalty to one man, Hitler, who himself walks the edge of reason.",
@@ -90,7 +91,7 @@
             "scene"
           ],
           "score": "2",
-          "justification": "dripping with tension"
+          "justification": "dripping with ... tension"
         }
       },
       "comment": ""
@@ -103,5 +104,5 @@
     }
   ],
   "overall": "2",
-  "comment": "Very positive reveiw"
+  "comment": "Very positive review, second marker Woj"
 }

@@ -26,18 +26,18 @@
           "words": [
             "acting"
           ],
-          "score": "-1",
-          "justification": "overacting"
+          "score": "0",
+          "justification": "(overacting)"
         },
         "novelty": {
           "words": [
             "original"
           ],
-          "score": "-1",
-          "justification": "lack originality"
+          "score": "0",
+          "justification": "(lack originality)"
         }
       },
-      "comment": "Talks about horror movies in general."
+      "comment": "They counteracts sentiment, ideally"
     },
     {
       "text": "The only horror movie i like was Stir of Echoes with Kevin Bacon.",
@@ -63,7 +63,7 @@
           "justification": "great story"
         }
       },
-      "comment": "Doesn't mean this film."
+      "comment": "Doesn't mean this film. Woj - problem here, most probably let's leave this review as a proof that there are things we can't cope with ?"
     },
     {
       "text": "But it has been joined and maybe even surpassed by Stanley Kubrick's The Shining, quite possibly the scariest movie ever.The movie follows a writer (Jack Nicholson) and his family who agree to watch over a hotel while it is closed for the winter.",
@@ -76,7 +76,7 @@
           "justification": "Scariest movie ever"
         }
       },
-      "comment": ""
+      "comment": "Woj: this is not explicitly positive"
     },
     {
       "text": "There were rumors of the place being haunted and the last resident went crazy and murdered his family.",
@@ -107,7 +107,7 @@
           "justification": "creepiest parts"
         }
       },
-      "comment": "Creepy is positive, as it's a horror movie"
+      "comment": "Creepy is positive, as it's a horror movie Woj: but only with context"
     },
     {
       "text": "The hotel is very silent, and the rooms are huge, yet always empty.",
@@ -126,7 +126,7 @@
           "justification": "Eerily calm"
         }
       },
-      "comment": "Eerily calm is positive, as it's a horror movie"
+      "comment": "Eerily calm is positive, as it's a horror movie Woj: ditto"
     },
     {
       "text": "Jack Nicholson's performance is also one of his very best, scaring the hell out of me and making me sure to get out once in awhile.",
@@ -136,10 +136,10 @@
             "performance"
           ],
           "score": "2",
-          "justification": "Jack Nicholson's performance is also one of his very best"
+          "justification": "best"
         }
       },
-      "comment": ""
+      "comment": "hah!"
     },
     {
       "text": "My favorite scene is when he is talking to a ghost from inside a walk-in refrigerator.The Shining is tops for horror movies in my opinion, beating the snot out of crap like the Ring and The Blair Witch Project.",
@@ -149,7 +149,7 @@
             "The Shining"
           ],
           "score": "2",
-          "justification": "The Shining is tops for horror movies"
+          "justification": "tops"
         }
       },
       "comment": ""
@@ -162,7 +162,7 @@
             "It"
           ],
           "score": "1",
-          "justification": "is definitely a goodie"
+          "justification": "a goodie"
         }
       },
       "comment": ""
@@ -175,5 +175,5 @@
     }
   ],
   "overall": "2",
-  "comment": "Overall very positive, has irrelevant plot details. Positive sentiment is usually quite ambigious, i.e. negative words which are positive given horror movie context."
+  "comment": "Overall very positive, has irrelevant plot details. Positive sentiment is usually quite ambigious, i.e. negative words which are positive given horror movie context. second marker Woj"
 }
