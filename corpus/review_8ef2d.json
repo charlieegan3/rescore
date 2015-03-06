@@ -1,0 +1,114 @@
+{
+  "title": "Vertigo",
+  "genres": "Mystery, Romance, Thriller",
+  "source": "imdb",
+  "score": "10/10",
+  "helpfulness": "108/186",
+  "author": "Charlie Egan",
+  "body": " Retired detective, who is scared of heights, is hired to follow another mans wife and there follows intrigue, mystery and suspense. A super melodrama! The acting,directing, sets, costumes, script, music, etc are all excellent. And near the start of the film there is one brilliant 10 minute period when there is no dialogue but the action is controlled only by the music. A sensational analysis of the movie is by Roger Ebert: see external reviews. This picture is worthy of maximum marks.",
+  "annotated_sentences": [
+    {
+      "text": " Retired detective, who is scared of heights, is hired to follow another mans wife and there follows intrigue, mystery and suspense.",
+      "aspects": {
+        "plot": {
+          "words": [
+            "mystery, suspense"
+          ],
+          "score": "0",
+          "justification": "no sentiment"
+        }
+      },
+      "comment": "just details"
+    },
+    {
+      "text": "A super melodrama!",
+      "aspects": {
+        "movie": {
+          "words": [
+            "generic scope, 'A'"
+          ],
+          "score": "2",
+          "justification": "melodrama"
+        }
+      },
+      "comment": ""
+    },
+    {
+      "text": "The acting,directing, sets, costumes, script, music, etc are all excellent.",
+      "aspects": {
+        "sound": {
+          "words": [
+            "music"
+          ],
+          "score": "2",
+          "justification": "excellent"
+        },
+        "dialog": {
+          "words": [
+            "script"
+          ],
+          "score": "2",
+          "justification": "excellent"
+        },
+        "cast": {
+          "words": [
+            "acting",
+            "act"
+          ],
+          "score": "2",
+          "justification": "excellent"
+        }
+      },
+      "comment": ""
+    },
+    {
+      "text": "And near the start of the film there is one brilliant 10 minute period when there is no dialogue but the action is controlled only by the music.",
+      "aspects": {
+        "sound": {
+          "words": [
+            "music"
+          ],
+          "score": "2",
+          "justification": "brilliant"
+        },
+        "dialog": {
+          "words": [
+            "dialog",
+            "dialogue"
+          ],
+          "score": "0",
+          "justification": "no sentiment, could infer -ve since lack of it was good :)"
+        },
+        "plot": {
+          "words": [
+            "minute period"
+          ],
+          "score": "2",
+          "justification": "brilliant"
+        }
+      },
+      "comment": ""
+    },
+    {
+      "text": "A sensational analysis of the movie is by Roger Ebert: see external reviews.",
+      "aspects": {
+      },
+      "comment": "irrelevent"
+    },
+    {
+      "text": "This picture is worthy of maximum marks.",
+      "aspects": {
+        "movie": {
+          "words": [
+            "this picture"
+          ],
+          "score": "2",
+          "justification": "worthy, maximum marks"
+        }
+      },
+      "comment": ""
+    }
+  ],
+  "overall": "2",
+  "comment": ""
+}

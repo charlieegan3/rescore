@@ -1,0 +1,135 @@
+{
+  "title": "Princess Mononoke",
+  "genres": "Animation, Adventure, Fantasy",
+  "source": "imdb",
+  "score": "10/10",
+  "helpfulness": "104/125",
+  "author": "Charlie Egan",
+  "body": " I saw this film in Japan, in Japanese with no sub-titles, I don't speak a word of the language and I was still enthralled! It is Miyazaki most visually intense (surpassing, at long last, Nausicaa) and is alive with color and movement the like not yet seen in anime.  The story is complex, and after talking with Japanese friends, it is clear that much of it went over my head (particularly that relating to specific Japanese myths), but the important elements came through. Miyazaki's long infatuation with technology verses nature and man's relation to God (or gods) weave throughout the film as does his trend for strong women characters.   Even with the language barrier, the film is of such intense emotion that it caries you through to the end. The change in dynamic between the crashing fight scenes and the quiet scenes of healing by the lake is so broad and so well paced that I can't remember a film where my emotional state was so expertly varied.  If you have a chance to see this film, in any language, I recommend you do.",
+  "annotated_sentences": [
+    {
+      "text": " I saw this film in Japan, in Japanese with no sub-titles, I don't speak a word of the language and I was still enthralled!",
+      "aspects": {
+        "movie": {
+          "words": [
+            "this film"
+          ],
+          "score": "2",
+          "justification": "enthralled"
+        }
+      },
+      "comment": ""
+    },
+    {
+      "text": "It is Miyazaki most visually intense (surpassing, at long last, Nausicaa) and is alive with color and movement the like not yet seen in anime.",
+      "aspects": {
+        "movie": {
+          "words": [
+            "it"
+          ],
+          "score": "2",
+          "justification": "intense, alive, not yet seen"
+        },
+        "vision": {
+          "words": [
+            "visually",
+            "visual",
+            "color"
+          ],
+          "score": "2",
+          "justification": "intense, alive with color, not yet seen"
+        }
+      },
+      "comment": ""
+    },
+    {
+      "text": "The story is complex, and after talking with Japanese friends, it is clear that much of it went over my head (particularly that relating to specific Japanese myths), but the important elements came through.",
+      "aspects": {
+        "plot": {
+          "words": [
+            "story"
+          ],
+          "score": "-1",
+          "justification": "complex, over my head"
+        }
+      },
+      "comment": ""
+    },
+    {
+      "text": "Miyazaki's long infatuation with technology verses nature and man's relation to God (or gods) weave throughout the film as does his trend for strong women characters.",
+      "aspects": {
+        "plot": {
+          "words": [
+            "characters",
+            "character"
+          ],
+          "score": "1",
+          "justification": "weave, relation to god"
+        },
+        "cast": {
+          "words": [
+            "act"
+          ],
+          "score": "1",
+          "justification": "strong women characters"
+        }
+      },
+      "comment": ""
+    },
+    {
+      "text": "Even with the language barrier, the film is of such intense emotion that it caries you through to the end.",
+      "aspects": {
+        "movie": {
+          "words": [
+            "the film"
+          ],
+          "score": "2",
+          "justification": "intense, emotion, caries you through"
+        }
+      },
+      "comment": ""
+    },
+    {
+      "text": "The change in dynamic between the crashing fight scenes and the quiet scenes of healing by the lake is so broad and so well paced that I can't remember a film where my emotional state was so expertly varied.",
+      "aspects": {
+        "movie": {
+          "words": [
+            "a film"
+          ],
+          "score": "2",
+          "justification": "expertly, emotionally, so broad, well paced"
+        },
+        "cinematography": {
+          "words": [
+            "scene"
+          ],
+          "score": "2",
+          "justification": "change in dynamic, so broad, expertly"
+        },
+        "plot": {
+          "words": [
+            "well paced"
+          ],
+          "score": "1",
+          "justification": "well paced"
+        }
+      },
+      "comment": ""
+    },
+    {
+      "text": "If you have a chance to see this film, in any language, I recommend you do.",
+      "aspects": {
+        "movie": {
+          "words": [
+            "this film"
+          ],
+          "score": "1",
+          "justification": "recommend"
+        }
+      },
+      "comment": ""
+    }
+  ],
+  "overall": "2",
+  "comment": ""
+}
