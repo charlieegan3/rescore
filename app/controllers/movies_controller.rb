@@ -3,6 +3,12 @@ class MoviesController < ApplicationController
 
   def index
     @movies = Movie.complete.order('created_at DESC')
+
+    respond_to do |format|
+      format.html
+      format.json { render :json => @movies.select(:id, :title, :image_url, :year, :genres, :slug) }
+      format.xml  { render :xml => @movies.select(:id, :title, :image_url, :year, :genres, :slug) }
+    end
   end
 
   def admin
