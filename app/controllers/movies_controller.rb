@@ -19,7 +19,7 @@ class MoviesController < ApplicationController
       respond_to do |format|
         format.html
         format.json  { render :json => @movie }
-        format.xml  {render :xml => @movie}
+        format.xml  { render :xml => @movie }
       end
     end
   end
