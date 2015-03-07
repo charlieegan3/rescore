@@ -15,14 +15,14 @@
             "film_title"
           ],
           "score": "2",
-          "justification": "at its finest, promises big things"
+          "justification": "at its finest"
         },
         "cinematography": {
           "words": [
             "film making"
           ],
           "score": "2",
-          "justification": "at its finest, promises big things"
+          "justification": "at its finest"
         }
       },
       "comment": ""
@@ -61,10 +61,17 @@
             "tension"
           ],
           "score": "1",
-          "justification": "did not let up, especially"
+          "justification": "did not let up"
+        },
+        "cast": {
+          "words": [
+            "cast-member mention"
+          ],
+          "score": "2",
+          "justification": "incredible"
         }
       },
-      "comment": "charlie: I'd stretch to a 2"
+      "comment": ""
     },
     {
       "text": "Simmons, along with Miles Teller (who's Project X days are now long behind him) have some of the best on screen chemistry I've seen.",
@@ -75,7 +82,7 @@
             "on screen chemistry"
           ],
           "score": "2",
-          "justification": "best on screen chemistry"
+          "justification": "best"
         }
       },
       "comment": ""
