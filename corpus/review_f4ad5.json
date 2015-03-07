@@ -12,7 +12,7 @@
       "aspects": {
         "movie": {
           "words": [
-            "B-Movie"
+            "B-Movie", "this"
           ],
           "score": "-1",
           "justification": "by numbers"
@@ -88,12 +88,12 @@
     {
       "text": "Nothing ground breaking or stand out impressive for either of these.",
       "aspects": {
-         "movie": {
+         "novelty": {
           "words": [
-            ""
+            "ground breaking", "stand out"
           ],
           "score": "-1",
-          "justification": "nothing ground breaking"
+          "justification": "nothing"
         }
       },
       "comment": "charlie: we need to make the default scope the movie"
@@ -131,7 +131,14 @@
       "aspects": {
         "plot": {
           "words": [
-            "story"
+            "story", "revolves"
+          ],
+          "score": "-1",
+          "justification": "like that's new"
+        },
+        "novelty": {
+          "words": [
+            "like that's new"
           ],
           "score": "-1",
           "justification": "like that's new"

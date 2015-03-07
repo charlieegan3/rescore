@@ -10,15 +10,8 @@
     {
       "text": "We've been subjected to enormous amounts of hype and marketing for the Dark Knight.",
       "aspects": {
-        "movie": {
-          "words": [
-            "movie_title"
-          ],
-          "score": "-1",
-          "justification": "subjected, hype and marketing"
-        }
       },
-      "comment": "Doesn't comment on whether the movie lives up to hype or not. charlie: I'd say subjected + hype are negative"
+      "comment": "subjected to, hype to -ve keywords, even though not relevant here"
     },
     {
       "text": "We've seen Joker scavenger hunts and one of the largest viral campaigns in advertising history and it culminates with the actual release of the movie.Everything that's been said is pretty much spot on.",
@@ -154,10 +147,10 @@
             "character"
           ],
           "score": "2",
-          "justification": "so interesting"
+          "justification": "interesting"
         }
       },
-      "comment": "charlie: upped this to a 2"
+      "comment": ""
     },
     {
       "text": "The Nolans drafted a complex character and only a perfect performance could've pulled something like this off.",
