@@ -26,11 +26,17 @@ RSpec.describe MoviesController, :type => :feature do
     end
 
     it 'lets admin delete movies' do
-      pending "the movie shouldn't be on the list after 'delete' is clicked."
+      FactoryGirl::create(:movie, title: 'Alien')
+      visit('/movies/admin')
+      click_on 'Delete'      
+      expect(page).not_to have_content 'Alian'
     end
 
     it 'lets admin manage movies' do
-      pending "Clicking 'manage' should take user to manage page."
+      FactoryGirl::create(:movie, title: 'Alien')
+      visit('/movies/admin')
+      click_on 'Manage'
+      expect(page).to have_content 'Rotten Tomatoes ID'
     end
   end
 
