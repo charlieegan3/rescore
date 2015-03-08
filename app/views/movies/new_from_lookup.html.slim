@@ -1,8 +1,8 @@
 .row
   .large-12.columns
-    =form_tag new_movie_from_lookup_path, :method => 'get' do
+    =form_tag new_movie_from_lookup_path, :method => 'get', id: "new_from_lookup_form" do
       = text_field_tag :query, params[:query], placeholder: 'Film Title'
-      = submit_tag "Search", name: nil, class: 'button expand'
+      = submit_tag "Search", name: nil, class: 'button expand', id: 'new_from_lookup_btn'
 
     -unless @movies.empty?
       table
