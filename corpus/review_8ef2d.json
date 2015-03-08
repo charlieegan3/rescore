@@ -25,13 +25,13 @@
       "aspects": {
         "movie": {
           "words": [
-            "generic scope, 'A'"
+            "generic scope"
           ],
-          "score": "2",
+          "score": "1",
           "justification": "melodrama"
         }
       },
-      "comment": ""
+      "comment": "Woj: Not sure if A is a rate here... . Also, melodrama is here a clear compliment, but remember it's not usually the case - usually melodrama is a cheap version of drama."
     },
     {
       "text": "The acting,directing, sets, costumes, script, music, etc are all excellent.",
@@ -54,6 +54,14 @@
           "words": [
             "acting",
             "act"
+          ],
+          "score": "2",
+          "justification": "excellent"
+        },
+        "vision": {
+          "words": [
+            "costumes",
+            "set"
           ],
           "score": "2",
           "justification": "excellent"
