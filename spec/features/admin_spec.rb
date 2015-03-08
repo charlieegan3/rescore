@@ -29,7 +29,7 @@ RSpec.describe MoviesController, :type => :feature do
       FactoryGirl::create(:movie, title: 'Alien')
       visit('/movies/admin')
       click_on 'Delete'      
-      expect(page).not_to have_content 'Alian'
+      expect(page).not_to have_content 'Alien'
     end
 
     it 'lets admin manage movies' do
