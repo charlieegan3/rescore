@@ -10,24 +10,38 @@
     {
       "text": "Okay, this is a B-Movie, Horror by numbers.",
       "aspects": {
+        "movie": {
+          "words": [
+            "B-Movie", "this"
+          ],
+          "score": "-1",
+          "justification": "by numbers"
+        }
       },
       "comment": ""
     },
     {
       "text": "The good news is it doesn't try or pretend to be anything else.",
       "aspects": {
+        "movie": {
+          "words": [
+            "it"
+          ],
+          "score": "0",
+          "justification": "good news +1, doesn't try -1"
+        }
       },
-      "comment": ""
+      "comment": "charlie: tough sentence"
     },
     {
       "text": "So it just concentrates on being the best B-Movie, horror by numbers flick it can manage.",
       "aspects": {
         "movie": {
           "words": [
-            "B-Movie"
+            "it", "b-movie"
           ],
-          "score": "1",
-          "justification": "it can manage "
+          "score": "2",
+          "justification": "the best"
         }
       },
       "comment": ""
@@ -40,7 +54,7 @@
             "It"
           ],
           "score": "0",
-          "justification": "Succeeded,doesn't make it good movie"
+          "justification": "succeeded +1, doesn't make it good movie -1"
         }
       },
       "comment": ""
@@ -63,10 +77,10 @@
       "aspects": {
         "editing": {
           "words": [
-            "effects"
+            "special effects"
           ],
-          "score": "1",
-          "justification": "pretty reasonable"
+          "score": "0",
+          "justification": "generic-1, pretty reasonable+1"
         }
       },
       "comment": ""
@@ -74,8 +88,15 @@
     {
       "text": "Nothing ground breaking or stand out impressive for either of these.",
       "aspects": {
+         "novelty": {
+          "words": [
+            "ground breaking", "stand out"
+          ],
+          "score": "-1",
+          "justification": "nothing"
+        }
       },
-      "comment": ""
+      "comment": "charlie: we need to make the default scope the movie"
     },
     {
       "text": "Probably the most notable thing was Kane himself, but it's not a great surprise seeing as his day job is to play a Psycho.On the downside however the whole plot was so incredibly bog standard you get bored with it early on, stop really caring who's going to live or die and just try and enjoy the visuals.",
@@ -85,7 +106,7 @@
             "plot"
           ],
           "score": "-2",
-          "justification": "incredibly bog standart,bored"
+          "justification": "incredibly bog standart, bored"
         },
         "vision": {
           "words": [
@@ -97,19 +118,33 @@
         },
         "cast": {
           "words": [
-            "Kane"
+            "actor mention"
           ],
           "score": "1",
           "justification": "notable"
         }
       },
-      "comment": ""
+      "comment": "charlie: actor mentions need to set the aspect to cast"
     },
     {
       "text": "The story naturally revolves around a couple of young but tough women (like that's new) who have a tendency of getting all the men around them killed.",
       "aspects": {
+        "plot": {
+          "words": [
+            "story", "revolves"
+          ],
+          "score": "-1",
+          "justification": "like that's new"
+        },
+        "novelty": {
+          "words": [
+            "like that's new"
+          ],
+          "score": "-1",
+          "justification": "like that's new"
+        }
       },
-      "comment": ""
+      "comment": "sarcasm"
     },
     {
       "text": "The older characters are very peripheral and somewhat wasted.",
@@ -119,8 +154,8 @@
             "characters",
             "character"
           ],
-          "score": "-1",
-          "justification": "somewhat wasted"
+          "score": "-2",
+          "justification": "somewhat wasted, very peripheral"
         }
       },
       "comment": ""
@@ -130,14 +165,14 @@
       "aspects": {
         "movie": {
           "words": [
-            "this"
+            "this", "films such as this"
           ],
           "score": "1",
           "justification": "marginally better"
         },
         "plot": {
           "words": [
-            "plot"
+            "plot", "twist"
           ],
           "score": "-2",
           "justification": "worst part"
@@ -152,15 +187,15 @@
           "words": [
             "film"
           ],
-          "score": "1",
-          "justification": "pretty reasonable,honest"
+          "score": "0",
+          "justification": "pretty reasonable, honest, short disposable hack -1"
         },
         "plot": {
           "words": [
             "This"
           ],
           "score": "-2",
-          "justification": "mors generic,obvious"
+          "justification": "generic, obvious, you'll have guessed it"
         }
       },
       "comment": ""
@@ -185,6 +220,6 @@
       "comment": ""
     }
   ],
-  "overall": "0",
+  "overall": "-1",
   "comment": ""
 }
