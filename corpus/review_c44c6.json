@@ -10,7 +10,7 @@
     {
       "text": " The scenario of the movie is kind of shaky.",
       "aspects": {
-        "concept": {
+        "plot": {
           "words": [
             "scenario"
           ],
@@ -23,7 +23,7 @@
     {
       "text": "The whole movie is supposed to deal with a tax inflicted to mixed race dogs owners, but it is actually never explained.",
       "aspects": {
-        "movie": {
+        "plot": {
           "words": [
             "whole movie"
           ],
@@ -31,7 +31,7 @@
           "justification": "never explained"
         }
       },
-      "comment": "is supposed to?"
+      "comment": "is supposed to? Woj: i'd say whenever someone says never explained, we can infer not enough was said - so -ve"
     },
     {
       "text": "The lack of explanation of the context take away all the credibility.",
@@ -98,7 +98,7 @@
           "justification": "isn't great"
         }
       },
-      "comment": "is a dog a a cast member?"
+      "comment": "is a dog a a cast member? Woj: well, they are part of the FX maybe, but not cast"
     },
     {
       "text": "I have to congratulate the director and the dog trainers for such a hard and amazing job.   Also, I believe the trailer was great, a mix between a little clue on the movie and a breathtaking cinematographic job.",
@@ -151,13 +151,13 @@
           "justification": "very best"
         }
       },
-      "comment": "expectations as negative?"
+      "comment": "expectations as negative? Woj: I would rather focus on expectations higher than in the movie aspect, not the problem"
     },
     {
       "text": "Anyway, if you take away all the violent scene of the movie, I think White God would actually be a good Disney film.",
       "aspects": {
       },
-      "comment": "think this is -ve"
+      "comment": "think this is -ve Woj: ignore"
     }
   ],
   "overall": "-1",

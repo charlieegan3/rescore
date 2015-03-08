@@ -23,7 +23,7 @@
       "text": "So let's start with the good.",
       "aspects": {
       },
-      "comment": ""
+      "comment": "Woj: should ignore if anything detected"
     },
     {
       "text": "The visual effects are stunning, excellent work thanks to the visual effects team and Blomkamp.",
@@ -33,7 +33,7 @@
             "visual"
           ],
           "score": "2",
-          "justification": "stunning, excellent work"
+          "justification": "stunning, excellent"
         }
       },
       "comment": ""
@@ -134,6 +134,13 @@
           ],
           "score": "2",
           "justification": "adds a new twist"
+        },
+        "novelty": {
+          "words": [
+            "director-name"
+          ],
+          "score": "2",
+          "justification": "adds a new twist"
         }
       },
       "comment": ""
@@ -154,7 +161,7 @@
             "fresh"
           ],
           "score": "2",
-          "justification": "original fresh"
+          "justification": "new original fresh"
         }
       },
       "comment": ""
@@ -167,10 +174,10 @@
             "humor"
           ],
           "score": "2",
-          "justification": "amazing, surprisingly"
+          "justification": "amazing"
         }
       },
-      "comment": ""
+      "comment": "Woj: I would be consistent with unfortunately that also has no clear value to me"
     },
     {
       "text": "But the movie just falls apart when it moves the attention away from Chappie and tries focus on other plot lines.",
@@ -228,11 +235,11 @@
           "words": [
             "plot"
           ],
-          "score": "-2",
+          "score": "-1",
           "justification": "can't remember a thing"
         }
       },
-      "comment": ""
+      "comment": "can't remember a thing is not so strong a -ve"
     },
     {
       "text": "And it also have a Hugh Jackman subplot which is completely unnecessary and clichéd, and only increase it's runtime to 2 hours.",
@@ -249,7 +256,7 @@
             "plot"
           ],
           "score": "-2",
-          "justification": "ompletely unnecessary and clichéd"
+          "justification": "completely unnecessary and clichéd"
         },
         "length": {
           "words": [
@@ -269,14 +276,14 @@
             "the movie"
           ],
           "score": "-2",
-          "justification": "drags, cut out"
+          "justification": "drags"
         },
         "drags": {
           "words": [
             "drags"
           ],
           "score": "-2",
-          "justification": "drags, cut out"
+          "justification": "drags"
         }
       },
       "comment": ""
@@ -322,14 +329,14 @@
             "visuals",
             "visual"
           ],
-          "score": "awesome",
+          "score": "2",
           "justification": "awesome"
         },
         "concept": {
           "words": [
             "ideas"
           ],
-          "score": "great",
+          "score": "2",
           "justification": "great"
         }
       },
@@ -347,7 +354,7 @@
         },
         "plot": {
           "words": [
-            "plot"
+            "subplots"
           ],
           "score": "-2",
           "justification": "dull"

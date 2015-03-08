@@ -52,7 +52,7 @@
           "justification": "unique"
         }
       },
-      "comment": ""
+      "comment": "which aspect in aspect 2 did you mean?"
     },
     {
       "text": "Guy Pearce has been underrated for years (just think back now to Priscilla and can you believe this is the same guy) and finally might get the recognition here that was at least well-deserved of him back for LA Confidential.",
@@ -62,7 +62,7 @@
             "cast member mentions"
           ],
           "score": "1",
-          "justification": "underated, well deserved, recognition"
+          "justification": "underrated, well deserved, recognition"
         }
       },
       "comment": ""
@@ -88,9 +88,9 @@
         },
         "cast": {
           "words": [
-            "act"
+            "performances"
           ],
-          "score": "1",
+          "score": "2",
           "justification": "powerful"
         }
       },

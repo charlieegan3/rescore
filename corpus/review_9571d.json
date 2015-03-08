@@ -30,6 +30,13 @@
           "score": "2",
           "justification": "intense, alive, not yet seen"
         },
+        "novelty": {
+          "words": [
+            "it"
+          ],
+          "score": "2",
+          "justification": "not yet seen"
+        },
         "vision": {
           "words": [
             "visually",
@@ -53,7 +60,7 @@
           "justification": "complex, over my head"
         }
       },
-      "comment": ""
+      "comment": "Woj: complex can mean -ve or +ve"
     },
     {
       "text": "Miyazaki's long infatuation with technology verses nature and man's relation to God (or gods) weave throughout the film as does his trend for strong women characters.",
@@ -71,7 +78,7 @@
             "act"
           ],
           "score": "1",
-          "justification": "strong women characters"
+          "justification": "strong ... characters"
         }
       },
       "comment": ""
@@ -84,7 +91,7 @@
             "the film"
           ],
           "score": "2",
-          "justification": "intense, emotion, caries you through"
+          "justification": "intense, caries you through"
         }
       },
       "comment": ""
@@ -124,7 +131,7 @@
             "this film"
           ],
           "score": "1",
-          "justification": "recommend"
+          "justification": "I recommend"
         }
       },
       "comment": ""

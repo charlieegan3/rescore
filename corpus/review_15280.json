@@ -118,7 +118,7 @@
           "justification": "good"
         }
       },
-      "comment": "1st and 2nd half, i.e all :)"
+      "comment": "1st and 2nd half, i.e all :) Woj: yep"
     },
     {
       "text": "But the first half is all fun and the second half is all plot.",
@@ -158,7 +158,7 @@
           "justification": "good"
         }
       },
-      "comment": ""
+      "comment": "Woj: just +1?"
     },
     {
       "text": "Both Will and Margot did a great job!",
@@ -196,7 +196,7 @@
             "character"
           ],
           "score": "2",
-          "justification": "lot to offer, charisma, twists"
+          "justification": "lot to offer, twists"
         },
         "cast": {
           "words": [
@@ -206,7 +206,7 @@
           "justification": "charisma"
         }
       },
-      "comment": "not sure about cast here, did take the trouble to mention an actor by name"
+      "comment": "not sure about cast here, did take the trouble to mention an actor by name. Woj: now it looks just fine to me"
     },
     {
       "text": "-The music was fitting and some of it was memorable.",
@@ -219,7 +219,7 @@
           "justification": "fitting, memorable"
         }
       },
-      "comment": ""
+      "comment": "Woj: I would even go for 2, especially because of the memorable"
     },
     {
       "text": "-Another thing I liked was seeing the inside of the whole con-man thing you see in movies.",
@@ -231,7 +231,7 @@
           "score": "1",
           "justification": "liked"
         },
-        "plot": {
+        "credibility": {
           "words": [
             "seeing the inside"
           ],
@@ -269,7 +269,7 @@
             "generic scope"
           ],
           "score": "1",
-          "justification": "negatives are very small"
+          "justification": "negatives are ... small"
         }
       },
       "comment": ""
@@ -286,13 +286,13 @@
         },
         "credibility": {
           "words": [
-            "-2"
+            "out of reality, inconsistencies"
           ],
-          "score": "out of reality, inconsistencies",
+          "score": "-2",
           "justification": "out of reality, inconsistencies"
         }
       },
-      "comment": "fix"
+      "comment": "fix Woj: can't remember how many time I fucked it up and swapped the values"
     },
     {
       "text": "There is not that much else to say, because Focus is worth seeing in theaters!",
@@ -335,5 +335,5 @@
     }
   ],
   "overall": "2",
-  "comment": ""
+  "comment": "second marke - Woj"
 }
