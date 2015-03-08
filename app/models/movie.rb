@@ -10,9 +10,7 @@ class Movie < ActiveRecord::Base
 
   before_save :default_values
   before_validation :set_slug if :title_changed?
-  after_destroy do
-    Statistic.refresh
-  end
+  after_destroy { Statistic.refresh }
 
   def set_slug
     self.slug = self.title.parameterize
