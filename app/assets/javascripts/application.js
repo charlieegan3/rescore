@@ -19,4 +19,17 @@ $(function(){ $(document).foundation(); });
 
 $(document).ready(function(){
   $(".rescore-flash").delay(2400).fadeOut("slow");
+
+  $("#flag").click(function(){
+    if($(".report-form").is(":visible")) {
+      $(".report-form").hide("fast");
+    }
+    else {
+      $(".report-form").show("fast");
+    }
+  })
+
+  $("#report-form-hide").click(function(){
+      $(".report-form").hide("fast");
+  })
 })

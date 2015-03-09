@@ -27,7 +27,13 @@ Rails.application.routes.draw do
   get 'movies/:id/collect' => 'movies#collect', as: :collect_movie
   get 'movies/:id/build_summary' => 'movies#build_summary', as: :build_movie_summary
   get 'movies/:id/favorite' => 'favorites#set', as: :favorite_movie
+  get 'movies/:id/flag' => 'reports#new', as: :new_flag
   resources :movies
+
+  get '/reports' => 'reports#index', as: :manage_reports
+  get '/reports/:id' => 'reports#show', as: :show_report
+  delete '/reports/delete/:id' => 'reports#destroy', as: :delete_report
+  post '/reports/new' => 'reports#new', as: :new_report
 
   get "/auth/:provider/callback" => "sessions#create"
   get "/signout" => "sessions#destroy", :as => :signout

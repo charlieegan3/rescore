@@ -1,0 +1,8 @@
+p ="Briefly describe the issue:"
+=form_tag("/reports/new", method: "post") do
+  = hidden_field_tag(:movie_id, @movie.id)
+  = label_tag(:description)
+  = text_field_tag(:description)
+  = submit_tag("Send report")
+
+a.muted href="#" id="report-form-hide"  Cancel
