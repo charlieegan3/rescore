@@ -186,3 +186,7 @@ p.title {
 .report-form {
   display: none;
 }
+
+.form-error {
+  color: red;
+}
