@@ -10,6 +10,8 @@ class Movie < ActiveRecord::Base
 
   before_save :default_values
   before_validation :set_slug if :title_changed?
+  after_destroy { Statistic.delay.refresh }
+  after_save { Statistic.delay.refresh }
 
   def set_slug
     self.slug = self.title.parameterize
@@ -56,6 +58,7 @@ class Movie < ActiveRecord::Base
     update_attributes({
       sentiment: set_sentiment, stats: set_stats, status: nil, task: nil, complete: true
     })
+    Statistic.refresh
   end
   handle_asynchronously :build_summary
 
