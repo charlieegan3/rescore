@@ -6,10 +6,12 @@
     table
       tr
         th Description
+        th Type
         th colspan=(1)
           | Actions
       p = "#{@reports.size} reports for #{@movie.title}."
       -@reports.each do |report|
         tr
           td =report.description
+          td =report.category
           td =button_to "Delete", delete_report_path(report.id), {onclick: "return confirm('Sure?')", method: :delete, class: 'button alert'}
