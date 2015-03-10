@@ -215,11 +215,11 @@
           "words": [
             "music"
           ],
-          "score": "1",
+          "score": "2",
           "justification": "fitting, memorable"
         }
       },
-      "comment": "Woj: I would even go for 2, especially because of the memorable"
+      "comment": "Woj: I would even go for 2, especially because of the memorable. charlie: done"
     },
     {
       "text": "-Another thing I liked was seeing the inside of the whole con-man thing you see in movies.",
@@ -230,16 +230,9 @@
           ],
           "score": "1",
           "justification": "liked"
-        },
-        "credibility": {
-          "words": [
-            "seeing the inside"
-          ],
-          "score": "1",
-          "justification": "liked"
         }
       },
-      "comment": ""
+      "comment": "charlie: removed plot/credibility it because we didn't agree"
     },
     {
       "text": "Like stealing watches looks so much cooler in this because they explain it.",
@@ -292,7 +285,7 @@
           "justification": "out of reality, inconsistencies"
         }
       },
-      "comment": "fix Woj: can't remember how many time I fucked it up and swapped the values"
+      "comment": "fix Woj: can't remember how many time I fucked it up and swapped the values. charlie: cheers"
     },
     {
       "text": "There is not that much else to say, because Focus is worth seeing in theaters!",
@@ -335,5 +328,5 @@
     }
   ],
   "overall": "2",
-  "comment": "second marke - Woj"
+  "comment": "second marker - Woj"
 }
