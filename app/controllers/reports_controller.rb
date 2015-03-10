@@ -34,7 +34,7 @@ class ReportsController < ApplicationController
       return redirect_to movie_path(Movie.find(params[:movie_id]))
     end
 
-    @report = Report.create(movie_id: params[:movie_id].to_i, description: params[:description][0..300], category: params[:type])
+    @report = Report.create(movie_id: params[:movie_id].to_i, description: params[:description][0..300], category: params[:type], user_id: params[:user_id])
     flash[:notice] = "Report sent, thanks for your feedback!"
     redirect_to movie_path(Movie.find(params[:movie_id].to_i))
   end

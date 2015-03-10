@@ -40,6 +40,10 @@ p ="Briefly describe the issue (300 characters or less):"
 p.muted id=("report_w_count") ="300 characters remaining."
 p.muted.form-error id=("report_form_error")
 =form_tag("/reports/new", method: "post") do
+  - if current_user
+    = hidden_field_tag(:user_id, current_user.id)
+  - else
+    = hidden_field_tag(:user_id, nil)
   = hidden_field_tag(:movie_id, @movie.id)
   = label_tag(:description)
   = text_field_tag(:description)
