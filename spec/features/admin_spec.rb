@@ -28,7 +28,7 @@ RSpec.describe MoviesController, :type => :feature do
     it 'lets admin delete movies' do
       FactoryGirl::create(:movie, title: 'Alien')
       visit('/movies/admin')
-      click_on 'Delete'      
+      click_on 'Delete'
       expect(page).not_to have_content 'Alien'
     end
 
@@ -48,10 +48,12 @@ RSpec.describe MoviesController, :type => :feature do
        fill_in 'query', with: 'The Godfather'
       end
 
-      click_button 'new_from_lookup_btn'
+      VCR.use_cassette('new_from_lookup') do
+        click_button 'new_from_lookup_btn'
+      end
       expect(page).to have_content '12911' # ID
 
-      first('.button_alert').click
+      first('.button.alert').click
       expect(page).to have_content 'New Film'
 
       click_button 'new_film_submit'
