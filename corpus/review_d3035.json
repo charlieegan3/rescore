@@ -1,0 +1,94 @@
+{
+  "title": "Project Almanac",
+  "genres": "Sci-Fi, Thriller",
+  "source": "imdb",
+  "score": "9/10",
+  "helpfulness": "1/1",
+  "author": "Charlie Egan",
+  "body": " Told through the point of a video camera, a group of smart teenagers discover a time machine not quite put together, so they get all the tools needed in hopes to get it working, but when it happens, they all start having fun with it, but will it soon do more harm than good?   An entertaining found footage film, I wonder what is left to do a movie told through the point of view from a video camera, and the time traveling idea works perfectly here, the effects are pretty descent. The actors do well in there roles, although the lead talks like he is in college and less like he is in high school, it is like he is the kid brother of Sheldon from The Big Bang Theory. I was really entertained by this, if your a big fan of time traveling films I believe you'll be entertained by this. And I wonder what's next for a found footage film? ",
+  "annotated_sentences": [
+    {
+      "text": " Told through the point of a video camera, a group of smart teenagers discover a time machine not quite put together, so they get all the tools needed in hopes to get it working, but when it happens, they all start having fun with it, but will it soon do more harm than good?",
+      "aspects": {
+        "plot": {
+          "words": [
+            "told through"
+          ],
+          "score": "0",
+          "justification": "no sentiment"
+        }
+      },
+      "comment": ""
+    },
+    {
+      "text": "An entertaining found footage film, I wonder what is left to do a movie told through the point of view from a video camera, and the time traveling idea works perfectly here, the effects are pretty descent.",
+      "aspects": {
+        "movie": {
+          "words": [
+            "film"
+          ],
+          "score": "1",
+          "justification": "entertaining"
+        },
+        "editing": {
+          "words": [
+            "effects"
+          ],
+          "score": "1",
+          "justification": "pretty decent"
+        },
+        "concept": {
+          "words": [
+            "idea"
+          ],
+          "score": "2",
+          "justification": "works perfectly"
+        }
+      },
+      "comment": ""
+    },
+    {
+      "text": "The actors do well in there roles, although the lead talks like he is in college and less like he is in high school, it is like he is the kid brother of Sheldon from The Big Bang Theory.",
+      "aspects": {
+        "cast": {
+          "words": [
+            "actors",
+            "act",
+            "role"
+          ],
+          "score": "1",
+          "justification": "do well"
+        },
+        "dialog": {
+          "words": [
+            "talks"
+          ],
+          "score": "-1",
+          "justification": "less like"
+        }
+      },
+      "comment": "tough sentence"
+    },
+    {
+      "text": "I was really entertained by this, if your a big fan of time traveling films I believe you'll be entertained by this.",
+      "aspects": {
+        "movie": {
+          "words": [
+            "this"
+          ],
+          "score": "2",
+          "justification": "entertained"
+        }
+      },
+      "comment": "+ for 'really'"
+    },
+    {
+      "text": "And I wonder what's next for a found footage film? ",
+      "aspects": {
+      },
+      "comment": ""
+    }
+  ],
+  "overall": "1",
+  "comment": ""
+}

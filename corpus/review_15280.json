@@ -1,0 +1,332 @@
+{
+  "title": "Focus",
+  "genres": "Comedy, Crime, Drama",
+  "source": "imdb",
+  "score": "7/10",
+  "helpfulness": "17/27",
+  "author": "Charlie Egan",
+  "body": " -Focus (2015) movie review: -Focus is a crime flick that follows con-man Nicky, played by Will Smith, as he meets and trains a new counterpart Jess, played by Margot Robbie, in the ways of being a con-artist. This comes complete with twists, trust issues, rich people, and all kinds of Oceans 11 style problems.  -For what it was, I really enjoyed Focus. It has a few small problems, but was good.  -The story felt original and was hard to predict, making the twists even better and more shocking. Even if they were a tiny bit forced.  -The pace was really good for the first half, and the second half. But the first half is all fun and the second half is all plot. Neither was bad, but the second half was less fun.  -The acting is really good. Both Will and Margot did a great job! -The characters are deep and interesting. Will Smiths character especially had a lot to offer in the way of charisma and twists.  -The music was fitting and some of it was memorable.  -Another thing I liked was seeing the inside of the whole con-man thing you see in movies. Like stealing watches looks so much cooler in this because they explain it.  -Really the negatives are small. There are some inconsistencies and some added drama that takes the audience out of reality alittle, but it was compelling, well-made, and entertaining! There is not that much else to say, because Focus is worth seeing in theaters! -It is rated-R for some language, a moderate, but not heavy amount, and some brief sexual content. A PG-13 amount probably.",
+  "annotated_sentences": [
+    {
+      "text": " -Focus (2015) movie review: -Focus is a crime flick that follows con-man Nicky, played by Will Smith, as he meets and trains a new counterpart Jess, played by Margot Robbie, in the ways of being a con-artist.",
+      "aspects": {
+        "movie": {
+          "words": [
+            "file-title, flick"
+          ],
+          "score": "0",
+          "justification": ""
+        },
+        "cast": {
+          "words": [
+            "played"
+          ],
+          "score": "0",
+          "justification": ""
+        },
+        "plot": {
+          "words": [
+            "follows"
+          ],
+          "score": "0",
+          "justification": ""
+        }
+      },
+      "comment": "mentions with no sentiment"
+    },
+    {
+      "text": "This comes complete with twists, trust issues, rich people, and all kinds of Oceans 11 style problems.",
+      "aspects": {
+        "plot": {
+          "words": [
+            "twists"
+          ],
+          "score": "1",
+          "justification": "comes complete"
+        }
+      },
+      "comment": ""
+    },
+    {
+      "text": "-For what it was, I really enjoyed Focus.",
+      "aspects": {
+        "movie": {
+          "words": [
+            "file-title"
+          ],
+          "score": "2",
+          "justification": "enjoyed"
+        }
+      },
+      "comment": ""
+    },
+    {
+      "text": "It has a few small problems, but was good.",
+      "aspects": {
+        "movie": {
+          "words": [
+            "it"
+          ],
+          "score": "0",
+          "justification": "few small problems, good (-1, +1)"
+        }
+      },
+      "comment": ""
+    },
+    {
+      "text": "-The story felt original and was hard to predict, making the twists even better and more shocking.",
+      "aspects": {
+        "plot": {
+          "words": [
+            "story",
+            "twists"
+          ],
+          "score": "2",
+          "justification": "better, original, shocking, twists, hard to predict (opposite of predictable, a -ve word)"
+        },
+        "novelty": {
+          "words": [
+            "original"
+          ],
+          "score": "1",
+          "justification": "original"
+        }
+      },
+      "comment": ""
+    },
+    {
+      "text": "Even if they were a tiny bit forced.",
+      "aspects": {
+        "plot": {
+          "words": [
+            "they (last sentence)"
+          ],
+          "score": "-1",
+          "justification": "forced"
+        }
+      },
+      "comment": ""
+    },
+    {
+      "text": "-The pace was really good for the first half, and the second half.",
+      "aspects": {
+        "plot": {
+          "words": [
+            "pace"
+          ],
+          "score": "2",
+          "justification": "good"
+        }
+      },
+      "comment": "1st and 2nd half, i.e all :) Woj: yep"
+    },
+    {
+      "text": "But the first half is all fun and the second half is all plot.",
+      "aspects": {
+        "plot": {
+          "words": [
+            "plot"
+          ],
+          "score": "0",
+          "justification": "no sentiment"
+        }
+      },
+      "comment": ""
+    },
+    {
+      "text": "Neither was bad, but the second half was less fun.",
+      "aspects": {
+        "plot": {
+          "words": [
+            "second half, first half"
+          ],
+          "score": "-1",
+          "justification": "less fun"
+        }
+      },
+      "comment": ""
+    },
+    {
+      "text": "-The acting is really good.",
+      "aspects": {
+        "cast": {
+          "words": [
+            "acting",
+            "act"
+          ],
+          "score": "2",
+          "justification": "good"
+        }
+      },
+      "comment": "Woj: just +1?"
+    },
+    {
+      "text": "Both Will and Margot did a great job!",
+      "aspects": {
+        "cast": {
+          "words": [
+            "cast-member mentions"
+          ],
+          "score": "2",
+          "justification": "great job"
+        }
+      },
+      "comment": ""
+    },
+    {
+      "text": "-The characters are deep and interesting.",
+      "aspects": {
+        "plot": {
+          "words": [
+            "characters",
+            "character"
+          ],
+          "score": "2",
+          "justification": "deep, interesting"
+        }
+      },
+      "comment": ""
+    },
+    {
+      "text": "Will Smiths character especially had a lot to offer in the way of charisma and twists.",
+      "aspects": {
+        "plot": {
+          "words": [
+            "twists",
+            "character"
+          ],
+          "score": "2",
+          "justification": "lot to offer, twists"
+        },
+        "cast": {
+          "words": [
+            "act"
+          ],
+          "score": "1",
+          "justification": "charisma"
+        }
+      },
+      "comment": "not sure about cast here, did take the trouble to mention an actor by name. Woj: now it looks just fine to me"
+    },
+    {
+      "text": "-The music was fitting and some of it was memorable.",
+      "aspects": {
+        "sound": {
+          "words": [
+            "music"
+          ],
+          "score": "2",
+          "justification": "fitting, memorable"
+        }
+      },
+      "comment": "Woj: I would even go for 2, especially because of the memorable. charlie: done"
+    },
+    {
+      "text": "-Another thing I liked was seeing the inside of the whole con-man thing you see in movies.",
+      "aspects": {
+        "movie": {
+          "words": [
+            "generic scope"
+          ],
+          "score": "1",
+          "justification": "liked"
+        }
+      },
+      "comment": "charlie: removed plot/credibility it because we didn't agree"
+    },
+    {
+      "text": "Like stealing watches looks so much cooler in this because they explain it.",
+      "aspects": {
+        "plot": {
+          "words": [
+            "explain"
+          ],
+          "score": "2",
+          "justification": "cooler"
+        },
+        "vision": {
+          "words": [
+            "looks"
+          ],
+          "score": "2",
+          "justification": "cooler"
+        }
+      },
+      "comment": ""
+    },
+    {
+      "text": "-Really the negatives are small.",
+      "aspects": {
+        "movie": {
+          "words": [
+            "generic scope"
+          ],
+          "score": "1",
+          "justification": "negatives are ... small"
+        }
+      },
+      "comment": ""
+    },
+    {
+      "text": "There are some inconsistencies and some added drama that takes the audience out of reality alittle, but it was compelling, well-made, and entertaining!",
+      "aspects": {
+        "movie": {
+          "words": [
+            "generic scope"
+          ],
+          "score": "2",
+          "justification": "compelling, well made, entertaining"
+        },
+        "credibility": {
+          "words": [
+            "out of reality, inconsistencies"
+          ],
+          "score": "-2",
+          "justification": "out of reality, inconsistencies"
+        }
+      },
+      "comment": "fix Woj: can't remember how many time I fucked it up and swapped the values. charlie: cheers"
+    },
+    {
+      "text": "There is not that much else to say, because Focus is worth seeing in theaters!",
+      "aspects": {
+        "movie": {
+          "words": [
+            "film-title"
+          ],
+          "score": "1",
+          "justification": "worth seeing"
+        }
+      },
+      "comment": ""
+    },
+    {
+      "text": "-It is rated-R for some language, a moderate, but not heavy amount, and some brief sexual content.",
+      "aspects": {
+        "movie": {
+          "words": [
+            "it"
+          ],
+          "score": "0",
+          "justification": "no sentiment"
+        },
+        "dialog": {
+          "words": [
+            "language"
+          ],
+          "score": "0",
+          "justification": "no sentiment"
+        }
+      },
+      "comment": ""
+    },
+    {
+      "text": "A PG-13 amount probably.",
+      "aspects": {
+      },
+      "comment": ""
+    }
+  ],
+  "overall": "2",
+  "comment": "second marker - Woj"
+}
