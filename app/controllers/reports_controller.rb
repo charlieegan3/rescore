@@ -1,5 +1,5 @@
 class ReportsController < ApplicationController
-  http_basic_authenticate_with name: 'admin', password: '1234qwer', except: [:new]
+  http_basic_authenticate_with name: ADMIN_USERNAME, password: ADMIN_PASSWORD, except: [:new]
 
   def index
     if Report.count == 0

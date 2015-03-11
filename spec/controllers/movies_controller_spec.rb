@@ -3,7 +3,7 @@ require 'spec_helper'
 
 RSpec.describe MoviesController, :type => :controller do
   before(:each) do
-    request.env['HTTP_AUTHORIZATION'] = ActionController::HttpAuthentication::Basic.encode_credentials('admin', '1234qwer')
+    request.env['HTTP_AUTHORIZATION'] = ActionController::HttpAuthentication::Basic.encode_credentials(ADMIN_USERNAME, ADMIN_PASSWORD)
   end
 
   describe 'index' do
