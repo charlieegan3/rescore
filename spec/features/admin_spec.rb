@@ -11,12 +11,14 @@ RSpec.describe MoviesController, :type => :feature do
 
   describe 'admin' do
     it 'lists the current movies correctly' do
+      Movie.delete_all
       FactoryGirl::create(:movie, title: 'Alien')
       visit('/movies/admin')
       expect(page).to have_content 'Alien'
     end
 
     it 'lets admin udpate stats properly' do
+      Movie.delete_all
       FactoryGirl::create(:movie, title: 'Alien')
       visit('/movies/admin')
       expect(page).to have_content 'Refresh Average Stats'
@@ -26,13 +28,17 @@ RSpec.describe MoviesController, :type => :feature do
     end
 
     it 'lets admin delete movies' do
+      Movie.delete_all
       FactoryGirl::create(:movie, title: 'Alien')
+      FactoryGirl::create(:movie, title: 'The Godfather')
       visit('/movies/admin')
-      click_on 'Delete'
+      first('.button.alert').click
+      #click_on 'Delete'
       expect(page).not_to have_content 'Alien'
     end
 
     it 'lets admin manage movies' do
+      Movie.delete_all
       FactoryGirl::create(:movie, title: 'Alien')
       visit('/movies/admin')
       click_on 'Manage'

@@ -10,7 +10,7 @@ RSpec.describe MoviesController, :type => :controller do
     it 'builds a list of movies' do
       movie = FactoryGirl::create(:movie)
       get :index
-      expect(assigns(:movies)).to match_array([movie])
+      expect(assigns(:movies)).to match_array(Movie.all)
       expect(response).to render_template('index')
     end
   end

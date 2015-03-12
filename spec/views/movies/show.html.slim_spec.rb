@@ -6,11 +6,6 @@ RSpec.describe 'movies/show', :type => :view do
       @movie = assign(:movie, create(:movie))
       @user = create(:user, screen_name: 'bob')
       allow(view).to receive(:current_user).and_return(@user)
-      FactoryGirl::create(:review_count_statistic)
-      FactoryGirl::create(:people_count_statistic)
-      FactoryGirl::create(:topic_sentiments_statistic)
-      FactoryGirl::create(:topic_counts_statistic)
-      FactoryGirl::create(:sentiment_variation_statistic)
     end
 
     it 'show favorite button to authenticated users' do
