@@ -3,7 +3,6 @@ require 'rails_helper'
 describe 'the signin process', :type => :feature do
   it 'can sign in user with Twitter account' do
     FactoryGirl::create(:movie)
-    FactoryGirl::create(:review_count_statistic)
 
     visit '/'
     expect(page).to have_content('Sign in with Twitter')

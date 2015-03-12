@@ -6,11 +6,6 @@ RSpec.describe ReportsController, :type => :feature do
   describe 'new' do
     it 'lets users create a new report' do
       movie = FactoryGirl::create(:movie)
-      create(:review_count_statistic)
-      create(:people_count_statistic)
-      create(:topic_sentiments_statistic)
-      create(:topic_counts_statistic)
-      create(:sentiment_variation_statistic)
 
       visit(movie_path(movie))
 
