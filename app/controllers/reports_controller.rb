@@ -17,6 +17,7 @@ class ReportsController < ApplicationController
     if @reports.nil?
       flash[:alert] = 'No report with id #{params[:id]} found.'
       return redirect_to manage_reports_path
+    end
   end
 
   def new
