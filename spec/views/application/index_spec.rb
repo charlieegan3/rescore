@@ -10,10 +10,6 @@ RSpec.describe "application/index", :type => :view do
   it 'shows the correct summary counts' do
     FactoryGirl::create(:movie)
     FactoryGirl::create(:movie, title: "The Hobbit")
-    FactoryGirl::create(:review_count_statistic, identifier: 'review_count')
-    FactoryGirl::create(:people_count_statistic, identifier: 'people_count')
-    FactoryGirl::create(:topic_sentiments_statistic, identifier: 'topic_sentiments')
-    FactoryGirl::create(:topic_counts_statistic, identifier: 'topic_counts')
 
     r_count = Statistic.find_by_identifier('review_count').value[:count]
     m_count = Movie.complete.size
