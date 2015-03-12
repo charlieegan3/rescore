@@ -1,0 +1,18 @@
+-if current_user
+  -fav_path = favorite_movie_path(@movie, favorite: {movie_id: @movie.id})
+  -flag_path = new_flag_path(@movie, issue: {movie_id: @movie.id})
+  -if current_user.favorites.map {|f| f.movie_id }.include?(@movie.id)
+    p
+      =link_to(fav_path, id: 'favorite') do
+        span.has-tip aria-haspopup="true" data-tooltip="" title="Remove this movie to your favorites"
+          i.fi-heart.active
+  -else
+    p
+      =link_to(fav_path, id: 'favorite') do
+        span.has-tip aria-haspopup="true" data-tooltip="" title="Add this movie to your favorites"
+          i.fi-heart.inactive
+    p
+      =link_to("#", id: 'flag') do
+        span.has-tip aria-haspopup="true" data-tooltip="" title="Spot something wrong?"
+          i.fi-flag.inactive
+p.muted More user actions coming soon
