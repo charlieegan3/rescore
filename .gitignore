@@ -7,3 +7,6 @@
 
 /log/*.log
 /tmp
+
+/spec/fixtures/vcr_cassettes/*
+
