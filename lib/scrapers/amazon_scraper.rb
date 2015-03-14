@@ -11,45 +11,51 @@ class AmazonScraper
   end
 
   def reviews
-    return [] if @title_url == '' || @title_url.nil?
-    potential_review_divs = get_potential_reviews
+    begin
+      return [] if @title_url == '' || @title_url.nil?
+      potential_review_divs = get_potential_reviews
 
-    reviews = []
-    for i in 0..potential_review_divs.size - 1
-      next if potential_review_divs[i]['class'] != 'reviewText'
-      review = {}
-      domain = potential_review_divs[i - 10, 12].to_a
-      domain.select! { |e| (e.text.include? 'out of 5 stars') || (e.text.include? 'found the following review') }
-      domain.reject! { |e| e.text.length > 400 }
-      domain.map! { |f| f.text.gsub(/\s+/," ") }
+      reviews = []
+      for i in 0..potential_review_divs.size - 1
+        next if potential_review_divs[i]['class'] != 'reviewText'
+        review = {}
+        domain = potential_review_divs[i - 10, 12].to_a
+        domain.select! { |e| (e.text.include? 'out of 5 stars') || (e.text.include? 'found the following review') }
+        domain.reject! { |e| e.text.length > 400 }
+        domain.map! { |f| f.text.gsub(/\s+/," ") }
 
-      review[:content] = potential_review_divs[i].text
-      review[:rating] = domain.last.match(/\d.\d{1,} out of \d{1,}/).to_s.split(" out of ").map { |x| x.to_f }.first
-      review[:percentage] = ((review[:rating].to_f / 5.0) * 100).round(2)
-      review[:useful] = domain.first.split('people').first.strip.split(' of ').map {|x| x.gsub(',','').to_i }
-      review[:date] = domain.last.split(',').reverse.take(2).join('').gsub(/\s+/, ' ')
-      review[:title] = domain.last.split('stars').last.split(',').first.strip
+        review[:content] = potential_review_divs[i].text
+        review[:rating] = domain.last.match(/\d.\d{1,} out of \d{1,}/).to_s.split(" out of ").map { |x| x.to_f }.first
+        review[:percentage] = ((review[:rating].to_f / 5.0) * 100).round(2)
+        review[:useful] = domain.first.split('people').first.strip.split(' of ').map {|x| x.gsub(',','').to_i }
+        review[:date] = domain.last.split(',').reverse.take(2).join('').gsub(/\s+/, ' ')
+        review[:title] = domain.last.split('stars').last.split(',').first.strip
 
-      name_location = nil
-      i.downto(i-10).each do |j|
-        if potential_review_divs[j].text.include?('See all my reviews')
-          name_location = j
-          break
+        name_location = nil
+        i.downto(i-10).each do |j|
+          if potential_review_divs[j].text.include?('See all my reviews')
+            name_location = j
+            break
+          end
         end
-      end
 
-      if name_location
-        name_location = potential_review_divs[name_location].text.split('  - See all my reviews').first
-        review[:location] = name_location.match(/\(.*\)/).to_s
-        review[:username] = name_location.gsub(review[:location], '').strip
-      else
-        review[:username] = nil
-        review[:location] = nil
+        if name_location
+          name_location = potential_review_divs[name_location].text.split('  - See all my reviews').first
+          review[:location] = name_location.match(/\(.*\)/).to_s
+          review[:username] = name_location.gsub(review[:location], '').strip
+        else
+          review[:username] = nil
+          review[:location] = nil
+        end
+        review[:source] = {vendor: 'amazon', url: @title_url}
+        reviews << review
       end
-      review[:source] = {vendor: 'amazon', url: @title_url}
-      reviews << review
+      return reviews
+
+    rescue OpenURI::HTTPError => e
+      puts "Amazon scraper got an http error on #{@title_url}"
+      return []
     end
-    reviews
   end
 
   private
