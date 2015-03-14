@@ -190,3 +190,78 @@ p.title {
 .form-error {
   color: red;
 }
+
+div.mobile-menu {
+  display: none;
+  float:right;
+}
+
+@media screen and (max-width: 42em) {
+  .menu {
+    display: none !important;
+  }
+
+  .mobile-menu {
+    display: block !important;
+  }
+  
+  .mobile-menu img{
+    height: 90%;
+    padding: 0.5em;
+  }
+
+  .mobile-menu:before {
+  content: "";
+  width: 1em;
+  }
+
+  .top-bar .mobile-menu ul a {
+    display:block;
+  }
+
+  .top-bar .mobile-menu ul ul {
+    display:none;
+    position:absolute;
+    right:0;
+    top:45px;
+    background:#fff;
+  }
+
+
+  .top-bar .mobile-menu ul ul li
+  {
+    float: none;
+    width: 200px;
+    background-color:#333;
+  }
+
+
+  .top-bar .mobile-menu ul ul li a
+  {
+    line-height:120%;
+    padding:10px 15px;
+    color: #fff;
+  }
+
+  .top-bar .mobile-menu ul
+  {
+    height: 50px;
+    cursor: pointer;
+  }
+
+  .top-bar .mobile-menu ul:hover
+  {
+    background-color:#222;
+  }
+
+  .top-bar .mobile-menu ul:hover ul
+  {
+    display: block;
+  }
+  
+  .top-bar .mobile-menu ul li:hover
+  {
+    background-color:#222;
+  }
+
+}
