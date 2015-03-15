@@ -3,10 +3,6 @@ require 'rails_helper'
 RSpec.describe "application/stats", :type => :view do
   before(:each) do
     FactoryGirl::create(:movie)
-    FactoryGirl::create(:review_count_statistic)
-    FactoryGirl::create(:topic_counts_statistic)
-    FactoryGirl::create(:topic_sentiments_statistic)
-    FactoryGirl::create(:people_count_statistic)
   end
 
   it "counts the movies" do
