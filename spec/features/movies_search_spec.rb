@@ -7,7 +7,6 @@ Delayed::Worker.delay_jobs = false
 RSpec.describe MoviesController, :type => :feature do
   before(:each) do
     movie = FactoryGirl::create(:movie)
-    FactoryGirl::create(:review_count_statistic)
   end
 
   describe 'search_by_title' do

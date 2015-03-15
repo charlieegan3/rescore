@@ -1,0 +1,55 @@
+javascript:
+  $("#flag").click(function(){
+    if($(".report-form").is(":visible")) {
+      $(".report-form").hide("fast");
+    }
+    else {
+      $(".report-form").show("fast");
+    }
+  })
+
+  $("#report-form-hide").click(function(){
+      $(".report-form").hide("fast");
+  })
+
+  $(document).ready(function(){
+
+    $("#report_form_submit").click(function(e){
+      var x = 300 - $("#description").val().length;
+      if(x < 0) {
+        e.preventDefault();
+        $("#report_form_error").html("You're over the character count!");
+        $("#report_form_error").css("color", "red");
+      }
+    })
+
+    $('#description').on('input', function() {
+        var x = 300 - $("#description").val().length;
+        $("#report_w_count").html(x + " characters remaining.");
+        if(x < 0) {
+          $("#report_w_count").css("color", "red");
+        }
+        else {
+          $("#report_w_count").css("color", "");
+        }
+    });
+  })
+
+
+p Briefly describe the issue (300 characters or less):
+p.muted id=("report_w_count")
+  |300 characters remaining.
+p.muted.form-error id=("report_form_error")
+=form_tag("/reports/new", method: "post", id: "movie_report_form") do
+  - if current_user
+    =hidden_field_tag(:user_id, current_user.id)
+  - else
+    =hidden_field_tag(:user_id, nil)
+  =hidden_field_tag(:movie_id, @movie.id)
+  =label_tag(:description)
+  =text_field_tag(:description)
+  =label_tag(:type)
+  =select_tag(:type, options_for_select(["Statistics", "Movie information"]))
+  =submit_tag("Send report", id: "report_form_submit")
+
+a.muted href="#" id="report-form-hide"  Cancel

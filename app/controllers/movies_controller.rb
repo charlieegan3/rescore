@@ -1,5 +1,5 @@
 class MoviesController < ApplicationController
-  http_basic_authenticate_with name: "admin", password: "1234qwer", except: [:index, :show, :search_by_title, :compare]
+  http_basic_authenticate_with name: ADMIN_USERNAME, password: ADMIN_PASSWORD, except: [:index, :show, :search_by_title, :compare]
 
   def index
     @movies = Movie.complete.order('created_at DESC')
@@ -100,7 +100,7 @@ class MoviesController < ApplicationController
   end
 
   def destroy
-    Movie.find(params[:id]).delete
+    Movie.find(params[:id]).destroy
     redirect_to movie_admin_path
   end
 

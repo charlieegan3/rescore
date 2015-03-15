@@ -14,8 +14,8 @@
           "words": [
             "that movie"
           ],
-          "score": "1",
-          "justification": "rating would be 6"
+          "score": "-2",
+          "justification": "rating would be 6 (+1), rated it 1 (-2)"
         }
       },
       "comment": ""
@@ -68,14 +68,14 @@
             "all movies"
           ],
           "score": "-1",
-          "justification": "Unfortunately"
+          "justification": "unfortunately"
         },
         "concept": {
           "words": [
             "concept"
           ],
           "score": "-1",
-          "justification": "Unfortunately"
+          "justification": "unfortunately"
         }
       },
       "comment": ""

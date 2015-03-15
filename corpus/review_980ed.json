@@ -1,0 +1,102 @@
+{
+  "title": "Memento",
+  "genres": "Mystery, Thriller",
+  "source": "imdb",
+  "score": "10/10",
+  "helpfulness": "169/244",
+  "author": "Charlie Egan",
+  "body": " Incredible, riveting and powerful. What else could I say? This movie has all of the qualities of classic film noir as well as the magnitude of an original, unique concept that has been tried and tired before but works here.   Guy Pearce has been underrated for years (just think back now to Priscilla and can you believe this is the same guy) and finally might get the recognition here that was at least well-deserved of him back for LA Confidential. Powerful perfomances, well developed story with suspensful buildup of what our main character pieces together little by little makes this a must see.  Easily in my top 100 of all time.",
+  "annotated_sentences": [
+    {
+      "text": " Incredible, riveting and powerful.",
+      "aspects": {
+        "movie": {
+          "words": [
+            "generic scope"
+          ],
+          "score": "2",
+          "justification": "incredible, riviting, powerful"
+        }
+      },
+      "comment": ""
+    },
+    {
+      "text": "What else could I say?",
+      "aspects": {
+      },
+      "comment": ""
+    },
+    {
+      "text": "This movie has all of the qualities of classic film noir as well as the magnitude of an original, unique concept that has been tried and tired before but works here.",
+      "aspects": {
+        "movie": {
+          "words": [
+            "this movie"
+          ],
+          "score": "2",
+          "justification": "qualities, classic, magnitude, original"
+        },
+        "concept": {
+          "words": [
+            "concept"
+          ],
+          "score": "2",
+          "justification": "original, unique"
+        },
+        "novelty": {
+          "words": [
+            "original",
+            "unique"
+          ],
+          "score": "2",
+          "justification": "unique"
+        }
+      },
+      "comment": "which aspect in aspect 2 did you mean?"
+    },
+    {
+      "text": "Guy Pearce has been underrated for years (just think back now to Priscilla and can you believe this is the same guy) and finally might get the recognition here that was at least well-deserved of him back for LA Confidential.",
+      "aspects": {
+        "cast": {
+          "words": [
+            "cast member mentions"
+          ],
+          "score": "1",
+          "justification": "underrated, well deserved, recognition"
+        }
+      },
+      "comment": ""
+    },
+    {
+      "text": "Powerful perfomances, well developed story with suspensful buildup of what our main character pieces together little by little makes this a must see.  Easily in my top 100 of all time.",
+      "aspects": {
+        "movie": {
+          "words": [
+            "this"
+          ],
+          "score": "2",
+          "justification": "powerful, well developed, suspensful, this a must see"
+        },
+        "plot": {
+          "words": [
+            "story",
+            "character",
+            "buildup"
+          ],
+          "score": "1",
+          "justification": "suspenseful"
+        },
+        "cast": {
+          "words": [
+            "performances"
+          ],
+          "score": "2",
+          "justification": "powerful"
+        }
+      },
+      "comment": ""
+    }
+  ],
+  "overall": "2",
+  "comment": ""
+}

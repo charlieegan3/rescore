@@ -7,7 +7,7 @@ Delayed::Worker.delay_jobs = false
 RSpec.describe MoviesController, :type => :feature do
 
   before(:each) do
-    @movie = FactoryGirl::create(:movie)
+    @movie = FactoryGirl::create(:movie, title: "The Matrix")
     @movie2 = FactoryGirl::create(:movie, title: "The Hobbit")
   end
 

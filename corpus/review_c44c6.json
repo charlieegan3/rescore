@@ -1,0 +1,165 @@
+{
+  "title": "White God",
+  "genres": "Drama",
+  "source": "imdb",
+  "score": "6/10",
+  "helpfulness": "3/15",
+  "author": "Charlie Egan",
+  "body": " The scenario of the movie is kind of shaky. The whole movie is supposed to deal with a tax inflicted to mixed race dogs owners, but it is actually never explained. The lack of explanation of the context take away all the credibility. At the end, the movie is ONLY about a girl and her dog. If you're looking for a political, sanitary or whatever kind of conflict, you're in the wrong place.   The human acting isn't great but all the scenes with dogs are simply great. I have to congratulate the director and the dog trainers for such a hard and amazing job.   Also, I believe the trailer was great, a mix between a little clue on the movie and a breathtaking cinematographic job. And I think subtle trailers that do not tell everything on the movie can work. But the problem here is that the very best visual scene of the movie actually IS the trailer... So that sets the expectations for the film much higher than it is supposed to be.  Anyway, if you take away all the violent scene of the movie, I think White God would actually be a good Disney film.",
+  "annotated_sentences": [
+    {
+      "text": " The scenario of the movie is kind of shaky.",
+      "aspects": {
+        "plot": {
+          "words": [
+            "scenario"
+          ],
+          "score": "-1",
+          "justification": "shaky"
+        }
+      },
+      "comment": ""
+    },
+    {
+      "text": "The whole movie is supposed to deal with a tax inflicted to mixed race dogs owners, but it is actually never explained.",
+      "aspects": {
+        "plot": {
+          "words": [
+            "whole movie"
+          ],
+          "score": "-1",
+          "justification": "never explained"
+        }
+      },
+      "comment": "is supposed to? Woj: i'd say whenever someone says never explained, we can infer not enough was said - so -ve"
+    },
+    {
+      "text": "The lack of explanation of the context take away all the credibility.",
+      "aspects": {
+        "credibility": {
+          "words": [
+            "credibility"
+          ],
+          "score": "-2",
+          "justification": "take away all"
+        },
+        "plot": {
+          "words": [
+            "explanation"
+          ],
+          "score": "-1",
+          "justification": "lack"
+        }
+      },
+      "comment": ""
+    },
+    {
+      "text": "At the end, the movie is ONLY about a girl and her dog.",
+      "aspects": {
+        "movie": {
+          "words": [
+            "the movie"
+          ],
+          "score": "-1",
+          "justification": "ONLY"
+        },
+        "plot": {
+          "words": [
+            "about"
+          ],
+          "score": "0",
+          "justification": "no sentiment"
+        }
+      },
+      "comment": ""
+    },
+    {
+      "text": "If you're looking for a political, sanitary or whatever kind of conflict, you're in the wrong place.",
+      "aspects": {
+        "plot": {
+          "words": [
+            "conflict"
+          ],
+          "score": "-1",
+          "justification": "wrong place"
+        }
+      },
+      "comment": ""
+    },
+    {
+      "text": "The human acting isn't great but all the scenes with dogs are simply great.",
+      "aspects": {
+        "cast": {
+          "words": [
+            "acting",
+            "act"
+          ],
+          "score": "-1",
+          "justification": "isn't great"
+        }
+      },
+      "comment": "is a dog a a cast member? Woj: well, they are part of the FX maybe, but not cast"
+    },
+    {
+      "text": "I have to congratulate the director and the dog trainers for such a hard and amazing job.   Also, I believe the trailer was great, a mix between a little clue on the movie and a breathtaking cinematographic job.",
+      "aspects": {
+        "vision": {
+          "words": [
+            "graphic"
+          ],
+          "score": "2",
+          "justification": "breathtaking"
+        },
+        "cinematography": {
+          "words": [
+            "cinematographic"
+          ],
+          "score": "2",
+          "justification": "breathtaking"
+        },
+        "cast": {
+          "words": [
+            "director"
+          ],
+          "score": "2",
+          "justification": "congratulate, hard and amazing"
+        }
+      },
+      "comment": ""
+    },
+    {
+      "text": "And I think subtle trailers that do not tell everything on the movie can work.",
+      "aspects": {
+      },
+      "comment": ""
+    },
+    {
+      "text": "But the problem here is that the very best visual scene of the movie actually IS the trailer... So that sets the expectations for the film much higher than it is supposed to be.",
+      "aspects": {
+        "movie": {
+          "words": [
+            "the movie"
+          ],
+          "score": "-1",
+          "justification": "the problem"
+        },
+        "vision": {
+          "words": [
+            "visual"
+          ],
+          "score": "2",
+          "justification": "very best"
+        }
+      },
+      "comment": "expectations as negative? Woj: I would rather focus on expectations higher than in the movie aspect, not the problem"
+    },
+    {
+      "text": "Anyway, if you take away all the violent scene of the movie, I think White God would actually be a good Disney film.",
+      "aspects": {
+      },
+      "comment": "think this is -ve Woj: ignore"
+    }
+  ],
+  "overall": "-1",
+  "comment": "another tough one"
+}
