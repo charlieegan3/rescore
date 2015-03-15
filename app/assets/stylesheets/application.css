@@ -191,18 +191,18 @@ p.title {
   color: red;
 }
 
-div.mobile-menu {
+.mobile-menu {
   display: none;
-  float:right;
+  float: right;
 }
 
 @media screen and (max-width: 42em) {
   .menu {
-    display: none !important;
+    display: none;
   }
 
   .mobile-menu {
-    display: block !important;
+    display: block;
   }
   
   .mobile-menu img{
@@ -211,35 +211,33 @@ div.mobile-menu {
   }
 
   .mobile-menu:before {
-  content: "";
-  width: 1em;
+    content: "";
+    width: 1em;
   }
 
   .top-bar .mobile-menu ul a {
-    display:block;
+    display: block;
   }
 
   .top-bar .mobile-menu ul ul {
-    display:none;
-    position:absolute;
-    right:0;
-    top:45px;
-    background:#fff;
+    display: none;
+    position: absolute;
+    right: 0;
+    top: 45px;
+    background: #fff;
   }
-
 
   .top-bar .mobile-menu ul ul li
   {
     float: none;
     width: 200px;
-    background-color:#333;
+    background-color: #333;
   }
-
 
   .top-bar .mobile-menu ul ul li a
   {
-    line-height:120%;
-    padding:10px 15px;
+    line-height: 120%;
+    padding: 10px 15px;
     color: #fff;
   }
 
@@ -251,7 +249,7 @@ div.mobile-menu {
 
   .top-bar .mobile-menu ul:hover
   {
-    background-color:#222;
+    background-color: #222;
   }
 
   .top-bar .mobile-menu ul:hover ul
@@ -261,7 +259,7 @@ div.mobile-menu {
   
   .top-bar .mobile-menu ul li:hover
   {
-    background-color:#222;
+    background-color: #222;
   }
 
 }
