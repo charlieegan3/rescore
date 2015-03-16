@@ -3,10 +3,6 @@ require 'spec_helper'
 require 'metacritic_scraper'
 
 RSpec.describe MetacriticScraper, :type => :feature do
-
-  before(:each) do
-  end
-
   describe 'reviews' do
     scraper = MetacriticScraper.new('http://www.metacritic.com/movie/the-godfather', USER_AGENT_STRING, 5, false)
 
@@ -21,6 +17,7 @@ RSpec.describe MetacriticScraper, :type => :feature do
       expect(scraper.reviews).to eq([])
     end
   end
+
   describe 'reviews' do
     scraper = MetacriticScraper.new('', USER_AGENT_STRING, 5, false)
 
