@@ -47,7 +47,7 @@ RSpec.describe MoviesController, :type => :feature do
   end
 
   describe 'new_from_lookup' do
-    it 'rejects same two movies as choices' do
+    it 'lets admin add a new movie' do
       visit('/movies/new_from_lookup')
 
       within("#new_from_lookup_form") do
