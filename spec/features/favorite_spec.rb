@@ -17,8 +17,10 @@ RSpec.describe MoviesController, :type => :feature do
       expect(page).to have_css '.fi-heart.inactive'
       click_link 'favorite'
       expect(page).to have_css '.fi-heart.active'
+      expect(Favorite.count).to eq(1)
       click_link 'favorite'
       expect(page).to have_css '.fi-heart.inactive'
+      expect(Favorite.count).to eq(0)
     end
   end
 end
