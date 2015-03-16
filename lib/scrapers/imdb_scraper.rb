@@ -10,42 +10,48 @@ class Imdb_Scraper
   end
 
   def reviews
-    return [] if @title_url == '' || @title_url.nil?
-    reviews = []
-    review_urls(@title_url).each do |url|
-      if url.class == String
-        print "Fetching: ".green + "#{url}... " if @print
-        doc = Nokogiri::HTML(open(url, 'User-Agent' => @user_agent).read)
-        puts "done" if @print
-      else
-        doc = url
-      end
-      1.step(19, 2) do |i|
-        review = {}
-        rating = doc.xpath("//div[@id='tn15content']/div[#{i}]/img")
-        unless rating.empty?
-          review[:rating] = evaluate_rating(rating.attr('alt').text)
-          review[:percentage] = ((review[:rating].to_f / 1.0) * 100).round(2)
+    begin
+      return [] if @title_url == '' || @title_url.nil?
+      reviews = []
+      review_urls(@title_url).each do |url|
+        if url.class == String
+          print "Fetching: ".green + "#{url}... " if @print
+          doc = Nokogiri::HTML(open(url, 'User-Agent' => @user_agent).read)
+          puts "done" if @print
         else
-          review[:rating] = nil
-          review[:percentage] = nil
+          doc = url
         end
-        review[:useful] = evaluate_useful(doc.xpath("//div[@id='tn15content']/div[#{i}]/small[1]").text)
-        review[:title] = doc.xpath("//div[@id='tn15content']/div[#{i}]/h2").text
+        1.step(19, 2) do |i|
+          review = {}
+          rating = doc.xpath("//div[@id='tn15content']/div[#{i}]/img")
+          unless rating.empty?
+            review[:rating] = evaluate_rating(rating.attr('alt').text)
+            review[:percentage] = ((review[:rating].to_f / 1.0) * 100).round(2)
+          else
+            review[:rating] = nil
+            review[:percentage] = nil
+          end
+          review[:useful] = evaluate_useful(doc.xpath("//div[@id='tn15content']/div[#{i}]/small[1]").text)
+          review[:title] = doc.xpath("//div[@id='tn15content']/div[#{i}]/h2").text
 
-        review[:username] = doc.xpath("//div[@id='tn15content']/div[#{i}]/a[2]")[0]
-        review[:username] = review[:username].child.to_s unless review[:username].nil?
+          review[:username] = doc.xpath("//div[@id='tn15content']/div[#{i}]/a[2]")[0]
+          review[:username] = review[:username].child.to_s unless review[:username].nil?
 
-        review[:location] = doc.xpath("//div[@id='tn15content']/div[#{i}]/small[2]")[0]
-        review[:location] = review[:location].child.to_s unless review[:location].nil?
+          review[:location] = doc.xpath("//div[@id='tn15content']/div[#{i}]/small[2]")[0]
+          review[:location] = review[:location].child.to_s unless review[:location].nil?
 
-        review[:date] = doc.xpath("//div[@id='tn15content']/div[#{i}]/small[3]").text
-        review[:content] = doc.xpath("//div[@id='tn15content']//p[#{(i.to_f/2).ceil.to_i}]").text
-        review[:source] = {vendor: 'imdb', url: @title_url}
-        reviews << review
+          review[:date] = doc.xpath("//div[@id='tn15content']/div[#{i}]/small[3]").text
+          review[:content] = doc.xpath("//div[@id='tn15content']//p[#{(i.to_f/2).ceil.to_i}]").text
+          review[:source] = {vendor: 'imdb', url: @title_url}
+          reviews << review
+        end
       end
+      return reviews
+
+    rescue OpenURI::HTTPError => e
+      puts "IMDB scraper got an http error on #{@title_url}" if @print
+      return []
     end
-    reviews
   end
 
   private
