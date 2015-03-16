@@ -31,7 +31,7 @@ class MetacriticScraper
       return reviews
 
     rescue OpenURI::HTTPError => e
-      puts "Metacritic scraper got an http error on #{@title_url}"
+      puts "Metacritic scraper got an http error on #{@title_url}" if @print
       return []
     end
   end

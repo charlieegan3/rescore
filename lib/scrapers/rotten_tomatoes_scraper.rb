@@ -40,7 +40,7 @@ class Rotten_Tomatoes_Scraper
       reviews
 
     rescue OpenURI::HTTPError => e
-      puts "Rotten Tomatoes scraper got an http error on #{@title_url}"
+      puts "Rotten Tomatoes scraper got an http error on #{@title_url}" if @print
       return []
     end
   end

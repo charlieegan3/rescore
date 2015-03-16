@@ -49,7 +49,7 @@ class Imdb_Scraper
       return reviews
 
     rescue OpenURI::HTTPError => e
-      puts "IMDB scraper got an http error on #{@title_url}"
+      puts "IMDB scraper got an http error on #{@title_url}" if @print
       return []
     end
   end
