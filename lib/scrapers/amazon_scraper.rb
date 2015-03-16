@@ -53,7 +53,7 @@ class AmazonScraper
       return reviews
 
     rescue OpenURI::HTTPError => e
-      puts "Amazon scraper got an http error on #{@title_url}"
+      puts "Amazon scraper got an http error on #{@title_url}" if @print
       return []
     end
   end
