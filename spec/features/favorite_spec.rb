@@ -8,7 +8,7 @@ RSpec.describe MoviesController, :type => :feature do
     visit '/'
     expect(page).to have_content('Sign in with Twitter')
     mock_auth_hash
-    click_link 'Sign in with Twitter'
+    first('.twitter-signin-btn').click
   end
 
   describe 'favorite' do
