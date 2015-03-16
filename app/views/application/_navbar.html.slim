@@ -3,7 +3,7 @@ nav.top-bar
     li.name
       h1 =link_to image_tag('/logo_icon.png'), root_path, class: 'nav-logo'
   .mobile-menu
-    ul 
+    ul
       img src="/menu-icon.png"/
       ul
         li =link_to 'Movies', movies_path
@@ -15,7 +15,7 @@ nav.top-bar
             =link_to "Sign Out", signout_path
         -else
           li
-            =link_to "Sign in with Twitter", "/auth/twitter"
+            =link_to "Sign in with Twitter", "/auth/twitter", class: "twitter-signin-btn"
 
   .menu
     section.top-bar-section
@@ -36,7 +36,7 @@ nav.top-bar
             =link_to "Sign Out", signout_path
         -else
           li
-            =link_to "Sign in with Twitter", "/auth/twitter"
+            =link_to "Sign in with Twitter", "/auth/twitter", class: "twitter-signin-btn"
         li
         li
           form action="/movies/search_by_title"
