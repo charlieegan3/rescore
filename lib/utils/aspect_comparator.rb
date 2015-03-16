@@ -33,12 +33,12 @@ class AspectComparator
     end
 
     def hits(expected, calculated)
-      correct = expected.keys - (expected.keys - calculated.keys)
-      wrong = calculated.keys - expected.keys
+      true_positives = expected.keys - (expected.keys - calculated.keys)
+      false_positives = calculated.keys - expected.keys
 
       sentiment_delta = 0
-      correct.map { |aspect| sentiment_delta += (expected[aspect][:score] - calculated[aspect][:score]).abs }
+      true_positives.map { |aspect| sentiment_delta += (expected[aspect][:score] - calculated[aspect][:score]).abs }
 
-      {correct: correct.size, wrong: wrong.size, delta: sentiment_delta}
+      {true_positives: true_positives.size, false_positives: false_positives.size, delta: sentiment_delta}
     end
 end
