@@ -33,7 +33,6 @@ RSpec.describe MoviesController, :type => :feature do
       FactoryGirl::create(:movie, title: 'The Godfather')
       visit('/movies/admin')
       first('.button.alert').click
-      #click_on 'Delete'
       expect(page).not_to have_content 'Alien'
     end
 

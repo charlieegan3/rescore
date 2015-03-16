@@ -10,24 +10,30 @@ class MetacriticScraper
   end
 
   def reviews
-    return [] if @title_url == '' || @title_url.nil?
-    reviews = []
-    review_urls(@title_url).each do |review_url|
-      raw_reviews(review_url).each do |raw_review|
-        review = {}
-        review[:rating] = raw_review.css('.review_grade').first.text.gsub(/\s/,"").to_i
-        review[:percentage] = ((review[:rating].to_f / 10.0) * 100).round(2)
-        review[:content] = extract_content(raw_review)
-        review[:useful] = evaluate_useful(raw_review)
-        review[:username] = raw_review.css('.name').text.strip
-        review[:date] = raw_review.css('.date').text.strip
-        review[:location] = nil
-        review[:title] = nil
-        review[:source] = {vendor: 'metacritic', url: @title_url}
-        reviews << review
+    begin
+      return [] if @title_url == '' || @title_url.nil?
+      reviews = []
+      review_urls(@title_url).each do |review_url|
+        raw_reviews(review_url).each do |raw_review|
+          review = {}
+          review[:rating] = raw_review.css('.review_grade').first.text.gsub(/\s/,"").to_i
+          review[:percentage] = ((review[:rating].to_f / 10.0) * 100).round(2)
+          review[:content] = extract_content(raw_review)
+          review[:useful] = evaluate_useful(raw_review)
+          review[:username] = raw_review.css('.name').text.strip
+          review[:date] = raw_review.css('.date').text.strip
+          review[:location] = nil
+          review[:title] = nil
+          review[:source] = {vendor: 'metacritic', url: @title_url}
+          reviews << review
+        end
       end
+      return reviews
+
+    rescue OpenURI::HTTPError => e
+      puts "Metacritic scraper got an http error on #{@title_url}" if @print
+      return []
     end
-    reviews
   end
 
   private
