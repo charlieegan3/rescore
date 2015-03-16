@@ -3,10 +3,6 @@ require 'spec_helper'
 require 'imdb_scraper'
 
 RSpec.describe Imdb_Scraper, :type => :feature do
-
-  before(:each) do
-  end
-
   describe 'reviews' do
     scraper = Imdb_Scraper.new('http://www.imdb.com/title/tt0068646/', USER_AGENT_STRING, 5, false)
 
@@ -21,9 +17,10 @@ RSpec.describe Imdb_Scraper, :type => :feature do
       expect(scraper.reviews).to eq([])
     end
   end
+
   describe 'reviews' do
     scraper = Imdb_Scraper.new('', USER_AGENT_STRING, 5, false)
-    
+
     it 'gets empty array for empty URL' do
       VCR.use_cassette('imdb_scraper') do
         expect(scraper.reviews).to eq([])

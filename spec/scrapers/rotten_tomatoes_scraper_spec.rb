@@ -3,10 +3,6 @@ require 'spec_helper'
 require 'rotten_tomatoes_scraper'
 
 RSpec.describe Rotten_Tomatoes_Scraper, :type => :feature do
-
-  before(:each) do
-  end
-
   describe 'reviews' do
     scraper = Rotten_Tomatoes_Scraper.new('http://www.rottentomatoes.com/m/godfather/', USER_AGENT_STRING, 5, false)
 
@@ -21,6 +17,7 @@ RSpec.describe Rotten_Tomatoes_Scraper, :type => :feature do
       expect(scraper.reviews).to eq([])
     end
   end
+
   describe 'reviews' do
     scraper = Rotten_Tomatoes_Scraper.new('', USER_AGENT_STRING, 5, false)
 
