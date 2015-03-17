@@ -27,7 +27,7 @@ task :benchmark, :print do |t, args|
   # reviews = ['corpus/review_c7985.json'] # enable for single review only
   exit if reviews.empty?
 
-  annotations, correct, wrong, sentiment_delta = 0, 0, 0, 0
+  annotations, true_positives, false_positives, sentiment_delta = 0, 0, 0, 0
 
   reviews.each do |annotated_review|
     print " #{annotated_review} ".black_on_green
@@ -40,8 +40,8 @@ task :benchmark, :print do |t, args|
       comparison = ac.compare
 
       annotations += comparison[:annotated_aspects].size
-      correct += comparison[:scores][:correct]
-      wrong += comparison[:scores][:wrong]
+      true_positives += comparison[:scores][:true_positives]
+      false_positives += comparison[:scores][:false_positives]
       sentiment_delta += comparison[:scores][:delta]
 
       if comparison[:annotated_aspects].size == comparison[:computed_aspects].size
@@ -69,11 +69,14 @@ task :benchmark, :print do |t, args|
   puts ' Summary '.white_on_black
 
   puts "annotations:     #{annotations}"     + ' (aspects assigned by us)'.green
-  puts "correct:         #{correct}"         + ' (correct aspects assigned by rescore)'.green
-  puts "wrong:           #{wrong}"           + ' (incorrect aspects assigned by rescore)'.green
+  puts "true_positives:  #{true_positives}"  + ' (correct aspects assigned by rescore)'.green
+  puts "false_positives: #{false_positives}" + ' (incorrect aspects assigned by rescore)'.green
   puts "sentiment_delta: #{sentiment_delta}" + ' (total difference (annotated vs computed) in sentiment scores)'.green
 
-  score = (((correct - wrong).to_f / annotations) * 100).to_i
+  score = (((true_positives - false_positives).to_f / annotations) * 100).to_i
   puts '-' * 50
-  puts "score: #{score}%" + ' (correct - wrong) of annotations'.green
+  puts "score: #{score}%" + ' (true_positives - false_positives) of annotations'.green
+
+  puts "precision: #{((true_positives.to_f/(true_positives+false_positives)) * 100).round(2)}%" + ' (true_positives / true_positives+false_positives)'.green
+  puts "recall: #{((true_positives.to_f/(annotations)) * 100).round(2)}%" + ' (true_positives / annotations)'.green
 end
