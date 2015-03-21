@@ -4,10 +4,10 @@
 
 .row
   .large-6.columns
-    .row
+    .row 
       .large-5.columns
         .panel
-          =image_tag(@movie.image_url, class: 'large-cover')
+         =image_tag(@movie.image_url, class: 'large-cover')
         div.source-links
           = link_to image_tag('/imdb_icon.jpg'), @movie.imdb_link
           = link_to image_tag('/amazon_icon.jpg'), @movie.amazon_link
@@ -78,8 +78,8 @@
 .row
   .large-12.columns
     .large-1.columns
-      p.references
-        strong References
+      p.references 
+        strong References 
     .large-11.columns.references
       -@movie.references.each do |reference|
         =link_to reference.gsub('http://www.', ''), reference
