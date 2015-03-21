@@ -125,7 +125,8 @@ p.title {
 }
 
 .large-cover {
-  width: 100%;
+  max-width: 100%;
+
 }
 
 .source-links {
@@ -170,12 +171,12 @@ p.title {
 }
 
 .references {
-  font-size: 0.5em;
-  color: LightGrey;
+  font-size: 0.8em;
+  color: Grey;
 }
 
 .references a {
-  color: DarkGrey;
+  color: DarkerGrey;
 }
 
 .movie-detail {
