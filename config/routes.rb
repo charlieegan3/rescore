@@ -36,6 +36,7 @@ Rails.application.routes.draw do
   post '/reports/new' => 'reports#new', as: :new_report
 
   get "/auth/:provider/callback" => "sessions#create"
+  get "/auth/failure" => "sessions#failure"
   get "/signout" => "sessions#destroy", :as => :signout
 
   get 'api' => 'api#index', as: :api
