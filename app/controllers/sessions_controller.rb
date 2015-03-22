@@ -6,6 +6,11 @@ class SessionsController < ApplicationController
     redirect_to root_url, :notice => "Signed in!"
   end
 
+  def failure
+    flash[:alert] = "Login failed or was cancelled"
+    redirect_to root_url
+  end
+
   def destroy
     cookies[:user_id] = nil
     redirect_to root_url, :notice => "Signed out!"
