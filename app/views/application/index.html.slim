@@ -16,10 +16,9 @@
         strong =link_to @movie.title, movie_path(@movie)
 
 .row
-  .large-6.columns
-    p.stat-left.muted
+  .large-12.columns
+    p.stat-center.muted
       =@review_count
       |&nbsp;reviews revisited
-  .large-6.columns
-    p.muted
-      ="#{@movie_count} movies reviewed"
+       #{@movie_count} movies reviewed
+
