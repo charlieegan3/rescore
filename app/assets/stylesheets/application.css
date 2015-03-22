@@ -125,7 +125,8 @@ p.title {
 }
 
 .large-cover {
-  width: 100%;
+  width: 50%;
+  height: 50%;
 }
 
 .source-links {
@@ -204,7 +205,7 @@ p.title {
   .mobile-menu {
     display: block;
   }
-  
+
   .mobile-menu img{
     height: 90%;
     padding: 0.5em;
@@ -256,7 +257,7 @@ p.title {
   {
     display: block;
   }
-  
+
   .top-bar .mobile-menu ul li:hover
   {
     background-color: #222;
