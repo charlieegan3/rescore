@@ -1,8 +1,14 @@
 class MoviesController < ApplicationController
-  http_basic_authenticate_with name: "admin", password: "1234qwer", except: [:index, :show, :search_by_title, :compare]
+  http_basic_authenticate_with name: ADMIN_USERNAME, password: ADMIN_PASSWORD, except: [:index, :show, :search_by_title, :compare]
 
   def index
     @movies = Movie.complete.order('created_at DESC')
+
+    respond_to do |format|
+      format.html
+      format.json { render :json => @movies.select(:id, :title, :image_url, :year, :genres, :slug) }
+      format.xml  { render :xml => @movies.select(:id, :title, :image_url, :year, :genres, :slug) }
+    end
   end
 
   def admin
@@ -15,6 +21,12 @@ class MoviesController < ApplicationController
     if @movie.stats.nil?
       flash[:alert] = "This movie's information is not yet complete. Please try again later"
       redirect_to :root
+    else
+      respond_to do |format|
+        format.html
+        format.json  { render :json => @movie }
+        format.xml  { render :xml => @movie }
+      end
     end
   end
 
@@ -88,7 +100,7 @@ class MoviesController < ApplicationController
   end
 
   def destroy
-    Movie.find(params[:id]).delete
+    Movie.find(params[:id]).destroy
     redirect_to movie_admin_path
   end
 

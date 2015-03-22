@@ -14,10 +14,11 @@
           "words": [
             "a movie"
           ],
-          "score": "1"
+          "score": "1",
+          "justification": "recommend"
         }
       },
-      "comment": "the conversation about the movie is negative in other reviews"
+      "comment": "the conversation about the movie is negative in other reviews; Woj add going to recommend as positive?"
     },
     {
       "text": "Writer Director Alex Garland has done an amazing job, it's beautifully shot, fantastically lit, intelligently written, brilliantly cast.",
@@ -26,28 +27,32 @@
           "words": [
             "cast"
           ],
-          "score": "2"
+          "score": "2",
+          "justification": "brilliantly"
         },
         "vision": {
           "words": [
-            "beautiful"
+            "shot"
           ],
-          "score": "2"
+          "score": "2",
+          "justification": "beautifully"
         },
         "dialog": {
           "words": [
             "written"
           ],
-          "score": "2"
+          "score": "2",
+          "justification": "intelligently"
         },
-        "editing": {
+        "movie": {
           "words": [
-            "shot"
+            "job", "it's"
           ],
-          "score": "2"
+          "score": "2",
+          "justification": "all of the above"
         }
       },
-      "comment": "is intelligently written about dialog or plot? I said dialog here."
+      "comment": "is intelligently written about dialog or plot? I said dialog here. charlie: looks good to me now"
     },
     {
       "text": "the edit is original and brave, as is the direction of the edit, There is nothing superfluous, to the contrary it' has a sharp Zen like quality, clearly the application of a disciplined mind.The movie is's self is engaging, thoroughly watchable, the characters are simple and yet layered with complexity.",
@@ -70,6 +75,12 @@
             "nothing superfluous"
           ],
           "score": "1"
+        },
+        "movie": {
+          "words": [
+            "engaging"
+          ],
+          "score": "1"
         }
       },
       "comment": "I think nothing superfluous is a positive comment about length"
@@ -84,21 +95,21 @@
           "score": "2"
         }
       },
-      "comment": "do we need a complexity aspect? or even a arty vs plain aspect?"
+      "comment": "do we need a complexity aspect? or even a arty vs plain aspect? Woj: is perfect the sentiment carrier here?"
     },
     {
-      "text": "Best seen in a cinema I reckon.e",
+      "text": "Best seen in a cinema I reckon",
       "aspects": {
         "movie": {
           "words": [
             ""
           ],
-          "score": "1"
+          "score": "0"
         }
       },
-      "comment": "I think this is positive, he may also be saying the movie wouldn't work off the big screen"
+      "comment": "I think this is positive, he may also be saying the movie wouldn't work off the big screen. I think it's not relevant."
     }
   ],
   "overall": "2",
-  "comment": "there are a number of suggested amendments in the comments on sentences"
+  "comment": "there are a number of suggested amendments in the comments on sentences. second marker Woj"
 }

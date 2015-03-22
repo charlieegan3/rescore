@@ -31,4 +31,4 @@
     p.comment The number of review pages per source that will be scanned - the larger the number the longer it takes
     = f.number_field(:page_depth, in: 1..10, step: 1)
   br
-  = f.submit 'Save', class: 'button expand'
+  = f.submit 'Save', class: 'button expand', id: 'new_film_submit'

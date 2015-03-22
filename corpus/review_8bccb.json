@@ -1,0 +1,388 @@
+{
+  "title": "Chappie",
+  "genres": "Action, sci-fi, thriller",
+  "source": "imdb",
+  "score": "6/10",
+  "helpfulness": "7/11",
+  "author": "Charlie Egan",
+  "body": " Director Neill Blomkamp after his amazing work at District 9 (2009) (check out District 9 if you haven't seen it, it's one of the best sci fi of the decade.) and not so amazing but still good work on Elysium (2013), gives us his next ambitious project, Chappie.   So let's start with the good. The visual effects are stunning, excellent work thanks to the visual effects team and Blomkamp. It looks as good as District 9 (which looked awesome.) I never once felt like I was seeing a CGI robot. But the most notable things about this movie is the robot Chappie. I don't want to give away anything because this is easily the best part of the movie. Blomkamp adds a new twist to the usual robot-having-human-brain plot. It's new, original and fresh. And surprisingly there's some amazing humor too.   But the movie just falls apart when it moves the attention away from Chappie and tries focus on other plot lines. It tries to have a drug related subplot as a motivation for the characters, I guess. I honestly can't remember a thing about this subplot, you know there's something wrong in your movie when the viewer can't remember a certain thing after a few hours. And it also have a Hugh Jackman subplot which is completely unnecessary and clichéd, and only increase it's runtime to 2 hours. The movie drags a lot and would have been better if 20-30 mins were cut out. And also what the hell is this ending song? Seriously, It's horrible.  All in all, the movie is above average and had some really great ideas and awesome visuals effects. But it's too long and focused on clichéd and dull subplots instead of Chappie himself. This feels like the shitty version of District 9. ",
+  "annotated_sentences": [
+    {
+      "text": " Director Neill Blomkamp after his amazing work at District 9 (2009) (check out District 9 if you haven't seen it, it's one of the best sci fi of the decade.",
+      "aspects": {
+      },
+      "comment": "talks about another movie"
+    },
+    {
+      "text": ") and not so amazing but still good work on Elysium (2013), gives us his next ambitious project, Chappie.",
+      "aspects": {
+      },
+      "comment": "movie is 1/2 mentioned"
+    },
+    {
+      "text": "So let's start with the good.",
+      "aspects": {
+      },
+      "comment": "Woj: should ignore if anything detected"
+    },
+    {
+      "text": "The visual effects are stunning, excellent work thanks to the visual effects team and Blomkamp.",
+      "aspects": {
+        "vision": {
+          "words": [
+            "visual"
+          ],
+          "score": "2",
+          "justification": "stunning, excellent"
+        }
+      },
+      "comment": ""
+    },
+    {
+      "text": "It looks as good as District 9 (which looked awesome.",
+      "aspects": {
+        "movie": {
+          "words": [
+            "it"
+          ],
+          "score": "2",
+          "justification": "awesome"
+        },
+        "vision": {
+          "words": [
+            "looks"
+          ],
+          "score": "2",
+          "justification": "awesome, as good"
+        }
+      },
+      "comment": ""
+    },
+    {
+      "text": ") I never once felt like I was seeing a CGI robot.",
+      "aspects": {
+        "vision": {
+          "words": [
+            "cgi"
+          ],
+          "score": "1",
+          "justification": "never once felt"
+        },
+        "credibility": {
+          "words": [
+            "felt like"
+          ],
+          "score": "1",
+          "justification": "never once felt"
+        }
+      },
+      "comment": "Hmm."
+    },
+    {
+      "text": "But the most notable things about this movie is the robot Chappie.",
+      "aspects": {
+        "movie": {
+          "words": [
+            "this movie"
+          ],
+          "score": "1",
+          "justification": "notable"
+        },
+        "cast": {
+          "words": [
+            "robot"
+          ],
+          "score": "1",
+          "justification": "notable"
+        }
+      },
+      "comment": ""
+    },
+    {
+      "text": "I don't want to give away anything because this is easily the best part of the movie.",
+      "aspects": {
+        "movie": {
+          "words": [
+            "the movie"
+          ],
+          "score": "0",
+          "justification": "no sentiment"
+        },
+        "cast": {
+          "words": [
+            "this is (back reference)"
+          ],
+          "score": "2",
+          "justification": "best part"
+        }
+      },
+      "comment": ""
+    },
+    {
+      "text": "Blomkamp adds a new twist to the usual robot-having-human-brain plot.",
+      "aspects": {
+        "plot": {
+          "words": [
+            "plot"
+          ],
+          "score": "2",
+          "justification": "adds a new twist"
+        },
+        "cast": {
+          "words": [
+            "director-name"
+          ],
+          "score": "2",
+          "justification": "adds a new twist"
+        },
+        "novelty": {
+          "words": [
+            "the usual"
+          ],
+          "score": "2",
+          "justification": "adds a new twist"
+        }
+      },
+      "comment": ""
+    },
+    {
+      "text": "It's new, original and fresh.",
+      "aspects": {
+        "movie": {
+          "words": [
+            "it's"
+          ],
+          "score": "2",
+          "justification": "original, fresh"
+        },
+        "novelty": {
+          "words": [
+            "original",
+            "fresh"
+          ],
+          "score": "2",
+          "justification": "new original fresh"
+        }
+      },
+      "comment": ""
+    },
+    {
+      "text": "And surprisingly there's some amazing humor too.",
+      "aspects": {
+        "dialog": {
+          "words": [
+            "humor"
+          ],
+          "score": "2",
+          "justification": "amazing"
+        }
+      },
+      "comment": "Woj: I would be consistent with unfortunately that also has no clear value to me"
+    },
+    {
+      "text": "But the movie just falls apart when it moves the attention away from Chappie and tries focus on other plot lines.",
+      "aspects": {
+        "movie": {
+          "words": [
+            "the movie"
+          ],
+          "score": "-2",
+          "justification": "falls apart, tries"
+        },
+        "plot": {
+          "words": [
+            "plot"
+          ],
+          "score": "-2",
+          "justification": "falls apart, tries"
+        }
+      },
+      "comment": ""
+    },
+    {
+      "text": "It tries to have a drug related subplot as a motivation for the characters, I guess.",
+      "aspects": {
+        "movie": {
+          "words": [
+            "it"
+          ],
+          "score": "-1",
+          "justification": "tries"
+        },
+        "plot": {
+          "words": [
+            "plot",
+            "characters",
+            "character"
+          ],
+          "score": "-1",
+          "justification": "tries"
+        }
+      },
+      "comment": ""
+    },
+    {
+      "text": "I honestly can't remember a thing about this subplot, you know there's something wrong in your movie when the viewer can't remember a certain thing after a few hours.",
+      "aspects": {
+        "movie": {
+          "words": [
+            "your movie"
+          ],
+          "score": "-1",
+          "justification": "something wrong"
+        },
+        "plot": {
+          "words": [
+            "plot"
+          ],
+          "score": "-1",
+          "justification": "can't remember a thing"
+        }
+      },
+      "comment": "can't remember a thing is not so strong a -ve"
+    },
+    {
+      "text": "And it also have a Hugh Jackman subplot which is completely unnecessary and clichéd, and only increase it's runtime to 2 hours.",
+      "aspects": {
+        "movie": {
+          "words": [
+            "it"
+          ],
+          "score": "-2",
+          "justification": "completely unnecessary and clichéd"
+        },
+        "plot": {
+          "words": [
+            "plot"
+          ],
+          "score": "-2",
+          "justification": "completely unnecessary and clichéd"
+        },
+        "length": {
+          "words": [
+            "runtime"
+          ],
+          "score": "-2",
+          "justification": "only increase"
+        }
+      },
+      "comment": ""
+    },
+    {
+      "text": "The movie drags a lot and would have been better if 20-30 mins were cut out.",
+      "aspects": {
+        "movie": {
+          "words": [
+            "the movie"
+          ],
+          "score": "-2",
+          "justification": "drags"
+        },
+        "drags": {
+          "words": [
+            "drags"
+          ],
+          "score": "-2",
+          "justification": "drags"
+        }
+      },
+      "comment": ""
+    },
+    {
+      "text": "And also what the hell is this ending song?",
+      "aspects": {
+        "sound": {
+          "words": [
+            "song"
+          ],
+          "score": "-2",
+          "justification": "what the hell"
+        }
+      },
+      "comment": ""
+    },
+    {
+      "text": "Seriously, It's horrible.",
+      "aspects": {
+        "sound": {
+          "words": [
+            "it's (back reference)"
+          ],
+          "score": "-2",
+          "justification": "horrible"
+        }
+      },
+      "comment": ""
+    },
+    {
+      "text": "All in all, the movie is above average and had some really great ideas and awesome visuals effects.",
+      "aspects": {
+        "movie": {
+          "words": [
+            "the movie"
+          ],
+          "score": "1",
+          "justification": "above average"
+        },
+        "vision": {
+          "words": [
+            "visuals",
+            "visual"
+          ],
+          "score": "2",
+          "justification": "awesome"
+        },
+        "concept": {
+          "words": [
+            "ideas"
+          ],
+          "score": "2",
+          "justification": "great"
+        }
+      },
+      "comment": ""
+    },
+    {
+      "text": "But it's too long and focused on clichéd and dull subplots instead of Chappie himself.",
+      "aspects": {
+        "movie": {
+          "words": [
+            "it's"
+          ],
+          "score": "-2",
+          "justification": "too long, clichéd"
+        },
+        "plot": {
+          "words": [
+            "subplots"
+          ],
+          "score": "-2",
+          "justification": "dull"
+        },
+        "length": {
+          "words": [
+            "too long"
+          ],
+          "score": "-1",
+          "justification": "too long"
+        }
+      },
+      "comment": ""
+    },
+    {
+      "text": "This feels like the shitty version of District 9. ",
+      "aspects": {
+        "movie": {
+          "words": [
+            "this"
+          ],
+          "score": "-2",
+          "justification": "shitty"
+        }
+      },
+      "comment": ""
+    }
+  ],
+  "overall": "0",
+  "comment": ""
+}

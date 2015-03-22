@@ -15,19 +15,21 @@
             "dialog",
             "dialogue"
           ],
-          "score": "0"
+          "score": "0",
+          "justification": "miserable, complain"
         }
       },
-      "comment": "talks about other review, and reviewers"
+      "comment": "talks about other review, and reviewers, still mentions dialogue"
     },
     {
       "text": "IF you missed the point of this beyond-beautiful movie, that's your loss.",
       "aspects": {
         "movie": {
           "words": [
-            "beyond-beautiful movie"
+            "movie"
           ],
-          "score": "2"
+          "score": "2",
+          "justification": "beyond-beautiful"
         }
       },
       "comment": ""
@@ -39,10 +41,11 @@
           "words": [
             "this movie"
           ],
-          "score": "2"
+          "score": "2",
+          "justification": "love"
         }
       },
-      "comment": ""
+      "comment": "luv"
     },
     {
       "text": "I am a thirthysomething guy who has seen thousands of movies in my life, and this one stands in its own entity, in my book.",
@@ -51,16 +54,17 @@
           "words": [
             "this one"
           ],
-          "score": "2"
+          "score": "2",
+          "justification": "one stands in its own entity"
         }
       },
-      "comment": "one stands in its own entity is +ve"
+      "comment": "stands ... own entity -> +ve"
     },
     {
       "text": "It was not supposed to be a documentary, or a completely factual account of what happened that night.",
       "aspects": {
       },
-      "comment": "to complex"
+      "comment": "too complex"
     },
     {
       "text": "It is the most amazing love story ever attempted.",
@@ -117,7 +121,7 @@
       "comment": ""
     },
     {
-      "text": "Okay, cynics, time to crawl back under your rock, I am done.e",
+      "text": "Okay, cynics, time to crawl back under your rock, I am done",
       "aspects": {
       },
       "comment": ""

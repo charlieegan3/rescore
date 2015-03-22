@@ -1,0 +1,22 @@
+.row
+  .large-12.columns
+    =link_to 'Back', manage_reports_path, class: 'button tiny'
+    h1 ="Showing reports for #{@movie.title}"
+
+    table
+      tr
+        th Description
+        th Type
+        th User
+        th colspan=(1)
+          | Actions
+      p = "#{@reports.size} reports for #{@movie.title}."
+      -@reports.each do |report|
+        tr
+          td =report.description
+          td =report.category
+          - if report.user_id
+            td =User.find(report.user_id).name
+          - else
+            td Anonymous
+          td =button_to "Delete", delete_report_path(report.id), {onclick: "return confirm('Sure?')", method: :delete, class: 'button alert'}

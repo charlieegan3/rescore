@@ -22,53 +22,60 @@
             "acting"
           ],
           "score": "2",
-          "justification": "great acting"
+          "justification": "great, superb"
         }
       },
-      "comment": ""
+      "comment": "cast aspect could also be based on member names"
     },
     {
       "text": "The shark itself was awesome!",
       "aspects": {
       },
-      "comment": "irrelevant"
+      "comment": "impossible"
     },
     {
       "text": "The view of the water in Jaws is spooky and it makes you feel that anything can be in it!",
       "aspects": {
         "movie": {
           "words": [
-            "makes you feel"
+            "film_title"
           ],
-          "score": "2",
+          "score": "1",
           "justification": "spooky"
         },
-        "cinematography": {
+        "vision": {
           "words": [
-            "the view"
+            "view"
           ],
-          "score": "2",
-          "justification": "view of the water "
+          "score": "1",
+          "justification": "spooky"
         }
       },
-      "comment": ""
+      "comment": "sure it's positive but it's hard to detect"
     },
     {
       "text": "The music by John Williams is great and the direction by Steven Spielberg is terrific!Jaws has three other sequels but they aren't classics like this!",
       "aspects": {
         "movie": {
           "words": [
-            "jaws"
+            "film_title"
           ],
           "score": "2",
-          "justification": "three other sequels"
+          "justification": "classic(s)"
         },
         "sound": {
           "words": [
             "music"
           ],
           "score": "2",
-          "justification": "the music"
+          "justification": "great"
+        },
+        "cinematography": {
+          "words": [
+            "direction"
+          ],
+          "score": "2",
+          "justification": "great"
         }
       },
       "comment": ""
@@ -81,7 +88,7 @@
             "movies"
           ],
           "score": "2",
-          "justification": "check out "
+          "justification": "you have check out"
         }
       },
       "comment": ""
