@@ -37,6 +37,7 @@ Rails.application.routes.draw do
 
   get "/auth/:provider/callback" => "sessions#create"
   get "/signout" => "sessions#destroy", :as => :signout
+  get "/auth/failure" => "sessions#failure"
 
   get 'api' => 'api#index', as: :api
   post 'api' => 'api#review'
