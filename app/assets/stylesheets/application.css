@@ -124,9 +124,8 @@ p.title {
   margin-right: 25%;
 }
 
-.large-cover {
-  width: 45%;
-  height: 75px;
+.movie-cover {
+  text-align: center;
 }
 
 .source-links {

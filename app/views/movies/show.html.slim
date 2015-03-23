@@ -6,8 +6,8 @@
   .large-6.columns
     .row
       .large-5.columns
-        .panel
-          =image_tag(@movie.image_url, class: 'large-cover')
+        .panel.movie-cover
+          =image_tag(@movie.image_url)
         div.source-links
           = link_to image_tag('/imdb_icon.jpg'), @movie.imdb_link
           = link_to image_tag('/amazon_icon.jpg'), @movie.amazon_link
