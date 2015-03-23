@@ -125,7 +125,7 @@ p.title {
 }
 
 .large-cover {
-  max-width: 100%;
+  width: 100%;
 
 }
 
@@ -176,7 +176,7 @@ p.title {
 }
 
 .references a {
-  color: DarkerGrey;
+  color: Grey;
 }
 
 .movie-detail {
