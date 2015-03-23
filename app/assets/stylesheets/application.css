@@ -55,12 +55,12 @@ nav.top-bar {
   margin-left: auto;
 }
 
-.stat-left {
-  text-align: right;
+.stat {
+  text-align: center;
 }
 
-.stat-center {
-  text-align: center;
+.stat span {
+  margin: 0px 10px;
 }
 
 table.summary {

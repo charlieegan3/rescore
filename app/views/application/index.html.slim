@@ -11,14 +11,12 @@
 
 .row
   .large-12.columns
-      p.stat-center
+      p.stat
         |Latest Movie:&nbsp;
         strong =link_to @movie.title, movie_path(@movie)
 
 .row
-  .large-12.columns
-    p.stat-center.muted
-      =@review_count
-      |&nbsp;reviews revisited
-       #{@movie_count} movies reviewed
+  p.stat.muted
+    span ="#{@review_count} reviews revisited"
+    span ="#{@movie_count} movies reviewed"
 
