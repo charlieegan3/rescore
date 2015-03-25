@@ -49,7 +49,7 @@ nav.top-bar {
 .large-logo {
   display: block;
   max-height: 200px;
-  max-width:  600px;
+  max-width:  100%;
   margin-top: 100px;
   margin-right: auto;
   margin-left: auto;
