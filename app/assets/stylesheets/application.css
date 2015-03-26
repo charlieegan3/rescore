@@ -157,6 +157,10 @@ p.title {
   color: DarkGrey;
 }
 
+.muted span {
+  margin: 0 15px;
+}
+
 .fi-heart {
   font-size: 2em;
 }

@@ -17,6 +17,10 @@
 
 .row
   p.stat.muted
-    span ="#{@review_count} reviews revisited"
-    span ="#{@movie_count} movies reviewed"
+    span
+      strong =@review_count
+      |&nbsp;reviews revisited
+    span
+      strong =@movie_count
+      |&nbsp;movies reviewed
 
