@@ -152,6 +152,27 @@ p.title {
   max-width: 60%;
 }
 
+#search_form input {
+  margin: 5px;
+}
+
+input#movie_search_submit {
+  background: none;
+  border: none;
+  font: inherit;
+  cursor: pointer;
+  display: block;
+  width: 100%;
+  max-width: 200px;
+  margin: 10px auto;
+  padding-top: 5px;
+  background-color: YellowGreen;
+  color: white;
+  border-radius: 3px;
+  font-size: 1.3em;
+  font-weight: bold;
+}
+
 .muted {
   font-size: 0.8em;
   color: DarkGrey;
