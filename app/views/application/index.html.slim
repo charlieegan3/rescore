@@ -23,4 +23,15 @@
     span
       strong =@movie_count
       |&nbsp;movies reviewed
+.row
+  div.about
+    strong What's all this about?
+    p rescore grew out of the idea that movie rating's were broken. How can something as complex as a movie be represented as a single score?
+    p We don't think it's possible, luckily a solution is waiting in the wings - enter rescore!
+    p
+      |rescore collects user reviews and reads them for you - keeping track of different factors, sentiment and cast members along the way. This information is then used to build a short expressive summary.
+    p
+      |Take a look at&nbsp;
+      =link_to 'this one', movie_path(@movie)
+      |&nbsp;as an example or use the search box above to have a look around.
 
