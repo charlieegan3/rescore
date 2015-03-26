@@ -161,6 +161,18 @@ p.title {
   margin: 0 15px;
 }
 
+.about {
+  text-align: left;
+  max-width: 100%;
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+.about p {
+  font-size: 0.9em;
+  margin-bottom: 10px;
+}
+
 .fi-heart {
   font-size: 2em;
 }
