@@ -212,6 +212,11 @@ p.title {
   float: right;
 }
 
+.graph-comment {
+  margin: 2px;
+  font-size: 0.8em;
+}
+
 @media screen and (max-width: 42em) {
   .menu {
     display: none;
