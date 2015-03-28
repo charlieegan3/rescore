@@ -4,5 +4,63 @@ p.api
   em Natural Language Processing&nbsp;
   | algorithm.
   br/
-  | I leave this area blank for instructions, as things may (and will) change, to avoid rewriting. 
-  
+.row
+  .large-12.columns
+	.panel
+	  h3 resore API
+	.panel
+	  | rescore API is a tool that allows you to integrate our algorithm with your own software or website.
+	  br/
+	  | Send us a review and you will receive a fully rescore-annotated JSON version of it!
+.row
+  .large-12.columns
+    .panel
+      h4 Usage
+      p Using rescore API is as simple as it gets - submit a http POST request to this url, containing a single form key-value pair. Key must be named "review" and the value is simply a block of text that you want annotated.
+.row
+  .large-12.columns
+    .panel
+      h4 Sample I/O
+      h5 Input: 
+      code
+      	Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.
+      br/ 
+      h5 Output:
+      code '{"text": "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.",
+      	br/
+    	"sentences": [
+        {
+            "index": 0,
+            "text": "orem Ipsum is simply dummy text of the printing and typesetting industry.",
+            "clean_text": "orem ipsum is simply dummy text of the printing and typesetting industry.",
+            "sentiment": -2,
+            "context_tags": {},
+            "emphasis": 0
+        },
+        {
+            "index": 1,
+            "text": "Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.",
+            "clean_text": "lorem ipsum has been the industry's standard dummy text ever since the 1500s when an unknown printer took a galley of type and scrambled it to make a type specimen book.",
+            "sentiment": -2,
+            "context_tags": {},
+            "emphasis": 0
+        },
+        {
+            "index": 2,
+            "text": "It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged.",
+            "clean_text": "it has survived not only five centuries but also the leap into electronic typesetting remaining essentially unchanged.",
+            "sentiment": 0,
+            "context_tags": {},
+            "emphasis": 0
+        },
+        {
+            "index": 3,
+            "text": "It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.",
+            "clean_text": "it was popularised in the 1960s with the release of letraset sheets containing lorem ipsum passages and more recently with desktop publishing software like aldus pagemaker including versions of lorem ipsum.",
+            "sentiment": 1,
+            "context_tags": {},
+            "emphasis": 1
+        }
+    	],
+    	"related_people": null
+		}''
