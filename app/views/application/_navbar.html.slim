@@ -31,7 +31,7 @@ nav.top-bar
         li.divider
     section.top-bar-section
       ul.right
-        -unless url_for == root_path
+        -unless request.fullpath == root_path
           form action="/movies/search_by_title"
             input name="query" type="text" placeholder="Search movies" /
       ul.right

@@ -49,7 +49,7 @@ nav.top-bar {
 .large-logo {
   display: block;
   max-height: 200px;
-  max-width:  600px;
+  max-width:  100%;
   margin-top: 100px;
   margin-right: auto;
   margin-left: auto;
@@ -152,17 +152,65 @@ p.title {
   max-width: 60%;
 }
 
+#search_form input {
+  margin: 5px;
+}
+
+input#movie_search_submit {
+  background: none;
+  border: none;
+  font: inherit;
+  cursor: pointer;
+  display: block;
+  width: 100%;
+  max-width: 200px;
+  margin: 10px auto;
+  padding-top: 5px;
+  background-color: YellowGreen;
+  color: white;
+  border-radius: 3px;
+  font-size: 1.3em;
+  font-weight: bold;
+}
+
 .muted {
   font-size: 0.8em;
   color: DarkGrey;
 }
 
-.fi-heart {
-  font-size: 2em;
+.muted span {
+  margin: 0 15px;
+}
+
+.about {
+  text-align: left;
+  max-width: 100%;
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+.about p {
+  font-size: 0.9em;
+  margin-bottom: 10px;
+}
+
+.favorite-icon {
+  font-size: 1.8em;
+}
+
+#flag {
+  margin-left: 20px;
+  padding: 7px 10px;
+  border-radius: 2px;
+  background-color: Crimson;
+}
+
+#flag span {
+  color: white;
 }
 
 .active {
-  color: red;
+  color: Tomato;
 }
 
 .inactive {
@@ -194,6 +242,11 @@ p.title {
 .mobile-menu {
   display: none;
   float: right;
+}
+
+.graph-comment {
+  margin: 2px;
+  font-size: 0.8em;
 }
 
 @media screen and (max-width: 42em) {
