@@ -1,8 +1,6 @@
 .row
-  -@movies.each_slice(6).to_a.each do |row|
-    .row
-      -row.each do |movie|
-        .large-2.columns.movie-detail
-          =link_to image_tag(movie.image_url, class: 'thumbnail'), movie_path(movie)
-          br
-          span =movie.title
+  .grid-row
+    -@movies.each do |movie|
+      .movie-detail
+        =link_to image_tag(movie.image_url, class: 'thumbnail'), movie_path(movie)
+        p =movie.title
