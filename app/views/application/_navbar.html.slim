@@ -40,4 +40,6 @@ nav.top-bar
             =link_to "Sign Out", signout_path
         -else
           li
-            =link_to "Sign in with Twitter", "/auth/twitter", class: "twitter-signin-btn"       
+            =link_to "Sign in with:"
+          li
+            =link_to image_tag('/twitter_logo.jpg', size: "30x30"), "/auth/twitter", class: "twitter-signin-btn"
