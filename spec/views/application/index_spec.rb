@@ -20,7 +20,7 @@ RSpec.describe "application/index", :type => :view do
     render
 
     expect(rendered).to include ('gladiator')
-    expect(rendered).to include ("#{r_count}&nbsp;reviews revisited")
-    expect(rendered).to include ("#{m_count} movies reviewed")
+    expect(rendered).to include ("#{r_count}")
+    expect(rendered).to include ("#{m_count}")
   end
 end

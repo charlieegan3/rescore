@@ -194,12 +194,23 @@ input#movie_search_submit {
   margin-bottom: 10px;
 }
 
-.fi-heart {
-  font-size: 2em;
+.favorite-icon {
+  font-size: 1.8em;
+}
+
+#flag {
+  margin-left: 20px;
+  padding: 7px 10px;
+  border-radius: 2px;
+  background-color: Crimson;
+}
+
+#flag span {
+  color: white;
 }
 
 .active {
-  color: red;
+  color: Tomato;
 }
 
 .inactive {

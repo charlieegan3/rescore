@@ -10,19 +10,19 @@ RSpec.describe 'movies/show', :type => :view do
 
     it 'show favorite button to authenticated users' do
       render
-      expect(rendered).to have_css '.fi-heart.inactive'
+      expect(rendered).to have_css '.favorite-icon.inactive'
     end
 
     it 'show favorite button to authenticated users' do
       allow(view).to receive(:current_user).and_return(nil)
       render
-      expect(rendered).to_not have_css '.fi-heart'
+      expect(rendered).to_not have_css '.favorite-icon'
     end
 
     it 'show unfavorite if movie is a user favorite' do
       favorite = create(:favorite, user: @user, movie: @movie)
       render
-      expect(rendered).to have_css '.fi-heart.active'
+      expect(rendered).to have_css '.favorite-icon.active'
     end
   end
 end
