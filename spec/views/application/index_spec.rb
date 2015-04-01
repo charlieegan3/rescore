@@ -20,7 +20,12 @@ RSpec.describe "application/index", :type => :view do
     render
 
     expect(rendered).to include ('gladiator')
+<<<<<<< HEAD
     expect(rendered).to include ("#{r_count}")
     expect(rendered).to include ("#{m_count}")
+=======
+    expect(rendered).to include ("<strong>#{r_count}</strong>&nbsp;reviews revisited")
+    expect(rendered).to include ("<strong>#{m_count}</strong>&nbsp;movies reviewed")
+>>>>>>> 03d23d8cfb16609baf5ff60cdd75f0a02553f112
   end
 end
