@@ -59,7 +59,11 @@ class MoviesController < ApplicationController
   end
 
   def search_by_title
-    @movies = Movie.where("title ILIKE ?", "%#{params[:query]}%")
+    if params[:query].blank?
+      flash[:alert] = "No search content provided."
+      redirect_to :root
+    else @movies = Movie.where("title ILIKE ?", "%#{params[:query]}%")
+    end
   end
 
   def new

@@ -12,10 +12,10 @@ nav.top-bar
         li = link_to 'About', about_path
         -if current_user
           li
-            =link_to "Sign Out", signout_path
+            =link_to 'Sign Out', signout_path
         -else
           li
-            =link_to "Sign in with Twitter", "/auth/twitter", class: "twitter-signin-btn"
+            =link_to 'Sign in with Twitter', '/auth/twitter', class: 'twitter-signin-btn'
 
   .menu
     section.top-bar-section
@@ -31,13 +31,15 @@ nav.top-bar
         li.divider
     section.top-bar-section
       ul.right
-        -if current_user
-          li
-            =link_to "Sign Out", signout_path
-        -else
-          li
-            =link_to "Sign in with Twitter", "/auth/twitter", class: "twitter-signin-btn"
-        li
-        li
+        -unless request.fullpath == root_path
           form action="/movies/search_by_title"
             input name="query" type="text" placeholder="Search movies" /
+      ul.right
+        -if current_user
+          li
+            =link_to 'Sign Out', signout_path
+        -else
+          li
+            =link_to('/auth/twitter', class: 'twitter-signin-btn') do
+              =image_tag('/twitter_logo.png', size: '20x20')
+              span &nbsp;Sign in
