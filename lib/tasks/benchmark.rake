@@ -23,6 +23,7 @@ def sentence_scores(sentence)
 end
 
 task :benchmark, :print do |t, args|
+  system('clear')
   reviews = Dir['corpus/*.json']
   # reviews = ['corpus/review_c7985.json'] # enable for single review only
   exit if reviews.empty?
