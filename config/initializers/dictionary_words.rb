@@ -4393,6 +4393,7 @@ POLARITIES = {
   'splendidly' => 2,
   'splendor' => 2,
   'spoil' => -2,
+  'spooky' => 1,
   'spoonfed' => -2,
   'spoonfeed' => -2,
   'sporadic' => -1,
