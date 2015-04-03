@@ -28,6 +28,7 @@ ASPECTS = {
     'narratively' => 80,
     'twists' => 70,
     'the part' => 70,
+    'told through' => 70,
     'pacing' => 60,
     'rhythm' => 60,
     'scenario' => 50,
@@ -51,6 +52,8 @@ ASPECTS = {
     'speech' => 100,
     'spoken' => 90,
     'jokes' => 90,
+    'talk' => 90,
+    'talks' => 90,
     'comedy' => 80,
     'discussion' => 80,
     'conversation' => 80,
@@ -95,7 +98,6 @@ ASPECTS = {
     'lifelike' => 80,
     'cool to look at' => 50,
     'spectacle' => 60,
-    'camera' => 30,
     'lens' => 10,
     'designs' => 8,
   },
@@ -131,6 +133,7 @@ ASPECTS = {
     'shooting' => 80,
     'camera movement' => 80,
     'scene' => 80,
+    'camera' => 30,
     'image' => 20,
   },
 
@@ -138,6 +141,7 @@ ASPECTS = {
     'concept' => 100,
     'interesting idea' => 100,
     'notion' => 100,
+    'idea works' => 50,
   },
 
   novelty: {
