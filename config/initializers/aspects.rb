@@ -33,6 +33,8 @@ ASPECTS = {
     'structurally' => 50,
     'nostalgia' => 50,
     'structured' => 50,
+    'revolves' => 50,
+    'guessed it' => 30,
     'tale' => 30,
     'characters' => 50,
     'character' => 50,
@@ -82,6 +84,7 @@ ASPECTS = {
     '3d' => 100,
     'graphics' => 100,
     'visual' => 100,
+    'special effects' => 100,
     'graphic' => 90,
     'colour' => 90,
     'color' => 90,
@@ -97,6 +100,7 @@ ASPECTS = {
 
   length: {
     'dragged' => 100,
+    'slow' => 70,
     'bloated' => 70,
     'boring' => 50,
   },
@@ -146,5 +150,9 @@ ASPECTS = {
     'inventive' => 100,
     'revolutionary' => 100,
     'unique' => 100,
+    'different' => 100,
+    'ground breaking' => 100,
+    'like that\'s new' => 70,
+    'stand out' => 50,
   }
 }
