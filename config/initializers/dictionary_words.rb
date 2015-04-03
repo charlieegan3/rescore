@@ -839,6 +839,7 @@ POLARITIES = {
   'cuss' => -2,
   'cute' => 2,
   'cutthroat' => -2,
+  'dated' => -2,
   'damaging' => -1,
   'damnable' => -2,
   'damnably' => -2,
