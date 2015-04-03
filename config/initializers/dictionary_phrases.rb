@@ -15,6 +15,7 @@ PHRASE_POLARITIES = {
   'fastestgrowing' => 1,
   'little beyond' => -2,
   'little to no' => -2,
+  'over the head' => -1,
   'well connected' => 2,
   'well educated' => 1,
   'well established' => 1,

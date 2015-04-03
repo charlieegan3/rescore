@@ -23,6 +23,7 @@ ASPECTS = {
     'plot' => 100,
     'villain' => 100,
     'protagonist' => 100,
+    'spoiler' => 100,
     'narrative' => 80,
     'narration' => 80,
     'narratively' => 80,
@@ -105,6 +106,8 @@ ASPECTS = {
 
   length: {
     'dragged' => 100,
+    'flew by' => 80,
+    'hours' => 70,
     'drawn out' => 70,
     'slow' => 70,
     'bloated' => 70,
@@ -158,9 +161,10 @@ ASPECTS = {
     'inventive' => 100,
     'revolutionary' => 100,
     'unique' => 100,
-    'subtler gems' => 70,
     'unlike any other' => 100,
     'ground breaking' => 100,
+    'subtler gems' => 70,
+    'the pap' => 70,
     'like that\'s new' => 70,
     'stand out' => 50,
   }
