@@ -34,6 +34,7 @@ ASPECTS = {
     'nostalgia' => 50,
     'structured' => 50,
     'revolves' => 50,
+    'paced' => 50,
     'guessed it' => 30,
     'tale' => 30,
     'characters' => 50,
@@ -100,6 +101,7 @@ ASPECTS = {
 
   length: {
     'dragged' => 100,
+    'drawn out' => 70,
     'slow' => 70,
     'bloated' => 70,
     'boring' => 50,
@@ -117,6 +119,7 @@ ASPECTS = {
     'truthfully' => 70,
     'honest' => 70,
     'facts' => 70,
+    'missing details' => 60,
     'didn\'t buy' => 50,
   },
 
@@ -135,7 +138,6 @@ ASPECTS = {
     'concept' => 100,
     'interesting idea' => 100,
     'notion' => 100,
-    'interesting' => 80,
   },
 
   novelty: {
@@ -151,6 +153,7 @@ ASPECTS = {
     'revolutionary' => 100,
     'unique' => 100,
     'different' => 100,
+    'unlike any other' => 100,
     'ground breaking' => 100,
     'like that\'s new' => 70,
     'stand out' => 50,
