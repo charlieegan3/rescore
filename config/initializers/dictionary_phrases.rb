@@ -1,4 +1,4 @@
-PHRASE_POLARITIES = {  
+PHRASE_POLARITIES = {
   'above average' => 1,
   'antiAmerican' => -2,
   'antiIsraeli' => -2,
@@ -7,13 +7,14 @@ PHRASE_POLARITIES = {
   'bestknown' => 2,
   'bestperforming' => 2,
   'bestselling' => 1,
-    'betterknown' => 2,
+  'betterknown' => 2,
   'betterthanexpected' => 2,
-    'counterproductive' => -2,
-      'fastgrowing' => 1,
+  'counterproductive' => -2,
+  'fastgrowing' => 1,
   'fastpaced' => 1,
   'fastestgrowing' => 1,
-
+  'little beyond' => -2,
+  'little to no' => -2,
   'well connected' => 2,
   'well educated' => 1,
   'well established' => 1,
