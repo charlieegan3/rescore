@@ -9,7 +9,7 @@ end
 
 def sentence_scores(sentence)
   scores = []
-  words = sentence.split(/\W+/)
+  words = sentence.downcase.split(/\W+/)
   words.each do |word|
     score = POLARITIES[word] || '?'
     if score.to_s.include? '?'
