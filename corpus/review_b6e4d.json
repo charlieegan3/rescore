@@ -30,7 +30,7 @@
           "score": "2",
           "justification": "brilliantly"
         },
-        "vision": {
+        "cinematography": {
           "words": [
             "shot"
           ],
@@ -57,30 +57,48 @@
     {
       "text": "the edit is original and brave, as is the direction of the edit, There is nothing superfluous, to the contrary it' has a sharp Zen like quality, clearly the application of a disciplined mind.The movie is's self is engaging, thoroughly watchable, the characters are simple and yet layered with complexity.",
       "aspects": {
+        "cinematography": {
+          "words": [
+            "direction"
+          ],
+          "score": "1",
+          "justification" : "original and brave"
+        },
         "plot": {
           "words": [
             "characters",
             "character"
           ],
-          "score": "1"
+          "score": "1",
+          "justification" : "simple, complexity, watchable"
+        },
+        "novelty": {
+          "words": [
+            "original", "brave"
+          ],
+          "score": "2",
+          "justification" : "original"
         },
         "editing": {
           "words": [
             "the edit"
           ],
-          "score": "2"
+          "score": "2",
+          "justification" : "original"
         },
         "length": {
           "words": [
-            "nothing superfluous"
+            "superfluous"
           ],
-          "score": "1"
+          "score": "1",
+          "justification" : "nothing ... (negation)"
         },
         "movie": {
           "words": [
-            "engaging"
+            "it"
           ],
-          "score": "1"
+          "score": "1",
+          "justification" : "engaging"
         }
       },
       "comment": "I think nothing superfluous is a positive comment about length"
