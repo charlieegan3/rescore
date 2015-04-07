@@ -1,6 +1,7 @@
 ASPECTS = {
   editing: {
     'editing' => 100,
+    'the edit' => 100,
     'effects' => 70,
     'post production' => 50,
   },
@@ -63,6 +64,7 @@ ASPECTS = {
     'conversation' => 80,
     'language' => 70,
     'delivery' => 50,
+    'written' => 50,
   },
 
   cast: {
@@ -118,6 +120,7 @@ ASPECTS = {
     'drawn out' => 70,
     'slow' => 70,
     'bloated' => 70,
+    'superfluous' => 70,
     'boring' => 50,
   },
 
