@@ -16,6 +16,13 @@
           ],
           "score": "2",
           "justification": "enthralled"
+        },
+        "dialog": {
+          "words": [
+            "language"
+          ],
+          "score": "2",
+          "justification": "enthralled"
         }
       },
       "comment": ""
@@ -72,13 +79,6 @@
           ],
           "score": "1",
           "justification": "weave, relation to god"
-        },
-        "cast": {
-          "words": [
-            "act"
-          ],
-          "score": "1",
-          "justification": "strong ... characters"
         }
       },
       "comment": ""
@@ -92,6 +92,13 @@
           ],
           "score": "2",
           "justification": "intense, caries you through"
+        },
+        "dialog": {
+          "words": [
+            "language barrier"
+          ],
+          "score": "1",
+          "justification": "even with, in spite of"
         }
       },
       "comment": ""

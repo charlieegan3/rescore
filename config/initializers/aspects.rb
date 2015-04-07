@@ -67,7 +67,9 @@ ASPECTS = {
     'delivery' => 50,
     'written' => 50,
     'writing' => 50,
+    'language' => 50,
     'comedy' => 50,
+    'sub-titles' => 30,
   },
 
   cast: {
@@ -183,6 +185,7 @@ ASPECTS = {
     'revolutionary' => 100,
     'unique' => 100,
     'unlike any other' => 100,
+    'not yet seen' => 100,
     'ground breaking' => 100,
     'cliche' => 70,
     'clich' => 70,
