@@ -1,6 +1,7 @@
 ASPECTS = {
   editing: {
     'editing' => 100,
+    'fx' => 100,
     'the edit' => 100,
     'effects' => 70,
     'post production' => 50,
@@ -44,10 +45,10 @@ ASPECTS = {
     'about a' => 40,
     'guessed it' => 30,
     'tale' => 30,
-    'characters' => 50,
-    'character' => 50,
     'journey' => 30,
     'persona' => 20,
+    'characters' => 20,
+    'character' => 20,
   },
 
   dialog: {
@@ -156,6 +157,7 @@ ASPECTS = {
     'scenes' => 80,
     'camera' => 30,
     'image' => 20,
+    'sets' => 20
   },
 
   concept: {
