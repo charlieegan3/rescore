@@ -1,8 +1,8 @@
 ASPECTS = {
   editing: {
     'editing' => 100,
-    'fx' => 100,
     'the edit' => 100,
+    'fx' => 100,
     'effects' => 70,
     'post production' => 50,
   },
@@ -66,6 +66,7 @@ ASPECTS = {
     'language' => 70,
     'delivery' => 50,
     'written' => 50,
+    'writing' => 50,
     'comedy' => 50,
   },
 
@@ -131,6 +132,7 @@ ASPECTS = {
   credibility: {
     'credibility' => 100,
     'true to the book' => 100,
+    'just like' => 100,
     'believable' => 100,
     'improbable' => 100,
     'far-fetched' => 100,
