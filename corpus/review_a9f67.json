@@ -35,6 +35,13 @@
           ],
           "score": "2",
           "justification": "work of art"
+        },
+        "cinematography": {
+          "words": [
+            "direction"
+          ],
+          "score": "2",
+          "justification": "work of art, creative, coherent"
         }
       },
       "comment": "very wordy, add work of art, coherent as 0 or 1, his best, her best are also useful keywords"

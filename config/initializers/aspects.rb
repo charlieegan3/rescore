@@ -60,12 +60,12 @@ ASPECTS = {
     'funny' => 90,
     'talk' => 90,
     'talks' => 90,
-    'comedy' => 80,
     'discussion' => 80,
     'conversation' => 80,
     'language' => 70,
     'delivery' => 50,
     'written' => 50,
+    'comedy' => 50,
   },
 
   cast: {
