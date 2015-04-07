@@ -80,6 +80,7 @@ ASPECTS = {
     'overacted' => 100,
     'performance' => 90,
     'performances' => 90,
+    'perfomances' => 90,
     'portrayal' => 90,
     'depiction' => 90,
     'characterization' => 90,
