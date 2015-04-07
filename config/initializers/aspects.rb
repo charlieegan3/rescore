@@ -14,6 +14,7 @@ ASPECTS = {
     'audio' => 100,
     'sounds' => 100,
     'soundtrack' => 100,
+    'top 40 hits' => 100,
     'surround' => 80,
     'ears' => 20,
     'score' => 10,
@@ -37,6 +38,7 @@ ASPECTS = {
     'conflict' => 60,
     'scenario' => 50,
     'explanation' => 50,
+    'suspense' => 50,
     'structurally' => 50,
     'nostalgia' => 50,
     'structured' => 50,
@@ -92,6 +94,7 @@ ASPECTS = {
     'played' => 70,
     'plays a' => 70,
     'role' => 70,
+    'accent' => 50,
     'persona' => 50,
   },
 

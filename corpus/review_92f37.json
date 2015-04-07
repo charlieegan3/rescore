@@ -17,7 +17,7 @@
           "score": "-1",
           "justification": "shaky, half of the movie is"
         },
-        "vision": {
+        "cinematography": {
           "words": [
             "camera"
           ],
@@ -60,7 +60,7 @@
           "score": "-2",
           "justification": "horrible"
         },
-        "music": {
+        "sound": {
           "words": [
             "top 40 hits"
           ],
