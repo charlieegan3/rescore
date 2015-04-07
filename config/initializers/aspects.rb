@@ -57,6 +57,7 @@ ASPECTS = {
     'speech' => 100,
     'spoken' => 90,
     'jokes' => 90,
+    'funny' => 90,
     'talk' => 90,
     'talks' => 90,
     'comedy' => 80,
@@ -92,6 +93,8 @@ ASPECTS = {
   vision: {
     'visuals' => 100,
     'visually' => 100,
+    'computer effects' => 100,
+    'computer graphics' => 100,
     'imax' => 100,
     'cgi' => 100,
     '3d' => 100,
