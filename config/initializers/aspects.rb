@@ -67,6 +67,7 @@ ASPECTS = {
 
   cast: {
     'acting' => 100,
+    'overacting' => 100,
     'actors' => 100,
     'actresses' => 100,
     'director' => 100,
@@ -101,6 +102,7 @@ ASPECTS = {
     'lighting' => 90,
     'blurry' => 80,
     'graphic' => 80,
+    'gore' =>80,
     'lifelike' => 80,
     'cool to look at' => 50,
     'spectacle' => 60,
