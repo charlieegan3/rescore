@@ -39,7 +39,6 @@
         },
         "dialog": {
           "words": [
-            "scenario",
             "funny"
           ],
           "score": "1",
@@ -51,6 +50,13 @@
           ],
           "score": "1",
           "justification": "well done"
+        },
+        "plot": {
+          "words": [
+            "scenario"
+          ],
+          "score": "1",
+          "justification": "great"
         }
       },
       "comment": ""
