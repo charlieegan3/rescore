@@ -86,6 +86,7 @@ ASPECTS = {
     'performances' => 90,
     'perfomances' => 90,
     'portrayal' => 90,
+    'personality' => 90,
     'depiction' => 90,
     'characterization' => 90,
     'impersonation' => 90,
@@ -165,6 +166,8 @@ ASPECTS = {
     'camera movement' => 80,
     'scene' => 80,
     'scenes' => 80,
+    'stunt' => 80,
+    'stunt-work' => 80,
     'camera' => 30,
     'image' => 20,
     'sets' => 20
@@ -174,6 +177,7 @@ ASPECTS = {
     'concept' => 100,
     'interesting idea' => 100,
     'notion' => 100,
+    'themes' => 70,
     'idea works' => 50,
   },
 
