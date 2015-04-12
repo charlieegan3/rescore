@@ -29,6 +29,9 @@ ASPECTS = {
     'protagonist' => 100,
     'spoiler' => 100,
     'subplot' => 100,
+    'flashback' => 100,
+    'flashes back' => 100,
+    'about a' => 100,
     'subplots' => 100,
     'narrative' => 80,
     'narration' => 80,
@@ -55,6 +58,7 @@ ASPECTS = {
     'persona' => 20,
     'characters' => 20,
     'character' => 20,
+    'the world' => 20,
   },
 
   dialog: {
@@ -114,7 +118,9 @@ ASPECTS = {
     '3d' => 100,
     'graphics' => 100,
     'visual' => 100,
+    'mesmerizing' => 100,
     'special effects' => 100,
+    'cleaned up picture' => 100,
     'graphic' => 90,
     'colour' => 90,
     'color' => 90,
@@ -124,6 +130,9 @@ ASPECTS = {
     'graphic' => 80,
     'gore' =>80,
     'lifelike' => 80,
+    'level of detail' => 70,
+    'distorted' => 50,
+    'hazy' => 50,
     'cool to look at' => 50,
     'spectacle' => 60,
     'looks' => 50,
@@ -153,6 +162,8 @@ ASPECTS = {
     'believable' => 100,
     'improbable' => 100,
     'far-fetched' => 100,
+    'fake' => 100,
+    'phony' => 100,
     'implausible' => 100,
     'capturing' => 100,
     'real impression' => 100,
@@ -167,6 +178,7 @@ ASPECTS = {
 
   cinematography: {
     'cinematography' => 100,
+    'cinematographer' => 100,
     'film making' => 100,
     'filmmaking' => 100,
     'direction' => 80,
@@ -186,6 +198,8 @@ ASPECTS = {
   concept: {
     'concept' => 100,
     'interesting idea' => 100,
+    'illustrate' => 100,
+    'illustrates' => 100,
     'notion' => 100,
     'great ideas' => 100,
     'themes' => 70,
