@@ -32,5 +32,6 @@ PHRASE_POLARITIES = {
   'well publicised' => 1,
   'well received' => 2,
   'well regarded' => 2,
+  'whatever they pleased' => -2,
   'world class' => 2,
 }
