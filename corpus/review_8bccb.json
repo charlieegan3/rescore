@@ -33,7 +33,14 @@
             "visual"
           ],
           "score": "2",
-          "justification": "stunning, excellent"
+          "justification": "stunning, excellent, thanks to"
+        },
+        "editing": {
+          "words": [
+            "effects"
+          ],
+          "score": "2",
+          "justification": "stunning, excellent, thanks to"
         }
       },
       "comment": ""
@@ -251,6 +258,13 @@
           "score": "-2",
           "justification": "completely unnecessary and clichéd"
         },
+        "novelty": {
+          "words": [
+            "cliched"
+          ],
+          "score": "-2",
+          "justification": "completely unnecessary and clichéd"
+        },
         "plot": {
           "words": [
             "plot"
@@ -278,7 +292,7 @@
           "score": "-2",
           "justification": "drags"
         },
-        "drags": {
+        "length": {
           "words": [
             "drags"
           ],
@@ -358,6 +372,13 @@
           ],
           "score": "-2",
           "justification": "dull"
+        },
+        "novelty": {
+          "words": [
+            "clichéd"
+          ],
+          "score": "-2",
+          "justification": "clichéd, dull"
         },
         "length": {
           "words": [
