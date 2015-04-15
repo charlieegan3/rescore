@@ -774,6 +774,7 @@ POLARITIES = {
   'congenial' => 2,
   'congested' => -1,
   'congestion' => -1,
+  'connected' => 1,
   'conscientious' => 2,
   'consensus' => 2,
   'considerate' => 2,
