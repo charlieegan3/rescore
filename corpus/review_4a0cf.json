@@ -125,7 +125,7 @@
         },
         "plot": {
           "words": [
-            "action-forced"
+            "start to finish"
           ],
           "score": "-1",
           "justification": "action-forced"
@@ -153,7 +153,7 @@
           "words": [
             "looks"
           ],
-          "score": "2",
+          "score": "-1",
           "justification": "grandiose"
         }
       },
@@ -262,7 +262,7 @@
       "aspects": {
         "cast": {
           "words": [
-            "character mention"
+            "cast mention"
           ],
           "score": "-1",
           "justification": "unlikable"
@@ -279,8 +279,15 @@
     {
       "text": "Why would we ever like this kid, especially when we've known and loved Bruce Willis' character for four movies?",
       "aspects": {
+        "plot": {
+          "words": [
+            "character"
+          ],
+          "score": "-1",
+          "justification": "Why would we ever..."
+        }
       },
-      "comment": "ignore"
+      "comment": "not sure what the feature is there."
     },
     {
       "text": "I can't speak much about the \"villain\" (played by Radivoje Bukvić) without spoiling the movie, but all I have to say is that he has little to no part in the whole movie.",
@@ -318,6 +325,13 @@
           ],
           "score": "-1",
           "justification": "cliche, cliché"
+        },
+        "novelty": {
+          "words": [
+            "cliche"
+          ],
+          "score": "-2",
+          "justification": "cliché"
         }
       },
       "comment": ""

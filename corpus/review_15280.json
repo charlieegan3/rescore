@@ -200,7 +200,7 @@
         },
         "cast": {
           "words": [
-            "act"
+            "charisma"
           ],
           "score": "1",
           "justification": "charisma"
@@ -240,13 +240,6 @@
         "plot": {
           "words": [
             "explain"
-          ],
-          "score": "2",
-          "justification": "cooler"
-        },
-        "vision": {
-          "words": [
-            "looks"
           ],
           "score": "2",
           "justification": "cooler"

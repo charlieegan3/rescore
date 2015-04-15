@@ -90,6 +90,13 @@
     {
       "text": "They're connected; one cannot act without it affecting the other.",
       "aspects": {
+        "cast": {
+          "words": [
+            "act"
+          ],
+          "score": "1",
+          "justification": "connected"
+        }
       },
       "comment": ""
     },

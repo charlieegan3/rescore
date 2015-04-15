@@ -75,6 +75,13 @@
           ],
           "score": "1",
           "justification": "have their moments"
+        },
+        "plot": {
+          "words": [
+            "character"
+          ],
+          "score": "1",
+          "justification": "everything, finally"
         }
       },
       "comment": ""
@@ -82,14 +89,6 @@
     {
       "text": "Martial arts skills, cunning, great tactical thinking, forensic application, technological genius to advance or improve Luscious Fox's inventions/technological breakthroughs, intimidating personality, and even a little swashbuckling.",
       "aspects": {
-        "plot": {
-          "words": [
-            "persona",
-            "personality"
-          ],
-          "score": "2",
-          "justification": "cunning, great, genius, intimidating"
-        },
         "cast": {
           "words": [
             "persona"
@@ -119,6 +118,13 @@
         "plot": {
           "words": [
             "character"
+          ],
+          "score": "1",
+          "justification": "recognize"
+        },
+        "dialog": {
+          "words": [
+            "writing"
           ],
           "score": "1",
           "justification": "recognize"

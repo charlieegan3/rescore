@@ -75,9 +75,16 @@
     {
       "text": "The special effects, while simply being generic for this day and age were also pretty reasonable.",
       "aspects": {
-        "editing": {
+        "vision": {
           "words": [
             "special effects"
+          ],
+          "score": "0",
+          "justification": "generic-1, pretty reasonable+1"
+        },
+        "effects": {
+          "words": [
+            "effects"
           ],
           "score": "0",
           "justification": "generic-1, pretty reasonable+1"
@@ -96,7 +103,7 @@
           "justification": "nothing"
         }
       },
-      "comment": "charlie: we need to make the default scope the movie"
+      "comment": "(negation) charlie: we need to make the default scope the movie"
     },
     {
       "text": "Probably the most notable thing was Kane himself, but it's not a great surprise seeing as his day job is to play a Psycho.On the downside however the whole plot was so incredibly bog standard you get bored with it early on, stop really caring who's going to live or die and just try and enjoy the visuals.",
@@ -196,6 +203,13 @@
           ],
           "score": "-2",
           "justification": "generic, obvious, you'll have guessed it"
+        },
+        "credibility": {
+          "words": [
+            "honest"
+          ],
+          "score": "1",
+          "justification": "at least, pretty reasonable"
         }
       },
       "comment": ""

@@ -36,6 +36,13 @@
     {
       "text": "The director and story writers did whatever they pleased to show some mindless action.",
       "aspects": {
+        "cinematography": {
+          "words": [
+            "director"
+          ],
+          "score": "-2",
+          "justification": "mindless action, whatever they pleased"
+        },
         "plot": {
           "words": [
             "action"
