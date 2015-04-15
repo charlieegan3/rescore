@@ -22,6 +22,13 @@
     {
       "text": "A great hero in the fight against prejudice.This film tackles themes of prejudice against the feminine, against homosexuality and more generally against anyone who is different.",
       "aspects": {
+        "concept": {
+          "words": [
+            "themes"
+          ],
+          "score": "2",
+          "justification": "tackles, great hero"
+        }
       },
       "comment": "ignore"
     },
@@ -40,6 +47,13 @@
           ],
           "score": "2",
           "justification": "amazing"
+        },
+        "cinematography": {
+          "words": [
+            "scene, screenplay"
+          ],
+          "score": "2",
+          "justification": "beautifully tight, engaged"
         },
         "plot": {
           "words": [
@@ -62,7 +76,7 @@
           "score": "2",
           "justification": "on top form"
         },
-	"cast": {
+  "cast": {
           "words": [
             "performance"
           ],
@@ -138,6 +152,13 @@
     {
       "text": "A film about a story that matters, about events that changed history and simply about a man without whom you might not even be able to read this review on your Turing machine. ",
       "aspects": {
+        "plot": {
+          "words": [
+            "story"
+          ],
+          "score": "1",
+          "justification": "that matters"
+        }
       },
       "comment": "ignore"
     }
