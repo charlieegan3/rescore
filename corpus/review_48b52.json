@@ -51,11 +51,17 @@
       "aspects": {
         "credibility": {
           "words": [
-            "characters",
-            "character"
+            "accurate"
           ],
           "score": "1",
           "justification": "accurate"
+        },
+        "plot": {
+          "words": [
+            "characters"
+          ],
+          "score": "1",
+          "justification": "accurate, 100%"
         },
         "cast": {
           "words": [
@@ -70,12 +76,12 @@
     {
       "text": "The camera-work also was brilliant and Martin Scorsese does a beautiful job by putting excellent camera shots in his films and I give him high credit for that.",
       "aspects": {
-        "vision": {
+        "cinematography": {
           "words": [
-            "beautiful"
+            "camera-work"
           ],
           "score": "2",
-          "justification": "excellent"
+          "justification": "excellent, beautiful"
         }
       },
       "comment": "Woj: fine with focusing on camera shots, but also camera-work - add to list?"

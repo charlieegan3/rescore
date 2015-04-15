@@ -57,7 +57,7 @@
           "score": "-1",
           "justification": "bit dated"
         },
-        "acting": {
+        "cast": {
           "words": [
             "acting"
           ],
@@ -84,9 +84,9 @@
     {
       "text": "The circus itself is a character and the way Demille used the audience to make them seem so individual is wonderful.",
       "aspects": {
-        "novelty": {
+        "plot": {
           "words": [
-            "individual"
+            "character"
           ],
           "score": "2",
           "justification": "wonderful"

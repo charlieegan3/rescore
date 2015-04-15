@@ -83,6 +83,13 @@
           ],
           "score": "1",
           "justification": "friendship based"
+        },
+        "dialog": {
+          "words": [
+            "funny"
+          ],
+          "score": "1",
+          "justification": "funny"
         }
       },
       "comment": ""

@@ -28,6 +28,20 @@
           ],
           "score": "2",
           "justification": "worth the wait, the best"
+        },
+        "plot": {
+          "words": [
+            "story"
+          ],
+          "score": "2",
+          "justification": "real story"
+        },
+        "cast": {
+          "words": [
+            "played by"
+          ],
+          "score": "0",
+          "justification": "no sentiment"
         }
       },
       "comment": ""
@@ -52,6 +66,13 @@
             "the film"
           ],
           "score": "1",
+          "justification": "never lets you take a brake"
+        },
+        "plot": {
+          "words": [
+            "journey"
+          ],
+          "score": "2",
           "justification": "never lets you take a brake"
         }
       },
@@ -92,6 +113,13 @@
           ],
           "score": "2",
           "justification": "effective and exhaustive"
+        },
+        "concept": {
+          "words": [
+            "themes"
+          ],
+          "score": "2",
+          "justification": "effective and exhaustive, few and far between"
         }
       },
       "comment": "Woj: not sure but maybe exhaustive could be mapped to plot/credibility?"
@@ -106,7 +134,7 @@
           "score": "2",
           "justification": "beautifully"
         },
-	"vision": {
+        "cinematography": {
           "words": [
             "shot"
           ],
@@ -125,6 +153,13 @@
           ],
           "score": "2",
           "justification": "masterpiece"
+        },
+        "cast": {
+          "words": [
+            "actors"
+          ],
+          "score": "0",
+          "justification": "no sentiment"
         }
       },
       "comment": "Woj: how do we go about the director's name?"
@@ -145,6 +180,13 @@
     {
       "text": "Benedict Cumberbatch plays a plantation owner, who recognizes Solomon's talent and tries to help him to a certain extent.",
       "aspects": {
+        "cast": {
+          "words": [
+            "plays a"
+          ],
+          "score": "0",
+          "justification": "plot details, ignore, no sentiment"
+        }
       },
       "comment": ""
     },
@@ -202,6 +244,13 @@
     {
       "text": "As Benedict's worker, he despises slaves and the songs he sings to Solomon makes an incredibly powerful scene, one of the most disturbing in the film.",
       "aspects": {
+        "cinematography": {
+          "words": [
+            "scene"
+          ],
+          "score": "2",
+          "justification": "incredibly powerful"
+        }
       },
       "comment": "Woj: not sure if I wouldn't assign cast aspect here"
     },

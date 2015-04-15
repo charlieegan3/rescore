@@ -14,12 +14,12 @@ RSpec.describe MoviesController, :type => :feature do
   describe 'favorite' do
     it 'can check and uncheck favorite' do
       visit(movie_path(@movie))
-      expect(page).to have_css '.fi-heart.inactive'
+      expect(page).to have_css '.favorite-icon.inactive'
       click_link 'favorite'
-      expect(page).to have_css '.fi-heart.active'
+      expect(page).to have_css '.favorite-icon.active'
       expect(Favorite.count).to eq(1)
       click_link 'favorite'
-      expect(page).to have_css '.fi-heart.inactive'
+      expect(page).to have_css '.favorite-icon.inactive'
       expect(Favorite.count).to eq(0)
     end
   end
