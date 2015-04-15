@@ -16,6 +16,7 @@ ASPECTS = {
     'soundtrack' => 100,
     'top 40 hits' => 100,
     'song' => 90,
+    'songs' => 90,
     'surround' => 80,
     'ears' => 20,
     'score' => 10,
