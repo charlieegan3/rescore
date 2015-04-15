@@ -1,6 +1,7 @@
 ASPECTS = {
   editing: {
     'editing' => 100,
+    'edited' => 100,
     'the edit' => 100,
     'fx' => 100,
     'effects' => 70,
@@ -43,6 +44,7 @@ ASPECTS = {
     'pacing' => 60,
     'rhythm' => 60,
     'conflict' => 60,
+    'journey' =>60,
     'scenario' => 50,
     'period' => 50,
     'explanation' => 50,
@@ -85,11 +87,11 @@ ASPECTS = {
   },
 
   cast: {
+    'cast' => 100,
     'acting' => 100,
     'overacting' => 100,
     'actors' => 100,
     'actresses' => 100,
-    'cast' => 100,
     'overacted' => 100,
     'performance' => 90,
     'performances' => 90,
@@ -99,10 +101,12 @@ ASPECTS = {
     'depiction' => 90,
     'characterization' => 90,
     'impersonation' => 90,
+    'screen time' => 90,
     'the robot' => 80,
     'act' => 70,
     'star' => 70,
     'played' => 70,
+    'played by' => 70,
     'plays a' => 70,
     'role' => 70,
     'accent' => 50,
@@ -192,6 +196,7 @@ ASPECTS = {
     'scenes' => 80,
     'stunt' => 80,
     'stunt-work' => 80,
+    'shot' => 40,
     'camera' => 30,
     'image' => 20,
     'sets' => 20
