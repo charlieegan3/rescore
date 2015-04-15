@@ -56,6 +56,13 @@
     {
       "text": "The story revolves around a village that has become a group of bandits' common looting and pillaging ground.",
       "aspects": {
+        "plot": {
+          "words": [
+            "story", "plot"
+          ],
+          "score": "0",
+          "justification": ""
+        }
       },
       "comment": "irrelevant plot details"
     },
@@ -129,6 +136,13 @@
         "movie": {
           "words": [
             "film"
+          ],
+          "score": "2",
+          "justification": "true beauty, excellence and magic, art form"
+        },
+        "cinematography": {
+          "words": [
+            "art form"
           ],
           "score": "2",
           "justification": "true beauty, excellence and magic, art form"
