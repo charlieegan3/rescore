@@ -99,6 +99,7 @@ ASPECTS = {
   cast: {
     'cast' => 100,
     'acting' => 100,
+    'acted' => 100,
     'overacting' => 100,
     'actors' => 100,
     'actresses' => 100,
@@ -247,6 +248,7 @@ ASPECTS = {
   novelty: {
     'novel idea' => 100,
     'original' => 100,
+    'originality' => 100,
     'something different' => 100,
     'freshness' => 100,
     'charming' => 100,
