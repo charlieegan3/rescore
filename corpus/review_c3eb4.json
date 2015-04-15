@@ -56,19 +56,12 @@
           "score": "1",
           "justification": "the music swelling"
         },
-        "vision": {
-          "words": [
-            "camera"
-          ],
-          "score": "1",
-          "justification": "the hand held camera that worked so well...give you a feeling of participation"
-        },
         "cinematography": {
           "words": [
-            "techniques"
+            "techniques", "camera"
           ],
-          "score": "1",
-          "justification": ""
+          "score": "2",
+          "justification": "trademark, style"
         }
       },
       "comment": "Charlie: this is a hard sentence"
@@ -107,6 +100,14 @@
           "words": [
             "acting",
             "act"
+          ],
+          "score": "1",
+          "justification": "complex, without overacting, comes from within"
+        },
+        "plot": {
+          "words": [
+            "characters",
+            "story"
           ],
           "score": "1",
           "justification": "complex, without overacting, comes from within"

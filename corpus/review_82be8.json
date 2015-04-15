@@ -21,7 +21,14 @@
             "film-title"
           ],
           "score": "0",
-          "justification": "magnificently(+1) fake(-1)"
+          "justification": "fake"
+        },
+        "cinematography": {
+          "words": [
+            "director"
+          ],
+          "score": "0",
+          "justification": "fake"
         },
         "credibility": {
           "words": [
@@ -49,6 +56,13 @@
     {
       "text": "The world of The Cabinet Of Dr. Caligari is meant to resemble the world of the stage and the contents of the characters’ minds—giving interior lives an exterior shape and theatrical form.",
       "aspects": {
+        "ploty": {
+          "words": [
+            "the world", "characters"
+          ],
+          "score": "0",
+          "justification": ""
+        }
       },
       "comment": "not enough sentiment in this sentence"
     },
@@ -94,6 +108,13 @@
           ],
           "score": "2",
           "justification": "eerie, efficient"
+        },
+        "plot": {
+          "words": [
+            "narrative"
+          ],
+          "score": "-1",
+          "justification": "odd"
         }
       },
       "comment": "eerie is a positive thing for horror films"
@@ -111,6 +132,13 @@
         "plot": {
           "words": [
             "flashes back"
+          ],
+          "score": "0",
+          "justification": ""
+        },
+        "cast": {
+          "words": [
+            "cast mention"
           ],
           "score": "0",
           "justification": ""
@@ -140,6 +168,13 @@
           ],
           "score": "0",
           "justification": ""
+        },
+        "cinematography": {
+          "words": [
+            "cinematographer", "scene"
+          ],
+          "score": 0,
+          "justification": ""
         }
       },
       "comment": ""
@@ -153,6 +188,13 @@
           ],
           "score": "1",
           "justification": "mesmerizing effect-apt"
+        },
+        "plot": {
+          "words": [
+            "about a"
+          ],
+          "score": "1",
+          "justification": "apt"
         },
         "vision": {
           "words": [
@@ -173,6 +215,13 @@
           ],
           "score": "0",
           "justification": ""
+        },
+        "cast": {
+          "words": [
+            "cast member mention"
+          ],
+          "score": "0",
+          "justification": ""
         }
       },
       "comment": "summarizing"
@@ -186,6 +235,13 @@
     {
       "text": "But the closer they get to Caligari, the more they risk becoming another of his pawns, and the more they learn some unpleasant truths about the world they thought they knew.",
       "aspects": {
+        "plot": {
+          "words": [
+            "the world"
+          ],
+          "score": "0",
+          "justification": ""
+        }
       },
       "comment": "summarizing"
     },
@@ -242,6 +298,13 @@
           ],
           "score": "1",
           "justification": "modern"
+        },
+        "cinematography": {
+          "words": [
+            "sets"
+          ],
+          "score": "1",
+          "justification": "unexpected"
         }
       },
       "comment": "charlie: this is a tough sentence"
@@ -281,6 +344,13 @@
     {
       "text": "Horror films around the world—including Universal’s monster movies of the 1930s and 1940s—borrowed liberally from The Cabinet Of Dr. Caligari’s scenes of dark stalkers and desperate chases.",
       "aspects": {
+        "cinematography": {
+          "words": [
+            "scenes"
+          ],
+          "score": "0",
+          "justification": "0"
+        }
       },
       "comment": ""
     },
@@ -299,6 +369,13 @@
           ],
           "score": "1",
           "justification": "pervaded popular culture, funky"
+        },
+        "plot": {
+          "words": [
+            "story"
+          ],
+          "score": "1",
+          "justification": "pervaded popular culture"
         }
       },
       "comment": ""

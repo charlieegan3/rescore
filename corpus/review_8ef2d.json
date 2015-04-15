@@ -43,6 +43,13 @@
           "score": "2",
           "justification": "excellent"
         },
+        "cinematography": {
+          "words": [
+            "directing", "sets"
+          ],
+          "score": "2",
+          "justification": "excellent"
+        },
         "dialog": {
           "words": [
             "script"

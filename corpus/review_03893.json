@@ -49,6 +49,13 @@
     {
       "text": "The story starts with the crew of the cargo vessel \"Nostromo\" waking up before schedule.",
       "aspects": {
+        "plot": {
+          "words": [
+            "story"
+          ],
+          "score": "0",
+          "justification": "no sentiment"
+        }
       },
       "comment": "plot details"
     },
@@ -98,6 +105,13 @@
           ],
           "score": "1",
           "justification": "moves the story along, unrelenting terror"
+        },
+        "plot": {
+          "words": [
+            "story"
+          ],
+          "score": "0",
+          "justification": "no sentiment"
         }
       },
       "comment": "Charlie: think this is hard to detect"
@@ -111,6 +125,13 @@
           ],
           "score": "2",
           "justification": "best, works just as well"
+        },
+        "cinematography": {
+          "words": [
+            "scenes"
+          ],
+          "score": "2",
+          "justification": "best musical, just as well, to be put on film"
         }
       },
       "comment": ""
@@ -150,6 +171,13 @@
           ],
           "score": "2",
           "justification": "10/10"
+        },
+        "vision": {
+          "words": [
+            "gore"
+          ],
+          "score": "0",
+          "justification": "no sentiment"
         }
       },
       "comment": ""

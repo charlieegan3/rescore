@@ -36,6 +36,13 @@
     {
       "text": "Part of a new regiment, Jack O'Connell's lead character, Gary Hook, is deployed to Belfast, Northern Ireland to help control an emergency situation caused by IRA terrorism.",
       "aspects": {
+        "plot": {
+          "words": [
+            "character"
+          ],
+          "score": "0",
+          "justification": "no sentiment"
+        }
       },
       "comment": "ignore"
     },
@@ -115,6 +122,20 @@
     {
       "text": "'They do not care about you, to them, you are just a piece of meat' – one character announces to Hook.",
       "aspects": {
+        "plot": {
+          "words": [
+            "character"
+          ],
+          "score": "0",
+          "justification": "no sentiment"
+        },
+        "dialog": {
+          "words": [
+            "announces"
+          ],
+          "score": "0",
+          "justification": "no sentiment"
+        }
       },
       "comment": "ignore"
     },
@@ -140,8 +161,15 @@
     {
       "text": "Co-starring alongside, Sean Harris and Paul Anderson play undercover superiors, yet are as corrupt as Bad Lieutenant.",
       "aspects": {
+        "cast": {
+          "words": [
+            "starring"
+          ],
+          "score": "0",
+          "justification": "no sentiment"
+        }
       },
-      "comment": "why length detected? play? charlie: would have been the 'long' in alongside in the old matching"
+      "comment": "why length detected? play? charlie: would have been the 'long' in alongside in the old matching method"
     },
     {
       "text": "Regimented like the army, '71 is on point.",
