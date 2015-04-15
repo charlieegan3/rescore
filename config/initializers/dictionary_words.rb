@@ -3244,6 +3244,7 @@ POLARITIES = {
   'meticulously' => 2,
   'mightily' => 2,
   'mighty' => 2,
+  'milestone' => 2,
   'militancy' => -2,
   'mindful' => 2,
   'mindless' => -2,
