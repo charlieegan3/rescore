@@ -23,9 +23,9 @@
     {
       "text": "The whole movie is supposed to deal with a tax inflicted to mixed race dogs owners, but it is actually never explained.",
       "aspects": {
-        "plot": {
+        "movie": {
           "words": [
-            "whole movie"
+            "whole"
           ],
           "score": "-1",
           "justification": "never explained"
@@ -96,6 +96,13 @@
           ],
           "score": "-1",
           "justification": "isn't great"
+        },
+        "cinematography": {
+          "words": [
+            "scenes"
+          ],
+          "score": "2",
+          "justification": "simply great"
         }
       },
       "comment": "is a dog a a cast member? Woj: well, they are part of the FX maybe, but not cast"
@@ -103,13 +110,6 @@
     {
       "text": "I have to congratulate the director and the dog trainers for such a hard and amazing job.   Also, I believe the trailer was great, a mix between a little clue on the movie and a breathtaking cinematographic job.",
       "aspects": {
-        "vision": {
-          "words": [
-            "graphic"
-          ],
-          "score": "2",
-          "justification": "breathtaking"
-        },
         "cinematography": {
           "words": [
             "cinematographic"
@@ -142,6 +142,13 @@
           ],
           "score": "-1",
           "justification": "the problem"
+        },
+        "cinematography": {
+          "words": [
+            "scene"
+          ],
+          "score": "2",
+          "justification": "very best"
         },
         "vision": {
           "words": [

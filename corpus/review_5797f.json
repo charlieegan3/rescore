@@ -52,10 +52,17 @@
           "words": [
             "script"
           ],
-          "score": "1",
+          "score": "2",
           "justification": "fluid"
         },
-        "vision": {
+        "dialog": {
+          "words": [
+            "script"
+          ],
+          "score": "2",
+          "justification": "fluid"
+        },
+        "cinematography": {
           "words": [
             "filming"
           ],
@@ -75,6 +82,13 @@
     {
       "text": "Lots of industry-talk (yes, they really do talk that way) and all the stress, the pushing for success, the attention needed at all cost and the eagerness to do anything it takes to get there are greatly told.",
       "aspects": {
+        "dialog": {
+          "words": [
+            "talk"
+          ],
+          "score": "2",
+          "justification": "greatly told"
+        }
       },
       "comment": "ignore"
     },
@@ -87,6 +101,13 @@
     {
       "text": "The story is mainly about a family in Cronenberg-condition, meaning they are really messed up and totally unpredictable, way beyond mental sanity.",
       "aspects": {
+        "plot": {
+          "words": [
+            "story"
+          ],
+          "score": "0",
+          "justification": "no sentiment"
+        }
       },
       "comment": "ignore"
     },

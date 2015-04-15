@@ -122,6 +122,13 @@
           ],
           "score": "-1",
           "justification": "barely able to"
+        },
+        "plot": {
+          "words": [
+            "story"
+          ],
+          "score": "-1",
+          "justification": "barely able to"
         }
       },
       "comment": "same problem - very difficult to find sentence semantics"

@@ -48,6 +48,13 @@
           ],
           "score": "2",
           "justification": "so impressed, great deal, respect and attention"
+        },
+        "cinematography": {
+          "words": [
+            "director"
+          ],
+          "score": "2",
+          "justification": "so impressed, great deal, respect and attention"
         }
       },
       "comment": ""
@@ -87,9 +94,16 @@
           ],
           "score": "1",
           "justification": "original"
+        },
+        "novelty": {
+          "words": [
+            "original"
+          ],
+          "score": "1",
+          "justification": "original"
         }
       },
-      "comment": "negation present"
+      "comment": "lots of negation present"
     },
     {
       "text": "The cinematography was grand and expressive.",
@@ -98,7 +112,7 @@
           "words": [
             "cinematography"
           ],
-          "score": "1",
+          "score": "2",
           "justification": "grand, expressive"
         }
       },

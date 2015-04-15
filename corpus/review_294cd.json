@@ -26,14 +26,14 @@
           "words": [
             "acting"
           ],
-          "score": "0",
+          "score": "-1",
           "justification": "(overacting)"
         },
         "novelty": {
           "words": [
             "original"
           ],
-          "score": "0",
+          "score": "-1",
           "justification": "(lack originality)"
         }
       },
@@ -59,7 +59,7 @@
           "words": [
             "story"
           ],
-          "score": "1",
+          "score": "2",
           "justification": "great story"
         }
       },
@@ -150,6 +150,13 @@
           ],
           "score": "2",
           "justification": "tops"
+        },
+        "cinematography": {
+          "words": [
+            "scene"
+          ],
+          "score": "2",
+          "justification": "favorite"
         }
       },
       "comment": ""

@@ -11,7 +11,7 @@
       "text": "Let me start this off by saying that I generally like Disney films, and that this is not some anti-kiddie flick internet geek writing this.",
       "aspects": {
       },
-      "comment": "ignore"
+      "comment": "writing != dialog here"
     },
     {
       "text": "Now that I have that out of the way, I would like to tell you how terrible this movie is.",
@@ -76,7 +76,7 @@
           "justification": "wasn't especially funny"
         }
       },
-      "comment": "marked negation as well - not sure if did it right"
+      "comment": "negation"
     },
     {
       "text": "The comic relief character was okay (in that he wasn't nearly as annoying as everyone else) but he was only there to provide some moderately executed slapstick comedy, and the only funny spoken line in the movie.",
@@ -87,6 +87,13 @@
           ],
           "score": "0",
           "justification": "okay"
+        },
+        "dialog": {
+          "words": [
+            "spoken"
+          ],
+          "score": "1",
+          "justification": "funny"
         }
       },
       "comment": "Woj: adjusted to other ok = 0's that I've seen"
@@ -94,7 +101,7 @@
     {
       "text": "While the script is fine for a TV special or maybe the first episode of a Nickelodeon series, it is definitely not right for a high-profile animated film.",
       "aspects": {
-        "plot": {
+        "dialog": {
           "words": [
             "the script"
           ],
@@ -102,7 +109,7 @@
           "justification": "definitely not right"
         }
       },
-      "comment": "is difficult to parse (the first part of the sentence)"
+      "comment": "negation"
     },
     {
       "text": "Let's just say, there are trolls.",
@@ -146,7 +153,7 @@
       "text": "There was a quite funny Mickey Mouse cartoon they played before the picture, and the trailer for the Lego movie looks like it could be worth something.",
       "aspects": {
       },
-      "comment": "ignore"
+      "comment": "ignore - contains misleading information"
     },
     {
       "text": "Otherwise, this movie was terrible.",
