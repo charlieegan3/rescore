@@ -55,7 +55,7 @@
           "score": "1",
           "justification": "Exactly what you would expect from talented actors"
         },
-        "concept": {
+        "novelty": {
           "words": [
             "creativity"
           ],
@@ -88,7 +88,7 @@
           "score": "-1",
           "justification": "it succeeds only as an experimental museum piece"
         },
-        "cinematography": {
+        "novelty": {
           "words": [
             "execution"
           ],
@@ -107,6 +107,13 @@
           ],
           "score": "-2",
           "justification": "pointless, sluggish, taxing, walk out before the end"
+        },
+        "plot": {
+          "words": [
+            "the end"
+          ],
+          "score": "-2",
+          "justification": "taxing, sluggish"
         }
       },
       "comment": ""
