@@ -6,7 +6,6 @@ PHRASE_POLARITIES = {
   'betterknown' => 2,
   'betterthanexpected' => 2,
   'counterproductive' => -2,
-  'even with' => 1,
   'half of the' => -1,
   'falls apart' => -2,
   'fast growing' => 1,
