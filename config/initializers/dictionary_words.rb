@@ -1706,6 +1706,7 @@ POLARITIES = {
   'falsify' => -2,
   'falter' => -2,
   'familiar' => 1,
+  'famous' => 1,
   'fanatical' => -2,
   'fanatically' => -2,
   'fanciful' => -2,
