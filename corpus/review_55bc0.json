@@ -36,6 +36,13 @@
           ],
           "score": "2",
           "justification": "works perfectly"
+        },
+        "dialog": {
+          "words": [
+            "humour, steam of jokes"
+          ],
+          "score": "2",
+          "justification": "works perfectly"
         }
       },
       "comment": "based on the humour"
@@ -66,17 +73,17 @@
         },
         "vision": {
           "words": [
-            "visual"
-          ],
-          "score": "2",
-          "justification": "splendour"
-        },
-	"vision": {
-          "words": [
             "visual effects"
           ],
           "score": "2",
-          "justification": "stunning"
+          "justification": "stunning, splendour"
+        },
+        "cinematography": {
+          "words": [
+            "scenes"
+          ],
+          "score": "2",
+          "justification": "epic"
         }
       },
       "comment": ""

@@ -118,6 +118,7 @@ ASPECTS = {
   },
 
   vision: {
+    'visual' => 100,
     'visuals' => 100,
     'visually' => 100,
     'computer effects' => 100,
@@ -130,6 +131,7 @@ ASPECTS = {
     'mesmerizing' => 100,
     'special effects' => 100,
     'cleaned up picture' => 100,
+    'splendour' => 90,
     'graphic' => 90,
     'colour' => 90,
     'color' => 90,
