@@ -20,6 +20,7 @@ PHRASE_POLARITIES = {
   'take away all' => -2,
   'takes away all' => -2,
   'thanks to' => 1,
+  'never lets you take a brake' => 2,
   'very little' => -1,
   'well connected' => 2,
   'well educated' => 1,
