@@ -3943,6 +3943,7 @@ POLARITIES = {
   'refute' => -2,
   'regally' => 2,
   'regard' => 2,
+  'regardless' => -1,
   'regress' => -1,
   'regression' => -1,
   'regressive' => -1,

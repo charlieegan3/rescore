@@ -15,6 +15,7 @@ PHRASE_POLARITIES = {
   'little beyond' => -2,
   'little to no' => -2,
   'made in taiwan' => -2,
+  'needs more' => -1,
   'not yet seen' => 2,
   'over the head' => -1,
   'take away all' => -2,
