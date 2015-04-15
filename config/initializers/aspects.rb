@@ -189,6 +189,7 @@ ASPECTS = {
     'real impression' => 100,
     'felt like' => 100,
     'realistic' => 100,
+    'accurate' => 100,
     'true' => 80,
     'truthful' => 80,
     'truthfully' => 70,
