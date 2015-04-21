@@ -260,6 +260,10 @@ input#movie_search_submit {
   font-size: 0.8em;
 }
 
+.age {
+  font-size: 0.75em;
+}
+
 @media screen and (max-width: 42em) {
   .menu {
     display: none;

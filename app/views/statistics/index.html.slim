@@ -4,11 +4,11 @@
 .row
   .large-6.columns
     .panel
-      p
-        strong Global Aspect Sentiment vs Discussion Focus
+      |This is the sentiment focus graph for all movies in our database.
       =render "aspects_graph", id: 'stats', aspects: @aspects, counts: @counts
   .large-6.columns
     .panel
+      |So far rescore is has analyzed:
       p
         strong ="#{Movie.count} "
         | movies
@@ -18,3 +18,12 @@
         br
         strong ="#{@people_count} "
         | people
+    .panel
+      strong Latest Movies
+      ul
+        -@movies.each do |movie|
+          li
+            =link_to(movie.title, movie_path(movie))
+            span.age
+              |&nbsp;added&nbsp;
+              =distance_of_time_in_words(Time.zone.now, movie.created_at) + ' ago'
