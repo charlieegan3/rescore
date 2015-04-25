@@ -28,6 +28,8 @@ task :benchmark, :print do |t, args|
   # reviews = ['corpus/review_c7985.json'] # enable for single review only
   exit if reviews.empty?
 
+  sentence_count = 0
+
   annotations, true_positives, false_positives, sentiment_delta = 0, 0, 0, 0
 
   reviews.each do |annotated_review|
@@ -37,6 +39,7 @@ task :benchmark, :print do |t, args|
     rescore_review = RescoreReview.new(annotated_review['body'], nil)
 
     rescore_review.build_all.sentences.each_with_index do |s, i|
+      sentence_count += 1
       ac = AspectComparator.new(annotated_review['annotated_sentences'][i], s)
       comparison = ac.compare
 
@@ -72,7 +75,7 @@ task :benchmark, :print do |t, args|
   puts "annotations:     #{annotations}"     + ' (aspects assigned by us)'.green
   puts "true_positives:  #{true_positives}"  + ' (correct aspects assigned by rescore)'.green
   puts "false_positives: #{false_positives}" + ' (incorrect aspects assigned by rescore)'.green
-  puts "sentiment_delta: #{sentiment_delta}" + ' (total difference (annotated vs computed) in sentiment scores)'.green
+  puts "average sentiment_delta: #{(sentiment_delta.to_f / sentence_count).round(2)}" + ' (average difference (annotated vs computed) in sentiment scores)'.green
 
   score = (((true_positives - false_positives).to_f / annotations) * 100).to_i
   puts '-' * 50
