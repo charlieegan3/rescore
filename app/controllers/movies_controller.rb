@@ -24,8 +24,8 @@ class MoviesController < ApplicationController
     else
       respond_to do |format|
         format.html
-        format.json  { render :json => @movie }
-        format.xml  { render :xml => @movie }
+        format.json  { render :json => @movie, :except => [:page_depth, :rotten_tomatoes_id, :status, :created_at, :updated_at, :task, :complete]}
+        format.xml  { render :xml => @movie, :except => [:page_depth, :rotten_tomatoes_id, :status, :created_at, :updated_at, :task, :complete]}
       end
     end
   end
