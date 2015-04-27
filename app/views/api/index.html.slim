@@ -1,17 +1,20 @@
-p.api
-  strong rescore API&nbsp;
-  | is a tool for scoring your reviews using our 
-  em Natural Language Processing&nbsp;
-  | algorithm.
-  br/
+javascript:
+  hljs.initHighlightingOnLoad();
+
 .row
+  h1 resore API
   .large-12.columns
-	.panel
-	  h3 resore API
-	.panel
-	  | rescore API is a tool that allows you to integrate our algorithm with your own software or website.
-	  br/
-	  | Send us a review and you will receive a fully rescore-annotated JSON version of it!
+	 .panel
+      p
+        strong rescore API&nbsp;
+        | is a tool for scoring your reviews using our
+        em Natural Language Processing&nbsp;
+        | algorithm.
+        br/
+	 .panel
+	   | rescore API is a tool that allows you to integrate our algorithm with your own software or website.
+	   br/
+	   | Send us a review and you will receive a fully rescore-annotated JSON version of it!
 .row
   .large-12.columns
     .panel
@@ -21,16 +24,16 @@ p.api
   .large-12.columns
     .panel
       h4 Sample I/O
-      h5 Input: 
+      h5 Input:
       code I really liked the story and the acting from Robert Gustafsson. A funny film with great scenario and well done history facts.
-      br/ 
+      br/
       h5 Output:
       pre
-        code.json 
+        code.json
           |
             {
               "text": "I really liked the story and the acting from Robert Gustafsson. A funny film with great scenario and well done history facts.",
-              "sentences": 
+              "sentences":
               [
                 {
                     "index": 0,
