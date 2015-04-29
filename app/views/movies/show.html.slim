@@ -44,14 +44,14 @@
 
   .large-6.columns
     .row
-      .large-12.columns
-        .panel
-          =render "user_actions", movie: @movie
+      -if current_user
+        .large-12.columns
+          .panel
+            =render "user_actions", movie: @movie
     .row.report-form
       .large-12.columns
         .panel
           =render "movie_report_form", movie: @movie
-
 
     .row
       .large-12.columns
