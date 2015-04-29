@@ -264,6 +264,11 @@ input#movie_search_submit {
   font-size: 0.75em;
 }
 
+.panel table tbody td
+{
+  word-break: break-all;
+}
+
 @media screen and (max-width: 42em) {
   .menu {
     display: none;
@@ -328,6 +333,12 @@ input#movie_search_submit {
   .top-bar .mobile-menu ul li:hover
   {
     background-color: #222;
+  }
+
+  .panel table tbody tr td:nth-child(n+5), 
+  .panel table tbody tr th:nth-child(n+5)
+  {
+    display: none;
   }
 
 }
