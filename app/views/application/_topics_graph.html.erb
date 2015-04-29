@@ -19,7 +19,7 @@
     };
 
     var data = {
-      labels: <%= topics.map { |x| x[0].to_s.capitalize + ": #{x[1]}" }.to_s.html_safe %>,
+      labels: <%= topics.map { |x| x[0].to_s.capitalize + ": #{x[1].round(2)}" }.to_s.html_safe %>,
       datasets: [
         {
           fillColor: "rgba(220,100,100,0.2)",
@@ -39,4 +39,4 @@
   })
 </script>
 
-<canvas id="<%= id %>_topics" width="250" height="250"></canvas>
+<canvas id="<%= id %>_topics" style="max-width: 550px; max-height: 300px"></canvas>
