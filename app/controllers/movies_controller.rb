@@ -1,5 +1,5 @@
 class MoviesController < ApplicationController
-  http_basic_authenticate_with name: ADMIN_USERNAME, password: ADMIN_PASSWORD, except: [:index, :show, :search_by_title, :compare]
+  http_basic_authenticate_with name: ENV['ADMIN_USERNAME'], password: ENV['ADMIN_PASSWORD'], except: [:index, :show, :search_by_title, :compare]
 
   def index
     @movies = Movie.complete.order('created_at DESC')
@@ -73,7 +73,7 @@ class MoviesController < ApplicationController
   end
 
   def new_from_lookup
-    bf = BadFruit.new(BADFRUIT_KEY)
+    bf = BadFruit.new(ENV['BADFRUIT_KEY'])
     @movies = []
     @movies = bf.movies.search_by_name(params[:query], 3) if params[:query]
     @movies.each do |movie|

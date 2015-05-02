@@ -3,7 +3,7 @@ require 'open-uri'
 class ReviewCollector
   def initialize(film_title, page_depth = 1, print = true)
     @film_title = film_title
-    @user_agent = USER_AGENT_STRING
+    @user_agent = ENV['USER_AGENT_STRING']
     @page_depth = page_depth
     @print = true
   end

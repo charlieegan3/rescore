@@ -1,6 +1,6 @@
 class PeopleSearcher
   def initialize(rotten_tomatoes_id)
-    bad_fruit_client = BadFruit.new(BADFRUIT_KEY)
+    bad_fruit_client = BadFruit.new(ENV['BADFRUIT_KEY'])
     @movie = bad_fruit_client.movies.search_by_id(rotten_tomatoes_id)
   end
 

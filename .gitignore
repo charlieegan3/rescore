@@ -11,3 +11,5 @@
 /spec/fixtures/vcr_cassettes/*
 
 *~
+set_config.sh
+start_server.sh

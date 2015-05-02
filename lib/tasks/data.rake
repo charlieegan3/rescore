@@ -3,7 +3,7 @@ require_relative '../../config/environment'
 task :build_top, :count, :pages do |t, args|
   Movie.delete_all
   Delayed::Worker.delay_jobs = false
-  rotten_tomatoes_client = BadFruit.new(BADFRUIT_KEY)
+  rotten_tomatoes_client = BadFruit.new(ENV['BADFRUIT_KEY'])
 
   File.open('lib/top_50.txt').each_line.take(args[:count].to_i).each do |title|
     begin

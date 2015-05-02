@@ -2,7 +2,7 @@ class SourceSearcher
   def initialize(title, year)
     @title = title
     @year = year.to_s
-    GoogleAjax.referer = GOOGLE_AJAX_REFERRER
+    GoogleAjax.referer = ENV['GOOGLE_AJAX_REFERRER']
   end
 
   def metacritic_link

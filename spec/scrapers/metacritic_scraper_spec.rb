@@ -4,8 +4,8 @@ require 'metacritic_scraper'
 
 RSpec.describe MetacriticScraper, :type => :feature do
   describe 'reviews' do
-    ok_scraper = MetacriticScraper.new('http://www.metacritic.com/movie/the-godfather', USER_AGENT_STRING, 5, false)
-    empty_scraper = MetacriticScraper.new('', USER_AGENT_STRING, 5, false)
+    ok_scraper = MetacriticScraper.new('http://www.metacritic.com/movie/the-godfather', ENV['USER_AGENT_STRING'], 5, false)
+    empty_scraper = MetacriticScraper.new('', ENV['USER_AGENT_STRING'], 5, false)
 
     it 'gets reviews correctly' do
       VCR.use_cassette('metacritic_scraper') do

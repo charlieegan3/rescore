@@ -4,8 +4,8 @@ require 'imdb_scraper'
 
 RSpec.describe Imdb_Scraper, :type => :feature do
   describe 'reviews' do
-    ok_scraper = Imdb_Scraper.new('http://www.imdb.com/title/tt0068646/', USER_AGENT_STRING, 5, false)
-    empty_scraper = Imdb_Scraper.new('', USER_AGENT_STRING, 5, false)
+    ok_scraper = Imdb_Scraper.new('http://www.imdb.com/title/tt0068646/', ENV['USER_AGENT_STRING'], 5, false)
+    empty_scraper = Imdb_Scraper.new('', ENV['USER_AGENT_STRING'], 5, false)
 
     it 'gets reviews correctly' do
       VCR.use_cassette('imdb_scraper') do
