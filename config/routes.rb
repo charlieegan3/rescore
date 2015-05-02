@@ -4,7 +4,6 @@ Rails.application.routes.draw do
 
   # You can have the root of your site routed with "root"
   root 'application#index'
-  get 'about' => 'application#about', as: :about
   get 'stats' => 'statistics#index', as: :stats
 
   get 'stats/refresh' => 'statistics#refresh', as: :stats_refresh

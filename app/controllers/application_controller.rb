@@ -10,9 +10,6 @@ class ApplicationController < ActionController::Base
     @movie = Movie.latest
   end
 
-  def about
-  end
-
   def current_user
     @current_user ||= User.find_by_id(cookies.permanent.signed[:user_id]) if cookies.permanent.signed[:user_id]
   end
