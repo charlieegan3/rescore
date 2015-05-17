@@ -33,9 +33,6 @@ Rails.application.routes.draw do
   delete '/reports/delete/:id' => 'reports#destroy', as: :delete_report
   post '/reports/new' => 'reports#new', as: :new_report
 
-  get 'api' => 'api#index', as: :api
-  post 'api' => 'api#review'
-
   # Example resource route with options:
   #   resources :products do
   #     member do
