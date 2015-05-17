@@ -30,24 +30,6 @@ class MoviesController < ApplicationController
     end
   end
 
-  def compare
-    if Movie.count <= 1
-      flash[:alert] = "Not enough movies to compare!"
-      return redirect_to :root
-    elsif params[:m1] && params[:m2]
-      if params[:m1] == params[:m2]
-        params[:m1] = params[:m2] = ""
-        flash[:alert] = "Please choose different films to compare."
-        return redirect_to "/movies/compare"
-      end
-      @movie_1 = Movie.find(params[:m1], false)
-      @movie_2 = Movie.find(params[:m2], false)
-    else
-      @options = Movie.complete.pluck(:title, :id).shuffle
-      render 'choose_compare'
-    end
-  end
-
   def manage
     @movie = Movie.find(params[:id], true)
 
