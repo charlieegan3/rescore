@@ -37,8 +37,6 @@ gem 'badfruit', :git => 'https://github.com/IllegalCactus/BadFruit.git'
 
 gem 'colored'
 
-gem 'omniauth-twitter'
-
 group :production do
   gem 'rails_12factor'
   gem 'httparty'

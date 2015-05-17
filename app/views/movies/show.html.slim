@@ -43,11 +43,6 @@
             =render "application/cast_sentiment_graph", id: @movie.id, people: @movie.sentiment[:people]
 
   .large-6.columns
-    .row
-      -if current_user
-        .large-12.columns
-          .panel
-            =render "user_actions", movie: @movie
     .row.report-form
       .large-12.columns
         .panel

@@ -195,29 +195,6 @@ input#movie_search_submit {
   margin-bottom: 10px;
 }
 
-.favorite-icon {
-  font-size: 1.8em;
-}
-
-#flag {
-  margin-left: 20px;
-  padding: 7px 10px;
-  border-radius: 2px;
-  background-color: Crimson;
-}
-
-#flag span {
-  color: white;
-}
-
-.active {
-  color: Tomato;
-}
-
-.inactive {
-  color: LightGrey;
-}
-
 .references {
   font-size: 0.8em;
   color: DarkGrey;
@@ -335,7 +312,7 @@ input#movie_search_submit {
     background-color: #222;
   }
 
-  .panel table tbody tr td:nth-child(n+5), 
+  .panel table tbody tr td:nth-child(n+5),
   .panel table tbody tr th:nth-child(n+5)
   {
     display: none;

@@ -10,13 +10,6 @@ nav.top-bar
         li =link_to 'Compare', compare_movies_path
         li = link_to 'Stats', stats_path
         li = link_to 'API', api_path
-        -if current_user
-          li
-            =link_to 'Sign Out', signout_path
-        -else
-          li
-            =link_to 'Sign in with Twitter', '/auth/twitter', class: 'twitter-signin-btn'
-
   .menu
     section.top-bar-section
       ul.left
@@ -34,12 +27,3 @@ nav.top-bar
         -unless request.fullpath == root_path
           form action="/movies/search_by_title"
             input name="query" type="text" placeholder="Search movies" /
-      ul.right
-        -if current_user
-          li
-            =link_to 'Sign Out', signout_path
-        -else
-          li
-            =link_to('/auth/twitter', class: 'twitter-signin-btn') do
-              =image_tag('/twitter_logo.png', size: '20x20')
-              span &nbsp;Sign in
