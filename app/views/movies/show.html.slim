@@ -41,18 +41,10 @@
         .panel
           -unless @movie.sentiment[:people].empty?
             =render "application/cast_sentiment_graph", id: @movie.id, people: @movie.sentiment[:people]
-
-  .large-6.columns
-    .row.report-form
-      .large-12.columns
-        .panel
-          =render "movie_report_form", movie: @movie
-
     .row
       .large-12.columns
         .panel
           =render "application/aspects_graph", id: @movie.id, aspects: @movie.sentiment[:topics], counts: @movie.stats[:topic_counts]
-
 .row
   .large-12.columns
     .large-12.columns

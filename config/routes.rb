@@ -24,13 +24,7 @@ Rails.application.routes.draw do
   get 'movies/:id/populate_related_people' => 'movies#populate_related_people', as: :populate_movie_related_people
   get 'movies/:id/collect' => 'movies#collect', as: :collect_movie
   get 'movies/:id/build_summary' => 'movies#build_summary', as: :build_movie_summary
-  get 'movies/:id/flag' => 'reports#new', as: :new_flag
   resources :movies
-
-  get '/reports' => 'reports#index', as: :manage_reports
-  get '/reports/:id' => 'reports#show', as: :show_report
-  delete '/reports/delete/:id' => 'reports#destroy', as: :delete_report
-  post '/reports/new' => 'reports#new', as: :new_report
 
   # Example resource route with options:
   #   resources :products do

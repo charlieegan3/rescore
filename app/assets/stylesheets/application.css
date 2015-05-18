@@ -214,10 +214,6 @@ input#movie_search_submit {
   font-size: 0.7em;
 }
 
-.report-form {
-  display: none;
-}
-
 .form-error {
   color: red;
 }
