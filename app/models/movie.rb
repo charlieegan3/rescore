@@ -11,19 +11,6 @@ class Movie < ActiveRecord::Base
   after_destroy { Statistic.delay.refresh }
   after_save { Statistic.delay.refresh if self.complete? }
 
-  def set_slug
-    self.slug = self.title.parameterize
-  end
-
-  def to_param
-    self.slug
-  end
-
-  def default_values
-    reviews ||= []
-    related_people ||= {}
-  end
-
   def populate_source_links
     s = SourceSearcher.new(title, year)
     update_attributes({
@@ -60,18 +47,6 @@ class Movie < ActiveRecord::Base
   end
   handle_asynchronously :build_summary
 
-  def source_link_count
-    [imdb_link, amazon_link, metacritic_link, rotten_tomatoes_link].count {|l| l.include?('http')}
-  end
-
-  def busy
-    !status.nil?
-  end
-
-  def has_summary
-    !reviews.last[:rescore_review].nil?
-  end
-
   def set_sentiment
     s = SentimentCalculator.new(reviews)
     s.build
@@ -87,6 +62,31 @@ class Movie < ActiveRecord::Base
   def set_stats
     s = StatCalculator.new(reviews)
     {topic_counts: s.topic_counts, rating_distribution: s.rating_distribution, review_count: s.review_count}
+  end
+
+  def set_slug
+    self.slug = self.title.parameterize
+  end
+
+  def to_param
+    self.slug
+  end
+
+  def default_values
+    reviews ||= []
+    related_people ||= {}
+  end
+
+  def source_link_count
+    [imdb_link, amazon_link, metacritic_link, rotten_tomatoes_link].count {|l| l.include?('http')}
+  end
+
+  def busy
+    !status.nil?
+  end
+
+  def has_summary
+    !reviews.last[:rescore_review].nil?
   end
 
   def complete?
