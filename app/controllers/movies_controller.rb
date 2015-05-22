@@ -18,7 +18,7 @@ class MoviesController < ApplicationController
   def show
     @movie = Movie.find(params[:id], false)
 
-    if @movie.stats.nil?
+    if @movie.stats.empty?
       flash[:alert] = "This movie's information is not yet complete. Please try again later"
       redirect_to :root
     else
