@@ -31,14 +31,6 @@
     .row
       .large-12.columns
         .panel
-          span.has-tip aria-haspopup="true" data-tooltip="" title="Interesting facts about this movie." Summary
-          ul
-            -facts(@movie).each do |fact|
-              li
-                =fact
-    .row
-      .large-12.columns
-        .panel
           -unless @movie.sentiment[:people].empty?
             =render "application/cast_sentiment_graph", id: @movie.id, people: @movie.sentiment[:people]
     .row
