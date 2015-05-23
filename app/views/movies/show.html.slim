@@ -3,49 +3,48 @@
     h1 =@movie.title
 
 .row
-  .large-6.columns
+  .large-3.columns
     .row
-      .large-5.columns
-        .panel.movie-cover
-          =image_tag(@movie.image_url)
-      .large-7.columns
-        table.summary
-          tr
-            th Year
-            td =@movie.year
-          tr
-            th Genres
-            td =@movie.genres.join(', ')
-          -unless @movie.related_people[:directors].nil?
-            tr
-              th Directors
-              td   =@movie.related_people[:directors].map { |d| d['name'] }.join(', ')
-          tr
-            th Starring
-            td =@movie.related_people[:cast].to_a.take(3).map { |member| member[:name] }.join(', ')
+      .panel.movie-cover
+        =image_tag(@movie.image_url)
     .row
-      .large-12.columns
-        .panel
-          -unless @movie.sentiment[:people].empty?
-            =render "application/cast_sentiment_graph", id: @movie.id, people: @movie.sentiment[:people]
+      table.summary
+        tr
+          th Year
+          td =@movie.year
+        tr
+          th Genres
+          td =@movie.genres.join(', ')
+        -unless @movie.related_people[:directors].nil?
+          tr
+            th Directors
+            td   =@movie.related_people[:directors].map { |d| d['name'] }.join(', ')
+        tr
+          th Starring
+          td =@movie.related_people[:cast].to_a.take(3).map { |member| member[:name] }.join(', ')
     .row
       .large-12.columns
-        .panel
-          =render "application/aspects_graph", id: @movie.id, aspects: @movie.sentiment[:topics], counts: @movie.stats[:topic_counts]
+
+    .row
+      .large-12.columns
+
+  .large-9.columns
+    .panel
+      =render "application/aspects_graph", id: @movie.id, aspects: @movie.sentiment[:topics], counts: @movie.stats[:topic_counts]
+    .panel
+      -unless @movie.sentiment[:people].empty?
+        =render "application/cast_sentiment_graph", id: @movie.id, people: @movie.sentiment[:people]
 .row
-  .large-12.columns
-    .large-12.columns
-      p.references
-        strong Added:&nbsp;
-        =@movie.created_at.strftime("%e %B %Y")
-        =" (Updated " + distance_of_time_in_words(Time.new, @movie.updated_at).gsub('about ', '') + " ago)"
+  .large-1.columns
+    p.references
+      strong Added
+  .large-11.columns.references
+      =@movie.created_at.strftime("%e %B %Y")
+      =" (Updated " + distance_of_time_in_words(Time.new, @movie.updated_at).gsub('about ', '') + " ago)"
 .row
-  .large-12.columns
-    .large-1.columns
-      p.references
-        strong References
-    .large-11.columns.references
-      -@movie.references.each do |reference|
-        =link_to reference.gsub('http://www.', ''), reference
-        br
-br
+  .large-1.columns
+    p.references
+      strong References
+  .large-11.columns.references
+    -@movie.references.each do |reference|
+      =link_to reference.gsub('http://www.', ''), reference
