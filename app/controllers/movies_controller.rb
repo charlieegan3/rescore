@@ -16,7 +16,7 @@ class MoviesController < ApplicationController
   end
 
   def show
-    @movie = Movie.find(params[:id], false)
+    @movie = Movie.find_by_slug(params[:id])
 
     if @movie.stats.empty?
       flash[:alert] = "This movie's information is not yet complete. Please try again later"
@@ -31,7 +31,7 @@ class MoviesController < ApplicationController
   end
 
   def manage
-    @movie = Movie.find(params[:id], true)
+    @movie = Movie.find_by_slug(params[:id])
 
     @cast_count = 3
     @cast_count = 1000 if params[:all_cast]
@@ -64,7 +64,7 @@ class MoviesController < ApplicationController
   end
 
   def edit
-    @movie = Movie.find(params[:id], false)
+    @movie = Movie.find_by_slug(params[:id])
   end
 
   def create
@@ -80,7 +80,7 @@ class MoviesController < ApplicationController
   end
 
   def update
-    @movie = Movie.find(params[:id], false)
+    @movie = Movie.find_by_slug(params[:id])
     params = movie_params
     params[:genres] = params[:genres].split(', ')
     @movie.update_attributes(params)
@@ -88,29 +88,29 @@ class MoviesController < ApplicationController
   end
 
   def destroy
-    Movie.find(params[:id]).destroy
+    Movie.find_by_slug(params[:id]).destroy
     redirect_to movie_admin_path
   end
 
   def status
-    @movie = Movie.find(params[:id], false)
+    @movie = Movie.find_by_slug(params[:id])
     render layout: false
   end
 
   def populate_source_links
-    @movie = Movie.find(params[:id], false)
+    @movie = Movie.find_by_slug(params[:id])
     @movie.populate_source_links
     redirect_to manage_movie_path(@movie)
   end
 
   def populate_related_people
-    @movie = Movie.find(params[:id], false)
+    @movie = Movie.find_by_slug(params[:id])
     @movie.populate_related_people
     redirect_to manage_movie_path(@movie)
   end
 
   def build_summary
-    @movie = Movie.find(params[:id])
+    @movie = Movie.find_by_slug(params[:id])
     @movie.build_summary
     @movie.update_attribute(:task, 'summary')
     @movie.update_attribute(:status, '0%')
@@ -118,7 +118,7 @@ class MoviesController < ApplicationController
   end
 
   def collect
-    @movie = Movie.find(params[:id])
+    @movie = Movie.find_by_slug(params[:id])
     @movie.collect_reviews
     @movie.update_attribute(:task, 'collect')
     @movie.update_attribute(:status, '0%')

@@ -41,7 +41,12 @@ class Movie < ActiveRecord::Base
     r = RescoreReviewer.new(self)
     update_attribute(:reviews, r.rescored_reviews)
     update_attributes({
-      sentiment: set_sentiment, stats: set_stats, status: nil, task: nil, complete: true
+      sentiment: set_sentiment,
+      stats: set_stats,
+      status: nil,
+      task: nil,
+      reviews: nil,
+      complete: true
     })
     Statistic.refresh
   end
@@ -134,16 +139,6 @@ class Movie < ActiveRecord::Base
   end
 
   def self.latest
-    columns = Movie.attribute_names - ['reviews']
-    complete.order('created_at DESC').limit(1).select(columns).first
-  end
-
-  def self.find(input, include_reviews = true)
-    param = input.to_i == 0 ? {slug: input} : {id: input}
-    if include_reviews
-      where(param).first
-    else
-      where(param).select(Movie.attribute_names - ['reviews']).first
-    end
+    complete.order('created_at DESC').limit(1).first
   end
 end
