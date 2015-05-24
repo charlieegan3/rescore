@@ -6,7 +6,7 @@
       li =button_to 'Delete', movie, {onclick: "return confirm('Sure?')", method: :delete, class: 'button alert'}
 
 .row
-  .large-6.columns
+  .large-12.columns
     table
       tbody
         tr
@@ -24,5 +24,6 @@
         tr
           th Genres
           td =movie.genres.join(', ')
-  .large-6.columns
+.row
+  .large-12.columns
     =image_tag(movie.image_url)
