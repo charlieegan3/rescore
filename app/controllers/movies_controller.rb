@@ -97,30 +97,10 @@ class MoviesController < ApplicationController
     render layout: false
   end
 
-  def populate_source_links
+  def build
     @movie = Movie.find_by_slug(params[:id])
-    @movie.populate_source_links
-    redirect_to manage_movie_path(@movie)
-  end
-
-  def populate_related_people
-    @movie = Movie.find_by_slug(params[:id])
-    @movie.populate_related_people
-    redirect_to manage_movie_path(@movie)
-  end
-
-  def build_summary
-    @movie = Movie.find_by_slug(params[:id])
-    @movie.build_summary
-    @movie.update_attribute(:task, 'summary')
-    @movie.update_attribute(:status, '0%')
-    redirect_to manage_movie_path(@movie)
-  end
-
-  def collect
-    @movie = Movie.find_by_slug(params[:id])
-    @movie.collect_reviews
-    @movie.update_attribute(:task, 'collect')
+    @movie.build
+    @movie.update_attribute(:task, 'build')
     @movie.update_attribute(:status, '0%')
     redirect_to manage_movie_path(@movie)
   end

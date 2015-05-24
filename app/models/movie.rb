@@ -11,46 +11,48 @@ class Movie < ActiveRecord::Base
   after_destroy { Statistic.delay.refresh }
   after_save { Statistic.delay.refresh if self.complete? }
 
-  def populate_source_links
+  def build
     s = SourceSearcher.new(title, year)
     update_attributes({
       metacritic_link: s.metacritic_link,
       amazon_link: s.amazon_link,
       imdb_link: s.imdb_link,
-      rotten_tomatoes_link: s.rotten_tomatoes_link
+      rotten_tomatoes_link: s.rotten_tomatoes_link,
+      status: '25%',
     })
-  end
 
-  def collect_reviews
-    r = ReviewCollector.new(title, page_depth)
-    update_attributes({reviews: [], status: '0%'})
-    update_attributes({reviews: reviews + r.metacritic_reviews(metacritic_link), status: '25%'})
-    update_attributes({reviews: reviews + r.amazon_reviews(amazon_link), status: '50%'})
-    update_attributes({reviews: reviews + r.imdb_reviews(imdb_link), status: '75%'})
-    update_attributes({reviews: reviews + r.rotten_tomatoes_reviews(rotten_tomatoes_link), status: '100%'})
-    update_attributes({references: reviews.map { |r| r[:source][:url] }.uniq, status: nil})
-  end
-  handle_asynchronously :collect_reviews
+    review_collector = ReviewCollector.new(title, page_depth)
+    collected_reviews = review_collector.metacritic_reviews(metacritic_link) +
+                        review_collector.amazon_reviews(amazon_link) +
+                        review_collector.imdb_reviews(imdb_link) +
+                        review_collector.rotten_tomatoes_reviews(rotten_tomatoes_link)
 
-  def populate_related_people
+    update_attributes({
+      reviews: collected_reviews,
+      references: reviews.map { |r| r[:source][:url] }.uniq,
+      status: '50%',
+    })
+
     p = PeopleSearcher.new(rotten_tomatoes_id)
-    update_attribute(:related_people, {cast: p.cast, directors: p.directors})
-  end
+    update_attributes({related_people: {cast: p.cast, directors: p.directors},
+                      status: '75%'})
 
-  def build_summary
-    r = RescoreReviewer.new(self)
-    update_attribute(:reviews, r.rescored_reviews)
+    rescore_reviewer = RescoreReviewer.new(self)
+    update_attribute(:reviews, rescore_reviewer.rescored_reviews)
     update_attributes({
       sentiment: set_sentiment,
       stats: set_stats,
+    })
+
+    Statistic.refresh
+    update_attributes({
       status: nil,
       task: nil,
       reviews: nil,
       complete: true
     })
-    Statistic.refresh
   end
-  handle_asynchronously :build_summary
+  handle_asynchronously :build
 
   def set_sentiment
     s = SentimentCalculator.new(reviews)
@@ -77,6 +79,10 @@ class Movie < ActiveRecord::Base
     self.slug
   end
 
+  def complete?
+    return self.stats.present?
+  end
+
   def default_values
     reviews ||= []
     related_people ||= {}
@@ -84,18 +90,6 @@ class Movie < ActiveRecord::Base
 
   def source_link_count
     [imdb_link, amazon_link, metacritic_link, rotten_tomatoes_link].count {|l| l.include?('http')}
-  end
-
-  def busy
-    !status.nil?
-  end
-
-  def has_summary
-    !reviews.last[:rescore_review].nil?
-  end
-
-  def complete?
-    return self.stats.present?
   end
 
   def self.summarized
