@@ -21,7 +21,7 @@ class Movie < ActiveRecord::Base
       status: '25%',
     })
 
-    review_collector = ReviewCollector.new(title, page_depth)
+    review_collector = ReviewCollector.new(page_depth)
     collected_reviews = review_collector.metacritic_reviews(metacritic_link) +
                         review_collector.amazon_reviews(amazon_link) +
                         review_collector.imdb_reviews(imdb_link) +
