@@ -11,7 +11,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20150518164904) do
+ActiveRecord::Schema.define(version: 20150525220804) do
 
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
@@ -40,14 +40,12 @@ ActiveRecord::Schema.define(version: 20150518164904) do
     t.string   "metacritic_link"
     t.datetime "created_at"
     t.datetime "updated_at"
-    t.text     "reviews"
     t.integer  "page_depth"
     t.string   "status"
     t.text     "related_people"
     t.string   "rotten_tomatoes_id"
     t.string   "image_url"
     t.integer  "year"
-    t.string   "task"
     t.text     "sentiment"
     t.text     "stats"
     t.text     "genres"

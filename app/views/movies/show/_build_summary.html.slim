@@ -1,6 +1,6 @@
--if !movie.complete? || !movie.task
+-unless movie.status
   =link_to 'Build Summary', build_movie_path(movie), class: 'button async'
--elsif movie.task == 'build'
+-else
   div id=('build-progress')
     .progress
       span.meter id=("#{movie.id}") style=("width: #{movie.status}")

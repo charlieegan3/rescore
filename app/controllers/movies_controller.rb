@@ -99,9 +99,8 @@ class MoviesController < ApplicationController
 
   def build
     @movie = Movie.find_by_slug(params[:id])
-    @movie.build
-    @movie.update_attribute(:task, 'build')
     @movie.update_attribute(:status, '0%')
+    @movie.build
     redirect_to manage_movie_path(@movie)
   end
 

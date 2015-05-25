@@ -1,12 +1,10 @@
 class Movie < ActiveRecord::Base
-  serialize :reviews, Array
   serialize :related_people, Hash
   serialize :genres, Array
   serialize :references, Array
   serialize :sentiment, Hash
   serialize :stats, Hash
 
-  before_save :default_values
   before_validation :set_slug if :title_changed?
   after_destroy { Statistic.delay.refresh }
   after_save { Statistic.delay.refresh if self.complete? }
@@ -28,8 +26,7 @@ class Movie < ActiveRecord::Base
                         review_collector.rotten_tomatoes_reviews(rotten_tomatoes_link)
 
     update_attributes({
-      reviews: collected_reviews,
-      references: reviews.map { |r| r[:source][:url] }.uniq,
+      references: collected_reviews.map { |r| r[:source][:url] }.uniq,
       status: '50%',
     })
 
@@ -37,39 +34,20 @@ class Movie < ActiveRecord::Base
     update_attributes({related_people: {cast: p.cast, directors: p.directors},
                       status: '75%'})
 
-    rescore_reviewer = RescoreReviewer.new(self)
-    update_attribute(:reviews, rescore_reviewer.rescored_reviews)
+    rescore_reviewer = RescoreReviewer.new(collected_reviews, related_people)
+    rescored_reviews = rescore_reviewer.rescored_reviews
     update_attributes({
-      sentiment: set_sentiment,
-      stats: set_stats,
+      sentiment: SentimentCalculator.new(rescored_reviews).build,
+      stats: StatCalculator.new(rescored_reviews).build,
     })
 
     Statistic.refresh
     update_attributes({
       status: nil,
-      task: nil,
-      reviews: nil,
       complete: true
     })
   end
   handle_asynchronously :build
-
-  def set_sentiment
-    s = SentimentCalculator.new(reviews)
-    s.build
-    {
-      topics: s.topics_sentiment,
-      people: s.people_sentiment,
-      distribution: s.sentence_sentiment,
-      location: s.location_sentiment,
-      distribution_stats: s.review_sentiment
-    }
-  end
-
-  def set_stats
-    s = StatCalculator.new(reviews)
-    {topic_counts: s.topic_counts, rating_distribution: s.rating_distribution, review_count: s.review_count}
-  end
 
   def set_slug
     self.slug = self.title.parameterize
@@ -77,15 +55,6 @@ class Movie < ActiveRecord::Base
 
   def to_param
     self.slug
-  end
-
-  def complete?
-    return self.stats.present?
-  end
-
-  def default_values
-    reviews ||= []
-    related_people ||= {}
   end
 
   def source_link_count
@@ -101,7 +70,7 @@ class Movie < ActiveRecord::Base
   end
 
   def self.review_count
-    Movie.complete.pluck(:reviews).inject(0) { |sum, e| sum += e.size }
+    # TODO, cache this in a new attribute
   end
 
   def self.variation
