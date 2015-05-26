@@ -5,6 +5,15 @@ class SourceSearcher
     GoogleAjax.referer = ENV['GOOGLE_AJAX_REFERRER']
   end
 
+  def links
+    {
+      metacritic_link: metacritic_link,
+      amazon_link: amazon_link,
+      imdb_link: imdb_link,
+      rotten_tomatoes_link: rotten_tomatoes_link
+    }
+  end
+
   def metacritic_link
     top_hit('www.metacritic.com/movie/')
   end
