@@ -26,6 +26,7 @@ class Movie < ActiveRecord::Base
                         review_collector.rotten_tomatoes_reviews(rotten_tomatoes_link)
 
     update_attributes({
+      review_count: collected_reviews.size,
       references: collected_reviews.map { |r| r[:source][:url] }.uniq,
       status: '50%',
     })
@@ -70,7 +71,7 @@ class Movie < ActiveRecord::Base
   end
 
   def self.review_count
-    # TODO, cache this in a new attribute
+    Movie.complete.pluck(:review_count).reduce(:+)
   end
 
   def self.variation
