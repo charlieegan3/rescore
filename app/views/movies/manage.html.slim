@@ -6,14 +6,7 @@ javascript:
       });
   });
 
-.row
-  =link_to "Back", movie_admin_path, class: 'button tiny'
-  .large-12.columns
-    h1 =@movie.title
-.row
-  .large-5.columns
-    .panel
-      =render 'movies/show/actions', movie: @movie
-  .large-7.columns
-    .panel
-      =render 'movies/show/build_summary', movie: @movie
+=link_to "Back", movie_admin_path
+h1 =@movie.title
+=render 'movies/show/actions', movie: @movie
+=render 'movies/show/build_summary', movie: @movie

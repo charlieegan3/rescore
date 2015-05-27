@@ -1,10 +1,10 @@
 -unless movie.status
-  =link_to 'Build Summary', build_movie_path(movie), class: 'button async'
+  =link_to 'Build Summary', build_movie_path(movie)
 -else
   div id=('build-progress')
     .progress
       span.meter id=("#{movie.id}") style=("width: #{movie.status}")
-  =link_to 'Restart', build_movie_path(movie), class: 'button alert'
+  =link_to 'Restart', build_movie_path(movie)
 -if movie.complete?
   table
     -movie.sentiment[:topics].each do |k,v|

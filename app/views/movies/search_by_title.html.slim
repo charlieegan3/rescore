@@ -1,13 +1,9 @@
 -if !@movies.empty?
-  .row
-    .large-12.columns
-      h3="Results for '#{params[:query]}'"
-      table.movie_table
-        -@movies.each do |movie|
-          tr
-            td =link_to movie.title, movie_path(movie)
-            td =image_tag(movie.image_url)
+  h3="Results for '#{params[:query]}'"
+  table
+    -@movies.each do |movie|
+      tr
+        td =link_to movie.title, movie_path(movie)
+        td =image_tag(movie.image_url)
 -else
-  .row
-    .large-12.columns
-      h3="No results found for '#{params[:query]}'"
+  h3="No results found for '#{params[:query]}'"
