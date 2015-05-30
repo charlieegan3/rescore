@@ -1,8 +1,6 @@
 require 'rails_helper'
 
 RSpec.describe Movie, :type => :model do
-  it { should have_many(:favorites) }
-
   it 'should get source links' do
     movie = Movie.new(title: 'Lord of the Rings: The Fellowship of the Ring')
     VCR.use_cassette('populate_source_links') do

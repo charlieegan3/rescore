@@ -1,87 +1,28 @@
-.row
-  .large-12.columns
-    h1 =@movie.title
+h1 =@movie.title
+=image_tag(@movie.image_url)
+table
+  tr
+    th Year
+    td =@movie.year
+  tr
+    th Genres
+    td =@movie.genres.join(', ')
+  -unless @movie.related_people[:directors].nil?
+    tr
+      th Directors
+      td   =@movie.related_people[:directors].map { |d| d['name'] }.join(', ')
+  tr
+    th Starring
+    td =@movie.related_people[:cast].to_a.take(3).map { |member| member[:name] }.join(', ')
 
-.row
-  .large-6.columns
-    .row
-      .large-5.columns
-        .panel.movie-cover
-          =image_tag(@movie.image_url)
-        div.source-links
-          = link_to image_tag('/imdb_icon.jpg'), @movie.imdb_link
-          = link_to image_tag('/amazon_icon.jpg'), @movie.amazon_link
-          = link_to image_tag('/metacritic_icon.jpg'), @movie.metacritic_link
-          = link_to image_tag('/rotten_tomatoes_icon.jpg'), @movie.rotten_tomatoes_link
-      .large-7.columns
-        table.summary
-          tr
-            th Year
-            td =@movie.year
-          tr
-            th Genres
-            td =@movie.genres.join(', ')
-          -unless @movie.related_people[:directors].nil?
-            tr
-              th Directors
-              td   =@movie.related_people[:directors].map { |d| d['name'] }.join(', ')
-          tr
-            th Starring
-            td =@movie.related_people[:cast].to_a.take(3).map { |member| member[:name] }.join(', ')
-    .row
-      .large-12.columns
-        .panel
-          span.has-tip aria-haspopup="true" data-tooltip="" title="Interesting facts about this movie." Summary
-          ul
-            -facts(@movie).each do |fact|
-              li
-                =fact
-    .row
-      .large-12.columns
-        .panel
-          -unless @movie.sentiment[:people].empty?
-            =render "application/cast_sentiment_graph", id: @movie.id, people: @movie.sentiment[:people]
-
-  .large-6.columns
-    .row
-      -if current_user
-        .large-12.columns
-          .panel
-            =render "user_actions", movie: @movie
-    .row.report-form
-      .large-12.columns
-        .panel
-          =render "movie_report_form", movie: @movie
-
-    .row
-      .large-12.columns
-        .panel
-          =render "application/aspects_graph", id: @movie.id, aspects: @movie.sentiment[:topics], counts: @movie.stats[:topic_counts]
-    .row
-      .large-12.columns
-        .panel
-          =render "application/sentiment_ratings_graph", id: @movie.id, ratings: @movie.stats[:rating_distribution], sentiment: @movie.sentiment[:distribution_stats][:values]
-          p
-            strong Range:&nbsp;
-            =(@movie.sentiment[:distribution_stats][:range] * 100).to_i
-            |&nbsp;&nbsp;
-            strong Variation:&nbsp;
-            =(@movie.sentiment[:distribution_stats][:st_dev] * 100).to_i
-
-.row
-  .large-12.columns
-    .large-12.columns
-      p.references
-        strong Added:&nbsp;
-        =@movie.created_at.strftime("%e %B %Y")
-        =" (Updated " + distance_of_time_in_words(Time.new, @movie.updated_at).gsub('about ', '') + " ago)"
-.row
-  .large-12.columns
-    .large-1.columns
-      p.references
-        strong References
-    .large-11.columns.references
-      -@movie.references.each do |reference|
-        =link_to reference.gsub('http://www.', ''), reference
-        br
-br
+=render "application/aspects_graph", id: @movie.id, aspects: @movie.sentiment[:topics], counts: @movie.stats[:topic_counts]
+-unless @movie.sentiment[:people].empty?
+  =render "application/cast_sentiment_graph", id: @movie.id, people: @movie.sentiment[:people]
+p
+  strong Added
+  =@movie.created_at.strftime("%e %B %Y")
+  =" (Updated " + distance_of_time_in_words(Time.new, @movie.updated_at).gsub('about ', '') + " ago)"
+p
+  strong References
+  -@movie.references.each do |reference|
+    =link_to reference.gsub('http://www.', ''), reference

@@ -10,7 +10,6 @@ gem 'jquery-rails'
 gem 'jbuilder', '~> 2.0'
 
 gem 'slim'
-gem 'foundation-rails'
 
 gem 'pg'
 
@@ -36,8 +35,6 @@ gem 'googleajax'
 gem 'badfruit', :git => 'https://github.com/IllegalCactus/BadFruit.git'
 
 gem 'colored'
-
-gem 'omniauth-twitter'
 
 group :production do
   gem 'rails_12factor'

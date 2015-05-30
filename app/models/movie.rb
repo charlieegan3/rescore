@@ -1,17 +1,35 @@
 class Movie < ActiveRecord::Base
-  has_many :favorites
-
-  serialize :reviews, Array
   serialize :related_people, Hash
   serialize :genres, Array
   serialize :references, Array
   serialize :sentiment, Hash
   serialize :stats, Hash
 
-  before_save :default_values
   before_validation :set_slug if :title_changed?
   after_destroy { Statistic.delay.refresh }
   after_save { Statistic.delay.refresh if self.complete? }
+
+  def build
+    update_attributes(SourceSearcher.new(title, year).links)
+    raw_reviews = ReviewCollector.new(source_links, page_depth).reviews
+
+    update_attributes({
+      references: raw_reviews.map { |r| r[:source][:url] }.uniq,
+      review_count: raw_reviews.size,
+      related_people: PeopleSearcher.new(rotten_tomatoes_id).people,
+      status: '50%',
+    })
+
+    reviews = RescoreReviewer.new(raw_reviews, related_people).rescored_reviews
+    update_attributes({
+      sentiment: SentimentCalculator.new(reviews).build,
+      stats: StatCalculator.new(reviews).build,
+    })
+
+    Statistic.refresh
+    update_attributes({status: nil, complete: true})
+  end
+  handle_asynchronously :build
 
   def set_slug
     self.slug = self.title.parameterize
@@ -21,78 +39,17 @@ class Movie < ActiveRecord::Base
     self.slug
   end
 
-  def default_values
-    reviews ||= []
-    related_people ||= {}
-  end
-
-  def populate_source_links
-    s = SourceSearcher.new(title, year)
-    update_attributes({
-      metacritic_link: s.metacritic_link,
-      amazon_link: s.amazon_link,
-      imdb_link: s.imdb_link,
-      rotten_tomatoes_link: s.rotten_tomatoes_link
-    })
-  end
-
-  def collect_reviews
-    r = ReviewCollector.new(title, page_depth)
-    update_attributes({reviews: [], status: '0%'})
-    update_attributes({reviews: reviews + r.metacritic_reviews(metacritic_link), status: '25%'})
-    update_attributes({reviews: reviews + r.amazon_reviews(amazon_link), status: '50%'})
-    update_attributes({reviews: reviews + r.imdb_reviews(imdb_link), status: '75%'})
-    update_attributes({reviews: reviews + r.rotten_tomatoes_reviews(rotten_tomatoes_link), status: '100%'})
-    update_attributes({references: reviews.map { |r| r[:source][:url] }.uniq, status: nil})
-  end
-  handle_asynchronously :collect_reviews
-
-  def populate_related_people
-    p = PeopleSearcher.new(rotten_tomatoes_id)
-    update_attribute(:related_people, {cast: p.cast, directors: p.directors})
-  end
-
-  def build_summary
-    r = RescoreReviewer.new(self)
-    update_attribute(:reviews, r.rescored_reviews)
-    update_attributes({
-      sentiment: set_sentiment, stats: set_stats, status: nil, task: nil, complete: true
-    })
-    Statistic.refresh
-  end
-  handle_asynchronously :build_summary
-
-  def source_link_count
-    [imdb_link, amazon_link, metacritic_link, rotten_tomatoes_link].count {|l| l.include?('http')}
-  end
-
-  def busy
-    !status.nil?
-  end
-
-  def has_summary
-    !reviews.last[:rescore_review].nil?
-  end
-
-  def set_sentiment
-    s = SentimentCalculator.new(reviews)
-    s.build
+  def source_links
     {
-      topics: s.topics_sentiment,
-      people: s.people_sentiment,
-      distribution: s.sentence_sentiment,
-      location: s.location_sentiment,
-      distribution_stats: s.review_sentiment
+      imdb_link: imdb_link,
+      amazon_link: amazon_link,
+      metacritic_link: metacritic_link,
+      rotten_tomatoes_link: rotten_tomatoes_link
     }
   end
 
-  def set_stats
-    s = StatCalculator.new(reviews)
-    {topic_counts: s.topic_counts, rating_distribution: s.rating_distribution, review_count: s.review_count}
-  end
-
-  def complete?
-    return self.stats.present?
+  def source_link_count
+    [imdb_link, amazon_link, metacritic_link, rotten_tomatoes_link].count {|l| l.include?('http')}
   end
 
   def self.summarized
@@ -104,7 +61,7 @@ class Movie < ActiveRecord::Base
   end
 
   def self.review_count
-    Movie.complete.pluck(:reviews).inject(0) { |sum, e| sum += e.size }
+    Movie.complete.pluck(:review_count).reduce(:+)
   end
 
   def self.variation
@@ -136,16 +93,6 @@ class Movie < ActiveRecord::Base
   end
 
   def self.latest
-    columns = Movie.attribute_names - ['reviews']
-    complete.order('created_at DESC').limit(1).select(columns).first
-  end
-
-  def self.find(input, include_reviews = true)
-    param = input.to_i == 0 ? {slug: input} : {id: input}
-    if include_reviews
-      where(param).first
-    else
-      where(param).select(Movie.attribute_names - ['reviews']).first
-    end
+    complete.order('created_at DESC').limit(1).first
   end
 end

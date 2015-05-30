@@ -1,6 +1,4 @@
-.row
-  .grid-row
-    -@movies.each do |movie|
-      .movie-detail
-        =link_to image_tag(movie.image_url, class: 'thumbnail'), movie_path(movie)
-        p =movie.title
+-@movies.each do |movie|
+  p
+    =movie.title
+    =link_to image_tag(movie.image_url), movie_path(movie)

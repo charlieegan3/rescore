@@ -34,7 +34,6 @@ RSpec.configure do |config|
 
   config.include Capybara::DSL
   config.include FactoryGirl::Syntax::Methods
-  config.include(OmniauthMacros)
 
   # If you're not using ActiveRecord, or you'd prefer not to run each of your
   # examples within a transaction, remove the following line or assign false
@@ -56,5 +55,3 @@ RSpec.configure do |config|
   # https://relishapp.com/rspec/rspec-rails/docs
   config.infer_spec_type_from_file_location!
 end
-
-OmniAuth.config.test_mode = true

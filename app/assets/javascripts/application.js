@@ -12,10 +12,7 @@
 //
 //= require jquery
 //= require jquery_ujs
-//= require foundation
 //= require_tree .
-
-$(function(){ $(document).foundation(); });
 
 $(document).ready(function(){
   $(".rescore-flash").delay(2400).fadeOut("slow");

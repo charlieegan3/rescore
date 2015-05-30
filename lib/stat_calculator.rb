@@ -3,6 +3,14 @@ class StatCalculator
     @reviews = reviews
   end
 
+  def build
+    {
+      topic_counts: topic_counts,
+      rating_distribution: rating_distribution,
+      review_count: review_count,
+    }
+  end
+
   def topic_counts
     counts = Hash[ASPECTS.map {|k,v| [k, 0]}].tap do |topic_counts|
       @reviews.map { |r| r[:rescore_review] }.each do |review|

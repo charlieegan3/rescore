@@ -1,31 +1,29 @@
-.row
-  .large-12.columns
-    =form_tag new_movie_from_lookup_path, :method => 'get', id: "new_from_lookup_form" do
-      = text_field_tag :query, params[:query], placeholder: 'Film Title'
-      = submit_tag "Search", name: nil, class: 'button expand', id: 'new_from_lookup_btn'
+=form_tag new_movie_from_lookup_path, :method => 'get', id: "new_from_lookup_form" do
+  = text_field_tag :query, params[:query], placeholder: 'Film Title'
+  = submit_tag "Search", name: nil, id: 'new_from_lookup_btn'
 
-    -unless @movies.empty?
-      table
-        tr
-          th id
-          th poster
-          th title
-          th year
-          th genres
-          th cast
-          th link
-          th create
-        -@movies.each do |movie|
-          tr
-            td
-              strong =movie.id
-            td =image_tag(movie.posters.thumbnail)
-            td =movie.name
-            td =movie.year
-            td =movie.genres.first
-            td
-              ul
-                -movie.cast.each do |member|
-                  li =member['name']
-            td =link_to 'View', movie.links['alternate'], class: 'button'
-            td =link_to 'Use as Template', new_movie_path(title: movie.name, image_url: movie.posters.thumbnail, year: movie.year, rotten_tomatoes_id: movie.id, rotten_tomatoes_link: movie.links['alternate'], genres: movie.genres), class: 'button alert'
+-unless @movies.empty?
+  table
+    tr
+      th id
+      th poster
+      th title
+      th year
+      th genres
+      th cast
+      th link
+      th create
+    -@movies.each do |movie|
+      tr
+        td
+          strong =movie.id
+        td =image_tag(movie.posters.thumbnail)
+        td =movie.name
+        td =movie.year
+        td =movie.genres.first
+        td
+          ul
+            -movie.cast.each do |member|
+              li =member['name']
+        td =link_to 'View', movie.links['alternate']
+        td =link_to 'Use as Template', new_movie_path(title: movie.name, image_url: movie.posters.thumbnail, year: movie.year, rotten_tomatoes_id: movie.id, rotten_tomatoes_link: movie.links['alternate'], genres: movie.genres)

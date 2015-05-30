@@ -1,5 +1,3 @@
-.row
-  .large-12.columns
-    h1 =@movie.title
-    =render 'form', locals: {movie: @movie}
-    =button_to "Delete", @movie, {onclick: "return confirm('Sure?')", method: :delete, class: 'button alert expand'}
+h1 =@movie.title
+=render 'form', locals: {movie: @movie}
+=button_to "Delete", @movie, {onclick: "return confirm('Sure?')", method: :delete}

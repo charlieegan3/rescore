@@ -11,7 +11,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20150310155756) do
+ActiveRecord::Schema.define(version: 20150526212913) do
 
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
@@ -32,16 +32,6 @@ ActiveRecord::Schema.define(version: 20150310155756) do
 
   add_index "delayed_jobs", ["priority", "run_at"], name: "delayed_jobs_priority", using: :btree
 
-  create_table "favorites", force: true do |t|
-    t.integer  "user_id"
-    t.integer  "movie_id"
-    t.datetime "created_at"
-    t.datetime "updated_at"
-  end
-
-  add_index "favorites", ["movie_id"], name: "index_favorites_on_movie_id", using: :btree
-  add_index "favorites", ["user_id"], name: "index_favorites_on_user_id", using: :btree
-
   create_table "movies", force: true do |t|
     t.string   "title"
     t.string   "imdb_link"
@@ -50,47 +40,31 @@ ActiveRecord::Schema.define(version: 20150310155756) do
     t.string   "metacritic_link"
     t.datetime "created_at"
     t.datetime "updated_at"
-    t.text     "reviews"
     t.integer  "page_depth"
     t.string   "status"
     t.text     "related_people"
     t.string   "rotten_tomatoes_id"
     t.string   "image_url"
     t.integer  "year"
-    t.string   "task"
     t.text     "sentiment"
     t.text     "stats"
     t.text     "genres"
     t.boolean  "complete"
     t.string   "slug"
     t.text     "references"
+    t.integer  "review_count"
   end
 
-  create_table "reports", force: true do |t|
-    t.text     "description"
-    t.integer  "movie_id"
+  create_table "potential_movies", force: true do |t|
+    t.string   "query"
+    t.string   "rotten_tomatoes_id"
     t.datetime "created_at"
     t.datetime "updated_at"
-    t.string   "category"
-    t.integer  "user_id"
   end
-
-  add_index "reports", ["movie_id"], name: "index_reports_on_movie_id", using: :btree
 
   create_table "statistics", force: true do |t|
     t.string   "identifier"
     t.text     "value"
-    t.datetime "created_at"
-    t.datetime "updated_at"
-  end
-
-  create_table "users", force: true do |t|
-    t.string   "provider"
-    t.string   "uid"
-    t.string   "name"
-    t.string   "screen_name"
-    t.string   "profile_picture"
-    t.string   "time_zone"
     t.datetime "created_at"
     t.datetime "updated_at"
   end

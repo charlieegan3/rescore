@@ -1,8 +1,0 @@
-=link_to 'Populate Related People', populate_movie_related_people_path(movie), class: 'button async', id: 'pop_people_btn'
--if movie.related_people[:cast]
-  p ="#{movie.related_people[:cast].size} cast members"
-  -if params[:all_cast]
-    =link_to 'Hide', manage_movie_path(movie)
-  -else
-    =link_to 'Show All', manage_movie_path(movie, {all_cast: true})
-  =render 'movies/show/cast_list', cast: movie.related_people[:cast].take(@cast_count)

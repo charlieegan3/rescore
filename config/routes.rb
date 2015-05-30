@@ -17,29 +17,11 @@ Rails.application.routes.draw do
   # Example resource route (maps HTTP verbs to controller actions automatically):
   get 'movies/new_from_lookup' => 'movies#new_from_lookup', as: :new_movie_from_lookup
   get 'movies/search_by_title' => 'movies#search_by_title'
-  get 'movies/compare' => 'movies#compare', as: :compare_movies
   get 'movies/admin' => 'movies#admin', as: :movie_admin
   get 'movies/:id/status' => 'movies#status', as: :movie_status
   get 'movies/:id/manage' => 'movies#manage', as: :manage_movie
-  get 'movies/:id/populate_source_links' => 'movies#populate_source_links', as: :populate_movie_source_links
-  get 'movies/:id/populate_related_people' => 'movies#populate_related_people', as: :populate_movie_related_people
-  get 'movies/:id/collect' => 'movies#collect', as: :collect_movie
-  get 'movies/:id/build_summary' => 'movies#build_summary', as: :build_movie_summary
-  get 'movies/:id/favorite' => 'favorites#set', as: :favorite_movie
-  get 'movies/:id/flag' => 'reports#new', as: :new_flag
+  get 'movies/:id/build' => 'movies#build', as: :build_movie
   resources :movies
-
-  get '/reports' => 'reports#index', as: :manage_reports
-  get '/reports/:id' => 'reports#show', as: :show_report
-  delete '/reports/delete/:id' => 'reports#destroy', as: :delete_report
-  post '/reports/new' => 'reports#new', as: :new_report
-
-  get "/auth/:provider/callback" => "sessions#create"
-  get "/signout" => "sessions#destroy", :as => :signout
-  get "/auth/failure" => "sessions#failure"
-
-  get 'api' => 'api#index', as: :api
-  post 'api' => 'api#review'
 
   # Example resource route with options:
   #   resources :products do

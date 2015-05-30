@@ -16,9 +16,9 @@ class MoviesController < ApplicationController
   end
 
   def show
-    @movie = Movie.find(params[:id], false)
+    @movie = Movie.find_by_slug(params[:id])
 
-    if @movie.stats.nil?
+    if @movie.stats.empty?
       flash[:alert] = "This movie's information is not yet complete. Please try again later"
       redirect_to :root
     else
@@ -30,26 +30,8 @@ class MoviesController < ApplicationController
     end
   end
 
-  def compare
-    if Movie.count <= 1
-      flash[:alert] = "Not enough movies to compare!"
-      return redirect_to :root
-    elsif params[:m1] && params[:m2]
-      if params[:m1] == params[:m2]
-        params[:m1] = params[:m2] = ""
-        flash[:alert] = "Please choose different films to compare."
-        return redirect_to "/movies/compare"
-      end
-      @movie_1 = Movie.find(params[:m1], false)
-      @movie_2 = Movie.find(params[:m2], false)
-    else
-      @options = Movie.complete.pluck(:title, :id).shuffle
-      render 'choose_compare'
-    end
-  end
-
   def manage
-    @movie = Movie.find(params[:id], true)
+    @movie = Movie.find_by_slug(params[:id])
 
     @cast_count = 3
     @cast_count = 1000 if params[:all_cast]
@@ -60,11 +42,12 @@ class MoviesController < ApplicationController
 
   def search_by_title
     if params[:query].blank?
-      flash[:alert] = "No search content provided."
+      flash[:alert] = "No search term provided."
       redirect_to :root
     else
       @movies = Movie.where("title ILIKE ?", "%#{params[:query]}%")
-      return redirect_to movie_path(@movies.first.id) if @movies.length == 1
+      PotentialMovie.delay.log(params[:query])
+      return redirect_to movie_path(@movies.first) if @movies.length == 1
     end
   end
 
@@ -82,7 +65,7 @@ class MoviesController < ApplicationController
   end
 
   def edit
-    @movie = Movie.find(params[:id], false)
+    @movie = Movie.find_by_slug(params[:id])
   end
 
   def create
@@ -98,7 +81,7 @@ class MoviesController < ApplicationController
   end
 
   def update
-    @movie = Movie.find(params[:id], false)
+    @movie = Movie.find_by_slug(params[:id])
     params = movie_params
     params[:genres] = params[:genres].split(', ')
     @movie.update_attributes(params)
@@ -106,40 +89,19 @@ class MoviesController < ApplicationController
   end
 
   def destroy
-    Movie.find(params[:id]).destroy
+    Movie.find_by_slug(params[:id]).destroy
     redirect_to movie_admin_path
   end
 
   def status
-    @movie = Movie.find(params[:id], false)
+    @movie = Movie.find_by_slug(params[:id])
     render layout: false
   end
 
-  def populate_source_links
-    @movie = Movie.find(params[:id], false)
-    @movie.populate_source_links
-    redirect_to manage_movie_path(@movie)
-  end
-
-  def populate_related_people
-    @movie = Movie.find(params[:id], false)
-    @movie.populate_related_people
-    redirect_to manage_movie_path(@movie)
-  end
-
-  def build_summary
-    @movie = Movie.find(params[:id])
-    @movie.build_summary
-    @movie.update_attribute(:task, 'summary')
+  def build
+    @movie = Movie.find_by_slug(params[:id])
     @movie.update_attribute(:status, '0%')
-    redirect_to manage_movie_path(@movie)
-  end
-
-  def collect
-    @movie = Movie.find(params[:id])
-    @movie.collect_reviews
-    @movie.update_attribute(:task, 'collect')
-    @movie.update_attribute(:status, '0%')
+    @movie.build
     redirect_to manage_movie_path(@movie)
   end
 

@@ -18,6 +18,13 @@ class SentimentCalculator
       end
       @review_sentiment << @sentence_sentiment.last(review[:rescore_review].size).reduce(:+) / review[:rescore_review].size
     end
+    {
+      topics: topics_sentiment,
+      people: people_sentiment,
+      distribution: sentence_sentiment,
+      distribution_stats: review_sentiment,
+      location: location_sentiment,
+    }
   end
 
   def topics_sentiment
