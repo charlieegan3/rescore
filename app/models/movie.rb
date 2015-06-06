@@ -1,4 +1,7 @@
 class Movie < ActiveRecord::Base
+  validates_uniqueness_of :rotten_tomatoes_id
+  validates_uniqueness_of :title
+
   serialize :related_people, Hash
   serialize :genres, Array
   serialize :references, Array
