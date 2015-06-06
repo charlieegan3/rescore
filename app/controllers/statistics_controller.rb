@@ -1,5 +1,6 @@
 class StatisticsController < ApplicationController
   def index
+    return redirect_to :root if Movie.count == 0
     Statistic.refresh if Statistic.count == 0
 
     @review_count = Statistic.find_by_identifier('review_count').value[:count]

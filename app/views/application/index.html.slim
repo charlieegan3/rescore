@@ -10,8 +10,9 @@ nav
     li
       strong =@movie_count
       |&nbsp;movies reviewed
-nav
-  ul
-    li
-      |Latest:&nbsp;
-      strong =link_to @movie.title, movie_path(@movie)
+-if @movie
+  nav
+    ul
+      li
+        |Latest:&nbsp;
+        strong =link_to @movie.title, movie_path(@movie)
