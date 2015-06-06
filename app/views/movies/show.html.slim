@@ -15,14 +15,16 @@ table
     th Starring
     td =@movie.related_people[:cast].to_a.take(3).map { |member| member[:name] }.join(', ')
 
+h2 Cast Sentiment
 =render "application/aspects_graph", id: @movie.id, aspects: @movie.sentiment[:topics], counts: @movie.stats[:topic_counts]
 -unless @movie.sentiment[:people].empty?
+  h2 Aspect Sentiment vs Discussion Focus
   =render "application/cast_sentiment_graph", id: @movie.id, people: @movie.sentiment[:people]
-p
-  strong Added
-  =@movie.created_at.strftime("%e %B %Y")
-  =" (Updated " + distance_of_time_in_words(Time.new, @movie.updated_at).gsub('about ', '') + " ago)"
-p
-  strong References
-  -@movie.references.each do |reference|
-    =link_to reference.gsub('http://www.', ''), reference
+h2 Added
+=@movie.created_at.strftime("%e %B %Y")
+=" (Updated " + distance_of_time_in_words(Time.new, @movie.updated_at).gsub('about ', '') + " ago)"
+h2 References
+-@movie.references.each do |reference|
+  =link_to reference.gsub('http://www.', ''), reference
+  br
+br

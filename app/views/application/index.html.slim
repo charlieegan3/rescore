@@ -1,15 +1,17 @@
-form id='search_form' action='/movies/search_by_title'
-  input name='query' type='text' placeholder='Search movies'
-  input id='movie_search_submit' type='submit' value='Search'
-  p
-    |Latest Movie:&nbsp;
-    strong =link_to @movie.title, movie_path(@movie)
-p
-  strong =@review_count
-  |&nbsp;reviews revisited
-  br
-  strong =@movie_count
-  |&nbsp;movies reviewed
+form action='/movies/search_by_title'
+  input type='text' name='query' placeholder='Search movies'
+  input type='submit' value='Search'
 
-=link_to 'Latest Movie', movie_path(@movie)
-
+nav
+  ul
+    li
+      strong =@review_count
+      |&nbsp;reviews revisited
+    li
+      strong =@movie_count
+      |&nbsp;movies reviewed
+nav
+  ul
+    li
+      |Latest:&nbsp;
+      strong =link_to @movie.title, movie_path(@movie)
