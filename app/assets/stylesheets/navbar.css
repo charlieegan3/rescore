@@ -1,0 +1,30 @@
+.navbar {
+  background-color: #333333;
+  padding: 5px;
+}
+
+.navbar input, .navbar img {
+  display: inline;
+  float: left;
+  border-radius: 0px;
+}
+
+.navbar input {
+  margin-left: 5px;
+  height: 65px;
+  margin: 0px 0px 0px 5px;
+}
+
+.navbar input[type=submit] {
+  background-color: DarkOrange;
+  width: 170px;
+}
+
+.navbar input[type=submit]:hover {
+  color: white;
+  background-color: Orange;
+}
+
+.navbar input[type=text] {
+  width: 600px;
+}

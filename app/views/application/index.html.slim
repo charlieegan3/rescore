@@ -1,18 +1,12 @@
-form action='/movies/search_by_title'
-  input type='text' name='query' placeholder='Search movies'
-  input type='submit' value='Search'
-
-nav
-  ul
-    li
-      strong =@review_count
-      |&nbsp;reviews revisited
-    li
-      strong =@movie_count
-      |&nbsp;movies reviewed
+.row
+  .column-12
+    strong =@review_count
+    |&nbsp;reviews revisited
+    br
+    strong =@movie_count
+    |&nbsp;movies reviewed
 -if @movie
-  nav
-    ul
-      li
-        |Latest:&nbsp;
-        strong =link_to @movie.title, movie_path(@movie)
+  .row
+    .column-12
+      |Latest:&nbsp;
+      strong =link_to @movie.title, movie_path(@movie)

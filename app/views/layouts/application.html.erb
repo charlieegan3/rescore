@@ -14,17 +14,14 @@
   </head>
 
   <body>
-    <p style="background-color: Orange; text-align: center;">work in progress</p>
-    <%= render 'navbar' %>
-    <div class="container">
-      <% if flash[:notice] %>
-        <div class="rescore-flash"><span class="success round radius label"><%= flash[:notice] %></span></div>
-      <% end %>
-
-      <% if flash[:alert] %>
-        <div class="rescore-flash"><span class="alert round radius label"><%= flash[:alert] %></span></div>
-      <% end %>
-
+    <% if flash[:notice] %>
+      <div><span><%= flash[:notice] %></span></div>
+    <% end %>
+    <% if flash[:alert] %>
+      <div><span><%= flash[:alert] %></span></div>
+    <% end %>
+    <div>
+      <%= render 'navbar' %>
       <%= yield %>
     </div>
   </body>

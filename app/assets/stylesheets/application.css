@@ -1,14 +1,9 @@
-form {
-  text-align: center;
-}
+/*
+= require_tree .
+= require_self
+*/
 
-input {
-  width: 100%;
-  max-width: 500px;
-  margin: 0;
+body > div {
+  width: 960px;
+  margin: 0 auto;
 }
-
-input[type=submit], input[type=text] {
-  margin: 5px auto;
-}
-

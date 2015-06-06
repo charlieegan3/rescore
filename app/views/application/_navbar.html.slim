@@ -1,4 +1,8 @@
-nav
-  ul
-    li =link_to 'Home', root_path
-    li =link_to 'Statistics', stats_path
+.navbar
+  .row
+    .column-12
+      =link_to :root do
+        =image_tag('/logo.jpg', width: '170px')
+      form action='/movies/search_by_title'
+        input type='text' name='query' placeholder='Search movies'
+        input type='submit' value='Search'
