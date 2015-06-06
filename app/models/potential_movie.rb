@@ -1,11 +1,13 @@
 class PotentialMovie < ActiveRecord::Base
   def self.log(query)
-    rotten_tomatoes_entry = BadFruit.new(ENV['BADFRUIT_KEY'])
-      .movies
+    bad_fruit_client = BadFruit.new(ENV['BADFRUIT_KEY'])
+    rotten_tomatoes_entry = bad_fruit_client.movies
       .search_by_name(query, 1)
       .first
     if (previous = existing(rotten_tomatoes_entry)).present?
       previous.delete_all
+      rotten_tomatoes_entry.genres =
+        bad_fruit_client.movies.search_by_id(rotten_tomatoes_entry.id).genres
       create_movie(rotten_tomatoes_entry)
     else
       create({query: query, rotten_tomatoes_id: rotten_tomatoes_entry.id})
