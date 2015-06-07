@@ -5,8 +5,10 @@ class ApplicationController < ActionController::Base
   helper_method :method_name
 
   def index
-    @review_count = Statistic.find_by_identifier('review_count').value[:count]
     @movie_count = Movie.complete.size
-    @movie = Movie.latest
+    @review_count = Statistic.find_by_identifier('review_count').value[:count]
+    @aspects = Statistic.find_by_identifier('topic_sentiments').value
+    @counts = Statistic.find_by_identifier('topic_counts').value
+    @movies = Movie.complete.order('created_at DESC').limit(10).select(['id', 'title', 'slug', 'created_at'])
   end
 end

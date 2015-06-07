@@ -1,12 +1,15 @@
-.row
-  .column-12
-    strong =@review_count
-    |&nbsp;reviews revisited
-    br
-    strong =@movie_count
-    |&nbsp;movies reviewed
--if @movie
+-if @movies
   .row
-    .column-12
-      |Latest:&nbsp;
-      strong =link_to @movie.title, movie_path(@movie)
+    .column-7
+      h3 Average Movie Sentiment
+      =render "aspects_graph", id: 'stats', aspects: @aspects, counts: @counts
+    .column-5
+      h3 ="#{Movie.count} movies, #{@review_count} reviews revisited"
+      strong Recently Added
+      br
+      -@movies.each do |movie|
+        =link_to(movie.title, movie_path(movie))
+        span
+          |&nbsp;added&nbsp;
+          =distance_of_time_in_words(Time.zone.now, movie.created_at) + ' ago'
+        br
