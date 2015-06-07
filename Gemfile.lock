@@ -191,6 +191,7 @@ GEM
       rspec-support (~> 3.1.0)
     rspec-support (3.1.2)
     ruby-stemmer (0.9.3)
+    rufus-scheduler (3.1.1)
     sad_panda (1.0.1)
       ruby-stemmer
     safe_yaml (1.0.4)
@@ -280,6 +281,7 @@ DEPENDENCIES
   rails (= 4.1.8)
   rails_12factor
   rspec-rails (~> 3.0)
+  rufus-scheduler
   sad_panda
   sanitize
   sass-rails (~> 4.0.3)

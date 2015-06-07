@@ -36,6 +36,8 @@ gem 'badfruit', :git => 'https://github.com/IllegalCactus/BadFruit.git'
 
 gem 'colored'
 
+gem 'rufus-scheduler'
+
 group :production do
   gem 'rails_12factor'
   gem 'httparty'
