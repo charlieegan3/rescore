@@ -1,30 +1,44 @@
 h1 =@movie.title
-=image_tag(@movie.image_url)
-table
-  tr
-    th Year
-    td =@movie.year
-  tr
-    th Genres
-    td =@movie.genres.join(', ')
-  -unless @movie.related_people[:directors].nil?
-    tr
-      th Directors
-      td   =@movie.related_people[:directors].map { |d| d['name'] }.join(', ')
-  tr
-    th Starring
-    td =@movie.related_people[:cast].to_a.take(3).map { |member| member[:name] }.join(', ')
+.row
+  .column-5
+    =image_tag(@movie.image_url)
+    table
+      tr
+        th Year
+        td =@movie.year
+      tr
+        th Genres
+        td =@movie.genres.join('<br/>').html_safe
+      -unless @movie.related_people[:directors].nil?
+        tr
+          th Directors
+          td
+            -@movie.related_people[:directors] \
+              .map { |d| d['name'] }.each do |director|
+                =director
+                br
+      tr
+        th Starring
+        td
+          -@movie.related_people[:cast].to_a.take(3) \
+            .map { |member| member[:name] }.each do |star|
+              =star
+              br
+    strong Added
+    br
+    =@movie.created_at.strftime("%e %B %Y")
+    =" (Updated " + distance_of_time_in_words(Time.new, @movie.updated_at).gsub('about ', '') + " ago)"
+    br
+    strong References
+    br
+    -@movie.references.each do |reference|
+      =link_to reference.gsub('http://www.', ''), reference
+      br
+    br
 
-h2 Cast Sentiment
-=render "application/aspects_graph", id: @movie.id, aspects: @movie.sentiment[:topics], counts: @movie.stats[:topic_counts]
--unless @movie.sentiment[:people].empty?
-  h2 Aspect Sentiment vs Discussion Focus
-  =render "application/cast_sentiment_graph", id: @movie.id, people: @movie.sentiment[:people]
-h2 Added
-=@movie.created_at.strftime("%e %B %Y")
-=" (Updated " + distance_of_time_in_words(Time.new, @movie.updated_at).gsub('about ', '') + " ago)"
-h2 References
--@movie.references.each do |reference|
-  =link_to reference.gsub('http://www.', ''), reference
-  br
-br
+  .column-7
+    h3 Aspect Sentiment vs Discussion Focus
+    =render "application/aspects_graph", id: @movie.id, aspects: @movie.sentiment[:topics], counts: @movie.stats[:topic_counts]
+    -unless @movie.sentiment[:people].empty?
+      h3 Cast Sentiment
+      =render "application/cast_sentiment_graph", id: @movie.id, people: @movie.sentiment[:people]
