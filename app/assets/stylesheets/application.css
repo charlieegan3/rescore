@@ -7,3 +7,13 @@ body > div {
   width: 960px;
   margin: 0 auto;
 }
+
+.cover {
+  text-align: center;
+}
+
+.cover img {
+  width: 60%;
+  border-radius: 5px;
+  border: 2px solid black;
+}

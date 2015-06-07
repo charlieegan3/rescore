@@ -14,6 +14,7 @@ class Movie < ActiveRecord::Base
 
   def build
     update_attributes(SourceSearcher.new(title, year).links)
+    update_attributes(CoverFinder.new(rotten_tomatoes_link).find)
     raw_reviews = ReviewCollector.new(source_links, page_depth).reviews
 
     update_attributes({
