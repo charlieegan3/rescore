@@ -92,7 +92,9 @@ class Movie < ActiveRecord::Base
 
   def self.people_count
     Movie.complete.pluck(:related_people).inject([]) do  |people, list|
-      people += list[:cast] + list[:directors]
+      directors = list[:directors] || []
+      cast = list[:cast] || []
+      people += cast + directors
     end.map {|x| x[:name]}.uniq.size
   end
 

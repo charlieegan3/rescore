@@ -16,18 +16,22 @@ class ReviewCollector
   end
 
   def amazon_reviews(url)
+    return [] unless url
     AmazonScraper.new(url, @user_agent, @page_depth, @print).reviews
   end
 
   def imdb_reviews(url)
+    return [] unless url
     Imdb_Scraper.new(url, @user_agent, @page_depth, @print).reviews
   end
 
   def metacritic_reviews(url)
+    return [] unless url
     MetacriticScraper.new(url, @user_agent, @page_depth, @print).reviews
   end
 
   def rotten_tomatoes_reviews(url)
+    return [] unless url
     Rotten_Tomatoes_Scraper.new(url, @user_agent, @page_depth, @print).reviews
   end
 end

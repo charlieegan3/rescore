@@ -15,20 +15,20 @@ class SourceSearcher
   end
 
   def metacritic_link
-    top_hit('www.metacritic.com/movie/')
+    top_hit('www.metacritic.com/movie/') rescue nil
   end
 
   def amazon_link
-    top_hit('www.amazon.com dvd reviews')
+    top_hit('www.amazon.com dvd reviews') rescue nil
   end
 
   def imdb_link
-    top_hit('www.imdb.com/title/')
+    top_hit('www.imdb.com/title/') rescue nil
   end
 
   def rotten_tomatoes_link
-    top_hit('www.rottentomatoes.com/m/')
-  end
+     top_hit('www.rottentomatoes.com/m/') rescue nil
+   end
 
   private
     def top_hit(domain)
