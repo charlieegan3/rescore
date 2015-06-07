@@ -7,6 +7,7 @@ Rails.application.routes.draw do
   get 'movies/:id/status' => 'movies#status', as: :movie_status
   get 'movies/:id/manage' => 'movies#manage', as: :manage_movie
   get 'movies/:id/build' => 'movies#build', as: :build_movie
+  get '/movies', to: redirect('/')
   resources :movies
 
   get 'stats/refresh' => 'statistics#refresh', as: :stats_refresh

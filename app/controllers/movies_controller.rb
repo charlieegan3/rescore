@@ -1,16 +1,6 @@
 class MoviesController < ApplicationController
   http_basic_authenticate_with name: ENV['ADMIN_USERNAME'], password: ENV['ADMIN_PASSWORD'], except: [:index, :show, :search_by_title, :compare]
 
-  def index
-    @movies = Movie.complete.order('created_at DESC')
-
-    respond_to do |format|
-      format.html
-      format.json { render :json => @movies.select(:id, :title, :image_url, :year, :genres, :slug) }
-      format.xml  { render :xml => @movies.select(:id, :title, :image_url, :year, :genres, :slug) }
-    end
-  end
-
   def admin
     @movies = Movie.order('created_at DESC')
   end
