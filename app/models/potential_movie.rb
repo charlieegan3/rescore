@@ -26,7 +26,7 @@ class PotentialMovie < ActiveRecord::Base
       rotten_tomatoes_id: rotten_tomatoes_entry.id,
       rotten_tomatoes_link: rotten_tomatoes_entry.links['alternate'],
       genres: rotten_tomatoes_entry.genres,
-      page_depth: 1,
+      page_depth: 3,
       complete: false
     ).build
   end
