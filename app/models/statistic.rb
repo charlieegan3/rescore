@@ -2,6 +2,11 @@ class Statistic < ActiveRecord::Base
   validates_uniqueness_of :identifier
   serialize :value, Hash
 
+  def self.get_stat(identifier)
+    Statistic.refresh if !Statistic.exists?(:identifier => identifier)
+    Statistic.find_by_identifier(identifier)
+  end
+
   def self.refresh
     delete_all
 
