@@ -1,8 +1,40 @@
+javascript:
+	$(document).ready(function() {
+		var substringMatcher = function(strs) {
+		  return function findMatches(q, cb) {
+		    var matches, substringRegex;
+
+		    matches = [];
+
+		    substrRegex = new RegExp(q, 'i');
+
+		    $.each(strs, function(i, str) {
+		      if (substrRegex.test(str)) {
+		        matches.push(str);
+		      }
+		    });
+
+		    cb(matches);
+		  };
+		};
+
+		var movies = #{raw @movies_list};
+
+		$('#movie-search-box').typeahead({
+		  hint: true,
+		  minLength: 1
+		},
+		{
+		  name: 'movies',
+		  source: substringMatcher(movies)
+		});
+	});
+
 .navbar
   .row
     .column-12
       =link_to :root do
         =image_tag('/logo.jpg', width: '170px')
-      form action='/movies/search_by_title'
-        input type='text' name='query' placeholder='Search movies'
+      form id="navbar-form" action='/movies/search_by_title'
+        input type='text' name='query' id="movie-search-box" placeholder='Search movies'
         input type='submit' value='Search'
