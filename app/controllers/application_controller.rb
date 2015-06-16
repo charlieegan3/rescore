@@ -10,5 +10,6 @@ class ApplicationController < ActionController::Base
     @aspects = Statistic.get_stat('topic_sentiments').value
     @counts = Statistic.get_stat('topic_counts').value
     @movies = Movie.complete.order('created_at DESC').limit(10).select(['id', 'title', 'slug', 'created_at'])
+    @movies_list = Movie.complete.select('title').to_a.map {|m| m.title}
   end
 end
