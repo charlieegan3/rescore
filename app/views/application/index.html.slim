@@ -1,5 +1,7 @@
 -if @movies
   .row
+    .column-12 id='search-results'
+  .row
     .column-7
       h3 Average Movie Sentiment
       =render "aspects_graph", id: 'stats', aspects: @aspects, counts: @counts

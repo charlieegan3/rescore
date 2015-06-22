@@ -33,11 +33,17 @@ class MoviesController < ApplicationController
   def search_by_title
     if params[:query].blank?
       flash[:alert] = "No search term provided."
-      redirect_to :root
+      return redirect_to :root
     else
       @movies = Movie.where("title ILIKE ?", "%#{params[:query]}%")
-      PotentialMovie.delay.log(params[:query])
-      return redirect_to movie_path(@movies.first) if @movies.length == 1
+    end
+
+    respond_to do |format|
+      format.html {
+        PotentialMovie.delay.log(params[:query])
+        return redirect_to movie_path(@movies.first) if @movies.length == 1
+      }
+      format.json { render :json => @movies.to_json }
     end
   end
 
